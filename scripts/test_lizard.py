@@ -1,6 +1,6 @@
 import subprocess 
 
-fileSunflower = "../sunflower/app/src/main/java/com/google/samples/apps/sunflower/compose"
+fileSunflower = "repos/sunflower/app/src/main/java/com/google/samples/apps/sunflower/compose"
 
 resultSunflower = subprocess.run(
     ["lizard", "-l", "kotlin", fileSunflower],
