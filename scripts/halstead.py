@@ -98,7 +98,7 @@ class KotlinHalsteadAnalyzer:
         'try', 'catch', 'finally', 'throw', 'in', 'is', 'as', 'typeof', 'val', 'var',
         'fun', 'class', 'interface', 'object', 'enum', 'data', 'sealed', 'inner',
         'open', 'abstract', 'override', 'private', 'public', 'internal', 'protected',
-        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by'
+        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by', 'shl', 'shr', 'ushr', 'and', 'or', 'xor', 'inv'
     ]
     
     def __init__(self):
