@@ -109,54 +109,55 @@ class KotlinHalsteadAnalyzer:
         """Analyze Kotlin code and return Halstead metrics"""
         self.operators = []
         self.operands = []
-        
-        # Remove comments and strings to avoid false matches
-        code = self._remove_comments_and_strings(code)
-        
-        # Tokenize the code
-        tokens = self._tokenize(code)
-        
-        # Classify tokens
-        for token in tokens:
+
+        code = self._strip_comments(code)
+
+        for token in self._tokenize(code):
             if self._is_operator(token):
                 self.operators.append(token)
             elif self._is_operand(token):
                 self.operands.append(token)
-        
+
         return HalsteadMetrics(self.operators, self.operands)
-    
-    def _remove_comments_and_strings(self, code: str) -> str:
-        """Remove comments and string literals from code"""
-        # Remove multi-line comments
+
+    def _strip_comments(self, code: str) -> str:
+        """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
-        # Remove single-line comments
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
-        # Remove string literals (both single and double quoted)
-        code = re.sub(r'"(?:[^"\\]|\\.)*"', ' STRING ', code)
-        code = re.sub(r"'(?:[^'\\]|\\.)*'", ' STRING ', code)
-        # Remove raw strings
-        code = re.sub(r'""".*?"""', ' STRING ', code, flags=re.DOTALL)
         return code
-    
+
     def _tokenize(self, code: str) -> List[str]:
-        """Tokenize Kotlin code"""
+        """Tokenize Kotlin code, yielding raw string contents as operand tokens"""
         tokens = []
-        
-        # Pattern for identifiers, numbers, and operators
-        pattern = r'\b\w+\b|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'
-        
-        for match in re.finditer(pattern, code):
+
+        # Order matters: triple-quoted strings before single-quoted chars before
+        # regular double-quoted strings, so the longer patterns win.
+        # Each string alternative captures the full literal including quotes so
+        # its raw text (quotes and all) becomes the token — identical strings
+        # therefore deduplicate naturally when counting unique operands.
+        pattern = (
+            r'""".*?"""'                  # triple-quoted (raw) string
+            r"|'(?:[^'\\]|\\.)*'"         # character literal
+            r'|"(?:[^"\\]|\\.)*"'         # regular string
+            r'|\b\w+\b'                   # identifiers, keywords, numbers
+            r'|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'  # symbol runs
+        )
+
+        for match in re.finditer(pattern, code, re.DOTALL):
             token = match.group()
-            
-            # Split compound operators if needed
+
+            # String literals: keep as-is and hand straight to the classifier
+            if token.startswith(('"', "'")):
+                tokens.append(token)
+                continue
+
+            # Symbol run: split into individual/compound operators
             if not token.isalnum() and not token.startswith('_'):
-                # Check for multi-character operators
                 i = 0
                 while i < len(token):
                     matched = False
-                    # Try to match longest operator first
                     for op_len in range(min(3, len(token) - i), 0, -1):
-                        potential_op = token[i:i+op_len]
+                        potential_op = token[i:i + op_len]
                         if potential_op in self.OPERATORS:
                             tokens.append(potential_op)
                             i += op_len
@@ -168,7 +169,7 @@ class KotlinHalsteadAnalyzer:
                         i += 1
             else:
                 tokens.append(token)
-        
+
         return tokens
     
     def _is_operator(self, token: str) -> bool:
@@ -177,17 +178,20 @@ class KotlinHalsteadAnalyzer:
     
     def _is_operand(self, token: str) -> bool:
         """Check if token is an operand"""
-        # Check if it's a keyword operator
+        # String literals (kept verbatim from source, including quotes)
+        if token.startswith(('"', "'")):
+            return True
+
+        # Keyword operators are not operands
         if token in self.KEYWORD_OPERATORS:
             return False
-        
-        # Check if it's a symbol operator
+
+        # Symbol operators are not operands
         if token in self.OPERATORS:
             return False
-        
-        # Check if it's an identifier (starts with letter or underscore)
+
+        # Identifiers (variables, function names, type names, etc.)
         if re.match(r'^[a-zA-Z_]\w*$', token):
-            # Exclude Kotlin keywords that aren't operators
             kotlin_keywords = {
                 'abstract', 'annotation', 'by', 'class', 'companion', 'const',
                 'constructor', 'crossinline', 'data', 'delegate', 'enum', 'external',
@@ -195,15 +199,14 @@ class KotlinHalsteadAnalyzer:
                 'interface', 'internal', 'lateinit', 'noinline', 'object', 'open',
                 'operator', 'out', 'override', 'package', 'param', 'private', 'property',
                 'protected', 'public', 'receiver', 'reified', 'sealed', 'set', 'setparam',
-                'suspend', 'tailrec', 'val', 'var', 'vararg', 'where', 'STRING'
+                'suspend', 'tailrec', 'val', 'var', 'vararg', 'where'
             }
-            if token not in kotlin_keywords:
-                return True
-        
-        # Check if it's a number literal
+            return token not in kotlin_keywords
+
+        # Numeric literals
         if re.match(r'^\d+\.?\d*[fFdDlL]?$', token):
             return True
-        
+
         return False
 
 
@@ -239,53 +242,52 @@ class SwiftHalsteadAnalyzer:
         """Analyze Swift code and return Halstead metrics"""
         self.operators = []
         self.operands = []
-        
-        # Remove comments and strings to avoid false matches
-        code = self._remove_comments_and_strings(code)
-        
-        # Tokenize the code
-        tokens = self._tokenize(code)
-        
-        # Classify tokens
-        for token in tokens:
+
+        code = self._strip_comments(code)
+
+        for token in self._tokenize(code):
             if self._is_operator(token):
                 self.operators.append(token)
             elif self._is_operand(token):
                 self.operands.append(token)
-        
+
         return HalsteadMetrics(self.operators, self.operands)
-    
-    def _remove_comments_and_strings(self, code: str) -> str:
-        """Remove comments and string literals from code"""
-        # Remove multi-line comments
+
+    def _strip_comments(self, code: str) -> str:
+        """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
-        # Remove single-line comments
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
-        # Remove string literals (both single and double quoted)
-        code = re.sub(r'"(?:[^"\\]|\\.)*"', ' STRING ', code)
-        # Remove multi-line strings
-        code = re.sub(r'""".*?"""', ' STRING ', code, flags=re.DOTALL)
         return code
-    
+
     def _tokenize(self, code: str) -> List[str]:
-        """Tokenize Swift code"""
+        """Tokenize Swift code, yielding raw string contents as operand tokens"""
         tokens = []
-        
-        # Pattern for identifiers, numbers, and operators
-        pattern = r'\b\w+\b|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'
-        
-        for match in re.finditer(pattern, code):
+
+        # Triple-quoted strings must come before regular strings so the longer
+        # pattern wins. Raw string contents (quotes included) become the token,
+        # so identical strings deduplicate naturally when counting unique operands.
+        pattern = (
+            r'""".*?"""'                  # multi-line string
+            r'|"(?:[^"\\]|\\.)*"'         # regular string
+            r'|\b\w+\b'                   # identifiers, keywords, numbers
+            r'|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'  # symbol runs
+        )
+
+        for match in re.finditer(pattern, code, re.DOTALL):
             token = match.group()
-            
-            # Split compound operators if needed
+
+            # String literals: keep as-is and hand straight to the classifier
+            if token.startswith('"'):
+                tokens.append(token)
+                continue
+
+            # Symbol run: split into individual/compound operators
             if not token.isalnum() and not token.startswith('_'):
-                # Check for multi-character operators
                 i = 0
                 while i < len(token):
                     matched = False
-                    # Try to match longest operator first
                     for op_len in range(min(3, len(token) - i), 0, -1):
-                        potential_op = token[i:i+op_len]
+                        potential_op = token[i:i + op_len]
                         if potential_op in self.OPERATORS:
                             tokens.append(potential_op)
                             i += op_len
@@ -297,7 +299,7 @@ class SwiftHalsteadAnalyzer:
                         i += 1
             else:
                 tokens.append(token)
-        
+
         return tokens
     
     def _is_operator(self, token: str) -> bool:
@@ -306,17 +308,20 @@ class SwiftHalsteadAnalyzer:
     
     def _is_operand(self, token: str) -> bool:
         """Check if token is an operand"""
-        # Check if it's a keyword operator
+        # String literals (kept verbatim from source, including quotes)
+        if token.startswith('"'):
+            return True
+
+        # Keyword operators are not operands
         if token in self.KEYWORD_OPERATORS:
             return False
-        
-        # Check if it's a symbol operator
+
+        # Symbol operators are not operands
         if token in self.OPERATORS:
             return False
-        
-        # Check if it's an identifier (starts with letter or underscore)
+
+        # Identifiers (variables, function names, type names, etc.)
         if re.match(r'^[a-zA-Z_]\w*$', token):
-            # Exclude Swift keywords that aren't operators
             swift_keywords = {
                 'associatedtype', 'class', 'deinit', 'enum', 'extension', 'func',
                 'import', 'init', 'inout', 'internal', 'let', 'operator', 'private',
@@ -324,15 +329,14 @@ class SwiftHalsteadAnalyzer:
                 'var', 'fileprivate', 'open', 'defer', 'do', 'catch', 'throws',
                 'rethrows', 'indirect', 'lazy', 'mutating', 'nonmutating', 'optional',
                 'override', 'required', 'weak', 'unowned', 'final', 'dynamic',
-                'convenience', 'Any', 'Self', 'STRING'
+                'convenience', 'Any', 'Self'
             }
-            if token not in swift_keywords:
-                return True
-        
-        # Check if it's a number literal
+            return token not in swift_keywords
+
+        # Numeric literals
         if re.match(r'^\d+\.?\d*$', token):
             return True
-        
+
         return False
 
 
