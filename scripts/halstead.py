@@ -89,7 +89,7 @@ class KotlinHalsteadAnalyzer:
         '+=', '-=', '*=', '/=', '%=', '!!', '?.', '?:', '..', '..<', '->', '::',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', ';', '[', ']'
+        '?', ':', ';'
     ]
     
     # Kotlin keywords that act as operators
@@ -98,7 +98,8 @@ class KotlinHalsteadAnalyzer:
         'try', 'catch', 'finally', 'throw', 'in', 'is', 'as', 'typeof', 'val', 'var',
         'fun', 'class', 'interface', 'object', 'enum', 'data', 'sealed', 'inner',
         'open', 'abstract', 'override', 'private', 'public', 'internal', 'protected',
-        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by', 'shl', 'shr', 'ushr', 'and', 'or', 'xor', 'inv'
+        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by', 'shl', 
+        'shr', 'ushr', 'and', 'or', 'xor', 'inv', '!in', '!is'
     ]
     
     def __init__(self):
@@ -221,7 +222,7 @@ class SwiftHalsteadAnalyzer:
         '.!', '.<', '.<=', '.>', '.>=', '.==', '.!=', '.&&', '.||', '.^', '.&=', '.|=', '.^=',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', '.', ';', '[', ']' #TODO [] when this counts and not and "."
+        '?', ':', '.', ';'
     ]
     
     # Swift keywords that act as operators
@@ -231,7 +232,9 @@ class SwiftHalsteadAnalyzer:
         'in', 'is', 'as', 'as?', 'as!', 'self', 'super', 'nil', 'true', 'false', 'inout',
         'let', 'var', 'func', 'class', 'struct', 'enum', 'protocol', 'extension', 'import',
         'init', 'deinit', 'static', 'subscript', 'typealias', 'operator', 'precedencegroup',
-        'public', 'private', 'internal', 'fileprivate', 'open'
+        'public', 'private', 'internal', 'fileprivate', 'open', '#available', 
+        '#colorLiteral', '#else', '#elseif', '#endif', '#fileLiteral', '#if', 
+        '#imageLiteral', '#keyPath', '#selector', '#sourceLocation', '#unavailable'
     ]
     
     def __init__(self):
