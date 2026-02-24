@@ -200,33 +200,49 @@ def api_get(url: str, params: dict = None) -> Optional[dict]:
             return None
 
 
-def get_tree(owner: str, repo: str) -> list[dict]:
-    """Retrieve the full file tree for the default branch."""
-    repo_data = api_get(f"https://api.github.com/repos/{owner}/{repo}")
-    if not repo_data:
-        return []
-    default_branch = repo_data.get("default_branch", "main")
+def get_tree(owner: str, repo: str, ref: Optional[str] = None) -> list[dict]:
+    """Retrieve the full file tree for a branch, commit SHA, or tag.
+
+    If ref is None, falls back to the repo's default branch.
+    ref can be a branch name, a full/short commit SHA, or a tag name.
+    """
+    if ref is None:
+        repo_data = api_get(f"https://api.github.com/repos/{owner}/{repo}")
+        if not repo_data:
+            return []
+        ref = repo_data.get("default_branch", "main")
 
     tree_data = api_get(
-        f"https://api.github.com/repos/{owner}/{repo}/git/trees/{default_branch}",
+        f"https://api.github.com/repos/{owner}/{repo}/git/trees/{ref}",
         params={"recursive": "1"},
     )
     if not tree_data:
         return []
     if tree_data.get("truncated"):
-        logger.warning(f"Tree truncated for {owner}/{repo} — large repo, some files may be missed.")
+        logger.warning(f"Tree truncated for {owner}/{repo}@{ref} — large repo, some files may be missed.")
     return [item for item in tree_data.get("tree", []) if item["type"] == "blob"]
 
 
-def get_file_content(owner: str, repo: str, path: str) -> Optional[str]:
-    """Fetch and decode file content (text files only, skip large blobs)."""
-    data = api_get(f"https://api.github.com/repos/{owner}/{repo}/contents/{path}")
-    if not data or data.get("encoding") != "base64":
+def get_file_content_by_sha(owner: str, repo: str, sha: str) -> Optional[str]:
+    """Fetch and decode file content using the blob SHA from the tree.
+
+    Using the blob SHA (rather than the Contents API path) means:
+      - No 404s for files that only exist on a non-default branch
+      - Slightly faster — no branch/path resolution step
+    """
+    data = api_get(f"https://api.github.com/repos/{owner}/{repo}/git/blobs/{sha}")
+    if not data:
         return None
+    encoding = data.get("encoding")
+    raw = data.get("content", "")
     try:
-        return base64.b64decode(data["content"]).decode("utf-8", errors="replace")
+        if encoding == "base64":
+            return base64.b64decode(raw).decode("utf-8", errors="replace")
+        elif encoding == "utf-8":
+            return raw
     except Exception:
         return None
+    return None
 
 # ──────────────────────────────────────────────
 # DETECTION LOGIC
@@ -270,14 +286,15 @@ def classify_swift_file(content: str) -> tuple[str, list[str]]:
 # MAIN MINING LOGIC
 # ──────────────────────────────────────────────
 
-def mine_repo(owner: str, repo: str) -> list[FileResult]:
+def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResult]:
     full_name = f"{owner}/{repo}"
-    logger.info(f"Mining: {full_name}")
+    label = f"{full_name}@{ref}" if ref else full_name
+    logger.info(f"Mining: {label}")
     results = []
 
-    tree = get_tree(owner, repo)
+    tree = get_tree(owner, repo, ref)
     if not tree:
-        logger.warning(f"No files found for {full_name}")
+        logger.warning(f"No files found for {label}")
         return results
 
     candidates = []
@@ -290,14 +307,18 @@ def mine_repo(owner: str, repo: str) -> list[FileResult]:
     if MAX_FILES_PER_REPO is not None:
         candidates = candidates[:MAX_FILES_PER_REPO]
 
-    logger.info(f"  {len(candidates)} candidate files to scan in {full_name}")
+    logger.info(f"  {len(candidates)} candidate files to scan in {label}")
+
+    # Use the ref in the GitHub URL so links point to the right branch/commit
+    url_ref = ref or "HEAD"
 
     for item in candidates:
         path = item["path"]
+        sha = item["sha"]
         _, ext = os.path.splitext(path.lower())
-        html_url = f"https://github.com/{full_name}/blob/HEAD/{path}"
+        html_url = f"https://github.com/{full_name}/blob/{url_ref}/{path}"
 
-        content = get_file_content(owner, repo, path)
+        content = get_file_content_by_sha(owner, repo, sha)
         if content is None:
             continue
 
@@ -317,7 +338,7 @@ def mine_repo(owner: str, repo: str) -> list[FileResult]:
             continue  # skip unclassified files
 
         results.append(FileResult(
-            repo=full_name,
+            repo=label,          # includes @ref so CSV is unambiguous
             file_path=path,
             language=language,
             framework=framework,
@@ -326,7 +347,7 @@ def mine_repo(owner: str, repo: str) -> list[FileResult]:
         ))
         logger.info(f"    ✓ [{framework}] {path}")
 
-    logger.info(f"  Done. {len(results)} relevant files found in {full_name}.")
+    logger.info(f"  Done. {len(results)} relevant files found in {label}.")
     return results
 
 
@@ -358,15 +379,24 @@ def main():
     all_results: list[FileResult] = []
 
     for repo_str in REPOS:
+        repo_str = repo_str.strip()
+
+        # Parse optional @ref suffix — works for branches, tags, and commit SHAs
+        # e.g. "android/sunflower@views"  or  "android/sunflower@abc1234"
+        ref = None
+        if "@" in repo_str:
+            repo_str, ref = repo_str.split("@", 1)
+
         if "/" not in repo_str:
-            logger.error(f"Invalid repo format (expected 'owner/repo'): {repo_str}")
+            logger.error(f"Invalid repo format (expected 'owner/repo' or 'owner/repo@ref'): {repo_str}")
             continue
-        owner, repo = repo_str.strip().split("/", 1)
+
+        owner, repo = repo_str.split("/", 1)
         try:
-            results = mine_repo(owner, repo)
+            results = mine_repo(owner, repo, ref)
             all_results.extend(results)
         except Exception as e:
-            logger.error(f"Failed to mine {repo_str}: {e}")
+            logger.error(f"Failed to mine {repo_str}@{ref or 'default'}: {e}")
 
     if all_results:
         save_csv(all_results, OUTPUT_CSV)
