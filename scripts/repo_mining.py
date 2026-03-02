@@ -31,6 +31,7 @@ MAX_FILES_PER_REPO: Optional[int] = 500
 REQUEST_DELAY = 0.3
 
 KOTLIN_EXTENSIONS = {".kt", ".kts"}
+STORYBOARD_EXTENSIONS = {".storyboard", ".xib"}
 XML_EXTENSIONS = {".xml"}
 SWIFT_EXTENSIONS = {".swift"}
 
@@ -152,6 +153,18 @@ UIKIT_KEYWORDS = [
     "NSLayoutConstraint",
     "autoresizingMask",
 ]
+
+STORYBOARD_KEYWORDS = [
+    "<viewController",
+    "<tableView",
+    "<collectionView",
+    "<label",
+    "<button",
+    "<imageView",
+    "<constraints>",
+    "<connections>",
+    "customClass=",
+    ]
 
 # ──────────────────────────────────────────────
 # DATA MODEL
@@ -282,6 +295,12 @@ def classify_swift_file(content: str) -> tuple[str, list[str]]:
         return "UIKit", uikit_hits
     return "Unknown", []
 
+def classify_storyboard_file(content: str) -> tuple[str, list[str]]:
+    storyboard_hits = detect_keywords(content, STORYBOARD_KEYWORDS)
+    if storyboard_hits:
+        return "UIKit (Storyboard/XIB)", storyboard_hits
+    return "Unknown", []
+
 # ──────────────────────────────────────────────
 # MAIN MINING LOGIC
 # ──────────────────────────────────────────────
@@ -301,7 +320,7 @@ def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResu
     for item in tree:
         path = item["path"]
         _, ext = os.path.splitext(path.lower())
-        if ext in KOTLIN_EXTENSIONS | XML_EXTENSIONS | SWIFT_EXTENSIONS:
+        if ext in KOTLIN_EXTENSIONS | XML_EXTENSIONS | SWIFT_EXTENSIONS | STORYBOARD_EXTENSIONS:
             candidates.append(item)
 
     if MAX_FILES_PER_REPO is not None:
@@ -331,6 +350,9 @@ def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResu
         elif ext in SWIFT_EXTENSIONS:
             framework, keywords = classify_swift_file(content)
             language = "Swift"
+        elif ext in STORYBOARD_EXTENSIONS:
+            framework, keywords = classify_storyboard_file(content)
+            language = "Storyboard/xib"
         else:
             continue
 
