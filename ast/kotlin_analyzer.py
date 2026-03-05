@@ -1,11 +1,9 @@
 from tree_sitter import Language, Parser
+from tree_sitter_kotlin import language as kotlin_language
 from dataclasses import dataclass, field
 from typing import List, Tuple
 
-KOTLIN_LANGUAGE = Language('build/my-languages.so', 'kotlin')
-
-parser = Parser()
-parser.set_language(KOTLIN_LANGUAGE)
+parser = Parser(Language(kotlin_language()))
 
 @dataclass
 class StateMetrics:
@@ -18,7 +16,25 @@ class StateMetrics:
     observable_var_names: List[str] = field(default_factory=list)
     state_update_lines: List[Tuple[int, str]] = field(default_factory=list)
 
-def parse_kotlin_file(file_path: str):
+OBSERVABLE_PATTERNS = [
+    'mutableStateOf', 'MutableState', 'LiveData',
+    'MutableLiveData', 'StateFlow', 'MutableStateFlow',
+    'SharedFlow', 'MutableSharedFlow',
+    'mutableStateListOf', 'mutableStateMapOf',
+]
+
+REACTIVE_CALL_PATTERNS = [
+    '.postValue(', '.emit(', '.tryEmit(',
+    '.setValue(', '.toggle(',
+]
+
+COLLECTION_CALL_PATTERNS = [
+    '.add(', '.addAll(', '.remove(', '.removeAt(', '.removeAll(',
+    '.clear(', '.put(', '.putAll(', '.append(', '.insert(',
+    '.replaceSubrange(', '.sort(', '.shuffle(',
+]
+
+def parse_file(file_path: str):
     with open(file_path, 'r', encoding='utf-8') as f:
         code = f.read().encode()
     tree = parser.parse(code)
@@ -28,7 +44,6 @@ def get_text(node, code_bytes: bytes) -> str:
     return code_bytes[node.start_byte:node.end_byte].decode('utf-8')
 
 def first_child_of_type(node, *types):
-    """Return the first direct child whose type is in `types`, or None."""
     for child in node.children:
         if child.type in types:
             return child
@@ -36,22 +51,24 @@ def first_child_of_type(node, *types):
 
 def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
 
-    # === PROPERTY DECLARATIONS (top-level and class-level) ===
+    # === PROPERTY DECLARATIONS ===
+    # AST structure (both top-level and local):
+    #   [property_declaration]
+    #     [var] or [val]          <- direct child token
+    #     [variable_declaration]
+    #       [identifier]          <- variable name
+    #     [=]
+    #     <initializer>
+    #   or with delegate:
+    #     [property_delegate]
+    #       [by]
+    #       [call_expression]
     if node.type == 'property_declaration':
-        # var/val lives inside a binding_pattern_kind node as its first child
-        # e.g. [binding_pattern_kind] -> [var] or [val]
-        bpk = first_child_of_type(node, 'binding_pattern_kind')
-        keyword = None
-        if bpk:
-            kw_node = first_child_of_type(bpk, 'var', 'val')
-            if kw_node:
-                keyword = kw_node.type  # literally 'var' or 'val'
+        kw_node = first_child_of_type(node, 'var', 'val')
+        keyword = kw_node.type if kw_node else None
 
-        # The name lives in variable_declaration -> simple_identifier
         var_decl = first_child_of_type(node, 'variable_declaration')
-        name_node = None
-        if var_decl:
-            name_node = first_child_of_type(var_decl, 'simple_identifier')
+        name_node = first_child_of_type(var_decl, 'identifier') if var_decl else None
 
         if keyword and name_node:
             var_name = get_text(name_node, code_bytes)
@@ -63,22 +80,14 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
                 metrics.immutable_vars += 1
                 metrics.immutable_var_names.append(var_name)
 
-            observable_patterns = [
-                'mutableStateOf', 'MutableState', 'LiveData',
-                'MutableLiveData', 'StateFlow', 'MutableStateFlow',
-                'SharedFlow', 'MutableSharedFlow',
-                'mutableStateListOf', 'mutableStateMapOf',
-            ]
-
-            # Check initializer: everything after the `=` token
+            # Check initializer (child after `=`)
             eq_seen = False
             for child in node.children:
                 if child.type == '=':
                     eq_seen = True
                     continue
                 if eq_seen:
-                    value_text = get_text(child, code_bytes)
-                    if any(pat in value_text for pat in observable_patterns):
+                    if any(p in get_text(child, code_bytes) for p in OBSERVABLE_PATTERNS):
                         metrics.observable_state_vars += 1
                         metrics.observable_var_names.append(var_name)
                     break
@@ -86,98 +95,42 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
             # Check delegate: `var x by mutableStateOf(...)`
             delegate = first_child_of_type(node, 'property_delegate')
             if delegate:
-                delegate_text = get_text(delegate, code_bytes)
-                if any(pat in delegate_text for pat in observable_patterns):
+                if any(p in get_text(delegate, code_bytes) for p in OBSERVABLE_PATTERNS):
                     metrics.observable_state_vars += 1
                     if var_name not in metrics.observable_var_names:
                         metrics.observable_var_names.append(var_name)
 
-    # === LOCAL VARIABLE DECLARATIONS (inside functions) ===
-    elif node.type == 'local_variable_declaration':
-        bpk = first_child_of_type(node, 'binding_pattern_kind')
-        keyword = None
-        if bpk:
-            kw_node = first_child_of_type(bpk, 'var', 'val')
-            if kw_node:
-                keyword = kw_node.type
-
-        var_decl = first_child_of_type(node, 'variable_declaration')
-        name_node = None
-        if var_decl:
-            name_node = first_child_of_type(var_decl, 'simple_identifier')
-
-        if keyword and name_node:
-            var_name = get_text(name_node, code_bytes)
-
-            if keyword == 'var':
-                metrics.mutable_vars += 1
-                metrics.mutable_var_names.append(var_name)
-            else:
-                metrics.immutable_vars += 1
-                metrics.immutable_var_names.append(var_name)
-
-            observable_patterns = [
-                'mutableStateOf', 'MutableState', 'LiveData',
-                'MutableLiveData', 'StateFlow', 'MutableStateFlow',
-                'SharedFlow', 'MutableSharedFlow',
-                'mutableStateListOf', 'mutableStateMapOf',
-            ]
-
-            eq_seen = False
-            for child in node.children:
-                if child.type == '=':
-                    eq_seen = True
-                    continue
-                if eq_seen:
-                    value_text = get_text(child, code_bytes)
-                    if any(pat in value_text for pat in observable_patterns):
-                        metrics.observable_state_vars += 1
-                        metrics.observable_var_names.append(var_name)
-                    break
-
     # === ASSIGNMENTS ===
+    # AST structure:
+    #   [assignment]
+    #     [identifier]  <- LHS (may be `name` or `name.field`)
+    #     [=]
+    #     <rhs>
     elif node.type == 'assignment':
         start_line = node.start_point[0] + 1
         node_text = get_text(node, code_bytes)
 
-        # LHS is the first child: [directly_assignable_expression] -> [simple_identifier]
         lhs_node = node.children[0] if node.children else None
         if lhs_node:
             lhs_text = get_text(lhs_node, code_bytes)
             all_tracked = set(metrics.mutable_var_names + metrics.observable_var_names)
-            # Match plain name or member access like `state.value`
-            matched = any(
-                lhs_text == name or lhs_text.startswith(name + '.')
-                for name in all_tracked
-            )
-            if matched:
+            if any(lhs_text == n or lhs_text.startswith(n + '.') for n in all_tracked):
                 metrics.state_updates += 1
                 metrics.state_update_lines.append((start_line, node_text))
 
-    # === REACTIVE METHOD CALLS ===
+    # === REACTIVE / MUTATING CALL EXPRESSIONS ===
     elif node.type == 'call_expression':
         start_line = node.start_point[0] + 1
         call_text = get_text(node, code_bytes)
-
-        reactive_methods = [
-            '.postValue(', '.emit(', '.tryEmit(',
-            '.setValue(', '.toggle(',
-        ]
-        collection_methods = [
-            '.add(', '.addAll(', '.remove(', '.removeAt(', '.removeAll(',
-            '.clear(', '.put(', '.putAll(', '.append(', '.insert(',
-            '.replaceSubrange(', '.sort(', '.shuffle(',
-        ]
-        if any(m in call_text for m in reactive_methods + collection_methods):
+        if any(m in call_text for m in REACTIVE_CALL_PATTERNS + COLLECTION_CALL_PATTERNS):
             metrics.state_updates += 1
             metrics.state_update_lines.append((start_line, call_text))
 
-    # Recurse
     for child in node.children:
         walk_ast(child, code_bytes, metrics)
 
-def analyze_kotlin_file(file_path: str) -> StateMetrics:
-    root_node, code_bytes = parse_kotlin_file(file_path)
+def analyze_file(file_path: str) -> StateMetrics:
+    root_node, code_bytes = parse_file(file_path)
     metrics = StateMetrics()
     walk_ast(root_node, code_bytes, metrics)
     return metrics
@@ -188,8 +141,7 @@ if __name__ == '__main__':
         print("Usage: python kotlin_analyzer.py <Kotlin file>")
         sys.exit(1)
 
-    file_path = sys.argv[1]
-    metrics = analyze_kotlin_file(file_path)
+    metrics = analyze_file(sys.argv[1])
 
     print("Mutable vars:          ", metrics.mutable_vars)
     print("Immutable vars:        ", metrics.immutable_vars)

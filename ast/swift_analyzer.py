@@ -1,19 +1,9 @@
 from tree_sitter import Language, Parser
+from tree_sitter_swift import language as swift_language
 from dataclasses import dataclass, field
 from typing import List, Tuple
 
-SWIFT_LANGUAGE = Language('build/my-languages.so', 'swift')
-
-parser = Parser()
-parser.set_language(SWIFT_LANGUAGE)
-
-# ── Debug helper ────────────────────────────────────────────────────────────
-# If you get 0s on everything, run this first to see the real node types:
-#
-#   python3 debug_swift.py your_file.swift
-#
-# A ready-made debug script is at the bottom of this file (see __main__).
-# ────────────────────────────────────────────────────────────────────────────
+parser = Parser(Language(swift_language()))
 
 @dataclass
 class StateMetrics:
@@ -26,17 +16,30 @@ class StateMetrics:
     observable_var_names: List[str] = field(default_factory=list)
     state_update_lines: List[Tuple[int, str]] = field(default_factory=list)
 
+OBSERVABLE_PATTERNS = [
+    # SwiftUI property wrappers
+    '@State', '@StateObject', '@ObservedObject', '@Published',
+    '@Binding', '@EnvironmentObject', '@Environment',
+    # Swift 5.9 macro
+    '@Observable',
+    # Combine
+    'CurrentValueSubject', 'PassthroughSubject',
+]
 
-def parse_swift_file(file_path: str):
+REACTIVE_CALL_PATTERNS = [
+    '.send(', '.toggle(', '.append(', '.remove(',
+    '.insert(', '.removeAll(', '.removeFirst(', '.removeLast(',
+    '.sort(', '.shuffle(', '.reverse(', '.popLast(',
+]
+
+def parse_file(file_path: str):
     with open(file_path, 'r', encoding='utf-8') as f:
         code = f.read().encode()
     tree = parser.parse(code)
     return tree.root_node, code
 
-
 def get_text(node, code_bytes: bytes) -> str:
     return code_bytes[node.start_byte:node.end_byte].decode('utf-8')
-
 
 def first_child_of_type(node, *types):
     for child in node.children:
@@ -44,52 +47,78 @@ def first_child_of_type(node, *types):
             return child
     return None
 
-
-def all_children_of_type(node, *types):
-    return [c for c in node.children if c.type in types]
-
-
-# Observable / reactive patterns used in Swift / SwiftUI / Combine
-OBSERVABLE_PATTERNS = [
-    # SwiftUI property wrappers (source text will contain the wrapper name)
-    '@State', '@StateObject', '@ObservedObject', '@Published',
-    '@Binding', '@EnvironmentObject', '@Environment',
-    # Combine
-    'CurrentValueSubject', 'PassthroughSubject',
-    # ObservableObject / @Observable (Swift 5.9 macro)
-    '@Observable',
-    # Common reactive helpers
-    'MutableLiveData', 'LiveData',
-]
-
-REACTIVE_CALL_PATTERNS = [
-    '.send(', '.value =', '.toggle(', '.append(', '.remove(',
-    '.insert(', '.removeAll(', '.removeFirst(', '.removeLast(',
-    '.sort(', '.shuffle(', '.reverse(',
-]
-
-
 def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
-    """Recursively walk the Swift AST and collect state metrics.
 
-    The tree-sitter-swift grammar uses these key node types:
-      property_declaration  – stored properties (var / let at class/struct level)
-      value_binding_pattern – contains the 'var' or 'let' keyword
-      pattern              – holds the identifier (variable name)
-      local_variable_declaration / variable_declaration – inside function bodies
-      assignment           – `a = b` or `a.field = b`
-      call_expression      – function / method calls
-    """
-
-    # ── STORED PROPERTIES (class / struct / extension body) ─────────────────
+    # === PROPERTY DECLARATIONS ===
+    # AST structure (from actual dump of fibonacci.swift):
+    #   [property_declaration]
+    #     [value_binding_pattern]   <- wraps the var/let keyword
+    #       [var] or [let]
+    #     [pattern]                 <- holds the variable name
+    #       [simple_identifier]
+    #     [=]
+    #     <initializer>
+    #
+    # Attributes like @State appear as [attribute] siblings before
+    # value_binding_pattern, so the full node text captures them.
     if node.type == 'property_declaration':
-        _handle_property(node, code_bytes, metrics)
+        # var/let is nested inside value_binding_pattern
+        vbp = first_child_of_type(node, 'value_binding_pattern')
+        keyword = None
+        if vbp:
+            kw = first_child_of_type(vbp, 'var', 'let')
+            if kw:
+                keyword = kw.type
 
-    # ── LOCAL VARIABLE DECLARATIONS (inside function bodies) ────────────────
-    elif node.type in ('local_variable_declaration', 'variable_declaration'):
-        _handle_property(node, code_bytes, metrics)
+        # Name is inside pattern → simple_identifier
+        pattern = first_child_of_type(node, 'pattern')
+        name_node = first_child_of_type(pattern, 'simple_identifier') if pattern else None
 
-    # ── ASSIGNMENTS ──────────────────────────────────────────────────────────
+        # Skip computed properties (e.g. `var body: some View { ... }`).
+        # They have a code_block child instead of an `=` initializer.
+        # We still recurse into them so assignments inside are detected.
+        has_code_block = any(child.type in ('code_block', 'computed_property') for child in node.children)
+        if has_code_block:
+            for child in node.children:
+                walk_ast(child, code_bytes, metrics)
+            return
+
+        if keyword and name_node:
+            var_name = get_text(name_node, code_bytes)
+
+            if keyword == 'var':
+                metrics.mutable_vars += 1
+                metrics.mutable_var_names.append(var_name)
+            else:
+                metrics.immutable_vars += 1
+                metrics.immutable_var_names.append(var_name)
+
+            # The full declaration text includes any @State/@Published etc.
+            # attributes that appear as sibling nodes before value_binding_pattern
+            full_text = get_text(node, code_bytes)
+
+            # Also grab initializer text (child after `=`)
+            init_text = ''
+            eq_seen = False
+            for child in node.children:
+                if child.type == '=':
+                    eq_seen = True
+                    continue
+                if eq_seen:
+                    init_text = get_text(child, code_bytes)
+                    break
+
+            if any(p in full_text + init_text for p in OBSERVABLE_PATTERNS):
+                metrics.observable_state_vars += 1
+                metrics.observable_var_names.append(var_name)
+
+    # === ASSIGNMENTS ===
+    # AST structure (from actual dump):
+    #   [assignment]
+    #     [directly_assignable_expression]  <- LHS (may wrap a tuple or member)
+    #       [simple_identifier] or [tuple_expression] etc.
+    #     [=]
+    #     <rhs>
     elif node.type == 'assignment':
         start_line = node.start_point[0] + 1
         node_text = get_text(node, code_bytes)
@@ -98,142 +127,34 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
         if lhs_node:
             lhs_text = get_text(lhs_node, code_bytes)
             all_tracked = set(metrics.mutable_var_names + metrics.observable_var_names)
-            matched = any(
-                lhs_text == name or lhs_text.startswith(name + '.')
-                for name in all_tracked
-            )
-            if matched:
+            if any(lhs_text == n or lhs_text.startswith(n + '.') for n in all_tracked):
                 metrics.state_updates += 1
                 metrics.state_update_lines.append((start_line, node_text))
 
-    # ── REACTIVE / MUTATING METHOD CALLS ────────────────────────────────────
+    # === REACTIVE / MUTATING CALL EXPRESSIONS ===
     elif node.type == 'call_expression':
         start_line = node.start_point[0] + 1
         call_text = get_text(node, code_bytes)
-        if any(pat in call_text for pat in REACTIVE_CALL_PATTERNS):
+        if any(m in call_text for m in REACTIVE_CALL_PATTERNS):
             metrics.state_updates += 1
             metrics.state_update_lines.append((start_line, call_text))
 
-    # Recurse
     for child in node.children:
         walk_ast(child, code_bytes, metrics)
 
-
-def _handle_property(node, code_bytes: bytes, metrics: StateMetrics):
-    """Extract mutability, name, and observable status from a (local) variable
-    declaration node.
-
-    The tree-sitter-swift grammar wraps var/let inside a
-    `value_binding_pattern` node whose first child is the keyword token.
-    The variable name lives in a `pattern` → `simple_identifier` subtree, or
-    sometimes directly as a `simple_identifier` child of the declaration.
-    """
-
-    # ── 1. Find var / let keyword ────────────────────────────────────────────
-    keyword = None
-
-    # Preferred path: value_binding_pattern → (var|let)
-    vbp = first_child_of_type(node, 'value_binding_pattern')
-    if vbp:
-        kw = first_child_of_type(vbp, 'var', 'let')
-        if kw:
-            keyword = kw.type
-    # Fallback: keyword is a direct child of the declaration node
-    if keyword is None:
-        kw = first_child_of_type(node, 'var', 'let')
-        if kw:
-            keyword = kw.type
-
-    if keyword is None:
-        return  # not a var/let declaration we recognise
-
-    # ── 2. Find variable name ────────────────────────────────────────────────
-    var_name = None
-
-    # Walk looking for pattern → simple_identifier, or bare simple_identifier
-    for child in node.children:
-        if child.type == 'pattern':
-            si = first_child_of_type(child, 'simple_identifier')
-            if si:
-                var_name = get_text(si, code_bytes)
-                break
-        if child.type == 'simple_identifier' and var_name is None:
-            var_name = get_text(child, code_bytes)
-
-    if var_name is None:
-        return
-
-    # ── 3. Record mutability ─────────────────────────────────────────────────
-    if keyword == 'var':
-        metrics.mutable_vars += 1
-        metrics.mutable_var_names.append(var_name)
-    else:
-        metrics.immutable_vars += 1
-        metrics.immutable_var_names.append(var_name)
-
-    # ── 4. Check for observable / reactive annotations / initializers ────────
-    # The full declaration text includes property-wrapper attributes like
-    # @State, @Published, etc. that appear before the var/let keyword.
-    full_text = get_text(node, code_bytes)
-
-    # Also collect any initializer text (after `=`)
-    init_text = ''
-    eq_seen = False
-    for child in node.children:
-        if child.type == '=':
-            eq_seen = True
-            continue
-        if eq_seen:
-            init_text = get_text(child, code_bytes)
-            break
-
-    combined = full_text + ' ' + init_text
-    if any(pat in combined for pat in OBSERVABLE_PATTERNS):
-        metrics.observable_state_vars += 1
-        if var_name not in metrics.observable_var_names:
-            metrics.observable_var_names.append(var_name)
-
-
-def analyze_swift_file(file_path: str) -> StateMetrics:
-    root_node, code_bytes = parse_swift_file(file_path)
+def analyze_file(file_path: str) -> StateMetrics:
+    root_node, code_bytes = parse_file(file_path)
     metrics = StateMetrics()
     walk_ast(root_node, code_bytes, metrics)
     return metrics
 
-
-# ── AST debug helper ─────────────────────────────────────────────────────────
-def dump_ast(file_path: str):
-    """Print the full AST so you can verify node/field names.
-    Run as:  python3 swift_analyzer.py --dump your_file.swift
-    """
-    root_node, code_bytes = parse_swift_file(file_path)
-
-    def _dump(node, indent=0):
-        snippet = get_text(node, code_bytes).replace('\n', '↵')[:60]
-        print(' ' * indent + f"[{node.type}] {repr(snippet)}")
-        for child in node.children:
-            _dump(child, indent + 2)
-
-    _dump(root_node)
-
-
 if __name__ == '__main__':
     import sys
-
     if len(sys.argv) < 2:
         print("Usage: python swift_analyzer.py <Swift file>")
-        print("       python swift_analyzer.py --dump <Swift file>  (show AST)")
         sys.exit(1)
 
-    if sys.argv[1] == '--dump':
-        if len(sys.argv) < 3:
-            print("Usage: python swift_analyzer.py --dump <Swift file>")
-            sys.exit(1)
-        dump_ast(sys.argv[2])
-        sys.exit(0)
-
-    file_path = sys.argv[1]
-    metrics = analyze_swift_file(file_path)
+    metrics = analyze_file(sys.argv[1])
 
     print("Mutable vars:          ", metrics.mutable_vars)
     print("Immutable vars:        ", metrics.immutable_vars)
