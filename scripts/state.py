@@ -152,6 +152,19 @@ class KotlinStateAnalyzer:
         
         return metrics
     
+    def detect_kotlin_mutations(self, line: str) -> bool:
+        patterns = [
+            r'\b\w+\s*=',                         # assignment
+            r'\b\w+\s*(\+=|-=|\*=|/=|%=)',        # compound
+            r'\b\w+\s*(\+\+|--)',                 # inc/dec
+            r'\b\w+\s*\[.*?\]\s*=',               # indexed assignment
+            r'\b\w+(?:\.\w+)+\s*=',               # property assignment
+            r'\.(add|addAll|remove|removeAt|removeAll|clear|put|putAll|set|replace)\s*\(',
+            r'\.(value|postValue|emit|tryEmit)\s*(=|\()',
+        ]
+
+        return any(re.search(p, line) for p in patterns)
+    
     def _strip_comments(self, code: str) -> str:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
@@ -220,11 +233,7 @@ class KotlinStateAnalyzer:
     
     def _analyze_state_updates(self, code: str, lines: List[str], metrics: StateMetrics):
         """Analyze state update operations"""
-        code_no_comments = self._strip_comments(code)
-        
-        # Track variable names we've identified as mutable
-        mutable_names = set(metrics.mutable_var_names)
-        
+
         # Track which lines we've already counted
         counted_lines = set()
         
@@ -232,46 +241,22 @@ class KotlinStateAnalyzer:
             line_clean = line.strip()
             if not line_clean or line_clean.startswith('//'):
                 continue
-            
+
             if line_num in counted_lines:
                 continue
-            
-            # Check for direct assignments to mutable vars (=, +=, -=, etc.)
-            for var_name in mutable_names:
-                if re.search(rf'\b{re.escape(var_name)}\s*(\+\+|--|\+=|-=|\*=|/=|=(?!=))', line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
-            
-            if line_num in counted_lines:
+
+            # Do not count initializations (var name = ...) as updates
+            if line_clean.startswith("var ") or line_clean.startswith("val "):
                 continue
-            
-            # Check for state update patterns
-            for pattern in self.STATE_UPDATE_PATTERNS:
-                if re.search(pattern, line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
 
-            # Collection mutations on MutableState/MutableList
-            collection_patterns = [
-                r'\.add\s*\(',
-                r'\.remove\s*\(',
-                r'\.removeAt\s*\(',
-                r'\.clear\s*\(',
-                r'\.addAll\s*\(',
-                r'\.put\s*\(',
-                r'\.putAll\s*\('
-            ]
+            # Remove string literals to reduce false positives
+            line_clean = re.sub(r'".*?"', '', line_clean)
 
-            for pattern in collection_patterns:
-                if re.search(pattern, line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
+            # Use centralized mutation detection
+            if self.detect_kotlin_mutations(line_clean):
+                metrics.state_updates += 1
+                metrics.state_update_lines.append((line_num, line_clean[:80]))
+                counted_lines.add(line_num)
 
 
 class SwiftStateAnalyzer:
@@ -329,6 +314,19 @@ class SwiftStateAnalyzer:
         
         return metrics
     
+    def detect_swift_mutations(self, line: str) -> bool:
+        patterns = [
+            r'\b\w+\s*=',                         # assignment
+            r'\b\w+\s*(\+=|-=|\*=|/=|%=)',        # compound
+            r'\b\w+\s*(\+\+|--)',                 # inc/dec
+            r'\b\w+\s*\[.*?\]\s*=',               # indexed
+            r'\b\w+(?:\.\w+)+\s*=',               # property
+            r'\.(append|remove|removeAll|insert|replaceSubrange|sort|shuffle)\s*\(',
+            r'\.toggle\s*\(',
+        ]
+
+        return any(re.search(p, line) for p in patterns)
+        
     def _strip_comments(self, code: str) -> str:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
@@ -383,66 +381,32 @@ class SwiftStateAnalyzer:
     
     def _analyze_state_updates(self, code: str, lines: List[str], metrics: StateMetrics):
         """Analyze state update operations"""
-        code_no_comments = self._strip_comments(code)
-        
-        # Track variable names we've identified as mutable
-        mutable_names = set(metrics.mutable_var_names)
-        
+
         # Track which lines we've already counted
         counted_lines = set()
-        
+
         for line_num, line in enumerate(lines, 1):
             line_clean = line.strip()
             if not line_clean or line_clean.startswith('//'):
                 continue
-            
+
             if line_num in counted_lines:
                 continue
-            
-            # Check for direct assignments to mutable vars (=, +=, -=, etc.)
-            for var_name in mutable_names:
-                if re.search(rf'\b{re.escape(var_name)}\s*(\+\+|--|\+=|-=|\*=|/=|=(?!=))', line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
-            
-            if line_num in counted_lines:
+
+            # Do nto count initializations (var name = ...) as updates
+            if line_clean.startswith("var ") or line_clean.startswith("let "):
                 continue
-            
-            # Track observable state variables
-            observable_names = set(metrics.observable_var_names)
 
-            # Detect direct assignments to observable variables
-            for var_name in observable_names:
-                if re.search(rf'\b{re.escape(var_name)}\s*(\+\+|--|\+=|-=|=(?!=))', line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
+            # Remove string literals to reduce false positives
+            line_clean = re.sub(r'".*?"', '', line_clean)
 
-
-            collection_patterns = [
-                r'\.insert\s*\(',
-                r'\.remove(at:\s*\d+)',
-                r'\.update\s*\(',
-                r'\.append\s*\(',
-                r'\.removeAll\s*\('
-            ]
-
-            for pattern in collection_patterns:
-                if re.search(pattern, line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
-            # Check for state update patterns
-            for pattern in self.STATE_UPDATE_PATTERNS:
-                if re.search(pattern, line_clean):
-                    metrics.state_updates += 1
-                    metrics.state_update_lines.append((line_num, line_clean[:80]))
-                    counted_lines.add(line_num)
-                    break
+            # Use centralized mutation detection
+            if self.detect_swift_mutations(line_clean):
+                metrics.state_updates += 1
+                metrics.state_update_lines.append((line_num, line_clean[:80]))
+                counted_lines.add(line_num)
+        
+    
 
 
 def analyze_file(filepath: str, language: str = 'auto') -> StateMetrics:
@@ -474,7 +438,15 @@ def analyze_file(filepath: str, language: str = 'auto') -> StateMetrics:
     elif language.lower() == 'swift':
         analyzer = SwiftStateAnalyzer()
     else:
-        raise ValueError(f"Unsupported language: {language}")
+        return StateMetrics(
+            mutable_vars = float('nan'),
+            immutable_vars = float('nan'),
+            observable_state_vars = float('nan'),
+            state_updates = float('nan'),
+            total_lines = float('nan'),
+            non_empty_lines = float('nan'),
+            classes = float('nan'),
+        )
     
     return analyzer.analyze(code)
 
