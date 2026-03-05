@@ -18,18 +18,28 @@ class StateMetrics:
 
 OBSERVABLE_PATTERNS = [
     # SwiftUI property wrappers
-    '@State', '@StateObject', '@ObservedObject', '@Published',
-    '@Binding', '@EnvironmentObject', '@Environment',
+    '@State', '@StateObject', '@ObservedObject',
+    '@Binding', '@EnvironmentObject', '@Environment', 
     # Swift 5.9 macro
-    '@Observable',
+    '@Observable', '@Bindable', '@ObservationIgnored', '@Published',
     # Combine
     'CurrentValueSubject', 'PassthroughSubject',
+    'AnyPublisher', 'Future', 'Just', 'ObservableObject',
+    # UIKit 
+    '.observe', '.publisher'
 ]
 
 REACTIVE_CALL_PATTERNS = [
-    '.send(', '.toggle(', '.append(', '.remove(',
-    '.insert(', '.removeAll(', '.removeFirst(', '.removeLast(',
-    '.sort(', '.shuffle(', '.reverse(', '.popLast(',
+    # Collection mutators
+    '.append(', '.remove(', '.insert(', '.removeAll(', '.removeFirst(', '.removeLast(',
+    '.popLast(', '.sort(', '.shuffle(', '.reverse(', '.updateValue(',
+    '.merge(', '.formUnion(', '.subtract(', '.removeValue(',
+    '.swapAt(',
+    # Bool / Optional
+    '.toggle(',
+    # Combine / Observable triggers
+    '.send(', '.value =', '.wrappedValue =', '.projectedValue =',
+    '.value=', '.wrappedValue=', '.projectedValue=',
 ]
 
 def parse_file(file_path: str):
@@ -48,19 +58,6 @@ def first_child_of_type(node, *types):
     return None
 
 def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
-
-    # === PROPERTY DECLARATIONS ===
-    # AST structure (from actual dump of fibonacci.swift):
-    #   [property_declaration]
-    #     [value_binding_pattern]   <- wraps the var/let keyword
-    #       [var] or [let]
-    #     [pattern]                 <- holds the variable name
-    #       [simple_identifier]
-    #     [=]
-    #     <initializer>
-    #
-    # Attributes like @State appear as [attribute] siblings before
-    # value_binding_pattern, so the full node text captures them.
     if node.type == 'property_declaration':
         # var/let is nested inside value_binding_pattern
         vbp = first_child_of_type(node, 'value_binding_pattern')
@@ -74,9 +71,6 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
         pattern = first_child_of_type(node, 'pattern')
         name_node = first_child_of_type(pattern, 'simple_identifier') if pattern else None
 
-        # Skip computed properties (e.g. `var body: some View { ... }`).
-        # They have a code_block child instead of an `=` initializer.
-        # We still recurse into them so assignments inside are detected.
         has_code_block = any(child.type in ('code_block', 'computed_property') for child in node.children)
         if has_code_block:
             for child in node.children:
@@ -113,12 +107,6 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
                 metrics.observable_var_names.append(var_name)
 
     # === ASSIGNMENTS ===
-    # AST structure (from actual dump):
-    #   [assignment]
-    #     [directly_assignable_expression]  <- LHS (may wrap a tuple or member)
-    #       [simple_identifier] or [tuple_expression] etc.
-    #     [=]
-    #     <rhs>
     elif node.type == 'assignment':
         start_line = node.start_point[0] + 1
         node_text = get_text(node, code_bytes)

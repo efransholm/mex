@@ -17,21 +17,32 @@ class StateMetrics:
     state_update_lines: List[Tuple[int, str]] = field(default_factory=list)
 
 OBSERVABLE_PATTERNS = [
-    'mutableStateOf', 'MutableState', 'LiveData',
-    'MutableLiveData', 'StateFlow', 'MutableStateFlow',
-    'SharedFlow', 'MutableSharedFlow',
-    'mutableStateListOf', 'mutableStateMapOf',
+    # Compose state
+    'mutableStateOf', 'MutableState', 'SnapshotStateList', 'SnapshotStateMap',
+    'mutableStateListOf', 'mutableStateMapOf', 'derivedStateOf',
+    # LiveData
+    'LiveData', 'MutableLiveData', 'MediatorLiveData',
+    # Flows
+    'StateFlow', 'MutableStateFlow', 'SharedFlow', 'MutableSharedFlow',
+    # Mutable collections used as state
+    'MutableList', 'MutableMap', 'MutableSet',
+    # Coroutines
+    'Channel',
+    # Concurrent
+    'AtomicInteger', 'AtomicReference',
 ]
 
 REACTIVE_CALL_PATTERNS = [
-    '.postValue(', '.emit(', '.tryEmit(',
-    '.setValue(', '.toggle(',
+    '.postValue(', '.setValue(', '.emit(', '.tryEmit(',
+    '.update(', '.update {',
+    '.compareAndSet(', '.toggle(',
+    '.getAndSet(', '.getAndUpdate(',
 ]
 
 COLLECTION_CALL_PATTERNS = [
     '.add(', '.addAll(', '.remove(', '.removeAt(', '.removeAll(',
     '.clear(', '.put(', '.putAll(', '.append(', '.insert(',
-    '.replaceSubrange(', '.sort(', '.shuffle(',
+    '.sort(', '.shuffle(', '.set(', '.retainAll(',
 ]
 
 def parse_file(file_path: str):
@@ -52,17 +63,6 @@ def first_child_of_type(node, *types):
 def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
 
     # === PROPERTY DECLARATIONS ===
-    # AST structure (both top-level and local):
-    #   [property_declaration]
-    #     [var] or [val]          <- direct child token
-    #     [variable_declaration]
-    #       [identifier]          <- variable name
-    #     [=]
-    #     <initializer>
-    #   or with delegate:
-    #     [property_delegate]
-    #       [by]
-    #       [call_expression]
     if node.type == 'property_declaration':
         kw_node = first_child_of_type(node, 'var', 'val')
         keyword = kw_node.type if kw_node else None
@@ -101,11 +101,6 @@ def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
                         metrics.observable_var_names.append(var_name)
 
     # === ASSIGNMENTS ===
-    # AST structure:
-    #   [assignment]
-    #     [identifier]  <- LHS (may be `name` or `name.field`)
-    #     [=]
-    #     <rhs>
     elif node.type == 'assignment':
         start_line = node.start_point[0] + 1
         node_text = get_text(node, code_bytes)
