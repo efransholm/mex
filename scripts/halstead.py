@@ -221,14 +221,14 @@ class SwiftHalsteadAnalyzer:
         '.!', '.<', '.<=', '.>', '.>=', '.==', '.!=', '.&&', '.||', '.^', '.&=', '.|=', '.^=',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', '.', ';'
+        '?', ':', '.', ';', '\\('
     ]
     
     # Swift keywords that act as operators
     KEYWORD_OPERATORS = [
         'if', 'else', 'guard', 'switch', 'case', 'default', 'for', 'while', 'repeat',
         'return', 'break', 'continue', 'fallthrough', 'try', 'catch', 'throw', 'defer', 'do',
-        'in', 'is', 'as', 'as?', 'as!', 'self', 'super', 'nil', 'true', 'false', 'inout',
+        'in', 'is', 'as', 'as?', 'as!', 'inout',
         'let', 'var', 'func', 'class', 'struct', 'enum', 'protocol', 'extension', 'import',
         'init', 'deinit', 'static', 'subscript', 'typealias', 'operator', 'precedencegroup',
         'public', 'private', 'internal', 'fileprivate', 'open', '#available', 
@@ -260,6 +260,23 @@ class SwiftHalsteadAnalyzer:
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
         return code
+    
+    def _expand_interpolated_string(self, token: str) -> List[str]:
+        """Split an interpolated string like \"Count: \\(count)\" into sub-tokens"""  
+        result = []
+        inner_string = token[1:-1]
+
+        parts = re.split(r'(\\\\?\(.*?\))', inner_string)
+        for part in parts:
+            if part.startswith('\\(') and part.endswith(')'):
+                inner = part[2:-1]
+                result.append('\\(')   # operator
+                for inner_token in self._tokenize(inner):
+                    result.append(inner_token)
+                result.append(')')
+            elif part:
+                result.append(f'"{part}"')
+        return result
 
     def _tokenize(self, code: str) -> List[str]:
         """Tokenize Swift code, yielding raw string contents as operand tokens"""
@@ -281,7 +298,10 @@ class SwiftHalsteadAnalyzer:
 
             # String literals: keep as-is and hand straight to the classifier
             if token.startswith('"'):
-                tokens.append(token)
+                if '\\(' in token:
+                    tokens += self._expand_interpolated_string(token)
+                else: 
+                    tokens.append(token)
                 continue
 
              # Handle @State, #Preview etc. directly 
@@ -338,9 +358,9 @@ class SwiftHalsteadAnalyzer:
                 'import', 'init', 'inout', 'internal', 'let', 'operator', 'private',
                 'protocol', 'public', 'static', 'struct', 'subscript', 'typealias',
                 'var', 'fileprivate', 'open', 'defer', 'do', 'catch', 'throws',
-                'rethrows', 'indirect', 'lazy', 'mutating', 'nonmutating', 'optional',
+                'rethrows', 'indirect', 'lazy', 'mutating', 'nonmutating',
                 'override', 'required', 'weak', 'unowned', 'final', 'dynamic',
-                'convenience', 'Any', 'Self'
+                'convenience'
             }
             return token not in swift_keywords
 
