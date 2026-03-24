@@ -8,8 +8,7 @@ Generated with Claude Sonnet 4.5
 """
 
 import re
-from typing import List, Set, Dict, Tuple
-from collections import Counter
+from typing import List
 import math
 
 
@@ -234,7 +233,7 @@ class SwiftHalsteadAnalyzer:
         'init', 'deinit', 'static', 'subscript', 'typealias', 'operator', 'precedencegroup',
         'public', 'private', 'internal', 'fileprivate', 'open', '#available', 
         '#colorLiteral', '#else', '#elseif', '#endif', '#fileLiteral', '#if', 
-        '#imageLiteral', '#keyPath', '#selector', '#sourceLocation', '#unavailable'
+        '#imageLiteral', '#keyPath', '#selector', '#sourceLocation', '#unavailable', "#Preview"
     ]
     
     def __init__(self):
@@ -272,6 +271,7 @@ class SwiftHalsteadAnalyzer:
         pattern = (
             r'""".*?"""'                  # multi-line string
             r'|"(?:[^"\\]|\\.)*"'         # regular string
+            r'|[@#]\w+'                   # @ and # prefixed tokens like @State, #Preview
             r'|\b\w+\b'                   # identifiers, keywords, numbers
             r'|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'  # symbol runs
         )
@@ -281,6 +281,11 @@ class SwiftHalsteadAnalyzer:
 
             # String literals: keep as-is and hand straight to the classifier
             if token.startswith('"'):
+                tokens.append(token)
+                continue
+
+             # Handle @State, #Preview etc. directly 
+            if token.startswith(('@', '#')):
                 tokens.append(token)
                 continue
 
@@ -307,6 +312,9 @@ class SwiftHalsteadAnalyzer:
     
     def _is_operator(self, token: str) -> bool:
         """Check if token is an operator"""
+        # anything starting with @ is an operator (e.g. @State, @Published)
+        if re.match(r'^[@]\w+$', token):
+            return True
         return token in self.OPERATORS or token in self.KEYWORD_OPERATORS
     
     def _is_operand(self, token: str) -> bool:
