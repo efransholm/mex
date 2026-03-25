@@ -88,7 +88,7 @@ class KotlinHalsteadAnalyzer:
         '+=', '-=', '*=', '/=', '%=', '!!', '?.', '?:', '..', '..<', '->', '::',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', ';'
+        '?', ':', ';', '(', '.'
     ]
     
     # Kotlin keywords that act as operators
@@ -97,7 +97,7 @@ class KotlinHalsteadAnalyzer:
         'try', 'catch', 'finally', 'throw', 'in', 'is', 'as', 'typeof', 'val', 'var',
         'fun', 'class', 'interface', 'object', 'enum', 'data', 'sealed', 'inner',
         'open', 'abstract', 'override', 'private', 'public', 'internal', 'protected',
-        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by', 'shl', 
+        'lateinit', 'const', 'companion', 'typealias', 'by', 'shl', 
         'shr', 'ushr', 'and', 'or', 'xor', 'inv', '!in', '!is'
     ]
     
@@ -124,11 +124,19 @@ class KotlinHalsteadAnalyzer:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*import\s+.*$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*package\s+.*$', ' ', code, flags=re.MULTILINE)
+        # Strip generic type parameters (repeated for nested generics like Map<String, List<Int>>)
+        prev = None
+        while prev != code:
+            prev = code
+            code = re.sub(r'<[^<>]*>', ' ', code)
         return code
 
     def _tokenize(self, code: str) -> List[str]:
         """Tokenize Kotlin code, yielding raw string contents as operand tokens"""
         tokens = []
+        raw_tokens = []
 
         # Order matters: triple-quoted strings before single-quoted chars before
         # regular double-quoted strings, so the longer patterns win.
@@ -159,16 +167,23 @@ class KotlinHalsteadAnalyzer:
                     for op_len in range(min(3, len(token) - i), 0, -1):
                         potential_op = token[i:i + op_len]
                         if potential_op in self.OPERATORS:
-                            tokens.append(potential_op)
+                            raw_tokens.append(potential_op)
                             i += op_len
                             matched = True
                             break
                     if not matched:
                         if token[i] in self.OPERATORS:
-                            tokens.append(token[i])
+                            raw_tokens.append(token[i])
                         i += 1
             else:
-                tokens.append(token)
+                raw_tokens.append(token)
+
+        control_flow_keywords = {'if', 'while', 'for', 'when', 'catch'}
+        for i, token in enumerate(raw_tokens):
+            prev = raw_tokens[i - 1] if i > 0 else None
+            if token == '(' and prev in control_flow_keywords:
+                continue  # skip this ( — it's part of the keyword syntax
+            tokens.append(token)
 
         return tokens
     
@@ -259,6 +274,7 @@ class SwiftHalsteadAnalyzer:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*import\s+.*$', ' ', code, flags=re.MULTILINE)
         return code
     
     def _expand_interpolated_string(self, token: str) -> List[str]:
