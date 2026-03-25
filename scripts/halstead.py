@@ -132,6 +132,25 @@ class KotlinHalsteadAnalyzer:
             prev = code
             code = re.sub(r'<[^<>]*>', ' ', code)
         return code
+    
+    def _expand_interpolated_string(self, token: str) -> List[str]:
+        """Split an interpolated string like "Count: $count" into sub-tokens"""
+        result = []
+        inner_string = token[1:-1]  # strip outer quotes
+
+        # Kotlin interpolation: $variable or ${expression}
+        parts = re.split(r'(\$\{[^}]*\}|\$\w+)', inner_string)
+        for part in parts:
+            if part.startswith('$'):
+                result.append('$')  # operator
+                inner = part[1:]    # strip $
+                if inner.startswith('{') and inner.endswith('}'):
+                    inner = inner[1:-1]  # strip { }
+                for inner_token in self._tokenize(inner):
+                    result.append(inner_token)
+            elif part:
+                result.append(f'"{part}"')
+        return result
 
     def _tokenize(self, code: str) -> List[str]:
         """Tokenize Kotlin code, yielding raw string contents as operand tokens"""
@@ -154,13 +173,15 @@ class KotlinHalsteadAnalyzer:
         for match in re.finditer(pattern, code, re.DOTALL):
             token = match.group()
 
-            # String literals: keep as-is and hand straight to the classifier
             if token.startswith(('"', "'")):
-                tokens.append(token)
+                if '$' in token:
+                    raw_tokens += self._expand_interpolated_string(token)
+                else:
+                    raw_tokens.append(token)
                 continue
 
             # Symbol run: split into individual/compound operators
-            if not token.isalnum() and not token.startswith('_'):
+            if not token.isalnum() and not token.startswith('_') and not re.match(r'^[a-zA-Z_]\w*$', token):
                 i = 0
                 while i < len(token):
                     matched = False
@@ -326,7 +347,7 @@ class SwiftHalsteadAnalyzer:
                 continue
 
             # Symbol run: split into individual/compound operators
-            if not token.isalnum() and not token.startswith('_'):
+            if not token.isalnum() and not token.startswith('_') and not re.match(r'^[a-zA-Z_]\w*$', token):
                 i = 0
                 while i < len(token):
                     matched = False
