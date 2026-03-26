@@ -8,8 +8,7 @@ Generated with Claude Sonnet 4.5
 """
 
 import re
-from typing import List, Set, Dict, Tuple
-from collections import Counter
+from typing import List
 import math
 
 
@@ -89,7 +88,7 @@ class KotlinHalsteadAnalyzer:
         '+=', '-=', '*=', '/=', '%=', '!!', '?.', '?:', '..', '..<', '->', '::',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', ';'
+        '?', ':', ';', '(', '.'
     ]
     
     # Kotlin keywords that act as operators
@@ -98,7 +97,7 @@ class KotlinHalsteadAnalyzer:
         'try', 'catch', 'finally', 'throw', 'in', 'is', 'as', 'typeof', 'val', 'var',
         'fun', 'class', 'interface', 'object', 'enum', 'data', 'sealed', 'inner',
         'open', 'abstract', 'override', 'private', 'public', 'internal', 'protected',
-        'lateinit', 'const', 'companion', 'typealias', 'this', 'super', 'by', 'shl', 
+        'lateinit', 'const', 'companion', 'typealias', 'by', 'shl', 
         'shr', 'ushr', 'and', 'or', 'xor', 'inv', '!in', '!is'
     ]
     
@@ -125,11 +124,38 @@ class KotlinHalsteadAnalyzer:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*import\s+.*$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*package\s+.*$', ' ', code, flags=re.MULTILINE)
+        # Strip generic type parameters (repeated for nested generics like Map<String, List<Int>>)
+        prev = None
+        while prev != code:
+            prev = code
+            code = re.sub(r'<[^<>]*>', ' ', code)
         return code
+    
+    def _expand_interpolated_string(self, token: str) -> List[str]:
+        """Split an interpolated string like "Count: $count" into sub-tokens"""
+        result = []
+        inner_string = token[1:-1]  # strip outer quotes
+
+        # Kotlin interpolation: $variable or ${expression}
+        parts = re.split(r'(\$\{[^}]*\}|\$\w+)', inner_string)
+        for part in parts:
+            if part.startswith('$'):
+                result.append('$')  # operator
+                inner = part[1:]    # strip $
+                if inner.startswith('{') and inner.endswith('}'):
+                    inner = inner[1:-1]  # strip { }
+                for inner_token in self._tokenize(inner):
+                    result.append(inner_token)
+            elif part:
+                result.append(f'"{part}"')
+        return result
 
     def _tokenize(self, code: str) -> List[str]:
         """Tokenize Kotlin code, yielding raw string contents as operand tokens"""
         tokens = []
+        raw_tokens = []
 
         # Order matters: triple-quoted strings before single-quoted chars before
         # regular double-quoted strings, so the longer patterns win.
@@ -147,29 +173,38 @@ class KotlinHalsteadAnalyzer:
         for match in re.finditer(pattern, code, re.DOTALL):
             token = match.group()
 
-            # String literals: keep as-is and hand straight to the classifier
             if token.startswith(('"', "'")):
-                tokens.append(token)
+                if '$' in token:
+                    raw_tokens += self._expand_interpolated_string(token)
+                else:
+                    raw_tokens.append(token)
                 continue
 
             # Symbol run: split into individual/compound operators
-            if not token.isalnum() and not token.startswith('_'):
+            if not token.isalnum() and not token.startswith('_') and not re.match(r'^[a-zA-Z_]\w*$', token):
                 i = 0
                 while i < len(token):
                     matched = False
                     for op_len in range(min(3, len(token) - i), 0, -1):
                         potential_op = token[i:i + op_len]
                         if potential_op in self.OPERATORS:
-                            tokens.append(potential_op)
+                            raw_tokens.append(potential_op)
                             i += op_len
                             matched = True
                             break
                     if not matched:
                         if token[i] in self.OPERATORS:
-                            tokens.append(token[i])
+                            raw_tokens.append(token[i])
                         i += 1
             else:
-                tokens.append(token)
+                raw_tokens.append(token)
+
+        control_flow_keywords = {'if', 'while', 'for', 'when', 'catch'}
+        for i, token in enumerate(raw_tokens):
+            prev = raw_tokens[i - 1] if i > 0 else None
+            if token == '(' and prev in control_flow_keywords:
+                continue  # skip this ( — it's part of the keyword syntax
+            tokens.append(token)
 
         return tokens
     
@@ -222,19 +257,19 @@ class SwiftHalsteadAnalyzer:
         '.!', '.<', '.<=', '.>', '.>=', '.==', '.!=', '.&&', '.||', '.^', '.&=', '.|=', '.^=',
         # Single character operators
         '+', '-', '*', '/', '%', '=', '<', '>', '!', '&', '|', '^', '~',
-        '?', ':', '.', ';'
+        '?', ':', '.', ';', '(', '\\('
     ]
     
     # Swift keywords that act as operators
     KEYWORD_OPERATORS = [
         'if', 'else', 'guard', 'switch', 'case', 'default', 'for', 'while', 'repeat',
         'return', 'break', 'continue', 'fallthrough', 'try', 'catch', 'throw', 'defer', 'do',
-        'in', 'is', 'as', 'as?', 'as!', 'self', 'super', 'nil', 'true', 'false', 'inout',
+        'in', 'is', 'as', 'as?', 'as!', 'inout',
         'let', 'var', 'func', 'class', 'struct', 'enum', 'protocol', 'extension', 'import',
         'init', 'deinit', 'static', 'subscript', 'typealias', 'operator', 'precedencegroup',
         'public', 'private', 'internal', 'fileprivate', 'open', '#available', 
         '#colorLiteral', '#else', '#elseif', '#endif', '#fileLiteral', '#if', 
-        '#imageLiteral', '#keyPath', '#selector', '#sourceLocation', '#unavailable'
+        '#imageLiteral', '#keyPath', '#selector', '#sourceLocation', '#unavailable', "#Preview"
     ]
     
     def __init__(self):
@@ -260,7 +295,25 @@ class SwiftHalsteadAnalyzer:
         """Remove single-line and multi-line comments"""
         code = re.sub(r'/\*.*?\*/', ' ', code, flags=re.DOTALL)
         code = re.sub(r'//.*?$', ' ', code, flags=re.MULTILINE)
+        code = re.sub(r'^\s*import\s+.*$', ' ', code, flags=re.MULTILINE)
         return code
+    
+    def _expand_interpolated_string(self, token: str) -> List[str]:
+        """Split an interpolated string like \"Count: \\(count)\" into sub-tokens"""  
+        result = []
+        inner_string = token[1:-1]
+
+        parts = re.split(r'(\\\\?\(.*?\))', inner_string)
+        for part in parts:
+            if part.startswith('\\(') and part.endswith(')'):
+                inner = part[2:-1]
+                result.append('\\(')   # operator
+                for inner_token in self._tokenize(inner):
+                    result.append(inner_token)
+                result.append(')')
+            elif part:
+                result.append(f'"{part}"')
+        return result
 
     def _tokenize(self, code: str) -> List[str]:
         """Tokenize Swift code, yielding raw string contents as operand tokens"""
@@ -272,6 +325,7 @@ class SwiftHalsteadAnalyzer:
         pattern = (
             r'""".*?"""'                  # multi-line string
             r'|"(?:[^"\\]|\\.)*"'         # regular string
+            r'|[@#]\w+'                   # @ and # prefixed tokens like @State, #Preview
             r'|\b\w+\b'                   # identifiers, keywords, numbers
             r'|[+\-*/%=<>!&|^~?:.,;()\[\]{}]+'  # symbol runs
         )
@@ -281,11 +335,19 @@ class SwiftHalsteadAnalyzer:
 
             # String literals: keep as-is and hand straight to the classifier
             if token.startswith('"'):
+                if '\\(' in token:
+                    tokens += self._expand_interpolated_string(token)
+                else: 
+                    tokens.append(token)
+                continue
+
+             # Handle @State, #Preview etc. directly 
+            if token.startswith(('@', '#')):
                 tokens.append(token)
                 continue
 
             # Symbol run: split into individual/compound operators
-            if not token.isalnum() and not token.startswith('_'):
+            if not token.isalnum() and not token.startswith('_') and not re.match(r'^[a-zA-Z_]\w*$', token):
                 i = 0
                 while i < len(token):
                     matched = False
@@ -307,6 +369,9 @@ class SwiftHalsteadAnalyzer:
     
     def _is_operator(self, token: str) -> bool:
         """Check if token is an operator"""
+        # anything starting with @ is an operator (e.g. @State, @Published)
+        if re.match(r'^[@]\w+$', token):
+            return True
         return token in self.OPERATORS or token in self.KEYWORD_OPERATORS
     
     def _is_operand(self, token: str) -> bool:
@@ -330,9 +395,9 @@ class SwiftHalsteadAnalyzer:
                 'import', 'init', 'inout', 'internal', 'let', 'operator', 'private',
                 'protocol', 'public', 'static', 'struct', 'subscript', 'typealias',
                 'var', 'fileprivate', 'open', 'defer', 'do', 'catch', 'throws',
-                'rethrows', 'indirect', 'lazy', 'mutating', 'nonmutating', 'optional',
+                'rethrows', 'indirect', 'lazy', 'mutating', 'nonmutating',
                 'override', 'required', 'weak', 'unowned', 'final', 'dynamic',
-                'convenience', 'Any', 'Self'
+                'convenience'
             }
             return token not in swift_keywords
 
