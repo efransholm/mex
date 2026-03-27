@@ -1,0 +1,162 @@
+from tree_sitter import Language, Parser
+from tree_sitter_swift import language as swift_language
+from dataclasses import dataclass, field
+from typing import List, Tuple
+
+parser = Parser(Language(swift_language()))
+
+@dataclass
+class StateMetrics:
+    mutable_vars: int = 0
+    immutable_vars: int = 0
+    observable_state_vars: int = 0
+    state_updates: int = 0
+    mutable_var_names: List[str] = field(default_factory=list)
+    immutable_var_names: List[str] = field(default_factory=list)
+    observable_var_names: List[str] = field(default_factory=list)
+    state_update_lines: List[Tuple[int, str]] = field(default_factory=list)
+
+OBSERVABLE_PATTERNS = [
+    # SwiftUI property wrappers
+    '@State', '@StateObject', '@ObservedObject',
+    '@Binding', '@EnvironmentObject', '@Environment', 
+    # Swift 5.9 macro
+    '@Observable', '@Bindable', '@ObservationIgnored', '@Published',
+    # Combine
+    'CurrentValueSubject', 'PassthroughSubject',
+    'AnyPublisher', 'Future', 'Just', 'ObservableObject',
+    # UIKit 
+    '.observe', '.publisher'
+]
+
+REACTIVE_CALL_PATTERNS = [
+    # Collection mutators
+    '.append(', '.remove(', '.insert(', '.removeAll(', '.removeFirst(', '.removeLast(',
+    '.popLast(', '.sort(', '.shuffle(', '.reverse(', '.updateValue(',
+    '.merge(', '.formUnion(', '.subtract(', '.removeValue(',
+    '.swapAt(',
+    # Bool / Optional
+    '.toggle(',
+    # Combine / Observable triggers
+    '.send(', '.value =', '.wrappedValue =', '.projectedValue =',
+    '.value=', '.wrappedValue=', '.projectedValue=',
+]
+
+def parse_file(file_path: str):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        code = f.read().encode()
+    tree = parser.parse(code)
+    return tree.root_node, code
+
+def get_text(node, code_bytes: bytes) -> str:
+    return code_bytes[node.start_byte:node.end_byte].decode('utf-8')
+
+def first_child_of_type(node, *types):
+    for child in node.children:
+        if child.type in types:
+            return child
+    return None
+
+def walk_ast(node, code_bytes: bytes, metrics: StateMetrics):
+    if node.type == 'property_declaration':
+        # var/let is nested inside value_binding_pattern
+        vbp = first_child_of_type(node, 'value_binding_pattern')
+        keyword = None
+        if vbp:
+            kw = first_child_of_type(vbp, 'var', 'let')
+            if kw:
+                keyword = kw.type
+
+        # Name is inside pattern → simple_identifier
+        pattern = first_child_of_type(node, 'pattern')
+        name_node = first_child_of_type(pattern, 'simple_identifier') if pattern else None
+
+        has_code_block = any(child.type in ('code_block', 'computed_property') for child in node.children)
+        if has_code_block:
+            for child in node.children:
+                walk_ast(child, code_bytes, metrics)
+            return
+
+        if keyword and name_node:
+            var_name = get_text(name_node, code_bytes)
+
+            if keyword == 'var':
+                metrics.mutable_vars += 1
+                metrics.mutable_var_names.append(var_name)
+            else:
+                metrics.immutable_vars += 1
+                metrics.immutable_var_names.append(var_name)
+
+            # The full declaration text includes any @State/@Published etc.
+            # attributes that appear as sibling nodes before value_binding_pattern
+            full_text = get_text(node, code_bytes)
+
+            # Also grab initializer text (child after `=`)
+            init_text = ''
+            eq_seen = False
+            for child in node.children:
+                if child.type == '=':
+                    eq_seen = True
+                    continue
+                if eq_seen:
+                    init_text = get_text(child, code_bytes)
+                    break
+
+            if any(p in full_text + init_text for p in OBSERVABLE_PATTERNS):
+                metrics.observable_state_vars += 1
+                metrics.observable_var_names.append(var_name)
+
+    # === ASSIGNMENTS ===
+    elif node.type == 'assignment':
+        start_line = node.start_point[0] + 1
+        node_text = get_text(node, code_bytes)
+
+        lhs_node = node.children[0] if node.children else None
+        if lhs_node:
+            lhs_text = get_text(lhs_node, code_bytes)
+            all_tracked = set(metrics.mutable_var_names + metrics.observable_var_names)
+            if any(lhs_text == n or lhs_text.startswith(n + '.') for n in all_tracked):
+                metrics.state_updates += 1
+                metrics.state_update_lines.append((start_line, node_text))
+
+    # === REACTIVE / MUTATING CALL EXPRESSIONS ===
+    elif node.type == 'call_expression':
+        start_line = node.start_point[0] + 1
+        call_text = get_text(node, code_bytes)
+        if any(m in call_text for m in REACTIVE_CALL_PATTERNS):
+            metrics.state_updates += 1
+            metrics.state_update_lines.append((start_line, call_text))
+
+    for child in node.children:
+        walk_ast(child, code_bytes, metrics)
+
+def analyze_file(file_path: str) -> StateMetrics:
+    root_node, code_bytes = parse_file(file_path)
+    metrics = StateMetrics()
+    walk_ast(root_node, code_bytes, metrics)
+    return metrics
+
+if __name__ == '__main__':
+    import sys
+    if len(sys.argv) < 2:
+        print("Usage: python swift_analyzer.py <Swift file>")
+        sys.exit(1)
+
+    metrics = analyze_file(sys.argv[1])
+
+    print("Mutable vars:          ", metrics.mutable_vars)
+    print("Immutable vars:        ", metrics.immutable_vars)
+    print("Observable state vars: ", metrics.observable_state_vars)
+    print("State updates:         ", metrics.state_updates)
+
+    if metrics.mutable_var_names:
+        print("\nMutable var names:   ", metrics.mutable_var_names)
+    if metrics.immutable_var_names:
+        print("Immutable var names: ", metrics.immutable_var_names)
+    if metrics.observable_var_names:
+        print("Observable var names:", metrics.observable_var_names)
+
+    if metrics.state_update_lines:
+        print("\nState update lines (first 20):")
+        for ln, text in metrics.state_update_lines[:20]:
+            print(f"  Line {ln}: {text.strip()}")
