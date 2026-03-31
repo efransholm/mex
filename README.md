@@ -26,3 +26,9 @@ Inside the swift-complexity folder run
 ```cmd
 python3 scripts/halstead.py scripts/fibonacci.kt
 ```
+
+### Run state analyzer in ast folder
+
+```cmd
+python3 ast/swift_analyzer.py ast/swift_example.swift
+```
