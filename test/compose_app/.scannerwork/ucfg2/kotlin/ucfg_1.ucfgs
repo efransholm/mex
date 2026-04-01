@@ -1,29 +1,0 @@
-ò
-.com.example.compose_app.MainActivity#<init>()Vu
-m/Users/fransholm/Documents/MEX/mex/test/compose_app/app/src/main/java/com/example/compose_app/MainActivity.kt ("0*>
-0 (("/
-
-__unknown_file (
-implicit returnB(&
-$com.example.compose_app.MainActivityH`•
-8com.example.compose_app.MainActivity#onCreate(LBundle;)Vw
-m/Users/fransholm/Documents/MEX/mex/test/compose_app/app/src/main/java/com/example/compose_app/MainActivity.kt ("0*å
-0 (L
-J
- (
-%0java.lang.Object"__id* 
- (
-java.lang.Object"/
-
-__unknown_file (
-implicit return:2
- (5&
-savedInstanceStatejava.lang.ObjectB(&
-$com.example.compose_app.MainActivityHÅ
-&com.example.compose_app#ContentView()Vw
-m/Users/fransholm/Documents/MEX/mex/test/compose_app/app/src/main/java/com/example/compose_app/MainActivity.kt ("0*<
-0 ("/
-
-__unknown_file (
-implicit returnB"
-com.example.compose_appH
