@@ -1,0 +1,407 @@
+{
+  "project": "compose_app",
+  "framework": "compose",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-compose-compose_app",
+  "project_path": "/Users/fransholm/Documents/MEX/mex/test/compose_app",
+  "halstead": {
+    "app/src/androidTest/java/com/example/compose_app/ExampleInstrumentedTest.kt": {
+      "loc": 20,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 12,
+      "N1_total_operators": 13,
+      "N2_total_operands": 13,
+      "vocabulary": 19,
+      "length": 26,
+      "calculated_length": 62.67,
+      "volume": 110.45,
+      "difficulty": 3.79,
+      "effort": 418.77,
+      "time_seconds": 23.27,
+      "bugs_delivered": 0.037
+    },
+    "app/src/main/java/com/example/compose_app/MainActivity.kt": {
+      "loc": 51,
+      "n1_unique_operators": 14,
+      "n2_unique_operands": 53,
+      "N1_total_operators": 62,
+      "N2_total_operands": 75,
+      "vocabulary": 67,
+      "length": 137,
+      "calculated_length": 356.88,
+      "volume": 831.05,
+      "difficulty": 9.91,
+      "effort": 8232.14,
+      "time_seconds": 457.34,
+      "bugs_delivered": 0.277
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Color.kt": {
+      "loc": 8,
+      "n1_unique_operators": 3,
+      "n2_unique_operands": 7,
+      "N1_total_operators": 18,
+      "N2_total_operands": 12,
+      "vocabulary": 10,
+      "length": 30,
+      "calculated_length": 24.41,
+      "volume": 99.66,
+      "difficulty": 2.57,
+      "effort": 256.26,
+      "time_seconds": 14.24,
+      "bugs_delivered": 0.033
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Theme.kt": {
+      "loc": 51,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 36,
+      "N1_total_operators": 48,
+      "N2_total_operands": 53,
+      "vocabulary": 49,
+      "length": 101,
+      "calculated_length": 234.22,
+      "volume": 567.09,
+      "difficulty": 9.57,
+      "effort": 5426.7,
+      "time_seconds": 301.48,
+      "bugs_delivered": 0.189
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Type.kt": {
+      "loc": 32,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 17,
+      "N1_total_operators": 16,
+      "N2_total_operands": 20,
+      "vocabulary": 21,
+      "length": 36,
+      "calculated_length": 77.49,
+      "volume": 158.12,
+      "difficulty": 2.35,
+      "effort": 372.06,
+      "time_seconds": 20.67,
+      "bugs_delivered": 0.053
+    },
+    "app/src/test/java/com/example/compose_app/ExampleUnitTest.kt": {
+      "loc": 14,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 6,
+      "N1_total_operators": 5,
+      "N2_total_operands": 7,
+      "vocabulary": 10,
+      "length": 12,
+      "calculated_length": 23.51,
+      "volume": 39.86,
+      "difficulty": 2.33,
+      "effort": 93.01,
+      "time_seconds": 5.17,
+      "bugs_delivered": 0.013
+    }
+  },
+  "sonarqube": {
+    "project": {
+      "complexity": 12,
+      "code_smells": 4,
+      "duplicated_lines_density": 0.0,
+      "functions": 5,
+      "classes": 3,
+      "sqale_debt_ratio": 0.1,
+      "statements": 29,
+      "comment_lines_density": 12.1,
+      "bugs": 0,
+      "comment_lines": 55,
+      "cognitive_complexity": 8,
+      "ncloc": 399,
+      "files": 19,
+      "lines": 581
+    },
+    "files": {
+      "app/src/main/AndroidManifest.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 27,
+        "ncloc": 24,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/xml/backup_rules.xml": {
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 70.0,
+        "lines": 13,
+        "ncloc": 3,
+        "sqale_debt_ratio": 5.6,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "build.gradle.kts": {
+        "lines": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/build.gradle.kts": {
+        "lines": 58,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/example/compose_app/ui/theme/Color.kt": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 11,
+        "ncloc": 8,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/colors.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/xml/data_extraction_rules.xml": {
+        "code_smells": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 66.7,
+        "lines": 19,
+        "ncloc": 5,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/androidTest/java/com/example/compose_app/ExampleInstrumentedTest.kt": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 30.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 24,
+        "ncloc": 14,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/test/java/com/example/compose_app/ExampleUnitTest.kt": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 35.7,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 17,
+        "ncloc": 9,
+        "sqale_debt_ratio": 1.9,
+        "statements": 1,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_launcher_background.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 171,
+        "ncloc": 170,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_launcher_foreground.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 30,
+        "ncloc": 30,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/example/compose_app/MainActivity.kt": {
+        "classes": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 57,
+        "ncloc": 51,
+        "statements": 15,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      },
+      "settings.gradle.kts": {
+        "lines": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/strings.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 3,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/example/compose_app/ui/theme/Theme.kt": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 10,
+        "comment_lines_density": 19.6,
+        "complexity": 6,
+        "functions": 1,
+        "lines": 58,
+        "ncloc": 41,
+        "sqale_debt_ratio": 0.4,
+        "statements": 4,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      },
+      "app/src/main/res/values/themes.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 5,
+        "ncloc": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/example/compose_app/ui/theme/Type.kt": {
+        "classes": 0,
+        "comment_lines": 17,
+        "comment_lines_density": 53.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 15,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  },
+  "state_metrics": {
+    "app/src/androidTest/java/com/example/compose_app/ExampleInstrumentedTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/example/compose_app/MainActivity.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Color.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Theme.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Type.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/example/compose_app/ExampleUnitTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    }
+  },
+  "derived": {
+    "app/src/test/java/com/example/compose_app/ExampleUnitTest.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 63.66
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Color.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Type.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/example/compose_app/ExampleInstrumentedTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 57.18
+    },
+    "app/src/main/java/com/example/compose_app/MainActivity.kt": {
+      "mutable_variable_ratio": 1.0,
+      "maintainability_index": 41.77
+    },
+    "app/src/main/java/com/example/compose_app/ui/theme/Theme.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 42.66
+    }
+  }
+}

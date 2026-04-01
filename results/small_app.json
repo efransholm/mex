@@ -1,0 +1,169 @@
+{
+  "project": "small_app",
+  "framework": "swiftui",
+  "language": "swift",
+  "sonar_project_key": "thesis-swiftui-small_app",
+  "project_path": "/Users/fransholm/Documents/MEX/mex/test/small_app",
+  "halstead": {
+    "small_app/ContentView.swift": {
+      "loc": 22,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 26,
+      "N1_total_operators": 36,
+      "N2_total_operands": 36,
+      "vocabulary": 39,
+      "length": 72,
+      "calculated_length": 170.32,
+      "volume": 380.55,
+      "difficulty": 9.0,
+      "effort": 3424.94,
+      "time_seconds": 190.27,
+      "bugs_delivered": 0.127
+    },
+    "small_app/small_appApp.swift": {
+      "loc": 13,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 7,
+      "N1_total_operators": 6,
+      "N2_total_operands": 7,
+      "vocabulary": 12,
+      "length": 13,
+      "calculated_length": 31.26,
+      "volume": 46.6,
+      "difficulty": 2.5,
+      "effort": 116.51,
+      "time_seconds": 6.47,
+      "bugs_delivered": 0.016
+    }
+  },
+  "sonarqube": {
+    "project": {
+      "complexity": 0,
+      "code_smells": 0,
+      "duplicated_lines_density": 0.0,
+      "functions": 0,
+      "classes": 2,
+      "sqale_debt_ratio": 0.0,
+      "statements": 18,
+      "comment_lines_density": 4.6,
+      "bugs": 0,
+      "comment_lines": 4,
+      "ncloc": 83,
+      "files": 5,
+      "lines": 99
+    },
+    "files": {
+      "small_app/Assets.xcassets/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "small_app/Assets.xcassets/AccentColor.colorset/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 12,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "small_app/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 36,
+        "ncloc": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "small_app/ContentView.swift": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 28,
+        "ncloc": 22,
+        "statements": 13,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "small_app/small_appApp.swift": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 30.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 16,
+        "ncloc": 9,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  },
+  "swift_complexity": {
+    "small_app/ContentView.swift": {
+      "functions": [
+        {
+          "function": "body",
+          "cyclomatic": 1,
+          "cognitive": 0
+        }
+      ],
+      "avg_cyclomatic": 1.0,
+      "avg_cognitive": 0.0
+    },
+    "small_app/small_appApp.swift": {
+      "functions": [
+        {
+          "function": "body",
+          "cyclomatic": 1,
+          "cognitive": 0
+        }
+      ],
+      "avg_cyclomatic": 1.0,
+      "avg_cognitive": 0.0
+    }
+  },
+  "state_metrics": {
+    "small_app/ContentView.swift": {
+      "mutable_vars": 1,
+      "immutable_vars": 0,
+      "observable_state_vars": 1,
+      "state_updates": 1
+    },
+    "small_app/small_appApp.swift": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    }
+  },
+  "derived": {
+    "small_app/small_appApp.swift": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 63.88
+    },
+    "small_app/ContentView.swift": {
+      "mutable_variable_ratio": 1.0,
+      "maintainability_index": 52.51
+    }
+  }
+}

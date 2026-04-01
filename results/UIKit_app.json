@@ -1,0 +1,265 @@
+{
+  "project": "UIKit_app",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-UIKit_app",
+  "project_path": "/Users/fransholm/Documents/MEX/mex/test/UIKit_app",
+  "halstead": {
+    "UIKit_app/AppDelegate.swift": {
+      "loc": 25,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 26,
+      "N1_total_operators": 30,
+      "N2_total_operands": 39,
+      "vocabulary": 37,
+      "length": 69,
+      "calculated_length": 160.27,
+      "volume": 359.45,
+      "difficulty": 8.25,
+      "effort": 2965.48,
+      "time_seconds": 164.75,
+      "bugs_delivered": 0.12
+    },
+    "UIKit_app/SceneDelegate.swift": {
+      "loc": 37,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 34,
+      "N2_total_operands": 39,
+      "vocabulary": 33,
+      "length": 73,
+      "calculated_length": 134.54,
+      "volume": 368.24,
+      "difficulty": 12.67,
+      "effort": 4667.45,
+      "time_seconds": 259.3,
+      "bugs_delivered": 0.123
+    },
+    "UIKit_app/ViewController.swift": {
+      "loc": 38,
+      "n1_unique_operators": 17,
+      "n2_unique_operands": 64,
+      "N1_total_operators": 116,
+      "N2_total_operands": 105,
+      "vocabulary": 81,
+      "length": 221,
+      "calculated_length": 453.49,
+      "volume": 1401.11,
+      "difficulty": 13.95,
+      "effort": 19538.87,
+      "time_seconds": 1085.49,
+      "bugs_delivered": 0.467
+    }
+  },
+  "sonarqube": {
+    "project": {
+      "complexity": 12,
+      "code_smells": 13,
+      "duplicated_lines_density": 0.0,
+      "functions": 12,
+      "classes": 3,
+      "sqale_debt_ratio": 1.8,
+      "statements": 49,
+      "comment_lines_density": 21.7,
+      "bugs": 0,
+      "comment_lines": 33,
+      "ncloc": 119,
+      "files": 6,
+      "lines": 191
+    },
+    "files": {
+      "UIKit_app/AppDelegate.swift": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 13,
+        "comment_lines_density": 52.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 37,
+        "ncloc": 12,
+        "sqale_debt_ratio": 8.3,
+        "statements": 7,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "UIKit_app/Assets.xcassets/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "UIKit_app/Assets.xcassets/AccentColor.colorset/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 12,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "UIKit_app/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 36,
+        "ncloc": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "UIKit_app/SceneDelegate.swift": {
+        "classes": 1,
+        "code_smells": 7,
+        "comment_lines": 20,
+        "comment_lines_density": 54.1,
+        "complexity": 6,
+        "functions": 6,
+        "lines": 51,
+        "ncloc": 17,
+        "sqale_debt_ratio": 6.9,
+        "statements": 11,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "UIKit_app/ViewController.swift": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 48,
+        "ncloc": 38,
+        "statements": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  },
+  "swift_complexity": {
+    "UIKit_app/AppDelegate.swift": {
+      "functions": [
+        {
+          "function": "application",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "application",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "application",
+          "cyclomatic": 1,
+          "cognitive": 0
+        }
+      ],
+      "avg_cyclomatic": 1.0,
+      "avg_cognitive": 0.0
+    },
+    "UIKit_app/SceneDelegate.swift": {
+      "functions": [
+        {
+          "function": "scene",
+          "cyclomatic": 2,
+          "cognitive": 1
+        },
+        {
+          "function": "sceneDidDisconnect",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "sceneDidBecomeActive",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "sceneWillResignActiv",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "sceneWillEnterForegr",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "sceneDidEnterBackgro",
+          "cyclomatic": 1,
+          "cognitive": 0
+        }
+      ],
+      "avg_cyclomatic": 1.17,
+      "avg_cognitive": 0.17
+    },
+    "UIKit_app/ViewController.swift": {
+      "functions": [
+        {
+          "function": "viewDidLoad",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "didTap",
+          "cyclomatic": 1,
+          "cognitive": 0
+        },
+        {
+          "function": "updateUI",
+          "cyclomatic": 1,
+          "cognitive": 0
+        }
+      ],
+      "avg_cyclomatic": 1.0,
+      "avg_cognitive": 0.0
+    }
+  },
+  "state_metrics": {
+    "UIKit_app/AppDelegate.swift": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "UIKit_app/SceneDelegate.swift": {
+      "mutable_vars": 1,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "UIKit_app/ViewController.swift": {
+      "mutable_vars": 1,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    }
+  },
+  "derived": {
+    "UIKit_app/ViewController.swift": {
+      "mutable_variable_ratio": 0.1429,
+      "maintainability_index": 43.1
+    },
+    "UIKit_app/SceneDelegate.swift": {
+      "mutable_variable_ratio": 1.0,
+      "maintainability_index": 46.88
+    },
+    "UIKit_app/AppDelegate.swift": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 51.21
+    }
+  }
+}
