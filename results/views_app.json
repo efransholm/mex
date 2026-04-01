@@ -1,0 +1,320 @@
+{
+  "project": "views_app",
+  "framework": "views",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-views-views_app",
+  "project_path": "/Users/fransholm/Documents/MEX/mex/test/views_app",
+  "halstead": {
+    "app/src/androidTest/java/com/example/views_app/ExampleInstrumentedTest.kt": {
+      "loc": 20,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 12,
+      "N1_total_operators": 13,
+      "N2_total_operands": 13,
+      "vocabulary": 19,
+      "length": 26,
+      "calculated_length": 62.67,
+      "volume": 110.45,
+      "difficulty": 3.79,
+      "effort": 418.77,
+      "time_seconds": 23.27,
+      "bugs_delivered": 0.037
+    },
+    "app/src/main/java/com/example/views_app/MainActivity.kt": {
+      "loc": 42,
+      "n1_unique_operators": 17,
+      "n2_unique_operands": 50,
+      "N1_total_operators": 84,
+      "N2_total_operands": 92,
+      "vocabulary": 67,
+      "length": 176,
+      "calculated_length": 351.68,
+      "volume": 1067.63,
+      "difficulty": 15.64,
+      "effort": 16697.76,
+      "time_seconds": 927.65,
+      "bugs_delivered": 0.356
+    },
+    "app/src/test/java/com/example/views_app/ExampleUnitTest.kt": {
+      "loc": 14,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 6,
+      "N1_total_operators": 5,
+      "N2_total_operands": 7,
+      "vocabulary": 10,
+      "length": 12,
+      "calculated_length": 23.51,
+      "volume": 39.86,
+      "difficulty": 2.33,
+      "effort": 93.01,
+      "time_seconds": 5.17,
+      "bugs_delivered": 0.013
+    }
+  },
+  "sonarqube": {
+    "project": {
+      "complexity": 5,
+      "code_smells": 5,
+      "duplicated_lines_density": 0.0,
+      "functions": 4,
+      "classes": 3,
+      "sqale_debt_ratio": 0.2,
+      "statements": 23,
+      "comment_lines_density": 7.7,
+      "bugs": 0,
+      "comment_lines": 34,
+      "cognitive_complexity": 2,
+      "ncloc": 410,
+      "files": 19,
+      "lines": 556
+    },
+    "files": {
+      "app/src/main/res/layout/activity_main.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 68,
+        "ncloc": 62,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/AndroidManifest.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 25,
+        "ncloc": 22,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/xml/backup_rules.xml": {
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 70.0,
+        "lines": 13,
+        "ncloc": 3,
+        "sqale_debt_ratio": 5.6,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "build.gradle.kts": {
+        "lines": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/build.gradle.kts": {
+        "lines": 47,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/colors.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/xml/data_extraction_rules.xml": {
+        "code_smells": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 66.7,
+        "lines": 19,
+        "ncloc": 5,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/androidTest/java/com/example/views_app/ExampleInstrumentedTest.kt": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 30.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 24,
+        "ncloc": 14,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/test/java/com/example/views_app/ExampleUnitTest.kt": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 35.7,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 17,
+        "ncloc": 9,
+        "sqale_debt_ratio": 1.9,
+        "statements": 1,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_globe.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 22,
+        "ncloc": 22,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_launcher_background.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 171,
+        "ncloc": 170,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_launcher_foreground.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 30,
+        "ncloc": 30,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/example/views_app/MainActivity.kt": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 51,
+        "ncloc": 42,
+        "statements": 20,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      },
+      "settings.gradle.kts": {
+        "lines": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/strings.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 3,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/themes.xml": {
+        "code_smells": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 37.5,
+        "lines": 9,
+        "ncloc": 5,
+        "sqale_debt_ratio": 3.3,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values-night/themes.xml": {
+        "code_smells": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 42.9,
+        "lines": 7,
+        "ncloc": 4,
+        "sqale_debt_ratio": 4.2,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  },
+  "state_metrics": {
+    "app/src/androidTest/java/com/example/views_app/ExampleInstrumentedTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/example/views_app/MainActivity.kt": {
+      "mutable_vars": 3,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 5
+    },
+    "app/src/test/java/com/example/views_app/ExampleUnitTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    }
+  },
+  "derived": {
+    "app/src/androidTest/java/com/example/views_app/ExampleInstrumentedTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 57.18
+    },
+    "app/src/test/java/com/example/views_app/ExampleUnitTest.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 63.66
+    },
+    "app/src/main/java/com/example/views_app/MainActivity.kt": {
+      "mutable_variable_ratio": 0.6,
+      "maintainability_index": 42.98
+    }
+  }
+}

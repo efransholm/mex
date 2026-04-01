@@ -1,0 +1,7 @@
+organization=complexity-metrics
+projectKey=thesis-compose-compose_app
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.84434
+dashboardUrl=https://sonarcloud.io/dashboard?id=thesis-compose-compose_app
+ceTaskId=AZ1H7eNw3R_umMQ62nxM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZ1H7eNw3R_umMQ62nxM

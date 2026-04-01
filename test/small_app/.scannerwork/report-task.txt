@@ -1,0 +1,7 @@
+organization=complexity-metrics
+projectKey=thesis-swiftui-small_app
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.84434
+dashboardUrl=https://sonarcloud.io/dashboard?id=thesis-swiftui-small_app
+ceTaskId=AZ1H7iko3R_umMQ62nxv
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZ1H7iko3R_umMQ62nxv

@@ -32,3 +32,10 @@ python3 scripts/halstead.py scripts/fibonacci.kt
 ```cmd
 python3 ast/swift_analyzer.py ast/swift_example.swift
 ```
+
+### Run all analyzers and retrieve results
+
+```cmd
+python3 scripts/analyze.py          # all projects in test/
+python3 scripts/analyze.py some/dir # all sub-folders in that dir
+```
