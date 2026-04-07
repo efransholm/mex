@@ -1,0 +1,1667 @@
+{
+  "project": "sunflower",
+  "framework": "compose",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-compose-sunflower",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/android/sunflower",
+  "halstead": {
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/GardenActivityTest.kt": {
+      "loc": 66,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 40,
+      "N1_total_operators": 52,
+      "N2_total_operands": 50,
+      "vocabulary": 48,
+      "length": 102,
+      "calculated_length": 236.88,
+      "volume": 569.67,
+      "difficulty": 5.0,
+      "effort": 2848.33,
+      "time_seconds": 158.24,
+      "bugs_delivered": 0.19
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/MainCoroutineRule.kt": {
+      "loc": 35,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 18,
+      "N1_total_operators": 34,
+      "N2_total_operands": 30,
+      "vocabulary": 27,
+      "length": 64,
+      "calculated_length": 103.59,
+      "volume": 304.31,
+      "difficulty": 7.5,
+      "effort": 2282.35,
+      "time_seconds": 126.8,
+      "bugs_delivered": 0.101
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/garden/GardenTest.kt": {
+      "loc": 46,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 24,
+      "N1_total_operators": 37,
+      "N2_total_operands": 37,
+      "vocabulary": 33,
+      "length": 74,
+      "calculated_length": 138.57,
+      "volume": 373.29,
+      "difficulty": 6.94,
+      "effort": 2589.67,
+      "time_seconds": 143.87,
+      "bugs_delivered": 0.124
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailComposeTest.kt": {
+      "loc": 90,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 41,
+      "N1_total_operators": 77,
+      "N2_total_operands": 84,
+      "vocabulary": 52,
+      "length": 161,
+      "calculated_length": 257.71,
+      "volume": 917.77,
+      "difficulty": 11.27,
+      "effort": 10341.71,
+      "time_seconds": 574.54,
+      "bugs_delivered": 0.306
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListTest.kt": {
+      "loc": 40,
+      "n1_unique_operators": 10,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 28,
+      "N2_total_operands": 25,
+      "vocabulary": 30,
+      "length": 53,
+      "calculated_length": 119.66,
+      "volume": 260.07,
+      "difficulty": 6.25,
+      "effort": 1625.41,
+      "time_seconds": 90.3,
+      "bugs_delivered": 0.087
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/GardenPlantingDaoTest.kt": {
+      "loc": 86,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 59,
+      "N1_total_operators": 134,
+      "N2_total_operands": 149,
+      "vocabulary": 70,
+      "length": 283,
+      "calculated_length": 385.13,
+      "volume": 1734.59,
+      "difficulty": 13.89,
+      "effort": 24093.12,
+      "time_seconds": 1338.51,
+      "bugs_delivered": 0.578
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/PlantDaoTest.kt": {
+      "loc": 69,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 54,
+      "N1_total_operators": 112,
+      "N2_total_operands": 138,
+      "vocabulary": 65,
+      "length": 250,
+      "calculated_length": 348.82,
+      "volume": 1505.59,
+      "difficulty": 14.06,
+      "effort": 21161.93,
+      "time_seconds": 1175.66,
+      "bugs_delivered": 0.502
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/LiveDataTestUtil.kt": {
+      "loc": 38,
+      "n1_unique_operators": 12,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 27,
+      "N2_total_operands": 27,
+      "vocabulary": 32,
+      "length": 54,
+      "calculated_length": 129.46,
+      "volume": 270.0,
+      "difficulty": 8.1,
+      "effort": 2187.0,
+      "time_seconds": 121.5,
+      "bugs_delivered": 0.09
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/MainTestRunner.kt": {
+      "loc": 26,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 13,
+      "N1_total_operators": 20,
+      "N2_total_operands": 17,
+      "vocabulary": 22,
+      "length": 37,
+      "calculated_length": 76.64,
+      "volume": 165.0,
+      "difficulty": 5.88,
+      "effort": 970.96,
+      "time_seconds": 53.94,
+      "bugs_delivered": 0.055
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/TestUtils.kt": {
+      "loc": 60,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 41,
+      "N1_total_operators": 41,
+      "N2_total_operands": 58,
+      "vocabulary": 48,
+      "length": 99,
+      "calculated_length": 239.31,
+      "volume": 552.91,
+      "difficulty": 4.95,
+      "effort": 2737.59,
+      "time_seconds": 152.09,
+      "bugs_delivered": 0.184
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModelTest.kt": {
+      "loc": 75,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 53,
+      "N1_total_operators": 79,
+      "N2_total_operands": 72,
+      "vocabulary": 64,
+      "length": 151,
+      "calculated_length": 341.63,
+      "volume": 906.0,
+      "difficulty": 7.47,
+      "effort": 6769.36,
+      "time_seconds": 376.08,
+      "bugs_delivered": 0.302
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/worker/SeedDatabaseWorkerTest.kt": {
+      "loc": 66,
+      "n1_unique_operators": 12,
+      "n2_unique_operands": 40,
+      "N1_total_operators": 62,
+      "N2_total_operands": 54,
+      "vocabulary": 52,
+      "length": 116,
+      "calculated_length": 255.9,
+      "volume": 661.25,
+      "difficulty": 8.1,
+      "effort": 5356.13,
+      "time_seconds": 297.56,
+      "bugs_delivered": 0.22
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/GardenActivity.kt": {
+      "loc": 36,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 12,
+      "N2_total_operands": 13,
+      "vocabulary": 18,
+      "length": 25,
+      "calculated_length": 57.71,
+      "volume": 104.25,
+      "difficulty": 4.14,
+      "effort": 431.21,
+      "time_seconds": 23.96,
+      "bugs_delivered": 0.035
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/MainApplication.kt": {
+      "loc": 26,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 15,
+      "N1_total_operators": 24,
+      "N2_total_operands": 21,
+      "vocabulary": 24,
+      "length": 45,
+      "calculated_length": 87.13,
+      "volume": 206.32,
+      "difficulty": 6.3,
+      "effort": 1299.84,
+      "time_seconds": 72.21,
+      "bugs_delivered": 0.069
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/api/UnsplashService.kt": {
+      "loc": 52,
+      "n1_unique_operators": 14,
+      "n2_unique_operands": 37,
+      "N1_total_operators": 57,
+      "N2_total_operands": 52,
+      "vocabulary": 51,
+      "length": 109,
+      "calculated_length": 246.05,
+      "volume": 618.29,
+      "difficulty": 9.84,
+      "effort": 6082.68,
+      "time_seconds": 337.93,
+      "bugs_delivered": 0.206
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Dimens.kt": {
+      "loc": 39,
+      "n1_unique_operators": 6,
+      "n2_unique_operands": 19,
+      "N1_total_operators": 32,
+      "N2_total_operands": 32,
+      "vocabulary": 25,
+      "length": 64,
+      "calculated_length": 96.22,
+      "volume": 297.21,
+      "difficulty": 5.05,
+      "effort": 1501.68,
+      "time_seconds": 83.43,
+      "bugs_delivered": 0.099
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Modifiers.kt": {
+      "loc": 46,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 21,
+      "N1_total_operators": 39,
+      "N2_total_operands": 33,
+      "vocabulary": 34,
+      "length": 72,
+      "calculated_length": 140.34,
+      "volume": 366.3,
+      "difficulty": 10.21,
+      "effort": 3741.47,
+      "time_seconds": 207.86,
+      "bugs_delivered": 0.122
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Screen.kt": {
+      "loc": 41,
+      "n1_unique_operators": 10,
+      "n2_unique_operands": 24,
+      "N1_total_operators": 41,
+      "N2_total_operands": 41,
+      "vocabulary": 34,
+      "length": 82,
+      "calculated_length": 143.26,
+      "volume": 417.17,
+      "difficulty": 8.54,
+      "effort": 3563.34,
+      "time_seconds": 197.96,
+      "bugs_delivered": 0.139
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/SunflowerApp.kt": {
+      "loc": 99,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 62,
+      "N1_total_operators": 106,
+      "N2_total_operands": 120,
+      "vocabulary": 71,
+      "length": 226,
+      "calculated_length": 397.69,
+      "volume": 1389.84,
+      "difficulty": 8.71,
+      "effort": 12105.08,
+      "time_seconds": 672.5,
+      "bugs_delivered": 0.463
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/gallery/GalleryScreen.kt": {
+      "loc": 172,
+      "n1_unique_operators": 16,
+      "n2_unique_operands": 109,
+      "N1_total_operators": 163,
+      "N2_total_operands": 181,
+      "vocabulary": 125,
+      "length": 344,
+      "calculated_length": 801.73,
+      "volume": 2396.23,
+      "difficulty": 13.28,
+      "effort": 31832.48,
+      "time_seconds": 1768.47,
+      "bugs_delivered": 0.799
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/garden/GardenScreen.kt": {
+      "loc": 246,
+      "n1_unique_operators": 15,
+      "n2_unique_operands": 137,
+      "N1_total_operators": 295,
+      "N2_total_operands": 351,
+      "vocabulary": 152,
+      "length": 646,
+      "calculated_length": 1031.03,
+      "volume": 4682.16,
+      "difficulty": 19.22,
+      "effort": 89969.26,
+      "time_seconds": 4998.29,
+      "bugs_delivered": 1.561
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/home/HomeScreen.kt": {
+      "loc": 194,
+      "n1_unique_operators": 14,
+      "n2_unique_operands": 106,
+      "N1_total_operators": 211,
+      "N2_total_operands": 245,
+      "vocabulary": 120,
+      "length": 456,
+      "calculated_length": 766.46,
+      "volume": 3149.54,
+      "difficulty": 16.18,
+      "effort": 50957.21,
+      "time_seconds": 2830.96,
+      "bugs_delivered": 1.05
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailScroller.kt": {
+      "loc": 51,
+      "n1_unique_operators": 17,
+      "n2_unique_operands": 24,
+      "N1_total_operators": 54,
+      "N2_total_operands": 51,
+      "vocabulary": 41,
+      "length": 105,
+      "calculated_length": 179.53,
+      "volume": 562.54,
+      "difficulty": 18.06,
+      "effort": 10160.93,
+      "time_seconds": 564.5,
+      "bugs_delivered": 0.188
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailView.kt": {
+      "loc": 549,
+      "n1_unique_operators": 23,
+      "n2_unique_operands": 248,
+      "N1_total_operators": 643,
+      "N2_total_operands": 763,
+      "vocabulary": 271,
+      "length": 1406,
+      "calculated_length": 2076.68,
+      "volume": 11363.5,
+      "difficulty": 35.38,
+      "effort": 402052.6,
+      "time_seconds": 22336.26,
+      "bugs_delivered": 3.788
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListItemView.kt": {
+      "loc": 77,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 65,
+      "N1_total_operators": 99,
+      "N2_total_operands": 115,
+      "vocabulary": 73,
+      "length": 214,
+      "calculated_length": 415.45,
+      "volume": 1324.62,
+      "difficulty": 7.08,
+      "effort": 9374.25,
+      "time_seconds": 520.79,
+      "bugs_delivered": 0.442
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListScreen.kt": {
+      "loc": 89,
+      "n1_unique_operators": 12,
+      "n2_unique_operands": 59,
+      "N1_total_operators": 85,
+      "N2_total_operands": 110,
+      "vocabulary": 71,
+      "length": 195,
+      "calculated_length": 390.1,
+      "volume": 1199.2,
+      "difficulty": 11.19,
+      "effort": 13414.79,
+      "time_seconds": 745.27,
+      "bugs_delivered": 0.4
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/utils/TextSnackbarContainer.kt": {
+      "loc": 74,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 37,
+      "N1_total_operators": 46,
+      "N2_total_operands": 54,
+      "vocabulary": 48,
+      "length": 100,
+      "calculated_length": 230.8,
+      "volume": 558.5,
+      "difficulty": 8.03,
+      "effort": 4483.06,
+      "time_seconds": 249.06,
+      "bugs_delivered": 0.186
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/AppDatabase.kt": {
+      "loc": 64,
+      "n1_unique_operators": 17,
+      "n2_unique_operands": 47,
+      "N1_total_operators": 78,
+      "N2_total_operands": 66,
+      "vocabulary": 64,
+      "length": 144,
+      "calculated_length": 330.55,
+      "volume": 864.0,
+      "difficulty": 11.94,
+      "effort": 10312.85,
+      "time_seconds": 572.94,
+      "bugs_delivered": 0.288
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Converters.kt": {
+      "loc": 26,
+      "n1_unique_operators": 6,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 16,
+      "N2_total_operands": 18,
+      "vocabulary": 17,
+      "length": 34,
+      "calculated_length": 53.56,
+      "volume": 138.97,
+      "difficulty": 4.91,
+      "effort": 682.23,
+      "time_seconds": 37.9,
+      "bugs_delivered": 0.046
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlanting.kt": {
+      "loc": 55,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 30,
+      "N1_total_operators": 39,
+      "N2_total_operands": 43,
+      "vocabulary": 39,
+      "length": 82,
+      "calculated_length": 175.74,
+      "volume": 433.4,
+      "difficulty": 6.45,
+      "effort": 2795.45,
+      "time_seconds": 155.3,
+      "bugs_delivered": 0.144
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingDao.kt": {
+      "loc": 43,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 21,
+      "N2_total_operands": 26,
+      "vocabulary": 24,
+      "length": 47,
+      "calculated_length": 94.44,
+      "volume": 215.49,
+      "difficulty": 2.6,
+      "effort": 560.28,
+      "time_seconds": 31.13,
+      "bugs_delivered": 0.072
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingRepository.kt": {
+      "loc": 41,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 23,
+      "N1_total_operators": 46,
+      "N2_total_operands": 45,
+      "vocabulary": 36,
+      "length": 91,
+      "calculated_length": 152.15,
+      "volume": 470.46,
+      "difficulty": 12.72,
+      "effort": 5983.06,
+      "time_seconds": 332.39,
+      "bugs_delivered": 0.157
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Plant.kt": {
+      "loc": 38,
+      "n1_unique_operators": 10,
+      "n2_unique_operands": 25,
+      "N1_total_operators": 33,
+      "N2_total_operands": 35,
+      "vocabulary": 35,
+      "length": 68,
+      "calculated_length": 149.32,
+      "volume": 348.79,
+      "difficulty": 7.0,
+      "effort": 2441.54,
+      "time_seconds": 135.64,
+      "bugs_delivered": 0.116
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantAndGardenPlantings.kt": {
+      "loc": 28,
+      "n1_unique_operators": 6,
+      "n2_unique_operands": 12,
+      "N1_total_operators": 12,
+      "N2_total_operands": 12,
+      "vocabulary": 18,
+      "length": 24,
+      "calculated_length": 58.53,
+      "volume": 100.08,
+      "difficulty": 3.0,
+      "effort": 300.23,
+      "time_seconds": 16.68,
+      "bugs_delivered": 0.033
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantDao.kt": {
+      "loc": 34,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 18,
+      "N1_total_operators": 18,
+      "N2_total_operands": 22,
+      "vocabulary": 22,
+      "length": 40,
+      "calculated_length": 83.06,
+      "volume": 178.38,
+      "difficulty": 2.44,
+      "effort": 436.03,
+      "time_seconds": 24.22,
+      "bugs_delivered": 0.059
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantRepository.kt": {
+      "loc": 39,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 39,
+      "N2_total_operands": 36,
+      "vocabulary": 33,
+      "length": 75,
+      "calculated_length": 134.54,
+      "volume": 378.33,
+      "difficulty": 11.7,
+      "effort": 4426.46,
+      "time_seconds": 245.91,
+      "bugs_delivered": 0.126
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPagingSource.kt": {
+      "loc": 48,
+      "n1_unique_operators": 23,
+      "n2_unique_operands": 34,
+      "N1_total_operators": 65,
+      "N2_total_operands": 59,
+      "vocabulary": 57,
+      "length": 124,
+      "calculated_length": 277.02,
+      "volume": 723.28,
+      "difficulty": 19.96,
+      "effort": 14433.66,
+      "time_seconds": 801.87,
+      "bugs_delivered": 0.241
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhoto.kt": {
+      "loc": 29,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 15,
+      "N2_total_operands": 13,
+      "vocabulary": 16,
+      "length": 28,
+      "calculated_length": 49.66,
+      "volume": 112.0,
+      "difficulty": 2.95,
+      "effort": 330.91,
+      "time_seconds": 18.38,
+      "bugs_delivered": 0.037
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhotoUrls.kt": {
+      "loc": 27,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 5,
+      "N1_total_operators": 7,
+      "N2_total_operands": 5,
+      "vocabulary": 10,
+      "length": 12,
+      "calculated_length": 23.22,
+      "volume": 39.86,
+      "difficulty": 2.5,
+      "effort": 99.66,
+      "time_seconds": 5.54,
+      "bugs_delivered": 0.013
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashRepository.kt": {
+      "loc": 33,
+      "n1_unique_operators": 12,
+      "n2_unique_operands": 19,
+      "N1_total_operators": 24,
+      "N2_total_operands": 22,
+      "vocabulary": 31,
+      "length": 46,
+      "calculated_length": 123.73,
+      "volume": 227.89,
+      "difficulty": 6.95,
+      "effort": 1583.26,
+      "time_seconds": 87.96,
+      "bugs_delivered": 0.076
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashSearchResponse.kt": {
+      "loc": 28,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 8,
+      "N1_total_operators": 11,
+      "N2_total_operands": 9,
+      "vocabulary": 13,
+      "length": 20,
+      "calculated_length": 35.61,
+      "volume": 74.01,
+      "difficulty": 2.81,
+      "effort": 208.15,
+      "time_seconds": 11.56,
+      "bugs_delivered": 0.025
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashUser.kt": {
+      "loc": 33,
+      "n1_unique_operators": 6,
+      "n2_unique_operands": 9,
+      "N1_total_operators": 16,
+      "N2_total_operands": 12,
+      "vocabulary": 15,
+      "length": 28,
+      "calculated_length": 44.04,
+      "volume": 109.39,
+      "difficulty": 4.0,
+      "effort": 437.57,
+      "time_seconds": 24.31,
+      "bugs_delivered": 0.036
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/DatabaseModule.kt": {
+      "loc": 43,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 19,
+      "N1_total_operators": 25,
+      "N2_total_operands": 28,
+      "vocabulary": 26,
+      "length": 53,
+      "calculated_length": 100.36,
+      "volume": 249.12,
+      "difficulty": 5.16,
+      "effort": 1284.95,
+      "time_seconds": 71.39,
+      "bugs_delivered": 0.083
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/NetworkModule.kt": {
+      "loc": 31,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 9,
+      "N1_total_operators": 10,
+      "N2_total_operands": 10,
+      "vocabulary": 16,
+      "length": 20,
+      "calculated_length": 48.18,
+      "volume": 80.0,
+      "difficulty": 3.89,
+      "effort": 311.11,
+      "time_seconds": 17.28,
+      "bugs_delivered": 0.027
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Color.kt": {
+      "loc": 78,
+      "n1_unique_operators": 3,
+      "n2_unique_operands": 62,
+      "N1_total_operators": 183,
+      "N2_total_operands": 122,
+      "vocabulary": 65,
+      "length": 305,
+      "calculated_length": 373.92,
+      "volume": 1836.82,
+      "difficulty": 2.95,
+      "effort": 5421.59,
+      "time_seconds": 301.2,
+      "bugs_delivered": 0.612
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Shapes.kt": {
+      "loc": 33,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 23,
+      "N2_total_operands": 30,
+      "vocabulary": 15,
+      "length": 53,
+      "calculated_length": 46.05,
+      "volume": 207.07,
+      "difficulty": 5.45,
+      "effort": 1129.45,
+      "time_seconds": 62.75,
+      "bugs_delivered": 0.069
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Theme.kt": {
+      "loc": 131,
+      "n1_unique_operators": 15,
+      "n2_unique_operands": 133,
+      "N1_total_operators": 128,
+      "N2_total_operands": 188,
+      "vocabulary": 148,
+      "length": 316,
+      "calculated_length": 996.96,
+      "volume": 2278.19,
+      "difficulty": 10.6,
+      "effort": 24152.21,
+      "time_seconds": 1341.79,
+      "bugs_delivered": 0.759
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Type.kt": {
+      "loc": 47,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 23,
+      "N1_total_operators": 43,
+      "N2_total_operands": 53,
+      "vocabulary": 27,
+      "length": 96,
+      "calculated_length": 112.04,
+      "volume": 456.47,
+      "difficulty": 4.61,
+      "effort": 2103.73,
+      "time_seconds": 116.87,
+      "bugs_delivered": 0.152
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/Constants.kt": {
+      "loc": 21,
+      "n1_unique_operators": 3,
+      "n2_unique_operands": 4,
+      "N1_total_operators": 6,
+      "N2_total_operands": 4,
+      "vocabulary": 7,
+      "length": 10,
+      "calculated_length": 12.75,
+      "volume": 28.07,
+      "difficulty": 1.5,
+      "effort": 42.11,
+      "time_seconds": 2.34,
+      "bugs_delivered": 0.009
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtil.kt": {
+      "loc": 46,
+      "n1_unique_operators": 10,
+      "n2_unique_operands": 29,
+      "N1_total_operators": 68,
+      "N2_total_operands": 66,
+      "vocabulary": 39,
+      "length": 134,
+      "calculated_length": 174.1,
+      "volume": 708.24,
+      "difficulty": 11.38,
+      "effort": 8059.33,
+      "time_seconds": 447.74,
+      "bugs_delivered": 0.236
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GalleryViewModel.kt": {
+      "loc": 51,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 28,
+      "N1_total_operators": 41,
+      "N2_total_operands": 36,
+      "vocabulary": 41,
+      "length": 77,
+      "calculated_length": 182.71,
+      "volume": 412.53,
+      "difficulty": 8.36,
+      "effort": 3447.58,
+      "time_seconds": 191.53,
+      "bugs_delivered": 0.138
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GardenPlantingListViewModel.kt": {
+      "loc": 38,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 15,
+      "N1_total_operators": 16,
+      "N2_total_operands": 16,
+      "vocabulary": 22,
+      "length": 32,
+      "calculated_length": 78.25,
+      "volume": 142.7,
+      "difficulty": 3.73,
+      "effort": 532.75,
+      "time_seconds": 29.6,
+      "bugs_delivered": 0.048
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantAndGardenPlantingsViewModel.kt": {
+      "loc": 36,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 25,
+      "N1_total_operators": 49,
+      "N2_total_operands": 42,
+      "vocabulary": 34,
+      "length": 91,
+      "calculated_length": 144.63,
+      "volume": 462.96,
+      "difficulty": 7.56,
+      "effort": 3499.97,
+      "time_seconds": 194.44,
+      "bugs_delivered": 0.154
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModel.kt": {
+      "loc": 64,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 38,
+      "N1_total_operators": 60,
+      "N2_total_operands": 54,
+      "vocabulary": 51,
+      "length": 114,
+      "calculated_length": 247.53,
+      "volume": 646.66,
+      "difficulty": 9.24,
+      "effort": 5973.06,
+      "time_seconds": 331.84,
+      "bugs_delivered": 0.216
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantListViewModel.kt": {
+      "loc": 99,
+      "n1_unique_operators": 19,
+      "n2_unique_operands": 33,
+      "N1_total_operators": 68,
+      "N2_total_operands": 58,
+      "vocabulary": 52,
+      "length": 126,
+      "calculated_length": 247.18,
+      "volume": 718.26,
+      "difficulty": 16.7,
+      "effort": 11992.69,
+      "time_seconds": 666.26,
+      "bugs_delivered": 0.239
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/workers/SeedDatabaseWorker.kt": {
+      "loc": 58,
+      "n1_unique_operators": 19,
+      "n2_unique_operands": 46,
+      "N1_total_operators": 73,
+      "N2_total_operands": 67,
+      "vocabulary": 65,
+      "length": 140,
+      "calculated_length": 334.79,
+      "volume": 843.13,
+      "difficulty": 13.84,
+      "effort": 11666.37,
+      "time_seconds": 648.13,
+      "bugs_delivered": 0.281
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/ConvertersTest.kt": {
+      "loc": 36,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 17,
+      "N1_total_operators": 25,
+      "N2_total_operands": 27,
+      "vocabulary": 25,
+      "length": 52,
+      "calculated_length": 93.49,
+      "volume": 241.48,
+      "difficulty": 6.35,
+      "effort": 1534.11,
+      "time_seconds": 85.23,
+      "bugs_delivered": 0.08
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/GardenPlantingTest.kt": {
+      "loc": 31,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 15,
+      "N1_total_operators": 21,
+      "N2_total_operands": 23,
+      "vocabulary": 23,
+      "length": 44,
+      "calculated_length": 82.6,
+      "volume": 199.04,
+      "difficulty": 6.13,
+      "effort": 1220.76,
+      "time_seconds": 67.82,
+      "bugs_delivered": 0.066
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/PlantTest.kt": {
+      "loc": 55,
+      "n1_unique_operators": 13,
+      "n2_unique_operands": 38,
+      "N1_total_operators": 70,
+      "N2_total_operands": 96,
+      "vocabulary": 51,
+      "length": 166,
+      "calculated_length": 247.53,
+      "volume": 941.62,
+      "difficulty": 16.42,
+      "effort": 15462.43,
+      "time_seconds": 859.02,
+      "bugs_delivered": 0.314
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/test/CalendarMatcher.kt": {
+      "loc": 63,
+      "n1_unique_operators": 18,
+      "n2_unique_operands": 28,
+      "N1_total_operators": 70,
+      "N2_total_operands": 57,
+      "vocabulary": 46,
+      "length": 127,
+      "calculated_length": 209.66,
+      "volume": 701.49,
+      "difficulty": 18.32,
+      "effort": 12852.34,
+      "time_seconds": 714.02,
+      "bugs_delivered": 0.234
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtilTest.kt": {
+      "loc": 42,
+      "n1_unique_operators": 6,
+      "n2_unique_operands": 24,
+      "N1_total_operators": 57,
+      "N2_total_operands": 82,
+      "vocabulary": 30,
+      "length": 139,
+      "calculated_length": 125.55,
+      "volume": 682.06,
+      "difficulty": 10.25,
+      "effort": 6991.09,
+      "time_seconds": 388.39,
+      "bugs_delivered": 0.227
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/BaselineProfileGenerator.kt": {
+      "loc": 47,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 33,
+      "N1_total_operators": 43,
+      "N2_total_operands": 47,
+      "vocabulary": 41,
+      "length": 90,
+      "calculated_length": 190.47,
+      "volume": 482.18,
+      "difficulty": 5.7,
+      "effort": 2746.96,
+      "time_seconds": 152.61,
+      "bugs_delivered": 0.161
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantDetailBenchmarks.kt": {
+      "loc": 62,
+      "n1_unique_operators": 12,
+      "n2_unique_operands": 52,
+      "N1_total_operators": 76,
+      "N2_total_operands": 73,
+      "vocabulary": 64,
+      "length": 149,
+      "calculated_length": 339.44,
+      "volume": 894.0,
+      "difficulty": 8.42,
+      "effort": 7530.23,
+      "time_seconds": 418.35,
+      "bugs_delivered": 0.298
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantListBenchmarks.kt": {
+      "loc": 63,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 46,
+      "N1_total_operators": 68,
+      "N2_total_operands": 66,
+      "vocabulary": 55,
+      "length": 134,
+      "calculated_length": 282.61,
+      "volume": 774.7,
+      "difficulty": 6.46,
+      "effort": 5001.88,
+      "time_seconds": 277.88,
+      "bugs_delivered": 0.258
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/StartupBenchmarks.kt": {
+      "loc": 67,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 41,
+      "N1_total_operators": 55,
+      "N2_total_operands": 56,
+      "vocabulary": 50,
+      "length": 111,
+      "calculated_length": 248.19,
+      "volume": 626.47,
+      "difficulty": 6.15,
+      "effort": 3850.49,
+      "time_seconds": 213.92,
+      "bugs_delivered": 0.209
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/Utils.kt": {
+      "loc": 17,
+      "n1_unique_operators": 3,
+      "n2_unique_operands": 2,
+      "N1_total_operators": 3,
+      "N2_total_operands": 2,
+      "vocabulary": 5,
+      "length": 5,
+      "calculated_length": 6.75,
+      "volume": 11.61,
+      "difficulty": 1.5,
+      "effort": 17.41,
+      "time_seconds": 0.97,
+      "bugs_delivered": 0.004
+    }
+  },
+  "sonarqube": {
+    "project": {},
+    "files": {}
+  },
+  "state_metrics": {
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/GardenActivityTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 5,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/MainCoroutineRule.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/garden/GardenTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailComposeTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/GardenPlantingDaoTest.kt": {
+      "mutable_vars": 4,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 3
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/PlantDaoTest.kt": {
+      "mutable_vars": 3,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 2
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/LiveDataTestUtil.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/MainTestRunner.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/TestUtils.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 5,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModelTest.kt": {
+      "mutable_vars": 4,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 2
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/worker/SeedDatabaseWorkerTest.kt": {
+      "mutable_vars": 3,
+      "immutable_vars": 3,
+      "observable_state_vars": 0,
+      "state_updates": 3
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/GardenActivity.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/MainApplication.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/api/UnsplashService.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 3,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Dimens.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Modifiers.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Screen.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/SunflowerApp.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/gallery/GalleryScreen.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/garden/GardenScreen.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/home/HomeScreen.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 5,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailScroller.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 3,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailView.kt": {
+      "mutable_vars": 2,
+      "immutable_vars": 17,
+      "observable_state_vars": 2,
+      "state_updates": 3
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListItemView.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListScreen.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/utils/TextSnackbarContainer.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/AppDatabase.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Converters.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlanting.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingDao.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingRepository.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Plant.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantAndGardenPlantings.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantDao.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantRepository.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPagingSource.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhoto.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhotoUrls.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashRepository.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashSearchResponse.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashUser.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/DatabaseModule.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/NetworkModule.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Color.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 61,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Shapes.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Theme.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 8,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Type.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/Constants.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtil.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GalleryViewModel.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 2,
+      "observable_state_vars": 1,
+      "state_updates": 1
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GardenPlantingListViewModel.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantAndGardenPlantingsViewModel.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 9,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModel.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 2,
+      "state_updates": 2
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantListViewModel.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 2,
+      "state_updates": 5
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/workers/SeedDatabaseWorker.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/ConvertersTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/GardenPlantingTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/PlantTest.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/test/CalendarMatcher.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtilTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/BaselineProfileGenerator.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantDetailBenchmarks.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 5,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantListBenchmarks.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 3,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/StartupBenchmarks.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/Utils.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    }
+  },
+  "derived": {
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Plant.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtilTest.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/PlantTest.kt": {
+      "mutable_variable_ratio": 0.3333,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailComposeTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/NetworkModule.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/AppDatabase.kt": {
+      "mutable_variable_ratio": 0.5,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantRepository.kt": {
+      "mutable_variable_ratio": 1.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/gallery/GalleryScreen.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/Converters.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/SunflowerApp.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/LiveDataTestUtil.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingRepository.kt": {
+      "mutable_variable_ratio": 0.5,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/di/DatabaseModule.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingDao.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/garden/GardenTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/MainApplication.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlanting.kt": {
+      "mutable_variable_ratio": 1.0,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/ConvertersTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPagingSource.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GardenPlantingListViewModel.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Modifiers.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/StartupBenchmarks.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhoto.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/PlantDaoTest.kt": {
+      "mutable_variable_ratio": 0.3333,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/workers/SeedDatabaseWorker.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListItemView.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/home/HomeScreen.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModelTest.kt": {
+      "mutable_variable_ratio": 0.4,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/GardenActivityTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailScroller.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/api/UnsplashService.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Theme.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/worker/SeedDatabaseWorkerTest.kt": {
+      "mutable_variable_ratio": 0.5,
+      "maintainability_index": null
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantListBenchmarks.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashPhotoUrls.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModel.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/test/CalendarMatcher.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/Constants.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/garden/GardenScreen.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantListViewModel.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/MainTestRunner.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/Utils.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Screen.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/data/GardenPlantingDaoTest.kt": {
+      "mutable_variable_ratio": 0.5,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Shapes.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GalleryViewModel.kt": {
+      "mutable_variable_ratio": 0.3333,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailView.kt": {
+      "mutable_variable_ratio": 0.1053,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantAndGardenPlantingsViewModel.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/TestUtils.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/BaselineProfileGenerator.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashSearchResponse.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListScreen.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashRepository.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/utils/TextSnackbarContainer.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/MainCoroutineRule.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/google/samples/apps/sunflower/data/GardenPlantingTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/compose/Dimens.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/GardenActivity.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/UnsplashUser.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantAndGardenPlantings.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtil.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Color.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "macrobenchmark/src/main/java/com/google/samples/apps/sunflower/macrobenchmark/PlantDetailBenchmarks.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/google/samples/apps/sunflower/compose/plantlist/PlantListTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/data/PlantDao.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/google/samples/apps/sunflower/ui/Type.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    }
+  }
+}

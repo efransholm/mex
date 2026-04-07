@@ -1,4 +1,4 @@
-import os 
+import os
 import requests
 import csv
 import base64
@@ -7,10 +7,20 @@ from dataclasses import dataclass, field
 from typing import Optional
 import time
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+# Load .env from repo root (two levels up from this script)
+_env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+if os.path.exists(_env_path):
+    with open(_env_path) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if "=" in _line and not _line.startswith("#"):
+                _k, _, _v = _line.partition("=")
+                os.environ.setdefault(_k.strip(), _v.strip())
+
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or os.getenv("GITHUB_PERSONAL_ACCESS_TOKEN")
 
 if not GITHUB_TOKEN:
-    raise ValueError("GITHUB_TOKEN environment variable is not set.")
+    raise ValueError("GITHUB_TOKEN or GITHUB_PERSONAL_ACCESS_TOKEN environment variable is not set.")
 
 HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
@@ -19,11 +29,45 @@ HEADERS = {
 
 # can also add the repo at a specific commit/branch/tag like "owner/repo@commitish" if needed
 REPOS = [
-    "android/sunflower",
-    "android/sunflower@views"
+    # Photo / image gallery
+    "SimpleMobileTools/Simple-Gallery",         # views
+    "IacobIonut01/Gallery",                     # compose
+
+    # Large navigation / content browsing
+    "mozilla-mobile/fenix",                     # views
+    "android/nowinandroid",                     # compose
+
+    # Music / podcast player
+    "SimpleMobileTools/Simple-Music-Player",    # views
+    "android/compose-samples",                  # compose — Jetcaster subfolder
+
+    # Gardening app (same repo, two versions)
+    "android/sunflower@views",                  # views branch
+    "android/sunflower",                        # compose (main)
+
+    # To-do app (same repo, two versions)
+    "android/architecture-samples@views",       # views branch
+    "android/architecture-samples",             # compose (main)
+
+    # Pokedex app (two separate repos)
+    "skydoves/pokedex",                         # views
+    "skydoves/pokedex-compose",                 # compose
+
+    # Voice assistant (same repo, before/after migration)
+    "Stypox/dicio-android@1075d6966930c299ab6095825a2adbb3c1eeed8e",  # views — last commit before Compose
+    "Stypox/dicio-android",                     # compose (main)
+
+    # News feed
+    "nameisjayant/News-feed-app-android-kotlin", # views
+    # compose — JetNews is a subfolder of compose-samples (already listed above)
+
+    # TV / content tracking
+    "trakt/showly",                              # views
+    "chrisbanes/tivi",                          # compose
 ]
 
 OUTPUT_CSV = "repo_data.csv"
+OUTPUT_SUMMARY_CSV = "repo_summary.csv"
 
 # How many files to scan per repo (set to None for unlimited — can be slow)
 MAX_FILES_PER_REPO: Optional[int] = 500
@@ -179,6 +223,31 @@ class FileResult:
     matched_keywords: list = field(default_factory=list)
     html_url: str = ""
 
+
+@dataclass
+class RepoSummary:
+    repo: str
+    stars: Optional[int]
+    open_issues: Optional[int]
+    last_push: Optional[str]
+    forks: Optional[int]
+    commits: Optional[int]
+    contributors: Optional[int]
+    open_pull_requests: Optional[int]
+    total_ui_files: int
+    # Framework file counts
+    compose_files: int = 0
+    android_views_files: int = 0
+    swiftui_files: int = 0
+    uikit_files: int = 0
+    mixed_files: int = 0
+    # Percentages (of total_ui_files)
+    compose_pct: float = 0.0
+    android_views_pct: float = 0.0
+    swiftui_pct: float = 0.0
+    uikit_pct: float = 0.0
+    dominant_framework: str = ""
+
 # ──────────────────────────────────────────────
 # GITHUB API CLIENT
 # ──────────────────────────────────────────────
@@ -213,6 +282,49 @@ def api_get(url: str, params: dict = None) -> Optional[dict]:
             return None
 
 
+def api_count(url: str, params: dict = None) -> Optional[int]:
+    """Fetch only the first page (per_page=1) and extract the total count from the Link header.
+
+    Returns the total number of items, or None on failure.
+    Falls back to counting the returned list if no Link header is present (i.e. ≤1 page).
+    """
+    p = {"per_page": 1}
+    if params:
+        p.update(params)
+    while True:
+        response = session.get(url, params=p)
+        if response.status_code == 200:
+            time.sleep(REQUEST_DELAY)
+            link = response.headers.get("Link", "")
+            # Link header looks like: <url?page=N>; rel="last"
+            import re
+            match = re.search(r'[?&]page=(\d+)>; rel="last"', link)
+            if match:
+                return int(match.group(1))
+            # No pagination — all items fit on one page
+            data = response.json()
+            return len(data) if isinstance(data, list) else None
+        elif response.status_code == 403:
+            reset_time = int(response.headers.get("X-RateLimit-Reset", time.time() + 60))
+            sleep_for = max(reset_time - int(time.time()), 1) + 5
+            logger.warning(f"Rate limited. Sleeping {sleep_for}s ...")
+            time.sleep(sleep_for)
+        elif response.status_code == 404:
+            logger.warning(f"404 Not Found: {url}")
+            return None
+        else:
+            logger.error(f"HTTP {response.status_code} for {url}: {response.text[:200]}")
+            return None
+
+
+def resolve_to_tree_sha(owner: str, repo: str, ref: str) -> Optional[str]:
+    """Resolve a branch name, tag, or commit SHA to the corresponding git tree SHA."""
+    commit_data = api_get(f"https://api.github.com/repos/{owner}/{repo}/commits/{ref}")
+    if commit_data and "commit" in commit_data:
+        return commit_data["commit"]["tree"]["sha"]
+    return None
+
+
 def get_tree(owner: str, repo: str, ref: Optional[str] = None) -> list[dict]:
     """Retrieve the full file tree for a branch, commit SHA, or tag.
 
@@ -225,8 +337,14 @@ def get_tree(owner: str, repo: str, ref: Optional[str] = None) -> list[dict]:
             return []
         ref = repo_data.get("default_branch", "main")
 
+    # The git trees API needs a tree SHA — resolve commits/branches/tags first
+    tree_sha = resolve_to_tree_sha(owner, repo, ref)
+    if not tree_sha:
+        logger.warning(f"Could not resolve ref '{ref}' to a tree SHA for {owner}/{repo}")
+        return []
+
     tree_data = api_get(
-        f"https://api.github.com/repos/{owner}/{repo}/git/trees/{ref}",
+        f"https://api.github.com/repos/{owner}/{repo}/git/trees/{tree_sha}",
         params={"recursive": "1"},
     )
     if not tree_data:
@@ -302,6 +420,73 @@ def classify_storyboard_file(content: str) -> tuple[str, list[str]]:
     return "Unknown", []
 
 # ──────────────────────────────────────────────
+# REPO METADATA
+# ──────────────────────────────────────────────
+
+def get_repo_metadata(owner: str, repo: str) -> dict:
+    """Fetch stars, open issues, forks, last push, commits, contributors, and open PRs."""
+    base = f"https://api.github.com/repos/{owner}/{repo}"
+    data = api_get(base)
+    if not data:
+        return {}
+
+    commits      = api_count(f"{base}/commits")
+    contributors = api_count(f"{base}/contributors", params={"anon": "true"})
+    open_prs     = api_count(f"{base}/pulls", params={"state": "open"})
+
+    return {
+        "stars":              data.get("stargazers_count"),
+        "open_issues":        data.get("open_issues_count"),
+        "forks":              data.get("forks_count"),
+        "last_push":          data.get("pushed_at", "")[:10],
+        "commits":            commits,
+        "contributors":       contributors,
+        "open_pull_requests": open_prs,
+    }
+
+
+def summarize_results(repo_label: str, results: list[FileResult], metadata: dict) -> RepoSummary:
+    """Aggregate file-level results into a single RepoSummary row."""
+    counts: dict[str, int] = {}
+    for r in results:
+        counts[r.framework] = counts.get(r.framework, 0) + 1
+
+    compose   = counts.get("Jetpack Compose", 0)
+    views     = counts.get("Android Views", 0)
+    swiftui   = counts.get("SwiftUI", 0)
+    uikit     = counts.get("UIKit", 0)
+    mixed     = sum(v for k, v in counts.items() if "Mixed" in k)
+    total     = sum(counts.values())
+
+    def pct(n: int) -> float:
+        return round(100 * n / total, 1) if total > 0 else 0.0
+
+    dominant = max(counts, key=counts.get) if counts else "Unknown"
+
+    return RepoSummary(
+        repo=repo_label,
+        stars=metadata.get("stars"),
+        open_issues=metadata.get("open_issues"),
+        last_push=metadata.get("last_push"),
+        forks=metadata.get("forks"),
+        commits=metadata.get("commits"),
+        contributors=metadata.get("contributors"),
+        open_pull_requests=metadata.get("open_pull_requests"),
+        total_ui_files=total,
+        compose_files=compose,
+        android_views_files=views,
+        swiftui_files=swiftui,
+        uikit_files=uikit,
+        mixed_files=mixed,
+        compose_pct=pct(compose),
+        android_views_pct=pct(views),
+        swiftui_pct=pct(swiftui),
+        uikit_pct=pct(uikit),
+        dominant_framework=dominant,
+    )
+
+
+# ──────────────────────────────────────────────
 # MAIN MINING LOGIC
 # ──────────────────────────────────────────────
 
@@ -320,8 +505,18 @@ def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResu
     for item in tree:
         path = item["path"]
         _, ext = os.path.splitext(path.lower())
-        if ext in KOTLIN_EXTENSIONS | XML_EXTENSIONS | SWIFT_EXTENSIONS | STORYBOARD_EXTENSIONS:
-            candidates.append(item)
+        if ext in XML_EXTENSIONS:
+            # Only scan XML files inside a res/layout directory — skip manifests,
+            # values, drawables, navigation graphs, etc.
+            path_lower = path.lower()
+            is_layout_xml = any(
+                part.startswith("layout") for part in path_lower.split("/")
+            )
+            if not is_layout_xml:
+                continue
+        elif ext not in KOTLIN_EXTENSIONS | SWIFT_EXTENSIONS | STORYBOARD_EXTENSIONS:
+            continue
+        candidates.append(item)
 
     if MAX_FILES_PER_REPO is not None:
         candidates = candidates[:MAX_FILES_PER_REPO]
@@ -373,6 +568,23 @@ def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResu
     return results
 
 
+def save_summary_csv(summaries: list[RepoSummary], output_path: str):
+    fields = [
+        "repo", "stars", "open_issues", "last_push", "forks",
+        "commits", "contributors", "open_pull_requests",
+        "total_ui_files",
+        "compose_files", "android_views_files", "swiftui_files", "uikit_files", "mixed_files",
+        "compose_pct", "android_views_pct", "swiftui_pct", "uikit_pct",
+        "dominant_framework",
+    ]
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        for s in summaries:
+            writer.writerow({k: getattr(s, k) for k in fields})
+    logger.info(f"Summary saved to: {output_path}")
+
+
 def save_csv(results: list[FileResult], output_path: str):
     with open(output_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=[
@@ -391,38 +603,112 @@ def save_csv(results: list[FileResult], output_path: str):
     logger.info(f"Results saved to: {output_path}")
 
 
+def parse_repo_str(repo_str: str) -> tuple[str, str, Optional[str]]:
+    """Parse 'owner/repo' or 'owner/repo@ref' into (owner, repo, ref)."""
+    repo_str = repo_str.strip()
+    ref = None
+    if "@" in repo_str:
+        repo_str, ref = repo_str.split("@", 1)
+    owner, repo = repo_str.split("/", 1)
+    return owner, repo, ref
+
+
+def update_single_repo(repo_str: str):
+    """Re-mine one repo and replace only its rows in both CSVs."""
+    owner, repo, ref = parse_repo_str(repo_str)
+    label = f"{owner}/{repo}@{ref}" if ref else f"{owner}/{repo}"
+    logger.info(f"Updating single repo: {label}")
+
+    metadata = get_repo_metadata(owner, repo)
+    results  = mine_repo(owner, repo, ref)
+    summary  = summarize_results(label, results, metadata)
+
+    # --- Update repo_summary.csv ---
+    summary_fields = [
+        "repo", "stars", "open_issues", "last_push", "forks",
+        "commits", "contributors", "open_pull_requests",
+        "total_ui_files",
+        "compose_files", "android_views_files", "swiftui_files", "uikit_files", "mixed_files",
+        "compose_pct", "android_views_pct", "swiftui_pct", "uikit_pct",
+        "dominant_framework",
+    ]
+    if os.path.exists(OUTPUT_SUMMARY_CSV):
+        with open(OUTPUT_SUMMARY_CSV, newline="", encoding="utf-8") as f:
+            existing_summaries = list(csv.DictReader(f))
+        existing_summaries = [r for r in existing_summaries if r["repo"] != label]
+    else:
+        existing_summaries = []
+    existing_summaries.append({k: getattr(summary, k) for k in summary_fields})
+
+    with open(OUTPUT_SUMMARY_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=summary_fields)
+        writer.writeheader()
+        writer.writerows(existing_summaries)
+    logger.info(f"Summary updated: {OUTPUT_SUMMARY_CSV}")
+
+    # --- Update repo_data.csv ---
+    file_fields = ["repo", "file_path", "language", "framework", "matched_keywords", "html_url"]
+    if os.path.exists(OUTPUT_CSV):
+        with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
+            existing_files = list(csv.DictReader(f))
+        existing_files = [r for r in existing_files if r["repo"] != label]
+    else:
+        existing_files = []
+    for r in results:
+        existing_files.append({
+            "repo": r.repo,
+            "file_path": r.file_path,
+            "language": r.language,
+            "framework": r.framework,
+            "matched_keywords": "; ".join(r.matched_keywords),
+            "html_url": r.html_url,
+        })
+
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=file_fields)
+        writer.writeheader()
+        writer.writerows(existing_files)
+    logger.info(f"File data updated: {OUTPUT_CSV}")
+
+    print(f"\n✅ Updated {label}: {len(results)} files found.")
+
+
 def main():
-    if GITHUB_TOKEN == "YOUR_TOKEN_HERE":
-        raise ValueError("Please set your GitHub token in the GITHUB_TOKEN variable or GITHUB_TOKEN env var.")
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--update", metavar="REPO",
+        help="Re-mine a single repo and update CSVs (e.g. 'Stypox/dicio-android@81e0cbda')"
+    )
+    args = parser.parse_args()
+
+    if args.update:
+        update_single_repo(args.update)
+        return
 
     if not REPOS:
         raise ValueError("Please add at least one repository to the REPOS list.")
 
     all_results: list[FileResult] = []
+    all_summaries: list[RepoSummary] = []
 
     for repo_str in REPOS:
-        repo_str = repo_str.strip()
-
-        # Parse optional @ref suffix — works for branches, tags, and commit SHAs
-        # e.g. "android/sunflower@views"  or  "android/sunflower@abc1234"
-        ref = None
-        if "@" in repo_str:
-            repo_str, ref = repo_str.split("@", 1)
-
-        if "/" not in repo_str:
-            logger.error(f"Invalid repo format (expected 'owner/repo' or 'owner/repo@ref'): {repo_str}")
-            continue
-
-        owner, repo = repo_str.split("/", 1)
+        owner, repo, ref = parse_repo_str(repo_str)
         try:
+            metadata = get_repo_metadata(owner, repo)
             results = mine_repo(owner, repo, ref)
             all_results.extend(results)
+            label = f"{owner}/{repo}@{ref}" if ref else f"{owner}/{repo}"
+            all_summaries.append(summarize_results(label, results, metadata))
         except Exception as e:
-            logger.error(f"Failed to mine {repo_str}@{ref or 'default'}: {e}")
+            logger.error(f"Failed to mine {repo_str}: {e}")
 
     if all_results:
         save_csv(all_results, OUTPUT_CSV)
-        print(f"\n✅ Done! {len(all_results)} files across {len(REPOS)} repos → {OUTPUT_CSV}")
+        save_summary_csv(all_summaries, OUTPUT_SUMMARY_CSV)
+        print(f"\n✅ Done! {len(all_results)} files across {len(REPOS)} repos")
+        print(f"   File-level  → {OUTPUT_CSV}")
+        print(f"   Repo summary → {OUTPUT_SUMMARY_CSV}")
     else:
         print("\n⚠️  No matching files found. Check your repo list and token.")
 

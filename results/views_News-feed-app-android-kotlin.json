@@ -1,0 +1,809 @@
+{
+  "project": "News-feed-app-android-kotlin",
+  "framework": "views",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-views-News-feed-app-android-kotlin",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/android/News-feed-app-android-kotlin",
+  "halstead": {
+    "app/src/androidTest/java/com/codingwithjks/retrofit/ExampleInstrumentedTest.kt": {
+      "loc": 20,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 12,
+      "N1_total_operators": 13,
+      "N2_total_operands": 13,
+      "vocabulary": 19,
+      "length": 26,
+      "calculated_length": 62.67,
+      "volume": 110.45,
+      "difficulty": 3.79,
+      "effort": 418.77,
+      "time_seconds": 23.27,
+      "bugs_delivered": 0.037
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Adapter/NewsAdapter.kt": {
+      "loc": 42,
+      "n1_unique_operators": 11,
+      "n2_unique_operands": 50,
+      "N1_total_operators": 95,
+      "N2_total_operands": 96,
+      "vocabulary": 61,
+      "length": 191,
+      "calculated_length": 320.25,
+      "volume": 1132.77,
+      "difficulty": 10.56,
+      "effort": 11962.06,
+      "time_seconds": 664.56,
+      "bugs_delivered": 0.378
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Container/BaseApp.kt": {
+      "loc": 6,
+      "n1_unique_operators": 3,
+      "n2_unique_operands": 3,
+      "N1_total_operators": 3,
+      "N2_total_operands": 3,
+      "vocabulary": 6,
+      "length": 6,
+      "calculated_length": 9.51,
+      "volume": 15.51,
+      "difficulty": 1.5,
+      "effort": 23.26,
+      "time_seconds": 1.29,
+      "bugs_delivered": 0.005
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Listener/Listener.kt": {
+      "loc": 4,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 4,
+      "N1_total_operators": 4,
+      "N2_total_operands": 4,
+      "vocabulary": 8,
+      "length": 8,
+      "calculated_length": 16.0,
+      "volume": 24.0,
+      "difficulty": 2.0,
+      "effort": 48.0,
+      "time_seconds": 2.67,
+      "bugs_delivered": 0.008
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Articles.kt": {
+      "loc": 20,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 20,
+      "N1_total_operators": 27,
+      "N2_total_operands": 33,
+      "vocabulary": 25,
+      "length": 60,
+      "calculated_length": 98.05,
+      "volume": 278.63,
+      "difficulty": 4.12,
+      "effort": 1149.35,
+      "time_seconds": 63.85,
+      "bugs_delivered": 0.093
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/News.kt": {
+      "loc": 10,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 12,
+      "N2_total_operands": 13,
+      "vocabulary": 16,
+      "length": 25,
+      "calculated_length": 49.66,
+      "volume": 100.0,
+      "difficulty": 2.95,
+      "effort": 295.45,
+      "time_seconds": 16.41,
+      "bugs_delivered": 0.033
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Source.kt": {
+      "loc": 8,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 7,
+      "N1_total_operators": 9,
+      "N2_total_operands": 9,
+      "vocabulary": 12,
+      "length": 18,
+      "calculated_length": 31.26,
+      "volume": 64.53,
+      "difficulty": 3.21,
+      "effort": 207.42,
+      "time_seconds": 11.52,
+      "bugs_delivered": 0.022
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/BaseUrl.kt": {
+      "loc": 4,
+      "n1_unique_operators": 5,
+      "n2_unique_operands": 4,
+      "N1_total_operators": 6,
+      "N2_total_operands": 4,
+      "vocabulary": 9,
+      "length": 10,
+      "calculated_length": 19.61,
+      "volume": 31.7,
+      "difficulty": 2.5,
+      "effort": 79.25,
+      "time_seconds": 4.4,
+      "bugs_delivered": 0.011
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApi.kt": {
+      "loc": 21,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 15,
+      "N1_total_operators": 13,
+      "N2_total_operands": 21,
+      "vocabulary": 19,
+      "length": 34,
+      "calculated_length": 66.6,
+      "volume": 144.43,
+      "difficulty": 2.8,
+      "effort": 404.4,
+      "time_seconds": 22.47,
+      "bugs_delivered": 0.048
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApiImp.kt": {
+      "loc": 8,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 11,
+      "N1_total_operators": 15,
+      "N2_total_operands": 20,
+      "vocabulary": 19,
+      "length": 35,
+      "calculated_length": 62.05,
+      "volume": 148.68,
+      "difficulty": 7.27,
+      "effort": 1081.29,
+      "time_seconds": 60.07,
+      "bugs_delivered": 0.05
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Repository/NewsRepository.kt": {
+      "loc": 14,
+      "n1_unique_operators": 8,
+      "n2_unique_operands": 16,
+      "N1_total_operators": 17,
+      "N2_total_operands": 19,
+      "vocabulary": 24,
+      "length": 36,
+      "calculated_length": 88.0,
+      "volume": 165.06,
+      "difficulty": 4.75,
+      "effort": 784.03,
+      "time_seconds": 43.56,
+      "bugs_delivered": 0.055
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/MainActivity.kt": {
+      "loc": 79,
+      "n1_unique_operators": 21,
+      "n2_unique_operands": 84,
+      "N1_total_operators": 154,
+      "N2_total_operands": 172,
+      "vocabulary": 105,
+      "length": 326,
+      "calculated_length": 629.19,
+      "volume": 2188.84,
+      "difficulty": 21.5,
+      "effort": 47060.15,
+      "time_seconds": 2614.45,
+      "bugs_delivered": 0.73
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/WebActivity.kt": {
+      "loc": 26,
+      "n1_unique_operators": 14,
+      "n2_unique_operands": 30,
+      "N1_total_operators": 38,
+      "N2_total_operands": 38,
+      "vocabulary": 44,
+      "length": 76,
+      "calculated_length": 200.51,
+      "volume": 414.92,
+      "difficulty": 8.87,
+      "effort": 3678.93,
+      "time_seconds": 204.38,
+      "bugs_delivered": 0.138
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/ViewModel/NewsViewModel.kt": {
+      "loc": 17,
+      "n1_unique_operators": 9,
+      "n2_unique_operands": 14,
+      "N1_total_operators": 20,
+      "N2_total_operands": 16,
+      "vocabulary": 23,
+      "length": 36,
+      "calculated_length": 81.83,
+      "volume": 162.85,
+      "difficulty": 5.14,
+      "effort": 837.51,
+      "time_seconds": 46.53,
+      "bugs_delivered": 0.054
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/di/AppModule.kt": {
+      "loc": 25,
+      "n1_unique_operators": 7,
+      "n2_unique_operands": 21,
+      "N1_total_operators": 34,
+      "N2_total_operands": 32,
+      "vocabulary": 28,
+      "length": 66,
+      "calculated_length": 111.89,
+      "volume": 317.29,
+      "difficulty": 5.33,
+      "effort": 1692.19,
+      "time_seconds": 94.01,
+      "bugs_delivered": 0.106
+    },
+    "app/src/test/java/com/codingwithjks/retrofit/ExampleUnitTest.kt": {
+      "loc": 14,
+      "n1_unique_operators": 4,
+      "n2_unique_operands": 6,
+      "N1_total_operators": 5,
+      "N2_total_operands": 7,
+      "vocabulary": 10,
+      "length": 12,
+      "calculated_length": 23.51,
+      "volume": 39.86,
+      "difficulty": 2.33,
+      "effort": 93.01,
+      "time_seconds": 5.17,
+      "bugs_delivered": 0.013
+    }
+  },
+  "sonarqube": {
+    "project": {
+      "complexity": 13,
+      "code_smells": 3,
+      "duplicated_lines_density": 0.0,
+      "functions": 12,
+      "classes": 15,
+      "sqale_debt_ratio": 0.1,
+      "statements": 34,
+      "comment_lines_density": 3.7,
+      "bugs": 0,
+      "comment_lines": 23,
+      "cognitive_complexity": 1,
+      "ncloc": 602,
+      "files": 29,
+      "lines": 810
+    },
+    "files": {
+      "app/src/main/res/layout/activity_main.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 34,
+        "ncloc": 28,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/layout/activity_web.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 37,
+        "ncloc": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/AndroidManifest.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 31,
+        "ncloc": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/di/AppModule.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 30,
+        "ncloc": 25,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Model/Articles.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 22,
+        "ncloc": 20,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Container/BaseApp.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 8,
+        "ncloc": 6,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Network/BaseUrl.kt": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 6,
+        "ncloc": 4,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values-night/colors-night.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 9,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/colors.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 9,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/layout/each_row.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 56,
+        "ncloc": 50,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/androidTest/java/com/codingwithjks/retrofit/ExampleInstrumentedTest.kt": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 30.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 24,
+        "ncloc": 14,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/test/java/com/codingwithjks/retrofit/ExampleUnitTest.kt": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 35.7,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 17,
+        "ncloc": 9,
+        "sqale_debt_ratio": 1.9,
+        "statements": 1,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 5,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable/ic_launcher_background.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 171,
+        "ncloc": 170,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/drawable-v24/ic_launcher_foreground.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 30,
+        "ncloc": 30,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 5,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Listener/Listener.kt": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 5,
+        "ncloc": 4,
+        "sqale_debt_ratio": 4.2,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Ui/MainActivity.kt": {
+        "lines": 97,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Model/News.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 10,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Adapter/NewsAdapter.kt": {
+        "classes": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 50,
+        "ncloc": 42,
+        "statements": 13,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApi.kt": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 43.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 13,
+        "sqale_debt_ratio": 1.3,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApiImp.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 12,
+        "ncloc": 8,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Repository/NewsRepository.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 14,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/ViewModel/NewsViewModel.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 21,
+        "ncloc": 17,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Model/Source.kt": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 10,
+        "ncloc": 8,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/strings.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 5,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/values/styles.xml": {
+        "comment_lines": 2,
+        "comment_lines_density": 22.2,
+        "lines": 10,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/res/layout/toolbar.xml": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 14,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      },
+      "app/src/main/java/com/codingwithjks/retrofit/Ui/WebActivity.kt": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 31,
+        "ncloc": 26,
+        "statements": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    }
+  },
+  "state_metrics": {
+    "app/src/androidTest/java/com/codingwithjks/retrofit/ExampleInstrumentedTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Adapter/NewsAdapter.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 4,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Container/BaseApp.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Listener/Listener.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Articles.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/News.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Source.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/BaseUrl.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApi.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApiImp.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Repository/NewsRepository.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/MainActivity.kt": {
+      "mutable_vars": 3,
+      "immutable_vars": 6,
+      "observable_state_vars": 0,
+      "state_updates": 5
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/WebActivity.kt": {
+      "mutable_vars": 1,
+      "immutable_vars": 2,
+      "observable_state_vars": 0,
+      "state_updates": 1
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/ViewModel/NewsViewModel.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 1,
+      "observable_state_vars": 1,
+      "state_updates": 0
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/di/AppModule.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    },
+    "app/src/test/java/com/codingwithjks/retrofit/ExampleUnitTest.kt": {
+      "mutable_vars": 0,
+      "immutable_vars": 0,
+      "observable_state_vars": 0,
+      "state_updates": 0
+    }
+  },
+  "derived": {
+    "app/src/main/java/com/codingwithjks/retrofit/ViewModel/NewsViewModel.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/News.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Adapter/NewsAdapter.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 42.67
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/WebActivity.kt": {
+      "mutable_variable_ratio": 0.3333,
+      "maintainability_index": 50.53
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Repository/NewsRepository.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 59.34
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Articles.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/BaseUrl.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": null
+    },
+    "app/src/androidTest/java/com/codingwithjks/retrofit/ExampleInstrumentedTest.kt": {
+      "mutable_variable_ratio": 0.0,
+      "maintainability_index": 57.18
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/di/AppModule.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 51.59
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Listener/Listener.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApi.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/test/java/com/codingwithjks/retrofit/ExampleUnitTest.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 63.66
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Container/BaseApp.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Model/Source.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": null
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Network/NewsApiImp.kt": {
+      "mutable_variable_ratio": null,
+      "maintainability_index": 64.96
+    },
+    "app/src/main/java/com/codingwithjks/retrofit/Ui/MainActivity.kt": {
+      "mutable_variable_ratio": 0.3333,
+      "maintainability_index": null
+    }
+  }
+}
