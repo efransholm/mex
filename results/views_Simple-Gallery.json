@@ -1,0 +1,6957 @@
+{
+  "project": "Simple-Gallery",
+  "framework": "views",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-views-Simple-Gallery",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/Simple-Gallery",
+  "sonarqube_project": {
+    "complexity": 3869,
+    "code_smells": 268,
+    "duplicated_lines_density": 1.0,
+    "functions": 1097,
+    "classes": 108,
+    "sqale_debt_ratio": 0.2,
+    "statements": 9608,
+    "comment_lines_density": 2.3,
+    "bugs": 3,
+    "comment_lines": 981,
+    "cognitive_complexity": 4114,
+    "ncloc": 41964,
+    "files": 293,
+    "lines": 47194
+  },
+  "files": {
+    "app/build.gradle.kts": {
+      "sonarqube": {
+        "code_smells": 1,
+        "lines": 137,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/debug/res/values/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/foss/res/values/bools.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 1,
+        "comment_lines_density": 0.2,
+        "lines": 596,
+        "ncloc": 498,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/App.kt": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 33,
+        "N2_total_operands": 24,
+        "vocabulary": 27,
+        "length": 57,
+        "calculated_length": 104.71,
+        "volume": 271.03,
+        "difficulty": 5.05,
+        "effort": 1369.41,
+        "time_seconds": 76.08,
+        "bugs_delivered": 0.09
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 54.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 23,
+        "ncloc": 19,
+        "sqale_debt_ratio": 0.9,
+        "statements": 5,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/EditActivity.kt": {
+      "halstead": {
+        "loc": 840,
+        "n1_unique_operators": 39,
+        "n2_unique_operands": 462,
+        "N1_total_operators": 1723,
+        "N2_total_operands": 1753,
+        "vocabulary": 501,
+        "length": 3476,
+        "calculated_length": 4295.64,
+        "volume": 31175.09,
+        "difficulty": 73.99,
+        "effort": 2306652.69,
+        "time_seconds": 128147.37,
+        "bugs_delivered": 10.392
+      },
+      "state_metrics": {
+        "mutable_vars": 21,
+        "immutable_vars": 61,
+        "observable_state_vars": 0,
+        "state_updates": 34
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2561,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 9,
+        "cognitive_complexity": 159,
+        "comment_lines": 2,
+        "comment_lines_density": 0.2,
+        "complexity": 147,
+        "functions": 44,
+        "lines": 961,
+        "ncloc": 838,
+        "sqale_debt_ratio": 0.2,
+        "statements": 444,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/ExcludedFoldersActivity.kt": {
+      "halstead": {
+        "loc": 70,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 76,
+        "N1_total_operators": 117,
+        "N2_total_operands": 132,
+        "vocabulary": 96,
+        "length": 249,
+        "calculated_length": 561.28,
+        "volume": 1639.66,
+        "difficulty": 17.37,
+        "effort": 28478.23,
+        "time_seconds": 1582.12,
+        "bugs_delivered": 0.547
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 35.9
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 10,
+        "functions": 6,
+        "lines": 84,
+        "ncloc": 70,
+        "statements": 32,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/HiddenFoldersActivity.kt": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 93,
+        "N2_total_operands": 110,
+        "vocabulary": 77,
+        "length": 203,
+        "calculated_length": 425.77,
+        "volume": 1272.16,
+        "difficulty": 14.43,
+        "effort": 18352.44,
+        "time_seconds": 1019.58,
+        "bugs_delivered": 0.424
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.35
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 8,
+        "functions": 6,
+        "lines": 78,
+        "ncloc": 67,
+        "statements": 29,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/IncludedFoldersActivity.kt": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 93,
+        "N2_total_operands": 102,
+        "vocabulary": 75,
+        "length": 195,
+        "calculated_length": 411.08,
+        "volume": 1214.62,
+        "difficulty": 13.83,
+        "effort": 16798.81,
+        "time_seconds": 933.27,
+        "bugs_delivered": 0.405
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.19
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 8,
+        "functions": 6,
+        "lines": 68,
+        "ncloc": 56,
+        "statements": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/MainActivity.kt": {
+      "halstead": {
+        "loc": 1321,
+        "n1_unique_operators": 43,
+        "n2_unique_operands": 643,
+        "N1_total_operators": 2500,
+        "N2_total_operands": 2591,
+        "vocabulary": 686,
+        "length": 5091,
+        "calculated_length": 6231.67,
+        "volume": 47967.73,
+        "difficulty": 86.64,
+        "effort": 4155698.98,
+        "time_seconds": 230872.17,
+        "bugs_delivered": 15.989
+      },
+      "state_metrics": {
+        "mutable_vars": 40,
+        "immutable_vars": 104,
+        "observable_state_vars": 4,
+        "state_updates": 92
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2778,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 24,
+        "cognitive_complexity": 391,
+        "comment_lines": 19,
+        "comment_lines_density": 1.4,
+        "complexity": 338,
+        "functions": 78,
+        "lines": 1522,
+        "ncloc": 1304,
+        "sqale_debt_ratio": 0.5,
+        "statements": 807,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/MediaActivity.kt": {
+      "halstead": {
+        "loc": 863,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 392,
+        "N1_total_operators": 1384,
+        "N2_total_operands": 1394,
+        "vocabulary": 426,
+        "length": 2778,
+        "calculated_length": 3549.94,
+        "volume": 24265.02,
+        "difficulty": 60.45,
+        "effort": 1466919.7,
+        "time_seconds": 81495.54,
+        "bugs_delivered": 8.088
+      },
+      "state_metrics": {
+        "mutable_vars": 29,
+        "immutable_vars": 48,
+        "observable_state_vars": 0,
+        "state_updates": 41
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3766,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "cognitive_complexity": 211,
+        "comment_lines": 2,
+        "comment_lines_density": 0.2,
+        "complexity": 202,
+        "duplicated_lines_density": 4.0,
+        "functions": 60,
+        "lines": 989,
+        "ncloc": 861,
+        "sqale_debt_ratio": 0.2,
+        "statements": 524,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/PanoramaPhotoActivity.kt": {
+      "halstead": {
+        "loc": 166,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 145,
+        "N1_total_operators": 273,
+        "N2_total_operands": 281,
+        "vocabulary": 179,
+        "length": 554,
+        "calculated_length": 1214.06,
+        "volume": 4146.03,
+        "difficulty": 32.94,
+        "effort": 136590.37,
+        "time_seconds": 7588.35,
+        "bugs_delivered": 1.382
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3077,
+        "maintainability_index": 23.42
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 18,
+        "comment_lines": 1,
+        "comment_lines_density": 0.6,
+        "complexity": 21,
+        "functions": 11,
+        "lines": 198,
+        "ncloc": 165,
+        "statements": 93,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/PanoramaVideoActivity.kt": {
+      "halstead": {
+        "loc": 288,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 221,
+        "N1_total_operators": 605,
+        "N2_total_operands": 612,
+        "vocabulary": 256,
+        "length": 1217,
+        "calculated_length": 1900.65,
+        "volume": 9736.0,
+        "difficulty": 48.46,
+        "effort": 471821.54,
+        "time_seconds": 26212.31,
+        "bugs_delivered": 3.245
+      },
+      "state_metrics": {
+        "mutable_vars": 11,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 20
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4583,
+        "maintainability_index": 11.83
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 38,
+        "comment_lines": 1,
+        "comment_lines_density": 0.3,
+        "complexity": 49,
+        "functions": 24,
+        "lines": 341,
+        "ncloc": 287,
+        "sqale_debt_ratio": 0.1,
+        "statements": 167,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/PhotoActivity.kt": {
+      "halstead": {
+        "loc": 8,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 11,
+        "N2_total_operands": 10,
+        "vocabulary": 16,
+        "length": 21,
+        "calculated_length": 48.0,
+        "volume": 84.0,
+        "difficulty": 5.0,
+        "effort": 420.0,
+        "time_seconds": 23.33,
+        "bugs_delivered": 0.028
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 66.69
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 11,
+        "ncloc": 8,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/PhotoVideoActivity.kt": {
+      "halstead": {
+        "loc": 385,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 318,
+        "N1_total_operators": 1006,
+        "N2_total_operands": 999,
+        "vocabulary": 353,
+        "length": 2005,
+        "calculated_length": 2823.02,
+        "volume": 16969.37,
+        "difficulty": 54.98,
+        "effort": 932914.93,
+        "time_seconds": 51828.61,
+        "bugs_delivered": 5.656
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 28,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "cognitive_complexity": 116,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 118,
+        "functions": 21,
+        "lines": 443,
+        "ncloc": 385,
+        "sqale_debt_ratio": 0.8,
+        "statements": 224,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/SearchActivity.kt": {
+      "halstead": {
+        "loc": 251,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 196,
+        "N1_total_operators": 534,
+        "N2_total_operands": 545,
+        "vocabulary": 226,
+        "length": 1079,
+        "calculated_length": 1639.69,
+        "volume": 8437.97,
+        "difficulty": 41.71,
+        "effort": 351940.97,
+        "time_seconds": 19552.28,
+        "bugs_delivered": 2.813
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1364,
+        "maintainability_index": 13.44
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "cognitive_complexity": 52,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 50,
+        "duplicated_lines_density": 7.2,
+        "functions": 23,
+        "lines": 290,
+        "ncloc": 251,
+        "sqale_debt_ratio": 0.2,
+        "statements": 140,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/SetWallpaperActivity.kt": {
+      "halstead": {
+        "loc": 151,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 136,
+        "N1_total_operators": 294,
+        "N2_total_operands": 299,
+        "vocabulary": 172,
+        "length": 593,
+        "calculated_length": 1150.01,
+        "volume": 4403.77,
+        "difficulty": 39.57,
+        "effort": 174272.92,
+        "time_seconds": 9681.83,
+        "bugs_delivered": 1.468
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2778,
+        "maintainability_index": 23.05
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 26,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 29,
+        "functions": 10,
+        "lines": 176,
+        "ncloc": 151,
+        "statements": 81,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/SettingsActivity.kt": {
+      "halstead": {
+        "loc": 1006,
+        "n1_unique_operators": 38,
+        "n2_unique_operands": 618,
+        "N1_total_operators": 2350,
+        "N2_total_operands": 2620,
+        "vocabulary": 656,
+        "length": 4970,
+        "calculated_length": 5929.19,
+        "volume": 46507.03,
+        "difficulty": 80.55,
+        "effort": 3746149.07,
+        "time_seconds": 208119.39,
+        "bugs_delivered": 15.502
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 37,
+        "observable_state_vars": 1,
+        "state_updates": 71
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.075,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 12,
+        "cognitive_complexity": 186,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 233,
+        "functions": 69,
+        "lines": 1105,
+        "ncloc": 1006,
+        "sqale_debt_ratio": 0.3,
+        "statements": 558,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/SimpleActivity.kt": {
+      "halstead": {
+        "loc": 88,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 81,
+        "N1_total_operators": 140,
+        "N2_total_operands": 157,
+        "vocabulary": 100,
+        "length": 297,
+        "calculated_length": 594.24,
+        "volume": 1973.23,
+        "difficulty": 18.41,
+        "effort": 36334.14,
+        "time_seconds": 2018.56,
+        "bugs_delivered": 0.658
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.76
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 10,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 13,
+        "functions": 7,
+        "lines": 98,
+        "ncloc": 88,
+        "sqale_debt_ratio": 0.4,
+        "statements": 25,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/SplashActivity.kt": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 47,
+        "N2_total_operands": 45,
+        "vocabulary": 45,
+        "length": 92,
+        "calculated_length": 206.88,
+        "volume": 505.25,
+        "difficulty": 10.16,
+        "effort": 5134.0,
+        "time_seconds": 285.22,
+        "bugs_delivered": 0.168
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 45.82
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 44,
+        "ncloc": 38,
+        "statements": 16,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/VideoActivity.kt": {
+      "halstead": {
+        "loc": 8,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 11,
+        "N2_total_operands": 10,
+        "vocabulary": 16,
+        "length": 21,
+        "calculated_length": 48.0,
+        "volume": 84.0,
+        "difficulty": 5.0,
+        "effort": 420.0,
+        "time_seconds": 23.33,
+        "bugs_delivered": 0.028
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 66.69
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 12,
+        "ncloc": 8,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/VideoPlayerActivity.kt": {
+      "halstead": {
+        "loc": 580,
+        "n1_unique_operators": 41,
+        "n2_unique_operands": 367,
+        "N1_total_operators": 1089,
+        "N2_total_operands": 1096,
+        "vocabulary": 408,
+        "length": 2185,
+        "calculated_length": 3346.37,
+        "volume": 18949.25,
+        "difficulty": 61.22,
+        "effort": 1160086.47,
+        "time_seconds": 64449.25,
+        "bugs_delivered": 6.316
+      },
+      "state_metrics": {
+        "mutable_vars": 24,
+        "immutable_vars": 33,
+        "observable_state_vars": 0,
+        "state_updates": 32
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4211,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 9,
+        "cognitive_complexity": 93,
+        "comment_lines": 1,
+        "comment_lines_density": 0.2,
+        "complexity": 123,
+        "functions": 45,
+        "lines": 676,
+        "ncloc": 579,
+        "sqale_debt_ratio": 0.3,
+        "statements": 338,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/ViewPagerActivity.kt": {
+      "halstead": {
+        "loc": 1235,
+        "n1_unique_operators": 47,
+        "n2_unique_operands": 729,
+        "N1_total_operators": 2895,
+        "N2_total_operands": 2881,
+        "vocabulary": 776,
+        "length": 5776,
+        "calculated_length": 7193.69,
+        "volume": 55449.1,
+        "difficulty": 92.87,
+        "effort": 5149654.2,
+        "time_seconds": 286091.9,
+        "bugs_delivered": 18.483
+      },
+      "state_metrics": {
+        "mutable_vars": 23,
+        "immutable_vars": 85,
+        "observable_state_vars": 1,
+        "state_updates": 54
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.213,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "cognitive_complexity": 334,
+        "comment_lines": 3,
+        "comment_lines_density": 0.2,
+        "complexity": 329,
+        "functions": 84,
+        "lines": 1429,
+        "ncloc": 1232,
+        "sqale_debt_ratio": 0.3,
+        "statements": 763,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/activities/WidgetConfigureActivity.kt": {
+      "halstead": {
+        "loc": 163,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 153,
+        "N1_total_operators": 304,
+        "N2_total_operands": 349,
+        "vocabulary": 177,
+        "length": 653,
+        "calculated_length": 1220.42,
+        "volume": 4876.35,
+        "difficulty": 27.37,
+        "effort": 133478.03,
+        "time_seconds": 7415.45,
+        "bugs_delivered": 1.625
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 14
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4667,
+        "maintainability_index": 23.36
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 11,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 19,
+        "functions": 12,
+        "lines": 192,
+        "ncloc": 163,
+        "statements": 100,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/DirectoryAdapter.kt": {
+      "halstead": {
+        "loc": 795,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 488,
+        "N1_total_operators": 1757,
+        "N2_total_operands": 1792,
+        "vocabulary": 523,
+        "length": 3549,
+        "calculated_length": 4537.72,
+        "volume": 32049.84,
+        "difficulty": 64.26,
+        "effort": 2059596.13,
+        "time_seconds": 114422.01,
+        "bugs_delivered": 10.683
+      },
+      "state_metrics": {
+        "mutable_vars": 17,
+        "immutable_vars": 65,
+        "observable_state_vars": 1,
+        "state_updates": 34
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2073,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 11,
+        "cognitive_complexity": 216,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 212,
+        "functions": 61,
+        "lines": 920,
+        "ncloc": 795,
+        "sqale_debt_ratio": 0.4,
+        "statements": 457,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/DirectoryItemBinding.kt": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 237,
+        "N2_total_operands": 190,
+        "vocabulary": 37,
+        "length": 427,
+        "calculated_length": 161.6,
+        "volume": 2224.44,
+        "difficulty": 35.19,
+        "effort": 78267.21,
+        "time_seconds": 4348.18,
+        "bugs_delivered": 0.741
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 48,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.33
+      },
+      "sonarqube": {
+        "classes": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "duplicated_lines_density": 34.2,
+        "functions": 3,
+        "lines": 76,
+        "ncloc": 67,
+        "statements": 39,
+        "code_smells": 0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/FiltersAdapter.kt": {
+      "halstead": {
+        "loc": 48,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 57,
+        "N1_total_operators": 103,
+        "N2_total_operands": 99,
+        "vocabulary": 75,
+        "length": 202,
+        "calculated_length": 407.53,
+        "volume": 1258.22,
+        "difficulty": 15.63,
+        "effort": 19667.99,
+        "time_seconds": 1092.67,
+        "bugs_delivered": 0.419
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 40.54
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 8,
+        "functions": 6,
+        "lines": 59,
+        "ncloc": 48,
+        "statements": 21,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/ManageFoldersAdapter.kt": {
+      "halstead": {
+        "loc": 105,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 116,
+        "N1_total_operators": 221,
+        "N2_total_operands": 227,
+        "vocabulary": 135,
+        "length": 448,
+        "calculated_length": 876.24,
+        "volume": 3170.41,
+        "difficulty": 18.59,
+        "effort": 58939.62,
+        "time_seconds": 3274.42,
+        "bugs_delivered": 1.057
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 28.57
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "cognitive_complexity": 8,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 21,
+        "duplicated_lines_density": 29.5,
+        "functions": 17,
+        "lines": 132,
+        "ncloc": 105,
+        "sqale_debt_ratio": 0.6,
+        "statements": 55,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/ManageHiddenFoldersAdapter.kt": {
+      "halstead": {
+        "loc": 87,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 91,
+        "N1_total_operators": 176,
+        "N2_total_operands": 174,
+        "vocabulary": 110,
+        "length": 350,
+        "calculated_length": 672.92,
+        "volume": 2373.48,
+        "difficulty": 18.16,
+        "effort": 43113.8,
+        "time_seconds": 2395.21,
+        "bugs_delivered": 0.791
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 31.23
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "cognitive_complexity": 9,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 21,
+        "duplicated_lines_density": 35.5,
+        "functions": 16,
+        "lines": 110,
+        "ncloc": 87,
+        "sqale_debt_ratio": 0.8,
+        "statements": 41,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/MediaAdapter.kt": {
+      "halstead": {
+        "loc": 628,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 401,
+        "N1_total_operators": 1292,
+        "N2_total_operands": 1308,
+        "vocabulary": 430,
+        "length": 2600,
+        "calculated_length": 3608.51,
+        "volume": 22745.3,
+        "difficulty": 47.3,
+        "effort": 1075779.02,
+        "time_seconds": 59765.5,
+        "bugs_delivered": 7.582
+      },
+      "state_metrics": {
+        "mutable_vars": 16,
+        "immutable_vars": 71,
+        "observable_state_vars": 2,
+        "state_updates": 20
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1839,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 5,
+        "cognitive_complexity": 137,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 172,
+        "functions": 54,
+        "lines": 730,
+        "ncloc": 628,
+        "sqale_debt_ratio": 0.2,
+        "statements": 365,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/MediaItemBinding.kt": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 243,
+        "N2_total_operands": 189,
+        "vocabulary": 36,
+        "length": 432,
+        "calculated_length": 155.43,
+        "volume": 2233.41,
+        "difficulty": 36.35,
+        "effort": 81175.78,
+        "time_seconds": 4509.77,
+        "bugs_delivered": 0.744
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 45,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.04
+      },
+      "sonarqube": {
+        "classes": 5,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 79,
+        "ncloc": 68,
+        "statements": 40,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/MyPagerAdapter.kt": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 102,
+        "N2_total_operands": 106,
+        "vocabulary": 73,
+        "length": 208,
+        "calculated_length": 393.03,
+        "volume": 1287.48,
+        "difficulty": 17.35,
+        "effort": 22331.99,
+        "time_seconds": 1240.67,
+        "bugs_delivered": 0.429
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 38.75
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 3,
+        "comment_lines": 1,
+        "comment_lines_density": 1.8,
+        "complexity": 10,
+        "functions": 8,
+        "lines": 68,
+        "ncloc": 55,
+        "sqale_debt_ratio": 0.3,
+        "statements": 23,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/adapters/PortraitPhotosAdapter.kt": {
+      "halstead": {
+        "loc": 74,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 84,
+        "N1_total_operators": 152,
+        "N2_total_operands": 154,
+        "vocabulary": 104,
+        "length": 306,
+        "calculated_length": 623.39,
+        "volume": 2050.33,
+        "difficulty": 18.33,
+        "effort": 37589.47,
+        "time_seconds": 2088.3,
+        "bugs_delivered": 0.683
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 34.42
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 12,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 12,
+        "functions": 6,
+        "lines": 88,
+        "ncloc": 74,
+        "statements": 29,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/asynctasks/GetMediaAsynctask.kt": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 68,
+        "N1_total_operators": 142,
+        "N2_total_operands": 156,
+        "vocabulary": 87,
+        "length": 298,
+        "calculated_length": 494.66,
+        "volume": 1920.0,
+        "difficulty": 21.79,
+        "effort": 41844.64,
+        "time_seconds": 2324.7,
+        "bugs_delivered": 0.64
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 15,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.16
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 8,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 13,
+        "functions": 3,
+        "lines": 73,
+        "ncloc": 62,
+        "sqale_debt_ratio": 0.5,
+        "statements": 17,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/databases/GalleryDatabase.kt": {
+      "halstead": {
+        "loc": 78,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 168,
+        "N2_total_operands": 137,
+        "vocabulary": 81,
+        "length": 305,
+        "calculated_length": 448.21,
+        "volume": 1933.65,
+        "difficulty": 22.46,
+        "effort": 43427.97,
+        "time_seconds": 2412.67,
+        "bugs_delivered": 0.645
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 34.24
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 11,
+        "functions": 8,
+        "lines": 96,
+        "ncloc": 78,
+        "statements": 25,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/AllFilesPermissionDialog.kt": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 61,
+        "N2_total_operands": 62,
+        "vocabulary": 52,
+        "length": 123,
+        "calculated_length": 255.9,
+        "volume": 701.15,
+        "difficulty": 9.3,
+        "effort": 6520.73,
+        "time_seconds": 362.26,
+        "bugs_delivered": 0.234
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 48.72
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 33,
+        "ncloc": 27,
+        "sqale_debt_ratio": 1.2,
+        "statements": 10,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ChangeFileThumbnailStyleDialog.kt": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 71,
+        "N1_total_operators": 112,
+        "N2_total_operands": 146,
+        "vocabulary": 82,
+        "length": 258,
+        "calculated_length": 474.69,
+        "volume": 1640.25,
+        "difficulty": 11.31,
+        "effort": 18550.98,
+        "time_seconds": 1030.61,
+        "bugs_delivered": 0.547
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 15
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 38.59
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 70,
+        "ncloc": 59,
+        "statements": 29,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ChangeFolderThumbnailStyleDialog.kt": {
+      "halstead": {
+        "loc": 115,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 117,
+        "N1_total_operators": 261,
+        "N2_total_operands": 265,
+        "vocabulary": 133,
+        "length": 526,
+        "calculated_length": 867.83,
+        "volume": 3711.08,
+        "difficulty": 18.12,
+        "effort": 67243.47,
+        "time_seconds": 3735.75,
+        "bugs_delivered": 1.237
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 14,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.125,
+        "maintainability_index": 27.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 11,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 19,
+        "functions": 4,
+        "lines": 137,
+        "ncloc": 115,
+        "sqale_debt_ratio": 0.3,
+        "statements": 50,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ChangeGroupingDialog.kt": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 88,
+        "N1_total_operators": 186,
+        "N2_total_operands": 200,
+        "vocabulary": 106,
+        "length": 386,
+        "calculated_length": 643.49,
+        "volume": 2596.98,
+        "difficulty": 20.45,
+        "effort": 53119.99,
+        "time_seconds": 2951.11,
+        "bugs_delivered": 0.866
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 31.47
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 8,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 24,
+        "functions": 3,
+        "lines": 93,
+        "ncloc": 79,
+        "statements": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ChangeSortingDialog.kt": {
+      "halstead": {
+        "loc": 98,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 98,
+        "N1_total_operators": 259,
+        "N2_total_operands": 276,
+        "vocabulary": 119,
+        "length": 535,
+        "calculated_length": 740.48,
+        "volume": 3688.73,
+        "difficulty": 29.57,
+        "effort": 109080.94,
+        "time_seconds": 6060.05,
+        "bugs_delivered": 1.23
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4545,
+        "maintainability_index": 27.15
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 21,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 33,
+        "functions": 3,
+        "lines": 116,
+        "ncloc": 98,
+        "statements": 46,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ChangeViewTypeDialog.kt": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 115,
+        "N2_total_operands": 121,
+        "vocabulary": 72,
+        "length": 236,
+        "calculated_length": 393.07,
+        "volume": 1456.1,
+        "difficulty": 14.6,
+        "effort": 21264.11,
+        "time_seconds": 1181.34,
+        "bugs_delivered": 0.485
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 36.94
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 16,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 78,
+        "ncloc": 67,
+        "sqale_debt_ratio": 0.2,
+        "statements": 26,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ConfirmDeleteFolderDialog.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 55,
+        "N2_total_operands": 58,
+        "vocabulary": 47,
+        "length": 113,
+        "calculated_length": 222.54,
+        "volume": 627.67,
+        "difficulty": 9.94,
+        "effort": 6240.82,
+        "time_seconds": 346.71,
+        "bugs_delivered": 0.209
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 49.41
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 32,
+        "ncloc": 26,
+        "sqale_debt_ratio": 0.6,
+        "statements": 10,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/CustomAspectRatioDialog.kt": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 53,
+        "N1_total_operators": 89,
+        "N2_total_operands": 89,
+        "vocabulary": 68,
+        "length": 178,
+        "calculated_length": 362.18,
+        "volume": 1083.57,
+        "difficulty": 12.59,
+        "effort": 13646.83,
+        "time_seconds": 758.16,
+        "bugs_delivered": 0.361
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.27
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 42,
+        "ncloc": 37,
+        "statements": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/DeleteWithRememberDialog.kt": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 70,
+        "N2_total_operands": 68,
+        "vocabulary": 55,
+        "length": 138,
+        "calculated_length": 274.58,
+        "volume": 797.83,
+        "difficulty": 10.52,
+        "effort": 8396.19,
+        "time_seconds": 466.45,
+        "bugs_delivered": 0.266
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 46.71
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 38,
+        "ncloc": 32,
+        "sqale_debt_ratio": 0.5,
+        "statements": 10,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ExcludeFolderDialog.kt": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 139,
+        "N2_total_operands": 147,
+        "vocabulary": 95,
+        "length": 286,
+        "calculated_length": 551.74,
+        "volume": 1878.98,
+        "difficulty": 20.86,
+        "effort": 39191.94,
+        "time_seconds": 2177.33,
+        "bugs_delivered": 0.626
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 37.35
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 5,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 7,
+        "functions": 2,
+        "lines": 73,
+        "ncloc": 60,
+        "sqale_debt_ratio": 0.6,
+        "statements": 28,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ExportFavoritesDialog.kt": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 145,
+        "N2_total_operands": 164,
+        "vocabulary": 88,
+        "length": 309,
+        "calculated_length": 512.8,
+        "volume": 1995.96,
+        "difficulty": 15.51,
+        "effort": 30964.42,
+        "time_seconds": 1720.25,
+        "bugs_delivered": 0.665
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 35.57
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 16,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 79,
+        "ncloc": 71,
+        "statements": 23,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/FilterMediaDialog.kt": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 109,
+        "N2_total_operands": 124,
+        "vocabulary": 62,
+        "length": 233,
+        "calculated_length": 319.67,
+        "volume": 1387.33,
+        "difficulty": 19.79,
+        "effort": 27451.38,
+        "time_seconds": 1525.08,
+        "bugs_delivered": 0.462
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 39.73
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 8,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 9,
+        "functions": 1,
+        "lines": 58,
+        "ncloc": 50,
+        "sqale_debt_ratio": 0.3,
+        "statements": 30,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/GrantAllFilesDialog.kt": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 38,
+        "N2_total_operands": 41,
+        "vocabulary": 36,
+        "length": 79,
+        "calculated_length": 160.53,
+        "volume": 408.42,
+        "difficulty": 4.95,
+        "effort": 2020.99,
+        "time_seconds": 112.28,
+        "bugs_delivered": 0.136
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 24,
+        "ncloc": 20,
+        "sqale_debt_ratio": 1.7,
+        "statements": 5,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ManageBottomActionsDialog.kt": {
+      "halstead": {
+        "loc": 73,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 64,
+        "N1_total_operators": 157,
+        "N2_total_operands": 190,
+        "vocabulary": 78,
+        "length": 347,
+        "calculated_length": 437.3,
+        "volume": 2181.03,
+        "difficulty": 20.78,
+        "effort": 45324.62,
+        "time_seconds": 2518.03,
+        "bugs_delivered": 0.727
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 15
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 33.82
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 30,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 16,
+        "functions": 1,
+        "lines": 80,
+        "ncloc": 73,
+        "sqale_debt_ratio": 1.1,
+        "statements": 55,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ManageExtendedDetailsDialog.kt": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 115,
+        "N2_total_operands": 136,
+        "vocabulary": 66,
+        "length": 251,
+        "calculated_length": 349.73,
+        "volume": 1517.14,
+        "difficulty": 18.31,
+        "effort": 27775.39,
+        "time_seconds": 1543.08,
+        "bugs_delivered": 0.506
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 38.42
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 18,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 10,
+        "functions": 1,
+        "lines": 62,
+        "ncloc": 55,
+        "sqale_debt_ratio": 0.8,
+        "statements": 37,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/OtherAspectRatioDialog.kt": {
+      "halstead": {
+        "loc": 70,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 63,
+        "N1_total_operators": 147,
+        "N2_total_operands": 207,
+        "vocabulary": 80,
+        "length": 354,
+        "calculated_length": 446.06,
+        "volume": 2237.96,
+        "difficulty": 27.93,
+        "effort": 62503.1,
+        "time_seconds": 3472.39,
+        "bugs_delivered": 0.746
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 33.87
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 18,
+        "functions": 2,
+        "lines": 81,
+        "ncloc": 70,
+        "statements": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/PickDirectoryDialog.kt": {
+      "halstead": {
+        "loc": 218,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 191,
+        "N1_total_operators": 477,
+        "N2_total_operands": 492,
+        "vocabulary": 212,
+        "length": 969,
+        "calculated_length": 1539.53,
+        "volume": 7488.35,
+        "difficulty": 27.05,
+        "effort": 202538.44,
+        "time_seconds": 11252.14,
+        "bugs_delivered": 2.496
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 14,
+        "observable_state_vars": 1,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3913,
+        "maintainability_index": 16.75
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "cognitive_complexity": 43,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 38,
+        "functions": 10,
+        "lines": 249,
+        "ncloc": 218,
+        "sqale_debt_ratio": 0.3,
+        "statements": 105,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/PickMediumDialog.kt": {
+      "halstead": {
+        "loc": 97,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 94,
+        "N1_total_operators": 205,
+        "N2_total_operands": 227,
+        "vocabulary": 116,
+        "length": 432,
+        "calculated_length": 714.24,
+        "volume": 2962.65,
+        "difficulty": 26.56,
+        "effort": 78699.27,
+        "time_seconds": 4372.18,
+        "bugs_delivered": 0.988
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 30.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 17,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 15,
+        "duplicated_lines_density": 17.9,
+        "functions": 3,
+        "lines": 112,
+        "ncloc": 97,
+        "sqale_debt_ratio": 0.2,
+        "statements": 46,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ResizeDialog.kt": {
+      "halstead": {
+        "loc": 65,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 62,
+        "N1_total_operators": 163,
+        "N2_total_operands": 165,
+        "vocabulary": 80,
+        "length": 328,
+        "calculated_length": 444.22,
+        "volume": 2073.59,
+        "difficulty": 23.95,
+        "effort": 49665.88,
+        "time_seconds": 2759.22,
+        "bugs_delivered": 0.691
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 35.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 15,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 10,
+        "functions": 1,
+        "lines": 77,
+        "ncloc": 65,
+        "statements": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ResizeMultipleImagesDialog.kt": {
+      "halstead": {
+        "loc": 106,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 117,
+        "N1_total_operators": 212,
+        "N2_total_operands": 224,
+        "vocabulary": 144,
+        "length": 436,
+        "calculated_length": 932.21,
+        "volume": 3126.09,
+        "difficulty": 25.85,
+        "effort": 80797.33,
+        "time_seconds": 4488.74,
+        "bugs_delivered": 1.042
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0526,
+        "maintainability_index": 30.54
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 29,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 1,
+        "lines": 122,
+        "ncloc": 106,
+        "sqale_debt_ratio": 0.5,
+        "statements": 55,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/ResizeWithPathDialog.kt": {
+      "halstead": {
+        "loc": 106,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 98,
+        "N1_total_operators": 269,
+        "N2_total_operands": 292,
+        "vocabulary": 118,
+        "length": 561,
+        "calculated_length": 734.68,
+        "volume": 3861.16,
+        "difficulty": 29.8,
+        "effort": 115046.89,
+        "time_seconds": 6391.49,
+        "bugs_delivered": 1.287
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 16,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 28.96
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 25,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 13,
+        "duplicated_lines_density": 17.5,
+        "functions": 1,
+        "lines": 126,
+        "ncloc": 106,
+        "statements": 53,
+        "code_smells": 0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/SaveAsDialog.kt": {
+      "halstead": {
+        "loc": 96,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 99,
+        "N1_total_operators": 221,
+        "N2_total_operands": 245,
+        "vocabulary": 119,
+        "length": 466,
+        "calculated_length": 742.74,
+        "volume": 3212.99,
+        "difficulty": 24.75,
+        "effort": 79513.27,
+        "time_seconds": 4417.4,
+        "bugs_delivered": 1.071
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1538,
+        "maintainability_index": 30.45
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 33,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 13,
+        "duplicated_lines_density": 20.9,
+        "functions": 1,
+        "lines": 110,
+        "ncloc": 96,
+        "sqale_debt_ratio": 0.2,
+        "statements": 39,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/dialogs/SlideshowDialog.kt": {
+      "halstead": {
+        "loc": 116,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 91,
+        "N1_total_operators": 237,
+        "N2_total_operands": 262,
+        "vocabulary": 107,
+        "length": 499,
+        "calculated_length": 656.21,
+        "volume": 3363.99,
+        "difficulty": 23.03,
+        "effort": 77482.72,
+        "time_seconds": 4304.6,
+        "bugs_delivered": 1.121
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 28.66
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 12,
+        "functions": 4,
+        "lines": 134,
+        "ncloc": 116,
+        "statements": 58,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/Activity.kt": {
+      "halstead": {
+        "loc": 839,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 119,
+        "N1_total_operators": 130,
+        "N2_total_operands": 199,
+        "vocabulary": 135,
+        "length": 329,
+        "calculated_length": 884.48,
+        "volume": 2328.27,
+        "difficulty": 13.38,
+        "effort": 31147.98,
+        "time_seconds": 1730.44,
+        "bugs_delivered": 0.776
+      },
+      "state_metrics": {
+        "mutable_vars": 18,
+        "immutable_vars": 77,
+        "observable_state_vars": 0,
+        "state_updates": 37
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1895,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "bugs": 2,
+        "classes": 0,
+        "code_smells": 14,
+        "cognitive_complexity": 259,
+        "comment_lines": 5,
+        "comment_lines_density": 0.6,
+        "complexity": 145,
+        "functions": 43,
+        "lines": 949,
+        "ncloc": 834,
+        "sqale_debt_ratio": 0.6,
+        "statements": 442,
+        "duplicated_lines_density": 0.0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/ArrayList.kt": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 31,
+        "N2_total_operands": 36,
+        "vocabulary": 28,
+        "length": 67,
+        "calculated_length": 109.24,
+        "volume": 322.09,
+        "difficulty": 8.53,
+        "effort": 2746.26,
+        "time_seconds": 152.57,
+        "bugs_delivered": 0.107
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 51.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 6,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 7,
+        "functions": 1,
+        "lines": 34,
+        "ncloc": 25,
+        "statements": 20,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/Context.kt": {
+      "halstead": {
+        "loc": 945,
+        "n1_unique_operators": 47,
+        "n2_unique_operands": 466,
+        "N1_total_operators": 1660,
+        "N2_total_operands": 1844,
+        "vocabulary": 513,
+        "length": 3504,
+        "calculated_length": 4391.78,
+        "volume": 31545.86,
+        "difficulty": 92.99,
+        "effort": 2933494.55,
+        "time_seconds": 162971.92,
+        "bugs_delivered": 10.515
+      },
+      "state_metrics": {
+        "mutable_vars": 14,
+        "immutable_vars": 146,
+        "observable_state_vars": 2,
+        "state_updates": 64
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0875,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 0,
+        "code_smells": 27,
+        "cognitive_complexity": 299,
+        "comment_lines": 16,
+        "comment_lines_density": 1.7,
+        "complexity": 235,
+        "functions": 43,
+        "lines": 1095,
+        "ncloc": 931,
+        "sqale_debt_ratio": 0.9,
+        "statements": 461,
+        "duplicated_lines_density": 0.0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/ExifInterface.kt": {
+      "halstead": {
+        "loc": 47,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 98,
+        "N2_total_operands": 86,
+        "vocabulary": 77,
+        "length": 184,
+        "calculated_length": 412.52,
+        "volume": 1153.09,
+        "difficulty": 20.67,
+        "effort": 23837.89,
+        "time_seconds": 1324.33,
+        "bugs_delivered": 0.384
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.14
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 7,
+        "functions": 4,
+        "lines": 59,
+        "ncloc": 47,
+        "sqale_debt_ratio": 0.4,
+        "statements": 16,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/FileDirItem.kt": {
+      "halstead": {
+        "loc": 3,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 3,
+        "N1_total_operators": 6,
+        "N2_total_operands": 4,
+        "vocabulary": 7,
+        "length": 10,
+        "calculated_length": 12.75,
+        "volume": 28.07,
+        "difficulty": 2.67,
+        "effort": 74.86,
+        "time_seconds": 4.16,
+        "bugs_delivered": 0.009
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 79.32
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 6,
+        "ncloc": 3,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/Int.kt": {
+      "halstead": {
+        "loc": 3,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 5,
+        "N1_total_operators": 6,
+        "N2_total_operands": 5,
+        "vocabulary": 11,
+        "length": 11,
+        "calculated_length": 27.12,
+        "volume": 38.05,
+        "difficulty": 3.0,
+        "effort": 114.16,
+        "time_seconds": 6.34,
+        "bugs_delivered": 0.013
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 78.39
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 6,
+        "ncloc": 3,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/Resources.kt": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 45,
+        "N2_total_operands": 47,
+        "vocabulary": 37,
+        "length": 92,
+        "calculated_length": 160.27,
+        "volume": 479.27,
+        "difficulty": 9.94,
+        "effort": 4765.05,
+        "time_seconds": 264.72,
+        "bugs_delivered": 0.16
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 49.93
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 3,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 3,
+        "lines": 30,
+        "ncloc": 25,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/String.kt": {
+      "halstead": {
+        "loc": 96,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 68,
+        "N1_total_operators": 187,
+        "N2_total_operands": 193,
+        "vocabulary": 92,
+        "length": 380,
+        "calculated_length": 523.99,
+        "volume": 2478.95,
+        "difficulty": 34.06,
+        "effort": 84430.24,
+        "time_seconds": 4690.57,
+        "bugs_delivered": 0.826
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 28.15
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "cognitive_complexity": 53,
+        "comment_lines": 2,
+        "comment_lines_density": 2.1,
+        "complexity": 36,
+        "functions": 6,
+        "lines": 109,
+        "ncloc": 94,
+        "sqale_debt_ratio": 1.6,
+        "statements": 56,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/extensions/View.kt": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 19,
+        "N2_total_operands": 27,
+        "vocabulary": 22,
+        "length": 46,
+        "calculated_length": 79.51,
+        "volume": 205.13,
+        "difficulty": 5.06,
+        "effort": 1038.49,
+        "time_seconds": 57.69,
+        "bugs_delivered": 0.068
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 60.96
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 14,
+        "ncloc": 11,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/fragments/PhotoFragment.kt": {
+      "halstead": {
+        "loc": 795,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 281,
+        "N1_total_operators": 697,
+        "N2_total_operands": 678,
+        "vocabulary": 315,
+        "length": 1375,
+        "calculated_length": 2458.75,
+        "volume": 11411.41,
+        "difficulty": 41.02,
+        "effort": 468070.9,
+        "time_seconds": 26003.94,
+        "bugs_delivered": 3.804
+      },
+      "state_metrics": {
+        "mutable_vars": 32,
+        "immutable_vars": 71,
+        "observable_state_vars": 1,
+        "state_updates": 59
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3107,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 17,
+        "cognitive_complexity": 240,
+        "comment_lines": 5,
+        "comment_lines_density": 0.6,
+        "complexity": 199,
+        "functions": 50,
+        "lines": 903,
+        "ncloc": 792,
+        "sqale_debt_ratio": 0.5,
+        "statements": 444,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/fragments/VideoFragment.kt": {
+      "halstead": {
+        "loc": 697,
+        "n1_unique_operators": 40,
+        "n2_unique_operands": 399,
+        "N1_total_operators": 1342,
+        "N2_total_operands": 1304,
+        "vocabulary": 439,
+        "length": 2646,
+        "calculated_length": 3660.33,
+        "volume": 23226.79,
+        "difficulty": 65.36,
+        "effort": 1518182.3,
+        "time_seconds": 84343.46,
+        "bugs_delivered": 7.742
+      },
+      "state_metrics": {
+        "mutable_vars": 37,
+        "immutable_vars": 36,
+        "observable_state_vars": 0,
+        "state_updates": 71
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5068,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 13,
+        "cognitive_complexity": 162,
+        "comment_lines": 5,
+        "comment_lines_density": 0.7,
+        "complexity": 165,
+        "functions": 49,
+        "lines": 817,
+        "ncloc": 694,
+        "sqale_debt_ratio": 0.4,
+        "statements": 400,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/fragments/ViewPagerFragment.kt": {
+      "halstead": {
+        "loc": 125,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 141,
+        "N1_total_operators": 349,
+        "N2_total_operands": 329,
+        "vocabulary": 173,
+        "length": 678,
+        "calculated_length": 1166.68,
+        "volume": 5040.68,
+        "difficulty": 37.33,
+        "effort": 188185.31,
+        "time_seconds": 10454.74,
+        "bugs_delivered": 1.68
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2917,
+        "maintainability_index": 23.49
+      },
+      "sonarqube": {
+        "classes": 2,
+        "code_smells": 1,
+        "cognitive_complexity": 49,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 36,
+        "functions": 5,
+        "lines": 157,
+        "ncloc": 125,
+        "sqale_debt_ratio": 0.7,
+        "statements": 85,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/Config.kt": {
+      "halstead": {
+        "loc": 448,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 345,
+        "N1_total_operators": 1680,
+        "N2_total_operands": 1575,
+        "vocabulary": 371,
+        "length": 3255,
+        "calculated_length": 3030.72,
+        "volume": 27782.32,
+        "difficulty": 59.35,
+        "effort": 1648820.38,
+        "time_seconds": 91601.13,
+        "bugs_delivered": 9.261
+      },
+      "state_metrics": {
+        "mutable_vars": 94,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 25
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.9038,
+        "maintainability_index": 5.27
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 30,
+        "comment_lines": 1,
+        "comment_lines_density": 0.2,
+        "complexity": 43,
+        "functions": 27,
+        "lines": 570,
+        "ncloc": 447,
+        "statements": 79,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/Constants.kt": {
+      "halstead": {
+        "loc": 235,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 382,
+        "N1_total_operators": 670,
+        "N2_total_operands": 452,
+        "vocabulary": 394,
+        "length": 1122,
+        "calculated_length": 3319.6,
+        "volume": 9673.94,
+        "difficulty": 7.1,
+        "effort": 68679.92,
+        "time_seconds": 3815.55,
+        "bugs_delivered": 3.225
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 211,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 19.29
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 4,
+        "comment_lines": 11,
+        "comment_lines_density": 4.7,
+        "complexity": 8,
+        "functions": 4,
+        "lines": 261,
+        "ncloc": 225,
+        "statements": 223,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/DefaultPageTransformer.kt": {
+      "halstead": {
+        "loc": 6,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 8,
+        "N2_total_operands": 8,
+        "vocabulary": 14,
+        "length": 16,
+        "calculated_length": 39.51,
+        "volume": 60.92,
+        "difficulty": 3.0,
+        "effort": 182.75,
+        "time_seconds": 10.15,
+        "bugs_delivered": 0.02
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 70.39
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 9,
+        "ncloc": 6,
+        "sqale_debt_ratio": 2.8,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/FadePageTransformer.kt": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 24,
+        "N2_total_operands": 25,
+        "vocabulary": 27,
+        "length": 49,
+        "calculated_length": 101.62,
+        "volume": 232.99,
+        "difficulty": 10.0,
+        "effort": 2329.89,
+        "time_seconds": 129.44,
+        "bugs_delivered": 0.078
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 57.23
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 15,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/FilterThumbnailsManager.kt": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 36,
+        "N2_total_operands": 35,
+        "vocabulary": 27,
+        "length": 71,
+        "calculated_length": 102.05,
+        "volume": 337.6,
+        "difficulty": 12.03,
+        "effort": 4061.71,
+        "time_seconds": 225.65,
+        "bugs_delivered": 0.113
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 52.92
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 27,
+        "ncloc": 21,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/GridSpacingItemDecoration.kt": {
+      "halstead": {
+        "loc": 53,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 93,
+        "N2_total_operands": 102,
+        "vocabulary": 63,
+        "length": 195,
+        "calculated_length": 318.72,
+        "volume": 1165.57,
+        "difficulty": 25.5,
+        "effort": 29722.02,
+        "time_seconds": 1651.22,
+        "bugs_delivered": 0.389
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.3
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 23,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 12,
+        "functions": 2,
+        "lines": 63,
+        "ncloc": 53,
+        "sqale_debt_ratio": 0.8,
+        "statements": 28,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/IsoTypeReader.kt": {
+      "halstead": {
+        "loc": 23,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 32,
+        "N2_total_operands": 32,
+        "vocabulary": 38,
+        "length": 64,
+        "calculated_length": 162.11,
+        "volume": 335.87,
+        "difficulty": 11.64,
+        "effort": 3908.27,
+        "time_seconds": 217.13,
+        "bugs_delivered": 0.112
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 52.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 1,
+        "comment_lines_density": 4.3,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 28,
+        "ncloc": 22,
+        "sqale_debt_ratio": 0.8,
+        "statements": 9,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/MediaFetcher.kt": {
+      "halstead": {
+        "loc": 776,
+        "n1_unique_operators": 39,
+        "n2_unique_operands": 355,
+        "N1_total_operators": 1817,
+        "N2_total_operands": 1914,
+        "vocabulary": 394,
+        "length": 3731,
+        "calculated_length": 3213.58,
+        "volume": 32168.88,
+        "difficulty": 105.14,
+        "effort": 3382081.5,
+        "time_seconds": 187893.42,
+        "bugs_delivered": 10.723
+      },
+      "state_metrics": {
+        "mutable_vars": 15,
+        "immutable_vars": 149,
+        "observable_state_vars": 1,
+        "state_updates": 62
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0915,
+        "maintainability_index": 0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 30,
+        "cognitive_complexity": 341,
+        "comment_lines": 1,
+        "comment_lines_density": 0.1,
+        "complexity": 267,
+        "functions": 21,
+        "lines": 916,
+        "ncloc": 775,
+        "sqale_debt_ratio": 1.5,
+        "statements": 427,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/MyGlideImageDecoder.kt": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 49,
+        "N2_total_operands": 40,
+        "vocabulary": 41,
+        "length": 89,
+        "calculated_length": 186.8,
+        "volume": 476.82,
+        "difficulty": 6.45,
+        "effort": 3076.27,
+        "time_seconds": 170.9,
+        "bugs_delivered": 0.159
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 50.62
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 31,
+        "ncloc": 25,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/MyWidgetProvider.kt": {
+      "halstead": {
+        "loc": 87,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 101,
+        "N1_total_operators": 180,
+        "N2_total_operands": 214,
+        "vocabulary": 119,
+        "length": 394,
+        "calculated_length": 747.54,
+        "volume": 2716.56,
+        "difficulty": 19.07,
+        "effort": 51802.88,
+        "time_seconds": 2877.94,
+        "bugs_delivered": 0.906
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.97
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 10,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 5,
+        "functions": 4,
+        "lines": 100,
+        "ncloc": 87,
+        "sqale_debt_ratio": 0.4,
+        "statements": 31,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/PicassoRegionDecoder.kt": {
+      "halstead": {
+        "loc": 41,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 128,
+        "N2_total_operands": 108,
+        "vocabulary": 79,
+        "length": 236,
+        "calculated_length": 428.01,
+        "volume": 1487.69,
+        "difficulty": 23.56,
+        "effort": 35055.44,
+        "time_seconds": 1947.52,
+        "bugs_delivered": 0.496
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 40.86
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 15,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 13,
+        "functions": 4,
+        "lines": 49,
+        "ncloc": 41,
+        "sqale_debt_ratio": 0.8,
+        "statements": 19,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/PicassoRoundedCornersTransformation.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 38,
+        "N1_total_operators": 77,
+        "N2_total_operands": 85,
+        "vocabulary": 52,
+        "length": 162,
+        "calculated_length": 252.72,
+        "volume": 923.47,
+        "difficulty": 15.66,
+        "effort": 14459.62,
+        "time_seconds": 803.31,
+        "bugs_delivered": 0.308
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.97
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 33,
+        "ncloc": 25,
+        "statements": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/helpers/RotateTransformation.kt": {
+      "halstead": {
+        "loc": 14,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 30,
+        "N2_total_operands": 34,
+        "vocabulary": 33,
+        "length": 64,
+        "calculated_length": 137.26,
+        "volume": 322.84,
+        "difficulty": 7.39,
+        "effort": 2386.22,
+        "time_seconds": 132.57,
+        "bugs_delivered": 0.108
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 57.16
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 18,
+        "ncloc": 14,
+        "sqale_debt_ratio": 1.2,
+        "statements": 3,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/DateTakensDao.kt": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 16,
+        "N2_total_operands": 19,
+        "vocabulary": 22,
+        "length": 35,
+        "calculated_length": 79.51,
+        "volume": 156.08,
+        "difficulty": 3.56,
+        "effort": 556.04,
+        "time_seconds": 30.89,
+        "bugs_delivered": 0.052
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 15,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/DirectoryDao.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 48,
+        "N2_total_operands": 66,
+        "vocabulary": 48,
+        "length": 114,
+        "calculated_length": 239.31,
+        "volume": 636.69,
+        "difficulty": 5.63,
+        "effort": 3587.18,
+        "time_seconds": 199.29,
+        "bugs_delivered": 0.212
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 36,
+        "ncloc": 26,
+        "sqale_debt_ratio": 2.6,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/DirectoryOperationsListener.kt": {
+      "halstead": {
+        "loc": 9,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 11,
+        "N2_total_operands": 9,
+        "vocabulary": 12,
+        "length": 20,
+        "calculated_length": 32.0,
+        "volume": 71.7,
+        "difficulty": 2.25,
+        "effort": 161.32,
+        "time_seconds": 8.96,
+        "bugs_delivered": 0.024
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 15,
+        "ncloc": 9,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/FavoritesDao.kt": {
+      "halstead": {
+        "loc": 23,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 36,
+        "N2_total_operands": 45,
+        "vocabulary": 36,
+        "length": 81,
+        "calculated_length": 162.72,
+        "volume": 418.76,
+        "difficulty": 4.5,
+        "effort": 1884.44,
+        "time_seconds": 104.69,
+        "bugs_delivered": 0.14
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 23,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/MediaOperationsListener.kt": {
+      "halstead": {
+        "loc": 9,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 13,
+        "N2_total_operands": 13,
+        "vocabulary": 15,
+        "length": 26,
+        "calculated_length": 46.05,
+        "volume": 101.58,
+        "difficulty": 2.36,
+        "effort": 240.1,
+        "time_seconds": 13.34,
+        "bugs_delivered": 0.034
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 15,
+        "ncloc": 9,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/MediumDao.kt": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 75,
+        "N2_total_operands": 93,
+        "vocabulary": 60,
+        "length": 168,
+        "calculated_length": 326.27,
+        "volume": 992.36,
+        "difficulty": 5.17,
+        "effort": 5127.18,
+        "time_seconds": 284.84,
+        "bugs_delivered": 0.331
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 56,
+        "ncloc": 38,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/interfaces/WidgetsDao.kt": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 16,
+        "N2_total_operands": 19,
+        "vocabulary": 24,
+        "length": 35,
+        "calculated_length": 90.57,
+        "volume": 160.47,
+        "difficulty": 3.17,
+        "effort": 508.17,
+        "time_seconds": 28.23,
+        "bugs_delivered": 0.053
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 15,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/jobs/NewPhotoFetcher.kt": {
+      "halstead": {
+        "loc": 105,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 56,
+        "N1_total_operators": 76,
+        "N2_total_operands": 79,
+        "vocabulary": 77,
+        "length": 155,
+        "calculated_length": 417.45,
+        "volume": 971.35,
+        "difficulty": 14.81,
+        "effort": 14388.15,
+        "time_seconds": 799.34,
+        "bugs_delivered": 0.324
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1,
+        "maintainability_index": 33.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "cognitive_complexity": 35,
+        "comment_lines": 1,
+        "comment_lines_density": 1.0,
+        "complexity": 14,
+        "functions": 4,
+        "lines": 119,
+        "ncloc": 104,
+        "sqale_debt_ratio": 1.2,
+        "statements": 54,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/AlbumCover.kt": {
+      "halstead": {
+        "loc": 2,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 4,
+        "N1_total_operators": 7,
+        "N2_total_operands": 5,
+        "vocabulary": 9,
+        "length": 12,
+        "calculated_length": 19.61,
+        "volume": 38.04,
+        "difficulty": 3.12,
+        "effort": 118.87,
+        "time_seconds": 6.6,
+        "bugs_delivered": 0.013
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 4,
+        "ncloc": 2,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/DateTaken.kt": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 38,
+        "N2_total_operands": 45,
+        "vocabulary": 36,
+        "length": 83,
+        "calculated_length": 160.53,
+        "volume": 429.1,
+        "difficulty": 5.43,
+        "effort": 2330.48,
+        "time_seconds": 129.47,
+        "bugs_delivered": 0.143
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 11.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 15,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/Directory.kt": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 66,
+        "N1_total_operators": 113,
+        "N2_total_operands": 141,
+        "vocabulary": 81,
+        "length": 254,
+        "calculated_length": 457.53,
+        "volume": 1610.32,
+        "difficulty": 16.02,
+        "effort": 25801.75,
+        "time_seconds": 1433.43,
+        "bugs_delivered": 0.537
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 41.49
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 10,
+        "functions": 4,
+        "lines": 48,
+        "ncloc": 38,
+        "statements": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/Favorite.kt": {
+      "halstead": {
+        "loc": 12,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 26,
+        "N2_total_operands": 30,
+        "vocabulary": 29,
+        "length": 56,
+        "calculated_length": 117.76,
+        "volume": 272.05,
+        "difficulty": 4.77,
+        "effort": 1298.41,
+        "time_seconds": 72.13,
+        "bugs_delivered": 0.091
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 15,
+        "ncloc": 12,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/FilterItem.kt": {
+      "halstead": {
+        "loc": 4,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 5,
+        "N1_total_operators": 7,
+        "N2_total_operands": 5,
+        "vocabulary": 11,
+        "length": 12,
+        "calculated_length": 27.12,
+        "volume": 41.51,
+        "difficulty": 3.0,
+        "effort": 124.54,
+        "time_seconds": 6.92,
+        "bugs_delivered": 0.014
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 7,
+        "ncloc": 4,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/Medium.kt": {
+      "halstead": {
+        "loc": 87,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 122,
+        "N1_total_operators": 248,
+        "N2_total_operands": 272,
+        "vocabulary": 147,
+        "length": 520,
+        "calculated_length": 961.65,
+        "volume": 3743.83,
+        "difficulty": 27.87,
+        "effort": 104336.24,
+        "time_seconds": 5796.46,
+        "bugs_delivered": 1.248
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 28.1
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 7,
+        "comment_lines": 1,
+        "comment_lines_density": 1.1,
+        "complexity": 34,
+        "functions": 17,
+        "lines": 113,
+        "ncloc": 87,
+        "statements": 26,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/PaintOptions.kt": {
+      "halstead": {
+        "loc": 3,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 10,
+        "N2_total_operands": 8,
+        "vocabulary": 15,
+        "length": 18,
+        "calculated_length": 43.65,
+        "volume": 70.32,
+        "difficulty": 3.5,
+        "effort": 246.13,
+        "time_seconds": 13.67,
+        "bugs_delivered": 0.023
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 6,
+        "ncloc": 3,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/ThumbnailItem.kt": {
+      "halstead": {
+        "loc": 2,
+        "n1_unique_operators": 2,
+        "n2_unique_operands": 1,
+        "N1_total_operators": 2,
+        "N2_total_operands": 1,
+        "vocabulary": 3,
+        "length": 3,
+        "calculated_length": 2.0,
+        "volume": 4.75,
+        "difficulty": 1.0,
+        "effort": 4.75,
+        "time_seconds": 0.26,
+        "bugs_delivered": 0.002
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 4,
+        "ncloc": 2,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/ThumbnailSection.kt": {
+      "halstead": {
+        "loc": 2,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 4,
+        "N1_total_operators": 7,
+        "N2_total_operands": 4,
+        "vocabulary": 9,
+        "length": 11,
+        "calculated_length": 19.61,
+        "volume": 34.87,
+        "difficulty": 2.5,
+        "effort": 87.17,
+        "time_seconds": 4.84,
+        "bugs_delivered": 0.012
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 4,
+        "ncloc": 2,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/models/Widget.kt": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 23,
+        "N2_total_operands": 25,
+        "vocabulary": 27,
+        "length": 48,
+        "calculated_length": 106.09,
+        "volume": 228.23,
+        "difficulty": 4.38,
+        "effort": 998.53,
+        "time_seconds": 55.47,
+        "bugs_delivered": 0.076
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 14,
+        "ncloc": 11,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/receivers/BootCompletedReceiver.kt": {
+      "halstead": {
+        "loc": 16,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 14,
+        "N2_total_operands": 15,
+        "vocabulary": 19,
+        "length": 29,
+        "calculated_length": 63.62,
+        "volume": 123.19,
+        "difficulty": 3.46,
+        "effort": 426.43,
+        "time_seconds": 23.69,
+        "bugs_delivered": 0.041
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 58.96
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 16,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/receivers/RefreshMediaReceiver.kt": {
+      "halstead": {
+        "loc": 12,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 16,
+        "N2_total_operands": 14,
+        "vocabulary": 21,
+        "length": 30,
+        "calculated_length": 71.27,
+        "volume": 131.77,
+        "difficulty": 6.36,
+        "effort": 838.53,
+        "time_seconds": 46.59,
+        "bugs_delivered": 0.044
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 61.48
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 15,
+        "ncloc": 12,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/svg/SvgDecoder.kt": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 31,
+        "N2_total_operands": 31,
+        "vocabulary": 36,
+        "length": 62,
+        "calculated_length": 151.41,
+        "volume": 320.54,
+        "difficulty": 9.86,
+        "effort": 3161.64,
+        "time_seconds": 175.65,
+        "bugs_delivered": 0.107
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 53.34
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 27,
+        "ncloc": 21,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/svg/SvgDrawableTranscoder.kt": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 22,
+        "N2_total_operands": 18,
+        "vocabulary": 23,
+        "length": 40,
+        "calculated_length": 81.32,
+        "volume": 180.94,
+        "difficulty": 6.92,
+        "effort": 1252.68,
+        "time_seconds": 69.59,
+        "bugs_delivered": 0.06
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 58.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 18,
+        "ncloc": 15,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/svg/SvgModule.kt": {
+      "halstead": {
+        "loc": 16,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 31,
+        "N2_total_operands": 25,
+        "vocabulary": 28,
+        "length": 56,
+        "calculated_length": 110.44,
+        "volume": 269.21,
+        "difficulty": 5.0,
+        "effort": 1346.06,
+        "time_seconds": 74.78,
+        "bugs_delivered": 0.09
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 56.45
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 22,
+        "ncloc": 16,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/svg/SvgSoftwareLayerSetter.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 39,
+        "N2_total_operands": 44,
+        "vocabulary": 35,
+        "length": 83,
+        "calculated_length": 148.09,
+        "volume": 425.73,
+        "difficulty": 10.08,
+        "effort": 4292.78,
+        "time_seconds": 238.49,
+        "bugs_delivered": 0.142
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 50.46
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 32,
+        "ncloc": 26,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/views/EditorDrawCanvas.kt": {
+      "halstead": {
+        "loc": 122,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 107,
+        "N1_total_operators": 240,
+        "N2_total_operands": 269,
+        "vocabulary": 133,
+        "length": 509,
+        "calculated_length": 843.55,
+        "volume": 3591.14,
+        "difficulty": 32.68,
+        "effort": 117366.47,
+        "time_seconds": 6520.36,
+        "bugs_delivered": 1.197
+      },
+      "state_metrics": {
+        "mutable_vars": 11,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6875,
+        "maintainability_index": 26.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 11,
+        "comment_lines": 1,
+        "comment_lines_density": 0.8,
+        "complexity": 23,
+        "functions": 11,
+        "lines": 149,
+        "ncloc": 121,
+        "statements": 74,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/views/InstantItemSwitch.kt": {
+      "halstead": {
+        "loc": 64,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 91,
+        "N2_total_operands": 94,
+        "vocabulary": 62,
+        "length": 185,
+        "calculated_length": 312.92,
+        "volume": 1101.53,
+        "difficulty": 22.38,
+        "effort": 24653.21,
+        "time_seconds": 1369.62,
+        "bugs_delivered": 0.367
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 37.28
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 16,
+        "comment_lines": 1,
+        "comment_lines_density": 1.6,
+        "complexity": 15,
+        "functions": 2,
+        "lines": 74,
+        "ncloc": 63,
+        "statements": 34,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/simplemobiletools/gallery/pro/views/MediaSideScroll.kt": {
+      "halstead": {
+        "loc": 176,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 134,
+        "N1_total_operators": 413,
+        "N2_total_operands": 404,
+        "vocabulary": 167,
+        "length": 817,
+        "calculated_length": 1113.32,
+        "volume": 6032.49,
+        "difficulty": 49.75,
+        "effort": 300093.69,
+        "time_seconds": 16671.87,
+        "bugs_delivered": 2.011
+      },
+      "state_metrics": {
+        "mutable_vars": 19,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 19
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5938,
+        "maintainability_index": 19.84
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 38,
+        "comment_lines": 1,
+        "comment_lines_density": 0.6,
+        "complexity": 35,
+        "functions": 11,
+        "lines": 204,
+        "ncloc": 175,
+        "sqale_debt_ratio": 0.4,
+        "statements": 104,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/res/drawable/black_rounded_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 13,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/circle_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/circle_black_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/extended_details_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/gradient_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 8,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/gradient_background_flipped.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 8,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_aspect_ratio_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_cardboard_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_crop_rotate_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_draw_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_explore_off_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_explore_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_files_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_flip_horizontally_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_flip_vertically_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_folders_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_launcher_monochrome.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_maximize_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_minimize_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_photo_filter_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_portrait_photo_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_rotate_right_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_slideshow_vector.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 4,
+        "ncloc": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/shortcut_image.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 8,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/stroke_background.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 9,
+        "ncloc": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_edit.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 100,
+        "ncloc": 85,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_main.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 81,
+        "ncloc": 71,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_manage_folders.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 43,
+        "ncloc": 37,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_media.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 69,
+        "ncloc": 60,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_medium.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 42,
+        "ncloc": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_new_photo_edit.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_new_video_edit.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_panorama_photo.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 42,
+        "ncloc": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_panorama_video.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 37,
+        "ncloc": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_search.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 49,
+        "ncloc": 42,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_set_wallpaper.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 43,
+        "ncloc": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_settings.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 1032,
+        "ncloc": 835,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_video_player.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 88,
+        "ncloc": 75,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_widget_config.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 137,
+        "ncloc": 117,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 237,
+        "ncloc": 220,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_actions_aspect_ratio.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 93,
+        "ncloc": 86,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_editor_actions_filter.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 20,
+        "ncloc": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_editor_crop_rotate_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 81,
+        "ncloc": 74,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_editor_draw_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 62,
+        "ncloc": 56,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_editor_primary_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 49,
+        "ncloc": 44,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_set_wallpaper_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 38,
+        "ncloc": 34,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/bottom_video_time_holder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 89,
+        "ncloc": 81,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_change_file_thumbnail_style.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 113,
+        "ncloc": 95,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_change_folder_thumbnail_style.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 92,
+        "ncloc": 77,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_change_grouping.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 123,
+        "ncloc": 102,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_change_sorting.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 125,
+        "ncloc": 105,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_change_view_type.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 58,
+        "ncloc": 48,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_confirm_delete_folder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 29,
+        "ncloc": 25,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_custom_aspect_ratio.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 64,
+        "ncloc": 56,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_delete_with_remember.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 34,
+        "ncloc": 29,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_directory_picker.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 63,
+        "ncloc": 54,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_exclude_folder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 37,
+        "ncloc": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_export_favorites.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 51,
+        "ncloc": 44,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_filter_media.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 65,
+        "ncloc": 56,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_grant_all_files.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 32,
+        "ncloc": 28,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_manage_bottom_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 139,
+        "ncloc": 121,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_manage_extended_details.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 91,
+        "ncloc": 79,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_medium_picker.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 23,
+        "ncloc": 19,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_other_aspect_ratio.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 168,
+        "ncloc": 148,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_resize_image.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 75,
+        "ncloc": 65,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_resize_image_with_path.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 117,
+        "ncloc": 99,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_resize_multiple_images.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 42,
+        "ncloc": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_save_as.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 58,
+        "ncloc": 48,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/dialog_slideshow.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 168,
+        "ncloc": 143,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/directory_item_grid_rounded_corners.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 118,
+        "ncloc": 106,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/directory_item_grid_square.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 139,
+        "ncloc": 124,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/directory_item_list.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 126,
+        "ncloc": 114,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/editor_filter_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 30,
+        "ncloc": 26,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/fragment_holder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 43,
+        "ncloc": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/item_manage_folder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 39,
+        "ncloc": 34,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/pager_photo_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 111,
+        "ncloc": 95,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/pager_video_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 91,
+        "ncloc": 78,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/photo_item_grid.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 78,
+        "ncloc": 71,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/photo_item_list.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 83,
+        "ncloc": 76,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/portrait_photo_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 18,
+        "ncloc": 15,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/thumbnail_section.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/video_item_grid.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 91,
+        "ncloc": 83,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/video_item_list.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 89,
+        "ncloc": 81,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/widget.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 40,
+        "ncloc": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/cab_directories.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 119,
+        "ncloc": 118,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/cab_hidden_folders.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/cab_media.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 122,
+        "ncloc": 121,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_add_folder.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_editor.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 20,
+        "ncloc": 19,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_included_folders.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_main.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 87,
+        "ncloc": 86,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_main_intent.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 27,
+        "ncloc": 26,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_media.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 107,
+        "ncloc": 106,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_search.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_set_wallpaper.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 14,
+        "ncloc": 13,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_video_player.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 22,
+        "ncloc": 21,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/menu_viewpager.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 147,
+        "ncloc": 146,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/photo_video_menu.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 37,
+        "ncloc": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_amber.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_blue.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_blue_grey.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_brown.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_cyan.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_deep_orange.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_deep_purple.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_green.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_grey_black.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_indigo.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_light_blue.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_light_green.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_lime.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_pink.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_purple.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_red.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_teal.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_yellow.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ar/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 392,
+        "ncloc": 371,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-az/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-be/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 2,
+        "comment_lines_density": 0.5,
+        "lines": 373,
+        "ncloc": 369,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-bg/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 18,
+        "comment_lines_density": 4.7,
+        "lines": 387,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-bn/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ca/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ckb/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 400,
+        "ncloc": 365,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-cs/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-da/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-de/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-el/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-eo/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-es/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-et/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-eu/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-fa/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-fi/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-fr/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-gl/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-hr/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-hu/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-in/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-it/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-iw/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 17,
+        "comment_lines_density": 4.4,
+        "lines": 387,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ja/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 387,
+        "ncloc": 365,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ko-rKR/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-lt/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 5.0,
+        "lines": 386,
+        "ncloc": 364,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-nb-rNO/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ne/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-nl/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-pa-rPK/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 15,
+        "comment_lines_density": 3.9,
+        "lines": 383,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-pl/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 369,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-pt-rBR/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-pt/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ro/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ru/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 369,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-sk/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 368,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-sl/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-sr/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-sv/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-sw600dp/dimens.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 10,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-ta/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 389,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-tr/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-uk/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 390,
+        "ncloc": 369,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-vi/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-w480dp/integers.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-w600dp/integers.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-zh-rCN/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 367,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-zh-rHK/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 388,
+        "ncloc": 366,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-zh-rTW/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 387,
+        "ncloc": 366,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/bools.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 5,
+        "ncloc": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/colors.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/dimens.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 31,
+        "ncloc": 30,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/donottranslate.xml": {
+      "sonarqube": {
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "lines": 44,
+        "ncloc": 40,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/integers.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 9,
+        "ncloc": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 4.9,
+        "lines": 400,
+        "ncloc": 365,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/styles.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 12,
+        "ncloc": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/xml/provider_paths.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/xml/searchable.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 6,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/xml/widget_info.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 13,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/prepaid/res/values/bools.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 7,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/proprietary/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 38,
+        "ncloc": 28,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/proprietary/kotlin/com/simplemobiletools/gallery/pro/activities/NewPhotoEditActivity.kt": {
+      "halstead": {
+        "loc": 278,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 154,
+        "N1_total_operators": 267,
+        "N2_total_operands": 298,
+        "vocabulary": 181,
+        "length": 565,
+        "calculated_length": 1247.47,
+        "volume": 4237.41,
+        "difficulty": 26.12,
+        "effort": 110695.53,
+        "time_seconds": 6149.75,
+        "bugs_delivered": 1.412
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.28,
+        "maintainability_index": 16.72
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "cognitive_complexity": 75,
+        "comment_lines": 2,
+        "comment_lines_density": 0.7,
+        "complexity": 34,
+        "duplicated_lines_density": 36.1,
+        "functions": 7,
+        "lines": 316,
+        "ncloc": 276,
+        "sqale_debt_ratio": 0.6,
+        "statements": 104,
+        "bugs": 0
+      }
+    },
+    "app/src/proprietary/kotlin/com/simplemobiletools/gallery/pro/activities/NewVideoEditActivity.kt": {
+      "halstead": {
+        "loc": 256,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 144,
+        "N1_total_operators": 266,
+        "N2_total_operands": 281,
+        "vocabulary": 171,
+        "length": 547,
+        "calculated_length": 1160.85,
+        "volume": 4057.57,
+        "difficulty": 26.34,
+        "effort": 106891.49,
+        "time_seconds": 5938.42,
+        "bugs_delivered": 1.353
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2083,
+        "maintainability_index": 17.9
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 58,
+        "comment_lines": 2,
+        "comment_lines_density": 0.8,
+        "complexity": 32,
+        "duplicated_lines_density": 38.4,
+        "functions": 7,
+        "lines": 294,
+        "ncloc": 254,
+        "sqale_debt_ratio": 0.4,
+        "statements": 95,
+        "bugs": 0
+      }
+    },
+    "build.gradle.kts": {
+      "sonarqube": {
+        "lines": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "settings.gradle.kts": {
+      "sonarqube": {
+        "lines": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  }
+}

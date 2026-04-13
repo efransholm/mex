@@ -1,0 +1,17 @@
+repo,stars,open_issues,last_push,forks,commits,contributors,open_pull_requests,total_ui_files,compose_files,android_views_files,swiftui_files,uikit_files,mixed_files,compose_pct,android_views_pct,swiftui_pct,uikit_pct,dominant_framework
+SimpleMobileTools/Simple-Gallery,3960,380,2024-08-18,797,8730,276,4,122,1,119,0,0,2,0.8,97.5,0.0,0.0,Android Views
+IacobIonut01/Gallery,2192,157,2026-03-22,133,787,19,17,272,267,3,0,0,2,98.2,1.1,0.0,0.0,Jetpack Compose
+wikimedia/apps-android-wikipedia,2900,32,2026-04-10,799,21326,137,32,154,39,111,0,0,4,25.3,72.1,0.0,0.0,Android Views
+android/nowinandroid,20967,253,2026-04-08,4333,3037,158,83,69,68,0,0,0,1,98.6,0.0,0.0,0.0,Jetpack Compose
+SimpleMobileTools/Simple-Music-Player,1377,74,2024-06-11,426,3033,153,2,84,0,84,0,0,0,0.0,100.0,0.0,0.0,Android Views
+android/compose-samples,23058,22,2026-04-08,5415,3321,139,16,236,229,3,0,0,4,97.0,1.3,0.0,0.0,Jetpack Compose
+android/sunflower@views,17796,76,2024-08-02,4780,577,96,6,20,0,20,0,0,0,0.0,100.0,0.0,0.0,Android Views
+android/sunflower,17796,76,2024-08-02,4780,577,96,6,18,16,1,0,0,1,88.9,5.6,0.0,0.0,Jetpack Compose
+android/architecture-samples@views,45636,219,2026-03-25,11876,830,69,75,17,0,17,0,0,0,0.0,100.0,0.0,0.0,Android Views
+android/architecture-samples,45636,219,2026-03-25,11876,830,69,75,11,11,0,0,0,0,100.0,0.0,0.0,0.0,Jetpack Compose
+skydoves/pokedex,8304,23,2026-03-30,1100,783,20,7,12,0,12,0,0,0,0.0,100.0,0.0,0.0,Android Views
+skydoves/pokedex-compose,1100,7,2026-04-01,188,94,15,2,30,30,0,0,0,0,100.0,0.0,0.0,0.0,Jetpack Compose
+Stypox/dicio-android@1075d6966930c299ab6095825a2adbb3c1eeed8e,1312,110,2026-02-25,138,1687,60,20,35,0,35,0,0,0,0.0,100.0,0.0,0.0,Android Views
+Stypox/dicio-android,1312,110,2026-02-25,138,1687,60,20,67,65,2,0,0,0,97.0,3.0,0.0,0.0,Jetpack Compose
+trakt/showly,1365,132,2026-04-02,83,391,10,5,50,2,48,0,0,0,4.0,96.0,0.0,0.0,Android Views
+chrisbanes/tivi,6724,0,2024-11-12,896,4758,56,0,69,69,0,0,0,0,100.0,0.0,0.0,0.0,Jetpack Compose

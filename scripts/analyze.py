@@ -10,8 +10,9 @@ Runs per project:
 Results are written to results/<app_name>.json
 
 Usage:
-    python3 scripts/analyze.py                  # analyzes all projects in test/
-    python3 scripts/analyze.py path/to/folder   # analyzes all projects in given folder
+    python3 scripts/analyze.py                        # analyzes all projects in test/
+    python3 scripts/analyze.py path/to/folder         # analyzes all projects in given folder
+    python3 scripts/analyze.py --single path/to/repo  # analyzes a single project directly
 """
 import contextlib
 import io
@@ -318,6 +319,58 @@ def compute_derived_metrics(result: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Per-file merge
+# ---------------------------------------------------------------------------
+def merge_into_files(result: dict) -> dict:
+    """
+    Build a 'files' dict keyed by relative path, where every file has all its
+    metrics in one place:
+
+        "path/to/Foo.kt": {
+            "halstead":        {...},
+            "state_metrics":   {...},
+            "derived":         {...},
+            "sonarqube":       {...},   # if SonarQube reported this file
+            "swift_complexity": {...},  # Swift only
+        }
+
+    The original per-metric-type dicts are removed to avoid duplication.
+    Project-level SonarQube data stays under result["sonarqube_project"].
+    """
+    all_paths = (
+        set(result.get("halstead", {}))
+        | set(result.get("state_metrics", {}))
+        | set(result.get("derived", {}))
+        | set(result.get("swift_complexity", {}))
+        | set(result.get("sonarqube", {}).get("files", {}))
+    )
+
+    files: dict[str, dict] = {}
+    for path in sorted(all_paths):
+        entry: dict = {}
+        if path in result.get("halstead", {}):
+            entry["halstead"] = result["halstead"][path]
+        if path in result.get("state_metrics", {}):
+            entry["state_metrics"] = result["state_metrics"][path]
+        if path in result.get("derived", {}):
+            entry["derived"] = result["derived"][path]
+        if path in result.get("swift_complexity", {}):
+            entry["swift_complexity"] = result["swift_complexity"][path]
+        sonar_files = result.get("sonarqube", {}).get("files", {})
+        if path in sonar_files:
+            entry["sonarqube"] = sonar_files[path]
+        files[path] = entry
+
+    # Promote sonar project-level summary, then drop the redundant dicts
+    result["sonarqube_project"] = result.get("sonarqube", {}).get("project", {})
+    result["files"] = files
+    for key in ("halstead", "state_metrics", "derived", "swift_complexity", "sonarqube"):
+        result.pop(key, None)
+
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Project analysis orchestrator
 # ---------------------------------------------------------------------------
 def analyze_project(project_path: str, sonar_token: str) -> dict:
@@ -365,6 +418,9 @@ def analyze_project(project_path: str, sonar_token: str) -> dict:
     print("  Computing derived metrics...")
     compute_derived_metrics(result)
 
+    # Merge all per-file metrics into a single "files" dict
+    merge_into_files(result)
+
     return result
 
 
@@ -378,23 +434,32 @@ def main() -> None:
         print("ERROR: SONAR_TOKEN not set in .env")
         sys.exit(1)
 
-    target = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO_ROOT, "test"))
+    single = "--single" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--single"]
+
+    target = os.path.abspath(args[0] if args else os.path.join(REPO_ROOT, "test"))
     if not os.path.isdir(target):
         print(f"ERROR: target folder not found: {target}")
         sys.exit(1)
 
-    project_dirs = sorted(
-        os.path.join(target, d)
-        for d in os.listdir(target)
-        if os.path.isdir(os.path.join(target, d))
-    )
-    print(f"Found {len(project_dirs)} project(s) in {target}")
+    if single:
+        project_dirs = [target]
+        print(f"Analyzing single project: {target}")
+    else:
+        project_dirs = sorted(
+            os.path.join(target, d)
+            for d in os.listdir(target)
+            if os.path.isdir(os.path.join(target, d)) and not d.startswith(".")
+        )
+        print(f"Found {len(project_dirs)} project(s) in {target}")
 
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
     for project_path in project_dirs:
         result = analyze_project(project_path, sonar_token)
-        out_path = os.path.join(RESULTS_DIR, f"{result['project']}.json")
+        # Use framework prefix so same-app migrations don't overwrite each other
+        # e.g. sunflower → compose_sunflower.json and views_sunflower.json
+        out_path = os.path.join(RESULTS_DIR, f"{result['framework']}_{result['project']}.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2)
         print(f"  -> {out_path}")

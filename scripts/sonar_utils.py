@@ -50,6 +50,7 @@ def generate_properties(project_path: str, project_key: str, org: str) -> str:
         f"sonar.organization={org}\n"
         f"sonar.sources=.\n"
         f"sonar.host.url={SONAR_HOST}\n"
+        f"sonar.projectVisibility=public\n"
     )
     props_path = os.path.join(project_path, "sonar-project.properties")
     with open(props_path, "w") as f:
