@@ -1,7 +1,7 @@
 repo,stars,open_issues,last_push,forks,commits,contributors,open_pull_requests,total_ui_files,compose_files,android_views_files,swiftui_files,uikit_files,mixed_files,compose_pct,android_views_pct,swiftui_pct,uikit_pct,dominant_framework
 SimpleMobileTools/Simple-Gallery,3960,380,2024-08-18,797,8730,276,4,122,1,119,0,0,2,0.8,97.5,0.0,0.0,Android Views
 IacobIonut01/Gallery,2192,157,2026-03-22,133,787,19,17,272,267,3,0,0,2,98.2,1.1,0.0,0.0,Jetpack Compose
-AntennaPod/AntennaPod,7795,327,2026-04-07,1664,9338,327,16,116,0,116,0,0,0,0.0,100.0,0.0,0.0,Android Views
+wikimedia/apps-android-wikipedia,2900,32,2026-04-10,799,21326,137,32,154,39,111,0,0,4,25.3,72.1,0.0,0.0,Android Views
 android/nowinandroid,20967,253,2026-04-08,4333,3037,158,83,69,68,0,0,0,1,98.6,0.0,0.0,0.0,Jetpack Compose
 SimpleMobileTools/Simple-Music-Player,1377,74,2024-06-11,426,3033,153,2,84,0,84,0,0,0,0.0,100.0,0.0,0.0,Android Views
 android/compose-samples,23058,22,2026-04-08,5415,3321,139,16,236,229,3,0,0,4,97.0,1.3,0.0,0.0,Jetpack Compose

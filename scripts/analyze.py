@@ -10,8 +10,9 @@ Runs per project:
 Results are written to results/<app_name>.json
 
 Usage:
-    python3 scripts/analyze.py                  # analyzes all projects in test/
-    python3 scripts/analyze.py path/to/folder   # analyzes all projects in given folder
+    python3 scripts/analyze.py                        # analyzes all projects in test/
+    python3 scripts/analyze.py path/to/folder         # analyzes all projects in given folder
+    python3 scripts/analyze.py --single path/to/repo  # analyzes a single project directly
 """
 import contextlib
 import io
@@ -433,17 +434,24 @@ def main() -> None:
         print("ERROR: SONAR_TOKEN not set in .env")
         sys.exit(1)
 
-    target = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO_ROOT, "test"))
+    single = "--single" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--single"]
+
+    target = os.path.abspath(args[0] if args else os.path.join(REPO_ROOT, "test"))
     if not os.path.isdir(target):
         print(f"ERROR: target folder not found: {target}")
         sys.exit(1)
 
-    project_dirs = sorted(
-        os.path.join(target, d)
-        for d in os.listdir(target)
-        if os.path.isdir(os.path.join(target, d))
-    )
-    print(f"Found {len(project_dirs)} project(s) in {target}")
+    if single:
+        project_dirs = [target]
+        print(f"Analyzing single project: {target}")
+    else:
+        project_dirs = sorted(
+            os.path.join(target, d)
+            for d in os.listdir(target)
+            if os.path.isdir(os.path.join(target, d)) and not d.startswith(".")
+        )
+        print(f"Found {len(project_dirs)} project(s) in {target}")
 
     os.makedirs(RESULTS_DIR, exist_ok=True)
 

@@ -1,0 +1,2871 @@
+{
+  "project": "pokedex",
+  "framework": "views",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-views-pokedex",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/Pokedex",
+  "sonarqube_project": {
+    "complexity": 146,
+    "code_smells": 10,
+    "duplicated_lines_density": 0.0,
+    "functions": 108,
+    "classes": 52,
+    "sqale_debt_ratio": 0.0,
+    "statements": 398,
+    "comment_lines_density": 9.7,
+    "bugs": 0,
+    "comment_lines": 312,
+    "cognitive_complexity": 39,
+    "ncloc": 2921,
+    "files": 97,
+    "lines": 5521
+  },
+  "files": {
+    ".github/workflows/android.yml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 36,
+        "ncloc": 29,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/build.gradle.kts": {
+      "sonarqube": {
+        "code_smells": 1,
+        "lines": 149,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/androidTest/kotlin/com/skydoves/pokedex/AppTestRunner.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 21,
+        "N2_total_operands": 19,
+        "vocabulary": 25,
+        "length": 40,
+        "calculated_length": 92.53,
+        "volume": 185.75,
+        "difficulty": 5.34,
+        "effort": 992.62,
+        "time_seconds": 55.15,
+        "bugs_delivered": 0.062
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 52.41
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 32,
+        "ncloc": 13,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/androidTest/kotlin/com/skydoves/pokedex/DetailActivityInjectionTest.kt": {
+      "halstead": {
+        "loc": 51,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 51,
+        "N2_total_operands": 54,
+        "vocabulary": 50,
+        "length": 105,
+        "calculated_length": 246.1,
+        "volume": 592.6,
+        "difficulty": 6.75,
+        "effort": 4000.08,
+        "time_seconds": 222.23,
+        "bugs_delivered": 0.198
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 43.2
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 57,
+        "ncloc": 36,
+        "statements": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/androidTest/kotlin/com/skydoves/pokedex/MainActivityInjectionTest.kt": {
+      "halstead": {
+        "loc": 41,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 25,
+        "N1_total_operators": 26,
+        "N2_total_operands": 27,
+        "vocabulary": 34,
+        "length": 53,
+        "calculated_length": 144.63,
+        "volume": 269.64,
+        "difficulty": 4.86,
+        "effort": 1310.43,
+        "time_seconds": 72.8,
+        "bugs_delivered": 0.09
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 47.66
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 47,
+        "ncloc": 26,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 20.8,
+        "lines": 63,
+        "ncloc": 38,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/PokedexApp.kt": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 3,
+        "N1_total_operators": 3,
+        "N2_total_operands": 3,
+        "vocabulary": 6,
+        "length": 6,
+        "calculated_length": 9.51,
+        "volume": 15.51,
+        "difficulty": 1.5,
+        "effort": 23.26,
+        "time_seconds": 1.29,
+        "bugs_delivered": 0.005
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 24,
+        "ncloc": 5,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/binding/RecyclerViewBinding.kt": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 40,
+        "N2_total_operands": 56,
+        "vocabulary": 41,
+        "length": 96,
+        "calculated_length": 190.47,
+        "volume": 514.32,
+        "difficulty": 6.79,
+        "effort": 3491.18,
+        "time_seconds": 193.95,
+        "bugs_delivered": 0.171
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 43.55
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 57,
+        "ncloc": 35,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/binding/ViewBinding.kt": {
+      "halstead": {
+        "loc": 209,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 143,
+        "N1_total_operators": 250,
+        "N2_total_operands": 309,
+        "vocabulary": 163,
+        "length": 559,
+        "calculated_length": 1110.3,
+        "volume": 4107.94,
+        "difficulty": 21.61,
+        "effort": 88765.96,
+        "time_seconds": 4931.44,
+        "bugs_delivered": 1.369
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 20.99
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 24,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 23,
+        "functions": 13,
+        "lines": 224,
+        "ncloc": 194,
+        "statements": 60,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/initializer/TimberInitializer.kt": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 20,
+        "N2_total_operands": 17,
+        "vocabulary": 23,
+        "length": 37,
+        "calculated_length": 82.6,
+        "volume": 167.37,
+        "difficulty": 4.53,
+        "effort": 758.75,
+        "time_seconds": 42.15,
+        "bugs_delivered": 0.056
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 52.13
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 35,
+        "ncloc": 14,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/ui/details/DetailActivity.kt": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 51,
+        "N2_total_operands": 56,
+        "vocabulary": 54,
+        "length": 107,
+        "calculated_length": 262.24,
+        "volume": 615.77,
+        "difficulty": 12.86,
+        "effort": 7921.84,
+        "time_seconds": 440.1,
+        "bugs_delivered": 0.205
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 42.24
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 65,
+        "ncloc": 40,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/ui/details/DetailViewModel.kt": {
+      "halstead": {
+        "loc": 65,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 43,
+        "N1_total_operators": 70,
+        "N2_total_operands": 67,
+        "vocabulary": 60,
+        "length": 137,
+        "calculated_length": 302.82,
+        "volume": 809.24,
+        "difficulty": 13.24,
+        "effort": 10717.78,
+        "time_seconds": 595.43,
+        "bugs_delivered": 0.27
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 39.82
+      },
+      "sonarqube": {
+        "classes": 2,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 77,
+        "ncloc": 50,
+        "sqale_debt_ratio": 0.3,
+        "statements": 6,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/ui/main/MainActivity.kt": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 22,
+        "N2_total_operands": 22,
+        "vocabulary": 30,
+        "length": 44,
+        "calculated_length": 118.76,
+        "volume": 215.9,
+        "difficulty": 6.37,
+        "effort": 1374.96,
+        "time_seconds": 76.39,
+        "bugs_delivered": 0.072
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 49.31
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 43,
+        "ncloc": 22,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/ui/main/MainViewModel.kt": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 54,
+        "N2_total_operands": 52,
+        "vocabulary": 52,
+        "length": 106,
+        "calculated_length": 251.35,
+        "volume": 604.25,
+        "difficulty": 10.54,
+        "effort": 6369.09,
+        "time_seconds": 353.84,
+        "bugs_delivered": 0.201
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 3,
+        "observable_state_vars": 1,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4,
+        "maintainability_index": 41.47
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 70,
+        "ncloc": 45,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/ui/main/PokemonAdapter.kt": {
+      "halstead": {
+        "loc": 61,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 95,
+        "N2_total_operands": 88,
+        "vocabulary": 69,
+        "length": 183,
+        "calculated_length": 360.32,
+        "volume": 1117.86,
+        "difficulty": 19.25,
+        "effort": 21518.8,
+        "time_seconds": 1195.49,
+        "bugs_delivered": 0.373
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 38.9
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 5,
+        "lines": 74,
+        "ncloc": 46,
+        "statements": 14,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/utils/PokemonTypeUtils.kt": {
+      "halstead": {
+        "loc": 41,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 62,
+        "N2_total_operands": 77,
+        "vocabulary": 51,
+        "length": 139,
+        "calculated_length": 255.01,
+        "volume": 788.47,
+        "difficulty": 8.25,
+        "effort": 6504.85,
+        "time_seconds": 361.38,
+        "bugs_delivered": 0.263
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 41.98
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 19,
+        "functions": 1,
+        "lines": 46,
+        "ncloc": 26,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/kotlin/com/skydoves/pokedex/utils/SpacesItemDecoration.kt": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 18,
+        "N2_total_operands": 20,
+        "vocabulary": 24,
+        "length": 38,
+        "calculated_length": 87.13,
+        "volume": 174.23,
+        "difficulty": 6.0,
+        "effort": 1045.37,
+        "time_seconds": 58.08,
+        "bugs_delivered": 0.058
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 51.51
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 16,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/res/drawable-v24/ic_launcher_foreground.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 24.4,
+        "lines": 46,
+        "ncloc": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_arrow.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 47.6,
+        "lines": 27,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_launcher_background.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 5.6,
+        "lines": 186,
+        "ncloc": 170,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/scrollbar.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 55.6,
+        "lines": 23,
+        "ncloc": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_detail.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 3.1,
+        "lines": 362,
+        "ncloc": 316,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/activity_main.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 14.5,
+        "lines": 85,
+        "ncloc": 59,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/item_pokemon.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 14.1,
+        "lines": 88,
+        "ncloc": 61,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/toolbar_home.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 38.5,
+        "lines": 33,
+        "ncloc": 16,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 66.7,
+        "lines": 20,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-es/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 45.5,
+        "lines": 27,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-it/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 45.5,
+        "lines": 27,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-pt-rBR/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 45.5,
+        "lines": 28,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-v31/styles.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 47.6,
+        "lines": 27,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/colors.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 21.7,
+        "lines": 51,
+        "ncloc": 36,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/ic_launcher_background.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 71.4,
+        "lines": 19,
+        "ncloc": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 45.5,
+        "lines": 27,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/styles.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 27.0,
+        "lines": 47,
+        "ncloc": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/kotlin/com/skydoves/pokedex/DetailViewModelTest.kt": {
+      "halstead": {
+        "loc": 69,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 79,
+        "N2_total_operands": 80,
+        "vocabulary": 58,
+        "length": 159,
+        "calculated_length": 301.3,
+        "volume": 931.42,
+        "difficulty": 8.33,
+        "effort": 7761.82,
+        "time_seconds": 431.21,
+        "bugs_delivered": 0.31
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 38.83
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 79,
+        "ncloc": 54,
+        "statements": 16,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/kotlin/com/skydoves/pokedex/MainViewModelTest.kt": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 90,
+        "N2_total_operands": 91,
+        "vocabulary": 62,
+        "length": 181,
+        "calculated_length": 329.64,
+        "volume": 1077.71,
+        "difficulty": 8.75,
+        "effort": 9429.96,
+        "time_seconds": 523.89,
+        "bugs_delivered": 0.359
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 38.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 82,
+        "ncloc": 56,
+        "statements": 18,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "benchmark/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 64,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "benchmark/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 62.5,
+        "lines": 22,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "benchmark/src/main/kotlin/com/github/skydoves/benchmark/BaselineProfileGenerator.kt": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 76,
+        "N2_total_operands": 83,
+        "vocabulary": 59,
+        "length": 159,
+        "calculated_length": 306.13,
+        "volume": 935.34,
+        "difficulty": 9.51,
+        "effort": 8895.48,
+        "time_seconds": 494.19,
+        "bugs_delivered": 0.312
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.01
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 10,
+        "comment_lines_density": 17.9,
+        "complexity": 6,
+        "functions": 4,
+        "lines": 81,
+        "ncloc": 46,
+        "statements": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "benchmark/src/main/kotlin/com/github/skydoves/benchmark/Constant.kt": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 3,
+        "N1_total_operators": 5,
+        "N2_total_operands": 3,
+        "vocabulary": 8,
+        "length": 8,
+        "calculated_length": 16.36,
+        "volume": 24.0,
+        "difficulty": 2.5,
+        "effort": 60.0,
+        "time_seconds": 3.33,
+        "bugs_delivered": 0.008
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 2,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "benchmark/src/main/kotlin/com/github/skydoves/benchmark/StartupBenchmark.kt": {
+      "halstead": {
+        "loc": 82,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 86,
+        "N2_total_operands": 83,
+        "vocabulary": 56,
+        "length": 169,
+        "calculated_length": 287.3,
+        "volume": 981.44,
+        "difficulty": 9.02,
+        "effort": 8854.32,
+        "time_seconds": 491.91,
+        "bugs_delivered": 0.327
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.63
+      },
+      "sonarqube": {
+        "classes": 4,
+        "comment_lines": 16,
+        "comment_lines_density": 23.9,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 94,
+        "ncloc": 51,
+        "statements": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "build.gradle.kts": {
+      "sonarqube": {
+        "lines": 123,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "buildSrc/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "buildSrc/src/main/kotlin/com/skydoves/pokedex/Configuration.kt": {
+      "halstead": {
+        "loc": 8,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 16,
+        "N2_total_operands": 15,
+        "vocabulary": 14,
+        "length": 31,
+        "calculated_length": 41.22,
+        "volume": 118.03,
+        "difficulty": 3.0,
+        "effort": 354.08,
+        "time_seconds": 19.67,
+        "bugs_delivered": 0.039
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 10,
+        "ncloc": 8,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/build.gradle.kts": {
+      "sonarqube": {
+        "code_smells": 1,
+        "lines": 52,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 83.3,
+        "lines": 18,
+        "ncloc": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/main/kotlin/com/skydoves/pokedex/core/di/DataModule.kt": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 13,
+        "N2_total_operands": 14,
+        "vocabulary": 20,
+        "length": 27,
+        "calculated_length": 67.76,
+        "volume": 116.69,
+        "difficulty": 3.77,
+        "effort": 439.84,
+        "time_seconds": 24.44,
+        "bugs_delivered": 0.039
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 17,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/main/kotlin/com/skydoves/pokedex/core/repository/DetailRepository.kt": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 12,
+        "N2_total_operands": 11,
+        "vocabulary": 15,
+        "length": 23,
+        "calculated_length": 44.04,
+        "volume": 89.86,
+        "difficulty": 3.67,
+        "effort": 329.48,
+        "time_seconds": 18.3,
+        "bugs_delivered": 0.03
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 12,
+        "sqale_debt_ratio": 1.4,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/main/kotlin/com/skydoves/pokedex/core/repository/DetailRepositoryImpl.kt": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 58,
+        "N2_total_operands": 58,
+        "vocabulary": 54,
+        "length": 116,
+        "calculated_length": 264.73,
+        "volume": 667.57,
+        "difficulty": 11.15,
+        "effort": 7445.94,
+        "time_seconds": 413.66,
+        "bugs_delivered": 0.223
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.57
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 3,
+        "comment_lines": 9,
+        "comment_lines_density": 16.1,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 76,
+        "ncloc": 47,
+        "statements": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "core-data/src/main/kotlin/com/skydoves/pokedex/core/repository/MainRepository.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 15,
+        "N2_total_operands": 13,
+        "vocabulary": 17,
+        "length": 28,
+        "calculated_length": 53.56,
+        "volume": 114.45,
+        "difficulty": 3.55,
+        "effort": 405.77,
+        "time_seconds": 22.54,
+        "bugs_delivered": 0.038
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 13,
+        "sqale_debt_ratio": 1.3,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/main/kotlin/com/skydoves/pokedex/core/repository/MainRepositoryImpl.kt": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 75,
+        "N2_total_operands": 70,
+        "vocabulary": 55,
+        "length": 145,
+        "calculated_length": 271.48,
+        "volume": 838.3,
+        "difficulty": 13.12,
+        "effort": 11002.65,
+        "time_seconds": 611.26,
+        "bugs_delivered": 0.279
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 39.29
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 3,
+        "comment_lines": 5,
+        "comment_lines_density": 9.3,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 73,
+        "ncloc": 49,
+        "statements": 14,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "core-data/src/test/kotlin/com/skydoves/pokedex/core/data/DetailRepositoryTest.kt": {
+      "halstead": {
+        "loc": 100,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 135,
+        "N2_total_operands": 150,
+        "vocabulary": 61,
+        "length": 285,
+        "calculated_length": 322.51,
+        "volume": 1690.26,
+        "difficulty": 14.71,
+        "effort": 24856.77,
+        "time_seconds": 1380.93,
+        "bugs_delivered": 0.563
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 33.37
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 113,
+        "ncloc": 85,
+        "statements": 33,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-data/src/test/kotlin/com/skydoves/pokedex/core/data/MainRepositoryImplTest.kt": {
+      "halstead": {
+        "loc": 104,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 163,
+        "N2_total_operands": 181,
+        "vocabulary": 71,
+        "length": 344,
+        "calculated_length": 394.99,
+        "volume": 2115.51,
+        "difficulty": 14.84,
+        "effort": 31385.89,
+        "time_seconds": 1743.66,
+        "bugs_delivered": 0.705
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 32.31
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 117,
+        "ncloc": 89,
+        "statements": 33,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/build.gradle.kts": {
+      "sonarqube": {
+        "code_smells": 1,
+        "lines": 67,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/schemas/com.skydoves.pokedex.core.database.PokedexDatabase/1.json": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 126,
+        "ncloc": 126,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/schemas/com.skydoves.pokedex.core.database.PokedexDatabase/2.json": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 126,
+        "ncloc": 126,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 83.3,
+        "lines": 18,
+        "ncloc": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/PokedexDatabase.kt": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 24,
+        "N2_total_operands": 17,
+        "vocabulary": 24,
+        "length": 41,
+        "calculated_length": 89.14,
+        "volume": 187.98,
+        "difficulty": 3.5,
+        "effort": 657.94,
+        "time_seconds": 36.55,
+        "bugs_delivered": 0.063
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 36,
+        "ncloc": 16,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/PokemonDao.kt": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 17,
+        "N2_total_operands": 21,
+        "vocabulary": 22,
+        "length": 38,
+        "calculated_length": 79.51,
+        "volume": 169.46,
+        "difficulty": 3.94,
+        "effort": 667.24,
+        "time_seconds": 37.07,
+        "bugs_delivered": 0.056
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 15,
+        "sqale_debt_ratio": 0.9,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/PokemonInfoDao.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 13,
+        "N2_total_operands": 15,
+        "vocabulary": 21,
+        "length": 28,
+        "calculated_length": 72.95,
+        "volume": 122.98,
+        "difficulty": 3.75,
+        "effort": 461.19,
+        "time_seconds": 25.62,
+        "bugs_delivered": 0.041
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 13,
+        "sqale_debt_ratio": 0.5,
+        "statements": 0,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/TypeResponseConverter.kt": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 53,
+        "N2_total_operands": 47,
+        "vocabulary": 33,
+        "length": 100,
+        "calculated_length": 136.16,
+        "volume": 504.44,
+        "difficulty": 11.75,
+        "effort": 5927.16,
+        "time_seconds": 329.29,
+        "bugs_delivered": 0.168
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 45.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 48,
+        "ncloc": 27,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/di/DatabaseModule.kt": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 53,
+        "N2_total_operands": 55,
+        "vocabulary": 42,
+        "length": 108,
+        "calculated_length": 194.99,
+        "volume": 582.37,
+        "difficulty": 7.5,
+        "effort": 4367.78,
+        "time_seconds": 242.65,
+        "bugs_delivered": 0.194
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 40.13
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 76,
+        "ncloc": 52,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/entity/PokemonEntity.kt": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 10,
+        "N2_total_operands": 10,
+        "vocabulary": 16,
+        "length": 20,
+        "calculated_length": 48.18,
+        "volume": 80.0,
+        "difficulty": 3.89,
+        "effort": 311.11,
+        "time_seconds": 17.28,
+        "bugs_delivered": 0.027
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 28,
+        "ncloc": 9,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/entity/PokemonInfoEntity.kt": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 25,
+        "N2_total_operands": 25,
+        "vocabulary": 22,
+        "length": 50,
+        "calculated_length": 81.1,
+        "volume": 222.97,
+        "difficulty": 3.68,
+        "effort": 819.75,
+        "time_seconds": 45.54,
+        "bugs_delivered": 0.074
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 18,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/entity/mapper/EntityMapper.kt": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 9,
+        "N2_total_operands": 9,
+        "vocabulary": 11,
+        "length": 18,
+        "calculated_length": 27.65,
+        "volume": 62.27,
+        "difficulty": 2.57,
+        "effort": 160.12,
+        "time_seconds": 8.9,
+        "bugs_delivered": 0.021
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 5,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/entity/mapper/PokemonEntityMapper.kt": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 48,
+        "N2_total_operands": 49,
+        "vocabulary": 27,
+        "length": 97,
+        "calculated_length": 102.71,
+        "volume": 461.22,
+        "difficulty": 14.41,
+        "effort": 6647.05,
+        "time_seconds": 369.28,
+        "bugs_delivered": 0.154
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 44.96
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 52,
+        "ncloc": 29,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/main/kotlin/com/skydoves/pokedex/core/database/entity/mapper/PokemonInfoEntityMapper.kt": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 74,
+        "N2_total_operands": 90,
+        "vocabulary": 28,
+        "length": 164,
+        "calculated_length": 110.44,
+        "volume": 788.41,
+        "difficulty": 18.0,
+        "effort": 14191.31,
+        "time_seconds": 788.41,
+        "bugs_delivered": 0.263
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 41.04
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 64,
+        "ncloc": 41,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/test/kotlin/com/skydoves/pokedex/core/database/LocalDatabase.kt": {
+      "halstead": {
+        "loc": 41,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 36,
+        "N2_total_operands": 29,
+        "vocabulary": 35,
+        "length": 65,
+        "calculated_length": 148.09,
+        "volume": 333.4,
+        "difficulty": 6.65,
+        "effort": 2215.74,
+        "time_seconds": 123.1,
+        "bugs_delivered": 0.111
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 46.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 47,
+        "ncloc": 26,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-database/src/test/kotlin/com/skydoves/pokedex/core/database/PokemonDaoTest.kt": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 52,
+        "N2_total_operands": 43,
+        "vocabulary": 39,
+        "length": 95,
+        "calculated_length": 171.4,
+        "volume": 502.11,
+        "difficulty": 9.56,
+        "effort": 4797.97,
+        "time_seconds": 266.55,
+        "bugs_delivered": 0.167
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 44.76
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 54,
+        "ncloc": 30,
+        "statements": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-model/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 35,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-model/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 83.3,
+        "lines": 18,
+        "ncloc": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-model/src/main/kotlin/com/skydoves/pokedex/core/model/Pokemon.kt": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 45,
+        "N2_total_operands": 42,
+        "vocabulary": 44,
+        "length": 87,
+        "calculated_length": 203.02,
+        "volume": 474.97,
+        "difficulty": 7.88,
+        "effort": 3740.39,
+        "time_seconds": 207.8,
+        "bugs_delivered": 0.158
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.31
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 40,
+        "ncloc": 20,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-model/src/main/kotlin/com/skydoves/pokedex/core/model/PokemonInfo.kt": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 56,
+        "N1_total_operators": 146,
+        "N2_total_operands": 144,
+        "vocabulary": 68,
+        "length": 290,
+        "calculated_length": 368.23,
+        "volume": 1765.36,
+        "difficulty": 15.43,
+        "effort": 27237.05,
+        "time_seconds": 1513.17,
+        "bugs_delivered": 0.588
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.56
+      },
+      "sonarqube": {
+        "classes": 3,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 8,
+        "functions": 8,
+        "lines": 67,
+        "ncloc": 44,
+        "statements": 13,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/build.gradle.kts": {
+      "sonarqube": {
+        "code_smells": 1,
+        "lines": 52,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 83.3,
+        "lines": 18,
+        "ncloc": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/PokedexAppDispatchers.kt": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 7,
+        "N2_total_operands": 8,
+        "vocabulary": 12,
+        "length": 15,
+        "calculated_length": 31.26,
+        "volume": 53.77,
+        "difficulty": 2.86,
+        "effort": 153.64,
+        "time_seconds": 8.54,
+        "bugs_delivered": 0.018
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 3,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 9,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/di/DispatchersModule.kt": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 12,
+        "N2_total_operands": 12,
+        "vocabulary": 20,
+        "length": 24,
+        "calculated_length": 66.58,
+        "volume": 103.73,
+        "difficulty": 4.91,
+        "effort": 509.2,
+        "time_seconds": 28.29,
+        "bugs_delivered": 0.035
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 53.22
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 16,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/di/NetworkModule.kt": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 54,
+        "N2_total_operands": 50,
+        "vocabulary": 39,
+        "length": 104,
+        "calculated_length": 175.74,
+        "volume": 549.68,
+        "difficulty": 7.5,
+        "effort": 4122.61,
+        "time_seconds": 229.03,
+        "bugs_delivered": 0.183
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 41.65
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 67,
+        "ncloc": 44,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/interceptor/HttpRequestInterceptor.kt": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 29,
+        "N2_total_operands": 24,
+        "vocabulary": 25,
+        "length": 53,
+        "calculated_length": 91.82,
+        "volume": 246.12,
+        "difficulty": 8.0,
+        "effort": 1969.0,
+        "time_seconds": 109.39,
+        "bugs_delivered": 0.082
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.9
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 31,
+        "ncloc": 12,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/model/PokemonErrorResponse.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 5,
+        "N1_total_operators": 8,
+        "N2_total_operands": 5,
+        "vocabulary": 11,
+        "length": 13,
+        "calculated_length": 27.12,
+        "volume": 44.97,
+        "difficulty": 3.0,
+        "effort": 134.92,
+        "time_seconds": 7.5,
+        "bugs_delivered": 0.015
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 54.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 5,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/model/PokemonResponse.kt": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 27,
+        "N2_total_operands": 24,
+        "vocabulary": 24,
+        "length": 51,
+        "calculated_length": 89.14,
+        "volume": 233.83,
+        "difficulty": 4.94,
+        "effort": 1155.41,
+        "time_seconds": 64.19,
+        "bugs_delivered": 0.078
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 30,
+        "ncloc": 11,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/model/mapper/ErrorResponseMapper.kt": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 15,
+        "N2_total_operands": 14,
+        "vocabulary": 18,
+        "length": 29,
+        "calculated_length": 57.71,
+        "volume": 120.93,
+        "difficulty": 4.45,
+        "effort": 538.68,
+        "time_seconds": 29.93,
+        "bugs_delivered": 0.04
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 51.07
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 11,
+        "comment_lines_density": 50.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 42,
+        "ncloc": 11,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/service/PokedexClient.kt": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 29,
+        "N2_total_operands": 25,
+        "vocabulary": 27,
+        "length": 54,
+        "calculated_length": 101.62,
+        "volume": 256.76,
+        "difficulty": 10.0,
+        "effort": 2567.64,
+        "time_seconds": 142.65,
+        "bugs_delivered": 0.086
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 48.91
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 43,
+        "ncloc": 21,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/main/kotlin/com/skydoves/pokedex/core/network/service/PokedexService.kt": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 17,
+        "N2_total_operands": 23,
+        "vocabulary": 24,
+        "length": 40,
+        "calculated_length": 92.32,
+        "volume": 183.4,
+        "difficulty": 3.03,
+        "effort": 555.02,
+        "time_seconds": 30.83,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 16,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/test/kotlin/com/skydoves/pokedex/core/network/ApiAbstract.kt": {
+      "halstead": {
+        "loc": 75,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 92,
+        "N2_total_operands": 85,
+        "vocabulary": 75,
+        "length": 177,
+        "calculated_length": 411.08,
+        "volume": 1102.5,
+        "difficulty": 11.53,
+        "effort": 12706.79,
+        "time_seconds": 705.93,
+        "bugs_delivered": 0.368
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 36.99
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 5,
+        "lines": 88,
+        "ncloc": 60,
+        "statements": 13,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "core-network/src/test/kotlin/com/skydoves/pokedex/core/network/ApiResponseTest.kt": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 34,
+        "N2_total_operands": 32,
+        "vocabulary": 27,
+        "length": 66,
+        "calculated_length": 102.71,
+        "volume": 313.82,
+        "difficulty": 9.41,
+        "effort": 2953.62,
+        "time_seconds": 164.09,
+        "bugs_delivered": 0.105
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.71
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 48,
+        "ncloc": 27,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "core-network/src/test/kotlin/com/skydoves/pokedex/core/network/PokedexServiceTest.kt": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 61,
+        "N2_total_operands": 60,
+        "vocabulary": 57,
+        "length": 121,
+        "calculated_length": 285.08,
+        "volume": 705.78,
+        "difficulty": 10.71,
+        "effort": 7561.93,
+        "time_seconds": 420.11,
+        "bugs_delivered": 0.235
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 41.69
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 65,
+        "ncloc": 40,
+        "statements": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/test/resources/api-response/Bulbasaur.json": {
+      "sonarqube": {
+        "lines": 81,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-network/src/test/resources/api-response/PokemonResponse.json": {
+      "sonarqube": {
+        "lines": 87,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-test/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 31,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-test/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 10,
+        "comment_lines_density": 83.3,
+        "lines": 18,
+        "ncloc": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-test/src/main/kotlin/com/skydoves/pokedex/core/test/MainCoroutinesRule.kt": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 31,
+        "N2_total_operands": 26,
+        "vocabulary": 28,
+        "length": 57,
+        "calculated_length": 109.24,
+        "volume": 274.02,
+        "difficulty": 6.16,
+        "effort": 1687.38,
+        "time_seconds": 93.74,
+        "bugs_delivered": 0.091
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.95
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 47,
+        "ncloc": 24,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "core-test/src/main/kotlin/com/skydoves/pokedex/core/test/MockUtil.kt": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 13,
+        "N2_total_operands": 18,
+        "vocabulary": 22,
+        "length": 31,
+        "calculated_length": 83.06,
+        "volume": 138.24,
+        "difficulty": 2.0,
+        "effort": 276.48,
+        "time_seconds": 15.36,
+        "bugs_delivered": 0.046
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 51.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 41,
+        "ncloc": 19,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "renovate.json": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 27,
+        "ncloc": 26,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "settings.gradle.kts": {
+      "sonarqube": {
+        "lines": 113,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "spotless/spotless.license.kt": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 0,
+        "n2_unique_operands": 0,
+        "N1_total_operators": 0,
+        "N2_total_operands": 0,
+        "vocabulary": 0,
+        "length": 0,
+        "calculated_length": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "effort": 0,
+        "time_seconds": 0.0,
+        "bugs_delivered": 0.0
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 15,
+        "comment_lines_density": 100.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 17,
+        "ncloc": 0,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "spotless/spotless.license.xml": {
+      "sonarqube": {
+        "lines": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    }
+  }
+}

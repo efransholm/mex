@@ -38,6 +38,7 @@ python3 ast/swift_analyzer.py ast/swift_example.swift
 ```cmd
 python3 scripts/analyze.py          # all projects in test/
 python3 scripts/analyze.py some/dir # all sub-folders in that dir
+python3 scripts/analyze.py ../repositories/Android/tivi
 ```
 
 ### Run repo mining

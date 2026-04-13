@@ -34,7 +34,7 @@ REPOS = [
     "IacobIonut01/Gallery",                     # compose
 
     # Large navigation / content browsing
-    "AntennaPod/AntennaPod",                    # views
+    "wikimedia/apps-android-wikipedia",                    # views
     "android/nowinandroid",                     # compose
 
     # Music / podcast player
@@ -50,7 +50,7 @@ REPOS = [
     "android/architecture-samples",             # compose (main)
 
     # Pokedex app (two separate repos)
-    "skydoves/pokedex",                         # views
+    "skydoves/Pokedex",                         # views
     "skydoves/pokedex-compose",                 # compose
 
     # Voice assistant (same repo, before/after migration)

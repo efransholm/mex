@@ -3,1390 +3,2827 @@
   "framework": "views",
   "language": "kotlin",
   "sonar_project_key": "thesis-views-architecture-samples-views",
-  "project_path": "/Users/fransholm/Documents/MEX/repositories/android/architecture-samples-views",
-  "halstead": {
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/AppNavigationTest.kt": {
-      "loc": 207,
-      "n1_unique_operators": 12,
-      "n2_unique_operands": 73,
-      "N1_total_operators": 310,
-      "N2_total_operands": 304,
-      "vocabulary": 85,
-      "length": 614,
-      "calculated_length": 494.88,
-      "volume": 3935.37,
-      "difficulty": 24.99,
-      "effort": 98330.24,
-      "time_seconds": 5462.79,
-      "bugs_delivered": 1.312
-    },
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivityTest.kt": {
-      "loc": 276,
-      "n1_unique_operators": 11,
-      "n2_unique_operands": 91,
-      "N1_total_operators": 518,
-      "N2_total_operands": 532,
-      "vocabulary": 102,
-      "length": 1050,
-      "calculated_length": 630.26,
-      "volume": 7006.05,
-      "difficulty": 32.15,
-      "effort": 225271.34,
-      "time_seconds": 12515.07,
-      "bugs_delivered": 2.335
-    },
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TestUtils.kt": {
-      "loc": 28,
-      "n1_unique_operators": 8,
-      "n2_unique_operands": 12,
-      "N1_total_operators": 14,
-      "N2_total_operands": 15,
-      "vocabulary": 20,
-      "length": 29,
-      "calculated_length": 67.02,
-      "volume": 125.34,
-      "difficulty": 5.0,
-      "effort": 626.68,
-      "time_seconds": 34.82,
-      "bugs_delivered": 0.042
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/Event.kt": {
-      "loc": 53,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 19,
-      "N1_total_operators": 39,
-      "N2_total_operands": 30,
-      "vocabulary": 35,
-      "length": 69,
-      "calculated_length": 144.71,
-      "volume": 353.92,
-      "difficulty": 12.63,
-      "effort": 4470.58,
-      "time_seconds": 248.37,
-      "bugs_delivered": 0.118
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ScrollChildSwipeRefreshLayout.kt": {
-      "loc": 36,
-      "n1_unique_operators": 12,
-      "n2_unique_operands": 14,
-      "N1_total_operators": 22,
-      "N2_total_operands": 19,
-      "vocabulary": 26,
-      "length": 41,
-      "calculated_length": 96.32,
-      "volume": 192.72,
-      "difficulty": 8.14,
-      "effort": 1569.28,
-      "time_seconds": 87.18,
-      "bugs_delivered": 0.064
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/TodoApplication.kt": {
-      "loc": 35,
-      "n1_unique_operators": 9,
-      "n2_unique_operands": 14,
-      "N1_total_operators": 19,
-      "N2_total_operands": 15,
-      "vocabulary": 23,
-      "length": 34,
-      "calculated_length": 81.83,
-      "volume": 153.8,
-      "difficulty": 4.82,
-      "effort": 741.54,
-      "time_seconds": 41.2,
-      "bugs_delivered": 0.051
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ViewModelFactory.kt": {
-      "loc": 50,
-      "n1_unique_operators": 15,
-      "n2_unique_operands": 29,
-      "N1_total_operators": 56,
-      "N2_total_operands": 50,
-      "vocabulary": 44,
-      "length": 106,
-      "calculated_length": 199.48,
-      "volume": 578.7,
-      "difficulty": 12.93,
-      "effort": 7483.19,
-      "time_seconds": 415.73,
-      "bugs_delivered": 0.193
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragment.kt": {
-      "loc": 73,
-      "n1_unique_operators": 15,
-      "n2_unique_operands": 51,
-      "N1_total_operators": 77,
-      "N2_total_operands": 80,
-      "vocabulary": 66,
-      "length": 157,
-      "calculated_length": 347.9,
-      "volume": 948.97,
-      "difficulty": 11.76,
-      "effort": 11164.35,
-      "time_seconds": 620.24,
-      "bugs_delivered": 0.316
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModel.kt": {
-      "loc": 116,
-      "n1_unique_operators": 19,
-      "n2_unique_operands": 52,
-      "N1_total_operators": 163,
-      "N2_total_operands": 158,
-      "vocabulary": 71,
-      "length": 321,
-      "calculated_length": 377.13,
-      "volume": 1974.07,
-      "difficulty": 28.87,
-      "effort": 56982.26,
-      "time_seconds": 3165.68,
-      "bugs_delivered": 0.658
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Result.kt": {
-      "loc": 38,
-      "n1_unique_operators": 17,
-      "n2_unique_operands": 16,
-      "N1_total_operators": 40,
-      "N2_total_operands": 27,
-      "vocabulary": 33,
-      "length": 67,
-      "calculated_length": 133.49,
-      "volume": 337.97,
-      "difficulty": 14.34,
-      "effort": 4847.82,
-      "time_seconds": 269.32,
-      "bugs_delivered": 0.113
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Task.kt": {
-      "loc": 43,
-      "n1_unique_operators": 12,
-      "n2_unique_operands": 27,
-      "N1_total_operators": 49,
-      "N2_total_operands": 45,
-      "vocabulary": 39,
-      "length": 94,
-      "calculated_length": 171.4,
-      "volume": 496.83,
-      "difficulty": 10.0,
-      "effort": 4968.28,
-      "time_seconds": 276.02,
-      "bugs_delivered": 0.166
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepository.kt": {
-      "loc": 145,
-      "n1_unique_operators": 21,
-      "n2_unique_operands": 47,
-      "N1_total_operators": 187,
-      "N2_total_operands": 185,
-      "vocabulary": 68,
-      "length": 372,
-      "calculated_length": 353.3,
-      "volume": 2264.54,
-      "difficulty": 41.33,
-      "effort": 93592.8,
-      "time_seconds": 5199.6,
-      "bugs_delivered": 0.755
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksDataSource.kt": {
-      "loc": 38,
-      "n1_unique_operators": 4,
-      "n2_unique_operands": 19,
-      "N1_total_operators": 42,
-      "N2_total_operands": 37,
-      "vocabulary": 23,
-      "length": 79,
-      "calculated_length": 88.71,
-      "volume": 357.36,
-      "difficulty": 3.89,
-      "effort": 1391.83,
-      "time_seconds": 77.32,
-      "bugs_delivered": 0.119
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksRepository.kt": {
-      "loc": 38,
-      "n1_unique_operators": 5,
-      "n2_unique_operands": 22,
-      "N1_total_operators": 46,
-      "N2_total_operands": 43,
-      "vocabulary": 27,
-      "length": 89,
-      "calculated_length": 109.72,
-      "volume": 423.18,
-      "difficulty": 4.89,
-      "effort": 2067.84,
-      "time_seconds": 114.88,
-      "bugs_delivered": 0.141
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDao.kt": {
-      "loc": 101,
-      "n1_unique_operators": 7,
-      "n2_unique_operands": 33,
-      "N1_total_operators": 47,
-      "N2_total_operands": 54,
-      "vocabulary": 40,
-      "length": 101,
-      "calculated_length": 186.12,
-      "volume": 537.51,
-      "difficulty": 5.73,
-      "effort": 3078.49,
-      "time_seconds": 171.03,
-      "bugs_delivered": 0.179
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSource.kt": {
-      "loc": 93,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 45,
-      "N1_total_operators": 136,
-      "N2_total_operands": 125,
-      "vocabulary": 61,
-      "length": 261,
-      "calculated_length": 311.13,
-      "volume": 1547.92,
-      "difficulty": 22.22,
-      "effort": 34398.28,
-      "time_seconds": 1911.02,
-      "bugs_delivered": 0.516
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/ToDoDatabase.kt": {
-      "loc": 28,
-      "n1_unique_operators": 7,
-      "n2_unique_operands": 11,
-      "N1_total_operators": 14,
-      "N2_total_operands": 11,
-      "vocabulary": 18,
-      "length": 25,
-      "calculated_length": 57.71,
-      "volume": 104.25,
-      "difficulty": 3.5,
-      "effort": 364.87,
-      "time_seconds": 20.27,
-      "bugs_delivered": 0.035
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragment.kt": {
-      "loc": 51,
-      "n1_unique_operators": 14,
-      "n2_unique_operands": 31,
-      "N1_total_operators": 43,
-      "N2_total_operands": 46,
-      "vocabulary": 45,
-      "length": 89,
-      "calculated_length": 206.88,
-      "volume": 488.77,
-      "difficulty": 10.39,
-      "effort": 5076.95,
-      "time_seconds": 282.05,
-      "bugs_delivered": 0.163
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt": {
-      "loc": 33,
-      "n1_unique_operators": 18,
-      "n2_unique_operands": 17,
-      "N1_total_operators": 39,
-      "N2_total_operands": 36,
-      "vocabulary": 35,
-      "length": 75,
-      "calculated_length": 144.55,
-      "volume": 384.7,
-      "difficulty": 19.06,
-      "effort": 7331.86,
-      "time_seconds": 407.33,
-      "bugs_delivered": 0.128
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModel.kt": {
-      "loc": 57,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 30,
-      "N1_total_operators": 67,
-      "N2_total_operands": 60,
-      "vocabulary": 46,
-      "length": 127,
-      "calculated_length": 211.21,
-      "volume": 701.49,
-      "difficulty": 16.0,
-      "effort": 11223.88,
-      "time_seconds": 623.55,
-      "bugs_delivered": 0.234
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragment.kt": {
-      "loc": 113,
-      "n1_unique_operators": 19,
-      "n2_unique_operands": 86,
-      "N1_total_operators": 136,
-      "N2_total_operands": 140,
-      "vocabulary": 105,
-      "length": 276,
-      "calculated_length": 633.37,
-      "volume": 1853.13,
-      "difficulty": 15.47,
-      "effort": 28658.9,
-      "time_seconds": 1592.16,
-      "bugs_delivered": 0.618
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModel.kt": {
-      "loc": 103,
-      "n1_unique_operators": 20,
-      "n2_unique_operands": 60,
-      "N1_total_operators": 150,
-      "N2_total_operands": 144,
-      "vocabulary": 80,
-      "length": 294,
-      "calculated_length": 440.85,
-      "volume": 1858.65,
-      "difficulty": 24.0,
-      "effort": 44607.52,
-      "time_seconds": 2478.2,
-      "bugs_delivered": 0.62
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivity.kt": {
-      "loc": 63,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 47,
-      "N1_total_operators": 89,
-      "N2_total_operands": 82,
-      "vocabulary": 63,
-      "length": 171,
-      "calculated_length": 325.07,
-      "volume": 1022.11,
-      "difficulty": 13.96,
-      "effort": 14266.11,
-      "time_seconds": 792.56,
-      "bugs_delivered": 0.341
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksAdapter.kt": {
-      "loc": 66,
-      "n1_unique_operators": 13,
-      "n2_unique_operands": 39,
-      "N1_total_operators": 85,
-      "N2_total_operands": 84,
-      "vocabulary": 52,
-      "length": 169,
-      "calculated_length": 254.24,
-      "volume": 963.37,
-      "difficulty": 14.0,
-      "effort": 13487.24,
-      "time_seconds": 749.29,
-      "bugs_delivered": 0.321
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFilterType.kt": {
-      "loc": 33,
-      "n1_unique_operators": 2,
-      "n2_unique_operands": 4,
-      "N1_total_operators": 2,
-      "N2_total_operands": 4,
-      "vocabulary": 6,
-      "length": 6,
-      "calculated_length": 10.0,
-      "volume": 15.51,
-      "difficulty": 1.0,
-      "effort": 15.51,
-      "time_seconds": 0.86,
-      "bugs_delivered": 0.005
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragment.kt": {
-      "loc": 165,
-      "n1_unique_operators": 22,
-      "n2_unique_operands": 116,
-      "N1_total_operators": 208,
-      "N2_total_operands": 214,
-      "vocabulary": 138,
-      "length": 422,
-      "calculated_length": 893.63,
-      "volume": 2999.8,
-      "difficulty": 20.29,
-      "effort": 60875.2,
-      "time_seconds": 3381.96,
-      "bugs_delivered": 1.0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindings.kt": {
-      "loc": 38,
-      "n1_unique_operators": 13,
-      "n2_unique_operands": 20,
-      "N1_total_operators": 32,
-      "N2_total_operands": 34,
-      "vocabulary": 33,
-      "length": 66,
-      "calculated_length": 134.54,
-      "volume": 332.93,
-      "difficulty": 11.05,
-      "effort": 3678.88,
-      "time_seconds": 204.38,
-      "bugs_delivered": 0.111
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModel.kt": {
-      "loc": 213,
-      "n1_unique_operators": 20,
-      "n2_unique_operands": 116,
-      "N1_total_operators": 295,
-      "N2_total_operands": 305,
-      "vocabulary": 136,
-      "length": 600,
-      "calculated_length": 881.96,
-      "volume": 4252.48,
-      "difficulty": 26.29,
-      "effort": 111810.84,
-      "time_seconds": 6211.71,
-      "bugs_delivered": 1.417
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/EspressoIdlingResource.kt": {
-      "loc": 43,
-      "n1_unique_operators": 15,
-      "n2_unique_operands": 12,
-      "N1_total_operators": 33,
-      "N2_total_operands": 24,
-      "vocabulary": 27,
-      "length": 57,
-      "calculated_length": 101.62,
-      "volume": 271.03,
-      "difficulty": 15.0,
-      "effort": 4065.43,
-      "time_seconds": 225.86,
-      "bugs_delivered": 0.09
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/SimpleCountingIdlingResource.kt": {
-      "loc": 60,
-      "n1_unique_operators": 17,
-      "n2_unique_operands": 23,
-      "N1_total_operators": 53,
-      "N2_total_operands": 39,
-      "vocabulary": 40,
-      "length": 92,
-      "calculated_length": 173.53,
-      "volume": 489.62,
-      "difficulty": 14.41,
-      "effort": 7056.88,
-      "time_seconds": 392.05,
-      "bugs_delivered": 0.163
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/ViewExt.kt": {
-      "loc": 76,
-      "n1_unique_operators": 10,
-      "n2_unique_operands": 48,
-      "N1_total_operators": 71,
-      "N2_total_operands": 81,
-      "vocabulary": 58,
-      "length": 152,
-      "calculated_length": 301.3,
-      "volume": 890.41,
-      "difficulty": 8.44,
-      "effort": 7512.86,
-      "time_seconds": 417.38,
-      "bugs_delivered": 0.297
-    },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "loc": 86,
-      "n1_unique_operators": 17,
-      "n2_unique_operands": 42,
-      "N1_total_operators": 87,
-      "N2_total_operands": 88,
-      "vocabulary": 59,
-      "length": 175,
-      "calculated_length": 295.96,
-      "volume": 1029.46,
-      "difficulty": 17.81,
-      "effort": 18334.24,
-      "time_seconds": 1018.57,
-      "bugs_delivered": 0.343
-    },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/data/FakeTasksRemoteDataSource.kt": {
-      "loc": 91,
-      "n1_unique_operators": 20,
-      "n2_unique_operands": 50,
-      "N1_total_operators": 138,
-      "N2_total_operands": 128,
-      "vocabulary": 70,
-      "length": 266,
-      "calculated_length": 368.63,
-      "volume": 1630.39,
-      "difficulty": 25.6,
-      "effort": 41737.97,
-      "time_seconds": 2318.78,
-      "bugs_delivered": 0.543
-    },
-    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "loc": 76,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 38,
-      "N1_total_operators": 78,
-      "N2_total_operands": 77,
-      "vocabulary": 54,
-      "length": 155,
-      "calculated_length": 263.42,
-      "volume": 892.01,
-      "difficulty": 16.21,
-      "effort": 14459.91,
-      "time_seconds": 803.33,
-      "bugs_delivered": 0.297
-    },
-    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/data/source/remote/TasksRemoteDataSource.kt": {
-      "loc": 105,
-      "n1_unique_operators": 21,
-      "n2_unique_operands": 60,
-      "N1_total_operators": 155,
-      "N2_total_operands": 153,
-      "vocabulary": 81,
-      "length": 308,
-      "calculated_length": 446.65,
-      "volume": 1952.67,
-      "difficulty": 26.77,
-      "effort": 52282.84,
-      "time_seconds": 2904.6,
-      "bugs_delivered": 0.651
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/MainCoroutineRule.kt": {
-      "loc": 49,
-      "n1_unique_operators": 9,
-      "n2_unique_operands": 14,
-      "N1_total_operators": 26,
-      "N2_total_operands": 23,
-      "vocabulary": 23,
-      "length": 49,
-      "calculated_length": 81.83,
-      "volume": 221.65,
-      "difficulty": 7.39,
-      "effort": 1638.66,
-      "time_seconds": 91.04,
-      "bugs_delivered": 0.074
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragmentTest.kt": {
-      "loc": 118,
-      "n1_unique_operators": 14,
-      "n2_unique_operands": 78,
-      "N1_total_operators": 176,
-      "N2_total_operands": 193,
-      "vocabulary": 92,
-      "length": 369,
-      "calculated_length": 543.56,
-      "volume": 2407.19,
-      "difficulty": 17.32,
-      "effort": 41693.84,
-      "time_seconds": 2316.32,
-      "bugs_delivered": 0.802
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeRepository.kt": {
-      "loc": 114,
-      "n1_unique_operators": 24,
-      "n2_unique_operands": 59,
-      "N1_total_operators": 168,
-      "N2_total_operands": 165,
-      "vocabulary": 83,
-      "length": 333,
-      "calculated_length": 457.12,
-      "volume": 2122.89,
-      "difficulty": 33.56,
-      "effort": 71242.69,
-      "time_seconds": 3957.93,
-      "bugs_delivered": 0.708
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDaoTest.kt": {
-      "loc": 160,
-      "n1_unique_operators": 14,
-      "n2_unique_operands": 69,
-      "N1_total_operators": 311,
-      "N2_total_operands": 310,
-      "vocabulary": 83,
-      "length": 621,
-      "calculated_length": 474.79,
-      "volume": 3958.9,
-      "difficulty": 31.45,
-      "effort": 124504.52,
-      "time_seconds": 6916.92,
-      "bugs_delivered": 1.32
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSourceTest.kt": {
-      "loc": 153,
-      "n1_unique_operators": 14,
-      "n2_unique_operands": 71,
-      "N1_total_operators": 245,
-      "N2_total_operands": 237,
-      "vocabulary": 85,
-      "length": 482,
-      "calculated_length": 489.94,
-      "volume": 3089.33,
-      "difficulty": 23.37,
-      "effort": 72185.81,
-      "time_seconds": 4010.32,
-      "bugs_delivered": 1.03
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragmentTest.kt": {
-      "loc": 96,
-      "n1_unique_operators": 11,
-      "n2_unique_operands": 59,
-      "N1_total_operators": 97,
-      "N2_total_operands": 105,
-      "vocabulary": 70,
-      "length": 202,
-      "calculated_length": 385.13,
-      "volume": 1238.12,
-      "difficulty": 9.79,
-      "effort": 12118.84,
-      "time_seconds": 673.27,
-      "bugs_delivered": 0.413
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt": {
-      "loc": 91,
-      "n1_unique_operators": 11,
-      "n2_unique_operands": 46,
-      "N1_total_operators": 147,
-      "N2_total_operands": 159,
-      "vocabulary": 57,
-      "length": 306,
-      "calculated_length": 292.14,
-      "volume": 1784.86,
-      "difficulty": 19.01,
-      "effort": 33931.82,
-      "time_seconds": 1885.1,
-      "bugs_delivered": 0.595
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragmentTest.kt": {
-      "loc": 276,
-      "n1_unique_operators": 16,
-      "n2_unique_operands": 111,
-      "N1_total_operators": 674,
-      "N2_total_operands": 718,
-      "vocabulary": 127,
-      "length": 1392,
-      "calculated_length": 818.18,
-      "volume": 9728.25,
-      "difficulty": 51.75,
-      "effort": 503414.98,
-      "time_seconds": 27967.5,
-      "bugs_delivered": 3.243
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/DataBindingIdlingResource.kt": {
-      "loc": 99,
-      "n1_unique_operators": 20,
-      "n2_unique_operands": 60,
-      "N1_total_operators": 115,
-      "N2_total_operands": 103,
-      "vocabulary": 80,
-      "length": 218,
-      "calculated_length": 440.85,
-      "volume": 1378.18,
-      "difficulty": 17.17,
-      "effort": 23658.76,
-      "time_seconds": 1314.38,
-      "bugs_delivered": 0.459
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/TasksRepositoryExt.kt": {
-      "loc": 32,
-      "n1_unique_operators": 5,
-      "n2_unique_operands": 13,
-      "N1_total_operators": 20,
-      "N2_total_operands": 24,
-      "vocabulary": 18,
-      "length": 44,
-      "calculated_length": 59.72,
-      "volume": 183.48,
-      "difficulty": 4.62,
-      "effort": 846.82,
-      "time_seconds": 47.05,
-      "bugs_delivered": 0.061
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/FakeFailingTasksRemoteDataSource.kt": {
-      "loc": 65,
-      "n1_unique_operators": 7,
-      "n2_unique_operands": 27,
-      "N1_total_operators": 81,
-      "N2_total_operands": 73,
-      "vocabulary": 34,
-      "length": 154,
-      "calculated_length": 148.03,
-      "volume": 783.47,
-      "difficulty": 9.46,
-      "effort": 7413.94,
-      "time_seconds": 411.89,
-      "bugs_delivered": 0.261
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtil.kt": {
-      "loc": 69,
-      "n1_unique_operators": 19,
-      "n2_unique_operands": 34,
-      "N1_total_operators": 72,
-      "N2_total_operands": 64,
-      "vocabulary": 53,
-      "length": 136,
-      "calculated_length": 253.68,
-      "volume": 779.0,
-      "difficulty": 17.88,
-      "effort": 13930.3,
-      "time_seconds": 773.91,
-      "bugs_delivered": 0.26
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/TestUtil.kt": {
-      "loc": 29,
-      "n1_unique_operators": 6,
-      "n2_unique_operands": 14,
-      "N1_total_operators": 23,
-      "N2_total_operands": 25,
-      "vocabulary": 20,
-      "length": 48,
-      "calculated_length": 68.81,
-      "volume": 207.45,
-      "difficulty": 5.36,
-      "effort": 1111.35,
-      "time_seconds": 61.74,
-      "bugs_delivered": 0.069
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModelTest.kt": {
-      "loc": 130,
-      "n1_unique_operators": 11,
-      "n2_unique_operands": 64,
-      "N1_total_operators": 142,
-      "N2_total_operands": 156,
-      "vocabulary": 75,
-      "length": 298,
-      "calculated_length": 422.05,
-      "volume": 1856.19,
-      "difficulty": 13.41,
-      "effort": 24884.52,
-      "time_seconds": 1382.47,
-      "bugs_delivered": 0.619
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepositoryTest.kt": {
-      "loc": 225,
-      "n1_unique_operators": 18,
-      "n2_unique_operands": 96,
-      "N1_total_operators": 469,
-      "N2_total_operands": 450,
-      "vocabulary": 114,
-      "length": 919,
-      "calculated_length": 707.22,
-      "volume": 6279.43,
-      "difficulty": 42.19,
-      "effort": 264913.28,
-      "time_seconds": 14717.4,
-      "bugs_delivered": 2.093
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeDataSource.kt": {
-      "loc": 71,
-      "n1_unique_operators": 12,
-      "n2_unique_operands": 41,
-      "N1_total_operators": 118,
-      "N2_total_operands": 120,
-      "vocabulary": 53,
-      "length": 238,
-      "calculated_length": 262.68,
-      "volume": 1363.25,
-      "difficulty": 17.56,
-      "effort": 23939.91,
-      "time_seconds": 1330.0,
-      "bugs_delivered": 0.454
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt": {
-      "loc": 79,
-      "n1_unique_operators": 7,
-      "n2_unique_operands": 26,
-      "N1_total_operators": 90,
-      "N2_total_operands": 107,
-      "vocabulary": 33,
-      "length": 197,
-      "calculated_length": 141.86,
-      "volume": 993.75,
-      "difficulty": 14.4,
-      "effort": 14313.76,
-      "time_seconds": 795.21,
-      "bugs_delivered": 0.331
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModelTest.kt": {
-      "loc": 103,
-      "n1_unique_operators": 10,
-      "n2_unique_operands": 55,
-      "N1_total_operators": 107,
-      "N2_total_operands": 111,
-      "vocabulary": 65,
-      "length": 218,
-      "calculated_length": 351.19,
-      "volume": 1312.88,
-      "difficulty": 10.09,
-      "effort": 13248.11,
-      "time_seconds": 736.01,
-      "bugs_delivered": 0.438
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModelTest.kt": {
-      "loc": 151,
-      "n1_unique_operators": 13,
-      "n2_unique_operands": 69,
-      "N1_total_operators": 192,
-      "N2_total_operands": 204,
-      "vocabulary": 82,
-      "length": 396,
-      "calculated_length": 469.59,
-      "volume": 2517.59,
-      "difficulty": 19.22,
-      "effort": 48381.52,
-      "time_seconds": 2687.86,
-      "bugs_delivered": 0.839
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt": {
-      "loc": 227,
-      "n1_unique_operators": 11,
-      "n2_unique_operands": 104,
-      "N1_total_operators": 257,
-      "N2_total_operands": 299,
-      "vocabulary": 115,
-      "length": 556,
-      "calculated_length": 734.9,
-      "volume": 3806.09,
-      "difficulty": 15.81,
-      "effort": 60183.84,
-      "time_seconds": 3343.55,
-      "bugs_delivered": 1.269
-    }
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/architecture-samples-views",
+  "sonarqube_project": {
+    "complexity": 433,
+    "code_smells": 84,
+    "duplicated_lines_density": 1.8,
+    "functions": 350,
+    "classes": 50,
+    "sqale_debt_ratio": 0.3,
+    "statements": 1488,
+    "comment_lines_density": 21.9,
+    "bugs": 0,
+    "comment_lines": 1264,
+    "cognitive_complexity": 101,
+    "ncloc": 4495,
+    "files": 93,
+    "lines": 7760
   },
-  "sonarqube": {
-    "project": {},
-    "files": {}
-  },
-  "state_metrics": {
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/AppNavigationTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 8,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivityTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 13,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TestUtils.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/Event.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ScrollChildSwipeRefreshLayout.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/TodoApplication.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 1,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ViewModelFactory.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragment.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModel.kt": {
-      "mutable_vars": 4,
-      "immutable_vars": 12,
-      "observable_state_vars": 5,
-      "state_updates": 13
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Result.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 1,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Task.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 3,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepository.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 2,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksDataSource.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksRepository.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDao.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSource.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 1,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/ToDoDatabase.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragment.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 1,
-      "observable_state_vars": 0,
-      "state_updates": 3
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 2,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModel.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 8,
-      "observable_state_vars": 1,
-      "state_updates": 2
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragment.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 6,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModel.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 14,
-      "observable_state_vars": 5,
-      "state_updates": 6
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivity.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksAdapter.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 3,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFilterType.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragment.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 7,
-      "observable_state_vars": 0,
-      "state_updates": 4
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindings.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModel.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 24,
-      "observable_state_vars": 11,
-      "state_updates": 18
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/EspressoIdlingResource.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 2,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/SimpleCountingIdlingResource.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 2,
-      "observable_state_vars": 1,
-      "state_updates": 0
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/ViewExt.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 4
-    },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/data/FakeTasksRemoteDataSource.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 4,
-      "observable_state_vars": 1,
-      "state_updates": 4
-    },
-    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 5,
-      "observable_state_vars": 0,
-      "state_updates": 4
-    },
-    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/data/source/remote/TasksRemoteDataSource.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 7,
-      "observable_state_vars": 1,
-      "state_updates": 4
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/MainCoroutineRule.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragmentTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 6,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeRepository.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 4,
-      "observable_state_vars": 1,
-      "state_updates": 5
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDaoTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 18,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSourceTest.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 18,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragmentTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 4,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragmentTest.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 3,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/DataBindingIdlingResource.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 6,
-      "observable_state_vars": 0,
-      "state_updates": 3
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/TasksRepositoryExt.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/FakeFailingTasksRemoteDataSource.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtil.kt": {
-      "mutable_vars": 1,
-      "immutable_vars": 3,
-      "observable_state_vars": 0,
-      "state_updates": 1
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/TestUtil.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 2,
-      "observable_state_vars": 1,
-      "state_updates": 0
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModelTest.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 6,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepositoryTest.kt": {
-      "mutable_vars": 3,
-      "immutable_vars": 30,
-      "observable_state_vars": 0,
-      "state_updates": 14
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeDataSource.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 0,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt": {
-      "mutable_vars": 0,
-      "immutable_vars": 8,
-      "observable_state_vars": 0,
-      "state_updates": 0
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModelTest.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 7,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModelTest.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 6,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt": {
-      "mutable_vars": 2,
-      "immutable_vars": 11,
-      "observable_state_vars": 0,
-      "state_updates": 2
-    }
-  },
-  "derived": {
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/TodoApplication.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksAdapter.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivity.kt": {
-      "mutable_variable_ratio": 0.3333,
-      "maintainability_index": null
-    },
-    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/data/source/remote/TasksRemoteDataSource.kt": {
-      "mutable_variable_ratio": 0.125,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragmentTest.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksRepository.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/ViewExt.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragment.kt": {
-      "mutable_variable_ratio": 0.5,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDaoTest.kt": {
-      "mutable_variable_ratio": 0.0526,
-      "maintainability_index": null
-    },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "mutable_variable_ratio": 0.3333,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksDataSource.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindings.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/Event.kt": {
-      "mutable_variable_ratio": 1.0,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModelTest.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt": {
-      "mutable_variable_ratio": 0.2,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModel.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Task.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/SimpleCountingIdlingResource.kt": {
-      "mutable_variable_ratio": 0.3333,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt": {
-      "mutable_variable_ratio": 0.1538,
-      "maintainability_index": null
-    },
-    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TestUtils.kt": {
-      "mutable_variable_ratio": 1.0,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/FakeFailingTasksRemoteDataSource.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSource.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepositoryTest.kt": {
-      "mutable_variable_ratio": 0.0909,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ViewModelFactory.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/TasksRepositoryExt.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModel.kt": {
-      "mutable_variable_ratio": 0.04,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Result.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFilterType.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/ToDoDatabase.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
+  "files": {
+    ".github/workflows/blueprints.yaml": {
+      "sonarqube": {
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "lines": 80,
+        "ncloc": 65,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    ".github/workflows/copy-branch.yml": {
+      "sonarqube": {
+        "comment_lines": 9,
+        "comment_lines_density": 34.6,
+        "lines": 32,
+        "ncloc": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
     "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/AppNavigationTest.kt": {
-      "mutable_variable_ratio": 0.1111,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ScrollChildSwipeRefreshLayout.kt": {
-      "mutable_variable_ratio": 1.0,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragmentTest.kt": {
-      "mutable_variable_ratio": 0.1429,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeRepository.kt": {
-      "mutable_variable_ratio": 0.3333,
-      "maintainability_index": null
-    },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModelTest.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 207,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 73,
+        "N1_total_operators": 310,
+        "N2_total_operands": 304,
+        "vocabulary": 85,
+        "length": 614,
+        "calculated_length": 494.88,
+        "volume": 3935.37,
+        "difficulty": 24.99,
+        "effort": 98330.24,
+        "time_seconds": 5462.79,
+        "bugs_delivered": 1.312
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1111,
+        "maintainability_index": 23.1
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 52,
+        "comment_lines_density": 26.0,
+        "complexity": 9,
+        "functions": 9,
+        "lines": 242,
+        "ncloc": 148,
+        "sqale_debt_ratio": 0.5,
+        "statements": 52,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
     "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivityTest.kt": {
-      "mutable_variable_ratio": 0.0714,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 276,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 91,
+        "N1_total_operators": 518,
+        "N2_total_operands": 532,
+        "vocabulary": 102,
+        "length": 1050,
+        "calculated_length": 630.26,
+        "volume": 7006.05,
+        "difficulty": 32.15,
+        "effort": 225271.34,
+        "time_seconds": 12515.07,
+        "bugs_delivered": 2.335
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0714,
+        "maintainability_index": 18.21
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 66,
+        "comment_lines_density": 25.3,
+        "complexity": 12,
+        "duplicated_lines_density": 11.8,
+        "functions": 12,
+        "lines": 323,
+        "ncloc": 195,
+        "sqale_debt_ratio": 0.5,
+        "statements": 94,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragment.kt": {
-      "mutable_variable_ratio": 0.1429,
-      "maintainability_index": null
+    "app/src/androidTestMock/java/com/example/android/architecture/blueprints/todoapp/tasks/TestUtils.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 12,
+        "N1_total_operators": 14,
+        "N2_total_operands": 15,
+        "vocabulary": 20,
+        "length": 29,
+        "calculated_length": 67.02,
+        "volume": 125.34,
+        "difficulty": 5.0,
+        "effort": 626.68,
+        "time_seconds": 34.82,
+        "bugs_delivered": 0.042
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 53.61
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 32,
+        "ncloc": 13,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDao.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
+    "app/src/main/AndroidManifest.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 37.1,
+        "lines": 41,
+        "ncloc": 22,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModelTest.kt": {
-      "mutable_variable_ratio": 0.2222,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/Event.kt": {
+      "halstead": {
+        "loc": 53,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 39,
+        "N2_total_operands": 30,
+        "vocabulary": 35,
+        "length": 69,
+        "calculated_length": 144.71,
+        "volume": 353.92,
+        "difficulty": 12.63,
+        "effort": 4470.58,
+        "time_seconds": 248.37,
+        "bugs_delivered": 0.118
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 44.0
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 2,
+        "comment_lines": 16,
+        "comment_lines_density": 41.0,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 60,
+        "ncloc": 23,
+        "statements": 8,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
-    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/data/FakeTasksRemoteDataSource.kt": {
-      "mutable_variable_ratio": 0.2,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ScrollChildSwipeRefreshLayout.kt": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 22,
+        "N2_total_operands": 19,
+        "vocabulary": 26,
+        "length": 41,
+        "calculated_length": 96.32,
+        "volume": 192.72,
+        "difficulty": 8.14,
+        "effort": 1569.28,
+        "time_seconds": 87.18,
+        "bugs_delivered": 0.064
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 49.92
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 8,
+        "comment_lines_density": 38.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 41,
+        "ncloc": 13,
+        "statements": 2,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeDataSource.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/TodoApplication.kt": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 19,
+        "N2_total_operands": 15,
+        "vocabulary": 23,
+        "length": 34,
+        "calculated_length": 81.83,
+        "volume": 153.8,
+        "difficulty": 4.82,
+        "effort": 741.54,
+        "time_seconds": 41.2,
+        "bugs_delivered": 0.051
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 50.74
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 35.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 41,
+        "ncloc": 13,
+        "statements": 3,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepository.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
-    },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/MainCoroutineRule.kt": {
-      "mutable_variable_ratio": null,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/ViewModelFactory.kt": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 56,
+        "N2_total_operands": 50,
+        "vocabulary": 44,
+        "length": 106,
+        "calculated_length": 199.48,
+        "volume": 578.7,
+        "difficulty": 12.93,
+        "effort": 7483.19,
+        "time_seconds": 415.73,
+        "bugs_delivered": 0.193
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 42.79
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 3,
+        "comment_lines_density": 8.6,
+        "complexity": 6,
+        "functions": 1,
+        "lines": 53,
+        "ncloc": 32,
+        "statements": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
     "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragment.kt": {
-      "mutable_variable_ratio": 0.2,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 73,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 77,
+        "N2_total_operands": 80,
+        "vocabulary": 66,
+        "length": 157,
+        "calculated_length": 347.9,
+        "volume": 948.97,
+        "difficulty": 11.76,
+        "effort": 11164.35,
+        "time_seconds": 620.24,
+        "bugs_delivered": 0.316
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 37.97
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 6.9,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 83,
+        "ncloc": 54,
+        "statements": 15,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
     "app/src/main/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModel.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 116,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 163,
+        "N2_total_operands": 158,
+        "vocabulary": 71,
+        "length": 321,
+        "calculated_length": 377.13,
+        "volume": 1974.07,
+        "difficulty": 28.87,
+        "effort": 56982.26,
+        "time_seconds": 3165.68,
+        "bugs_delivered": 0.658
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 12,
+        "observable_state_vars": 5,
+        "state_updates": 13
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 29.74
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 14,
+        "comment_lines": 8,
+        "comment_lines_density": 7.9,
+        "complexity": 16,
+        "functions": 6,
+        "lines": 140,
+        "ncloc": 93,
+        "statements": 54,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSourceTest.kt": {
-      "mutable_variable_ratio": 0.1,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Result.kt": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 40,
+        "N2_total_operands": 27,
+        "vocabulary": 33,
+        "length": 67,
+        "calculated_length": 133.49,
+        "volume": 337.97,
+        "difficulty": 14.34,
+        "effort": 4847.82,
+        "time_seconds": 269.32,
+        "bugs_delivered": 0.113
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.16
+      },
+      "sonarqube": {
+        "classes": 3,
+        "cognitive_complexity": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 30.4,
+        "complexity": 5,
+        "functions": 1,
+        "lines": 45,
+        "ncloc": 16,
+        "statements": 1,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/Task.kt": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 49,
+        "N2_total_operands": 45,
+        "vocabulary": 39,
+        "length": 94,
+        "calculated_length": 171.4,
+        "volume": 496.83,
+        "difficulty": 10.0,
+        "effort": 4968.28,
+        "time_seconds": 276.02,
+        "bugs_delivered": 0.166
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 45.22
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 9,
+        "comment_lines_density": 32.1,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 49,
+        "ncloc": 19,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepository.kt": {
+      "halstead": {
+        "loc": 145,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 187,
+        "N2_total_operands": 185,
+        "vocabulary": 68,
+        "length": 372,
+        "calculated_length": 353.3,
+        "volume": 2264.54,
+        "difficulty": 41.33,
+        "effort": 93592.8,
+        "time_seconds": 5199.6,
+        "bugs_delivered": 0.755
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 26.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 10,
+        "comment_lines": 9,
+        "comment_lines_density": 6.9,
+        "complexity": 22,
+        "functions": 17,
+        "lines": 168,
+        "ncloc": 121,
+        "sqale_debt_ratio": 0.3,
+        "statements": 63,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksDataSource.kt": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 42,
+        "N2_total_operands": 37,
+        "vocabulary": 23,
+        "length": 79,
+        "calculated_length": 88.71,
+        "volume": 357.36,
+        "difficulty": 3.89,
+        "effort": 1391.83,
+        "time_seconds": 77.32,
+        "bugs_delivered": 0.119
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 13.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 20,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/TasksRepository.kt": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 46,
+        "N2_total_operands": 43,
+        "vocabulary": 27,
+        "length": 89,
+        "calculated_length": 109.72,
+        "volume": 423.18,
+        "difficulty": 4.89,
+        "effort": 2067.84,
+        "time_seconds": 114.88,
+        "bugs_delivered": 0.141
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 13.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 56,
+        "ncloc": 20,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDao.kt": {
+      "halstead": {
+        "loc": 101,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 47,
+        "N2_total_operands": 54,
+        "vocabulary": 40,
+        "length": 101,
+        "calculated_length": 186.12,
+        "volume": 537.51,
+        "difficulty": 5.73,
+        "effort": 3078.49,
+        "time_seconds": 171.03,
+        "bugs_delivered": 0.179
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 55,
+        "comment_lines_density": 64.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 115,
+        "ncloc": 31,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSource.kt": {
+      "halstead": {
+        "loc": 93,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 45,
+        "N1_total_operators": 136,
+        "N2_total_operands": 125,
+        "vocabulary": 61,
+        "length": 261,
+        "calculated_length": 311.13,
+        "volume": 1547.92,
+        "difficulty": 22.22,
+        "effort": 34398.28,
+        "time_seconds": 1911.02,
+        "bugs_delivered": 0.516
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.71
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 7,
+        "comment_lines": 5,
+        "comment_lines_density": 6.4,
+        "complexity": 15,
+        "functions": 14,
+        "lines": 110,
+        "ncloc": 73,
+        "sqale_debt_ratio": 0.2,
+        "statements": 29,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/data/source/local/ToDoDatabase.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 14,
+        "N2_total_operands": 11,
+        "vocabulary": 18,
+        "length": 25,
+        "calculated_length": 57.71,
+        "volume": 104.25,
+        "difficulty": 3.5,
+        "effort": 364.87,
+        "time_seconds": 20.27,
+        "bugs_delivered": 0.035
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 38.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 8,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragment.kt": {
+      "halstead": {
+        "loc": 51,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 43,
+        "N2_total_operands": 46,
+        "vocabulary": 45,
+        "length": 89,
+        "calculated_length": 206.88,
+        "volume": 488.77,
+        "difficulty": 10.39,
+        "effort": 5076.95,
+        "time_seconds": 282.05,
+        "bugs_delivered": 0.163
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 43.65
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 8.3,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 58,
+        "ncloc": 33,
+        "statements": 7,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 39,
+        "N2_total_operands": 36,
+        "vocabulary": 35,
+        "length": 75,
+        "calculated_length": 144.55,
+        "volume": 384.7,
+        "difficulty": 19.06,
+        "effort": 7331.86,
+        "time_seconds": 407.33,
+        "bugs_delivered": 0.128
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 48.37
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 3,
+        "comment_lines": 3,
+        "comment_lines_density": 16.7,
+        "complexity": 3,
+        "functions": 1,
+        "lines": 39,
+        "ncloc": 15,
+        "sqale_debt_ratio": 1.1,
+        "statements": 5,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
     },
     "app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModel.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 57,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 67,
+        "N2_total_operands": 60,
+        "vocabulary": 46,
+        "length": 127,
+        "calculated_length": 211.21,
+        "volume": 701.49,
+        "difficulty": 16.0,
+        "effort": 11223.88,
+        "time_seconds": 623.55,
+        "bugs_delivered": 0.234
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 1,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 3,
+        "comment_lines_density": 7.1,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 64,
+        "ncloc": 39,
+        "statements": 19,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
-    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/EspressoIdlingResource.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragment.kt": {
+      "halstead": {
+        "loc": 113,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 86,
+        "N1_total_operators": 136,
+        "N2_total_operands": 140,
+        "vocabulary": 105,
+        "length": 276,
+        "calculated_length": 633.37,
+        "volume": 1853.13,
+        "difficulty": 15.47,
+        "effort": 28658.9,
+        "time_seconds": 1592.16,
+        "bugs_delivered": 0.618
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 31.12
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 3,
+        "comment_lines_density": 3.1,
+        "complexity": 9,
+        "functions": 7,
+        "lines": 127,
+        "ncloc": 95,
+        "statements": 27,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModel.kt": {
+      "halstead": {
+        "loc": 103,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 150,
+        "N2_total_operands": 144,
+        "vocabulary": 80,
+        "length": 294,
+        "calculated_length": 440.85,
+        "volume": 1858.65,
+        "difficulty": 24.0,
+        "effort": 44607.52,
+        "time_seconds": 2478.2,
+        "bugs_delivered": 0.62
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 14,
+        "observable_state_vars": 5,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 31.72
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 7,
+        "comment_lines": 7,
+        "comment_lines_density": 8.0,
+        "complexity": 11,
+        "functions": 7,
+        "lines": 121,
+        "ncloc": 81,
+        "statements": 42,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksActivity.kt": {
+      "halstead": {
+        "loc": 63,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 89,
+        "N2_total_operands": 82,
+        "vocabulary": 63,
+        "length": 171,
+        "calculated_length": 325.07,
+        "volume": 1022.11,
+        "difficulty": 13.96,
+        "effort": 14266.11,
+        "time_seconds": 792.56,
+        "bugs_delivered": 0.341
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 39.14
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 8.3,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 72,
+        "ncloc": 44,
+        "statements": 14,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksAdapter.kt": {
+      "halstead": {
+        "loc": 66,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 85,
+        "N2_total_operands": 84,
+        "vocabulary": 52,
+        "length": 169,
+        "calculated_length": 254.24,
+        "volume": 963.37,
+        "difficulty": 14.0,
+        "effort": 13487.24,
+        "time_seconds": 749.29,
+        "bugs_delivered": 0.321
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.61
+      },
+      "sonarqube": {
+        "classes": 3,
+        "comment_lines": 9,
+        "comment_lines_density": 17.6,
+        "complexity": 6,
+        "functions": 6,
+        "lines": 79,
+        "ncloc": 42,
+        "statements": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFilterType.kt": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 2,
+        "n2_unique_operands": 4,
+        "N1_total_operators": 2,
+        "N2_total_operands": 4,
+        "vocabulary": 6,
+        "length": 6,
+        "calculated_length": 10.0,
+        "volume": 15.51,
+        "difficulty": 1.0,
+        "effort": 15.51,
+        "time_seconds": 0.86,
+        "bugs_delivered": 0.005
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 4,
+        "comment_lines": 12,
+        "comment_lines_density": 66.7,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 6,
+        "statements": 0,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
     "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragment.kt": {
-      "mutable_variable_ratio": 0.2222,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 165,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 116,
+        "N1_total_operators": 208,
+        "N2_total_operands": 214,
+        "vocabulary": 138,
+        "length": 422,
+        "calculated_length": 893.63,
+        "volume": 2999.8,
+        "difficulty": 20.29,
+        "effort": 60875.2,
+        "time_seconds": 3381.96,
+        "bugs_delivered": 1.0
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 24.59
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 7,
+        "comment_lines": 5,
+        "comment_lines_density": 3.3,
+        "complexity": 20,
+        "functions": 12,
+        "lines": 186,
+        "ncloc": 145,
+        "statements": 48,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindings.kt": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 32,
+        "N2_total_operands": 34,
+        "vocabulary": 33,
+        "length": 66,
+        "calculated_length": 134.54,
+        "volume": 332.93,
+        "difficulty": 11.05,
+        "effort": 3678.88,
+        "time_seconds": 204.38,
+        "bugs_delivered": 0.111
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 47.47
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 3,
+        "comment_lines_density": 13.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 42,
+        "ncloc": 20,
+        "statements": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModel.kt": {
+      "halstead": {
+        "loc": 213,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 116,
+        "N1_total_operators": 295,
+        "N2_total_operands": 305,
+        "vocabulary": 136,
+        "length": 600,
+        "calculated_length": 881.96,
+        "volume": 4252.48,
+        "difficulty": 26.29,
+        "effort": 111810.84,
+        "time_seconds": 6211.71,
+        "bugs_delivered": 1.417
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 24,
+        "observable_state_vars": 11,
+        "state_updates": 18
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.04,
+        "maintainability_index": 19.9
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 18,
+        "comment_lines": 27,
+        "comment_lines_density": 13.6,
+        "complexity": 29,
+        "functions": 13,
+        "lines": 248,
+        "ncloc": 171,
+        "statements": 83,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/EspressoIdlingResource.kt": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 12,
+        "N1_total_operators": 33,
+        "N2_total_operands": 24,
+        "vocabulary": 27,
+        "length": 57,
+        "calculated_length": 101.62,
+        "volume": 271.03,
+        "difficulty": 15.0,
+        "effort": 4065.43,
+        "time_seconds": 225.86,
+        "bugs_delivered": 0.09
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.79
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 23.3,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 51,
+        "ncloc": 23,
+        "statements": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/SimpleCountingIdlingResource.kt": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 53,
+        "N2_total_operands": 39,
+        "vocabulary": 40,
+        "length": 92,
+        "calculated_length": 173.53,
+        "volume": 489.62,
+        "difficulty": 14.41,
+        "effort": 7056.88,
+        "time_seconds": 392.05,
+        "bugs_delivered": 0.163
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 41.44
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 21,
+        "comment_lines_density": 46.7,
+        "complexity": 7,
+        "functions": 5,
+        "lines": 70,
+        "ncloc": 24,
+        "sqale_debt_ratio": 0.7,
+        "statements": 11,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/main/java/com/example/android/architecture/blueprints/todoapp/util/ViewExt.kt": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 71,
+        "N2_total_operands": 81,
+        "vocabulary": 58,
+        "length": 152,
+        "calculated_length": 301.3,
+        "volume": 890.41,
+        "difficulty": 8.44,
+        "effort": 7512.86,
+        "time_seconds": 417.38,
+        "bugs_delivered": 0.297
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 37.65
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 10,
+        "comment_lines_density": 16.4,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 84,
+        "ncloc": 51,
+        "statements": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/drawer_item_color.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 72.2,
+        "lines": 22,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_add.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_assignment_turned_in_24dp.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 54.2,
+        "lines": 28,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_check_circle_96dp.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 56.5,
+        "lines": 27,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_done.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_edit.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_filter_list.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_list.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_menu.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_statistics.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_statistics_100dp.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 54.2,
+        "lines": 28,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_statistics_24dp.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 26,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/ic_verified_user_96dp.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 52.0,
+        "lines": 29,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/list_completed_touch_feedback.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 72.2,
+        "lines": 23,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/drawable/touch_feedback.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 76.5,
+        "lines": 21,
+        "ncloc": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/font/opensans_font.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 54.2,
+        "lines": 28,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/addtask_frag.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 16.5,
+        "lines": 93,
+        "ncloc": 66,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/nav_header.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 36.1,
+        "lines": 42,
+        "ncloc": 23,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/statistics_frag.xml": {
+      "sonarqube": {
+        "comment_lines": 15,
+        "comment_lines_density": 21.4,
+        "lines": 83,
+        "ncloc": 55,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/task_item.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 24.5,
+        "lines": 62,
+        "ncloc": 40,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/taskdetail_frag.xml": {
+      "sonarqube": {
+        "comment_lines": 15,
+        "comment_lines_density": 13.9,
+        "lines": 127,
+        "ncloc": 93,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/tasks_act.xml": {
+      "sonarqube": {
+        "comment_lines": 14,
+        "comment_lines_density": 23.7,
+        "lines": 69,
+        "ncloc": 45,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/layout/tasks_frag.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 13.3,
+        "lines": 119,
+        "ncloc": 85,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/drawer_actions.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 54.2,
+        "lines": 28,
+        "ncloc": 11,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/filter_tasks.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 52.0,
+        "lines": 27,
+        "ncloc": 12,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/taskdetail_fragment_menu.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 59.1,
+        "lines": 25,
+        "ncloc": 9,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/menu/tasks_fragment_menu.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 43.3,
+        "lines": 34,
+        "ncloc": 17,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/navigation/nav_graph.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 16.3,
+        "lines": 85,
+        "ncloc": 67,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-v21/styles.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 56.5,
+        "lines": 29,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values-w820dp/dimens.xml": {
+      "sonarqube": {
+        "comment_lines": 16,
+        "comment_lines_density": 76.2,
+        "lines": 26,
+        "ncloc": 5,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/attrs.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 68.4,
+        "lines": 23,
+        "ncloc": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/colors.xml": {
+      "sonarqube": {
+        "comment_lines": 13,
+        "comment_lines_density": 56.5,
+        "lines": 29,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/dimens.xml": {
+      "sonarqube": {
+        "comment_lines": 14,
+        "comment_lines_density": 58.3,
+        "lines": 30,
+        "ncloc": 10,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/strings.xml": {
+      "sonarqube": {
+        "comment_lines": 14,
+        "comment_lines_density": 23.3,
+        "lines": 66,
+        "ncloc": 46,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/main/res/values/styles.xml": {
+      "sonarqube": {
+        "comment_lines": 19,
+        "comment_lines_density": 54.3,
+        "lines": 41,
+        "ncloc": 16,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
+      "halstead": {
+        "loc": 86,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 87,
+        "N2_total_operands": 88,
+        "vocabulary": 59,
+        "length": 175,
+        "calculated_length": 295.96,
+        "volume": 1029.46,
+        "difficulty": 17.81,
+        "effort": 18334.24,
+        "time_seconds": 1018.57,
+        "bugs_delivered": 0.343
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 35.9
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 9.9,
+        "complexity": 6,
+        "functions": 5,
+        "lines": 95,
+        "ncloc": 64,
+        "statements": 21,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/mock/java/com/example/android/architecture/blueprints/todoapp/data/FakeTasksRemoteDataSource.kt": {
+      "halstead": {
+        "loc": 91,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 50,
+        "N1_total_operators": 138,
+        "N2_total_operands": 128,
+        "vocabulary": 70,
+        "length": 266,
+        "calculated_length": 368.63,
+        "volume": 1630.39,
+        "difficulty": 25.6,
+        "effort": 41737.97,
+        "time_seconds": 2318.78,
+        "bugs_delivered": 0.543
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 1,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 32.49
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 5,
+        "comment_lines_density": 6.6,
+        "complexity": 17,
+        "duplicated_lines_density": 47.3,
+        "functions": 14,
+        "lines": 110,
+        "ncloc": 71,
+        "statements": 26,
+        "code_smells": 0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
     "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt": {
-      "mutable_variable_ratio": 0.2857,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 38,
+        "N1_total_operators": 78,
+        "N2_total_operands": 77,
+        "vocabulary": 54,
+        "length": 155,
+        "calculated_length": 263.42,
+        "volume": 892.01,
+        "difficulty": 16.21,
+        "effort": 14459.91,
+        "time_seconds": 803.33,
+        "bugs_delivered": 0.297
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 37.64
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 5,
+        "comment_lines_density": 8.2,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 87,
+        "ncloc": 56,
+        "statements": 22,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtil.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
+    "app/src/prod/java/com/example/android/architecture/blueprints/todoapp/data/source/remote/TasksRemoteDataSource.kt": {
+      "halstead": {
+        "loc": 105,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 155,
+        "N2_total_operands": 153,
+        "vocabulary": 81,
+        "length": 308,
+        "calculated_length": 446.65,
+        "volume": 1952.67,
+        "difficulty": 26.77,
+        "effort": 52282.84,
+        "time_seconds": 2904.6,
+        "bugs_delivered": 0.651
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 7,
+        "observable_state_vars": 1,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.125,
+        "maintainability_index": 30.45
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 7.8,
+        "complexity": 18,
+        "duplicated_lines_density": 40.9,
+        "functions": 15,
+        "lines": 127,
+        "ncloc": 83,
+        "statements": 32,
+        "code_smells": 0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
     },
-    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/TestUtil.kt": {
-      "mutable_variable_ratio": 0.0,
-      "maintainability_index": null
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/MainCoroutineRule.kt": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 26,
+        "N2_total_operands": 23,
+        "vocabulary": 23,
+        "length": 49,
+        "calculated_length": 81.83,
+        "volume": 221.65,
+        "difficulty": 7.39,
+        "effort": 1638.66,
+        "time_seconds": 91.04,
+        "bugs_delivered": 0.074
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 46.44
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 12,
+        "comment_lines_density": 35.3,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 55,
+        "ncloc": 22,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
-    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/DataBindingIdlingResource.kt": {
-      "mutable_variable_ratio": 0.25,
-      "maintainability_index": null
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskFragmentTest.kt": {
+      "halstead": {
+        "loc": 118,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 78,
+        "N1_total_operators": 176,
+        "N2_total_operands": 193,
+        "vocabulary": 92,
+        "length": 369,
+        "calculated_length": 543.56,
+        "volume": 2407.19,
+        "difficulty": 17.32,
+        "effort": 41693.84,
+        "time_seconds": 2316.32,
+        "bugs_delivered": 0.802
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 30.32
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 12,
+        "comment_lines_density": 11.7,
+        "complexity": 6,
+        "functions": 6,
+        "lines": 133,
+        "ncloc": 91,
+        "sqale_debt_ratio": 0.5,
+        "statements": 30,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeRepository.kt": {
+      "halstead": {
+        "loc": 114,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 168,
+        "N2_total_operands": 165,
+        "vocabulary": 83,
+        "length": 333,
+        "calculated_length": 457.12,
+        "volume": 2122.89,
+        "difficulty": 33.56,
+        "effort": 71242.69,
+        "time_seconds": 3957.93,
+        "bugs_delivered": 0.708
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 1,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 28.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 4,
+        "comment_lines_density": 4.0,
+        "complexity": 22,
+        "functions": 16,
+        "lines": 136,
+        "ncloc": 95,
+        "statements": 42,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksDaoTest.kt": {
+      "halstead": {
+        "loc": 160,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 69,
+        "N1_total_operators": 311,
+        "N2_total_operands": 310,
+        "vocabulary": 83,
+        "length": 621,
+        "calculated_length": 474.79,
+        "volume": 3958.9,
+        "difficulty": 31.45,
+        "effort": 124504.52,
+        "time_seconds": 6916.92,
+        "bugs_delivered": 1.32
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0526,
+        "maintainability_index": 25.38
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 28,
+        "comment_lines_density": 19.3,
+        "complexity": 10,
+        "functions": 10,
+        "lines": 193,
+        "ncloc": 117,
+        "statements": 67,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/data/source/local/TasksLocalDataSourceTest.kt": {
+      "halstead": {
+        "loc": 153,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 71,
+        "N1_total_operators": 245,
+        "N2_total_operands": 237,
+        "vocabulary": 85,
+        "length": 482,
+        "calculated_length": 489.94,
+        "volume": 3089.33,
+        "difficulty": 23.37,
+        "effort": 72185.81,
+        "time_seconds": 4010.32,
+        "bugs_delivered": 1.03
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1,
+        "maintainability_index": 26.83
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 22,
+        "comment_lines_density": 15.9,
+        "complexity": 8,
+        "functions": 8,
+        "lines": 184,
+        "ncloc": 116,
+        "sqale_debt_ratio": 0.9,
+        "statements": 62,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     },
     "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsFragmentTest.kt": {
-      "mutable_variable_ratio": 0.2,
-      "maintainability_index": null
+      "halstead": {
+        "loc": 96,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 97,
+        "N2_total_operands": 105,
+        "vocabulary": 70,
+        "length": 202,
+        "calculated_length": 385.13,
+        "volume": 1238.12,
+        "difficulty": 9.79,
+        "effort": 12118.84,
+        "time_seconds": 673.27,
+        "bugs_delivered": 0.413
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 34.43
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 13,
+        "comment_lines_density": 16.0,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 108,
+        "ncloc": 68,
+        "sqale_debt_ratio": 0.2,
+        "statements": 17,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt": {
+      "halstead": {
+        "loc": 91,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 147,
+        "N2_total_operands": 159,
+        "vocabulary": 57,
+        "length": 306,
+        "calculated_length": 292.14,
+        "volume": 1784.86,
+        "difficulty": 19.01,
+        "effort": 33931.82,
+        "time_seconds": 1885.1,
+        "bugs_delivered": 0.595
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 33.96
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 13,
+        "comment_lines_density": 17.1,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 103,
+        "ncloc": 63,
+        "sqale_debt_ratio": 1.0,
+        "statements": 23,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksFragmentTest.kt": {
+      "halstead": {
+        "loc": 276,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 111,
+        "N1_total_operators": 674,
+        "N2_total_operands": 718,
+        "vocabulary": 127,
+        "length": 1392,
+        "calculated_length": 818.18,
+        "volume": 9728.25,
+        "difficulty": 51.75,
+        "effort": 503414.98,
+        "time_seconds": 27967.5,
+        "bugs_delivered": 3.243
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 16.27
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 34,
+        "comment_lines_density": 13.0,
+        "complexity": 19,
+        "functions": 19,
+        "lines": 342,
+        "ncloc": 227,
+        "sqale_debt_ratio": 0.4,
+        "statements": 123,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/DataBindingIdlingResource.kt": {
+      "halstead": {
+        "loc": 99,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 115,
+        "N2_total_operands": 103,
+        "vocabulary": 80,
+        "length": 218,
+        "calculated_length": 440.85,
+        "volume": 1378.18,
+        "difficulty": 17.17,
+        "effort": 23658.76,
+        "time_seconds": 1314.38,
+        "bugs_delivered": 0.459
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 33.28
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 23,
+        "comment_lines_density": 27.4,
+        "complexity": 9,
+        "functions": 7,
+        "lines": 113,
+        "ncloc": 61,
+        "statements": 24,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/sharedTest/java/com/example/android/architecture/blueprints/todoapp/util/TasksRepositoryExt.kt": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 20,
+        "N2_total_operands": 24,
+        "vocabulary": 18,
+        "length": 44,
+        "calculated_length": 59.72,
+        "volume": 183.48,
+        "difficulty": 4.62,
+        "effort": 846.82,
+        "time_seconds": 47.05,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 50.91
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 23.5,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 37,
+        "ncloc": 13,
+        "statements": 6,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/FakeFailingTasksRemoteDataSource.kt": {
+      "halstead": {
+        "loc": 65,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 81,
+        "N2_total_operands": 73,
+        "vocabulary": 34,
+        "length": 154,
+        "calculated_length": 148.03,
+        "volume": 783.47,
+        "difficulty": 9.46,
+        "effort": 7413.94,
+        "time_seconds": 411.89,
+        "bugs_delivered": 0.261
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 38.31
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 14,
+        "functions": 14,
+        "lines": 82,
+        "ncloc": 50,
+        "sqale_debt_ratio": 1.3,
+        "statements": 16,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtil.kt": {
+      "halstead": {
+        "loc": 69,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 72,
+        "N2_total_operands": 64,
+        "vocabulary": 53,
+        "length": 136,
+        "calculated_length": 253.68,
+        "volume": 779.0,
+        "difficulty": 17.88,
+        "effort": 13930.3,
+        "time_seconds": 773.91,
+        "bugs_delivered": 0.26
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 39.1
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 18.5,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 75,
+        "ncloc": 44,
+        "statements": 16,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/TestUtil.kt": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 23,
+        "N2_total_operands": 25,
+        "vocabulary": 20,
+        "length": 48,
+        "calculated_length": 68.81,
+        "volume": 207.45,
+        "difficulty": 5.36,
+        "effort": 1111.35,
+        "time_seconds": 61.74,
+        "bugs_delivered": 0.069
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.61
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 34,
+        "ncloc": 14,
+        "statements": 4,
+        "code_smells": 0,
+        "duplicated_lines_density": 0.0,
+        "sqale_debt_ratio": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/addedittask/AddEditTaskViewModelTest.kt": {
+      "halstead": {
+        "loc": 130,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 64,
+        "N1_total_operators": 142,
+        "N2_total_operands": 156,
+        "vocabulary": 75,
+        "length": 298,
+        "calculated_length": 422.05,
+        "volume": 1856.19,
+        "difficulty": 13.41,
+        "effort": 24884.52,
+        "time_seconds": 1382.47,
+        "bugs_delivered": 0.619
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 29.52
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 20,
+        "comment_lines_density": 17.4,
+        "complexity": 11,
+        "functions": 11,
+        "lines": 160,
+        "ncloc": 95,
+        "sqale_debt_ratio": 1.8,
+        "statements": 36,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/DefaultTasksRepositoryTest.kt": {
+      "halstead": {
+        "loc": 225,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 96,
+        "N1_total_operators": 469,
+        "N2_total_operands": 450,
+        "vocabulary": 114,
+        "length": 919,
+        "calculated_length": 707.22,
+        "volume": 6279.43,
+        "difficulty": 42.19,
+        "effort": 264913.28,
+        "time_seconds": 14717.4,
+        "bugs_delivered": 2.093
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 30,
+        "observable_state_vars": 0,
+        "state_updates": 14
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0909,
+        "maintainability_index": 19.81
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 13,
+        "comment_lines": 47,
+        "comment_lines_density": 22.4,
+        "complexity": 17,
+        "functions": 17,
+        "lines": 285,
+        "ncloc": 163,
+        "sqale_debt_ratio": 1.3,
+        "statements": 104,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeDataSource.kt": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 118,
+        "N2_total_operands": 120,
+        "vocabulary": 53,
+        "length": 238,
+        "calculated_length": 262.68,
+        "volume": 1363.25,
+        "difficulty": 17.56,
+        "effort": 23939.91,
+        "time_seconds": 1330.0,
+        "bugs_delivered": 0.454
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 35.79
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 14,
+        "functions": 14,
+        "lines": 88,
+        "ncloc": 56,
+        "sqale_debt_ratio": 0.5,
+        "statements": 29,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 90,
+        "N2_total_operands": 107,
+        "vocabulary": 33,
+        "length": 197,
+        "calculated_length": 141.86,
+        "volume": 993.75,
+        "difficulty": 14.4,
+        "effort": 14313.76,
+        "time_seconds": 795.21,
+        "bugs_delivered": 0.331
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.95
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 5,
+        "comment_lines": 14,
+        "comment_lines_density": 21.9,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 93,
+        "ncloc": 50,
+        "sqale_debt_ratio": 1.7,
+        "statements": 18,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsViewModelTest.kt": {
+      "halstead": {
+        "loc": 103,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 107,
+        "N2_total_operands": 111,
+        "vocabulary": 65,
+        "length": 218,
+        "calculated_length": 351.19,
+        "volume": 1312.88,
+        "difficulty": 10.09,
+        "effort": 13248.11,
+        "time_seconds": 736.01,
+        "bugs_delivered": 0.438
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 33.59
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 18,
+        "comment_lines_density": 20.2,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 123,
+        "ncloc": 71,
+        "sqale_debt_ratio": 0.9,
+        "statements": 24,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailViewModelTest.kt": {
+      "halstead": {
+        "loc": 151,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 69,
+        "N1_total_operators": 192,
+        "N2_total_operands": 204,
+        "vocabulary": 82,
+        "length": 396,
+        "calculated_length": 469.59,
+        "volume": 2517.59,
+        "difficulty": 19.22,
+        "effort": 48381.52,
+        "time_seconds": 2687.86,
+        "bugs_delivered": 0.839
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 27.44
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 34,
+        "comment_lines_density": 25.0,
+        "complexity": 9,
+        "functions": 9,
+        "lines": 186,
+        "ncloc": 102,
+        "sqale_debt_ratio": 0.7,
+        "statements": 46,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
+    },
+    "app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt": {
+      "halstead": {
+        "loc": 227,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 104,
+        "N1_total_operators": 257,
+        "N2_total_operands": 299,
+        "vocabulary": 115,
+        "length": 556,
+        "calculated_length": 734.9,
+        "volume": 3806.09,
+        "difficulty": 15.81,
+        "effort": 60183.84,
+        "time_seconds": 3343.55,
+        "bugs_delivered": 1.269
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1538,
+        "maintainability_index": 21.65
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 61,
+        "comment_lines_density": 28.8,
+        "complexity": 14,
+        "functions": 14,
+        "lines": 282,
+        "ncloc": 151,
+        "sqale_debt_ratio": 1.1,
+        "statements": 68,
+        "duplicated_lines_density": 0.0,
+        "bugs": 0,
+        "cognitive_complexity": 0
+      }
     }
   }
 }

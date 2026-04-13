@@ -36,7 +36,7 @@ DISPLAY_COLS = [
 # --- Pairs for Android table ---
 ANDROID_PAIRS = [
     {"repos": ["SimpleMobileTools/Simple-Gallery", "IacobIonut01/Gallery"],           "color": "#FFE4B5"},
-    {"repos": ["AntennaPod/AntennaPod",              "android/nowinandroid"],           "color": "#B0E0E6"},
+    {"repos": ["wikimedia/apps-android-wikipedia",              "android/nowinandroid"],           "color": "#B0E0E6"},
     {"repos": ["SimpleMobileTools/Simple-Music-Player", "android/compose-samples"],   "color": "#DDA0DD"},
     {"repos": ["android/sunflower@views",           "android/sunflower"],              "color": "#ADDFAD"},
     {"repos": ["android/architecture-samples@views","android/architecture-samples"],   "color": "#F08080"},
