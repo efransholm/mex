@@ -39,6 +39,7 @@ python3 ast/swift_analyzer.py ast/swift_example.swift
 python3 scripts/analyze.py          # all projects in test/
 python3 scripts/analyze.py some/dir # all sub-folders in that dir
 python3 scripts/analyze.py ../repositories/Android/tivi
+python3 scripts/analyze.py --local --single ../repositories/Android/apps-android-wikipedia
 ```
 
 ### Run repo mining
@@ -52,3 +53,9 @@ python3 scripts/repo_mining.py --platform ios --update "kickstarter/ios-oss"
 ```
 
 Saved results to repo_summary.csv and repo_summary_table.png
+
+### Docker sonarqube
+
+```cmd
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:community
+```
