@@ -11,6 +11,7 @@ import urllib.request
 import urllib.error
 
 SONAR_HOST = "https://sonarcloud.io"
+SONAR_LOCAL_HOST = "http://localhost:9000"
 
 # Project-level metrics (includes file/class/function counts)
 METRICS_PROJECT = ",".join([
@@ -43,15 +44,23 @@ def _ssl_context() -> ssl.SSLContext:
     return ctx
 
 
-def generate_properties(project_path: str, project_key: str, org: str) -> str:
+def generate_properties(project_path: str, project_key: str, org: str, local: bool = False) -> str:
     """Write sonar-project.properties into project_path. Returns the file path."""
-    content = (
-        f"sonar.projectKey={project_key}\n"
-        f"sonar.organization={org}\n"
-        f"sonar.sources=.\n"
-        f"sonar.host.url={SONAR_HOST}\n"
-        f"sonar.projectVisibility=public\n"
-    )
+    host = SONAR_LOCAL_HOST if local else SONAR_HOST
+    if local:
+        content = (
+            f"sonar.projectKey={project_key}\n"
+            f"sonar.sources=.\n"
+            f"sonar.host.url={host}\n"
+        )
+    else:
+        content = (
+            f"sonar.projectKey={project_key}\n"
+            f"sonar.organization={org}\n"
+            f"sonar.sources=.\n"
+            f"sonar.host.url={host}\n"
+            f"sonar.projectVisibility=public\n"
+        )
     props_path = os.path.join(project_path, "sonar-project.properties")
     with open(props_path, "w") as f:
         f.write(content)
@@ -87,12 +96,12 @@ def run_scanner(project_path: str, sonar_token: str) -> str | None:
     return None
 
 
-def wait_for_analysis(task_id: str, sonar_token: str, timeout: int = 180) -> bool:
+def wait_for_analysis(task_id: str, sonar_token: str, timeout: int = 180, host: str = SONAR_HOST) -> bool:
     """
     Poll the CE task endpoint until the analysis is SUCCESS or FAILED.
     Returns True if successful.
     """
-    url = f"{SONAR_HOST}/api/ce/task?id={task_id}"
+    url = f"{host}/api/ce/task?id={task_id}"
     deadline = time.time() + timeout
     while time.time() < deadline:
         req = urllib.request.Request(url)
@@ -139,10 +148,10 @@ def _get_json(url: str, sonar_token: str) -> dict | None:
         return None
 
 
-def fetch_measures_project(project_key: str, sonar_token: str) -> dict:
+def fetch_measures_project(project_key: str, sonar_token: str, host: str = SONAR_HOST) -> dict:
     """Fetch project-level measures. Returns {metric: value}."""
     url = (
-        f"{SONAR_HOST}/api/measures/component"
+        f"{host}/api/measures/component"
         f"?component={project_key}&metricKeys={METRICS_PROJECT}"
     )
     data = _get_json(url, sonar_token)
@@ -154,7 +163,7 @@ def fetch_measures_project(project_key: str, sonar_token: str) -> dict:
     }
 
 
-def fetch_measures_per_file(project_key: str, sonar_token: str) -> dict:
+def fetch_measures_per_file(project_key: str, sonar_token: str, host: str = SONAR_HOST) -> dict:
     """
     Fetch per-file measures using the component_tree API.
     Returns {relative_file_path: {metric: value}}.
@@ -166,7 +175,7 @@ def fetch_measures_per_file(project_key: str, sonar_token: str) -> dict:
 
     while True:
         url = (
-            f"{SONAR_HOST}/api/measures/component_tree"
+            f"{host}/api/measures/component_tree"
             f"?component={project_key}"
             f"&metricKeys={METRICS_FILE}"
             f"&strategy=leaves&qualifiers=FIL"
@@ -198,25 +207,27 @@ def analyze_with_sonar(
     project_key: str,
     sonar_token: str,
     org: str = "complexity-metrics",
+    local: bool = False,
 ) -> dict:
     """
     Full pipeline: generate properties → scan → wait → fetch measures.
     Returns {"project": {metric: value}, "files": {path: {metric: value}}},
     or {"project": {}, "files": {}} on failure.
     """
-    generate_properties(project_path, project_key, org)
+    host = SONAR_LOCAL_HOST if local else SONAR_HOST
+    generate_properties(project_path, project_key, org, local=local)
     print(f"    [sonar] Running scanner for {project_key} ...")
     task_id = run_scanner(project_path, sonar_token)
 
     if task_id:
         print(f"    [sonar] Waiting for task {task_id} ...")
-        if not wait_for_analysis(task_id, sonar_token):
+        if not wait_for_analysis(task_id, sonar_token, host=host):
             print(f"    [sonar] Analysis did not complete for {project_key}")
             return {"project": {}, "files": {}}
     else:
         print("    [sonar] No task ID — attempting to fetch existing measures anyway.")
 
-    project_measures = fetch_measures_project(project_key, sonar_token)
-    file_measures = fetch_measures_per_file(project_key, sonar_token)
+    project_measures = fetch_measures_project(project_key, sonar_token, host=host)
+    file_measures = fetch_measures_per_file(project_key, sonar_token, host=host)
     print(f"    [sonar] Fetched {len(file_measures)} file(s) from SonarCloud")
     return {"project": project_measures, "files": file_measures}

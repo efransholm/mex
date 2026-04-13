@@ -10,9 +10,10 @@ Runs per project:
 Results are written to results/<app_name>.json
 
 Usage:
-    python3 scripts/analyze.py                        # analyzes all projects in test/
-    python3 scripts/analyze.py path/to/folder         # analyzes all projects in given folder
-    python3 scripts/analyze.py --single path/to/repo  # analyzes a single project directly
+    python3 scripts/analyze.py                               # analyzes all projects in test/
+    python3 scripts/analyze.py path/to/folder                # analyzes all projects in given folder
+    python3 scripts/analyze.py --single path/to/repo         # analyzes a single project directly
+    python3 scripts/analyze.py --local --single path/to/repo # use local SonarQube on localhost:9000
 """
 import contextlib
 import io
@@ -373,7 +374,7 @@ def merge_into_files(result: dict) -> dict:
 # ---------------------------------------------------------------------------
 # Project analysis orchestrator
 # ---------------------------------------------------------------------------
-def analyze_project(project_path: str, sonar_token: str) -> dict:
+def analyze_project(project_path: str, sonar_token: str, local: bool = False) -> dict:
     language, framework, app_name = detect_project(project_path)
     project_key = f"thesis-{framework}-{app_name}"
 
@@ -397,7 +398,7 @@ def analyze_project(project_path: str, sonar_token: str) -> dict:
     # SonarQube
     print("  Running SonarQube...")
     result["sonarqube"] = analyze_with_sonar(
-        project_path, project_key, sonar_token, SONAR_ORG
+        project_path, project_key, sonar_token, SONAR_ORG, local=local
     )
     n_files = len(result["sonarqube"].get("files", {}))
     print(f"  SonarQube: project-level + {n_files} file(s)")
@@ -429,13 +430,20 @@ def analyze_project(project_path: str, sonar_token: str) -> dict:
 # ---------------------------------------------------------------------------
 def main() -> None:
     env = load_env()
-    sonar_token = env.get("SONAR_TOKEN") or os.environ.get("SONAR_TOKEN", "")
-    if not sonar_token:
-        print("ERROR: SONAR_TOKEN not set in .env")
-        sys.exit(1)
-
     single = "--single" in sys.argv
-    args = [a for a in sys.argv[1:] if a != "--single"]
+    local = "--local" in sys.argv
+    args = [a for a in sys.argv[1:] if a not in ("--single", "--local")]
+
+    if local:
+        sonar_token = env.get("SONAR_LOCAL_TOKEN") or os.environ.get("SONAR_LOCAL_TOKEN", "")
+        if not sonar_token:
+            print("ERROR: SONAR_LOCAL_TOKEN not set in .env")
+            sys.exit(1)
+    else:
+        sonar_token = env.get("SONAR_TOKEN") or os.environ.get("SONAR_TOKEN", "")
+        if not sonar_token:
+            print("ERROR: SONAR_TOKEN not set in .env")
+            sys.exit(1)
 
     target = os.path.abspath(args[0] if args else os.path.join(REPO_ROOT, "test"))
     if not os.path.isdir(target):
@@ -456,7 +464,7 @@ def main() -> None:
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
     for project_path in project_dirs:
-        result = analyze_project(project_path, sonar_token)
+        result = analyze_project(project_path, sonar_token, local=local)
         # Use framework prefix so same-app migrations don't overwrite each other
         # e.g. sunflower → compose_sunflower.json and views_sunflower.json
         out_path = os.path.join(RESULTS_DIR, f"{result['framework']}_{result['project']}.json")
