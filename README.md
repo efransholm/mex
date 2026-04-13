@@ -46,6 +46,8 @@ python3 scripts/analyze.py some/dir # all sub-folders in that dir
 python3 scripts/repo_mining.py
 python3 scripts/plot_summary_table.py
 python3 scripts/repo_mining.py --update "Stypox/dicio-android@1075d6966930c299ab6095825a2adbb3c1eeed8e"
+python3 scripts/repo_mining.py --platform ios
+python3 scripts/repo_mining.py --platform ios --update "kickstarter/ios-oss"
 ```
 
 Saved results to repo_summary.csv and repo_summary_table.png

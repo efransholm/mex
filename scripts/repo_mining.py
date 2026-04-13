@@ -34,7 +34,7 @@ REPOS = [
     "IacobIonut01/Gallery",                     # compose
 
     # Large navigation / content browsing
-    "mozilla-mobile/fenix",                     # views
+    "AntennaPod/AntennaPod",                    # views
     "android/nowinandroid",                     # compose
 
     # Music / podcast player
@@ -57,17 +57,108 @@ REPOS = [
     "Stypox/dicio-android@1075d6966930c299ab6095825a2adbb3c1eeed8e",  # views — last commit before Compose
     "Stypox/dicio-android",                     # compose (main)
 
-    # News feed
-    "nameisjayant/News-feed-app-android-kotlin", # views
-    # compose — JetNews is a subfolder of compose-samples (already listed above)
-
     # TV / content tracking
     "trakt/showly",                              # views
     "chrisbanes/tivi",                          # compose
 ]
 
+IOS_REPOS = [
+
+    # Mobile cryptocurrency wallet app
+    "soramitsu/fearless-iOS",                           # uikit
+    "gemwalletcom/gem-ios",                             # swiftui
+
+    # Large utility app/browsing
+    "OnionBrowser/OnionBrowser",                        # uikit
+    "Dimillian/ACHNBrowserUI",                          # swiftui
+
+    # Movie / media browsing
+    "aslanyanhaik/youtube-iOS",                         # uikit
+    "Dimillian/MovieSwiftUI",                           # swiftui
+
+    # finance 
+    "abdorizak/Expense-Tracker-App",                    # uikit
+    "rafsoh/DimeApp",                                   # swiftui
+
+    # game
+    "nicklockwood/Chess",                               # uikit
+    "jaredcassoutt/chess_swiftui",                      # swiftui
+
+    # pokedex
+    "ronanociosoig/Tuist-Pokedex",                      # uikit
+    "brillcp/PokedexUI",                                # swiftui
+
+    # Lyrics apps that display song lyrics synchronized with currently playing music but lyricsx more complex
+    "ddddxxx/LyricsX",                                  # uikit 
+    "aviwad/LyricFever",                                  # swiftui
+
+]
+
+'''
+extra repos
+
+  # Calendar / scheduling
+    "richardtop/CalendarApp",                           # uikit
+    "vinhnx/Clendar",                                   # swiftui
+
+    # Game
+    "danqing/2048",                                     # uikit
+    "unixzii/SwiftUI-2048",                             # swiftui
+
+# Calendar / scheduling
+    "richardtop/CalendarApp",                           # uikit
+    "vinhnx/Clendar",                                   # swiftui
+
+    # Game
+    "danqing/2048",                                     # uikit
+    "unixzii/SwiftUI-2048",                             # swiftui
+
+    # To-do list
+    "devxoul/RxTodo",                                   # uikit
+    "janirefdez/TodoApp",                               # uikit
+    "rockname/SwiftUITodoApp",                          # hybrid — uikit + swiftui in subfolders
+    "devxoul/SwiftUITodo",                              # swiftui
+
+   
+    "pointfreeco/isowords",                             # swiftui
+
+    # Demo app — both uikit and swiftui in subfolders
+    "nalexn/uikit-swiftui",                             # hybrid
+    "kovacsmarknje/SwiftUIvsUIKit",                     # hybrid
+
+    # News feed
+    "Ranchero-Software/NetNewsWire",                    # uikit
+    "AlexeyVoronov96/NewsApp-With-SwiftUI-And-Combine", # swiftui
+
+    # Hacker New Reader  -------
+    "amitburst/HackerNews",                            # uikit
+    "Dimillian/IcySky",                                # swiftui
+
+    # other 
+    "kickstarter/ios-oss",                              # uikit
+    "mozilla-mobile/firefox-ios",                       # uikit
+    "Blackjacx/Gasoline",
+    "abdorizak/Expense-Tracker-App",
+    "rafsoh/dimeAp",
+    "Augustyniak/FileExplorer",
+    "rocketshipapps/adblockfast",
+    "misteu/VocabularyTraining",
+    "asuc-octo/berkeley-mobile-ios",
+    "ChatSecure/ChatSecure-iOS",
+    "thunderbird/thunderbird-ios", 
+    "austinzheng/swift-2048",
+    "eleev/flappy-fly-bird",
+    "tirupati17/sip-calculator-swift",
+    "almormd/Splito",
+    "brave/brave-ios",
+    "metabolist/metatext"
+
+'''
+
 OUTPUT_CSV = "repo_data.csv"
 OUTPUT_SUMMARY_CSV = "repo_summary.csv"
+OUTPUT_IOS_CSV = "repo_data_ios.csv"
+OUTPUT_IOS_SUMMARY_CSV = "repo_summary_ios.csv"
 
 # How many files to scan per repo (set to None for unlimited — can be slow)
 MAX_FILES_PER_REPO: Optional[int] = 500
@@ -152,8 +243,8 @@ KOTLIN_ANDROID_VIEW_KEYWORDS = [
 # SwiftUI patterns
 SWIFTUI_KEYWORDS = [
     "import SwiftUI",
-    "View {",
-    "some View",
+    ": some View",
+    "some View {",
     "body: some View",
     "@State",
     "@Binding",
@@ -165,9 +256,7 @@ SWIFTUI_KEYWORDS = [
     "VStack",
     "HStack",
     "ZStack",
-    "List {",
     "ForEach(",
-    "ViewBuilder",
     ".padding(",
     ".frame(",
     "PreviewProvider",
@@ -454,7 +543,7 @@ def summarize_results(repo_label: str, results: list[FileResult], metadata: dict
     compose   = counts.get("Jetpack Compose", 0)
     views     = counts.get("Android Views", 0)
     swiftui   = counts.get("SwiftUI", 0)
-    uikit     = counts.get("UIKit", 0)
+    uikit     = counts.get("UIKit", 0) + counts.get("UIKit (Storyboard/XIB)", 0)
     mixed     = sum(v for k, v in counts.items() if "Mixed" in k)
     total     = sum(counts.values())
 
@@ -504,11 +593,16 @@ def mine_repo(owner: str, repo: str, ref: Optional[str] = None) -> list[FileResu
     candidates = []
     for item in tree:
         path = item["path"]
-        _, ext = os.path.splitext(path.lower())
+        path_lower = path.lower()
+
+        # Skip files inside any directory whose name contains "test"
+        if any("test" in part for part in path_lower.split("/")[:-1]):
+            continue
+
+        _, ext = os.path.splitext(path_lower)
         if ext in XML_EXTENSIONS:
             # Only scan XML files inside a res/layout directory — skip manifests,
             # values, drawables, navigation graphs, etc.
-            path_lower = path.lower()
             is_layout_xml = any(
                 part.startswith("layout") for part in path_lower.split("/")
             )
@@ -613,8 +707,8 @@ def parse_repo_str(repo_str: str) -> tuple[str, str, Optional[str]]:
     return owner, repo, ref
 
 
-def update_single_repo(repo_str: str):
-    """Re-mine one repo and replace only its rows in both CSVs."""
+def update_single_repo(repo_str: str, data_csv: str, summary_csv: str):
+    """Re-mine one repo and replace only its rows in the given CSVs."""
     owner, repo, ref = parse_repo_str(repo_str)
     label = f"{owner}/{repo}@{ref}" if ref else f"{owner}/{repo}"
     logger.info(f"Updating single repo: {label}")
@@ -623,7 +717,7 @@ def update_single_repo(repo_str: str):
     results  = mine_repo(owner, repo, ref)
     summary  = summarize_results(label, results, metadata)
 
-    # --- Update repo_summary.csv ---
+    # --- Update summary CSV ---
     summary_fields = [
         "repo", "stars", "open_issues", "last_push", "forks",
         "commits", "contributors", "open_pull_requests",
@@ -632,24 +726,24 @@ def update_single_repo(repo_str: str):
         "compose_pct", "android_views_pct", "swiftui_pct", "uikit_pct",
         "dominant_framework",
     ]
-    if os.path.exists(OUTPUT_SUMMARY_CSV):
-        with open(OUTPUT_SUMMARY_CSV, newline="", encoding="utf-8") as f:
+    if os.path.exists(summary_csv):
+        with open(summary_csv, newline="", encoding="utf-8") as f:
             existing_summaries = list(csv.DictReader(f))
         existing_summaries = [r for r in existing_summaries if r["repo"] != label]
     else:
         existing_summaries = []
     existing_summaries.append({k: getattr(summary, k) for k in summary_fields})
 
-    with open(OUTPUT_SUMMARY_CSV, "w", newline="", encoding="utf-8") as f:
+    with open(summary_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=summary_fields)
         writer.writeheader()
         writer.writerows(existing_summaries)
-    logger.info(f"Summary updated: {OUTPUT_SUMMARY_CSV}")
+    logger.info(f"Summary updated: {summary_csv}")
 
-    # --- Update repo_data.csv ---
+    # --- Update data CSV ---
     file_fields = ["repo", "file_path", "language", "framework", "matched_keywords", "html_url"]
-    if os.path.exists(OUTPUT_CSV):
-        with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
+    if os.path.exists(data_csv):
+        with open(data_csv, newline="", encoding="utf-8") as f:
             existing_files = list(csv.DictReader(f))
         existing_files = [r for r in existing_files if r["repo"] != label]
     else:
@@ -664,35 +758,21 @@ def update_single_repo(repo_str: str):
             "html_url": r.html_url,
         })
 
-    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+    with open(data_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=file_fields)
         writer.writeheader()
         writer.writerows(existing_files)
-    logger.info(f"File data updated: {OUTPUT_CSV}")
+    logger.info(f"File data updated: {data_csv}")
 
     print(f"\n✅ Updated {label}: {len(results)} files found.")
 
 
-def main():
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--update", metavar="REPO",
-        help="Re-mine a single repo and update CSVs (e.g. 'Stypox/dicio-android@81e0cbda')"
-    )
-    args = parser.parse_args()
-
-    if args.update:
-        update_single_repo(args.update)
-        return
-
-    if not REPOS:
-        raise ValueError("Please add at least one repository to the REPOS list.")
-
+def run_all(repo_list: list, data_csv: str, summary_csv: str):
+    """Mine all repos in repo_list and write to the given CSV files."""
     all_results: list[FileResult] = []
     all_summaries: list[RepoSummary] = []
 
-    for repo_str in REPOS:
+    for repo_str in repo_list:
         owner, repo, ref = parse_repo_str(repo_str)
         try:
             metadata = get_repo_metadata(owner, repo)
@@ -704,13 +784,41 @@ def main():
             logger.error(f"Failed to mine {repo_str}: {e}")
 
     if all_results:
-        save_csv(all_results, OUTPUT_CSV)
-        save_summary_csv(all_summaries, OUTPUT_SUMMARY_CSV)
-        print(f"\n✅ Done! {len(all_results)} files across {len(REPOS)} repos")
-        print(f"   File-level  → {OUTPUT_CSV}")
-        print(f"   Repo summary → {OUTPUT_SUMMARY_CSV}")
+        save_csv(all_results, data_csv)
+        save_summary_csv(all_summaries, summary_csv)
+        print(f"\n✅ Done! {len(all_results)} files across {len(repo_list)} repos")
+        print(f"   File-level   → {data_csv}")
+        print(f"   Repo summary → {summary_csv}")
     else:
         print("\n⚠️  No matching files found. Check your repo list and token.")
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--platform", choices=["android", "ios"], default="android",
+        help="Which repo list to mine: 'android' (default) or 'ios'"
+    )
+    parser.add_argument(
+        "--update", metavar="REPO",
+        help="Re-mine a single repo and update its platform's CSVs"
+    )
+    args = parser.parse_args()
+
+    if args.platform == "ios":
+        repo_list, data_csv, summary_csv = IOS_REPOS, OUTPUT_IOS_CSV, OUTPUT_IOS_SUMMARY_CSV
+    else:
+        repo_list, data_csv, summary_csv = REPOS, OUTPUT_CSV, OUTPUT_SUMMARY_CSV
+
+    if args.update:
+        update_single_repo(args.update, data_csv, summary_csv)
+        return
+
+    if not repo_list:
+        raise ValueError("The selected repo list is empty.")
+
+    run_all(repo_list, data_csv, summary_csv)
 
 
 if __name__ == "__main__":
