@@ -1,0 +1,885 @@
+{
+  "project": "dicio-android-views",
+  "framework": "views",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-views-dicio-android-views",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/dicio-android-views",
+  "ui_files_filter": [
+    "app/build.gradle.kts",
+    "app/src/main/kotlin/org/stypox/dicio/MainActivity.kt",
+    "app/src/main/kotlin/org/stypox/dicio/error/ErrorActivity.kt",
+    "app/src/main/kotlin/org/stypox/dicio/error/ErrorUtils.kt",
+    "app/src/main/kotlin/org/stypox/dicio/eval/SkillEvaluator.kt",
+    "app/src/main/kotlin/org/stypox/dicio/input/SpeechInputDevice.kt",
+    "app/src/main/kotlin/org/stypox/dicio/input/stt_service/SttServiceActivity.kt",
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/GraphicalOutputUtils.kt",
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/MainScreenGraphicalDevice.kt",
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/OutputContainerView.kt",
+    "app/src/main/kotlin/org/stypox/dicio/output/speech/SnackbarSpeechDevice.kt",
+    "app/src/main/kotlin/org/stypox/dicio/settings/SettingsActivity.kt",
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillItemHolder.kt",
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillsAdapter.kt",
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillsFragment.kt",
+    "app/src/main/kotlin/org/stypox/dicio/skills/search/SearchOutput.kt",
+    "app/src/main/kotlin/org/stypox/dicio/skills/telephone/ConfirmCallOutput.kt",
+    "app/src/main/kotlin/org/stypox/dicio/skills/telephone/TelephoneOutput.kt",
+    "app/src/main/kotlin/org/stypox/dicio/skills/weather/WeatherOutput.kt",
+    "app/src/main/res/layout/activity_error.xml",
+    "app/src/main/res/layout/activity_main.xml",
+    "app/src/main/res/layout/activity_settings.xml",
+    "app/src/main/res/layout/dialog_stt_service.xml",
+    "app/src/main/res/layout/error_panel.xml",
+    "app/src/main/res/layout/initial_panel.xml",
+    "app/src/main/res/layout/initial_panel_skill_item.xml",
+    "app/src/main/res/layout/nav_header_main.xml",
+    "app/src/main/res/layout/pref_skill_item.xml",
+    "app/src/main/res/layout/pref_skills.xml",
+    "app/src/main/res/layout/skill_search_result.xml",
+    "app/src/main/res/layout/skill_telephone_contact.xml",
+    "app/src/main/res/layout/skill_telephone_contact_secondary_number.xml",
+    "app/src/main/res/layout/skill_weather.xml",
+    "app/src/main/res/layout/user_input.xml",
+    "app/src/main/res/layout/user_input_partial.xml"
+  ],
+  "sonarqube_project": {
+    "complexity": 673,
+    "code_smells": 48,
+    "duplicated_lines_density": 0.0,
+    "functions": 332,
+    "classes": 95,
+    "sqale_debt_ratio": 0.1,
+    "statements": 2049,
+    "comment_lines_density": 8.2,
+    "bugs": 3,
+    "comment_lines": 871,
+    "cognitive_complexity": 625,
+    "ncloc": 9782,
+    "files": 195,
+    "lines": 11729
+  },
+  "files": {
+    "app/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 201
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/MainActivity.kt": {
+      "halstead": {
+        "loc": 319,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 205,
+        "N1_total_operators": 533,
+        "N2_total_operands": 548,
+        "vocabulary": 241,
+        "length": 1081,
+        "calculated_length": 1760.41,
+        "volume": 8553.83,
+        "difficulty": 48.12,
+        "effort": 411585.43,
+        "time_seconds": 22865.86,
+        "bugs_delivered": 2.851
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 21,
+        "observable_state_vars": 0,
+        "state_updates": 15
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 10.99
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 36,
+        "comment_lines": 19,
+        "comment_lines_density": 5.9,
+        "complexity": 51,
+        "functions": 19,
+        "lines": 360,
+        "ncloc": 305,
+        "statements": 133
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/error/ErrorActivity.kt": {
+      "halstead": {
+        "loc": 165,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 148,
+        "N1_total_operators": 312,
+        "N2_total_operands": 305,
+        "vocabulary": 177,
+        "length": 617,
+        "calculated_length": 1207.88,
+        "volume": 4607.51,
+        "difficulty": 29.88,
+        "effort": 137680.57,
+        "time_seconds": 7648.92,
+        "bugs_delivered": 1.536
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 31
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 24.63
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 14,
+        "comment_lines_density": 8.5,
+        "complexity": 10,
+        "functions": 7,
+        "lines": 184,
+        "ncloc": 151,
+        "statements": 49
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/error/ErrorUtils.kt": {
+      "halstead": {
+        "loc": 126,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 81,
+        "N1_total_operators": 157,
+        "N2_total_operands": 178,
+        "vocabulary": 104,
+        "length": 335,
+        "calculated_length": 617.57,
+        "volume": 2244.65,
+        "difficulty": 25.27,
+        "effort": 56725.84,
+        "time_seconds": 3151.44,
+        "bugs_delivered": 0.748
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 29.37
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 5,
+        "comment_lines": 51,
+        "comment_lines_density": 40.5,
+        "complexity": 10,
+        "functions": 6,
+        "lines": 136,
+        "ncloc": 75,
+        "statements": 22
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/eval/SkillEvaluator.kt": {
+      "halstead": {
+        "loc": 393,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 171,
+        "N1_total_operators": 506,
+        "N2_total_operands": 486,
+        "vocabulary": 203,
+        "length": 992,
+        "calculated_length": 1428.45,
+        "volume": 7604.01,
+        "difficulty": 45.47,
+        "effort": 345782.5,
+        "time_seconds": 19210.14,
+        "bugs_delivered": 2.535
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 24,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2727,
+        "maintainability_index": 9.64
+      },
+      "sonarqube": {
+        "classes": 3,
+        "code_smells": 4,
+        "cognitive_complexity": 51,
+        "comment_lines": 48,
+        "comment_lines_density": 12.0,
+        "complexity": 49,
+        "functions": 29,
+        "lines": 435,
+        "ncloc": 353,
+        "sqale_debt_ratio": 0.3,
+        "statements": 167
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/input/SpeechInputDevice.kt": {
+      "halstead": {
+        "loc": 153,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 166,
+        "N2_total_operands": 163,
+        "vocabulary": 85,
+        "length": 329,
+        "calculated_length": 470.51,
+        "volume": 2108.69,
+        "difficulty": 33.96,
+        "effort": 71607.58,
+        "time_seconds": 3978.2,
+        "bugs_delivered": 0.703
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 27.19
+      },
+      "sonarqube": {
+        "classes": 7,
+        "cognitive_complexity": 6,
+        "comment_lines": 57,
+        "comment_lines_density": 36.8,
+        "complexity": 14,
+        "functions": 8,
+        "lines": 169,
+        "ncloc": 98,
+        "statements": 37
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/input/stt_service/SttServiceActivity.kt": {
+      "halstead": {
+        "loc": 197,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 144,
+        "N1_total_operators": 321,
+        "N2_total_operands": 342,
+        "vocabulary": 170,
+        "length": 663,
+        "calculated_length": 1154.68,
+        "volume": 4912.43,
+        "difficulty": 30.88,
+        "effort": 151671.16,
+        "time_seconds": 8426.18,
+        "bugs_delivered": 1.637
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3158,
+        "maintainability_index": 21.41
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 14,
+        "comment_lines": 11,
+        "comment_lines_density": 5.6,
+        "complexity": 20,
+        "functions": 12,
+        "lines": 220,
+        "ncloc": 186,
+        "statements": 86
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/GraphicalOutputUtils.kt": {
+      "halstead": {
+        "loc": 201,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 99,
+        "N1_total_operators": 201,
+        "N2_total_operands": 247,
+        "vocabulary": 115,
+        "length": 448,
+        "calculated_length": 720.31,
+        "volume": 3066.78,
+        "difficulty": 19.96,
+        "effort": 61211.68,
+        "time_seconds": 3400.65,
+        "bugs_delivered": 1.022
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 23.73
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 5,
+        "comment_lines": 79,
+        "comment_lines_density": 39.3,
+        "complexity": 12,
+        "functions": 9,
+        "lines": 212,
+        "ncloc": 122,
+        "statements": 37
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/MainScreenGraphicalDevice.kt": {
+      "halstead": {
+        "loc": 109,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 166,
+        "N2_total_operands": 155,
+        "vocabulary": 82,
+        "length": 321,
+        "calculated_length": 449.8,
+        "volume": 2040.77,
+        "difficulty": 32.07,
+        "effort": 65445.52,
+        "time_seconds": 3635.86,
+        "bugs_delivered": 0.68
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4375,
+        "maintainability_index": 30.09
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 14,
+        "comment_lines": 11,
+        "comment_lines_density": 9.8,
+        "complexity": 17,
+        "functions": 9,
+        "lines": 124,
+        "ncloc": 101,
+        "sqale_debt_ratio": 0.2,
+        "statements": 49
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/output/graphical/OutputContainerView.kt": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 62,
+        "N2_total_operands": 80,
+        "vocabulary": 60,
+        "length": 142,
+        "calculated_length": 311.1,
+        "volume": 838.78,
+        "difficulty": 10.0,
+        "effort": 8387.78,
+        "time_seconds": 465.99,
+        "bugs_delivered": 0.28
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 42.93
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 49,
+        "ncloc": 44,
+        "statements": 16
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/output/speech/SnackbarSpeechDevice.kt": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 33,
+        "N2_total_operands": 28,
+        "vocabulary": 28,
+        "length": 61,
+        "calculated_length": 107.54,
+        "volume": 293.25,
+        "difficulty": 9.06,
+        "effort": 2656.49,
+        "time_seconds": 147.58,
+        "bugs_delivered": 0.098
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 53.94
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 24,
+        "ncloc": 20,
+        "statements": 7
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/settings/SettingsActivity.kt": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 124,
+        "N2_total_operands": 131,
+        "vocabulary": 78,
+        "length": 255,
+        "calculated_length": 429.47,
+        "volume": 1602.78,
+        "difficulty": 19.65,
+        "effort": 31494.58,
+        "time_seconds": 1749.7,
+        "bugs_delivered": 0.534
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 36.65
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 6,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 8,
+        "functions": 5,
+        "lines": 74,
+        "ncloc": 66,
+        "statements": 29
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillItemHolder.kt": {
+      "halstead": {
+        "loc": 164,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 120,
+        "N1_total_operators": 358,
+        "N2_total_operands": 379,
+        "vocabulary": 140,
+        "length": 737,
+        "calculated_length": 915.27,
+        "volume": 5254.28,
+        "difficulty": 31.58,
+        "effort": 165947.73,
+        "time_seconds": 9219.32,
+        "bugs_delivered": 1.751
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 15,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 22.94
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 14,
+        "comment_lines": 4,
+        "comment_lines_density": 2.4,
+        "complexity": 20,
+        "functions": 10,
+        "lines": 178,
+        "ncloc": 162,
+        "statements": 82
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillsAdapter.kt": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 41,
+        "N2_total_operands": 38,
+        "vocabulary": 32,
+        "length": 79,
+        "calculated_length": 132.57,
+        "volume": 395.0,
+        "difficulty": 7.43,
+        "effort": 2936.74,
+        "time_seconds": 163.15,
+        "bugs_delivered": 0.132
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 51.17
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 29,
+        "ncloc": 24,
+        "statements": 4
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/settings/skill/SkillsFragment.kt": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 61,
+        "N2_total_operands": 64,
+        "vocabulary": 55,
+        "length": 125,
+        "calculated_length": 271.48,
+        "volume": 722.67,
+        "difficulty": 12.0,
+        "effort": 8672.04,
+        "time_seconds": 481.78,
+        "bugs_delivered": 0.241
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.21
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 42,
+        "statements": 14
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/skills/search/SearchOutput.kt": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 164,
+        "N2_total_operands": 137,
+        "vocabulary": 83,
+        "length": 301,
+        "calculated_length": 466.51,
+        "volume": 1918.89,
+        "difficulty": 18.97,
+        "effort": 36399.81,
+        "time_seconds": 2022.21,
+        "bugs_delivered": 0.64
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 34.94
+      },
+      "sonarqube": {
+        "classes": 2,
+        "code_smells": 1,
+        "cognitive_complexity": 5,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 5,
+        "functions": 1,
+        "lines": 85,
+        "ncloc": 77,
+        "sqale_debt_ratio": 0.2,
+        "statements": 17
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/skills/telephone/ConfirmCallOutput.kt": {
+      "halstead": {
+        "loc": 65,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 130,
+        "N2_total_operands": 122,
+        "vocabulary": 71,
+        "length": 252,
+        "calculated_length": 380.25,
+        "volume": 1549.74,
+        "difficulty": 19.2,
+        "effort": 29760.68,
+        "time_seconds": 1653.37,
+        "bugs_delivered": 0.517
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.58
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 10.8,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 72,
+        "ncloc": 58,
+        "statements": 18
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/skills/telephone/TelephoneOutput.kt": {
+      "halstead": {
+        "loc": 134,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 75,
+        "N1_total_operators": 128,
+        "N2_total_operands": 132,
+        "vocabulary": 98,
+        "length": 260,
+        "calculated_length": 571.2,
+        "volume": 1719.82,
+        "difficulty": 20.24,
+        "effort": 34809.25,
+        "time_seconds": 1933.85,
+        "bugs_delivered": 0.573
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0714,
+        "maintainability_index": 28.66
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "cognitive_complexity": 22,
+        "comment_lines": 13,
+        "comment_lines_density": 9.5,
+        "complexity": 17,
+        "functions": 2,
+        "lines": 140,
+        "ncloc": 124,
+        "sqale_debt_ratio": 0.2,
+        "statements": 43
+      }
+    },
+    "app/src/main/kotlin/org/stypox/dicio/skills/weather/WeatherOutput.kt": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 158,
+        "N2_total_operands": 121,
+        "vocabulary": 62,
+        "length": 279,
+        "calculated_length": 319.67,
+        "volume": 1661.22,
+        "difficulty": 19.31,
+        "effort": 32075.7,
+        "time_seconds": 1781.98,
+        "bugs_delivered": 0.554
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8,
+        "maintainability_index": 38.55
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 63,
+        "ncloc": 59,
+        "statements": 19
+      }
+    },
+    "app/src/main/res/layout/activity_error.xml": {
+      "sonarqube": {
+        "comment_lines": 1,
+        "comment_lines_density": 0.9,
+        "lines": 129,
+        "ncloc": 109
+      }
+    },
+    "app/src/main/res/layout/activity_main.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 99,
+        "ncloc": 88
+      }
+    },
+    "app/src/main/res/layout/activity_settings.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 30,
+        "ncloc": 27
+      }
+    },
+    "app/src/main/res/layout/dialog_stt_service.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 89,
+        "ncloc": 83
+      }
+    },
+    "app/src/main/res/layout/error_panel.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 47,
+        "ncloc": 44
+      }
+    },
+    "app/src/main/res/layout/initial_panel.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 29,
+        "ncloc": 27
+      }
+    },
+    "app/src/main/res/layout/initial_panel_skill_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 52,
+        "ncloc": 48
+      }
+    },
+    "app/src/main/res/layout/nav_header_main.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 35,
+        "ncloc": 30
+      }
+    },
+    "app/src/main/res/layout/pref_skill_item.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 116,
+        "ncloc": 107
+      }
+    },
+    "app/src/main/res/layout/pref_skills.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 34,
+        "ncloc": 31
+      }
+    },
+    "app/src/main/res/layout/skill_search_result.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 65,
+        "ncloc": 59
+      }
+    },
+    "app/src/main/res/layout/skill_telephone_contact.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 40,
+        "ncloc": 37
+      }
+    },
+    "app/src/main/res/layout/skill_telephone_contact_secondary_number.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 14,
+        "ncloc": 14
+      }
+    },
+    "app/src/main/res/layout/skill_weather.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 79,
+        "ncloc": 72
+      }
+    },
+    "app/src/main/res/layout/user_input.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 40,
+        "ncloc": 37
+      }
+    },
+    "app/src/main/res/layout/user_input_partial.xml": {
+      "sonarqube": {
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "lines": 35,
+        "ncloc": 32
+      }
+    }
+  }
+}

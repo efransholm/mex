@@ -14,8 +14,20 @@ Usage:
     python3 scripts/analyze.py path/to/folder                # analyzes all projects in given folder
     python3 scripts/analyze.py --single path/to/repo         # analyzes a single project directly
     python3 scripts/analyze.py --local --single path/to/repo # use local SonarQube on localhost:9000
+
+UI-file filtering (uses output from repo_mining.py):
+    python3 scripts/analyze.py --single path/to/repo \\
+        --ui-csv repo_data.csv --repo-label owner/repo[@ref]
+    Add --dominant-only to further restrict to files belonging to the dominant
+    framework only (e.g. if a repo is 75% Compose / 25% Views, only the Compose
+    files are analysed).
+
+Note: SonarQube project-level metrics (ncloc, complexity, …) are always
+computed over the full project because SonarQube cannot be restricted to a
+subset of files at scan time. Per-file SonarQube data is filtered normally.
 """
 import contextlib
+import csv
 import io
 import json
 import math
@@ -43,6 +55,43 @@ SWIFT_CLI = os.path.normpath(os.path.join(
 ))
 RESULTS_DIR = os.path.join(REPO_ROOT, "results")
 SONAR_ORG = "complexity-metrics"
+
+# Maps local folder name → CSV repo label (from repo_mining.py output).
+# Used in batch mode so --repo-label doesn't need to be supplied per project.
+FOLDER_TO_LABEL: dict[str, str] = {
+    # Android
+    "Gallery":                      "IacobIonut01/Gallery",
+    "Simple-Gallery":               "SimpleMobileTools/Simple-Gallery",
+    "Simple-Music-Player":          "SimpleMobileTools/Simple-Music-Player",
+    "apps-android-wikipedia":       "wikimedia/apps-android-wikipedia",
+    "nowinandroid":                 "android/nowinandroid",
+    "Jetcaster":                    ("android/compose-samples", "Jetcaster/"),  # subfolder of compose-samples
+    "sunflower":                    "android/sunflower",
+    "sunflower_views":              "android/sunflower@views",
+    "architecture-samples-compose": "android/architecture-samples",
+    "architecture-samples-views":   "android/architecture-samples@views",
+    "Pokedex":                      "skydoves/pokedex",
+    "pokedex-compose":              "skydoves/pokedex-compose",
+    "dicio-android":                "Stypox/dicio-android",
+    "dicio-android-views":          "Stypox/dicio-android@1075d6966930c299ab6095825a2adbb3c1eeed8e",
+    "showly":                       "trakt/showly",
+    "tivi":                         "chrisbanes/tivi",
+    # iOS
+    "fearless-iOS":     "soramitsu/fearless-iOS",
+    "gem-ios":          "gemwalletcom/gem-ios",
+    "OnionBrowser":     "OnionBrowser/OnionBrowser",
+    "ACHNBrowserUI":    "Dimillian/ACHNBrowserUI",
+    "youtube-iOS":      "aslanyanhaik/youtube-iOS",
+    "MovieSwiftUI":     "Dimillian/MovieSwiftUI",
+    "Expense-Tracker-App": "abdorizak/Expense-Tracker-App",
+    "DimeApp":          "rafsoh/DimeApp",
+    "Chess":            "nicklockwood/Chess",
+    "chess_swiftui":    "jaredcassoutt/chess_swiftui",
+    "Tuist-Pokedex":    "ronanociosoig/Tuist-Pokedex",
+    "PokedexUI":        "brillcp/PokedexUI",
+    "LyricsX":          "ddddxxx/LyricsX",
+    "LyricFever":       "aviwad/LyricFever",
+}
 
 # Directories to skip when walking source trees
 SKIP_DIRS = {
@@ -79,6 +128,69 @@ def find_files(root: str, extensions: tuple) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# UI-file filter (from repo_mining.py output)
+# ---------------------------------------------------------------------------
+def load_ui_file_filter(csv_path: str, repo_label: str, dominant_only: bool,
+                        strip_prefix: str = "") -> set[str]:
+    """
+    Read a repo_data CSV produced by repo_mining.py and return the set of
+    relative file paths that should be analysed.
+
+    csv_path      – path to repo_data.csv or repo_data_ios.csv
+    repo_label    – the 'repo' value in the CSV, e.g. 'android/nowinandroid'
+                    or 'Stypox/dicio-android@1075d6...'
+    dominant_only – if True, keep only files whose 'framework' matches the
+                    dominant framework. Mixed files whose name contains the
+                    dominant framework are also kept (e.g. a file classified as
+                    'Mixed (Compose + Android Views)' is kept when dominant is
+                    'Jetpack Compose').
+    strip_prefix  – if set, strip this prefix from CSV file paths before
+                    returning them. Used when the project is a subfolder of the
+                    mined repo (e.g. Jetcaster inside compose-samples).
+    """
+    rows = []
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row["repo"] == repo_label:
+                rows.append(row)
+
+    if not rows:
+        raise ValueError(
+            f"No rows found for repo label '{repo_label}' in {csv_path}.\n"
+            "Make sure the label exactly matches the 'repo' column "
+            "(e.g. 'android/nowinandroid' or 'owner/repo@commitish')."
+        )
+
+    # Strip subfolder prefix from paths (e.g. "Jetcaster/" for compose-samples)
+    if strip_prefix:
+        rows = [r for r in rows if r["file_path"].startswith(strip_prefix)]
+        for r in rows:
+            r = r.copy()  # don't mutate original
+        rows = [{**r, "file_path": r["file_path"][len(strip_prefix):]} for r in rows]
+
+    if dominant_only:
+        counts: dict[str, int] = {}
+        for row in rows:
+            fw = row["framework"]
+            if "Mixed" not in fw:  # count only pure-framework files for dominance
+                counts[fw] = counts.get(fw, 0) + 1
+        dominant_fw = max(counts, key=counts.get)
+        # Keep dominant-framework files AND mixed files that mention any word
+        # from the dominant framework name (e.g. "Compose" from "Jetpack Compose")
+        dominant_words = set(dominant_fw.split())
+        rows = [r for r in rows
+                if r["framework"] == dominant_fw
+                or (r["framework"].startswith("Mixed")
+                    and any(w in r["framework"] for w in dominant_words))]
+        print(f"  [ui-filter] dominant framework: '{dominant_fw}' "
+              f"({len(rows)} files kept, including mixed)")
+    else:
+        print(f"  [ui-filter] {len(rows)} UI files loaded from {csv_path}")
+
+    return {row["file_path"] for row in rows}
+
+
+# ---------------------------------------------------------------------------
 # Project detection
 # ---------------------------------------------------------------------------
 def detect_project(project_path: str) -> tuple[str, str, str]:
@@ -105,19 +217,11 @@ def detect_project(project_path: str) -> tuple[str, str, str]:
         return "swift", "uikit", app_name
 
     # Android: look for build.gradle / build.gradle.kts anywhere inside
+    # Always use the folder name as app_name — applicationId extraction produced
+    # confusing names like "main" or "niacatalog" for architecture-samples and nowinandroid.
     app_name = os.path.basename(project_path)
     gradle_files = find_files(project_path, ("build.gradle.kts", "build.gradle"))
     if gradle_files:
-        for gf in gradle_files:
-            try:
-                with open(gf, encoding="utf-8", errors="ignore") as f:
-                    content = f.read()
-                m = re.search(r'applicationId\s*[=:]\s*["\']([^"\']+)["\']', content)
-                if m:
-                    app_name = m.group(1).split(".")[-1]
-                    break
-            except OSError:
-                pass
         kotlin_files = find_files(project_path, (".kt",))
         for kf in kotlin_files:
             try:
@@ -134,13 +238,17 @@ def detect_project(project_path: str) -> tuple[str, str, str]:
 # ---------------------------------------------------------------------------
 # Halstead
 # ---------------------------------------------------------------------------
-def run_halstead(project_path: str, language: str) -> dict:
+def run_halstead(project_path: str, language: str, allowed_files: set | None = None) -> dict:
     """
     Run Halstead analysis on every source file in project_path.
     Returns {relative_path: metrics_dict}.
+    If allowed_files is given, only files whose repo-relative path is in that
+    set are analysed (used for UI-only mode).
     """
     ext = (".swift",) if language == "swift" else (".kt",)
     files = find_files(project_path, ext)
+    if allowed_files is not None:
+        files = [f for f in files if os.path.relpath(f, project_path) in allowed_files]
     results: dict[str, dict] = {}
 
     for filepath in files:
@@ -175,10 +283,11 @@ def run_halstead(project_path: str, language: str) -> dict:
 # ---------------------------------------------------------------------------
 # Swift complexity
 # ---------------------------------------------------------------------------
-def run_swift_complexity(project_path: str) -> dict:
+def run_swift_complexity(project_path: str, allowed_files: set | None = None) -> dict:
     """
     Run SwiftComplexityCLI --recursive on project_path.
     Returns {relative_path: {functions, avg_cyclomatic, avg_cognitive}}.
+    If allowed_files is given, only entries whose path is in that set are kept.
     """
     if not os.path.isfile(SWIFT_CLI):
         print(f"    [swift-complexity] CLI not found at {SWIFT_CLI}")
@@ -189,7 +298,10 @@ def run_swift_complexity(project_path: str) -> dict:
         capture_output=True,
         text=True,
     )
-    return _parse_swift_complexity(result.stdout, project_path)
+    parsed = _parse_swift_complexity(result.stdout, project_path)
+    if allowed_files is not None:
+        parsed = {rel: v for rel, v in parsed.items() if rel in allowed_files}
+    return parsed
 
 
 def _parse_swift_complexity(output: str, project_root: str) -> dict:
@@ -237,10 +349,12 @@ def _summarize_functions(functions: list[dict]) -> dict:
 # ---------------------------------------------------------------------------
 # State metrics (AST analyzers)
 # ---------------------------------------------------------------------------
-def run_state_metrics(project_path: str, language: str) -> dict:
+def run_state_metrics(project_path: str, language: str, allowed_files: set | None = None) -> dict:
     """
     Run swift_analyzer or kotlin_analyzer on every source file.
     Returns {relative_path: state_metrics_dict}.
+    If allowed_files is given, only files whose repo-relative path is in that
+    set are analysed.
     """
     if language == "swift":
         from swift_analyzer import analyze_file as state_analyze_file
@@ -250,6 +364,8 @@ def run_state_metrics(project_path: str, language: str) -> dict:
         ext = (".kt",)
 
     files = find_files(project_path, ext)
+    if allowed_files is not None:
+        files = [f for f in files if os.path.relpath(f, project_path) in allowed_files]
     results: dict[str, dict] = {}
 
     for filepath in files:
@@ -337,13 +453,22 @@ def merge_into_files(result: dict) -> dict:
 
     The original per-metric-type dicts are removed to avoid duplication.
     Project-level SonarQube data stays under result["sonarqube_project"].
+
+    If result["ui_files_filter"] is set (a set of allowed paths), only those
+    paths are included — SonarQube per-file data is also restricted to this set.
     """
+    allowed = result.get("ui_files_filter")  # set[str] | None
+
+    sonar_file_paths = set(result.get("sonarqube", {}).get("files", {}))
+    if allowed is not None:
+        sonar_file_paths = sonar_file_paths & allowed
+
     all_paths = (
         set(result.get("halstead", {}))
         | set(result.get("state_metrics", {}))
         | set(result.get("derived", {}))
         | set(result.get("swift_complexity", {}))
-        | set(result.get("sonarqube", {}).get("files", {}))
+        | sonar_file_paths
     )
 
     files: dict[str, dict] = {}
@@ -374,11 +499,18 @@ def merge_into_files(result: dict) -> dict:
 # ---------------------------------------------------------------------------
 # Project analysis orchestrator
 # ---------------------------------------------------------------------------
-def analyze_project(project_path: str, sonar_token: str, local: bool = False) -> dict:
+def analyze_project(
+    project_path: str,
+    sonar_token: str,
+    local: bool = False,
+    allowed_files: set | None = None,
+) -> dict:
     language, framework, app_name = detect_project(project_path)
-    project_key = f"thesis-{framework}-{app_name}"
+    project_key = f"thesis-{framework}-{app_name}".lower()
 
     print(f"\n=== {app_name}  [{framework} / {language}]  key: {project_key} ===")
+    if allowed_files is not None:
+        print(f"  UI-file filter active: {len(allowed_files)} allowed file(s)")
 
     result: dict = {
         "project":          app_name,
@@ -386,33 +518,34 @@ def analyze_project(project_path: str, sonar_token: str, local: bool = False) ->
         "language":         language,
         "sonar_project_key": project_key,
         "project_path":     project_path,
+        "ui_files_filter":  allowed_files,   # kept so merge_into_files can use it
         "halstead":         {},
         "sonarqube":        {},
     }
 
     # Halstead
     print("  Running Halstead...")
-    result["halstead"] = run_halstead(project_path, language)
+    result["halstead"] = run_halstead(project_path, language, allowed_files)
     print(f"  Halstead: {len(result['halstead'])} file(s) analysed")
 
-    # SonarQube
+    # SonarQube — always scans the full project; per-file data is filtered later
     print("  Running SonarQube...")
     result["sonarqube"] = analyze_with_sonar(
         project_path, project_key, sonar_token, SONAR_ORG, local=local
     )
     n_files = len(result["sonarqube"].get("files", {}))
-    print(f"  SonarQube: project-level + {n_files} file(s)")
+    print(f"  SonarQube: project-level + {n_files} file(s) (project-level metrics cover full project)")
 
     # Swift complexity (Swift projects only)
     if language == "swift":
         print("  Running SwiftComplexityCLI...")
-        swift_results = run_swift_complexity(project_path)
+        swift_results = run_swift_complexity(project_path, allowed_files)
         result["swift_complexity"] = swift_results
         print(f"  SwiftComplexityCLI: {len(swift_results)} file(s) analysed")
 
     # State metrics
     print("  Running state metrics...")
-    result["state_metrics"] = run_state_metrics(project_path, language)
+    result["state_metrics"] = run_state_metrics(project_path, language, allowed_files)
     print(f"  State metrics: {len(result['state_metrics'])} file(s) analysed")
 
     # Derived metrics (mutable_variable_ratio, maintainability_index)
@@ -422,6 +555,9 @@ def analyze_project(project_path: str, sonar_token: str, local: bool = False) ->
     # Merge all per-file metrics into a single "files" dict
     merge_into_files(result)
 
+    # Don't serialise the filter set (it's a set of strings, fine as a list)
+    if result.get("ui_files_filter") is not None:
+        result["ui_files_filter"] = sorted(result["ui_files_filter"])
     return result
 
 
@@ -429,12 +565,22 @@ def analyze_project(project_path: str, sonar_token: str, local: bool = False) ->
 # Entry point
 # ---------------------------------------------------------------------------
 def main() -> None:
-    env = load_env()
-    single = "--single" in sys.argv
-    local = "--local" in sys.argv
-    args = [a for a in sys.argv[1:] if a not in ("--single", "--local")]
+    import argparse
 
-    if local:
+    parser = argparse.ArgumentParser(description="Analyze complexity metrics for mobile projects.")
+    parser.add_argument("target", nargs="?", help="Folder of projects, or single project path with --single")
+    parser.add_argument("--single", action="store_true", help="Treat target as a single project directory")
+    parser.add_argument("--local", action="store_true", help="Use local SonarQube (localhost:9000)")
+    parser.add_argument("--ui-csv", metavar="PATH", help="Path to repo_data.csv from repo_mining.py")
+    parser.add_argument("--repo-label", metavar="OWNER/REPO[@REF]",
+                        help="Repo label as it appears in the 'repo' column of --ui-csv")
+    parser.add_argument("--dominant-only", action="store_true",
+                        help="With --ui-csv: keep only files from the dominant framework")
+    args = parser.parse_args()
+
+    env = load_env()
+
+    if args.local:
         sonar_token = env.get("SONAR_LOCAL_TOKEN") or os.environ.get("SONAR_LOCAL_TOKEN", "")
         if not sonar_token:
             print("ERROR: SONAR_LOCAL_TOKEN not set in .env")
@@ -445,12 +591,20 @@ def main() -> None:
             print("ERROR: SONAR_TOKEN not set in .env")
             sys.exit(1)
 
-    target = os.path.abspath(args[0] if args else os.path.join(REPO_ROOT, "test"))
+    # UI-file filter (optional)
+    allowed_files: set | None = None
+    if args.ui_csv and args.single:
+        if not args.repo_label:
+            print("ERROR: --ui-csv with --single requires --repo-label")
+            sys.exit(1)
+        allowed_files = load_ui_file_filter(args.ui_csv, args.repo_label, args.dominant_only)
+
+    target = os.path.abspath(args.target if args.target else os.path.join(REPO_ROOT, "test"))
     if not os.path.isdir(target):
         print(f"ERROR: target folder not found: {target}")
         sys.exit(1)
 
-    if single:
+    if args.single:
         project_dirs = [target]
         print(f"Analyzing single project: {target}")
     else:
@@ -464,7 +618,25 @@ def main() -> None:
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
     for project_path in project_dirs:
-        result = analyze_project(project_path, sonar_token, local=local)
+        # In batch mode with --ui-csv, derive the repo label from the folder name
+        project_allowed = allowed_files  # already set for --single
+        if args.ui_csv and not args.single:
+            folder_name = os.path.basename(project_path.rstrip("/"))
+            entry = FOLDER_TO_LABEL.get(folder_name)
+            if entry is None:
+                print(f"  ⚠️  No CSV label for folder '{folder_name}' — skipping UI filter for this project")
+                project_allowed = None
+            else:
+                label, strip_prefix = (entry if isinstance(entry, tuple) else (entry, ""))
+                try:
+                    project_allowed = load_ui_file_filter(
+                        args.ui_csv, label, args.dominant_only, strip_prefix=strip_prefix)
+                except ValueError as e:
+                    print(f"  ⚠️  {e} — skipping UI filter for this project")
+                    project_allowed = None
+
+        result = analyze_project(project_path, sonar_token, local=args.local,
+                                 allowed_files=project_allowed)
         # Use framework prefix so same-app migrations don't overwrite each other
         # e.g. sunflower → compose_sunflower.json and views_sunflower.json
         out_path = os.path.join(RESULTS_DIR, f"{result['framework']}_{result['project']}.json")
