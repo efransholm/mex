@@ -1,0 +1,5365 @@
+{
+  "project": "OnionBrowser",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-onionbrowser",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/OnionBrowser",
+  "ui_files_filter": [
+    "OnionBrowser/AppDelegate.swift",
+    "OnionBrowser/Blocking/BlocklistViewController.swift",
+    "OnionBrowser/Blocking/BlocklistViewController.xib",
+    "OnionBrowser/Bookmarks/AddBookmarkActivity.swift",
+    "OnionBrowser/Bookmarks/BookmarkCell.swift",
+    "OnionBrowser/Bookmarks/BookmarkCell.xib",
+    "OnionBrowser/Bookmarks/BookmarkViewController.swift",
+    "OnionBrowser/Bookmarks/BookmarksViewController.swift",
+    "OnionBrowser/Bookmarks/BookmarksViewController.xib",
+    "OnionBrowser/Bookmarks/FavIconCell.xib",
+    "OnionBrowser/Bookmarks/FavIconRow.swift",
+    "OnionBrowser/Bookmarks/FolderViewController.swift",
+    "OnionBrowser/Bookmarks/SyncViewController.swift",
+    "OnionBrowser/Browsing/BrowsingViewController+Tabs.swift",
+    "OnionBrowser/Browsing/BrowsingViewController+Toolbar.swift",
+    "OnionBrowser/Browsing/BrowsingViewController+UIResponder.swift",
+    "OnionBrowser/Browsing/BrowsingViewController+UITextFieldDelegate.swift",
+    "OnionBrowser/Browsing/BrowsingViewController-iPad.xib",
+    "OnionBrowser/Browsing/BrowsingViewController.swift",
+    "OnionBrowser/Browsing/BrowsingViewController.xib",
+    "OnionBrowser/Browsing/CertificateViewController.swift",
+    "OnionBrowser/Browsing/CircuitNodeCell.swift",
+    "OnionBrowser/Browsing/CircuitNodeCell.xib",
+    "OnionBrowser/Browsing/CircuitViewController.swift",
+    "OnionBrowser/Browsing/CircuitViewController.xib",
+    "OnionBrowser/Browsing/DownloadActivity.swift",
+    "OnionBrowser/Browsing/HistoryViewController.swift",
+    "OnionBrowser/Browsing/LiveSearchViewController.swift",
+    "OnionBrowser/Browsing/SecurityLevelCell.swift",
+    "OnionBrowser/Browsing/SecurityLevelCell.xib",
+    "OnionBrowser/Browsing/SecurityPopUpViewController.swift",
+    "OnionBrowser/Browsing/SecurityPopUpViewController.xib",
+    "OnionBrowser/Browsing/Tab+Downloads.swift",
+    "OnionBrowser/Browsing/Tab+Gestures.swift",
+    "OnionBrowser/Browsing/Tab+WKUIDelegate.swift",
+    "OnionBrowser/Browsing/Tab.swift",
+    "OnionBrowser/Browsing/TabCell.swift",
+    "OnionBrowser/Browsing/TabCell.xib",
+    "OnionBrowser/Browsing/TlsCertificate.swift",
+    "OnionBrowser/Helpers/AlertHelper.swift",
+    "OnionBrowser/Helpers/AltSvcHeader.swift",
+    "OnionBrowser/Helpers/BlurredSnapshot.swift",
+    "OnionBrowser/Helpers/CALayer+Helpers.swift",
+    "OnionBrowser/Helpers/FixedFormViewController.swift",
+    "OnionBrowser/Helpers/Formatter.swift",
+    "OnionBrowser/Helpers/SearchableTableViewController.swift",
+    "OnionBrowser/Helpers/UIButton+Helpers.swift",
+    "OnionBrowser/Helpers/UIImage+Helpers.swift",
+    "OnionBrowser/Helpers/UIView+Helpers.swift",
+    "OnionBrowser/Helpers/UIViewController+Helpers.swift",
+    "OnionBrowser/Helpers/UpdateAdvertisement.swift",
+    "OnionBrowser/OrbotManager.swift",
+    "OnionBrowser/SceneDelegate.swift",
+    "OnionBrowser/Settings/AddSearchEngineViewController.swift",
+    "OnionBrowser/Settings/AddSiteViewController.swift",
+    "OnionBrowser/Settings/CustomSitesViewController.swift",
+    "OnionBrowser/Settings/DonationViewController.swift",
+    "OnionBrowser/Settings/HostSettings.swift",
+    "OnionBrowser/Settings/SearchEnginesViewController.swift",
+    "OnionBrowser/Settings/SecurityPresetsRow.swift",
+    "OnionBrowser/Settings/SecurityShield.swift",
+    "OnionBrowser/Settings/SecurityViewController.swift",
+    "OnionBrowser/Settings/Settings.swift",
+    "OnionBrowser/Settings/SettingsViewController.swift",
+    "OnionBrowser/Settings/Storage1ViewController.swift",
+    "OnionBrowser/Settings/Storage2ViewController.swift",
+    "OnionBrowser/Startup/InstallViewController.swift",
+    "OnionBrowser/Startup/InstallViewController.xib",
+    "OnionBrowser/Startup/OrbotOrBuiltInViewController.swift",
+    "OnionBrowser/Startup/OrbotOrBuiltInViewController.xib",
+    "OnionBrowser/Startup/PermissionViewController.swift",
+    "OnionBrowser/Startup/PermissionViewController.xib",
+    "OnionBrowser/Startup/StartOrbotViewController.swift",
+    "OnionBrowser/Startup/StartOrbotViewController.xib",
+    "OnionBrowser/Startup/StartTorViewController.swift",
+    "OnionBrowser/Startup/StartTorViewController.xib",
+    "OnionBrowser/Startup/WelcomeViewController.swift",
+    "OnionBrowser/Startup/WelcomeViewController.xib",
+    "OnionBrowser/Startup/WhyViewController.swift",
+    "OnionBrowser/Startup/WhyViewController.xib",
+    "Resources/Launch Screen.storyboard"
+  ],
+  "sonarqube_project": {
+    "complexity": 3,
+    "code_smells": 5,
+    "duplicated_lines_density": 0.0,
+    "sqale_debt_ratio": 0.3,
+    "comment_lines_density": 0.0,
+    "bugs": 23,
+    "comment_lines": 0,
+    "ncloc": 465,
+    "files": 3,
+    "lines": 546
+  },
+  "files": {
+    "OnionBrowser/AppDelegate.swift": {
+      "halstead": {
+        "loc": 183,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 120,
+        "N1_total_operators": 289,
+        "N2_total_operands": 294,
+        "vocabulary": 151,
+        "length": 583,
+        "calculated_length": 982.41,
+        "volume": 4219.99,
+        "difficulty": 37.98,
+        "effort": 160254.12,
+        "time_seconds": 8903.01,
+        "bugs_delivered": 1.407
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 20.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "shared",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneDelegates",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "browsingUis",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "allOpenTabs",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "testing",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationWillTermi",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "application",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "application",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationDidReceiv",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "adjustMuteSwitchBeha",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "dismissModals",
+            "cyclomatic": 7,
+            "cognitive": 13
+          },
+          {
+            "function": "maybeStopApp",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "dontStopApp",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "terminate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "endBackgroundTask",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.95,
+        "avg_cognitive": 1.4
+      }
+    },
+    "OnionBrowser/Blocking/BlocklistViewController.swift": {
+      "halstead": {
+        "loc": 224,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 182,
+        "N1_total_operators": 428,
+        "N2_total_operands": 447,
+        "vocabulary": 217,
+        "length": 875,
+        "calculated_length": 1545.94,
+        "volume": 6791.36,
+        "difficulty": 42.98,
+        "effort": 291897.76,
+        "time_seconds": 16216.54,
+        "bugs_delivered": 2.264
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4167,
+        "maintainability_index": 16.92
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "enableLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "filtered",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "updateSearchResults",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "update",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toggleBlocker",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hosts",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "toggle",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "newCell",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadBlocklist",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 1.85,
+        "avg_cognitive": 1.0
+      }
+    },
+    "OnionBrowser/Bookmarks/AddBookmarkActivity.swift": {
+      "halstead": {
+        "loc": 63,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 110,
+        "N2_total_operands": 104,
+        "vocabulary": 86,
+        "length": 214,
+        "calculated_length": 476.62,
+        "volume": 1375.22,
+        "difficulty": 22.53,
+        "effort": 30988.31,
+        "time_seconds": 1721.57,
+        "bugs_delivered": 0.458
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 37.03
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "activityType",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityTitle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "canPerform",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "perform",
+            "cyclomatic": 5,
+            "cognitive": 7
+          }
+        ],
+        "avg_cyclomatic": 2.17,
+        "avg_cognitive": 1.67
+      }
+    },
+    "OnionBrowser/Bookmarks/BookmarkCell.swift": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 87,
+        "N2_total_operands": 86,
+        "vocabulary": 57,
+        "length": 173,
+        "calculated_length": 283.66,
+        "volume": 1009.09,
+        "difficulty": 16.78,
+        "effort": 16933.02,
+        "time_seconds": 940.72,
+        "bugs_delivered": 0.336
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 41.29
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "nib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "reuseId",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "height",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "set",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.2,
+        "avg_cognitive": 0.4
+      }
+    },
+    "OnionBrowser/Bookmarks/BookmarkViewController.swift": {
+      "halstead": {
+        "loc": 154,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 102,
+        "N1_total_operators": 317,
+        "N2_total_operands": 287,
+        "vocabulary": 134,
+        "length": 604,
+        "calculated_length": 840.59,
+        "volume": 4267.92,
+        "difficulty": 45.02,
+        "effort": 192139.99,
+        "time_seconds": 10674.44,
+        "bugs_delivered": 1.423
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5455,
+        "maintainability_index": 23.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 7,
+            "cognitive": 12
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 7,
+            "cognitive": 14
+          },
+          {
+            "function": "addNew",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "acquireIcon",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "cleanUrl",
+            "cyclomatic": 5,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 4.8,
+        "avg_cognitive": 6.8
+      }
+    },
+    "OnionBrowser/Bookmarks/BookmarksViewController.swift": {
+      "halstead": {
+        "loc": 318,
+        "n1_unique_operators": 40,
+        "n2_unique_operands": 237,
+        "N1_total_operators": 786,
+        "N2_total_operands": 800,
+        "vocabulary": 277,
+        "length": 1586,
+        "calculated_length": 2082.51,
+        "volume": 12868.4,
+        "difficulty": 67.51,
+        "effort": 868752.41,
+        "time_seconds": 48264.02,
+        "bugs_delivered": 4.289
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4138,
+        "maintainability_index": 8.97
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isFiltering",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "instantiate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 5,
+            "cognitive": 2
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 10
+          },
+          {
+            "function": "updateSearchResults",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "needsReload",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "documentPicker",
+            "cyclomatic": 7,
+            "cognitive": 9
+          },
+          {
+            "function": "dismiss_",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "exportBookmarks",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "importBookmarks",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "add",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addFolder",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "edit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showSyncScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateButtons",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.28,
+        "avg_cognitive": 1.6
+      }
+    },
+    "OnionBrowser/Bookmarks/FavIconRow.swift": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 54,
+        "N2_total_operands": 42,
+        "vocabulary": 44,
+        "length": 96,
+        "calculated_length": 198.61,
+        "volume": 524.11,
+        "difficulty": 12.0,
+        "effort": 6289.27,
+        "time_seconds": 349.4,
+        "bugs_delivered": 0.175
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 48.79
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "update",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Bookmarks/FolderViewController.swift": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 153,
+        "N2_total_operands": 144,
+        "vocabulary": 93,
+        "length": 297,
+        "calculated_length": 528.64,
+        "volume": 1942.13,
+        "difficulty": 27.94,
+        "effort": 54263.7,
+        "time_seconds": 3014.65,
+        "bugs_delivered": 0.647
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 34.1
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 5,
+            "cognitive": 9
+          },
+          {
+            "function": "addNew",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.67,
+        "avg_cognitive": 4.33
+      }
+    },
+    "OnionBrowser/Bookmarks/SyncViewController.swift": {
+      "halstead": {
+        "loc": 120,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 111,
+        "N1_total_operators": 312,
+        "N2_total_operands": 324,
+        "vocabulary": 136,
+        "length": 636,
+        "calculated_length": 870.28,
+        "volume": 4507.63,
+        "difficulty": 36.49,
+        "effort": 164467.45,
+        "time_seconds": 9137.08,
+        "bugs_delivered": 1.503
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 13
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 27.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 9,
+            "cognitive": 7
+          }
+        ],
+        "avg_cyclomatic": 9.0,
+        "avg_cognitive": 7.0
+      }
+    },
+    "OnionBrowser/Browsing/BrowsingViewController+Tabs.swift": {
+      "halstead": {
+        "loc": 160,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 144,
+        "N1_total_operators": 364,
+        "N2_total_operands": 391,
+        "vocabulary": 172,
+        "length": 755,
+        "calculated_length": 1167.08,
+        "volume": 5606.83,
+        "difficulty": 38.01,
+        "effort": 213137.41,
+        "time_seconds": 11840.97,
+        "bugs_delivered": 1.869
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.125,
+        "maintainability_index": 22.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "preferredStatusBarSt",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "cellSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showOverview",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "newTabFromOverview",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideOverview",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "close",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "hideOverview",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.79,
+        "avg_cognitive": 0.79
+      }
+    },
+    "OnionBrowser/Browsing/BrowsingViewController+Toolbar.swift": {
+      "halstead": {
+        "loc": 89,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 141,
+        "N2_total_operands": 144,
+        "vocabulary": 90,
+        "length": 285,
+        "calculated_length": 510.47,
+        "volume": 1850.18,
+        "difficulty": 24.72,
+        "effort": 45729.78,
+        "time_seconds": 2540.54,
+        "bugs_delivered": 0.617
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "scrollViewDidScrollT",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollViewDidScroll",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "gestureRecognizer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHistory",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showToolbar",
+            "cyclomatic": 7,
+            "cognitive": 9
+          }
+        ],
+        "avg_cyclomatic": 2.6,
+        "avg_cognitive": 2.2
+      }
+    },
+    "OnionBrowser/Browsing/BrowsingViewController+UIResponder.swift": {
+      "halstead": {
+        "loc": 88,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 204,
+        "N2_total_operands": 188,
+        "vocabulary": 97,
+        "length": 392,
+        "calculated_length": 553.63,
+        "volume": 2587.17,
+        "difficulty": 42.09,
+        "effort": 108892.65,
+        "time_seconds": 6049.59,
+        "bugs_delivered": 0.862
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 31.13
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "keyCommands",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "handle",
+            "cyclomatic": 14,
+            "cognitive": 13
+          }
+        ],
+        "avg_cyclomatic": 9.5,
+        "avg_cognitive": 8.0
+      }
+    },
+    "OnionBrowser/Browsing/BrowsingViewController+UITextFieldDelegate.swift": {
+      "halstead": {
+        "loc": 208,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 134,
+        "N1_total_operators": 399,
+        "N2_total_operands": 356,
+        "vocabulary": 162,
+        "length": 755,
+        "calculated_length": 1081.46,
+        "volume": 5541.59,
+        "difficulty": 37.19,
+        "effort": 206113.94,
+        "time_seconds": 11450.77,
+        "bugs_delivered": 1.847
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 18.11
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "textFieldDidBeginEdi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldShouldRetur",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "textFieldDidEndEditi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchDidChange",
+            "cyclomatic": 7,
+            "cognitive": 8
+          },
+          {
+            "function": "updateSearchField",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "prettyTitle",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "updateEncryptionBt",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "parseSearch",
+            "cyclomatic": 13,
+            "cognitive": 21
+          },
+          {
+            "function": "setHttpsScheme",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 4.22,
+        "avg_cognitive": 4.78
+      }
+    },
+    "OnionBrowser/Browsing/BrowsingViewController.swift": {
+      "halstead": {
+        "loc": 546,
+        "n1_unique_operators": 46,
+        "n2_unique_operands": 336,
+        "N1_total_operators": 1302,
+        "N2_total_operands": 1181,
+        "vocabulary": 382,
+        "length": 2483,
+        "calculated_length": 3073.9,
+        "volume": 21297.76,
+        "difficulty": 80.84,
+        "effort": 1721758.75,
+        "time_seconds": 95653.26,
+        "bugs_delivered": 7.099
+      },
+      "state_metrics": {
+        "mutable_vars": 34,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "searchBarHeightConst",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "securityBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchFl.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "torBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tabsCollection.didSe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toolbarHeightConstra",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "backBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "frwrdBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "findBt.didSet",
+            "cyclomatic": 6,
+            "cognitive": 8
+          },
+          {
+            "function": "tabsBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "settingsBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "newTabFromOverviewBt",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideOverviewBt.didSe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "currentTab.get",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "currentTab.set",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "init",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "encodeRestorableStat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "encodeRestorableStat",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "decodeRestorableStat",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "decodeRestorableStat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "decodeRestorableStat",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "action",
+            "cyclomatic": 14,
+            "cognitive": 6
+          },
+          {
+            "function": "showBookmarks",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showSettings",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "keyboardWillShow",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardWillBeHidden",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateChrome",
+            "cyclomatic": 8,
+            "cognitive": 13
+          },
+          {
+            "function": "addNewTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addNewTab",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "removeTab",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getIndex",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "unfocusSearchField",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "becomesVisible",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "addEmptyTabAndFocus",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "switchToTab",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "removeCurrentTab",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "removeAllTabs",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "focusSearchField",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "debug",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateTabCount",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "updateReloadBt",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.1,
+        "avg_cognitive": 1.17
+      }
+    },
+    "OnionBrowser/Browsing/CertificateViewController.swift": {
+      "halstead": {
+        "loc": 91,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 103,
+        "N1_total_operators": 254,
+        "N2_total_operands": 273,
+        "vocabulary": 124,
+        "length": 527,
+        "calculated_length": 780.95,
+        "volume": 3664.86,
+        "difficulty": 27.83,
+        "effort": 101993.45,
+        "time_seconds": 5666.3,
+        "bugs_delivered": 1.222
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 30.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "done",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "kv",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.71,
+        "avg_cognitive": 0.86
+      }
+    },
+    "OnionBrowser/Browsing/CircuitNodeCell.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 99,
+        "N2_total_operands": 96,
+        "vocabulary": 66,
+        "length": 195,
+        "calculated_length": 347.9,
+        "volume": 1178.66,
+        "difficulty": 14.12,
+        "effort": 16639.86,
+        "time_seconds": 924.44,
+        "bugs_delivered": 0.393
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 41.84
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "nib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "reuseId",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "height",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "set",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "OnionBrowser/Browsing/CircuitViewController.swift": {
+      "halstead": {
+        "loc": 214,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 174,
+        "N1_total_operators": 408,
+        "N2_total_operands": 429,
+        "vocabulary": 208,
+        "length": 837,
+        "calculated_length": 1468.05,
+        "volume": 6445.27,
+        "difficulty": 41.91,
+        "effort": 270145.63,
+        "time_seconds": 15008.09,
+        "bugs_delivered": 2.148
+      },
+      "state_metrics": {
+        "mutable_vars": 15,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 16
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.625,
+        "maintainability_index": 17.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "headerLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "noCircuitsLb1.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "noCircuitsLb2.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "newCircuitsBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bridgeConfigBt.didSe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "preferredContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "preferredContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "adaptivePresentation",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transport.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transport.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customBridges.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customBridges.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "countryCode.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "countryCode.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "save",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "newCircuits",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "showBridgeSelection",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "reloadCircuits",
+            "cyclomatic": 10,
+            "cognitive": 17
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.96
+      }
+    },
+    "OnionBrowser/Browsing/DownloadActivity.swift": {
+      "halstead": {
+        "loc": 153,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 137,
+        "N1_total_operators": 368,
+        "N2_total_operands": 339,
+        "vocabulary": 169,
+        "length": 707,
+        "calculated_length": 1132.43,
+        "volume": 5232.42,
+        "difficulty": 39.59,
+        "effort": 207158.07,
+        "time_seconds": 11508.78,
+        "bugs_delivered": 1.744
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5556,
+        "maintainability_index": 23.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "activityType",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityTitle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "canPerform",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "perform",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "urlSession",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "urlSession",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "urlSession",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "urlSession",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "cancel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isGood",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getVcAndTab",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "showError",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.71,
+        "avg_cognitive": 0.71
+      }
+    },
+    "OnionBrowser/Browsing/HistoryViewController.swift": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 123,
+        "N2_total_operands": 122,
+        "vocabulary": 83,
+        "length": 245,
+        "calculated_length": 466.51,
+        "volume": 1561.88,
+        "difficulty": 16.89,
+        "effort": 26383.84,
+        "time_seconds": 1465.77,
+        "bugs_delivered": 0.521
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5714,
+        "maintainability_index": 38.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "instantiate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "_dismiss",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.17,
+        "avg_cognitive": 0.17
+      }
+    },
+    "OnionBrowser/Browsing/LiveSearchViewController.swift": {
+      "halstead": {
+        "loc": 162,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 184,
+        "N1_total_operators": 418,
+        "N2_total_operands": 387,
+        "vocabulary": 218,
+        "length": 805,
+        "calculated_length": 1557.31,
+        "volume": 6253.39,
+        "difficulty": 35.76,
+        "effort": 223592.62,
+        "time_seconds": 12421.81,
+        "bugs_delivered": 2.084
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 13
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5714,
+        "maintainability_index": 21.59
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hide",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "update",
+            "cyclomatic": 11,
+            "cognitive": 11
+          },
+          {
+            "function": "constructRequest",
+            "cyclomatic": 7,
+            "cognitive": 8
+          }
+        ],
+        "avg_cyclomatic": 3.38,
+        "avg_cognitive": 2.88
+      }
+    },
+    "OnionBrowser/Browsing/SecurityLevelCell.swift": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 82,
+        "N1_total_operators": 159,
+        "N2_total_operands": 157,
+        "vocabulary": 101,
+        "length": 316,
+        "calculated_length": 602.03,
+        "volume": 2103.99,
+        "difficulty": 18.19,
+        "effort": 38269.61,
+        "time_seconds": 2126.09,
+        "bugs_delivered": 0.701
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8,
+        "maintainability_index": 34.22
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "nib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "reuseId",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "height",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "radioLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setSelected",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "set",
+            "cyclomatic": 4,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 1.57,
+        "avg_cognitive": 1.0
+      }
+    },
+    "OnionBrowser/Browsing/SecurityPopUpViewController.swift": {
+      "halstead": {
+        "loc": 127,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 123,
+        "N1_total_operators": 288,
+        "N2_total_operands": 284,
+        "vocabulary": 152,
+        "length": 572,
+        "calculated_length": 994.81,
+        "volume": 4145.81,
+        "difficulty": 33.48,
+        "effort": 138800.52,
+        "time_seconds": 7711.14,
+        "bugs_delivered": 1.382
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6923,
+        "maintainability_index": 25.82
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "headerLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customizeBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "learnMoreBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "preferredContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "preferredContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 5,
+            "cognitive": 2
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "adaptivePresentation",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "learnMore",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.47,
+        "avg_cognitive": 0.33
+      }
+    },
+    "OnionBrowser/Browsing/Tab+Downloads.swift": {
+      "halstead": {
+        "loc": 85,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 77,
+        "N1_total_operators": 150,
+        "N2_total_operands": 149,
+        "vocabulary": 102,
+        "length": 299,
+        "calculated_length": 598.64,
+        "volume": 1995.06,
+        "difficulty": 24.19,
+        "effort": 48257.02,
+        "time_seconds": 2680.95,
+        "bugs_delivered": 0.665
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 32.92
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "cancelDownload",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "download",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "download",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "download",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "downloadDidFinish",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfPreviewItems",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showDownload",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.75,
+        "avg_cognitive": 0.75
+      }
+    },
+    "OnionBrowser/Browsing/Tab+Gestures.swift": {
+      "halstead": {
+        "loc": 46,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 38,
+        "N1_total_operators": 80,
+        "N2_total_operands": 66,
+        "vocabulary": 57,
+        "length": 146,
+        "calculated_length": 280.13,
+        "volume": 851.6,
+        "difficulty": 16.5,
+        "effort": 14051.43,
+        "time_seconds": 780.64,
+        "bugs_delivered": 0.284
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 42.54
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setupGestureRecogniz",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "removeGestureRecogni",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "refresherTriggered",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "OnionBrowser/Browsing/Tab+WKUIDelegate.swift": {
+      "halstead": {
+        "loc": 141,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 129,
+        "N1_total_operators": 384,
+        "N2_total_operands": 428,
+        "vocabulary": 150,
+        "length": 812,
+        "calculated_length": 996.69,
+        "volume": 5869.8,
+        "difficulty": 34.84,
+        "effort": 204487.48,
+        "time_seconds": 11360.42,
+        "bugs_delivered": 1.957
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1111,
+        "maintainability_index": 25.12
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "webView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "webViewDidClose",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "OnionBrowser/Browsing/Tab.swift": {
+      "halstead": {
+        "loc": 435,
+        "n1_unique_operators": 49,
+        "n2_unique_operands": 270,
+        "N1_total_operators": 830,
+        "N2_total_operands": 762,
+        "vocabulary": 319,
+        "length": 1592,
+        "calculated_length": 2455.86,
+        "volume": 13241.32,
+        "difficulty": 69.14,
+        "effort": 915563.78,
+        "time_seconds": 50864.65,
+        "bugs_delivered": 4.414
+      },
+      "state_metrics": {
+        "mutable_vars": 26,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 23
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7027,
+        "maintainability_index": 2.82
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "defaultUserAgent.did",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "title",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "index",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tlsCertificate.didSe",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "progress.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isUserInteractionEna",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "conf.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "conf.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollViewDelegate.d",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "canGoBack",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "canGoForward",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isLoading",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "observeValue",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "refresh",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "stop",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "load",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "load",
+            "cyclomatic": 9,
+            "cognitive": 10
+          },
+          {
+            "function": "search",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "reset",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "goBack",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "goForward",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "toggleFind",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "stringByEvaluatingJa",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "close",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "empty",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getSnapshot",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "clearSnapshot",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "reinitWebView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setup",
+            "cyclomatic": 6,
+            "cognitive": 8
+          },
+          {
+            "function": "destructWebView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hostSettingsChanged",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.29,
+        "avg_cognitive": 1.43
+      }
+    },
+    "OnionBrowser/Browsing/TabCell.swift": {
+      "halstead": {
+        "loc": 94,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 77,
+        "N1_total_operators": 198,
+        "N2_total_operands": 182,
+        "vocabulary": 111,
+        "length": 380,
+        "calculated_length": 655.52,
+        "volume": 2581.88,
+        "difficulty": 40.18,
+        "effort": 103744.55,
+        "time_seconds": 5763.59,
+        "bugs_delivered": 0.861
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 30.78
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "nib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "close",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "gestureRecognizer",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "gestureRecognizer",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "setup",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pan",
+            "cyclomatic": 6,
+            "cognitive": 7
+          }
+        ],
+        "avg_cyclomatic": 2.12,
+        "avg_cognitive": 1.12
+      }
+    },
+    "OnionBrowser/Browsing/TlsCertificate.swift": {
+      "halstead": {
+        "loc": 294,
+        "n1_unique_operators": 37,
+        "n2_unique_operands": 196,
+        "N1_total_operators": 641,
+        "N2_total_operands": 559,
+        "vocabulary": 233,
+        "length": 1200,
+        "calculated_length": 1685.23,
+        "volume": 9437.02,
+        "difficulty": 52.76,
+        "effort": 497923.35,
+        "time_seconds": 27662.41,
+        "bugs_delivered": 3.146
+      },
+      "state_metrics": {
+        "mutable_vars": 13,
+        "immutable_vars": 22,
+        "observable_state_vars": 0,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3714,
+        "maintainability_index": 10.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "hasWeakSignatureAlgo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isExpired",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "load",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "init",
+            "cyclomatic": 14,
+            "cognitive": 16
+          },
+          {
+            "function": "parseEntity",
+            "cyclomatic": 7,
+            "cognitive": 7
+          },
+          {
+            "function": "map",
+            "cyclomatic": 11,
+            "cognitive": 1
+          },
+          {
+            "function": "commonName",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "serialNumber",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "country",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "locality",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "state",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "address",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "organization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orgUnit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "businessCategory",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "postalCode",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "label",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "add",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getAll",
+            "cyclomatic": 5,
+            "cognitive": 6
+          }
+        ],
+        "avg_cyclomatic": 2.81,
+        "avg_cognitive": 1.67
+      }
+    },
+    "OnionBrowser/Helpers/AlertHelper.swift": {
+      "halstead": {
+        "loc": 123,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 187,
+        "N2_total_operands": 184,
+        "vocabulary": 67,
+        "length": 371,
+        "calculated_length": 353.29,
+        "volume": 2250.52,
+        "difficulty": 28.86,
+        "effort": 64956.16,
+        "time_seconds": 3608.68,
+        "bugs_delivered": 0.75
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 29.86
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "present",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "build",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "defaultAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "cancelAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "destructiveAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addTextField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addPasswordField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.14,
+        "avg_cognitive": 0.14
+      }
+    },
+    "OnionBrowser/Helpers/AltSvcHeader.swift": {
+      "halstead": {
+        "loc": 198,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 96,
+        "N1_total_operators": 386,
+        "N2_total_operands": 327,
+        "vocabulary": 132,
+        "length": 713,
+        "calculated_length": 818.27,
+        "volume": 5022.65,
+        "difficulty": 61.31,
+        "effort": 307951.41,
+        "time_seconds": 17108.41,
+        "bugs_delivered": 1.674
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 16,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 19.95
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "init",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "description",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "parse",
+            "cyclomatic": 7,
+            "cognitive": 7
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hash",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isEqual",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "description",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hash",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isEqual",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "description",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.31,
+        "avg_cognitive": 1.54
+      }
+    },
+    "OnionBrowser/Helpers/BlurredSnapshot.swift": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 46,
+        "N2_total_operands": 41,
+        "vocabulary": 38,
+        "length": 87,
+        "calculated_length": 163.34,
+        "volume": 456.57,
+        "difficulty": 11.96,
+        "effort": 5459.81,
+        "time_seconds": 303.32,
+        "bugs_delivered": 0.152
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 46.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "create",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "remove",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "OnionBrowser/Helpers/CALayer+Helpers.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 31,
+        "N2_total_operands": 28,
+        "vocabulary": 30,
+        "length": 59,
+        "calculated_length": 118.08,
+        "volume": 289.51,
+        "difficulty": 9.33,
+        "effort": 2702.06,
+        "time_seconds": 150.11,
+        "bugs_delivered": 0.097
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.25
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeSnapshot",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Helpers/FixedFormViewController.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 17,
+        "N2_total_operands": 15,
+        "vocabulary": 24,
+        "length": 32,
+        "calculated_length": 86.16,
+        "volume": 146.72,
+        "difficulty": 6.35,
+        "effort": 931.1,
+        "time_seconds": 51.73,
+        "bugs_delivered": 0.049
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 55.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "keyboardWillShow",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "OnionBrowser/Helpers/Formatter.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 15,
+        "N2_total_operands": 15,
+        "vocabulary": 20,
+        "length": 30,
+        "calculated_length": 67.76,
+        "volume": 129.66,
+        "difficulty": 4.04,
+        "effort": 523.62,
+        "time_seconds": 29.09,
+        "bugs_delivered": 0.043
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 59.42
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "localize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Helpers/SearchableTableViewController.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 43,
+        "N2_total_operands": 41,
+        "vocabulary": 42,
+        "length": 84,
+        "calculated_length": 187.91,
+        "volume": 452.95,
+        "difficulty": 10.25,
+        "effort": 4642.79,
+        "time_seconds": 257.93,
+        "bugs_delivered": 0.151
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.32
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isFiltering",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "searchText",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateSearchResults",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Helpers/UIButton+Helpers.swift": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 25,
+        "N2_total_operands": 20,
+        "vocabulary": 17,
+        "length": 45,
+        "calculated_length": 52.87,
+        "volume": 183.94,
+        "difficulty": 7.0,
+        "effort": 1287.55,
+        "time_seconds": 71.53,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 56.11
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setTitle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Helpers/UIImage+Helpers.swift": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 95,
+        "N2_total_operands": 96,
+        "vocabulary": 56,
+        "length": 191,
+        "calculated_length": 271.76,
+        "volume": 1109.2,
+        "difficulty": 28.8,
+        "effort": 31945.1,
+        "time_seconds": 1774.73,
+        "bugs_delivered": 0.37
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.27
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "tinted",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "topCropped",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.5
+      }
+    },
+    "OnionBrowser/Helpers/UIView+Helpers.swift": {
+      "halstead": {
+        "loc": 53,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 44,
+        "N1_total_operators": 98,
+        "N2_total_operands": 92,
+        "vocabulary": 64,
+        "length": 190,
+        "calculated_length": 326.65,
+        "volume": 1140.0,
+        "difficulty": 20.91,
+        "effort": 23836.36,
+        "time_seconds": 1324.24,
+        "bugs_delivered": 0.38
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 40.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "sceneDelegate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "add",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "transition",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "fromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.75
+      }
+    },
+    "OnionBrowser/Helpers/UIViewController+Helpers.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 82,
+        "N2_total_operands": 70,
+        "vocabulary": 49,
+        "length": 152,
+        "calculated_length": 228.64,
+        "volume": 853.44,
+        "difficulty": 20.32,
+        "effort": 17344.02,
+        "time_seconds": 963.56,
+        "bugs_delivered": 0.284
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 39.86
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "top",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "subViewController",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "present",
+            "cyclomatic": 4,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 3.67,
+        "avg_cognitive": 3.0
+      }
+    },
+    "OnionBrowser/Helpers/UpdateAdvertisement.swift": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 47,
+        "N2_total_operands": 56,
+        "vocabulary": 47,
+        "length": 103,
+        "calculated_length": 221.08,
+        "volume": 572.12,
+        "difficulty": 10.71,
+        "effort": 6125.08,
+        "time_seconds": 340.28,
+        "bugs_delivered": 0.191
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 46.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "lockdownMode",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "OnionBrowser/OrbotManager.swift": {
+      "halstead": {
+        "loc": 202,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 98,
+        "N1_total_operators": 333,
+        "N2_total_operands": 287,
+        "vocabulary": 134,
+        "length": 620,
+        "calculated_length": 834.36,
+        "volume": 4380.98,
+        "difficulty": 52.71,
+        "effort": 230939.98,
+        "time_seconds": 12830.0,
+        "bugs_delivered": 1.46
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 18.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "closeCircuits",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "getCircuits",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "checkStatus",
+            "cyclomatic": 15,
+            "cognitive": 36
+          },
+          {
+            "function": "allowRequests",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "orbotStatusChanged",
+            "cyclomatic": 7,
+            "cognitive": 6
+          },
+          {
+            "function": "statusChangeListenin",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "hasOrbotPermission",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "fullStop",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 5.12,
+        "avg_cognitive": 6.88
+      }
+    },
+    "OnionBrowser/SceneDelegate.swift": {
+      "halstead": {
+        "loc": 221,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 154,
+        "N1_total_operators": 448,
+        "N2_total_operands": 430,
+        "vocabulary": 187,
+        "length": 878,
+        "calculated_length": 1285.55,
+        "volume": 6626.17,
+        "difficulty": 46.07,
+        "effort": 305277.27,
+        "time_seconds": 16959.85,
+        "bugs_delivered": 2.209
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6154,
+        "maintainability_index": 16.45
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "scene",
+            "cyclomatic": 11,
+            "cognitive": 8
+          },
+          {
+            "function": "sceneDidBecomeActive",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "windowScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneWillResignActiv",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "sceneDidDisconnect",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stateRestorationActi",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "show",
+            "cyclomatic": 8,
+            "cognitive": 10
+          },
+          {
+            "function": "handle",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "handle",
+            "cyclomatic": 5,
+            "cognitive": 8
+          }
+        ],
+        "avg_cyclomatic": 4.2,
+        "avg_cognitive": 4.1
+      }
+    },
+    "OnionBrowser/Settings/AddSearchEngineViewController.swift": {
+      "halstead": {
+        "loc": 98,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 256,
+        "N2_total_operands": 251,
+        "vocabulary": 117,
+        "length": 507,
+        "calculated_length": 712.65,
+        "volume": 3483.27,
+        "difficulty": 37.65,
+        "effort": 131145.3,
+        "time_seconds": 7285.85,
+        "bugs_delivered": 1.161
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8571,
+        "maintainability_index": 30.55
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 9,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 9.0,
+        "avg_cognitive": 5.0
+      }
+    },
+    "OnionBrowser/Settings/AddSiteViewController.swift": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 156,
+        "N2_total_operands": 146,
+        "vocabulary": 98,
+        "length": 302,
+        "calculated_length": 569.54,
+        "volume": 1997.64,
+        "difficulty": 23.68,
+        "effort": 47295.53,
+        "time_seconds": 2627.53,
+        "bugs_delivered": 0.666
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 35.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "add",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "getCurrentTabInfo",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.33
+      }
+    },
+    "OnionBrowser/Settings/CustomSitesViewController.swift": {
+      "halstead": {
+        "loc": 114,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 108,
+        "N1_total_operators": 261,
+        "N2_total_operands": 277,
+        "vocabulary": 129,
+        "length": 538,
+        "calculated_length": 821.77,
+        "volume": 3772.04,
+        "difficulty": 26.93,
+        "effort": 101583.14,
+        "time_seconds": 5643.51,
+        "bugs_delivered": 1.257
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.375,
+        "maintainability_index": 27.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "updateSearchResults",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.62,
+        "avg_cognitive": 0.77
+      }
+    },
+    "OnionBrowser/Settings/DonationViewController.swift": {
+      "halstead": {
+        "loc": 206,
+        "n1_unique_operators": 38,
+        "n2_unique_operands": 154,
+        "N1_total_operators": 469,
+        "N2_total_operands": 464,
+        "vocabulary": 192,
+        "length": 933,
+        "calculated_length": 1318.51,
+        "volume": 7076.77,
+        "difficulty": 57.25,
+        "effort": 405122.11,
+        "time_seconds": 22506.78,
+        "bugs_delivered": 2.359
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 15,
+        "observable_state_vars": 0,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 18.0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "productsRequest",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "paymentQueue",
+            "cyclomatic": 5,
+            "cognitive": 6
+          },
+          {
+            "function": "fetchAvailableProduc",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeDonation",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "showError",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.62,
+        "avg_cognitive": 1.92
+      }
+    },
+    "OnionBrowser/Settings/HostSettings.swift": {
+      "halstead": {
+        "loc": 319,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 106,
+        "N1_total_operators": 477,
+        "N2_total_operands": 462,
+        "vocabulary": 137,
+        "length": 939,
+        "calculated_length": 866.74,
+        "volume": 6665.05,
+        "difficulty": 67.56,
+        "effort": 450268.29,
+        "time_seconds": 25014.9,
+        "bugs_delivered": 2.222
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1364,
+        "maintainability_index": 12.42
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "raw.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "raw.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hosts",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "forDefault",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "`for`",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "has",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "remove",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "store",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "ignoreTlsErrors.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ignoreTlsErrors.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "whitelistCookies.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "whitelistCookies.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "blockInsecureHttp.ge",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "blockInsecureHttp.se",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "universalLinkProtect",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "universalLinkProtect",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "followOnionLocationH",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "followOnionLocationH",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "userAgent.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "userAgent.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "javaScript.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "javaScript.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "lockdownMode.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "lockdownMode.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orientationAndMotion",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orientationAndMotion",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "mediaCapture.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "mediaCapture.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "save",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "get",
+            "cyclomatic": 5,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 1.44,
+        "avg_cognitive": 0.47
+      }
+    },
+    "OnionBrowser/Settings/SearchEnginesViewController.swift": {
+      "halstead": {
+        "loc": 81,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 77,
+        "N1_total_operators": 201,
+        "N2_total_operands": 201,
+        "vocabulary": 99,
+        "length": 402,
+        "calculated_length": 580.65,
+        "volume": 2665.0,
+        "difficulty": 28.71,
+        "effort": 76523.61,
+        "time_seconds": 4251.31,
+        "bugs_delivered": 0.888
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setEditing",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "add",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.17,
+        "avg_cognitive": 1.33
+      }
+    },
+    "OnionBrowser/Settings/SecurityPresetsRow.swift": {
+      "halstead": {
+        "loc": 149,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 102,
+        "N1_total_operators": 350,
+        "N2_total_operands": 310,
+        "vocabulary": 133,
+        "length": 660,
+        "calculated_length": 834.17,
+        "volume": 4656.49,
+        "difficulty": 47.11,
+        "effort": 219357.03,
+        "time_seconds": 12186.5,
+        "bugs_delivered": 1.552
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 22.07
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "description",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "shortcode",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "color",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "recommendation",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "explanation",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "values",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "shieldSelected",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "setup",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "update",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "OnionBrowser/Settings/SecurityShield.swift": {
+      "halstead": {
+        "loc": 95,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 88,
+        "N1_total_operators": 267,
+        "N2_total_operands": 288,
+        "vocabulary": 105,
+        "length": 555,
+        "calculated_length": 637.92,
+        "volume": 3726.41,
+        "difficulty": 27.82,
+        "effort": 103661.85,
+        "time_seconds": 5758.99,
+        "bugs_delivered": 1.242
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 14
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 31.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isSelected.didSet",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "encode",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.5
+      }
+    },
+    "OnionBrowser/Settings/SecurityViewController.swift": {
+      "halstead": {
+        "loc": 301,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 182,
+        "N1_total_operators": 816,
+        "N2_total_operands": 830,
+        "vocabulary": 213,
+        "length": 1646,
+        "calculated_length": 1520.0,
+        "volume": 12731.33,
+        "difficulty": 70.69,
+        "effort": 899937.29,
+        "time_seconds": 49996.52,
+        "bugs_delivered": 4.244
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 16,
+        "observable_state_vars": 0,
+        "state_updates": 21
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1579,
+        "maintainability_index": 14.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 11,
+            "cognitive": 12
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "_dismiss",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "alertBeforeChange",
+            "cyclomatic": 4,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 3.8,
+        "avg_cognitive": 3.0
+      }
+    },
+    "OnionBrowser/Settings/Settings.swift": {
+      "halstead": {
+        "loc": 361,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 152,
+        "N1_total_operators": 657,
+        "N2_total_operands": 705,
+        "vocabulary": 181,
+        "length": 1362,
+        "calculated_length": 1242.57,
+        "volume": 10214.79,
+        "difficulty": 67.25,
+        "effort": 686978.24,
+        "time_seconds": 38165.46,
+        "bugs_delivered": 3.405
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0769,
+        "maintainability_index": 6.59
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "details",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "set",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toDict",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "description",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "stateRestoreLock.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stateRestoreLock.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didWelcome.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didWelcome.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bookmarkFirstRunDone",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bookmarkFirstRunDone",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bookmarksMigratedToO",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bookmarksMigratedToO",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateAdvertiseLockd",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateAdvertiseLockd",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchEngine.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchEngine.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchEngines",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customSearchEngines.",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customSearchEngines.",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchLive.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchLive.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchLiveStopDot.ge",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchLiveStopDot.se",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideContent.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideContent.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sendGpc.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sendGpc.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tabSecurity.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tabSecurity.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "openTabs.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "openTabs.set",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "muteWithSwitch.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "muteWithSwitch.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "disableBookmarksOnSt",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "disableBookmarksOnSt",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thirdPartyKeyboards.",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thirdPartyKeyboards.",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudServer.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudServer.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudUsername.ge",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudUsername.se",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudPassword.ge",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextcloudPassword.se",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orbotApiToken.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orbotApiToken.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "orbotWasAlreadyInsta",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "orbotWasAlreadyInsta",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "useBuiltInTor.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "useBuiltInTor.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "enableUrlBlocker.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "enableUrlBlocker.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.34,
+        "avg_cognitive": 0.32
+      }
+    },
+    "OnionBrowser/Settings/SettingsViewController.swift": {
+      "halstead": {
+        "loc": 300,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 184,
+        "N1_total_operators": 782,
+        "N2_total_operands": 780,
+        "vocabulary": 215,
+        "length": 1562,
+        "calculated_length": 1537.92,
+        "volume": 12102.68,
+        "difficulty": 65.71,
+        "effort": 795224.82,
+        "time_seconds": 44179.16,
+        "bugs_delivered": 4.034
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 26
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 14.69
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "instantiate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 16,
+            "cognitive": 18
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showDefaultSecurity",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismsiss_",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 4.0,
+        "avg_cognitive": 3.6
+      }
+    },
+    "OnionBrowser/Settings/Storage1ViewController.swift": {
+      "halstead": {
+        "loc": 146,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 138,
+        "N1_total_operators": 392,
+        "N2_total_operands": 405,
+        "vocabulary": 164,
+        "length": 797,
+        "calculated_length": 1103.19,
+        "volume": 5863.97,
+        "difficulty": 38.15,
+        "effort": 223723.16,
+        "time_seconds": 12429.06,
+        "bugs_delivered": 1.955
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4,
+        "maintainability_index": 21.69
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "updateSearchResults",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.92,
+        "avg_cognitive": 1.75
+      }
+    },
+    "OnionBrowser/Settings/Storage2ViewController.swift": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 78,
+        "N2_total_operands": 81,
+        "vocabulary": 63,
+        "length": 159,
+        "calculated_length": 323.57,
+        "volume": 950.39,
+        "difficulty": 14.97,
+        "effort": 14224.82,
+        "time_seconds": 790.27,
+        "bugs_delivered": 0.317
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 42.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.25
+      }
+    },
+    "OnionBrowser/Startup/InstallViewController.swift": {
+      "halstead": {
+        "loc": 72,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 57,
+        "N1_total_operators": 94,
+        "N2_total_operands": 99,
+        "vocabulary": 69,
+        "length": 193,
+        "calculated_length": 375.49,
+        "volume": 1178.95,
+        "difficulty": 10.42,
+        "effort": 12285.85,
+        "time_seconds": 682.55,
+        "bugs_delivered": 0.393
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 36.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "backBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bodyLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getOrbotBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "whyBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonTitle1",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonTitle2",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "run",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "back",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "action",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "why",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Startup/OrbotOrBuiltInViewController.swift": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 53,
+        "N1_total_operators": 89,
+        "N2_total_operands": 100,
+        "vocabulary": 65,
+        "length": 189,
+        "calculated_length": 346.6,
+        "volume": 1138.23,
+        "difficulty": 11.32,
+        "effort": 12885.59,
+        "time_seconds": 715.87,
+        "bugs_delivered": 0.379
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 37.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bodyLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "useOrbotBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "useBuiltInTor.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "whyBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonTitle1",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonTitle2",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "run",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "action",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "why",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Startup/PermissionViewController.swift": {
+      "halstead": {
+        "loc": 153,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 122,
+        "N1_total_operators": 279,
+        "N2_total_operands": 285,
+        "vocabulary": 144,
+        "length": 564,
+        "calculated_length": 943.66,
+        "volume": 4043.84,
+        "difficulty": 25.7,
+        "effort": 103913.37,
+        "time_seconds": 5772.97,
+        "bugs_delivered": 1.348
+      },
+      "state_metrics": {
+        "mutable_vars": 15,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 19
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.9375,
+        "maintainability_index": 24.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "backtBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body1Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body2Lb.didSet",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body3Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body4Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "requestAccessBt.didS",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "whyBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "buttonTitle1",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonTitle2",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "run",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "back",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "action",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "why",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.4,
+        "avg_cognitive": 0.53
+      }
+    },
+    "OnionBrowser/Startup/StartOrbotViewController.swift": {
+      "halstead": {
+        "loc": 115,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 95,
+        "N1_total_operators": 191,
+        "N2_total_operands": 190,
+        "vocabulary": 116,
+        "length": 381,
+        "calculated_length": 716.37,
+        "volume": 2612.89,
+        "difficulty": 21.0,
+        "effort": 54870.71,
+        "time_seconds": 3048.37,
+        "bugs_delivered": 0.871
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 28.43
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bodyLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "startOrbotBt.didSet",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "startBuiltInTorBt.di",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "whyBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "info",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onionOnly",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "buttonTitle1",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "buttonTitle2",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "run",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "action",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "why",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.54,
+        "avg_cognitive": 0.85
+      }
+    },
+    "OnionBrowser/Startup/StartTorViewController.swift": {
+      "halstead": {
+        "loc": 116,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 196,
+        "N2_total_operands": 210,
+        "vocabulary": 110,
+        "length": 406,
+        "calculated_length": 670.71,
+        "volume": 2753.23,
+        "difficulty": 23.33,
+        "effort": 64242.08,
+        "time_seconds": 3569.0,
+        "bugs_delivered": 0.918
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8571,
+        "maintainability_index": 28.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "retryBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bridgesBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transport.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transport.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customBridges.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customBridges.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "countryCode.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "countryCode.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "save",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "retry",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "configureBridges",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.23,
+        "avg_cognitive": 0.31
+      }
+    },
+    "OnionBrowser/Startup/WelcomeViewController.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 44,
+        "N2_total_operands": 47,
+        "vocabulary": 44,
+        "length": 91,
+        "calculated_length": 204.52,
+        "volume": 496.81,
+        "difficulty": 7.83,
+        "effort": 3891.66,
+        "time_seconds": 216.2,
+        "bugs_delivered": 0.166
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 46.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "titleLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bodyLb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "nextBt.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "next",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "OnionBrowser/Startup/WhyViewController.swift": {
+      "halstead": {
+        "loc": 152,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 98,
+        "N1_total_operators": 261,
+        "N2_total_operands": 291,
+        "vocabulary": 125,
+        "length": 552,
+        "calculated_length": 776.62,
+        "volume": 3845.11,
+        "difficulty": 40.09,
+        "effort": 154138.02,
+        "time_seconds": 8563.22,
+        "bugs_delivered": 1.282
+      },
+      "state_metrics": {
+        "mutable_vars": 17,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 14
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.9444,
+        "maintainability_index": 24.21
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "instantiate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "title1Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body1Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body2Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body3Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body4Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body5Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body6Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body7Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "button1.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "title2Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body8Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body9Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body10Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body11Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body12Lb.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "button2.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "action",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "close",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "eventuallyHide",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.1,
+        "avg_cognitive": 0.1
+      }
+    }
+  }
+}

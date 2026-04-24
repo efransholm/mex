@@ -1,0 +1,2266 @@
+{
+  "project": "Tuist-Pokedex",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-tuist-pokedex",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/Tuist-Pokedex",
+  "ui_files_filter": [
+    "Features/Backpack/Example/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Backpack/Example/Sources/AppDelegate.swift",
+    "Features/Backpack/Example/Sources/Coordinator.swift",
+    "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeViewController.storyboard",
+    "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeViewController.swift",
+    "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeWireframe.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDataSource.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDelegate.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackPresenter.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackViewController.storyboard",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackViewController.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackWireframe.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/Cells/PokemonCollectionViewCell.swift",
+    "Features/Backpack/Sources/Scenes/Backpack Scene/Cells/PokemonCollectionViewCell.xib",
+    "Features/Catch/Example/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Catch/Example/Sources/AppDelegate.swift",
+    "Features/Catch/Example/Sources/Coordinator.swift",
+    "Features/Catch/Example/Sources/Scenes/Home Scene/HomeViewController.storyboard",
+    "Features/Catch/Example/Sources/Scenes/Home Scene/HomeViewController.swift",
+    "Features/Catch/Example/Sources/Scenes/Home Scene/HomeWireframe.swift",
+    "Features/Catch/Sources/Scenes/Catch Scene/CatchViewController.storyboard",
+    "Features/Catch/Sources/Scenes/Catch Scene/CatchViewController.swift",
+    "Features/Catch/Sources/Scenes/Catch Scene/CatchWireframe.swift",
+    "Features/Common/Sources/Core/Configuration.swift",
+    "Features/Common/Sources/Extensions/Loadable.swift",
+    "Features/Common/Sources/Extensions/UIBarButtonItem+Extension.swift",
+    "Features/Common/Sources/Extensions/UITableViewCell+Extension.swift",
+    "Features/Common/Sources/Extensions/UIViewController+StoryboardInstantiable.swift",
+    "Features/Common/Sources/Model/ScreenPokemon.swift",
+    "Features/Common/Sources/Views/PokemonView.swift",
+    "Features/Common/Sources/Views/PokemonView.xib",
+    "Features/Detail/Example/Resources/LaunchScreen.storyboard",
+    "Features/Detail/Example/Sources/AppDelegate.swift",
+    "Features/Detail/Example/Sources/Coordinator.swift",
+    "Features/Detail/Sources/Scenes/DetailViewController.swift",
+    "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailViewController.storyboard",
+    "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailViewController.swift",
+    "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailWireframe.swift",
+    "Features/Haneke/Example/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Haneke/Example/Sources/AppDelegate.swift",
+    "Features/Home/Example/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Home/Example/Sources/AppDelegate.swift",
+    "Features/Home/Example/Sources/Coordinator.swift",
+    "Features/Home/Sources/Scenes/Home Scene/HomeActions.swift",
+    "Features/Home/Sources/Scenes/Home Scene/HomeViewController.storyboard",
+    "Features/Home/Sources/Scenes/Home Scene/HomeViewController.swift",
+    "Features/Home/Sources/Scenes/Home Scene/HomeWireframe.swift",
+    "Features/Network/Example/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Network/Example/Sources/AppDelegate.swift",
+    "Features/Network/Example/Sources/Constants.swift",
+    "Features/Network/Example/Sources/SimpleViewController.swift",
+    "Features/Network/Sources/Core/Configuration.swift",
+    "Features/Pokedex/Resources/Base.lproj/LaunchScreen.storyboard",
+    "Features/Pokedex/Sources/Core/AppDelegate.swift",
+    "Features/Pokedex/Sources/Core/Coordinator.swift",
+    "Project.swift",
+    "Tuist/Templates/module/Module.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "Features/Backpack/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 19,
+        "N2_total_operands": 19,
+        "vocabulary": 28,
+        "length": 38,
+        "calculated_length": 107.02,
+        "volume": 182.68,
+        "difficulty": 7.12,
+        "effort": 1301.59,
+        "time_seconds": 72.31,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 59.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Backpack/Example/Sources/Coordinator.swift": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 140,
+        "N2_total_operands": 129,
+        "vocabulary": 80,
+        "length": 269,
+        "calculated_length": 450.06,
+        "volume": 1700.6,
+        "difficulty": 14.88,
+        "effort": 25312.76,
+        "time_seconds": 1406.26,
+        "bugs_delivered": 0.567
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 35.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "start",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHomeScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showBackpackScene",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "showPokemonDetailSce",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showCatchScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeViewController.swift": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 6,
+        "N1_total_operators": 17,
+        "N2_total_operands": 11,
+        "vocabulary": 20,
+        "length": 28,
+        "calculated_length": 68.81,
+        "volume": 121.01,
+        "difficulty": 12.83,
+        "effort": 1553.01,
+        "time_seconds": 86.28,
+        "bugs_delivered": 0.04
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 58.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "backpackButtonAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeWireframe.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 30,
+        "N2_total_operands": 32,
+        "vocabulary": 31,
+        "length": 62,
+        "calculated_length": 124.49,
+        "volume": 307.16,
+        "difficulty": 8.8,
+        "effort": 2703.01,
+        "time_seconds": 150.17,
+        "bugs_delivered": 0.102
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDataSource.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 43,
+        "N1_total_operators": 79,
+        "N2_total_operands": 79,
+        "vocabulary": 57,
+        "length": 158,
+        "calculated_length": 286.63,
+        "volume": 921.6,
+        "difficulty": 12.86,
+        "effort": 11852.16,
+        "time_seconds": 658.45,
+        "bugs_delivered": 0.307
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 45.47
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "register",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 1.33
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDelegate.swift": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 24,
+        "N2_total_operands": 28,
+        "vocabulary": 30,
+        "length": 52,
+        "calculated_length": 117.59,
+        "volume": 255.16,
+        "difficulty": 10.71,
+        "effort": 2731.69,
+        "time_seconds": 151.76,
+        "bugs_delivered": 0.085
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 54.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackPresenter.swift": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 107,
+        "N2_total_operands": 111,
+        "vocabulary": 49,
+        "length": 218,
+        "calculated_length": 232.83,
+        "volume": 1224.01,
+        "difficulty": 22.2,
+        "effort": 27172.95,
+        "time_seconds": 1509.61,
+        "bugs_delivered": 0.408
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 38.94
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pokemons",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pokemonImagePath",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pokemonName",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "selectItem",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackViewController.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 52,
+        "N2_total_operands": 41,
+        "vocabulary": 37,
+        "length": 93,
+        "calculated_length": 155.93,
+        "volume": 484.48,
+        "difficulty": 17.42,
+        "effort": 8442.05,
+        "time_seconds": 469.0,
+        "bugs_delivered": 0.161
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 47.99
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setupCollectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setDataSource",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackWireframe.swift": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 67,
+        "N2_total_operands": 63,
+        "vocabulary": 55,
+        "length": 130,
+        "calculated_length": 272.96,
+        "volume": 751.58,
+        "difficulty": 10.76,
+        "effort": 8084.03,
+        "time_seconds": 449.11,
+        "bugs_delivered": 0.251
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.56
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeNavigationContro",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Backpack/Sources/Scenes/Backpack Scene/Cells/PokemonCollectionViewCell.swift": {
+      "halstead": {
+        "loc": 12,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 6,
+        "N1_total_operators": 10,
+        "N2_total_operands": 6,
+        "vocabulary": 11,
+        "length": 16,
+        "calculated_length": 27.12,
+        "volume": 55.35,
+        "difficulty": 2.5,
+        "effort": 138.38,
+        "time_seconds": 7.69,
+        "bugs_delivered": 0.018
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "Features/Catch/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 19,
+        "N2_total_operands": 19,
+        "vocabulary": 28,
+        "length": 38,
+        "calculated_length": 107.02,
+        "volume": 182.68,
+        "difficulty": 7.12,
+        "effort": 1301.59,
+        "time_seconds": 72.31,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 59.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Catch/Example/Sources/Coordinator.swift": {
+      "halstead": {
+        "loc": 99,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 93,
+        "N1_total_operators": 217,
+        "N2_total_operands": 196,
+        "vocabulary": 113,
+        "length": 413,
+        "calculated_length": 694.58,
+        "volume": 2816.73,
+        "difficulty": 21.08,
+        "effort": 59363.42,
+        "time_seconds": 3297.97,
+        "bugs_delivered": 0.939
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5455,
+        "maintainability_index": 29.49
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "start",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHomeScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showCatchScene",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "searchNextPokemon",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showBackpackScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showPokemonDetailSce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHud",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dismissLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dataReceived",
+            "cyclomatic": 4,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 1.75,
+        "avg_cognitive": 0.92
+      }
+    },
+    "Features/Catch/Example/Sources/Scenes/Home Scene/HomeViewController.swift": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 6,
+        "N1_total_operators": 17,
+        "N2_total_operands": 11,
+        "vocabulary": 20,
+        "length": 28,
+        "calculated_length": 68.81,
+        "volume": 121.01,
+        "difficulty": 12.83,
+        "effort": 1553.01,
+        "time_seconds": 86.28,
+        "bugs_delivered": 0.04
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 58.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "catchButtonAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "Features/Catch/Example/Sources/Scenes/Home Scene/HomeWireframe.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 30,
+        "N2_total_operands": 32,
+        "vocabulary": 31,
+        "length": 62,
+        "calculated_length": 124.49,
+        "volume": 307.16,
+        "difficulty": 8.8,
+        "effort": 2703.01,
+        "time_seconds": 150.17,
+        "bugs_delivered": 0.102
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Catch/Sources/Scenes/Catch Scene/CatchViewController.swift": {
+      "halstead": {
+        "loc": 93,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 88,
+        "N1_total_operators": 256,
+        "N2_total_operands": 235,
+        "vocabulary": 111,
+        "length": 491,
+        "calculated_length": 672.47,
+        "volume": 3336.06,
+        "difficulty": 30.71,
+        "effort": 102451.11,
+        "time_seconds": 5691.73,
+        "bugs_delivered": 1.112
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 30.1
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ballAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "update",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "leavePokemonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showLeaveOrCatchAler",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showLeaveItAlert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showNotFoundAlert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showError",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "alert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "leaveButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "alertButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.55,
+        "avg_cognitive": 0.55
+      }
+    },
+    "Features/Catch/Sources/Scenes/Catch Scene/CatchWireframe.swift": {
+      "halstead": {
+        "loc": 22,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 21,
+        "N1_total_operators": 37,
+        "N2_total_operands": 34,
+        "vocabulary": 34,
+        "length": 71,
+        "calculated_length": 140.34,
+        "volume": 361.21,
+        "difficulty": 10.52,
+        "effort": 3801.3,
+        "time_seconds": 211.18,
+        "bugs_delivered": 0.12
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 52.54
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Common/Sources/Core/Configuration.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 42,
+        "N2_total_operands": 33,
+        "vocabulary": 25,
+        "length": 75,
+        "calculated_length": 91.82,
+        "volume": 348.29,
+        "difficulty": 11.0,
+        "effort": 3831.18,
+        "time_seconds": 212.84,
+        "bugs_delivered": 0.116
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.17
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "uiTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "networkTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchErrorTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "asyncTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Common/Sources/Extensions/Loadable.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 46,
+        "N2_total_operands": 40,
+        "vocabulary": 40,
+        "length": 86,
+        "calculated_length": 172.88,
+        "volume": 457.69,
+        "difficulty": 20.0,
+        "effort": 9153.72,
+        "time_seconds": 508.54,
+        "bugs_delivered": 0.153
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.4
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "loadFromNib",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "staticIdentifier",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "Features/Common/Sources/Extensions/UIBarButtonItem+Extension.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 77,
+        "N2_total_operands": 67,
+        "vocabulary": 52,
+        "length": 144,
+        "calculated_length": 244.48,
+        "volume": 820.86,
+        "difficulty": 31.02,
+        "effort": 25461.96,
+        "time_seconds": 1414.55,
+        "bugs_delivered": 0.274
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 43.57
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "targetClosure.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "targetClosure.set",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "closureAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.6,
+        "avg_cognitive": 0.6
+      }
+    },
+    "Features/Common/Sources/Extensions/UITableViewCell+Extension.swift": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 110,
+        "N2_total_operands": 98,
+        "vocabulary": 49,
+        "length": 208,
+        "calculated_length": 227.32,
+        "volume": 1167.86,
+        "difficulty": 33.79,
+        "effort": 39465.6,
+        "time_seconds": 2192.53,
+        "bugs_delivered": 0.389
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.35
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "identifier",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "register",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dequeue",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "identifier",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "register",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dequeue",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "Features/Common/Sources/Extensions/UIViewController+StoryboardInstantiable.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 25,
+        "N1_total_operators": 60,
+        "N2_total_operands": 53,
+        "vocabulary": 45,
+        "length": 113,
+        "calculated_length": 202.53,
+        "volume": 620.58,
+        "difficulty": 21.2,
+        "effort": 13156.28,
+        "time_seconds": 730.9,
+        "bugs_delivered": 0.207
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "storyboardIdentifier",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "instantiateFromStory",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "instantiateFromStory",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Common/Sources/Model/ScreenPokemon.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 31,
+        "N2_total_operands": 29,
+        "vocabulary": 18,
+        "length": 60,
+        "calculated_length": 57.22,
+        "volume": 250.2,
+        "difficulty": 18.12,
+        "effort": 4534.79,
+        "time_seconds": 251.93,
+        "bugs_delivered": 0.083
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 54.69
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Common/Sources/Views/PokemonView.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 39,
+        "N2_total_operands": 16,
+        "vocabulary": 18,
+        "length": 55,
+        "calculated_length": 57.71,
+        "volume": 229.35,
+        "difficulty": 5.09,
+        "effort": 1167.58,
+        "time_seconds": 64.87,
+        "bugs_delivered": 0.076
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "Features/Detail/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 16,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 18,
+        "N2_total_operands": 18,
+        "vocabulary": 27,
+        "length": 36,
+        "calculated_length": 101.62,
+        "volume": 171.18,
+        "difficulty": 7.2,
+        "effort": 1232.47,
+        "time_seconds": 68.47,
+        "bugs_delivered": 0.057
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 57.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Detail/Example/Sources/Coordinator.swift": {
+      "halstead": {
+        "loc": 80,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 76,
+        "N1_total_operators": 151,
+        "N2_total_operands": 134,
+        "vocabulary": 94,
+        "length": 285,
+        "calculated_length": 549.9,
+        "volume": 1868.06,
+        "difficulty": 15.87,
+        "effort": 29643.13,
+        "time_seconds": 1646.84,
+        "bugs_delivered": 0.623
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5556,
+        "maintainability_index": 33.16
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "start",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHomeScene",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "showCatchScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchNextPokemon",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showBackpackScene",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showPokemonDetailSce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHud",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dataReceived",
+            "cyclomatic": 4,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.67
+      }
+    },
+    "Features/Detail/Sources/Scenes/DetailViewController.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 65,
+        "N2_total_operands": 67,
+        "vocabulary": 47,
+        "length": 132,
+        "calculated_length": 225.97,
+        "volume": 733.21,
+        "difficulty": 9.05,
+        "effort": 6638.48,
+        "time_seconds": 368.8,
+        "bugs_delivered": 0.244
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailViewController.swift": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 45,
+        "N1_total_operators": 125,
+        "N2_total_operands": 109,
+        "vocabulary": 61,
+        "length": 234,
+        "calculated_length": 311.13,
+        "volume": 1387.79,
+        "difficulty": 19.38,
+        "effort": 26892.34,
+        "time_seconds": 1494.02,
+        "bugs_delivered": 0.463
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 39.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addPokemonView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configurePokemonView",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 2.25,
+        "avg_cognitive": 1.25
+      }
+    },
+    "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailWireframe.swift": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 35,
+        "N2_total_operands": 30,
+        "vocabulary": 32,
+        "length": 65,
+        "calculated_length": 128.82,
+        "volume": 325.0,
+        "difficulty": 10.26,
+        "effort": 3335.53,
+        "time_seconds": 185.31,
+        "bugs_delivered": 0.108
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.25
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Haneke/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 94,
+        "N2_total_operands": 102,
+        "vocabulary": 73,
+        "length": 196,
+        "calculated_length": 402.52,
+        "volume": 1213.21,
+        "difficulty": 11.05,
+        "effort": 13405.92,
+        "time_seconds": 744.77,
+        "bugs_delivered": 0.404
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 43.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addImageView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "Features/Home/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 19,
+        "N2_total_operands": 19,
+        "vocabulary": 28,
+        "length": 38,
+        "calculated_length": 107.02,
+        "volume": 182.68,
+        "difficulty": 7.12,
+        "effort": 1301.59,
+        "time_seconds": 72.31,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 59.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Home/Example/Sources/Coordinator.swift": {
+      "halstead": {
+        "loc": 118,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 106,
+        "N1_total_operators": 261,
+        "N2_total_operands": 251,
+        "vocabulary": 127,
+        "length": 512,
+        "calculated_length": 805.4,
+        "volume": 3578.21,
+        "difficulty": 24.86,
+        "effort": 88965.69,
+        "time_seconds": 4942.54,
+        "bugs_delivered": 1.193
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4286,
+        "maintainability_index": 26.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "start",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHomeScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showCatchScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchNextPokemon",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showBackpackScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showPokemonDetailSce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHud",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dismissLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dataReceived",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "makeViewController",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.69,
+        "avg_cognitive": 0.85
+      }
+    },
+    "Features/Home/Sources/Scenes/Home Scene/HomeActions.swift": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 23,
+        "N2_total_operands": 14,
+        "vocabulary": 18,
+        "length": 37,
+        "calculated_length": 57.22,
+        "volume": 154.29,
+        "difficulty": 5.6,
+        "effort": 864.01,
+        "time_seconds": 48.0,
+        "bugs_delivered": 0.051
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 54.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "ballButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "backpackButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Home/Sources/Scenes/Home Scene/HomeViewController.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 28,
+        "N2_total_operands": 16,
+        "vocabulary": 22,
+        "length": 44,
+        "calculated_length": 78.25,
+        "volume": 196.21,
+        "difficulty": 17.14,
+        "effort": 3363.69,
+        "time_seconds": 186.87,
+        "bugs_delivered": 0.065
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 54.57
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "ballButtonAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "backpackButtonAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "Features/Home/Sources/Scenes/Home Scene/HomeWireframe.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 21,
+        "N1_total_operators": 37,
+        "N2_total_operands": 34,
+        "vocabulary": 34,
+        "length": 71,
+        "calculated_length": 140.34,
+        "volume": 361.21,
+        "difficulty": 10.52,
+        "effort": 3801.3,
+        "time_seconds": 211.18,
+        "bugs_delivered": 0.12
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.44
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeViewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepare",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Network/Example/Sources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 42,
+        "N2_total_operands": 42,
+        "vocabulary": 42,
+        "length": 84,
+        "calculated_length": 190.23,
+        "volume": 452.95,
+        "difficulty": 8.4,
+        "effort": 3804.82,
+        "time_seconds": 211.38,
+        "bugs_delivered": 0.151
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 52.89
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Network/Example/Sources/Constants.swift": {
+      "halstead": {
+        "loc": 61,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 25,
+        "N2_total_operands": 117,
+        "vocabulary": 102,
+        "length": 142,
+        "calculated_length": 627.29,
+        "volume": 947.48,
+        "difficulty": 7.8,
+        "effort": 7390.38,
+        "time_seconds": 410.58,
+        "bugs_delivered": 0.316
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 28,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "Features/Network/Example/Sources/SimpleViewController.swift": {
+      "halstead": {
+        "loc": 140,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 131,
+        "N1_total_operators": 368,
+        "N2_total_operands": 401,
+        "vocabulary": 158,
+        "length": 769,
+        "calculated_length": 1049.76,
+        "volume": 5616.61,
+        "difficulty": 41.32,
+        "effort": 232103.08,
+        "time_seconds": 12894.62,
+        "bugs_delivered": 1.872
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 13
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 24.64
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addLabel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addTextField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonAction",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showPokemonFoundAler",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showError",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "alert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "leaveButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dataReceived",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.31,
+        "avg_cognitive": 0.62
+      }
+    },
+    "Features/Network/Sources/Core/Configuration.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 25,
+        "N2_total_operands": 22,
+        "vocabulary": 22,
+        "length": 47,
+        "calculated_length": 76.64,
+        "volume": 209.59,
+        "difficulty": 7.62,
+        "effort": 1596.13,
+        "time_seconds": 88.67,
+        "bugs_delivered": 0.07
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "uiTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "networkTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchErrorTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Pokedex/Sources/Core/AppDelegate.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 30,
+        "N2_total_operands": 29,
+        "vocabulary": 36,
+        "length": 59,
+        "calculated_length": 152.15,
+        "volume": 305.03,
+        "difficulty": 8.2,
+        "effort": 2499.88,
+        "time_seconds": 138.88,
+        "bugs_delivered": 0.102
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 53.49
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "disableAnimations",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Features/Pokedex/Sources/Core/Coordinator.swift": {
+      "halstead": {
+        "loc": 115,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 102,
+        "N1_total_operators": 268,
+        "N2_total_operands": 242,
+        "vocabulary": 122,
+        "length": 510,
+        "calculated_length": 767.03,
+        "volume": 3534.68,
+        "difficulty": 23.73,
+        "effort": 83861.92,
+        "time_seconds": 4659.0,
+        "bugs_delivered": 1.178
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4615,
+        "maintainability_index": 26.84
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "start",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHomeScene",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showCatchScene",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "searchNextPokemon",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showBackpackScene",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "showPokemonDetailSce",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showHud",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dismissLoading",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dataReceived",
+            "cyclomatic": 4,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 2.08,
+        "avg_cognitive": 1.25
+      }
+    },
+    "Project.swift": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 60,
+        "N2_total_operands": 70,
+        "vocabulary": 42,
+        "length": 130,
+        "calculated_length": 196.97,
+        "volume": 701.0,
+        "difficulty": 8.24,
+        "effort": 5772.95,
+        "time_seconds": 320.72,
+        "bugs_delivered": 0.234
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeHanekeModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeHomeModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeBackpackModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeDetailModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeCatchModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeCommonModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeNetworkModule",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Tuist/Templates/module/Module.swift": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 109,
+        "N2_total_operands": 110,
+        "vocabulary": 63,
+        "length": 219,
+        "calculated_length": 339.29,
+        "volume": 1309.02,
+        "difficulty": 9.17,
+        "effort": 11999.39,
+        "time_seconds": 666.63,
+        "bugs_delivered": 0.436
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.81
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "defaultYear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "defaultDate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    }
+  }
+}

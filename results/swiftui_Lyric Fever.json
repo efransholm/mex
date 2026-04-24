@@ -1,0 +1,2400 @@
+{
+  "project": "Lyric Fever",
+  "framework": "swiftui",
+  "language": "swift",
+  "sonar_project_key": "thesis-swiftui-lyric-fever",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/LyricFever",
+  "ui_files_filter": [
+    "LyricFever/GlobalKeyboardShortcutsView.swift",
+    "LyricFever/KaraokeSettings.swift",
+    "LyricFever/LyricFever.swift",
+    "LyricFever/Past Updates/UpdateWindow.swift",
+    "LyricFever/Support Files/ConditionalModifier.swift",
+    "LyricFever/Support Files/MarqueeText.swift",
+    "LyricFever/Support Files/UserDefaultStorage.swift",
+    "LyricFever/Update22Window.swift",
+    "LyricFever/ViewModel.swift",
+    "LyricFever/Views/FullscreenView/BackgroundView/BackgroundView.swift",
+    "LyricFever/Views/FullscreenView/BackgroundView/ColorSpot.swift",
+    "LyricFever/Views/FullscreenView/BackgroundView/MulticolorGradient.swift",
+    "LyricFever/Views/FullscreenView/BackgroundView/Uniforms.swift",
+    "LyricFever/Views/FullscreenView/FullscreenButtonIconStyle.swift",
+    "LyricFever/Views/FullscreenView/FullscreenView.swift",
+    "LyricFever/Views/FullscreenView/LyricsNSScrollView.swift",
+    "LyricFever/Views/KaraokeView/FloatingPanel.swift",
+    "LyricFever/Views/KaraokeView/KaraokeView.swift",
+    "LyricFever/Views/MenubarLabelView/MenubarLabelView.swift",
+    "LyricFever/Views/MenubarWindowView/ButtonState.swift",
+    "LyricFever/Views/MenubarWindowView/ColoredThinProgressViewStyle.swift",
+    "LyricFever/Views/MenubarWindowView/LikeButton.swift",
+    "LyricFever/Views/MenubarWindowView/MenubarButton.swift",
+    "LyricFever/Views/MenubarWindowView/MenubarButtonHighlight.swift",
+    "LyricFever/Views/MenubarWindowView/MenubarWindowView.swift",
+    "LyricFever/Views/MenubarWindowView/SmallMenubarButton.swift",
+    "LyricFever/Views/MenubarWindowView/SongControlButton.swift",
+    "LyricFever/Views/OnboardingView/ApiView.swift",
+    "LyricFever/Views/OnboardingView/FinalTruncationView.swift",
+    "LyricFever/Views/OnboardingView/MainSettingsView.swift",
+    "LyricFever/Views/OnboardingView/OnboardingWindow.swift",
+    "LyricFever/Views/OnboardingView/StepView.swift",
+    "LyricFever/Views/OnboardingView/WebLoginView.swift",
+    "LyricFever/Views/SearchView/LyricPreviewNSTableView.swift",
+    "LyricFever/Views/SearchView/SearchResultsNSTableView.swift",
+    "LyricFever/Views/SearchView/SearchWindow.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "duplicated_lines_density": 0.0,
+    "sqale_debt_ratio": 0.0,
+    "comment_lines_density": 0.0,
+    "bugs": 0,
+    "comment_lines": 0,
+    "ncloc": 14,
+    "files": 1,
+    "lines": 14
+  },
+  "files": {
+    "LyricFever/GlobalKeyboardShortcutsView.swift": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 34,
+        "N2_total_operands": 31,
+        "vocabulary": 24,
+        "length": 65,
+        "calculated_length": 90.57,
+        "volume": 298.02,
+        "difficulty": 5.17,
+        "effort": 1539.78,
+        "time_seconds": 85.54,
+        "bugs_delivered": 0.099
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 54.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/KaraokeSettings.swift": {
+      "halstead": {
+        "loc": 82,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 108,
+        "N1_total_operators": 195,
+        "N2_total_operands": 212,
+        "vocabulary": 124,
+        "length": 407,
+        "calculated_length": 793.53,
+        "volume": 2830.36,
+        "difficulty": 15.7,
+        "effort": 44447.1,
+        "time_seconds": 2469.28,
+        "bugs_delivered": 0.943
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 33.68
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "colorBinding",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "LyricFever/LyricFever.swift": {
+      "halstead": {
+        "loc": 259,
+        "n1_unique_operators": 37,
+        "n2_unique_operands": 195,
+        "N1_total_operators": 533,
+        "N2_total_operands": 522,
+        "vocabulary": 232,
+        "length": 1055,
+        "calculated_length": 1676.18,
+        "volume": 8290.17,
+        "difficulty": 49.52,
+        "effort": 410554.72,
+        "time_seconds": 22808.6,
+        "bugs_delivered": 2.763
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 3,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 16.56
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "mainWidth",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "mainHeight",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 22,
+            "cognitive": 27
+          },
+          {
+            "function": "trunc",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 6.25,
+        "avg_cognitive": 6.75
+      }
+    },
+    "LyricFever/Past Updates/UpdateWindow.swift": {
+      "halstead": {
+        "loc": 54,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 78,
+        "N2_total_operands": 79,
+        "vocabulary": 65,
+        "length": 157,
+        "calculated_length": 359.41,
+        "volume": 945.51,
+        "difficulty": 4.77,
+        "effort": 4507.48,
+        "time_seconds": 250.42,
+        "bugs_delivered": 0.315
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 41.24
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Support Files/ConditionalModifier.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 12,
+        "N2_total_operands": 11,
+        "vocabulary": 15,
+        "length": 23,
+        "calculated_length": 43.65,
+        "volume": 89.86,
+        "difficulty": 6.29,
+        "effort": 564.82,
+        "time_seconds": 31.38,
+        "bugs_delivered": 0.03
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 64.37
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "apply",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Support Files/MarqueeText.swift": {
+      "halstead": {
+        "loc": 125,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 103,
+        "N1_total_operators": 344,
+        "N2_total_operands": 354,
+        "vocabulary": 136,
+        "length": 698,
+        "calculated_length": 855.17,
+        "volume": 4947.05,
+        "difficulty": 56.71,
+        "effort": 280540.91,
+        "time_seconds": 15585.61,
+        "bugs_delivered": 1.649
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 3,
+        "observable_state_vars": 3,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7273,
+        "maintainability_index": 27.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "reduce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "CC_measureSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.2,
+        "avg_cognitive": 0.4
+      }
+    },
+    "LyricFever/Support Files/UserDefaultStorage.swift": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 252,
+        "N2_total_operands": 166,
+        "vocabulary": 72,
+        "length": 418,
+        "calculated_length": 397.43,
+        "volume": 2579.03,
+        "difficulty": 16.6,
+        "effort": 42811.88,
+        "time_seconds": 2378.44,
+        "bugs_delivered": 0.86
+      },
+      "state_metrics": {
+        "mutable_vars": 20,
+        "immutable_vars": 0,
+        "observable_state_vars": 20,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "LyricFever/Update22Window.swift": {
+      "halstead": {
+        "loc": 57,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 69,
+        "N1_total_operators": 100,
+        "N2_total_operands": 118,
+        "vocabulary": 75,
+        "length": 218,
+        "calculated_length": 437.0,
+        "volume": 1357.88,
+        "difficulty": 5.13,
+        "effort": 6966.53,
+        "time_seconds": 387.03,
+        "bugs_delivered": 0.453
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 39.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/ViewModel.swift": {
+      "halstead": {
+        "loc": 1098,
+        "n1_unique_operators": 44,
+        "n2_unique_operands": 526,
+        "N1_total_operators": 1003,
+        "N2_total_operands": 1240,
+        "vocabulary": 570,
+        "length": 2243,
+        "calculated_length": 4994.69,
+        "volume": 20534.26,
+        "difficulty": 51.86,
+        "effort": 1064970.59,
+        "time_seconds": 59165.03,
+        "bugs_delivered": 6.845
+      },
+      "state_metrics": {
+        "mutable_vars": 52,
+        "immutable_vars": 52,
+        "observable_state_vars": 2,
+        "state_updates": 93
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "formattedCurrentTime",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "initAppleMusicWorkar",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "formattedCurrentTime",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "formattedDuration",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "currentPlayerInstanc",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "animatedDisplay.get",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "animatedDisplay.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "canDisplayLyrics",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "displayKaraoke.get",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "displayKaraoke.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displayFullscreen.ge",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displayFullscreen.se",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "translationExists",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "userLocaleLanguage",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "userLocaleLanguageSt",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "currentPlayer.get",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "currentPlayer.set",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "currentPlayer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "currentDuration",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isPlayerRunning",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 8,
+            "cognitive": 8
+          },
+          {
+            "function": "fetchAllNetworkLyric",
+            "cyclomatic": 6,
+            "cognitive": 8
+          },
+          {
+            "function": "refreshLyrics",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "callColorDataService",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "migrateTimestampsIfN",
+            "cyclomatic": 6,
+            "cognitive": 11
+          },
+          {
+            "function": "checkIfLoggedIn",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "openSettings",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toggleLyrics",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "openTranslationHelpO",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "translationTask",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "romanizeDidChange",
+            "cyclomatic": 3,
+            "cognitive": 5
+          },
+          {
+            "function": "romanizeName",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "romanizeArtist",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "chinesePreferenceDid",
+            "cyclomatic": 8,
+            "cognitive": 6
+          },
+          {
+            "function": "saveKaraokeFontOnTer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "appleMusicPlaybackDi",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "spotifyPlaybackDidCh",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "onAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onCurrentlyPlayingID",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setCurrentProperties",
+            "cyclomatic": 6,
+            "cognitive": 9
+          },
+          {
+            "function": "setCurrentProperties",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "upcomingIndex",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "lyricUpdater",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "startLyricUpdater",
+            "cyclomatic": 9,
+            "cognitive": 8
+          },
+          {
+            "function": "stopLyricUpdater",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "saveCoreData",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "fetch",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "intToRGB",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setBackgroundColor",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "handleSpotifyNoLyric",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "fetchLyrics",
+            "cyclomatic": 6,
+            "cognitive": 8
+          },
+          {
+            "function": "deleteSongLocalePair",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "deleteLyric",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "fetchFromCoreData",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "reloadTranslationCon",
+            "cyclomatic": 3,
+            "cognitive": 5
+          },
+          {
+            "function": "fetchTranslationSour",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "setNewLyricsColorTra",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "uploadLocalLRCFile",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "stepsToTakeAfterSett",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didOnboard",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "appleMusicStarter",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "appleMusicFetch",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "appleMusicNetworkFet",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "fetchSpotifyIDFromPe",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "musicToSpotifyHelper",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.65
+      }
+    },
+    "LyricFever/Views/FullscreenView/BackgroundView/BackgroundView.swift": {
+      "halstead": {
+        "loc": 47,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 84,
+        "N2_total_operands": 85,
+        "vocabulary": 55,
+        "length": 169,
+        "calculated_length": 272.96,
+        "volume": 977.05,
+        "difficulty": 14.51,
+        "effort": 14179.14,
+        "time_seconds": 787.73,
+        "bugs_delivered": 0.326
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 1,
+        "observable_state_vars": 6,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8571,
+        "maintainability_index": 42.45
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/FullscreenView/BackgroundView/ColorSpot.swift": {
+      "halstead": {
+        "loc": 111,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 271,
+        "N2_total_operands": 225,
+        "vocabulary": 75,
+        "length": 496,
+        "calculated_length": 399.33,
+        "volume": 3089.49,
+        "difficulty": 52.94,
+        "effort": 163561.45,
+        "time_seconds": 9086.75,
+        "bugs_delivered": 1.03
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8,
+        "maintainability_index": 28.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "animatableData.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animatableData.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "zero",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animatableData.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animatableData.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "-",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "+",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scale",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "magnitudeSquared",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "zero",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "random",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/FullscreenView/BackgroundView/MulticolorGradient.swift": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 63,
+        "N2_total_operands": 65,
+        "vocabulary": 57,
+        "length": 128,
+        "calculated_length": 283.66,
+        "volume": 746.61,
+        "difficulty": 12.68,
+        "effort": 9469.2,
+        "time_seconds": 526.07,
+        "bugs_delivered": 0.249
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 45.0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "animatableData.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animatableData.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "uniforms",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "uniforms",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/FullscreenView/BackgroundView/Uniforms.swift": {
+      "halstead": {
+        "loc": 89,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 238,
+        "N2_total_operands": 243,
+        "vocabulary": 82,
+        "length": 481,
+        "calculated_length": 465.03,
+        "volume": 3057.98,
+        "difficulty": 27.2,
+        "effort": 83181.69,
+        "time_seconds": 4621.2,
+        "bugs_delivered": 1.019
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 22,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.12,
+        "maintainability_index": 32.67
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "simd",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "simd",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/FullscreenView/FullscreenButtonIconStyle.swift": {
+      "halstead": {
+        "loc": 58,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 128,
+        "N2_total_operands": 125,
+        "vocabulary": 76,
+        "length": 253,
+        "calculated_length": 414.82,
+        "volume": 1580.73,
+        "difficulty": 19.4,
+        "effort": 30660.63,
+        "time_seconds": 1703.37,
+        "bugs_delivered": 0.527
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8333,
+        "maintainability_index": 38.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeBody",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "LyricFever/Views/FullscreenView/FullscreenView.swift": {
+      "halstead": {
+        "loc": 305,
+        "n1_unique_operators": 39,
+        "n2_unique_operands": 259,
+        "N1_total_operators": 726,
+        "N2_total_operands": 712,
+        "vocabulary": 298,
+        "length": 1438,
+        "calculated_length": 2282.48,
+        "volume": 11819.16,
+        "difficulty": 53.61,
+        "effort": 633580.22,
+        "time_seconds": 35198.9,
+        "bugs_delivered": 3.94
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 4,
+        "observable_state_vars": 8,
+        "state_updates": 22
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 14.06
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "fullscreenButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "FullscreenButtons",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "albumArt",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "displayHoverTooltip",
+            "cyclomatic": 10,
+            "cognitive": 1
+          },
+          {
+            "function": "lyrics",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "adjustedColor",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.43,
+        "avg_cognitive": 1.43
+      }
+    },
+    "LyricFever/Views/FullscreenView/LyricsNSScrollView.swift": {
+      "halstead": {
+        "loc": 481,
+        "n1_unique_operators": 42,
+        "n2_unique_operands": 297,
+        "N1_total_operators": 1212,
+        "N2_total_operands": 1307,
+        "vocabulary": 339,
+        "length": 2519,
+        "calculated_length": 2666.13,
+        "volume": 21172.55,
+        "difficulty": 92.41,
+        "effort": 1956643.15,
+        "time_seconds": 108702.4,
+        "bugs_delivered": 7.058
+      },
+      "state_metrics": {
+        "mutable_vars": 20,
+        "immutable_vars": 84,
+        "observable_state_vars": 2,
+        "state_updates": 16
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1923,
+        "maintainability_index": 0.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "textHeight",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "rowHeight",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "isFlipped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "resizeSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutLabels",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "configure",
+            "cyclomatic": 9,
+            "cognitive": 11
+          },
+          {
+            "function": "applyBlur",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "animateBlur",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "isFlipped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layout",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "computeTotalHeight",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "scrollWheel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "syncDocumentFrame",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "clipViewResized",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeCoordinator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateNSView",
+            "cyclomatic": 21,
+            "cognitive": 13
+          },
+          {
+            "function": "rebuildCells",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "refreshCells",
+            "cyclomatic": 6,
+            "cognitive": 9
+          },
+          {
+            "function": "scrollToCenter",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "scrollToTop",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 3.29,
+        "avg_cognitive": 2.46
+      }
+    },
+    "LyricFever/Views/KaraokeView/FloatingPanel.swift": {
+      "halstead": {
+        "loc": 167,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 143,
+        "N1_total_operators": 388,
+        "N2_total_operands": 368,
+        "vocabulary": 179,
+        "length": 756,
+        "calculated_length": 1209.98,
+        "volume": 5657.76,
+        "difficulty": 46.32,
+        "effort": 262077.16,
+        "time_seconds": 14559.84,
+        "bugs_delivered": 1.886
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 11,
+        "observable_state_vars": 3,
+        "state_updates": 11
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4211,
+        "maintainability_index": 22.14
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "floatingPanel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "present",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "floatingPanel.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "floatingPanel.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "resignMain",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fadeIn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fadeOut",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "close",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "canBecomeMain",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "center",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sendEvent",
+            "cyclomatic": 8,
+            "cognitive": 12
+          }
+        ],
+        "avg_cyclomatic": 1.77,
+        "avg_cognitive": 1.23
+      }
+    },
+    "LyricFever/Views/KaraokeView/KaraokeView.swift": {
+      "halstead": {
+        "loc": 113,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 101,
+        "N1_total_operators": 233,
+        "N2_total_operands": 232,
+        "vocabulary": 123,
+        "length": 465,
+        "calculated_length": 770.59,
+        "volume": 3228.27,
+        "difficulty": 25.27,
+        "effort": 81569.73,
+        "time_seconds": 4531.65,
+        "bugs_delivered": 1.076
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8333,
+        "maintainability_index": 28.22
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "currentWords",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "multilingualView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "originalAndTranslati",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "lyricsView",
+            "cyclomatic": 6,
+            "cognitive": 13
+          },
+          {
+            "function": "finalKaraokeView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "currentAlbumArt",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "LyricFever/Views/MenubarLabelView/MenubarLabelView.swift": {
+      "halstead": {
+        "loc": 57,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 89,
+        "N2_total_operands": 86,
+        "vocabulary": 54,
+        "length": 175,
+        "calculated_length": 266.18,
+        "volume": 1007.11,
+        "difficulty": 15.05,
+        "effort": 15156.93,
+        "time_seconds": 842.05,
+        "bugs_delivered": 0.336
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 39.19
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "menuBarTitle",
+            "cyclomatic": 9,
+            "cognitive": 19
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 5.5,
+        "avg_cognitive": 10.5
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/ButtonState.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 41,
+        "N2_total_operands": 29,
+        "vocabulary": 31,
+        "length": 70,
+        "calculated_length": 123.16,
+        "volume": 346.79,
+        "difficulty": 10.47,
+        "effort": 3631.7,
+        "time_seconds": 201.76,
+        "bugs_delivered": 0.116
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.01
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "fillStyle",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 4.0
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/ColoredThinProgressViewStyle.swift": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 39,
+        "N2_total_operands": 42,
+        "vocabulary": 36,
+        "length": 81,
+        "calculated_length": 155.43,
+        "volume": 418.76,
+        "difficulty": 8.08,
+        "effort": 3382.32,
+        "time_seconds": 187.91,
+        "bugs_delivered": 0.14
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 51.4
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeBody",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/LikeButton.swift": {
+      "halstead": {
+        "loc": 19,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 26,
+        "N2_total_operands": 22,
+        "vocabulary": 29,
+        "length": 48,
+        "calculated_length": 113.93,
+        "volume": 233.18,
+        "difficulty": 5.79,
+        "effort": 1350.01,
+        "time_seconds": 75.0,
+        "bugs_delivered": 0.078
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 55.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/MenubarButton.swift": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 90,
+        "N2_total_operands": 85,
+        "vocabulary": 77,
+        "length": 175,
+        "calculated_length": 434.47,
+        "volume": 1096.69,
+        "difficulty": 7.85,
+        "effort": 8604.78,
+        "time_seconds": 478.04,
+        "bugs_delivered": 0.366
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.44
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "disabled",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/MenubarButtonHighlight.swift": {
+      "halstead": {
+        "loc": 97,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 143,
+        "N2_total_operands": 115,
+        "vocabulary": 67,
+        "length": 258,
+        "calculated_length": 374.06,
+        "volume": 1565.05,
+        "difficulty": 6.71,
+        "effort": 10498.88,
+        "time_seconds": 583.27,
+        "bugs_delivered": 0.522
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 30.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "description",
+            "cyclomatic": 29,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 29.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/MenubarWindowView.swift": {
+      "halstead": {
+        "loc": 704,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 398,
+        "N1_total_operators": 828,
+        "N2_total_operands": 945,
+        "vocabulary": 430,
+        "length": 1773,
+        "calculated_length": 3597.38,
+        "volume": 15510.55,
+        "difficulty": 37.99,
+        "effort": 589244.86,
+        "time_seconds": 32735.83,
+        "bugs_delivered": 5.17
+      },
+      "state_metrics": {
+        "mutable_vars": 14,
+        "immutable_vars": 8,
+        "observable_state_vars": 14,
+        "state_updates": 54
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6364,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "profilePicViewHeader",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "songDetails",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "songControls",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "headerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displayLyrics",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "lyricModifierView",
+            "cyclomatic": 9,
+            "cognitive": 8
+          },
+          {
+            "function": "translationAndRomani",
+            "cyclomatic": 7,
+            "cognitive": 8
+          },
+          {
+            "function": "spotifyConnectDelayP",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displayFullscreen",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "displayKaraoke",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "refreshState",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "translationState",
+            "cyclomatic": 7,
+            "cognitive": 9
+          },
+          {
+            "function": "searchState",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "deleteOrUploadState",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewSelector",
+            "cyclomatic": 18,
+            "cognitive": 21
+          },
+          {
+            "function": "streamingDelayView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "otherOptions",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "systemControlView",
+            "cyclomatic": 7,
+            "cognitive": 11
+          },
+          {
+            "function": "menubarSizeSliderBin",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spotifyDelayBinding",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "menubarSizeSlider",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spotifyDelaySlider",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "volumeBinding",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "volumeSlider",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 3.56,
+        "avg_cognitive": 3.48
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/SmallMenubarButton.swift": {
+      "halstead": {
+        "loc": 75,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 85,
+        "N1_total_operators": 152,
+        "N2_total_operands": 140,
+        "vocabulary": 100,
+        "length": 292,
+        "calculated_length": 603.4,
+        "volume": 1940.01,
+        "difficulty": 12.35,
+        "effort": 23964.78,
+        "time_seconds": 1331.38,
+        "bugs_delivered": 0.647
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 35.13
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "disabled",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeBody",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "disabled",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.75,
+        "avg_cognitive": 1.0
+      }
+    },
+    "LyricFever/Views/MenubarWindowView/SongControlButton.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 45,
+        "N2_total_operands": 40,
+        "vocabulary": 43,
+        "length": 85,
+        "calculated_length": 198.05,
+        "volume": 461.23,
+        "difficulty": 6.88,
+        "effort": 3170.97,
+        "time_seconds": 176.17,
+        "bugs_delivered": 0.154
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 2,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 47.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/ApiView.swift": {
+      "halstead": {
+        "loc": 123,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 129,
+        "N1_total_operators": 150,
+        "N2_total_operands": 175,
+        "vocabulary": 155,
+        "length": 325,
+        "calculated_length": 1026.66,
+        "volume": 2364.74,
+        "difficulty": 17.64,
+        "effort": 41703.76,
+        "time_seconds": 2316.88,
+        "bugs_delivered": 0.788
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 1,
+        "observable_state_vars": 7,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8889,
+        "maintainability_index": 29.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 7,
+            "cognitive": 7
+          },
+          {
+            "function": "checkForLogin",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 4.5,
+        "avg_cognitive": 4.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/FinalTruncationView.swift": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 76,
+        "N1_total_operators": 112,
+        "N2_total_operands": 112,
+        "vocabulary": 92,
+        "length": 224,
+        "calculated_length": 538.84,
+        "volume": 1461.28,
+        "difficulty": 11.79,
+        "effort": 17227.7,
+        "time_seconds": 957.09,
+        "bugs_delivered": 0.487
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 3,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 37.6
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/MainSettingsView.swift": {
+      "halstead": {
+        "loc": 155,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 121,
+        "N1_total_operators": 235,
+        "N2_total_operands": 238,
+        "vocabulary": 142,
+        "length": 473,
+        "calculated_length": 929.42,
+        "volume": 3381.83,
+        "difficulty": 20.65,
+        "effort": 69844.58,
+        "time_seconds": 3880.25,
+        "bugs_delivered": 1.127
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 1,
+        "observable_state_vars": 4,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8333,
+        "maintainability_index": 25.09
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "id",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "description",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "permissionDeniedView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onboardView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "permissionsOrNextBut",
+            "cyclomatic": 6,
+            "cognitive": 8
+          },
+          {
+            "function": "body",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/OnboardingWindow.swift": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 30,
+        "N2_total_operands": 35,
+        "vocabulary": 31,
+        "length": 65,
+        "calculated_length": 128.04,
+        "volume": 322.02,
+        "difficulty": 6.09,
+        "effort": 1960.14,
+        "time_seconds": 108.9,
+        "bugs_delivered": 0.107
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 49.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/StepView.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 22,
+        "N2_total_operands": 23,
+        "vocabulary": 22,
+        "length": 45,
+        "calculated_length": 81.1,
+        "volume": 200.67,
+        "difficulty": 3.38,
+        "effort": 678.75,
+        "time_seconds": 37.71,
+        "bugs_delivered": 0.067
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 55.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "LyricFever/Views/OnboardingView/WebLoginView.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 73,
+        "N2_total_operands": 77,
+        "vocabulary": 68,
+        "length": 150,
+        "calculated_length": 354.52,
+        "volume": 913.12,
+        "difficulty": 16.04,
+        "effort": 14647.96,
+        "time_seconds": 813.78,
+        "bugs_delivered": 0.304
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 44.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "webView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "makeNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "LyricFever/Views/SearchView/LyricPreviewNSTableView.swift": {
+      "halstead": {
+        "loc": 70,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 82,
+        "N1_total_operators": 163,
+        "N2_total_operands": 171,
+        "vocabulary": 106,
+        "length": 334,
+        "calculated_length": 631.36,
+        "volume": 2247.13,
+        "difficulty": 25.02,
+        "effort": 56232.94,
+        "time_seconds": 3124.05,
+        "bugs_delivered": 0.749
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0833,
+        "maintainability_index": 35.21
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeCoordinator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateNSView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfRows",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.6,
+        "avg_cognitive": 0.4
+      }
+    },
+    "LyricFever/Views/SearchView/SearchResultsNSTableView.swift": {
+      "halstead": {
+        "loc": 90,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 89,
+        "N1_total_operators": 195,
+        "N2_total_operands": 200,
+        "vocabulary": 116,
+        "length": 395,
+        "calculated_length": 704.72,
+        "volume": 2708.9,
+        "difficulty": 30.34,
+        "effort": 82180.19,
+        "time_seconds": 4565.57,
+        "bugs_delivered": 0.903
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 9,
+        "observable_state_vars": 1,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 31.05
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeCoordinator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeNSView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "updateNSView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfRows",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 2
+          },
+          {
+            "function": "tableViewSelectionDi",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 2.43,
+        "avg_cognitive": 1.29
+      }
+    },
+    "LyricFever/Views/SearchView/SearchWindow.swift": {
+      "halstead": {
+        "loc": 186,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 173,
+        "N1_total_operators": 355,
+        "N2_total_operands": 354,
+        "vocabulary": 207,
+        "length": 709,
+        "calculated_length": 1459.16,
+        "volume": 5454.68,
+        "difficulty": 34.79,
+        "effort": 189747.27,
+        "time_seconds": 10541.52,
+        "bugs_delivered": 1.818
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 5,
+        "observable_state_vars": 9,
+        "state_updates": 20
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6429,
+        "maintainability_index": 21.64
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "searchControlsView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchResultsView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "selectedLyricView",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "formattedTimestamp",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchWindow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadingView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchLyrics",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "body",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 2.5,
+        "avg_cognitive": 1.88
+      }
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "project": "Chess",
+  "framework": "swiftui",
+  "language": "swift",
+  "sonar_project_key": "thesis-swiftui-chess",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/chess_swiftui",
+  "ui_files_filter": [
+    "Chess/ChessApp.swift",
+    "Chess/ChessGame.swift",
+    "Chess/ChessView.swift",
+    "Chess/DifficultySelectionView.swift",
+    "Chess/PromitionView.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "Chess/ChessApp.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 6,
+        "N2_total_operands": 7,
+        "vocabulary": 12,
+        "length": 13,
+        "calculated_length": 31.26,
+        "volume": 46.6,
+        "difficulty": 2.5,
+        "effort": 116.51,
+        "time_seconds": 6.47,
+        "bugs_delivered": 0.016
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 62.53
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Chess/ChessGame.swift": {
+      "halstead": {
+        "loc": 585,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 146,
+        "N1_total_operators": 1542,
+        "N2_total_operands": 1666,
+        "vocabulary": 181,
+        "length": 3208,
+        "calculated_length": 1229.24,
+        "volume": 24059.51,
+        "difficulty": 199.69,
+        "effort": 4804485.52,
+        "time_seconds": 266915.86,
+        "bugs_delivered": 8.02
+      },
+      "state_metrics": {
+        "mutable_vars": 27,
+        "immutable_vars": 50,
+        "observable_state_vars": 8,
+        "state_updates": 72
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3506,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "opponent",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "==",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupBoard",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "pieceValue",
+            "cyclomatic": 6,
+            "cognitive": 1
+          },
+          {
+            "function": "selectPiece",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "calculateLegalMoves",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "calculateMoves",
+            "cyclomatic": 12,
+            "cognitive": 15
+          },
+          {
+            "function": "calculatePawnMoves",
+            "cyclomatic": 7,
+            "cognitive": 12
+          },
+          {
+            "function": "directionalMoves",
+            "cyclomatic": 5,
+            "cognitive": 10
+          },
+          {
+            "function": "calculateCastlingMov",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "isSquareUnderAttack",
+            "cyclomatic": 5,
+            "cognitive": 10
+          },
+          {
+            "function": "calculateAttackSquar",
+            "cyclomatic": 13,
+            "cognitive": 16
+          },
+          {
+            "function": "attackDirectionalMov",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "willResolveCheck",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "findKingPosition",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "movePiece",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "promotePawn",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "performMove",
+            "cyclomatic": 27,
+            "cognitive": 34
+          },
+          {
+            "function": "opponentMove",
+            "cyclomatic": 12,
+            "cognitive": 28
+          },
+          {
+            "function": "updateGameState",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "saveCurrentBoardStat",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "undoMove",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "hasLegalMoves",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "resetGame",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isValidPosition",
+            "cyclomatic": 2,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 5.12,
+        "avg_cognitive": 6.04
+      }
+    },
+    "Chess/ChessView.swift": {
+      "halstead": {
+        "loc": 145,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 118,
+        "N1_total_operators": 278,
+        "N2_total_operands": 276,
+        "vocabulary": 144,
+        "length": 554,
+        "calculated_length": 934.36,
+        "volume": 3972.14,
+        "difficulty": 30.41,
+        "effort": 120779.94,
+        "time_seconds": 6710.0,
+        "bugs_delivered": 1.324
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 2,
+        "observable_state_vars": 6,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 25.5
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "gameOverMessage",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "body",
+            "cyclomatic": 11,
+            "cognitive": 18
+          }
+        ],
+        "avg_cyclomatic": 5.33,
+        "avg_cognitive": 8.0
+      }
+    },
+    "Chess/DifficultySelectionView.swift": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 36,
+        "N1_total_operators": 75,
+        "N2_total_operands": 79,
+        "vocabulary": 44,
+        "length": 154,
+        "calculated_length": 210.12,
+        "volume": 840.75,
+        "difficulty": 8.78,
+        "effort": 7379.94,
+        "time_seconds": 410.0,
+        "bugs_delivered": 0.28
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 40.6
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Chess/PromitionView.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 64,
+        "N2_total_operands": 66,
+        "vocabulary": 60,
+        "length": 130,
+        "calculated_length": 307.39,
+        "volume": 767.9,
+        "difficulty": 10.04,
+        "effort": 7712.34,
+        "time_seconds": 428.46,
+        "bugs_delivered": 0.256
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 44.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 4,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 4.0,
+        "avg_cognitive": 2.0
+      }
+    }
+  }
+}

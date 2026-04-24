@@ -1,0 +1,1541 @@
+{
+  "project": "PokedexUI",
+  "framework": "swiftui",
+  "language": "swift",
+  "sonar_project_key": "thesis-swiftui-pokedexui",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/PokedexUI",
+  "ui_files_filter": [
+    "PokedexUI/BookmarksView/BookmarksView.swift",
+    "PokedexUI/CustomUI/AsyncSpriteView.swift",
+    "PokedexUI/CustomUI/ItemDetailRowView.swift",
+    "PokedexUI/CustomUI/ItemImageViewModel.swift",
+    "PokedexUI/CustomUI/ItemRowView.swift",
+    "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteView.swift",
+    "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteViewModel.swift",
+    "PokedexUI/CustomUI/PokedexGridView.swift",
+    "PokedexUI/Extensions/Color.swift",
+    "PokedexUI/Extensions/Font.swift",
+    "PokedexUI/Extensions/UIImage.swift",
+    "PokedexUI/Extensions/View.swift",
+    "PokedexUI/Extensions/ViewModifiers.swift",
+    "PokedexUI/ItemDetailView/ItemDetailView.swift",
+    "PokedexUI/ItemListView/ItemListView.swift",
+    "PokedexUI/Misc/EnvironmentValues/AudioPlayerKey.swift",
+    "PokedexUI/Misc/EnvironmentValues/HapticFeedbackKey.swift",
+    "PokedexUI/Misc/EnvironmentValues/ImageColorAnalyzerKey.swift",
+    "PokedexUI/Misc/EnvironmentValues/SpriteLoaderKey.swift",
+    "PokedexUI/Misc/GridLayout.swift",
+    "PokedexUI/Misc/ImageColorAnalyzer.swift",
+    "PokedexUI/Misc/SpriteLoader.swift",
+    "PokedexUI/PokedexUIApp.swift",
+    "PokedexUI/PokedexView/PokedexView.swift",
+    "PokedexUI/PokedexView/PokedexViewModel.swift",
+    "PokedexUI/PokedexView/PokemonViewModel.swift",
+    "PokedexUI/PokemonDetailView/PokemonDetailView.swift",
+    "PokedexUI/PokemonDetailView/PokemonDetailViewModel.swift",
+    "PokedexUI/SearchView/SearchView.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "PokedexUI/BookmarksView/BookmarksView.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 41,
+        "N2_total_operands": 39,
+        "vocabulary": 41,
+        "length": 80,
+        "calculated_length": 182.71,
+        "volume": 428.6,
+        "difficulty": 9.05,
+        "effort": 3880.4,
+        "time_seconds": 215.58,
+        "bugs_delivered": 0.143
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 48.33
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "pokemonViewModels",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 1.0
+      }
+    },
+    "PokedexUI/CustomUI/AsyncSpriteView.swift": {
+      "halstead": {
+        "loc": 69,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 64,
+        "N1_total_operators": 138,
+        "N2_total_operands": 124,
+        "vocabulary": 89,
+        "length": 262,
+        "calculated_length": 500.1,
+        "volume": 1696.64,
+        "difficulty": 24.22,
+        "effort": 41090.55,
+        "time_seconds": 2282.81,
+        "bugs_delivered": 0.566
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 3,
+        "observable_state_vars": 6,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 36.6
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.5,
+        "avg_cognitive": 1.5
+      }
+    },
+    "PokedexUI/CustomUI/ItemDetailRowView.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 40,
+        "N2_total_operands": 39,
+        "vocabulary": 39,
+        "length": 79,
+        "calculated_length": 174.1,
+        "volume": 417.55,
+        "difficulty": 6.72,
+        "effort": 2807.64,
+        "time_seconds": 155.98,
+        "bugs_delivered": 0.139
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 54.13
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/CustomUI/ItemImageViewModel.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 17,
+        "N1_total_operators": 41,
+        "N2_total_operands": 37,
+        "vocabulary": 32,
+        "length": 78,
+        "calculated_length": 128.09,
+        "volume": 390.0,
+        "difficulty": 16.32,
+        "effort": 6366.18,
+        "time_seconds": 353.68,
+        "bugs_delivered": 0.13
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4,
+        "maintainability_index": 49.06
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/CustomUI/ItemRowView.swift": {
+      "halstead": {
+        "loc": 22,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 32,
+        "N2_total_operands": 33,
+        "vocabulary": 33,
+        "length": 65,
+        "calculated_length": 136.16,
+        "volume": 327.89,
+        "difficulty": 8.25,
+        "effort": 2705.06,
+        "time_seconds": 150.28,
+        "bugs_delivered": 0.109
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 52.83
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spriteURL",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteView.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 56,
+        "N2_total_operands": 48,
+        "vocabulary": 47,
+        "length": 104,
+        "calculated_length": 216.69,
+        "volume": 577.68,
+        "difficulty": 13.6,
+        "effort": 7856.41,
+        "time_seconds": 436.47,
+        "bugs_delivered": 0.193
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 47.29
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "loadSprite",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.5
+      }
+    },
+    "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteViewModel.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 4,
+        "N1_total_operators": 8,
+        "N2_total_operands": 8,
+        "vocabulary": 11,
+        "length": 16,
+        "calculated_length": 27.65,
+        "volume": 55.35,
+        "difficulty": 7.0,
+        "effort": 387.46,
+        "time_seconds": 21.53,
+        "bugs_delivered": 0.018
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 63.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/CustomUI/PokedexGridView.swift": {
+      "halstead": {
+        "loc": 46,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 80,
+        "N2_total_operands": 81,
+        "vocabulary": 60,
+        "length": 161,
+        "calculated_length": 307.39,
+        "volume": 951.01,
+        "difficulty": 12.33,
+        "effort": 11722.22,
+        "time_seconds": 651.23,
+        "bugs_delivered": 0.317
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 42.47
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "PokedexUI/Extensions/Color.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 128,
+        "N2_total_operands": 113,
+        "vocabulary": 73,
+        "length": 241,
+        "calculated_length": 388.66,
+        "volume": 1491.75,
+        "difficulty": 22.82,
+        "effort": 34037.67,
+        "time_seconds": 1890.98,
+        "bugs_delivered": 0.497
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 44.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "isLight",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "PokedexUI/Extensions/Font.swift": {
+      "halstead": {
+        "loc": 6,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 22,
+        "N2_total_operands": 22,
+        "vocabulary": 18,
+        "length": 44,
+        "calculated_length": 57.71,
+        "volume": 183.48,
+        "difficulty": 7.0,
+        "effort": 1284.34,
+        "time_seconds": 71.35,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "PokedexUI/Extensions/UIImage.swift": {
+      "halstead": {
+        "loc": 9,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 18,
+        "N2_total_operands": 18,
+        "vocabulary": 25,
+        "length": 36,
+        "calculated_length": 91.82,
+        "volume": 167.18,
+        "difficulty": 6.0,
+        "effort": 1003.07,
+        "time_seconds": 55.73,
+        "bugs_delivered": 0.056
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 63.48
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "resize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/Extensions/View.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 65,
+        "N2_total_operands": 62,
+        "vocabulary": 56,
+        "length": 127,
+        "calculated_length": 279.78,
+        "volume": 737.53,
+        "difficulty": 10.33,
+        "effort": 7621.19,
+        "time_seconds": 423.4,
+        "bugs_delivered": 0.246
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 47.81
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "applyPokedexStyling",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fadeIn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "`if`",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.67
+      }
+    },
+    "PokedexUI/Extensions/ViewModifiers.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 72,
+        "N2_total_operands": 76,
+        "vocabulary": 55,
+        "length": 148,
+        "calculated_length": 265.96,
+        "volume": 855.64,
+        "difficulty": 21.71,
+        "effort": 18579.64,
+        "time_seconds": 1032.2,
+        "bugs_delivered": 0.285
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 2,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 45.12
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "PokedexUI/ItemDetailView/ItemDetailView.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 47,
+        "N2_total_operands": 43,
+        "vocabulary": 41,
+        "length": 90,
+        "calculated_length": 185.26,
+        "volume": 482.18,
+        "difficulty": 7.88,
+        "effort": 3801.18,
+        "time_seconds": 211.18,
+        "bugs_delivered": 0.161
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 52.23
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/ItemListView/ItemListView.swift": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 68,
+        "N2_total_operands": 66,
+        "vocabulary": 59,
+        "length": 134,
+        "calculated_length": 294.72,
+        "volume": 788.27,
+        "difficulty": 14.49,
+        "effort": 11420.36,
+        "time_seconds": 634.46,
+        "bugs_delivered": 0.263
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 43.77
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "itemList",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "itemRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "PokedexUI/Misc/EnvironmentValues/AudioPlayerKey.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 14,
+        "N2_total_operands": 17,
+        "vocabulary": 20,
+        "length": 31,
+        "calculated_length": 66.44,
+        "volume": 133.98,
+        "difficulty": 8.5,
+        "effort": 1138.83,
+        "time_seconds": 63.27,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 63.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "audioPlayer.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "audioPlayer.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/Misc/EnvironmentValues/HapticFeedbackKey.swift": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 12,
+        "N1_total_operators": 16,
+        "N2_total_operands": 19,
+        "vocabulary": 22,
+        "length": 35,
+        "calculated_length": 76.24,
+        "volume": 156.08,
+        "difficulty": 7.92,
+        "effort": 1235.63,
+        "time_seconds": 68.65,
+        "bugs_delivered": 0.052
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 61.66
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "hapticFeedback.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hapticFeedback.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/Misc/EnvironmentValues/ImageColorAnalyzerKey.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 14,
+        "N2_total_operands": 17,
+        "vocabulary": 20,
+        "length": 31,
+        "calculated_length": 66.44,
+        "volume": 133.98,
+        "difficulty": 8.5,
+        "effort": 1138.83,
+        "time_seconds": 63.27,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 63.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "imageColorAnalyzer.g",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "imageColorAnalyzer.s",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/Misc/EnvironmentValues/SpriteLoaderKey.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 14,
+        "N2_total_operands": 17,
+        "vocabulary": 20,
+        "length": 31,
+        "calculated_length": 66.44,
+        "volume": 133.98,
+        "difficulty": 8.5,
+        "effort": 1138.83,
+        "time_seconds": 63.27,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 63.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "spriteLoader.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spriteLoader.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/Misc/GridLayout.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 49,
+        "N2_total_operands": 42,
+        "vocabulary": 34,
+        "length": 91,
+        "calculated_length": 143.26,
+        "volume": 462.96,
+        "difficulty": 8.75,
+        "effort": 4050.89,
+        "time_seconds": 225.05,
+        "bugs_delivered": 0.154
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 47.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "layout",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "icon",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "otherIcon",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "toggle",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.5,
+        "avg_cognitive": 0.75
+      }
+    },
+    "PokedexUI/Misc/ImageColorAnalyzer.swift": {
+      "halstead": {
+        "loc": 66,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 69,
+        "N1_total_operators": 185,
+        "N2_total_operands": 180,
+        "vocabulary": 102,
+        "length": 365,
+        "calculated_length": 587.95,
+        "volume": 2435.44,
+        "difficulty": 43.04,
+        "effort": 104829.6,
+        "time_seconds": 5823.87,
+        "bugs_delivered": 0.812
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 34.17
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "dominantColor",
+            "cyclomatic": 10,
+            "cognitive": 13
+          },
+          {
+            "function": "isBlackOrWhite",
+            "cyclomatic": 6,
+            "cognitive": 0
+          },
+          {
+            "function": "isDark",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toUIColor",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 4.5,
+        "avg_cognitive": 3.25
+      }
+    },
+    "PokedexUI/Misc/SpriteLoader.swift": {
+      "halstead": {
+        "loc": 65,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 36,
+        "N1_total_operators": 94,
+        "N2_total_operands": 86,
+        "vocabulary": 58,
+        "length": 180,
+        "calculated_length": 284.22,
+        "volume": 1054.44,
+        "difficulty": 26.28,
+        "effort": 27708.25,
+        "time_seconds": 1539.35,
+        "bugs_delivered": 0.351
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.34
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spriteImage",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "cache",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 1.33
+      }
+    },
+    "PokedexUI/PokedexUIApp.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 29,
+        "N2_total_operands": 28,
+        "vocabulary": 27,
+        "length": 57,
+        "calculated_length": 103.59,
+        "volume": 271.03,
+        "difficulty": 7.0,
+        "effort": 1897.2,
+        "time_seconds": 105.4,
+        "bugs_delivered": 0.09
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 53.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/PokedexView/PokedexView.swift": {
+      "halstead": {
+        "loc": 116,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 80,
+        "N1_total_operators": 196,
+        "N2_total_operands": 237,
+        "vocabulary": 100,
+        "length": 433,
+        "calculated_length": 592.19,
+        "volume": 2876.79,
+        "difficulty": 29.62,
+        "effort": 85224.9,
+        "time_seconds": 4734.72,
+        "bugs_delivered": 0.959
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 1,
+        "observable_state_vars": 4,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8,
+        "maintainability_index": 29.4
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pokedexTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "itemsTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "favouritesTab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "gridLayoutButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sortMenu",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyPokedexConfigur",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/PokedexView/PokedexViewModel.swift": {
+      "halstead": {
+        "loc": 101,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 62,
+        "N1_total_operators": 140,
+        "N2_total_operands": 148,
+        "vocabulary": 87,
+        "length": 288,
+        "calculated_length": 485.26,
+        "volume": 1855.57,
+        "difficulty": 29.84,
+        "effort": 55367.75,
+        "time_seconds": 3075.99,
+        "bugs_delivered": 0.619
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5714,
+        "maintainability_index": 31.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "requestPokemon",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "sort",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "fetchStoredData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchAPIData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "storeData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transformToViewModel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transformForStorage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "withLoadingState",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.22,
+        "avg_cognitive": 0.22
+      }
+    },
+    "PokedexUI/PokedexView/PokemonViewModel.swift": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 143,
+        "N2_total_operands": 169,
+        "vocabulary": 71,
+        "length": 312,
+        "calculated_length": 381.97,
+        "volume": 1918.72,
+        "difficulty": 24.58,
+        "effort": 47165.65,
+        "time_seconds": 2620.31,
+        "bugs_delivered": 0.64
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 33.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "id",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "name",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "frontSprite",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "backSprite",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "height",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "weight",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "latestCry",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stats",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "types",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "abilities",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "moves",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "==",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "joinedCapitalizedNam",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "PokedexUI/PokemonDetailView/PokemonDetailView.swift": {
+      "halstead": {
+        "loc": 225,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 173,
+        "N1_total_operators": 447,
+        "N2_total_operands": 446,
+        "vocabulary": 201,
+        "length": 893,
+        "calculated_length": 1420.8,
+        "volume": 6832.39,
+        "difficulty": 36.09,
+        "effort": 246597.91,
+        "time_seconds": 13699.88,
+        "bugs_delivered": 2.277
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 3,
+        "observable_state_vars": 6,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7,
+        "maintainability_index": 19.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spriteSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "contentSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "spriteImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "actionButtons",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "playSoundButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bookmarkButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "flipButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "imageIcon",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "basicInfoSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "statsSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "movesSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sectionDivider",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "bottomSpacer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "detailRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "detailRowStat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "baseRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyDetailViewStyli",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.11,
+        "avg_cognitive": 0.11
+      }
+    },
+    "PokedexUI/PokemonDetailView/PokemonDetailViewModel.swift": {
+      "halstead": {
+        "loc": 121,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 175,
+        "N2_total_operands": 178,
+        "vocabulary": 95,
+        "length": 353,
+        "calculated_length": 541.03,
+        "volume": 2319.16,
+        "difficulty": 37.19,
+        "effort": 86258.87,
+        "time_seconds": 4792.16,
+        "bugs_delivered": 0.773
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.625,
+        "maintainability_index": 29.12
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateBookmarkStatus",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadSpritesAndColor",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "toggleBookmark",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "playSound",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "flipSprite",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "flipSpriteBack",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "PokedexUI/SearchView/SearchView.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 50,
+        "N1_total_operators": 109,
+        "N2_total_operands": 95,
+        "vocabulary": 76,
+        "length": 204,
+        "calculated_length": 404.4,
+        "volume": 1274.58,
+        "difficulty": 24.7,
+        "effort": 31482.06,
+        "time_seconds": 1749.0,
+        "bugs_delivered": 0.425
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 3,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 39.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissSearch",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "resultText",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 1.33
+      }
+    }
+  }
+}

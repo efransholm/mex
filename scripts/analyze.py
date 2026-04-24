@@ -84,7 +84,7 @@ FOLDER_TO_LABEL: dict[str, str] = {
     "youtube-iOS":      "aslanyanhaik/youtube-iOS",
     "MovieSwiftUI":     "Dimillian/MovieSwiftUI",
     "Expense-Tracker-App": "abdorizak/Expense-Tracker-App",
-    "DimeApp":          "rafsoh/DimeApp",
+    "dimeApp":          "rafsoh/DimeApp",
     "Chess":            "nicklockwood/Chess",
     "chess_swiftui":    "jaredcassoutt/chess_swiftui",
     "Tuist-Pokedex":    "ronanociosoig/Tuist-Pokedex",
@@ -202,19 +202,38 @@ def detect_project(project_path: str) -> tuple[str, str, str]:
     """
     entries = os.listdir(project_path)
 
-    # iOS: look for .xcodeproj
+    # iOS: look for .xcodeproj (check root and one level deep)
     xcodeprojs = [e for e in entries if e.endswith(".xcodeproj")]
-    if xcodeprojs:
-        app_name = xcodeprojs[0].removesuffix(".xcodeproj")
+    if not xcodeprojs:
+        for sub in entries:
+            subpath = os.path.join(project_path, sub)
+            if os.path.isdir(subpath):
+                try:
+                    subentries = os.listdir(subpath)
+                    xcodeprojs = [e for e in subentries if e.endswith(".xcodeproj")]
+                    if xcodeprojs:
+                        break
+                except OSError:
+                    pass
+    # Tuist projects have no committed .xcodeproj; detect via Project.swift at root
+    is_tuist = not xcodeprojs and "Project.swift" in entries
+    if xcodeprojs or is_tuist:
+        app_name = xcodeprojs[0].removesuffix(".xcodeproj") if xcodeprojs else os.path.basename(project_path)
         swift_files = find_files(project_path, (".swift",))
+        swiftui_count = 0
+        uikit_count = 0
         for sf in swift_files:
             try:
                 with open(sf, encoding="utf-8", errors="ignore") as f:
-                    if "import SwiftUI" in f.read():
-                        return "swift", "swiftui", app_name
+                    content = f.read()
+                    if "import SwiftUI" in content:
+                        swiftui_count += 1
+                    if "import UIKit" in content:
+                        uikit_count += 1
             except OSError:
                 pass
-        return "swift", "uikit", app_name
+        framework = "swiftui" if swiftui_count > uikit_count else "uikit"
+        return "swift", framework, app_name
 
     # Android: look for build.gradle / build.gradle.kts anywhere inside
     # Always use the folder name as app_name — applicationId extraction produced
@@ -506,7 +525,7 @@ def analyze_project(
     allowed_files: set | None = None,
 ) -> dict:
     language, framework, app_name = detect_project(project_path)
-    project_key = f"thesis-{framework}-{app_name}".lower()
+    project_key = f"thesis-{framework}-{app_name}".lower().replace(" ", "-")
 
     print(f"\n=== {app_name}  [{framework} / {language}]  key: {project_key} ===")
     if allowed_files is not None:
