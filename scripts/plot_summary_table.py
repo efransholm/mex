@@ -54,7 +54,7 @@ IOS_PAIRS = [
     {"repos": ["abdorizak/Expense-Tracker-App",  "rafsoh/DimeApp"],              "color": "#ADDFAD"},
     {"repos": ["nicklockwood/Chess",             "jaredcassoutt/chess_swiftui"],  "color": "#F08080"},
     {"repos": ["ronanociosoig/Tuist-Pokedex",    "brillcp/PokedexUI"],           "color": "#FAFAD2"},
-    {"repos": ["ddddxxx/LyricsX",               "aviwad/LyricFever"],            "color": "#E6E6FA"},
+    {"repos": ["youstanzr/YouTag",               "aviwad/LyricFever"],            "color": "#E6E6FA"},
 ]
 
 

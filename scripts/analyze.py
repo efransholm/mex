@@ -89,7 +89,7 @@ FOLDER_TO_LABEL: dict[str, str] = {
     "chess_swiftui":    "jaredcassoutt/chess_swiftui",
     "Tuist-Pokedex":    "ronanociosoig/Tuist-Pokedex",
     "PokedexUI":        "brillcp/PokedexUI",
-    "LyricsX":          "ddddxxx/LyricsX",
+    "YouTag":          "youstanzr/YouTag",
     "LyricFever":       "aviwad/LyricFever",
 }
 
