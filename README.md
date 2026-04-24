@@ -52,6 +52,9 @@ python3 scripts/analyze.py --single repos/nowinandroid \
 python3 scripts/analyze.py --single repos/apps-android-wikipedia \
     --ui-csv repo_data.csv --repo-label wikimedia/apps-android-wikipedia \
     --dominant-only
+
+# locally all files
+python3 scripts/analyze.py ../repositories/iOS --local --ui-csv repo_data_ios.csv
 ```
 
 ### Run repo mining
