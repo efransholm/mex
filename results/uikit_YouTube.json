@@ -1,0 +1,989 @@
+{
+  "project": "YouTube",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-youtube",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/youtube-iOS",
+  "ui_files_filter": [
+    "YouTube/AppDelegate.swift",
+    "YouTube/Base.lproj/Main.storyboard",
+    "YouTube/Extensions/extensions.swift",
+    "YouTube/LauchVIew.xib",
+    "YouTube/Model/User.swift",
+    "YouTube/Model/Video.swift",
+    "YouTube/Supporting views/PlayerView.swift",
+    "YouTube/Supporting views/SearchView.swift",
+    "YouTube/Supporting views/SettingsView.swift",
+    "YouTube/Supporting views/TabBarView.swift",
+    "YouTube/ViewControllers/AccountVC.swift",
+    "YouTube/ViewControllers/HomeVC.swift",
+    "YouTube/ViewControllers/MainVC.swift",
+    "YouTube/ViewControllers/NavVC.swift",
+    "YouTube/ViewControllers/SubscriptionsVC.swift",
+    "YouTube/ViewControllers/TrendingVC.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "YouTube/AppDelegate.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 15,
+        "N2_total_operands": 16,
+        "vocabulary": 24,
+        "length": 31,
+        "calculated_length": 86.52,
+        "volume": 142.13,
+        "difficulty": 5.71,
+        "effort": 812.19,
+        "time_seconds": 45.12,
+        "bugs_delivered": 0.047
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 54.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "YouTube/Extensions/extensions.swift": {
+      "halstead": {
+        "loc": 82,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 124,
+        "N2_total_operands": 120,
+        "vocabulary": 85,
+        "length": 244,
+        "calculated_length": 465.18,
+        "volume": 1563.89,
+        "difficulty": 32.73,
+        "effort": 51181.9,
+        "time_seconds": 2843.44,
+        "bugs_delivered": 0.521
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 34.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "rbg",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "myShuffle",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "secondsToFormattedSt",
+            "cyclomatic": 6,
+            "cognitive": 6
+          }
+        ],
+        "avg_cyclomatic": 3.67,
+        "avg_cognitive": 3.33
+      }
+    },
+    "YouTube/Model/User.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 44,
+        "N1_total_operators": 107,
+        "N2_total_operands": 110,
+        "vocabulary": 61,
+        "length": 217,
+        "calculated_length": 309.7,
+        "volume": 1286.97,
+        "difficulty": 21.25,
+        "effort": 27348.11,
+        "time_seconds": 1519.34,
+        "bugs_delivered": 0.429
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0833,
+        "maintainability_index": 39.55
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "fetchData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "YouTube/Model/Video.swift": {
+      "halstead": {
+        "loc": 97,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 109,
+        "N1_total_operators": 179,
+        "N2_total_operands": 219,
+        "vocabulary": 123,
+        "length": 398,
+        "calculated_length": 791.04,
+        "volume": 2763.12,
+        "difficulty": 14.06,
+        "effort": 38861.14,
+        "time_seconds": 2158.95,
+        "bugs_delivered": 0.921
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 30,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 31.62
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchVideos",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchVideo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.17,
+        "avg_cognitive": 0.17
+      }
+    },
+    "YouTube/Supporting views/PlayerView.swift": {
+      "halstead": {
+        "loc": 193,
+        "n1_unique_operators": 37,
+        "n2_unique_operands": 163,
+        "N1_total_operators": 633,
+        "N2_total_operands": 576,
+        "vocabulary": 200,
+        "length": 1209,
+        "calculated_length": 1390.59,
+        "volume": 9241.42,
+        "difficulty": 65.37,
+        "effort": 604150.88,
+        "time_seconds": 33563.94,
+        "bugs_delivered": 3.08
+      },
+      "state_metrics": {
+        "mutable_vars": 19,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6333,
+        "maintainability_index": 19.28
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animate",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "changeValues",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tapPlayView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "minimize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "minimizeGesture",
+            "cyclomatic": 8,
+            "cognitive": 11
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.3,
+        "avg_cognitive": 1.6
+      }
+    },
+    "YouTube/Supporting views/SearchView.swift": {
+      "halstead": {
+        "loc": 96,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 201,
+        "N2_total_operands": 211,
+        "vocabulary": 114,
+        "length": 412,
+        "calculated_length": 694.31,
+        "volume": 2815.15,
+        "difficulty": 28.13,
+        "effort": 79199.57,
+        "time_seconds": 4399.98,
+        "bugs_delivered": 0.938
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4444,
+        "maintainability_index": 30.86
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideSearchView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldShouldRetur",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textField",
+            "cyclomatic": 6,
+            "cognitive": 9
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.62,
+        "avg_cognitive": 1.12
+      }
+    },
+    "YouTube/Supporting views/SettingsView.swift": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 109,
+        "N2_total_operands": 123,
+        "vocabulary": 77,
+        "length": 232,
+        "calculated_length": 422.13,
+        "volume": 1453.89,
+        "difficulty": 18.76,
+        "effort": 27279.0,
+        "time_seconds": 1515.5,
+        "bugs_delivered": 0.485
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 38.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hideSettingsView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "YouTube/Supporting views/TabBarView.swift": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 89,
+        "N1_total_operators": 180,
+        "N2_total_operands": 186,
+        "vocabulary": 115,
+        "length": 366,
+        "calculated_length": 698.55,
+        "volume": 2505.45,
+        "difficulty": 27.17,
+        "effort": 68069.4,
+        "time_seconds": 3781.63,
+        "bugs_delivered": 0.835
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 33.69
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animateMenu",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.38,
+        "avg_cognitive": 0.38
+      }
+    },
+    "YouTube/ViewControllers/AccountVC.swift": {
+      "halstead": {
+        "loc": 104,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 94,
+        "N1_total_operators": 278,
+        "N2_total_operands": 277,
+        "vocabulary": 121,
+        "length": 555,
+        "calculated_length": 744.51,
+        "volume": 3839.97,
+        "difficulty": 39.78,
+        "effort": 152761.32,
+        "time_seconds": 8486.74,
+        "bugs_delivered": 1.28
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7059,
+        "maintainability_index": 29.29
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "scrollViewDidScroll",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.71,
+        "avg_cognitive": 0.57
+      }
+    },
+    "YouTube/ViewControllers/HomeVC.swift": {
+      "halstead": {
+        "loc": 105,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 109,
+        "N1_total_operators": 252,
+        "N2_total_operands": 272,
+        "vocabulary": 131,
+        "length": 524,
+        "calculated_length": 835.84,
+        "volume": 3685.51,
+        "difficulty": 27.45,
+        "effort": 101165.66,
+        "time_seconds": 5620.31,
+        "bugs_delivered": 1.229
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8889,
+        "maintainability_index": 29.05
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollViewDidScroll",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "scrollViewDidEndDrag",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "customization",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prepareForReuse",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.17,
+        "avg_cognitive": 0.25
+      }
+    },
+    "YouTube/ViewControllers/MainVC.swift": {
+      "halstead": {
+        "loc": 89,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 136,
+        "N1_total_operators": 343,
+        "N2_total_operands": 350,
+        "vocabulary": 163,
+        "length": 693,
+        "calculated_length": 1092.28,
+        "volume": 5092.67,
+        "difficulty": 34.74,
+        "effort": 176932.79,
+        "time_seconds": 9829.6,
+        "bugs_delivered": 1.698
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 29.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "scrollViews",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "hideBar",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollViewDidScroll",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "YouTube/ViewControllers/NavVC.swift": {
+      "halstead": {
+        "loc": 194,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 175,
+        "N1_total_operators": 879,
+        "N2_total_operands": 884,
+        "vocabulary": 203,
+        "length": 1763,
+        "calculated_length": 1438.57,
+        "volume": 13513.99,
+        "difficulty": 70.72,
+        "effort": 955709.18,
+        "time_seconds": 53094.95,
+        "bugs_delivered": 4.505
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1739,
+        "maintainability_index": 17.81
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customization",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showSearch",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showSettings",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "changeTitle",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "animatePlayView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "positionDuringSwipe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didMinimize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didmaximize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didEndedSwipe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "swipeToMinimize",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "setPreferStatusBarHi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isHidden.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prefersStatusBarHidd",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.56,
+        "avg_cognitive": 0.31
+      }
+    },
+    "YouTube/ViewControllers/SubscriptionsVC.swift": {
+      "halstead": {
+        "loc": 73,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 71,
+        "N1_total_operators": 143,
+        "N2_total_operands": 161,
+        "vocabulary": 93,
+        "length": 304,
+        "calculated_length": 534.74,
+        "volume": 1987.9,
+        "difficulty": 24.94,
+        "effort": 49585.61,
+        "time_seconds": 2754.76,
+        "bugs_delivered": 0.663
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 34.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "customization",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "awakeFromNib",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.38
+      }
+    },
+    "YouTube/ViewControllers/TrendingVC.swift": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 41,
+        "N2_total_operands": 46,
+        "vocabulary": 42,
+        "length": 87,
+        "calculated_length": 186.21,
+        "volume": 469.13,
+        "difficulty": 14.15,
+        "effort": 6640.02,
+        "time_seconds": 368.89,
+        "bugs_delivered": 0.156
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.77
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 1.0
+      }
+    }
+  }
+}

@@ -2,127 +2,114 @@
   "project": "Simple-Music-Player",
   "framework": "views",
   "language": "kotlin",
-  "sonar_project_key": "thesis-views-Simple-Music-Player",
+  "sonar_project_key": "thesis-views-simple-music-player",
   "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/Simple-Music-Player",
+  "ui_files_filter": [
+    "app/build.gradle.kts",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/AlbumsActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/EqualizerActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/ExcludedFoldersActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/MainActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/QueueActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SettingsActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SimpleMusicActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/TrackActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/TracksActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/WidgetConfigureActivity.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/AlbumsAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/AlbumsTracksAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ArtistsAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/BaseMusicAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ExcludedFoldersAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/FoldersAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/GenresAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/PlaylistsAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/QueueAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/TracksAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/TracksHeaderAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ViewPagerAdapter.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ChangeSortingDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/EditDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ExportPlaylistDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ManageVisibleTabsDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/NewPlaylistDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/RemovePlaylistDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/SelectPlaylistDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/SleepTimerCustomDialog.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/View.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/AlbumsFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/ArtistsFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/FoldersFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/GenresFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/PlaybackSpeedFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/PlaylistsFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/TracksFragment.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/views/CurrentTrackBar.kt",
+    "app/src/main/kotlin/com/simplemobiletools/musicplayer/views/MarqueeTextView.kt",
+    "app/src/main/res/layout-land/item_playlist.xml",
+    "app/src/main/res/layout/activity_albums.xml",
+    "app/src/main/res/layout/activity_equalizer.xml",
+    "app/src/main/res/layout/activity_excluded_folders.xml",
+    "app/src/main/res/layout/activity_main.xml",
+    "app/src/main/res/layout/activity_queue.xml",
+    "app/src/main/res/layout/activity_settings.xml",
+    "app/src/main/res/layout/activity_track.xml",
+    "app/src/main/res/layout/activity_tracks.xml",
+    "app/src/main/res/layout/dialog_change_sorting.xml",
+    "app/src/main/res/layout/dialog_custom_sleep_timer_picker.xml",
+    "app/src/main/res/layout/dialog_export_playlist.xml",
+    "app/src/main/res/layout/dialog_manage_visible_tabs.xml",
+    "app/src/main/res/layout/dialog_new_playlist.xml",
+    "app/src/main/res/layout/dialog_remove_playlist.xml",
+    "app/src/main/res/layout/dialog_rename_song.xml",
+    "app/src/main/res/layout/dialog_select_playlist.xml",
+    "app/src/main/res/layout/equalizer_band.xml",
+    "app/src/main/res/layout/fragment_albums.xml",
+    "app/src/main/res/layout/fragment_artists.xml",
+    "app/src/main/res/layout/fragment_folders.xml",
+    "app/src/main/res/layout/fragment_genres.xml",
+    "app/src/main/res/layout/fragment_playback_speed.xml",
+    "app/src/main/res/layout/fragment_playlists.xml",
+    "app/src/main/res/layout/fragment_tracks.xml",
+    "app/src/main/res/layout/item_album.xml",
+    "app/src/main/res/layout/item_album_header.xml",
+    "app/src/main/res/layout/item_artist.xml",
+    "app/src/main/res/layout/item_excluded_folder.xml",
+    "app/src/main/res/layout/item_folder.xml",
+    "app/src/main/res/layout/item_genre.xml",
+    "app/src/main/res/layout/item_playlist.xml",
+    "app/src/main/res/layout/item_section.xml",
+    "app/src/main/res/layout/item_select_playlist.xml",
+    "app/src/main/res/layout/item_track.xml",
+    "app/src/main/res/layout/item_track_queue.xml",
+    "app/src/main/res/layout/item_transparent.xml",
+    "app/src/main/res/layout/small_radio_button.xml",
+    "app/src/main/res/layout/small_widget.xml",
+    "app/src/main/res/layout/view_current_track_bar.xml",
+    "app/src/main/res/layout/widget.xml",
+    "app/src/main/res/layout/widget_config.xml",
+    "app/src/main/res/layout/widget_controls.xml"
+  ],
   "sonarqube_project": {
     "complexity": 1485,
     "code_smells": 55,
-    "duplicated_lines_density": 0.7,
+    "duplicated_lines_density": 0.8,
     "functions": 726,
     "classes": 109,
     "sqale_debt_ratio": 0.1,
     "statements": 4099,
-    "comment_lines_density": 2.9,
+    "comment_lines_density": 3.0,
     "bugs": 1,
     "comment_lines": 507,
     "cognitive_complexity": 1187,
-    "ncloc": 16858,
-    "files": 253,
-    "lines": 19722
+    "ncloc": 16456,
+    "files": 251,
+    "lines": 19320
   },
   "files": {
     "app/build.gradle.kts": {
       "sonarqube": {
-        "lines": 117,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/schemas/com.simplemobiletools.musicplayer.databases.SongsDatabase/13.json": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 401,
-        "ncloc": 401,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/debug/res/values/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 4,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/fdroid/res/values/bools.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/AndroidManifest.xml": {
-      "sonarqube": {
-        "code_smells": 1,
-        "comment_lines": 3,
-        "comment_lines_density": 0.7,
-        "lines": 468,
-        "ncloc": 398,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/App.kt": {
-      "halstead": {
-        "loc": 24,
-        "n1_unique_operators": 8,
-        "n2_unique_operands": 18,
-        "N1_total_operators": 30,
-        "N2_total_operands": 21,
-        "vocabulary": 26,
-        "length": 51,
-        "calculated_length": 99.06,
-        "volume": 239.72,
-        "difficulty": 4.67,
-        "effort": 1118.7,
-        "time_seconds": 62.15,
-        "bugs_delivered": 0.08
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 52.83
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 3,
-        "functions": 3,
-        "lines": 28,
-        "ncloc": 24,
-        "statements": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "lines": 117
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/AlbumsActivity.kt": {
@@ -160,11 +147,7 @@
         "functions": 2,
         "lines": 93,
         "ncloc": 77,
-        "statements": 40,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 40
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/EqualizerActivity.kt": {
@@ -204,9 +187,7 @@
         "lines": 205,
         "ncloc": 174,
         "sqale_debt_ratio": 0.2,
-        "statements": 91,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 91
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/ExcludedFoldersActivity.kt": {
@@ -243,12 +224,7 @@
         "functions": 4,
         "lines": 47,
         "ncloc": 37,
-        "statements": 15,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "statements": 15
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/MainActivity.kt": {
@@ -288,9 +264,7 @@
         "lines": 548,
         "ncloc": 467,
         "sqale_debt_ratio": 0.1,
-        "statements": 243,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 243
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/QueueActivity.kt": {
@@ -329,10 +303,7 @@
         "functions": 16,
         "lines": 172,
         "ncloc": 149,
-        "statements": 71,
-        "code_smells": 0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 71
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SettingsActivity.kt": {
@@ -370,95 +341,7 @@
         "functions": 13,
         "lines": 164,
         "ncloc": 143,
-        "statements": 76,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SimpleActivity.kt": {
-      "halstead": {
-        "loc": 27,
-        "n1_unique_operators": 8,
-        "n2_unique_operands": 29,
-        "N1_total_operators": 54,
-        "N2_total_operands": 66,
-        "vocabulary": 37,
-        "length": 120,
-        "calculated_length": 164.88,
-        "volume": 625.13,
-        "difficulty": 9.1,
-        "effort": 5690.88,
-        "time_seconds": 316.16,
-        "bugs_delivered": 0.208
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 48.93
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 2,
-        "functions": 2,
-        "lines": 31,
-        "ncloc": 27,
-        "statements": 2,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SimpleControllerActivity.kt": {
-      "halstead": {
-        "loc": 156,
-        "n1_unique_operators": 27,
-        "n2_unique_operands": 130,
-        "N1_total_operators": 262,
-        "N2_total_operands": 275,
-        "vocabulary": 157,
-        "length": 537,
-        "calculated_length": 1041.29,
-        "volume": 3917.21,
-        "difficulty": 28.56,
-        "effort": 111866.52,
-        "time_seconds": 6214.81,
-        "bugs_delivered": 1.306
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 9,
-        "observable_state_vars": 0,
-        "state_updates": 2
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1818,
-        "maintainability_index": 23.77
-      },
-      "sonarqube": {
-        "bugs": 1,
-        "classes": 1,
-        "code_smells": 4,
-        "cognitive_complexity": 39,
-        "comment_lines": 4,
-        "comment_lines_density": 2.6,
-        "complexity": 24,
-        "functions": 14,
-        "lines": 179,
-        "ncloc": 152,
-        "sqale_debt_ratio": 0.5,
-        "statements": 72,
-        "duplicated_lines_density": 0.0
+        "statements": 76
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SimpleMusicActivity.kt": {
@@ -496,53 +379,7 @@
         "functions": 7,
         "lines": 68,
         "ncloc": 55,
-        "statements": 23,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/SplashActivity.kt": {
-      "halstead": {
-        "loc": 9,
-        "n1_unique_operators": 7,
-        "n2_unique_operands": 9,
-        "N1_total_operators": 12,
-        "N2_total_operands": 9,
-        "vocabulary": 16,
-        "length": 21,
-        "calculated_length": 48.18,
-        "volume": 84.0,
-        "difficulty": 3.5,
-        "effort": 294.0,
-        "time_seconds": 16.33,
-        "bugs_delivered": 0.028
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 65.58
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 12,
-        "ncloc": 9,
-        "statements": 2,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "statements": 23
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/TrackActivity.kt": {
@@ -582,9 +419,7 @@
         "lines": 436,
         "ncloc": 370,
         "sqale_debt_ratio": 0.1,
-        "statements": 206,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 206
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/TracksActivity.kt": {
@@ -625,8 +460,7 @@
         "lines": 433,
         "ncloc": 379,
         "sqale_debt_ratio": 0.3,
-        "statements": 199,
-        "bugs": 0
+        "statements": 199
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/activities/WidgetConfigureActivity.kt": {
@@ -664,11 +498,7 @@
         "functions": 10,
         "lines": 170,
         "ncloc": 142,
-        "statements": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 87
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/AlbumsAdapter.kt": {
@@ -706,11 +536,7 @@
         "functions": 8,
         "lines": 99,
         "ncloc": 84,
-        "statements": 40,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 40
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/AlbumsTracksAdapter.kt": {
@@ -749,10 +575,7 @@
         "functions": 16,
         "lines": 202,
         "ncloc": 171,
-        "statements": 90,
-        "code_smells": 0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 90
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ArtistsAdapter.kt": {
@@ -790,11 +613,7 @@
         "functions": 8,
         "lines": 101,
         "ncloc": 86,
-        "statements": 42,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 42
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/BaseMusicAdapter.kt": {
@@ -834,9 +653,7 @@
         "lines": 180,
         "ncloc": 148,
         "sqale_debt_ratio": 0.3,
-        "statements": 70,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 70
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ExcludedFoldersAdapter.kt": {
@@ -876,9 +693,7 @@
         "lines": 135,
         "ncloc": 108,
         "sqale_debt_ratio": 0.5,
-        "statements": 54,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 54
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/FoldersAdapter.kt": {
@@ -916,11 +731,7 @@
         "functions": 8,
         "lines": 78,
         "ncloc": 64,
-        "statements": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 27
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/GenresAdapter.kt": {
@@ -958,11 +769,7 @@
         "functions": 8,
         "lines": 104,
         "ncloc": 88,
-        "statements": 42,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 42
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/PlaylistsAdapter.kt": {
@@ -1000,11 +807,7 @@
         "functions": 10,
         "lines": 112,
         "ncloc": 96,
-        "statements": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/QueueAdapter.kt": {
@@ -1044,9 +847,7 @@
         "lines": 210,
         "ncloc": 175,
         "sqale_debt_ratio": 0.2,
-        "statements": 86,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 86
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/TracksAdapter.kt": {
@@ -1086,9 +887,7 @@
         "lines": 262,
         "ncloc": 225,
         "sqale_debt_ratio": 0.2,
-        "statements": 113,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 113
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/TracksHeaderAdapter.kt": {
@@ -1129,8 +928,7 @@
         "lines": 195,
         "ncloc": 165,
         "sqale_debt_ratio": 0.2,
-        "statements": 84,
-        "bugs": 0
+        "statements": 84
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/adapters/ViewPagerAdapter.kt": {
@@ -1168,53 +966,7 @@
         "functions": 10,
         "lines": 64,
         "ncloc": 51,
-        "statements": 21,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/databases/SongsDatabase.kt": {
-      "halstead": {
-        "loc": 170,
-        "n1_unique_operators": 20,
-        "n2_unique_operands": 108,
-        "N1_total_operators": 284,
-        "N2_total_operands": 269,
-        "vocabulary": 128,
-        "length": 553,
-        "calculated_length": 815.97,
-        "volume": 3871.0,
-        "difficulty": 24.91,
-        "effort": 96416.57,
-        "time_seconds": 5356.48,
-        "bugs_delivered": 1.29
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 12,
-        "observable_state_vars": 0,
-        "state_updates": 2
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0769,
-        "maintainability_index": 24.07
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 4,
-        "comment_lines": 3,
-        "comment_lines_density": 1.8,
-        "complexity": 16,
-        "functions": 14,
-        "lines": 206,
-        "ncloc": 167,
-        "statements": 65,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 21
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ChangeSortingDialog.kt": {
@@ -1254,9 +1006,7 @@
         "lines": 183,
         "ncloc": 158,
         "sqale_debt_ratio": 0.2,
-        "statements": 83,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 83
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/EditDialog.kt": {
@@ -1294,11 +1044,7 @@
         "functions": 2,
         "lines": 113,
         "ncloc": 103,
-        "statements": 56,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 56
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ExportPlaylistDialog.kt": {
@@ -1336,11 +1082,7 @@
         "functions": 0,
         "lines": 75,
         "ncloc": 66,
-        "statements": 31,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 31
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/ManageVisibleTabsDialog.kt": {
@@ -1378,11 +1120,7 @@
         "functions": 1,
         "lines": 61,
         "ncloc": 51,
-        "statements": 24,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 24
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/NewPlaylistDialog.kt": {
@@ -1420,11 +1158,7 @@
         "functions": 0,
         "lines": 68,
         "ncloc": 59,
-        "statements": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 27
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/RemovePlaylistDialog.kt": {
@@ -1462,11 +1196,7 @@
         "functions": 1,
         "lines": 31,
         "ncloc": 26,
-        "statements": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 6
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/SelectPlaylistDialog.kt": {
@@ -1504,11 +1234,7 @@
         "functions": 2,
         "lines": 74,
         "ncloc": 63,
-        "statements": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 27
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/dialogs/SleepTimerCustomDialog.kt": {
@@ -1545,474 +1271,7 @@
         "functions": 1,
         "lines": 34,
         "ncloc": 29,
-        "statements": 13,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Activity.kt": {
-      "halstead": {
-        "loc": 66,
-        "n1_unique_operators": 17,
-        "n2_unique_operands": 54,
-        "N1_total_operators": 101,
-        "N2_total_operands": 113,
-        "vocabulary": 71,
-        "length": 214,
-        "calculated_length": 380.25,
-        "volume": 1316.05,
-        "difficulty": 17.79,
-        "effort": 23408.56,
-        "time_seconds": 1300.48,
-        "bugs_delivered": 0.439
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 5,
-        "observable_state_vars": 0,
-        "state_updates": 3
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 36.72
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 15,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 13,
-        "functions": 5,
-        "lines": 77,
-        "ncloc": 66,
-        "statements": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Context.kt": {
-      "halstead": {
-        "loc": 258,
-        "n1_unique_operators": 30,
-        "n2_unique_operands": 187,
-        "N1_total_operators": 518,
-        "N2_total_operands": 509,
-        "vocabulary": 217,
-        "length": 1027,
-        "calculated_length": 1558.48,
-        "volume": 7971.11,
-        "difficulty": 40.83,
-        "effort": 325451.6,
-        "time_seconds": 18080.64,
-        "bugs_delivered": 2.657
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 33,
-        "observable_state_vars": 0,
-        "state_updates": 11
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0571,
-        "maintainability_index": 14.29
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 6,
-        "cognitive_complexity": 54,
-        "comment_lines": 1,
-        "comment_lines_density": 0.4,
-        "complexity": 43,
-        "functions": 18,
-        "lines": 300,
-        "ncloc": 258,
-        "sqale_debt_ratio": 0.4,
-        "statements": 113,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Future.kt": {
-      "halstead": {
-        "loc": 15,
-        "n1_unique_operators": 8,
-        "n2_unique_operands": 14,
-        "N1_total_operators": 18,
-        "N2_total_operands": 21,
-        "vocabulary": 22,
-        "length": 39,
-        "calculated_length": 77.3,
-        "volume": 173.92,
-        "difficulty": 6.0,
-        "effort": 1043.51,
-        "time_seconds": 57.97,
-        "bugs_delivered": 0.058
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 58.52
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 3,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 18,
-        "ncloc": 15,
-        "statements": 5,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Looper.kt": {
-      "halstead": {
-        "loc": 4,
-        "n1_unique_operators": 6,
-        "n2_unique_operands": 6,
-        "N1_total_operators": 10,
-        "N2_total_operands": 8,
-        "vocabulary": 12,
-        "length": 18,
-        "calculated_length": 31.02,
-        "volume": 64.53,
-        "difficulty": 4.0,
-        "effort": 258.12,
-        "time_seconds": 14.34,
-        "bugs_delivered": 0.022
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 74.06
-      },
-      "sonarqube": {
-        "classes": 0,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 7,
-        "ncloc": 4,
-        "statements": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/LottieAnimationView.kt": {
-      "halstead": {
-        "loc": 22,
-        "n1_unique_operators": 11,
-        "n2_unique_operands": 25,
-        "N1_total_operators": 29,
-        "N2_total_operands": 35,
-        "vocabulary": 36,
-        "length": 64,
-        "calculated_length": 154.15,
-        "volume": 330.88,
-        "difficulty": 7.7,
-        "effort": 2547.74,
-        "time_seconds": 141.54,
-        "bugs_delivered": 0.11
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 52.4
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 9,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 5,
-        "functions": 1,
-        "lines": 28,
-        "ncloc": 22,
-        "statements": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/MediaController.kt": {
-      "halstead": {
-        "loc": 5,
-        "n1_unique_operators": 5,
-        "n2_unique_operands": 9,
-        "N1_total_operators": 10,
-        "N2_total_operands": 12,
-        "vocabulary": 14,
-        "length": 22,
-        "calculated_length": 40.14,
-        "volume": 83.76,
-        "difficulty": 3.33,
-        "effort": 279.21,
-        "time_seconds": 15.51,
-        "bugs_delivered": 0.028
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 71.15
-      },
-      "sonarqube": {
-        "classes": 0,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 8,
-        "ncloc": 5,
-        "statements": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/MediaItem.kt": {
-      "halstead": {
-        "loc": 174,
-        "n1_unique_operators": 14,
-        "n2_unique_operands": 113,
-        "N1_total_operators": 314,
-        "N2_total_operands": 398,
-        "vocabulary": 127,
-        "length": 712,
-        "calculated_length": 823.98,
-        "volume": 4975.94,
-        "difficulty": 24.65,
-        "effort": 122681.23,
-        "time_seconds": 6815.62,
-        "bugs_delivered": 1.659
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 23.22
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 1,
-        "cognitive_complexity": 2,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 15,
-        "functions": 14,
-        "lines": 191,
-        "ncloc": 174,
-        "sqale_debt_ratio": 0.4,
-        "statements": 19,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/MutableList.kt": {
-      "halstead": {
-        "loc": 20,
-        "n1_unique_operators": 12,
-        "n2_unique_operands": 20,
-        "N1_total_operators": 30,
-        "N2_total_operands": 41,
-        "vocabulary": 32,
-        "length": 71,
-        "calculated_length": 129.46,
-        "volume": 355.0,
-        "difficulty": 12.3,
-        "effort": 4366.5,
-        "time_seconds": 242.58,
-        "bugs_delivered": 0.118
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 53.22
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 1,
-        "cognitive_complexity": 3,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 4,
-        "functions": 3,
-        "lines": 24,
-        "ncloc": 20,
-        "sqale_debt_ratio": 0.8,
-        "statements": 8,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Player.kt": {
-      "halstead": {
-        "loc": 179,
-        "n1_unique_operators": 23,
-        "n2_unique_operands": 102,
-        "N1_total_operators": 263,
-        "N2_total_operands": 265,
-        "vocabulary": 125,
-        "length": 528,
-        "calculated_length": 784.63,
-        "volume": 3677.93,
-        "difficulty": 29.88,
-        "effort": 109887.3,
-        "time_seconds": 6104.85,
-        "bugs_delivered": 1.226
-      },
-      "state_metrics": {
-        "mutable_vars": 3,
-        "immutable_vars": 13,
-        "observable_state_vars": 0,
-        "state_updates": 3
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1875,
-        "maintainability_index": 21.05
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 35,
-        "comment_lines": 17,
-        "comment_lines_density": 9.5,
-        "complexity": 36,
-        "functions": 10,
-        "lines": 205,
-        "ncloc": 162,
-        "statements": 67,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/RecyclerView.kt": {
-      "halstead": {
-        "loc": 19,
-        "n1_unique_operators": 14,
-        "n2_unique_operands": 12,
-        "N1_total_operators": 23,
-        "N2_total_operands": 23,
-        "vocabulary": 26,
-        "length": 46,
-        "calculated_length": 96.32,
-        "volume": 216.22,
-        "difficulty": 13.42,
-        "effort": 2900.95,
-        "time_seconds": 161.16,
-        "bugs_delivered": 0.072
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 55.22
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 1,
-        "cognitive_complexity": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 4,
-        "functions": 1,
-        "lines": 23,
-        "ncloc": 19,
-        "sqale_debt_ratio": 0.9,
-        "statements": 9,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/Resources.kt": {
-      "halstead": {
-        "loc": 32,
-        "n1_unique_operators": 13,
-        "n2_unique_operands": 32,
-        "N1_total_operators": 76,
-        "N2_total_operands": 79,
-        "vocabulary": 45,
-        "length": 155,
-        "calculated_length": 208.11,
-        "volume": 851.24,
-        "difficulty": 16.05,
-        "effort": 13659.7,
-        "time_seconds": 758.87,
-        "bugs_delivered": 0.284
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 6,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1429,
-        "maintainability_index": 45.98
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 2,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 5,
-        "functions": 4,
-        "lines": 38,
-        "ncloc": 32,
-        "statements": 15,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 13
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/extensions/View.kt": {
@@ -2049,12 +1308,7 @@
         "functions": 1,
         "lines": 10,
         "ncloc": 7,
-        "statements": 2,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "statements": 2
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/AlbumsFragment.kt": {
@@ -2092,11 +1346,7 @@
         "functions": 8,
         "lines": 109,
         "ncloc": 94,
-        "statements": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/ArtistsFragment.kt": {
@@ -2134,11 +1384,7 @@
         "functions": 8,
         "lines": 108,
         "ncloc": 94,
-        "statements": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/FoldersFragment.kt": {
@@ -2176,11 +1422,7 @@
         "functions": 7,
         "lines": 105,
         "ncloc": 90,
-        "statements": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/GenresFragment.kt": {
@@ -2218,53 +1460,7 @@
         "functions": 8,
         "lines": 108,
         "ncloc": 94,
-        "statements": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/MyViewPagerFragment.kt": {
-      "halstead": {
-        "loc": 19,
-        "n1_unique_operators": 8,
-        "n2_unique_operands": 31,
-        "N1_total_operators": 43,
-        "N2_total_operands": 43,
-        "vocabulary": 39,
-        "length": 86,
-        "calculated_length": 177.58,
-        "volume": 454.54,
-        "difficulty": 5.55,
-        "effort": 2521.99,
-        "time_seconds": 140.11,
-        "bugs_delivered": 0.152
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 53.36
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 28,
-        "ncloc": 19,
-        "statements": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/PlaybackSpeedFragment.kt": {
@@ -2302,11 +1498,7 @@
         "functions": 8,
         "lines": 136,
         "ncloc": 116,
-        "statements": 64,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 64
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/PlaylistsFragment.kt": {
@@ -2344,11 +1536,7 @@
         "functions": 7,
         "lines": 115,
         "ncloc": 100,
-        "statements": 46,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 46
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/fragments/TracksFragment.kt": {
@@ -2388,1773 +1576,7 @@
         "lines": 115,
         "ncloc": 101,
         "sqale_debt_ratio": 0.5,
-        "statements": 41,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/AudioHelper.kt": {
-      "halstead": {
-        "loc": 251,
-        "n1_unique_operators": 23,
-        "n2_unique_operands": 173,
-        "N1_total_operators": 588,
-        "N2_total_operands": 635,
-        "vocabulary": 196,
-        "length": 1223,
-        "calculated_length": 1390.23,
-        "volume": 9312.79,
-        "difficulty": 42.21,
-        "effort": 393102.02,
-        "time_seconds": 21839.0,
-        "bugs_delivered": 3.104
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 32,
-        "observable_state_vars": 0,
-        "state_updates": 6
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0303,
-        "maintainability_index": 12.87
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 18,
-        "comment_lines": 6,
-        "comment_lines_density": 2.4,
-        "complexity": 52,
-        "functions": 42,
-        "lines": 313,
-        "ncloc": 245,
-        "statements": 119,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/Config.kt": {
-      "halstead": {
-        "loc": 111,
-        "n1_unique_operators": 16,
-        "n2_unique_operands": 120,
-        "N1_total_operators": 434,
-        "N2_total_operands": 409,
-        "vocabulary": 136,
-        "length": 843,
-        "calculated_length": 892.83,
-        "volume": 5974.73,
-        "difficulty": 27.27,
-        "effort": 162911.0,
-        "time_seconds": 9050.61,
-        "bugs_delivered": 1.992
-      },
-      "state_metrics": {
-        "mutable_vars": 23,
-        "immutable_vars": 2,
-        "observable_state_vars": 0,
-        "state_updates": 12
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.92,
-        "maintainability_index": 27.33
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 4,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 12,
-        "functions": 10,
-        "lines": 146,
-        "ncloc": 111,
-        "statements": 20,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/Constants.kt": {
-      "halstead": {
-        "loc": 121,
-        "n1_unique_operators": 11,
-        "n2_unique_operands": 133,
-        "N1_total_operators": 41,
-        "N2_total_operands": 134,
-        "vocabulary": 144,
-        "length": 175,
-        "calculated_length": 976.41,
-        "volume": 1254.74,
-        "difficulty": 5.54,
-        "effort": 6952.94,
-        "time_seconds": 386.27,
-        "bugs_delivered": 0.418
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 89,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 32.33
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 5,
-        "comment_lines": 3,
-        "comment_lines_density": 2.5,
-        "complexity": 4,
-        "functions": 1,
-        "lines": 138,
-        "ncloc": 118,
-        "statements": 95,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/M3uExporter.kt": {
-      "halstead": {
-        "loc": 47,
-        "n1_unique_operators": 24,
-        "n2_unique_operands": 42,
-        "N1_total_operators": 73,
-        "N2_total_operands": 73,
-        "vocabulary": 66,
-        "length": 146,
-        "calculated_length": 336.52,
-        "volume": 882.48,
-        "difficulty": 20.86,
-        "effort": 18406.04,
-        "time_seconds": 1022.56,
-        "bugs_delivered": 0.294
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 42.09
-      },
-      "sonarqube": {
-        "classes": 5,
-        "cognitive_complexity": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 6,
-        "functions": 1,
-        "lines": 55,
-        "ncloc": 47,
-        "statements": 17,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/M3uImporter.kt": {
-      "halstead": {
-        "loc": 53,
-        "n1_unique_operators": 23,
-        "n2_unique_operands": 49,
-        "N1_total_operators": 97,
-        "N2_total_operands": 95,
-        "vocabulary": 72,
-        "length": 192,
-        "calculated_length": 379.16,
-        "volume": 1184.63,
-        "difficulty": 22.3,
-        "effort": 26412.32,
-        "time_seconds": 1467.35,
-        "bugs_delivered": 0.395
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 5,
-        "observable_state_vars": 0,
-        "state_updates": 2
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.2857,
-        "maintainability_index": 39.65
-      },
-      "sonarqube": {
-        "classes": 5,
-        "cognitive_complexity": 11,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 9,
-        "functions": 1,
-        "lines": 63,
-        "ncloc": 53,
-        "statements": 18,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/MyWidgetProvider.kt": {
-      "halstead": {
-        "loc": 138,
-        "n1_unique_operators": 23,
-        "n2_unique_operands": 122,
-        "N1_total_operators": 338,
-        "N2_total_operands": 413,
-        "vocabulary": 145,
-        "length": 751,
-        "calculated_length": 949.59,
-        "volume": 5392.11,
-        "difficulty": 38.93,
-        "effort": 209916.68,
-        "time_seconds": 11662.04,
-        "bugs_delivered": 1.797
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 16,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 23.29
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 15,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 29,
-        "functions": 16,
-        "lines": 162,
-        "ncloc": 138,
-        "statements": 66,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/NotificationHelper.kt": {
-      "halstead": {
-        "loc": 81,
-        "n1_unique_operators": 17,
-        "n2_unique_operands": 77,
-        "N1_total_operators": 168,
-        "N2_total_operands": 173,
-        "vocabulary": 94,
-        "length": 341,
-        "calculated_length": 552.03,
-        "volume": 2235.11,
-        "difficulty": 19.1,
-        "effort": 42684.89,
-        "time_seconds": 2371.38,
-        "bugs_delivered": 0.745
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 4,
-        "observable_state_vars": 1,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.3333,
-        "maintainability_index": 33.57
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 4,
-        "comment_lines": 1,
-        "comment_lines_density": 1.2,
-        "complexity": 10,
-        "functions": 7,
-        "lines": 94,
-        "ncloc": 80,
-        "statements": 22,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/PlaybackSetting.kt": {
-      "halstead": {
-        "loc": 34,
-        "n1_unique_operators": 10,
-        "n2_unique_operands": 23,
-        "N1_total_operators": 50,
-        "N2_total_operands": 59,
-        "vocabulary": 33,
-        "length": 109,
-        "calculated_length": 137.26,
-        "volume": 549.84,
-        "difficulty": 12.83,
-        "effort": 7052.28,
-        "time_seconds": 391.79,
-        "bugs_delivered": 0.183
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 2,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 46.87
-      },
-      "sonarqube": {
-        "classes": 5,
-        "cognitive_complexity": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 4,
-        "functions": 0,
-        "lines": 39,
-        "ncloc": 34,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/RoomHelper.kt": {
-      "halstead": {
-        "loc": 112,
-        "n1_unique_operators": 23,
-        "n2_unique_operands": 123,
-        "N1_total_operators": 321,
-        "N2_total_operands": 374,
-        "vocabulary": 146,
-        "length": 695,
-        "calculated_length": 957.97,
-        "volume": 4996.93,
-        "difficulty": 34.97,
-        "effort": 174729.98,
-        "time_seconds": 9707.22,
-        "bugs_delivered": 1.666
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 32,
-        "observable_state_vars": 0,
-        "state_updates": 8
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 28.19
-      },
-      "sonarqube": {
-        "classes": 1,
-        "code_smells": 1,
-        "cognitive_complexity": 13,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 9,
-        "functions": 4,
-        "lines": 129,
-        "ncloc": 112,
-        "sqale_debt_ratio": 0.1,
-        "statements": 57,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/SimpleMediaController.kt": {
-      "halstead": {
-        "loc": 85,
-        "n1_unique_operators": 27,
-        "n2_unique_operands": 54,
-        "N1_total_operators": 138,
-        "N2_total_operands": 116,
-        "vocabulary": 81,
-        "length": 254,
-        "calculated_length": 439.15,
-        "volume": 1610.32,
-        "difficulty": 29.0,
-        "effort": 46699.34,
-        "time_seconds": 2594.41,
-        "bugs_delivered": 0.537
-      },
-      "state_metrics": {
-        "mutable_vars": 3,
-        "immutable_vars": 2,
-        "observable_state_vars": 0,
-        "state_updates": 5
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.6,
-        "maintainability_index": 33.17
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 11,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 17,
-        "functions": 10,
-        "lines": 103,
-        "ncloc": 85,
-        "statements": 30,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/SimpleMediaScanner.kt": {
-      "halstead": {
-        "loc": 566,
-        "n1_unique_operators": 37,
-        "n2_unique_operands": 311,
-        "N1_total_operators": 1467,
-        "N2_total_operands": 1533,
-        "vocabulary": 348,
-        "length": 3000,
-        "calculated_length": 2768.07,
-        "volume": 25328.83,
-        "difficulty": 91.19,
-        "effort": 2309769.44,
-        "time_seconds": 128320.52,
-        "bugs_delivered": 8.443
-      },
-      "state_metrics": {
-        "mutable_vars": 10,
-        "immutable_vars": 134,
-        "observable_state_vars": 5,
-        "state_updates": 46
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0694,
-        "maintainability_index": 0
-      },
-      "sonarqube": {
-        "classes": 1,
-        "code_smells": 2,
-        "cognitive_complexity": 103,
-        "comment_lines": 35,
-        "comment_lines_density": 6.2,
-        "complexity": 83,
-        "functions": 21,
-        "lines": 656,
-        "ncloc": 531,
-        "sqale_debt_ratio": 0.1,
-        "statements": 358,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/helpers/TagHelper.kt": {
-      "halstead": {
-        "loc": 73,
-        "n1_unique_operators": 21,
-        "n2_unique_operands": 88,
-        "N1_total_operators": 180,
-        "N2_total_operands": 183,
-        "vocabulary": 109,
-        "length": 363,
-        "calculated_length": 660.67,
-        "volume": 2456.85,
-        "difficulty": 21.84,
-        "effort": 53645.9,
-        "time_seconds": 2980.33,
-        "bugs_delivered": 0.819
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 11,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 34.4
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 2,
-        "comment_lines": 1,
-        "comment_lines_density": 1.4,
-        "complexity": 9,
-        "functions": 4,
-        "lines": 87,
-        "ncloc": 72,
-        "statements": 30,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/inlines/Int.kt": {
-      "halstead": {
-        "loc": 8,
-        "n1_unique_operators": 10,
-        "n2_unique_operands": 11,
-        "N1_total_operators": 17,
-        "N2_total_operands": 14,
-        "vocabulary": 21,
-        "length": 31,
-        "calculated_length": 71.27,
-        "volume": 136.16,
-        "difficulty": 6.36,
-        "effort": 866.48,
-        "time_seconds": 48.14,
-        "bugs_delivered": 0.045
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 64.95
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 3,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 3,
-        "functions": 1,
-        "lines": 10,
-        "ncloc": 8,
-        "statements": 4,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/AlbumsDao.kt": {
-      "halstead": {
-        "loc": 18,
-        "n1_unique_operators": 7,
-        "n2_unique_operands": 24,
-        "N1_total_operators": 33,
-        "N2_total_operands": 38,
-        "vocabulary": 31,
-        "length": 71,
-        "calculated_length": 129.69,
-        "volume": 351.75,
-        "difficulty": 5.54,
-        "effort": 1949.27,
-        "time_seconds": 108.29,
-        "bugs_delivered": 0.117
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 26,
-        "ncloc": 18,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/ArtistsDao.kt": {
-      "halstead": {
-        "loc": 14,
-        "n1_unique_operators": 6,
-        "n2_unique_operands": 19,
-        "N1_total_operators": 22,
-        "N2_total_operands": 26,
-        "vocabulary": 25,
-        "length": 48,
-        "calculated_length": 96.22,
-        "volume": 222.91,
-        "difficulty": 4.11,
-        "effort": 915.08,
-        "time_seconds": 50.84,
-        "bugs_delivered": 0.074
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 20,
-        "ncloc": 14,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/GenresDao.kt": {
-      "halstead": {
-        "loc": 12,
-        "n1_unique_operators": 6,
-        "n2_unique_operands": 17,
-        "N1_total_operators": 16,
-        "N2_total_operands": 19,
-        "vocabulary": 23,
-        "length": 35,
-        "calculated_length": 85.0,
-        "volume": 158.32,
-        "difficulty": 3.35,
-        "effort": 530.85,
-        "time_seconds": 29.49,
-        "bugs_delivered": 0.053
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 17,
-        "ncloc": 12,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/PlaybackSpeedListener.kt": {
-      "halstead": {
-        "loc": 4,
-        "n1_unique_operators": 4,
-        "n2_unique_operands": 4,
-        "N1_total_operators": 4,
-        "N2_total_operands": 4,
-        "vocabulary": 8,
-        "length": 8,
-        "calculated_length": 16.0,
-        "volume": 24.0,
-        "difficulty": 2.0,
-        "effort": 48.0,
-        "time_seconds": 2.67,
-        "bugs_delivered": 0.008
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "code_smells": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 6,
-        "ncloc": 4,
-        "sqale_debt_ratio": 4.2,
-        "statements": 0,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/PlaylistsDao.kt": {
-      "halstead": {
-        "loc": 18,
-        "n1_unique_operators": 7,
-        "n2_unique_operands": 27,
-        "N1_total_operators": 30,
-        "N2_total_operands": 34,
-        "vocabulary": 34,
-        "length": 64,
-        "calculated_length": 148.03,
-        "volume": 325.6,
-        "difficulty": 4.41,
-        "effort": 1435.04,
-        "time_seconds": 79.72,
-        "bugs_delivered": 0.109
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 26,
-        "ncloc": 18,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/QueueItemsDao.kt": {
-      "halstead": {
-        "loc": 27,
-        "n1_unique_operators": 7,
-        "n2_unique_operands": 32,
-        "N1_total_operators": 40,
-        "N2_total_operands": 47,
-        "vocabulary": 39,
-        "length": 87,
-        "calculated_length": 179.65,
-        "volume": 459.83,
-        "difficulty": 5.14,
-        "effort": 2363.81,
-        "time_seconds": 131.32,
-        "bugs_delivered": 0.153
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 38,
-        "ncloc": 27,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/interfaces/SongsDao.kt": {
-      "halstead": {
-        "loc": 36,
-        "n1_unique_operators": 7,
-        "n2_unique_operands": 55,
-        "N1_total_operators": 78,
-        "N2_total_operands": 97,
-        "vocabulary": 62,
-        "length": 175,
-        "calculated_length": 337.63,
-        "volume": 1041.98,
-        "difficulty": 6.17,
-        "effort": 6431.89,
-        "time_seconds": 357.33,
-        "bugs_delivered": 0.347
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 53,
-        "ncloc": 36,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Album.kt": {
-      "halstead": {
-        "loc": 56,
-        "n1_unique_operators": 22,
-        "n2_unique_operands": 55,
-        "N1_total_operators": 160,
-        "N2_total_operands": 157,
-        "vocabulary": 77,
-        "length": 317,
-        "calculated_length": 416.08,
-        "volume": 1986.57,
-        "difficulty": 31.4,
-        "effort": 62378.34,
-        "time_seconds": 3465.46,
-        "bugs_delivered": 0.662
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 35.95
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 15,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 21,
-        "duplicated_lines_density": 24.6,
-        "functions": 3,
-        "lines": 65,
-        "ncloc": 56,
-        "statements": 10,
-        "code_smells": 0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/AlbumHeader.kt": {
-      "halstead": {
-        "loc": 2,
-        "n1_unique_operators": 5,
-        "n2_unique_operands": 13,
-        "N1_total_operators": 19,
-        "N2_total_operands": 16,
-        "vocabulary": 18,
-        "length": 35,
-        "calculated_length": 59.72,
-        "volume": 145.95,
-        "difficulty": 3.08,
-        "effort": 449.07,
-        "time_seconds": 24.95,
-        "bugs_delivered": 0.049
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 4,
-        "ncloc": 2,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/AlbumSection.kt": {
-      "halstead": {
-        "loc": 2,
-        "n1_unique_operators": 5,
-        "n2_unique_operands": 4,
-        "N1_total_operators": 7,
-        "N2_total_operands": 4,
-        "vocabulary": 9,
-        "length": 11,
-        "calculated_length": 19.61,
-        "volume": 34.87,
-        "difficulty": 2.5,
-        "effort": 87.17,
-        "time_seconds": 4.84,
-        "bugs_delivered": 0.012
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 4,
-        "ncloc": 2,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Artist.kt": {
-      "halstead": {
-        "loc": 45,
-        "n1_unique_operators": 22,
-        "n2_unique_operands": 47,
-        "N1_total_operators": 116,
-        "N2_total_operands": 113,
-        "vocabulary": 69,
-        "length": 229,
-        "calculated_length": 359.17,
-        "volume": 1398.85,
-        "difficulty": 26.45,
-        "effort": 36995.17,
-        "time_seconds": 2055.29,
-        "bugs_delivered": 0.466
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 39.89
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 10,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 15,
-        "functions": 3,
-        "lines": 53,
-        "ncloc": 45,
-        "statements": 10,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Events.kt": {
-      "halstead": {
-        "loc": 7,
-        "n1_unique_operators": 4,
-        "n2_unique_operands": 7,
-        "N1_total_operators": 8,
-        "N2_total_operands": 7,
-        "vocabulary": 11,
-        "length": 15,
-        "calculated_length": 27.65,
-        "volume": 51.89,
-        "difficulty": 2.0,
-        "effort": 103.78,
-        "time_seconds": 5.77,
-        "bugs_delivered": 0.017
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 9,
-        "ncloc": 7,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Folder.kt": {
-      "halstead": {
-        "loc": 24,
-        "n1_unique_operators": 20,
-        "n2_unique_operands": 24,
-        "N1_total_operators": 63,
-        "N2_total_operands": 54,
-        "vocabulary": 44,
-        "length": 117,
-        "calculated_length": 196.48,
-        "volume": 638.75,
-        "difficulty": 22.5,
-        "effort": 14371.95,
-        "time_seconds": 798.44,
-        "bugs_delivered": 0.213
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 49.17
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 8,
-        "functions": 3,
-        "lines": 31,
-        "ncloc": 24,
-        "statements": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Genre.kt": {
-      "halstead": {
-        "loc": 34,
-        "n1_unique_operators": 20,
-        "n2_unique_operands": 41,
-        "N1_total_operators": 79,
-        "N2_total_operands": 76,
-        "vocabulary": 61,
-        "length": 155,
-        "calculated_length": 306.1,
-        "volume": 919.26,
-        "difficulty": 18.54,
-        "effort": 17040.02,
-        "time_seconds": 946.67,
-        "bugs_delivered": 0.306
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 44.77
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 8,
-        "functions": 3,
-        "lines": 41,
-        "ncloc": 34,
-        "statements": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/ListItem.kt": {
-      "halstead": {
-        "loc": 2,
-        "n1_unique_operators": 2,
-        "n2_unique_operands": 1,
-        "N1_total_operators": 2,
-        "N2_total_operands": 1,
-        "vocabulary": 3,
-        "length": 3,
-        "calculated_length": 2.0,
-        "volume": 4.75,
-        "difficulty": 1.0,
-        "effort": 4.75,
-        "time_seconds": 0.26,
-        "bugs_delivered": 0.002
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 4,
-        "ncloc": 2,
-        "statements": 0,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Playlist.kt": {
-      "halstead": {
-        "loc": 31,
-        "n1_unique_operators": 19,
-        "n2_unique_operands": 41,
-        "N1_total_operators": 78,
-        "N2_total_operands": 75,
-        "vocabulary": 60,
-        "length": 153,
-        "calculated_length": 300.37,
-        "volume": 903.75,
-        "difficulty": 17.38,
-        "effort": 15705.49,
-        "time_seconds": 872.53,
-        "bugs_delivered": 0.301
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 45.69
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 5,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 8,
-        "functions": 3,
-        "lines": 40,
-        "ncloc": 31,
-        "statements": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/QueueItem.kt": {
-      "halstead": {
-        "loc": 16,
-        "n1_unique_operators": 10,
-        "n2_unique_operands": 23,
-        "N1_total_operators": 32,
-        "N2_total_operands": 38,
-        "vocabulary": 33,
-        "length": 70,
-        "calculated_length": 137.26,
-        "volume": 353.11,
-        "difficulty": 8.26,
-        "effort": 2916.98,
-        "time_seconds": 162.05,
-        "bugs_delivered": 0.118
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 55.76
-      },
-      "sonarqube": {
-        "classes": 1,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 1,
-        "functions": 1,
-        "lines": 19,
-        "ncloc": 16,
-        "statements": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/models/Track.kt": {
-      "halstead": {
-        "loc": 95,
-        "n1_unique_operators": 25,
-        "n2_unique_operands": 110,
-        "N1_total_operators": 282,
-        "N2_total_operands": 286,
-        "vocabulary": 135,
-        "length": 568,
-        "calculated_length": 862.05,
-        "volume": 4019.63,
-        "difficulty": 32.5,
-        "effort": 130638.02,
-        "time_seconds": 7257.67,
-        "bugs_delivered": 1.34
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 1
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.5,
-        "maintainability_index": 27.05
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 21,
-        "comment_lines": 1,
-        "comment_lines_density": 1.0,
-        "complexity": 34,
-        "duplicated_lines_density": 14.4,
-        "functions": 8,
-        "lines": 111,
-        "ncloc": 95,
-        "statements": 20,
-        "code_smells": 0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/objects/MyExecutor.kt": {
-      "halstead": {
-        "loc": 5,
-        "n1_unique_operators": 5,
-        "n2_unique_operands": 4,
-        "N1_total_operators": 5,
-        "N2_total_operands": 4,
-        "vocabulary": 9,
-        "length": 9,
-        "calculated_length": 19.61,
-        "volume": 28.53,
-        "difficulty": 2.5,
-        "effort": 71.32,
-        "time_seconds": 3.96,
-        "bugs_delivered": 0.01
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 1,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": null
-      },
-      "sonarqube": {
-        "classes": 0,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 0,
-        "functions": 0,
-        "lines": 8,
-        "ncloc": 5,
-        "statements": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/CustomCommands.kt": {
-      "halstead": {
-        "loc": 33,
-        "n1_unique_operators": 16,
-        "n2_unique_operands": 45,
-        "N1_total_operators": 78,
-        "N2_total_operands": 74,
-        "vocabulary": 61,
-        "length": 152,
-        "calculated_length": 311.13,
-        "volume": 901.47,
-        "difficulty": 13.16,
-        "effort": 11859.37,
-        "time_seconds": 658.85,
-        "bugs_delivered": 0.3
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 2,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 45.92
-      },
-      "sonarqube": {
-        "classes": 7,
-        "comment_lines": 3,
-        "comment_lines_density": 9.1,
-        "complexity": 2,
-        "functions": 2,
-        "lines": 40,
-        "ncloc": 30,
-        "statements": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/MediaSessionCallback.kt": {
-      "halstead": {
-        "loc": 212,
-        "n1_unique_operators": 28,
-        "n2_unique_operands": 158,
-        "N1_total_operators": 399,
-        "N2_total_operands": 429,
-        "vocabulary": 186,
-        "length": 828,
-        "calculated_length": 1288.6,
-        "volume": 6242.42,
-        "difficulty": 38.01,
-        "effort": 237291.11,
-        "time_seconds": 13182.84,
-        "bugs_delivered": 2.081
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 21,
-        "observable_state_vars": 0,
-        "state_updates": 6
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.087,
-        "maintainability_index": 18.37
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 3,
-        "cognitive_complexity": 27,
-        "comment_lines": 5,
-        "comment_lines_density": 2.4,
-        "complexity": 32,
-        "functions": 16,
-        "lines": 243,
-        "ncloc": 207,
-        "sqale_debt_ratio": 0.8,
-        "statements": 84,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/PlaybackService.kt": {
-      "halstead": {
-        "loc": 98,
-        "n1_unique_operators": 20,
-        "n2_unique_operands": 85,
-        "N1_total_operators": 150,
-        "N2_total_operands": 123,
-        "vocabulary": 105,
-        "length": 273,
-        "calculated_length": 631.24,
-        "volume": 1832.99,
-        "difficulty": 14.47,
-        "effort": 26524.43,
-        "time_seconds": 1473.58,
-        "bugs_delivered": 0.611
-      },
-      "state_metrics": {
-        "mutable_vars": 10,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 4
-      },
-      "derived": {
-        "mutable_variable_ratio": 1.0,
-        "maintainability_index": 32.24
-      },
-      "sonarqube": {
-        "classes": 1,
-        "code_smells": 2,
-        "cognitive_complexity": 4,
-        "comment_lines": 7,
-        "comment_lines_density": 7.1,
-        "complexity": 11,
-        "functions": 10,
-        "lines": 115,
-        "ncloc": 91,
-        "sqale_debt_ratio": 0.2,
-        "statements": 35,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/SimpleEqualizer.kt": {
-      "halstead": {
-        "loc": 44,
-        "n1_unique_operators": 21,
-        "n2_unique_operands": 44,
-        "N1_total_operators": 80,
-        "N2_total_operands": 75,
-        "vocabulary": 65,
-        "length": 155,
-        "calculated_length": 332.45,
-        "volume": 933.47,
-        "difficulty": 17.9,
-        "effort": 16706.94,
-        "time_seconds": 928.16,
-        "bugs_delivered": 0.311
-      },
-      "state_metrics": {
-        "mutable_vars": 1,
-        "immutable_vars": 5,
-        "observable_state_vars": 0,
-        "state_updates": 2
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1667,
-        "maintainability_index": 42.41
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 10,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 7,
-        "functions": 2,
-        "lines": 51,
-        "ncloc": 44,
-        "statements": 17,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/SleepTimer.kt": {
-      "halstead": {
-        "loc": 38,
-        "n1_unique_operators": 18,
-        "n2_unique_operands": 32,
-        "N1_total_operators": 75,
-        "N2_total_operands": 64,
-        "vocabulary": 50,
-        "length": 139,
-        "calculated_length": 235.06,
-        "volume": 784.5,
-        "difficulty": 18.0,
-        "effort": 14120.93,
-        "time_seconds": 784.5,
-        "bugs_delivered": 0.261
-      },
-      "state_metrics": {
-        "mutable_vars": 2,
-        "immutable_vars": 2,
-        "observable_state_vars": 0,
-        "state_updates": 4
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.5,
-        "maintainability_index": 44.46
-      },
-      "sonarqube": {
-        "classes": 0,
-        "cognitive_complexity": 2,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 6,
-        "functions": 5,
-        "lines": 46,
-        "ncloc": 38,
-        "statements": 20,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/library/MediaItemProvider.kt": {
-      "halstead": {
-        "loc": 259,
-        "n1_unique_operators": 36,
-        "n2_unique_operands": 238,
-        "N1_total_operators": 618,
-        "N2_total_operands": 612,
-        "vocabulary": 274,
-        "length": 1230,
-        "calculated_length": 2065.08,
-        "volume": 9960.58,
-        "difficulty": 46.29,
-        "effort": 461032.54,
-        "time_seconds": 25612.92,
-        "bugs_delivered": 3.32
-      },
-      "state_metrics": {
-        "mutable_vars": 5,
-        "immutable_vars": 32,
-        "observable_state_vars": 0,
-        "state_updates": 7
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1351,
-        "maintainability_index": 13.44
-      },
-      "sonarqube": {
-        "classes": 9,
-        "cognitive_complexity": 16,
-        "comment_lines": 4,
-        "comment_lines_density": 1.5,
-        "complexity": 44,
-        "functions": 26,
-        "lines": 305,
-        "ncloc": 255,
-        "statements": 122,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/player/AudioOnlyRenderersFactory.kt": {
-      "halstead": {
-        "loc": 72,
-        "n1_unique_operators": 14,
-        "n2_unique_operands": 54,
-        "N1_total_operators": 93,
-        "N2_total_operands": 101,
-        "vocabulary": 68,
-        "length": 194,
-        "calculated_length": 364.07,
-        "volume": 1180.97,
-        "difficulty": 13.09,
-        "effort": 15461.93,
-        "time_seconds": 859.0,
-        "bugs_delivered": 0.394
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 3,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 37.03
-      },
-      "sonarqube": {
-        "classes": 1,
-        "cognitive_complexity": 2,
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "complexity": 7,
-        "functions": 6,
-        "lines": 83,
-        "ncloc": 72,
-        "statements": 11,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/player/Player.kt": {
-      "halstead": {
-        "loc": 93,
-        "n1_unique_operators": 15,
-        "n2_unique_operands": 85,
-        "N1_total_operators": 120,
-        "N2_total_operands": 135,
-        "vocabulary": 100,
-        "length": 255,
-        "calculated_length": 603.4,
-        "volume": 1694.18,
-        "difficulty": 11.91,
-        "effort": 20180.71,
-        "time_seconds": 1121.15,
-        "bugs_delivered": 0.565
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 3,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.0,
-        "maintainability_index": 33.78
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 2,
-        "cognitive_complexity": 2,
-        "comment_lines": 9,
-        "comment_lines_density": 9.6,
-        "complexity": 5,
-        "functions": 4,
-        "lines": 102,
-        "ncloc": 85,
-        "sqale_debt_ratio": 0.2,
-        "statements": 23,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/player/PlayerListener.kt": {
-      "halstead": {
-        "loc": 49,
-        "n1_unique_operators": 12,
-        "n2_unique_operands": 51,
-        "N1_total_operators": 69,
-        "N2_total_operands": 73,
-        "vocabulary": 63,
-        "length": 142,
-        "calculated_length": 332.31,
-        "volume": 848.77,
-        "difficulty": 8.59,
-        "effort": 7289.47,
-        "time_seconds": 404.97,
-        "bugs_delivered": 0.283
-      },
-      "state_metrics": {
-        "mutable_vars": 0,
-        "immutable_vars": 0,
-        "observable_state_vars": 0,
-        "state_updates": 0
-      },
-      "derived": {
-        "mutable_variable_ratio": null,
-        "maintainability_index": 41.28
-      },
-      "sonarqube": {
-        "classes": 0,
-        "code_smells": 1,
-        "cognitive_complexity": 11,
-        "comment_lines": 1,
-        "comment_lines_density": 2.0,
-        "complexity": 10,
-        "functions": 6,
-        "lines": 57,
-        "ncloc": 48,
-        "sqale_debt_ratio": 0.3,
-        "statements": 12,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/kotlin/com/simplemobiletools/musicplayer/playback/player/SimpleMusicPlayer.kt": {
-      "halstead": {
-        "loc": 153,
-        "n1_unique_operators": 26,
-        "n2_unique_operands": 99,
-        "N1_total_operators": 225,
-        "N2_total_operands": 209,
-        "vocabulary": 125,
-        "length": 434,
-        "calculated_length": 778.52,
-        "volume": 3023.15,
-        "difficulty": 27.44,
-        "effort": 82968.68,
-        "time_seconds": 4609.37,
-        "bugs_delivered": 1.008
-      },
-      "state_metrics": {
-        "mutable_vars": 3,
-        "immutable_vars": 15,
-        "observable_state_vars": 1,
-        "state_updates": 9
-      },
-      "derived": {
-        "mutable_variable_ratio": 0.1667,
-        "maintainability_index": 24.21
-      },
-      "sonarqube": {
-        "classes": 1,
-        "code_smells": 4,
-        "cognitive_complexity": 18,
-        "comment_lines": 13,
-        "comment_lines_density": 8.5,
-        "complexity": 28,
-        "functions": 17,
-        "lines": 178,
-        "ncloc": 140,
-        "sqale_debt_ratio": 1.2,
-        "statements": 64,
-        "duplicated_lines_density": 0.0,
-        "bugs": 0
+        "statements": 41
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/views/CurrentTrackBar.kt": {
@@ -4192,11 +1614,7 @@
         "functions": 4,
         "lines": 71,
         "ncloc": 61,
-        "statements": 18,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
+        "statements": 18
       }
     },
     "app/src/main/kotlin/com/simplemobiletools/musicplayer/views/MarqueeTextView.kt": {
@@ -4234,180 +1652,7 @@
         "functions": 4,
         "lines": 43,
         "ncloc": 33,
-        "statements": 15,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_album_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_equalizer_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_folders_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 5,
-        "ncloc": 4,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_genre_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_launcher_monochrome.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_music_note_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_play_one_song_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 14,
-        "ncloc": 13,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_playback_speed_slow_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_playback_speed_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_playlist_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_repeat_one_song_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_repeat_playlist_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/drawable/ic_shuffle_vector.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 10,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "statements": 15
       }
     },
     "app/src/main/res/layout-land/item_playlist.xml": {
@@ -4415,12 +1660,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 40,
-        "ncloc": 36,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 36
       }
     },
     "app/src/main/res/layout/activity_albums.xml": {
@@ -4428,12 +1668,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 49,
-        "ncloc": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 41
       }
     },
     "app/src/main/res/layout/activity_equalizer.xml": {
@@ -4441,12 +1676,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 100,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 87
       }
     },
     "app/src/main/res/layout/activity_excluded_folders.xml": {
@@ -4454,12 +1684,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 44,
-        "ncloc": 38,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 38
       }
     },
     "app/src/main/res/layout/activity_main.xml": {
@@ -4467,12 +1692,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 134,
-        "ncloc": 119,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 119
       }
     },
     "app/src/main/res/layout/activity_queue.xml": {
@@ -4480,12 +1700,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 55,
-        "ncloc": 48,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 48
       }
     },
     "app/src/main/res/layout/activity_settings.xml": {
@@ -4493,12 +1708,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 232,
-        "ncloc": 191,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 191
       }
     },
     "app/src/main/res/layout/activity_track.xml": {
@@ -4506,12 +1716,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 273,
-        "ncloc": 248,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 248
       }
     },
     "app/src/main/res/layout/activity_tracks.xml": {
@@ -4519,12 +1724,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 79,
-        "ncloc": 69,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 69
       }
     },
     "app/src/main/res/layout/dialog_change_sorting.xml": {
@@ -4532,12 +1732,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 64,
-        "ncloc": 54,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 54
       }
     },
     "app/src/main/res/layout/dialog_custom_sleep_timer_picker.xml": {
@@ -4545,12 +1740,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 31,
-        "ncloc": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 27
       }
     },
     "app/src/main/res/layout/dialog_export_playlist.xml": {
@@ -4558,12 +1748,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 50,
-        "ncloc": 43,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 43
       }
     },
     "app/src/main/res/layout/dialog_manage_visible_tabs.xml": {
@@ -4571,12 +1756,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 65,
-        "ncloc": 57,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 57
       }
     },
     "app/src/main/res/layout/dialog_new_playlist.xml": {
@@ -4584,12 +1764,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 30,
-        "ncloc": 26,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 26
       }
     },
     "app/src/main/res/layout/dialog_remove_playlist.xml": {
@@ -4597,12 +1772,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 31,
-        "ncloc": 27,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 27
       }
     },
     "app/src/main/res/layout/dialog_rename_song.xml": {
@@ -4610,12 +1780,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 114,
-        "ncloc": 97,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 97
       }
     },
     "app/src/main/res/layout/dialog_select_playlist.xml": {
@@ -4623,12 +1788,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 48,
-        "ncloc": 41,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 41
       }
     },
     "app/src/main/res/layout/equalizer_band.xml": {
@@ -4636,12 +1796,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 30,
-        "ncloc": 26,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 26
       }
     },
     "app/src/main/res/layout/fragment_albums.xml": {
@@ -4649,12 +1804,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 37,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 32
       }
     },
     "app/src/main/res/layout/fragment_artists.xml": {
@@ -4662,12 +1812,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 37,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 32
       }
     },
     "app/src/main/res/layout/fragment_folders.xml": {
@@ -4675,12 +1820,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 49,
-        "ncloc": 43,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 43
       }
     },
     "app/src/main/res/layout/fragment_genres.xml": {
@@ -4688,12 +1828,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 37,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 32
       }
     },
     "app/src/main/res/layout/fragment_playback_speed.xml": {
@@ -4701,12 +1836,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 55,
-        "ncloc": 48,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 48
       }
     },
     "app/src/main/res/layout/fragment_playlists.xml": {
@@ -4714,12 +1844,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 51,
-        "ncloc": 44,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 44
       }
     },
     "app/src/main/res/layout/fragment_tracks.xml": {
@@ -4727,12 +1852,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 37,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 32
       }
     },
     "app/src/main/res/layout/item_album.xml": {
@@ -4740,12 +1860,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 55,
-        "ncloc": 49,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 49
       }
     },
     "app/src/main/res/layout/item_album_header.xml": {
@@ -4753,12 +1868,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 68,
-        "ncloc": 62,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 62
       }
     },
     "app/src/main/res/layout/item_artist.xml": {
@@ -4766,12 +1876,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 54,
-        "ncloc": 48,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 48
       }
     },
     "app/src/main/res/layout/item_excluded_folder.xml": {
@@ -4779,12 +1884,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 37,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 32
       }
     },
     "app/src/main/res/layout/item_folder.xml": {
@@ -4792,12 +1892,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 42,
-        "ncloc": 38,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 38
       }
     },
     "app/src/main/res/layout/item_genre.xml": {
@@ -4805,12 +1900,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 55,
-        "ncloc": 49,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 49
       }
     },
     "app/src/main/res/layout/item_playlist.xml": {
@@ -4818,12 +1908,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 42,
-        "ncloc": 38,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 38
       }
     },
     "app/src/main/res/layout/item_section.xml": {
@@ -4831,12 +1916,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 11,
-        "ncloc": 10,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 10
       }
     },
     "app/src/main/res/layout/item_select_playlist.xml": {
@@ -4844,12 +1924,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 19,
-        "ncloc": 16,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 16
       }
     },
     "app/src/main/res/layout/item_track.xml": {
@@ -4857,12 +1932,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 80,
-        "ncloc": 70,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 70
       }
     },
     "app/src/main/res/layout/item_track_queue.xml": {
@@ -4870,12 +1940,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 59,
-        "ncloc": 53,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 53
       }
     },
     "app/src/main/res/layout/item_transparent.xml": {
@@ -4883,12 +1948,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 9,
-        "ncloc": 8,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 8
       }
     },
     "app/src/main/res/layout/small_radio_button.xml": {
@@ -4896,12 +1956,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 6
       }
     },
     "app/src/main/res/layout/small_widget.xml": {
@@ -4909,12 +1964,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 25,
-        "ncloc": 21,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 21
       }
     },
     "app/src/main/res/layout/view_current_track_bar.xml": {
@@ -4922,12 +1972,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 58,
-        "ncloc": 52,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 52
       }
     },
     "app/src/main/res/layout/widget.xml": {
@@ -4935,12 +1980,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 62,
-        "ncloc": 55,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 55
       }
     },
     "app/src/main/res/layout/widget_config.xml": {
@@ -4948,12 +1988,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 67,
-        "ncloc": 57,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 57
       }
     },
     "app/src/main/res/layout/widget_controls.xml": {
@@ -4961,1215 +1996,7 @@
         "comment_lines": 0,
         "comment_lines_density": 0.0,
         "lines": 40,
-        "ncloc": 35,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_albums.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 33,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_albums_tracks.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 50,
-        "ncloc": 49,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_artists.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 34,
-        "ncloc": 33,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_folders.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 18,
-        "ncloc": 17,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_genres.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 33,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_playlists.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 25,
-        "ncloc": 24,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_queue.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 35,
-        "ncloc": 34,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_tracks.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 55,
-        "ncloc": 54,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/cab_tracks_header.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 50,
-        "ncloc": 49,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/menu_main.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 57,
-        "ncloc": 56,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/menu_playlist.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 33,
-        "ncloc": 32,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/menu/menu_queue.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 18,
-        "ncloc": 17,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_amber.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_blue.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_blue_grey.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_brown.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_cyan.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_deep_orange.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 6,
-        "ncloc": 5,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_deep_purple.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_green.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_grey_black.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_indigo.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_light_blue.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_light_green.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_lime.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_pink.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_purple.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_red.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_teal.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/mipmap-anydpi-v26/ic_launcher_yellow.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 7,
-        "ncloc": 6,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/raw/playpause.json": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 1,
-        "ncloc": 1,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ar/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 7.9,
-        "lines": 104,
-        "ncloc": 93,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-az/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-be/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.2,
-        "lines": 100,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-bg/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ca/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 95,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-cs/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-da/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-de/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-el/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-eo/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-es/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 97,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-et/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-eu/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-fa/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-fi/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-fr/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-gl/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-hr/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-hu/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-in/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-is/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 6,
-        "comment_lines_density": 6.6,
-        "lines": 92,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-it/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-iw/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.2,
-        "lines": 100,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ja/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ko-rKR/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-land/dimens.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-lt/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ml/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 6,
-        "comment_lines_density": 6.6,
-        "lines": 92,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ms/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-nb-rNO/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-nl/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-nn/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-pa-rPK/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 6,
-        "comment_lines_density": 6.6,
-        "lines": 92,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-pl/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.2,
-        "lines": 100,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-pt-rBR/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 97,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-pt/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 97,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ro/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-ru/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.2,
-        "lines": 100,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-sk/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.4,
-        "lines": 98,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-sl/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 6,
-        "comment_lines_density": 6.3,
-        "lines": 96,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-sr/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 6,
-        "comment_lines_density": 6.5,
-        "lines": 94,
-        "ncloc": 87,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-sv/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-th/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-tr/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-uk/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.2,
-        "lines": 100,
-        "ncloc": 89,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-zh-rCN/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values-zh-rTW/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.8,
-        "lines": 94,
-        "ncloc": 83,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/colors.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 5,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/dimens.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 11,
-        "ncloc": 10,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/donottranslate.xml": {
-      "sonarqube": {
-        "comment_lines": 1,
-        "comment_lines_density": 6.7,
-        "lines": 18,
-        "ncloc": 14,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/drawables.xml": {
-      "sonarqube": {
-        "comment_lines": 1,
-        "comment_lines_density": 12.5,
-        "lines": 9,
-        "ncloc": 7,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/integers.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 5,
-        "ncloc": 4,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/strings.xml": {
-      "sonarqube": {
-        "comment_lines": 8,
-        "comment_lines_density": 8.6,
-        "lines": 96,
-        "ncloc": 85,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/values/styles.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 14,
-        "ncloc": 9,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/xml/automotive_app_desc.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 4,
-        "ncloc": 3,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/xml/provider_paths.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 6,
-        "ncloc": 5,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/xml/searchable.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 6,
-        "ncloc": 5,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/main/res/xml/widget_info.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 13,
-        "ncloc": 12,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "app/src/prepaid/res/values/bools.xml": {
-      "sonarqube": {
-        "comment_lines": 0,
-        "comment_lines_density": 0.0,
-        "lines": 8,
-        "ncloc": 7,
-        "code_smells": 0,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "build.gradle.kts": {
-      "sonarqube": {
-        "code_smells": 1,
-        "lines": 12,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
-      }
-    },
-    "settings.gradle.kts": {
-      "sonarqube": {
-        "code_smells": 1,
-        "lines": 17,
-        "duplicated_lines_density": 0.0,
-        "sqale_debt_ratio": 0.0,
-        "bugs": 0,
-        "cognitive_complexity": 0
+        "ncloc": 35
       }
     }
   }

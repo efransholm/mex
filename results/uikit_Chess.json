@@ -1,0 +1,470 @@
+{
+  "project": "Chess",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-chess",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/Chess",
+  "ui_files_filter": [
+    "Chess/AppDelegate.swift",
+    "Chess/Base.lproj/LaunchScreen.storyboard",
+    "Chess/Base.lproj/Main.storyboard",
+    "Chess/BoardView.swift",
+    "Chess/SceneDelegate.swift",
+    "Chess/SettingsViewController.swift",
+    "Chess/UIView+Jiggle.swift",
+    "Chess/ViewController.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "Chess/AppDelegate.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 3,
+        "N1_total_operators": 3,
+        "N2_total_operands": 3,
+        "vocabulary": 6,
+        "length": 6,
+        "calculated_length": 9.51,
+        "volume": 15.51,
+        "difficulty": 1.5,
+        "effort": 23.26,
+        "time_seconds": 1.29,
+        "bugs_delivered": 0.005
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      }
+    },
+    "Chess/BoardView.swift": {
+      "halstead": {
+        "loc": 199,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 130,
+        "N1_total_operators": 509,
+        "N2_total_operands": 517,
+        "vocabulary": 165,
+        "length": 1026,
+        "calculated_length": 1092.43,
+        "volume": 7557.85,
+        "difficulty": 69.6,
+        "effort": 525997.05,
+        "time_seconds": 29222.06,
+        "bugs_delivered": 2.519
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3871,
+        "maintainability_index": 16.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "imageName",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "flipBlackPieces.didS",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "theme.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "board.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "selection.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "moves.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "jigglePiece",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "pulsePiece",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sharedSetup",
+            "cyclomatic": 8,
+            "cognitive": 10
+          },
+          {
+            "function": "didTap",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updatePieces",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "updateSelection",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "updateMoveIndicators",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "squareSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "frame",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "updateTheme",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "pulse",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.15,
+        "avg_cognitive": 1.5
+      }
+    },
+    "Chess/SceneDelegate.swift": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 5,
+        "N1_total_operators": 5,
+        "N2_total_operands": 5,
+        "vocabulary": 9,
+        "length": 10,
+        "calculated_length": 19.61,
+        "volume": 31.7,
+        "difficulty": 2.0,
+        "effort": 63.4,
+        "time_seconds": 3.52,
+        "bugs_delivered": 0.011
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "Chess/SettingsViewController.swift": {
+      "halstead": {
+        "loc": 96,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 89,
+        "N1_total_operators": 256,
+        "N2_total_operands": 240,
+        "vocabulary": 113,
+        "length": 496,
+        "calculated_length": 686.38,
+        "volume": 3382.81,
+        "difficulty": 32.36,
+        "effort": 109466.17,
+        "time_seconds": 6081.45,
+        "bugs_delivered": 1.128
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 29.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "toggleFlipBlack",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "Chess/UIView+Jiggle.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 32,
+        "N2_total_operands": 42,
+        "vocabulary": 33,
+        "length": 74,
+        "calculated_length": 138.57,
+        "volume": 373.29,
+        "difficulty": 7.88,
+        "effort": 2939.62,
+        "time_seconds": 163.31,
+        "bugs_delivered": 0.124
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "jiggle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Chess/ViewController.swift": {
+      "halstead": {
+        "loc": 286,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 192,
+        "N1_total_operators": 712,
+        "N2_total_operands": 669,
+        "vocabulary": 227,
+        "length": 1381,
+        "calculated_length": 1635.84,
+        "volume": 10808.46,
+        "difficulty": 60.98,
+        "effort": 659062.95,
+        "time_seconds": 36614.61,
+        "bugs_delivered": 3.603
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 13
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 10.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didEnterBackground",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "supportedInterfaceOr",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "togglePlayerType",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "resetGame",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "undo",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "settings",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "load",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "save",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "boardView",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "canUndo",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "updateUI",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "setControl",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "update",
+            "cyclomatic": 8,
+            "cognitive": 3
+          },
+          {
+            "function": "pause",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "setSelection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeComputerMove",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "makeMove",
+            "cyclomatic": 11,
+            "cognitive": 11
+          },
+          {
+            "function": "numberOfComponents",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.48,
+        "avg_cognitive": 1.26
+      }
+    }
+  }
+}

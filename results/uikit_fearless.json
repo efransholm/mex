@@ -1,0 +1,3032 @@
+{
+  "project": "fearless",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-fearless",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/fearless-iOS",
+  "ui_files_filter": [
+    "fearless/AppDelegate.swift",
+    "fearless/ApplicationLayer/FearlessApplication.swift",
+    "fearless/ApplicationLayer/SoraCard/SCService/SCKYCService.swift",
+    "fearless/ApplicationLayer/main.swift",
+    "fearless/Common/Animation/ModalSheetBlurPresentationAppearanceAnimator.swift",
+    "fearless/Common/Animation/ModalSheetBlurPresentationController.swift",
+    "fearless/Common/Animation/ModalSheetBlurPresentationDismissAnimator.swift",
+    "fearless/Common/Animation/ModalSheetBlurPresentationFactory.swift",
+    "fearless/Common/Animation/RootControllerAnimationCoordinator.swift",
+    "fearless/Common/Extension/AsyncMap.swift",
+    "fearless/Common/Extension/FWCosmosView.swift",
+    "fearless/Common/Extension/Foundation/String+Helpers.swift",
+    "fearless/Common/Extension/TableView+Scrolling.swift",
+    "fearless/Common/Extension/UIApplication+TopViewController.swift",
+    "fearless/Common/Extension/UIControl+Disable.swift",
+    "fearless/Common/Extension/UIImage+ColorsInvert.swift",
+    "fearless/Common/Extension/UIImageView+gif.swift",
+    "fearless/Common/Extension/UIKit/PolkadotIcon+Image.swift",
+    "fearless/Common/Extension/UIKit/SkeletonRow+View.swift",
+    "fearless/Common/Extension/UIKit/TriangularedButton+Style.swift",
+    "fearless/Common/Extension/UIKit/TriangularedView+Style.swift",
+    "fearless/Common/Extension/UIKit/UIAlertViewController+Account.swift",
+    "fearless/Common/Extension/UIKit/UIBarButtonItem+Style.swift",
+    "fearless/Common/Extension/UIKit/UIButton.swift",
+    "fearless/Common/Extension/UIKit/UICollectionView.swift",
+    "fearless/Common/Extension/UIKit/UIColor+Gradient.swift",
+    "fearless/Common/Extension/UIKit/UIColor+HEX.swift",
+    "fearless/Common/Extension/UIKit/UIControl.swift",
+    "fearless/Common/Extension/UIKit/UIFont+Style.swift",
+    "fearless/Common/Extension/UIKit/UIFont+dynamicSize.swift",
+    "fearless/Common/Extension/UIKit/UIImage+Drawing.swift",
+    "fearless/Common/Extension/UIKit/UIImage+Monochrome.swift",
+    "fearless/Common/Extension/UIKit/UIImage.swift",
+    "fearless/Common/Extension/UIKit/UIImageView+Shimmered.swift",
+    "fearless/Common/Extension/UIKit/UIRefreshControl+ProgramaticallyBeginRefresh.swift",
+    "fearless/Common/Extension/UIKit/UIResponder.swift",
+    "fearless/Common/Extension/UIKit/UIScrollView+ScrollToPage.swift",
+    "fearless/Common/Extension/UIKit/UIStackView+Manage.swift",
+    "fearless/Common/Extension/UIKit/UISwitch+CustomSize.swift",
+    "fearless/Common/Extension/UIKit/UITableView+Reuse.swift",
+    "fearless/Common/Extension/UIKit/UITableView.swift",
+    "fearless/Common/Extension/UIKit/UITableViewCell+ReorderColor.swift",
+    "fearless/Common/Extension/UIKit/UITableViewCell.swift",
+    "fearless/Common/Extension/UIKit/UIView+Separator.swift",
+    "fearless/Common/Extension/UIKit/UIView.swift",
+    "fearless/Common/Extension/UIKit/UIViewController+Modal.swift",
+    "fearless/Common/Extension/ViewController+Wrapper.swift",
+    "fearless/Common/Helpers/AlertControllerFactory.swift",
+    "fearless/Common/Helpers/AttributedStringDecorator.swift",
+    "fearless/Common/Helpers/FearlessKeyboardHandler.swift",
+    "fearless/Common/Helpers/HexColorConverter.swift",
+    "fearless/Common/Helpers/LinkDecorator.swift",
+    "fearless/Common/Helpers/MainTransitionHelper.swift",
+    "fearless/Common/Helpers/ShakeAnimator.swift",
+    "fearless/Common/Helpers/TopViewControllerHelper.swift",
+    "fearless/Common/LocalAuthentication/BiometryAuth.swift",
+    "fearless/Common/Model/ChainAction.swift",
+    "fearless/Common/Model/EmptyAccountIcon.swift",
+    "fearless/Common/Model/FieldStatus.swift",
+    "fearless/Common/Model/ReplaceChainOption.swift",
+    "fearless/Common/Model/RestoreJson.swift",
+    "fearless/Common/Model/TextSharingSource.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "duplicated_lines_density": 0.0,
+    "sqale_debt_ratio": 0.0,
+    "comment_lines_density": 0.0,
+    "bugs": 0,
+    "comment_lines": 0,
+    "ncloc": 2725,
+    "files": 7,
+    "lines": 2732
+  },
+  "files": {
+    "fearless/AppDelegate.swift": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 52,
+        "N2_total_operands": 53,
+        "vocabulary": 49,
+        "length": 105,
+        "calculated_length": 231.58,
+        "volume": 589.54,
+        "difficulty": 11.69,
+        "effort": 6892.47,
+        "time_seconds": 382.91,
+        "bugs_delivered": 0.197
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 49.2
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isUnitTesting",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "fearless/ApplicationLayer/FearlessApplication.swift": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 128,
+        "N2_total_operands": 107,
+        "vocabulary": 84,
+        "length": 235,
+        "calculated_length": 465.82,
+        "volume": 1502.19,
+        "difficulty": 20.17,
+        "effort": 30302.47,
+        "time_seconds": 1683.47,
+        "bugs_delivered": 0.501
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 37.22
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sendEvent",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "resetTimer",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dropSession",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "didReceiveDidEnterBa",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didReceiveWillEnterF",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.17,
+        "avg_cognitive": 1.33
+      }
+    },
+    "fearless/ApplicationLayer/SoraCard/SCService/SCKYCService.swift": {
+      "halstead": {
+        "loc": 121,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 109,
+        "N1_total_operators": 238,
+        "N2_total_operands": 241,
+        "vocabulary": 137,
+        "length": 479,
+        "calculated_length": 872.34,
+        "volume": 3399.96,
+        "difficulty": 30.95,
+        "effort": 105242.72,
+        "time_seconds": 5846.82,
+        "bugs_delivered": 1.133
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1538,
+        "maintainability_index": 26.88
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "path",
+            "cyclomatic": 6,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshAccessTokenIf",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "sendNewVerificationE",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getUserData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "registerUser",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "changeUnverifiedEmai",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "signInWithPhoneNumbe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "signInWithPhoneNumbe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "checkEmailVerified",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "xorPriceInEuro",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 0.64
+      }
+    },
+    "fearless/ApplicationLayer/main.swift": {
+      "halstead": {
+        "loc": 6,
+        "n1_unique_operators": 2,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 7,
+        "N2_total_operands": 11,
+        "vocabulary": 10,
+        "length": 18,
+        "calculated_length": 26.0,
+        "volume": 59.79,
+        "difficulty": 1.38,
+        "effort": 82.22,
+        "time_seconds": 4.57,
+        "bugs_delivered": 0.02
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      }
+    },
+    "fearless/Common/Animation/ModalSheetBlurPresentationAppearanceAnimator.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 73,
+        "N1_total_operators": 146,
+        "N2_total_operands": 147,
+        "vocabulary": 93,
+        "length": 293,
+        "calculated_length": 538.3,
+        "volume": 1915.97,
+        "difficulty": 20.14,
+        "effort": 38581.93,
+        "time_seconds": 2143.44,
+        "bugs_delivered": 0.639
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.125,
+        "maintainability_index": 38.21
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transitionDuration",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animateTransition",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "fearless/Common/Animation/ModalSheetBlurPresentationController.swift": {
+      "halstead": {
+        "loc": 174,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 133,
+        "N1_total_operators": 400,
+        "N2_total_operands": 363,
+        "vocabulary": 168,
+        "length": 763,
+        "calculated_length": 1117.88,
+        "volume": 5640.34,
+        "difficulty": 47.76,
+        "effort": 269400.36,
+        "time_seconds": 14966.69,
+        "bugs_delivered": 1.88
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1333,
+        "maintainability_index": 19.75
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "presenterDelegate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sheetPresenterDelega",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "inputView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "attachCancellationGe",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "attachPanGesture",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "presentationTransiti",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissalTransitionW",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "animateBackgroundAlp",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismiss",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "actionDidCancel",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "didPan",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "handlePan",
+            "cyclomatic": 11,
+            "cognitive": 10
+          },
+          {
+            "function": "stopPullToDismiss",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "hide",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "gestureRecognizer",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.38,
+        "avg_cognitive": 1.44
+      }
+    },
+    "fearless/Common/Animation/ModalSheetBlurPresentationDismissAnimator.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 38,
+        "N1_total_operators": 78,
+        "N2_total_operands": 74,
+        "vocabulary": 57,
+        "length": 152,
+        "calculated_length": 280.13,
+        "volume": 886.6,
+        "difficulty": 18.5,
+        "effort": 16402.09,
+        "time_seconds": 911.23,
+        "bugs_delivered": 0.296
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 45.28
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transitionDuration",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animateTransition",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "fearless/Common/Animation/ModalSheetBlurPresentationFactory.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 63,
+        "N2_total_operands": 70,
+        "vocabulary": 47,
+        "length": 133,
+        "calculated_length": 219.77,
+        "volume": 738.76,
+        "difficulty": 14.85,
+        "effort": 10969.47,
+        "time_seconds": 609.42,
+        "bugs_delivered": 0.246
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 43.53
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animationController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animationController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "presentationControll",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Animation/RootControllerAnimationCoordinator.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 80,
+        "N2_total_operands": 85,
+        "vocabulary": 54,
+        "length": 165,
+        "calculated_length": 260.24,
+        "volume": 949.56,
+        "difficulty": 23.07,
+        "effort": 21907.62,
+        "time_seconds": 1217.09,
+        "bugs_delivered": 0.317
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8333,
+        "maintainability_index": 44.53
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "findWindow",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "animateTransition",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "animateTransition",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "fearless/Common/Extension/AsyncMap.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 95,
+        "N2_total_operands": 103,
+        "vocabulary": 49,
+        "length": 198,
+        "calculated_length": 226.84,
+        "volume": 1111.71,
+        "difficulty": 38.62,
+        "effort": 42939.9,
+        "time_seconds": 2385.55,
+        "bugs_delivered": 0.371
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 39.06
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "asyncMap",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "asyncReduce",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "asyncForEach",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "asyncCompactMap",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "concurrentMap",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.2,
+        "avg_cognitive": 1.4
+      }
+    },
+    "fearless/Common/Extension/FWCosmosView.swift": {
+      "halstead": {
+        "loc": 22,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 52,
+        "N2_total_operands": 55,
+        "vocabulary": 45,
+        "length": 107,
+        "calculated_length": 204.09,
+        "volume": 587.63,
+        "difficulty": 16.7,
+        "effort": 9811.29,
+        "time_seconds": 545.07,
+        "bugs_delivered": 0.196
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4,
+        "maintainability_index": 50.79
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "point",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "optimize",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Extension/Foundation/String+Helpers.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 86,
+        "N2_total_operands": 94,
+        "vocabulary": 48,
+        "length": 180,
+        "calculated_length": 230.8,
+        "volume": 1005.29,
+        "difficulty": 13.97,
+        "effort": 14046.94,
+        "time_seconds": 780.39,
+        "bugs_delivered": 0.335
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.76
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "returnKey",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "underlined",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "widthOfString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "heightOfString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sizeOfString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "height",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/TableView+Scrolling.swift": {
+      "halstead": {
+        "loc": 6,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 12,
+        "N2_total_operands": 14,
+        "vocabulary": 19,
+        "length": 26,
+        "calculated_length": 63.62,
+        "volume": 110.45,
+        "difficulty": 3.23,
+        "effort": 356.83,
+        "time_seconds": 19.82,
+        "bugs_delivered": 0.037
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 68.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "scrollToLastSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIApplication+TopViewController.swift": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 43,
+        "N2_total_operands": 32,
+        "vocabulary": 29,
+        "length": 75,
+        "calculated_length": 112.11,
+        "volume": 364.35,
+        "difficulty": 13.0,
+        "effort": 4736.53,
+        "time_seconds": 263.14,
+        "bugs_delivered": 0.121
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 54.55
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "topViewController",
+            "cyclomatic": 5,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 5.0
+      }
+    },
+    "fearless/Common/Extension/UIControl+Disable.swift": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 13,
+        "N1_total_operators": 14,
+        "N2_total_operands": 18,
+        "vocabulary": 19,
+        "length": 32,
+        "calculated_length": 63.62,
+        "volume": 135.93,
+        "difficulty": 4.15,
+        "effort": 564.65,
+        "time_seconds": 31.37,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 62.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "disable",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "enable",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIImage+ColorsInvert.swift": {
+      "halstead": {
+        "loc": 14,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 53,
+        "N2_total_operands": 47,
+        "vocabulary": 39,
+        "length": 100,
+        "calculated_length": 171.4,
+        "volume": 528.54,
+        "difficulty": 10.44,
+        "effort": 5520.31,
+        "time_seconds": 306.68,
+        "bugs_delivered": 0.176
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 55.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "invertedImage",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 4.0
+      }
+    },
+    "fearless/Common/Extension/UIImageView+gif.swift": {
+      "halstead": {
+        "loc": 87,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 82,
+        "N1_total_operators": 204,
+        "N2_total_operands": 217,
+        "vocabulary": 110,
+        "length": 421,
+        "calculated_length": 655.93,
+        "volume": 2854.95,
+        "difficulty": 37.05,
+        "effort": 105772.51,
+        "time_seconds": 5876.25,
+        "bugs_delivered": 0.952
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2667,
+        "maintainability_index": 31.61
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setGIFImage",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeGIFFromCollectio",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "makeGIFFromData",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "delayForImageAtIndex",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 1.5
+      }
+    },
+    "fearless/Common/Extension/UIKit/PolkadotIcon+Image.swift": {
+      "halstead": {
+        "loc": 14,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 23,
+        "N2_total_operands": 27,
+        "vocabulary": 31,
+        "length": 50,
+        "calculated_length": 124.49,
+        "volume": 247.71,
+        "difficulty": 7.43,
+        "effort": 1839.25,
+        "time_seconds": 102.18,
+        "bugs_delivered": 0.083
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 57.97
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "imageWithFillColor",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/SkeletonRow+View.swift": {
+      "halstead": {
+        "loc": 59,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 150,
+        "N2_total_operands": 167,
+        "vocabulary": 45,
+        "length": 317,
+        "calculated_length": 209.48,
+        "volume": 1740.92,
+        "difficulty": 30.36,
+        "effort": 52860.58,
+        "time_seconds": 2936.7,
+        "bugs_delivered": 0.58
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.14
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "createRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "createRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "createRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "createRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/TriangularedButton+Style.swift": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 36,
+        "N1_total_operators": 246,
+        "N2_total_operands": 194,
+        "vocabulary": 43,
+        "length": 440,
+        "calculated_length": 205.77,
+        "volume": 2387.56,
+        "difficulty": 18.86,
+        "effort": 45031.97,
+        "time_seconds": 2501.78,
+        "bugs_delivered": 0.796
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 35.57
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "applyAccessoryStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyStackButtonStyl",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyEnabledStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyDisabledStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyLoadingStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyDestructiveStyl",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/TriangularedView+Style.swift": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 19,
+        "N2_total_operands": 15,
+        "vocabulary": 16,
+        "length": 34,
+        "calculated_length": 48.73,
+        "volume": 136.0,
+        "difficulty": 4.5,
+        "effort": 612.0,
+        "time_seconds": 34.0,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 62.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "applyDisabledStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyEnabledStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIAlertViewController+Account.swift": {
+      "halstead": {
+        "loc": 52,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 140,
+        "N2_total_operands": 130,
+        "vocabulary": 78,
+        "length": 270,
+        "calculated_length": 426.2,
+        "volume": 1697.06,
+        "difficulty": 22.41,
+        "effort": 38037.52,
+        "time_seconds": 2113.2,
+        "bugs_delivered": 0.566
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0909,
+        "maintainability_index": 39.55
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "presentAccountOption",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIBarButtonItem+Style.swift": {
+      "halstead": {
+        "loc": 24,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 60,
+        "N2_total_operands": 51,
+        "vocabulary": 31,
+        "length": 111,
+        "calculated_length": 126.64,
+        "volume": 549.92,
+        "difficulty": 10.43,
+        "effort": 5736.62,
+        "time_seconds": 318.7,
+        "bugs_delivered": 0.183
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 50.44
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setupDefaultTitleSty",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupDefaultTitleSty",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIButton.swift": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 59,
+        "N2_total_operands": 73,
+        "vocabulary": 33,
+        "length": 132,
+        "calculated_length": 134.54,
+        "volume": 665.86,
+        "difficulty": 23.72,
+        "effort": 15797.53,
+        "time_seconds": 877.64,
+        "bugs_delivered": 0.222
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 53.12
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setTextAndImage",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UICollectionView.swift": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 46,
+        "N2_total_operands": 46,
+        "vocabulary": 42,
+        "length": 92,
+        "calculated_length": 185.1,
+        "volume": 496.09,
+        "difficulty": 17.25,
+        "effort": 8557.61,
+        "time_seconds": 475.42,
+        "bugs_delivered": 0.165
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.23
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "registerClassForCell",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dequeueReusableCellW",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "usedCollectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "indexPath",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.25
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIColor+Gradient.swift": {
+      "halstead": {
+        "loc": 12,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 17,
+        "N2_total_operands": 17,
+        "vocabulary": 16,
+        "length": 34,
+        "calculated_length": 48.73,
+        "volume": 136.0,
+        "difficulty": 5.1,
+        "effort": 693.6,
+        "time_seconds": 38.53,
+        "bugs_delivered": 0.045
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 61.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "walletBorderGradient",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIColor+HEX.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 21,
+        "N1_total_operators": 62,
+        "N2_total_operands": 76,
+        "vocabulary": 31,
+        "length": 138,
+        "calculated_length": 125.46,
+        "volume": 683.68,
+        "difficulty": 18.1,
+        "effort": 12371.34,
+        "time_seconds": 687.3,
+        "bugs_delivered": 0.228
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 47.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "rgbaComponents",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "hexRGB",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hexRGBA",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIControl.swift": {
+      "halstead": {
+        "loc": 14,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 45,
+        "N2_total_operands": 37,
+        "vocabulary": 35,
+        "length": 82,
+        "calculated_length": 145.04,
+        "volume": 420.6,
+        "difficulty": 13.88,
+        "effort": 5835.84,
+        "time_seconds": 324.21,
+        "bugs_delivered": 0.14
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 56.22
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "addAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "invoke",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIFont+Style.swift": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 123,
+        "N2_total_operands": 114,
+        "vocabulary": 50,
+        "length": 237,
+        "calculated_length": 246.1,
+        "volume": 1337.59,
+        "difficulty": 14.25,
+        "effort": 19060.71,
+        "time_seconds": 1058.93,
+        "bugs_delivered": 0.446
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.59
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "h1Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "h2Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "h3Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "h4Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "h5Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "h6Title",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "capsTitle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "p0Paragraph",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "p0Digits",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "p1Paragraph",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "p2Paragraph",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "p3Paragraph",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIFont+dynamicSize.swift": {
+      "halstead": {
+        "loc": 11,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 21,
+        "N2_total_operands": 22,
+        "vocabulary": 27,
+        "length": 43,
+        "calculated_length": 102.05,
+        "volume": 204.46,
+        "difficulty": 7.56,
+        "effort": 1546.23,
+        "time_seconds": 85.9,
+        "bugs_delivered": 0.068
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 60.97
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "dynamicSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIImage+Drawing.swift": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 177,
+        "N2_total_operands": 190,
+        "vocabulary": 81,
+        "length": 367,
+        "calculated_length": 446.65,
+        "volume": 2326.72,
+        "difficulty": 33.25,
+        "effort": 77363.6,
+        "time_seconds": 4297.98,
+        "bugs_delivered": 0.776
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0833,
+        "maintainability_index": 36.25
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "background",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "crop",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "tinted",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.67,
+        "avg_cognitive": 1.67
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIImage+Monochrome.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 62,
+        "N2_total_operands": 58,
+        "vocabulary": 43,
+        "length": 120,
+        "calculated_length": 196.6,
+        "volume": 651.15,
+        "difficulty": 11.23,
+        "effort": 7309.7,
+        "time_seconds": 406.09,
+        "bugs_delivered": 0.217
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.38
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "monochrome",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 4.0,
+        "avg_cognitive": 3.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIImage.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 64,
+        "N2_total_operands": 69,
+        "vocabulary": 46,
+        "length": 133,
+        "calculated_length": 212.18,
+        "volume": 734.63,
+        "difficulty": 16.69,
+        "effort": 12263.64,
+        "time_seconds": 681.31,
+        "bugs_delivered": 0.245
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 48.23
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "rotate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIImageView+Shimmered.swift": {
+      "halstead": {
+        "loc": 3,
+        "n1_unique_operators": 2,
+        "n2_unique_operands": 2,
+        "N1_total_operators": 2,
+        "N2_total_operands": 2,
+        "vocabulary": 4,
+        "length": 4,
+        "calculated_length": 4.0,
+        "volume": 8.0,
+        "difficulty": 1.0,
+        "effort": 8.0,
+        "time_seconds": 0.44,
+        "bugs_delivered": 0.003
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIRefreshControl+ProgramaticallyBeginRefresh.swift": {
+      "halstead": {
+        "loc": 8,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 17,
+        "N2_total_operands": 18,
+        "vocabulary": 25,
+        "length": 35,
+        "calculated_length": 92.53,
+        "volume": 162.53,
+        "difficulty": 5.06,
+        "effort": 822.83,
+        "time_seconds": 45.71,
+        "bugs_delivered": 0.054
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 64.68
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "programaticallyBegin",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIResponder.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 18,
+        "N2_total_operands": 17,
+        "vocabulary": 21,
+        "length": 35,
+        "calculated_length": 71.55,
+        "volume": 153.73,
+        "difficulty": 11.33,
+        "effort": 1742.29,
+        "time_seconds": 96.79,
+        "bugs_delivered": 0.051
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 62.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "next",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIScrollView+ScrollToPage.swift": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 89,
+        "N2_total_operands": 80,
+        "vocabulary": 44,
+        "length": 169,
+        "calculated_length": 197.87,
+        "volume": 922.64,
+        "difficulty": 25.19,
+        "effort": 23236.96,
+        "time_seconds": 1290.94,
+        "bugs_delivered": 0.308
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 47.61
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "offset",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "scrollTo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIStackView+Manage.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 30,
+        "N2_total_operands": 32,
+        "vocabulary": 25,
+        "length": 62,
+        "calculated_length": 91.36,
+        "volume": 287.92,
+        "difficulty": 12.57,
+        "effort": 3619.55,
+        "time_seconds": 201.09,
+        "bugs_delivered": 0.096
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 56.59
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "insertArranged",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "insertArranged",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UISwitch+CustomSize.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 21,
+        "N2_total_operands": 24,
+        "vocabulary": 22,
+        "length": 45,
+        "calculated_length": 78.25,
+        "volume": 200.67,
+        "difficulty": 5.6,
+        "effort": 1123.78,
+        "time_seconds": 62.43,
+        "bugs_delivered": 0.067
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 61.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UITableView+Reuse.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 83,
+        "N2_total_operands": 88,
+        "vocabulary": 55,
+        "length": 171,
+        "calculated_length": 265.96,
+        "volume": 988.61,
+        "difficulty": 25.14,
+        "effort": 24856.54,
+        "time_seconds": 1380.92,
+        "bugs_delivered": 0.33
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 42.87
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "registerClassForCell",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "registerClassesForCe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "registerHeaderFooter",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dequeueReusableCellW",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dequeueReusableCellW",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "dequeueReusableHeade",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "reuseIdentifier",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.29,
+        "avg_cognitive": 0.29
+      }
+    },
+    "fearless/Common/Extension/UIKit/UITableView.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 28,
+        "N2_total_operands": 32,
+        "vocabulary": 27,
+        "length": 60,
+        "calculated_length": 104.71,
+        "volume": 285.29,
+        "difficulty": 6.74,
+        "effort": 1921.98,
+        "time_seconds": 106.78,
+        "bugs_delivered": 0.095
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 57.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "setAndLayoutTableHea",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UITableViewCell+ReorderColor.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 47,
+        "N2_total_operands": 41,
+        "vocabulary": 39,
+        "length": 88,
+        "calculated_length": 168.64,
+        "volume": 465.12,
+        "difficulty": 12.81,
+        "effort": 5959.29,
+        "time_seconds": 331.07,
+        "bugs_delivered": 0.155
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 48.95
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "recolorReorderContro",
+            "cyclomatic": 6,
+            "cognitive": 15
+          }
+        ],
+        "avg_cyclomatic": 6.0,
+        "avg_cognitive": 15.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UITableViewCell.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 15,
+        "N2_total_operands": 12,
+        "vocabulary": 15,
+        "length": 27,
+        "calculated_length": 43.65,
+        "volume": 105.49,
+        "difficulty": 5.25,
+        "effort": 553.8,
+        "time_seconds": 30.77,
+        "bugs_delivered": 0.035
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 63.75
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "usedTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "indexPath",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIView+Separator.swift": {
+      "halstead": {
+        "loc": 8,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 8,
+        "N1_total_operators": 17,
+        "N2_total_operands": 14,
+        "vocabulary": 19,
+        "length": 31,
+        "calculated_length": 62.05,
+        "volume": 131.69,
+        "difficulty": 9.62,
+        "effort": 1267.48,
+        "time_seconds": 70.42,
+        "bugs_delivered": 0.044
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 65.32
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "createSeparator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIView.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 23,
+        "N2_total_operands": 19,
+        "vocabulary": 31,
+        "length": 42,
+        "calculated_length": 122.79,
+        "volume": 208.08,
+        "difficulty": 11.54,
+        "effort": 2400.31,
+        "time_seconds": 133.35,
+        "bugs_delivered": 0.069
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 57.44
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "firstResponder",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "rounded",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.5,
+        "avg_cognitive": 2.0
+      }
+    },
+    "fearless/Common/Extension/UIKit/UIViewController+Modal.swift": {
+      "halstead": {
+        "loc": 10,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 6,
+        "N1_total_operators": 11,
+        "N2_total_operands": 11,
+        "vocabulary": 14,
+        "length": 22,
+        "calculated_length": 39.51,
+        "volume": 83.76,
+        "difficulty": 7.33,
+        "effort": 614.25,
+        "time_seconds": 34.13,
+        "bugs_delivered": 0.028
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 64.45
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "topModalViewControll",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Extension/ViewController+Wrapper.swift": {
+      "halstead": {
+        "loc": 9,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 14,
+        "N2_total_operands": 10,
+        "vocabulary": 18,
+        "length": 24,
+        "calculated_length": 57.71,
+        "volume": 100.08,
+        "difficulty": 7.86,
+        "effort": 786.33,
+        "time_seconds": 43.68,
+        "bugs_delivered": 0.033
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 64.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "navigationRootViewCo",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Helpers/AlertControllerFactory.swift": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 76,
+        "N2_total_operands": 75,
+        "vocabulary": 46,
+        "length": 151,
+        "calculated_length": 214.57,
+        "volume": 834.06,
+        "difficulty": 14.77,
+        "effort": 12321.31,
+        "time_seconds": 684.52,
+        "bugs_delivered": 0.278
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.19
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "phishingWarningAlert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Helpers/AttributedStringDecorator.swift": {
+      "halstead": {
+        "loc": 51,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 116,
+        "N2_total_operands": 119,
+        "vocabulary": 51,
+        "length": 235,
+        "calculated_length": 241.52,
+        "volume": 1333.02,
+        "difficulty": 32.45,
+        "effort": 43262.56,
+        "time_seconds": 2403.48,
+        "bugs_delivered": 0.444
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.79
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "decorate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "decorate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "decorate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "fearless/Common/Helpers/FearlessKeyboardHandler.swift": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 36,
+        "N1_total_operators": 181,
+        "N2_total_operands": 145,
+        "vocabulary": 54,
+        "length": 326,
+        "calculated_length": 261.18,
+        "volume": 1876.09,
+        "difficulty": 36.25,
+        "effort": 68008.38,
+        "time_seconds": 3778.24,
+        "bugs_delivered": 0.625
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 33.9
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupNotificationsOb",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "keyboardWillShow",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardDidShow",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardWillHide",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardDidHide",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardWillChangeFr",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardDidChangeFra",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.6,
+        "avg_cognitive": 0.6
+      }
+    },
+    "fearless/Common/Helpers/HexColorConverter.swift": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 80,
+        "N2_total_operands": 68,
+        "vocabulary": 57,
+        "length": 148,
+        "calculated_length": 279.19,
+        "volume": 863.27,
+        "difficulty": 18.38,
+        "effort": 15865.46,
+        "time_seconds": 881.41,
+        "bugs_delivered": 0.288
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 46.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "uiColorToHexRGB",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "uiColorToHexRGBA",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hexStringToUIColor",
+            "cyclomatic": 4,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Helpers/LinkDecorator.swift": {
+      "halstead": {
+        "loc": 58,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 62,
+        "N1_total_operators": 178,
+        "N2_total_operands": 176,
+        "vocabulary": 88,
+        "length": 354,
+        "calculated_length": 491.37,
+        "volume": 2286.64,
+        "difficulty": 36.9,
+        "effort": 84384.35,
+        "time_seconds": 4688.02,
+        "bugs_delivered": 0.762
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1429,
+        "maintainability_index": 37.2
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "links",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "addLinkAttribute",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "disclaimerDecorator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "fearless/Common/Helpers/MainTransitionHelper.swift": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 67,
+        "N2_total_operands": 62,
+        "vocabulary": 54,
+        "length": 129,
+        "calculated_length": 262.24,
+        "volume": 742.38,
+        "difficulty": 14.24,
+        "effort": 10573.91,
+        "time_seconds": 587.44,
+        "bugs_delivered": 0.247
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.01
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "transitToMainTabBarC",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 4.0
+      }
+    },
+    "fearless/Common/Helpers/ShakeAnimator.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 74,
+        "N2_total_operands": 90,
+        "vocabulary": 44,
+        "length": 164,
+        "calculated_length": 206.19,
+        "volume": 895.35,
+        "difficulty": 13.24,
+        "effort": 11850.18,
+        "time_seconds": 658.34,
+        "bugs_delivered": 0.298
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.11
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Helpers/TopViewControllerHelper.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 15,
+        "N1_total_operators": 25,
+        "N2_total_operands": 21,
+        "vocabulary": 28,
+        "length": 46,
+        "calculated_length": 106.71,
+        "volume": 221.14,
+        "difficulty": 9.1,
+        "effort": 2012.36,
+        "time_seconds": 111.8,
+        "bugs_delivered": 0.074
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 58.88
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "getTopViewController",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 3.0
+      }
+    },
+    "fearless/Common/LocalAuthentication/BiometryAuth.swift": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 45,
+        "N1_total_operators": 134,
+        "N2_total_operands": 99,
+        "vocabulary": 72,
+        "length": 233,
+        "calculated_length": 375.52,
+        "volume": 1437.59,
+        "difficulty": 29.7,
+        "effort": 42696.5,
+        "time_seconds": 2372.03,
+        "bugs_delivered": 0.479
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 34.34
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "availableBiometryTyp",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "authenticate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "accessoryIcon",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "accessoryIconSetting",
+            "cyclomatic": 4,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 4.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "fearless/Common/Model/ChainAction.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 177,
+        "N2_total_operands": 137,
+        "vocabulary": 53,
+        "length": 314,
+        "calculated_length": 262.68,
+        "volume": 1798.57,
+        "difficulty": 20.05,
+        "effort": 36059.08,
+        "time_seconds": 2003.28,
+        "bugs_delivered": 0.6
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 36.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "icon",
+            "cyclomatic": 7,
+            "cognitive": 1
+          },
+          {
+            "function": "localizableTitle",
+            "cyclomatic": 11,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 9.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Model/EmptyAccountIcon.swift": {
+      "halstead": {
+        "loc": 5,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 7,
+        "N2_total_operands": 11,
+        "vocabulary": 13,
+        "length": 18,
+        "calculated_length": 36.53,
+        "volume": 66.61,
+        "difficulty": 2.44,
+        "effort": 162.82,
+        "time_seconds": 9.05,
+        "bugs_delivered": 0.022
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 71.85
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "drawInContext",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "fearless/Common/Model/FieldStatus.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 14,
+        "N1_total_operators": 35,
+        "N2_total_operands": 23,
+        "vocabulary": 24,
+        "length": 58,
+        "calculated_length": 86.52,
+        "volume": 265.93,
+        "difficulty": 8.21,
+        "effort": 2184.41,
+        "time_seconds": 121.36,
+        "bugs_delivered": 0.089
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 53.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "icon",
+            "cyclomatic": 5,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Model/ReplaceChainOption.swift": {
+      "halstead": {
+        "loc": 22,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 51,
+        "N2_total_operands": 33,
+        "vocabulary": 33,
+        "length": 84,
+        "calculated_length": 134.54,
+        "volume": 423.73,
+        "difficulty": 10.72,
+        "effort": 4544.49,
+        "time_seconds": 252.47,
+        "bugs_delivered": 0.141
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 51.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "icon",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "localizableTitle",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "fearless/Common/Model/RestoreJson.swift": {
+      "halstead": {
+        "loc": 9,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 10,
+        "N2_total_operands": 9,
+        "vocabulary": 13,
+        "length": 19,
+        "calculated_length": 36.53,
+        "volume": 70.31,
+        "difficulty": 2.0,
+        "effort": 140.62,
+        "time_seconds": 7.81,
+        "bugs_delivered": 0.023
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "fearless/Common/Model/TextSharingSource.swift": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 19,
+        "N1_total_operators": 42,
+        "N2_total_operands": 44,
+        "vocabulary": 31,
+        "length": 86,
+        "calculated_length": 123.73,
+        "volume": 426.06,
+        "difficulty": 13.89,
+        "effort": 5920.0,
+        "time_seconds": 328.89,
+        "bugs_delivered": 0.142
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 49.83
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityViewControll",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityViewControll",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "activityViewControll",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    }
+  }
+}

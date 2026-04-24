@@ -1,0 +1,3636 @@
+{
+  "project": "Expense Tracker",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-expense-tracker",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/Expense-Tracker-App",
+  "ui_files_filter": [
+    "Expense Tracker/Base.lproj/LaunchScreen.storyboard",
+    "Expense Tracker/Controllers/Forget Password/ForgetPasswordVC.swift",
+    "Expense Tracker/Controllers/Login SingUp/LoginVC.swift",
+    "Expense Tracker/Controllers/Login SingUp/LoginWithPinVC.swift",
+    "Expense Tracker/Controllers/Login SingUp/SingUpVC.swift",
+    "Expense Tracker/Controllers/Main/AddIncomeAndExpensesVC.swift",
+    "Expense Tracker/Controllers/Main/HomeVC.swift",
+    "Expense Tracker/Controllers/Main/ProfileVC.swift",
+    "Expense Tracker/Controllers/Main/TransectionsVC.swift",
+    "Expense Tracker/Controllers/OnBoarding/OnboardingViewController.swift",
+    "Expense Tracker/Controllers/ProfileViews/AboutUsVC.swift",
+    "Expense Tracker/Controllers/ProfileViews/ChangePasswordVC.swift",
+    "Expense Tracker/Controllers/ProfileViews/EditProfileVC.swift",
+    "Expense Tracker/Controllers/ProfileViews/UserStatementVC.swift",
+    "Expense Tracker/Custom Views/AlertView/AlertBody.swift",
+    "Expense Tracker/Custom Views/AlertView/AlertBtn.swift",
+    "Expense Tracker/Custom Views/AlertView/AlertContainer.swift",
+    "Expense Tracker/Custom Views/AlertView/AlertController.swift",
+    "Expense Tracker/Custom Views/AlertView/AlertTitle.swift",
+    "Expense Tracker/Custom Views/Button/EButton.swift",
+    "Expense Tracker/Custom Views/Button/GradientButton.swift",
+    "Expense Tracker/Custom Views/Cell/OnboardingCell.swift",
+    "Expense Tracker/Custom Views/Cell/TransectionTableViewCell.swift",
+    "Expense Tracker/Custom Views/Custom TableView/CustomTableView.swift",
+    "Expense Tracker/Custom Views/CustomPageController/ColorUtils.swift",
+    "Expense Tracker/Custom Views/CustomPageController/CustomPageController.swift",
+    "Expense Tracker/Custom Views/CustomPageController/DotDrawer.swift",
+    "Expense Tracker/Custom Views/CustomPageController/DrawerProtocol.swift",
+    "Expense Tracker/Custom Views/CustomPageController/InfiniteDrawer.swift",
+    "Expense Tracker/Custom Views/CustomPageController/InfiniteScrollingDrawer.swift",
+    "Expense Tracker/Custom Views/ImageView/AvatarImageView.swift",
+    "Expense Tracker/Custom Views/Label/CustomLabel.swift",
+    "Expense Tracker/Custom Views/SwiftUI CharView/CharView.swift",
+    "Expense Tracker/Custom Views/TabBar Controller/TabBarVC.swift",
+    "Expense Tracker/Custom Views/TextField/CustomTextFields.swift",
+    "Expense Tracker/Custom Views/TextField/ForgetPasswordTextFeild.swift",
+    "Expense Tracker/Custom Views/TextField/PasswordTextField.swift",
+    "Expense Tracker/Custom Views/TextField/UsernameTextField.swift",
+    "Expense Tracker/Custom Views/UIView/CardView.swift",
+    "Expense Tracker/Custom Views/UIView/CustomView.swift",
+    "Expense Tracker/Custom Views/UIView/ProfileHeaderView.swift",
+    "Expense Tracker/Custom Views/UIView/ProfileHeaderView.xib",
+    "Expense Tracker/Custom Views/View Controllers/AllTransactions.swift",
+    "Expense Tracker/Custom Views/View Controllers/DataLoading.swift",
+    "Expense Tracker/Custom Views/View Controllers/HeaderVC.swift",
+    "Expense Tracker/Extentions/Color+Ext.swift",
+    "Expense Tracker/Extentions/UITableView+Ext.swift",
+    "Expense Tracker/Extentions/UITextFeild+Ext.swift",
+    "Expense Tracker/Extentions/UIView+Ext.swift",
+    "Expense Tracker/Extentions/UIViewController+Ext.swift",
+    "Expense Tracker/Models/OnBoardingModel.swift",
+    "Expense Tracker/Models/User.swift",
+    "Expense Tracker/Network Manager/AuthManager.swift",
+    "Expense Tracker/Network Manager/NetworkManager.swift",
+    "Expense Tracker/Resources/AppDelegate.swift",
+    "Expense Tracker/Resources/SceneDelegate.swift",
+    "Expense Tracker/Utilits/AppError.swift",
+    "Expense Tracker/Utilits/BalanceFormater.swift",
+    "Expense Tracker/Utilits/Constants.swift",
+    "Expense Tracker/Utilits/DatePicker.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "Expense Tracker/Controllers/Forget Password/ForgetPasswordVC.swift": {
+      "halstead": {
+        "loc": 54,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 144,
+        "N2_total_operands": 160,
+        "vocabulary": 79,
+        "length": 304,
+        "calculated_length": 449.45,
+        "volume": 1916.35,
+        "difficulty": 14.33,
+        "effort": 27458.14,
+        "time_seconds": 1525.45,
+        "bugs_delivered": 0.639
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.42
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configfVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configForgetLoginIma",
+            "cyclomatic": 3,
+            "cognitive": 0
+          },
+          {
+            "function": "configforgetTxtFeild",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Controllers/Login SingUp/LoginVC.swift": {
+      "halstead": {
+        "loc": 220,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 200,
+        "N1_total_operators": 777,
+        "N2_total_operands": 849,
+        "vocabulary": 227,
+        "length": 1626,
+        "calculated_length": 1657.15,
+        "volume": 12725.97,
+        "difficulty": 57.31,
+        "effort": 729293.4,
+        "time_seconds": 40516.3,
+        "bugs_delivered": 4.242
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 22,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0435,
+        "maintainability_index": 16.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "confgiruVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loginBtnClicked",
+            "cyclomatic": 6,
+            "cognitive": 10
+          },
+          {
+            "function": "loginwithPinClicked",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "createDismissKeyboar",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ConfigureScrollView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "conigureLoginImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureLoginAndReg",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "configureLoginFromVi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configforgetBtn",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "configLoginAndSingUp",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pushForgetVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pushSingUpVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.85,
+        "avg_cognitive": 1.23
+      }
+    },
+    "Expense Tracker/Controllers/Login SingUp/LoginWithPinVC.swift": {
+      "halstead": {
+        "loc": 188,
+        "n1_unique_operators": 38,
+        "n2_unique_operands": 203,
+        "N1_total_operators": 539,
+        "N2_total_operands": 555,
+        "vocabulary": 241,
+        "length": 1094,
+        "calculated_length": 1755.48,
+        "volume": 8656.7,
+        "difficulty": 51.95,
+        "effort": 449679.37,
+        "time_seconds": 24982.19,
+        "bugs_delivered": 2.886
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 22,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0435,
+        "maintainability_index": 19.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configbackgroundandS",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "configGobtn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldDidChange",
+            "cyclomatic": 11,
+            "cognitive": 6
+          },
+          {
+            "function": "pinLogin",
+            "cyclomatic": 7,
+            "cognitive": 11
+          },
+          {
+            "function": "didTapBack",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.12,
+        "avg_cognitive": 2.12
+      }
+    },
+    "Expense Tracker/Controllers/Login SingUp/SingUpVC.swift": {
+      "halstead": {
+        "loc": 157,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 179,
+        "N1_total_operators": 572,
+        "N2_total_operands": 650,
+        "vocabulary": 209,
+        "length": 1222,
+        "calculated_length": 1486.81,
+        "volume": 9418.39,
+        "difficulty": 54.47,
+        "effort": 513013.02,
+        "time_seconds": 28500.72,
+        "bugs_delivered": 3.139
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 20,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0476,
+        "maintainability_index": 22.52
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configScrollView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configSingUPImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configSignUpFormView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "configSignUPBtn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didTapSignUp",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "textField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.62,
+        "avg_cognitive": 1.0
+      }
+    },
+    "Expense Tracker/Controllers/Main/AddIncomeAndExpensesVC.swift": {
+      "halstead": {
+        "loc": 229,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 179,
+        "N1_total_operators": 706,
+        "N2_total_operands": 781,
+        "vocabulary": 209,
+        "length": 1487,
+        "calculated_length": 1486.81,
+        "volume": 11460.84,
+        "difficulty": 65.45,
+        "effort": 750076.96,
+        "time_seconds": 41670.94,
+        "bugs_delivered": 3.82
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 28,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0667,
+        "maintainability_index": 17.95
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ConfigureScrollView",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "configureAddVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "expensesAndIncomeTex",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configFrom",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "postTransaction",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "numberOfComponents",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.6,
+        "avg_cognitive": 0.7
+      }
+    },
+    "Expense Tracker/Controllers/Main/HomeVC.swift": {
+      "halstead": {
+        "loc": 329,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 234,
+        "N1_total_operators": 473,
+        "N2_total_operands": 490,
+        "vocabulary": 260,
+        "length": 963,
+        "calculated_length": 1963.88,
+        "volume": 7725.54,
+        "difficulty": 27.22,
+        "effort": 210306.37,
+        "time_seconds": 11683.69,
+        "bugs_delivered": 2.575
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 32,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1351,
+        "maintainability_index": 14.24
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configHomeVC",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "setupRefreshControl",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchDashboardData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "fetchTransactions",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "viewWillLayoutSubvie",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ConfigureHeaderView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didTapSetting",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "configData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ConfigureHeaderEleme",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTransectionLab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configStateView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutLable",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeFormattedBalance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.29,
+        "avg_cognitive": 0.29
+      }
+    },
+    "Expense Tracker/Controllers/Main/ProfileVC.swift": {
+      "halstead": {
+        "loc": 211,
+        "n1_unique_operators": 27,
+        "n2_unique_operands": 201,
+        "N1_total_operators": 509,
+        "N2_total_operands": 561,
+        "vocabulary": 228,
+        "length": 1070,
+        "calculated_length": 1666.24,
+        "volume": 8381.19,
+        "difficulty": 37.68,
+        "effort": 315795.82,
+        "time_seconds": 17544.21,
+        "bugs_delivered": 2.794
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 22,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2414,
+        "maintainability_index": 18.73
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLayoutSubview",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configProfileVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupTableHeaderView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "didTapLogout",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "numberOfSections",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "faceIdSwitchChanged",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "authenticateWithFace",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 1.64,
+        "avg_cognitive": 0.86
+      }
+    },
+    "Expense Tracker/Controllers/Main/TransectionsVC.swift": {
+      "halstead": {
+        "loc": 278,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 251,
+        "N1_total_operators": 704,
+        "N2_total_operands": 754,
+        "vocabulary": 284,
+        "length": 1458,
+        "calculated_length": 2167.32,
+        "volume": 11882.33,
+        "difficulty": 49.57,
+        "effort": 588956.51,
+        "time_seconds": 32719.81,
+        "bugs_delivered": 3.961
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 21,
+        "observable_state_vars": 0,
+        "state_updates": 11
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2759,
+        "maintainability_index": 13.71
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLayoutSubview",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "ConfigureScrollView",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchIncomeData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "fetchExpensesData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getTransaction",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "configTransectionsVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "siutDidChange",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "configSegment",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTransactionLab",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTrasactionStat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutLable",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configChartView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setIncome",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setExpenses",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setChartData",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.65,
+        "avg_cognitive": 0.45
+      }
+    },
+    "Expense Tracker/Controllers/OnBoarding/OnboardingViewController.swift": {
+      "halstead": {
+        "loc": 117,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 149,
+        "N1_total_operators": 304,
+        "N2_total_operands": 350,
+        "vocabulary": 172,
+        "length": 654,
+        "calculated_length": 1179.7,
+        "volume": 4856.78,
+        "difficulty": 27.01,
+        "effort": 131198.17,
+        "time_seconds": 7288.79,
+        "bugs_delivered": 1.619
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2727,
+        "maintainability_index": 27.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "currentPage.didSet",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configCollectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configurationNextBtn",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "configPageController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollViewDidEndDece",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.2,
+        "avg_cognitive": 0.4
+      }
+    },
+    "Expense Tracker/Controllers/ProfileViews/AboutUsVC.swift": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 63,
+        "N1_total_operators": 119,
+        "N2_total_operands": 133,
+        "vocabulary": 73,
+        "length": 252,
+        "calculated_length": 409.79,
+        "volume": 1559.84,
+        "difficulty": 10.56,
+        "effort": 16464.93,
+        "time_seconds": 914.72,
+        "bugs_delivered": 0.52
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configAboutUS",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Controllers/ProfileViews/ChangePasswordVC.swift": {
+      "halstead": {
+        "loc": 95,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 94,
+        "N1_total_operators": 338,
+        "N2_total_operands": 398,
+        "vocabulary": 106,
+        "length": 736,
+        "calculated_length": 659.15,
+        "volume": 4951.75,
+        "difficulty": 25.4,
+        "effort": 125795.51,
+        "time_seconds": 6988.64,
+        "bugs_delivered": 1.651
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 30.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configViewsAndTextFi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didTapSave",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Controllers/ProfileViews/EditProfileVC.swift": {
+      "halstead": {
+        "loc": 303,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 252,
+        "N1_total_operators": 1030,
+        "N2_total_operands": 1191,
+        "vocabulary": 277,
+        "length": 2221,
+        "calculated_length": 2126.37,
+        "volume": 18020.62,
+        "difficulty": 59.08,
+        "effort": 1064611.11,
+        "time_seconds": 59145.06,
+        "bugs_delivered": 6.007
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 32,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1351,
+        "maintainability_index": 12.98
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillLayoutSubvie",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "ConfigureScrollView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configForm",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "editViewButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "choosePhotoAlert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "openCamera",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "openPhoto",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutViewsAndLabels",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configSavebtn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "imagePickerControlle",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "picker",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "numberOfComponents",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.35,
+        "avg_cognitive": 0.53
+      }
+    },
+    "Expense Tracker/Controllers/ProfileViews/UserStatementVC.swift": {
+      "halstead": {
+        "loc": 56,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 62,
+        "N1_total_operators": 112,
+        "N2_total_operands": 128,
+        "vocabulary": 79,
+        "length": 240,
+        "calculated_length": 438.65,
+        "volume": 1512.91,
+        "difficulty": 17.55,
+        "effort": 26549.08,
+        "time_seconds": 1474.95,
+        "bugs_delivered": 0.504
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 38.66
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/AlertView/AlertBody.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 41,
+        "N2_total_operands": 37,
+        "vocabulary": 40,
+        "length": 78,
+        "calculated_length": 182.11,
+        "volume": 415.11,
+        "difficulty": 5.37,
+        "effort": 2229.54,
+        "time_seconds": 123.86,
+        "bugs_delivered": 0.138
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.56
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configure",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/AlertView/AlertBtn.swift": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 58,
+        "N2_total_operands": 51,
+        "vocabulary": 42,
+        "length": 109,
+        "calculated_length": 193.22,
+        "volume": 587.76,
+        "difficulty": 7.97,
+        "effort": 4683.73,
+        "time_seconds": 260.21,
+        "bugs_delivered": 0.196
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 47.72
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configure",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/AlertView/AlertContainer.swift": {
+      "halstead": {
+        "loc": 23,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 29,
+        "N2_total_operands": 28,
+        "vocabulary": 32,
+        "length": 57,
+        "calculated_length": 132.57,
+        "volume": 285.0,
+        "difficulty": 5.48,
+        "effort": 1561.3,
+        "time_seconds": 86.74,
+        "bugs_delivered": 0.095
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 52.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/AlertView/AlertController.swift": {
+      "halstead": {
+        "loc": 78,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 77,
+        "N1_total_operators": 206,
+        "N2_total_operands": 225,
+        "vocabulary": 91,
+        "length": 431,
+        "calculated_length": 535.85,
+        "volume": 2804.86,
+        "difficulty": 20.45,
+        "effort": 57372.13,
+        "time_seconds": 3187.34,
+        "bugs_delivered": 0.935
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.375,
+        "maintainability_index": 33.64
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureContainerVi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureTitleLabel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureActionButto",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureMessageLabe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/AlertView/AlertTitle.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 43,
+        "N2_total_operands": 42,
+        "vocabulary": 41,
+        "length": 85,
+        "calculated_length": 190.47,
+        "volume": 455.39,
+        "difficulty": 5.09,
+        "effort": 2318.36,
+        "time_seconds": 128.8,
+        "bugs_delivered": 0.152
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.28
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureTitleLabel",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/Button/EButton.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 64,
+        "N2_total_operands": 56,
+        "vocabulary": 41,
+        "length": 120,
+        "calculated_length": 186.8,
+        "volume": 642.91,
+        "difficulty": 9.03,
+        "effort": 5806.9,
+        "time_seconds": 322.61,
+        "bugs_delivered": 0.214
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 46.83
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configbtn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/Button/GradientButton.swift": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 53,
+        "N2_total_operands": 57,
+        "vocabulary": 43,
+        "length": 110,
+        "calculated_length": 199.68,
+        "volume": 596.89,
+        "difficulty": 8.64,
+        "effort": 5154.95,
+        "time_seconds": 286.39,
+        "bugs_delivered": 0.199
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.34
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/Cell/OnboardingCell.swift": {
+      "halstead": {
+        "loc": 63,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 66,
+        "N1_total_operators": 173,
+        "N2_total_operands": 182,
+        "vocabulary": 80,
+        "length": 355,
+        "calculated_length": 452.23,
+        "volume": 2244.28,
+        "difficulty": 19.3,
+        "effort": 43321.49,
+        "time_seconds": 2406.75,
+        "bugs_delivered": 0.748
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.61
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "display",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.5
+      }
+    },
+    "Expense Tracker/Custom Views/Cell/TransectionTableViewCell.swift": {
+      "halstead": {
+        "loc": 100,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 148,
+        "N1_total_operators": 350,
+        "N2_total_operands": 400,
+        "vocabulary": 166,
+        "length": 750,
+        "calculated_length": 1142.06,
+        "volume": 5531.28,
+        "difficulty": 24.32,
+        "effort": 134544.64,
+        "time_seconds": 7474.7,
+        "bugs_delivered": 1.844
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 12,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 28.82
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "display",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "makeFormattedBalance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.83
+      }
+    },
+    "Expense Tracker/Custom Views/Custom TableView/CustomTableView.swift": {
+      "halstead": {
+        "loc": 29,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 45,
+        "N2_total_operands": 49,
+        "vocabulary": 40,
+        "length": 94,
+        "calculated_length": 182.11,
+        "volume": 500.26,
+        "difficulty": 7.11,
+        "effort": 3558.31,
+        "time_seconds": 197.68,
+        "bugs_delivered": 0.167
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 48.66
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTable",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/ColorUtils.swift": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 108,
+        "N2_total_operands": 130,
+        "vocabulary": 46,
+        "length": 238,
+        "calculated_length": 214.57,
+        "volume": 1314.61,
+        "difficulty": 25.61,
+        "effort": 33661.93,
+        "time_seconds": 1870.11,
+        "bugs_delivered": 0.438
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 46.76
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "addColor",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "multiplyColor",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "+",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "*",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/CustomPageController.swift": {
+      "halstead": {
+        "loc": 73,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 159,
+        "N2_total_operands": 144,
+        "vocabulary": 83,
+        "length": 303,
+        "calculated_length": 459.88,
+        "volume": 1931.64,
+        "difficulty": 25.97,
+        "effort": 50159.23,
+        "time_seconds": 2786.62,
+        "bugs_delivered": 0.644
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7,
+        "maintainability_index": 34.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "numberOfPages.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfPages.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setPageOffset",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setPage",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "intrinsicContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "draw",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "startDisplayLink",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displayLinkDidFire",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "stopDisplayLink",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.17,
+        "avg_cognitive": 0.17
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/DotDrawer.swift": {
+      "halstead": {
+        "loc": 80,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 53,
+        "N1_total_operators": 209,
+        "N2_total_operands": 244,
+        "vocabulary": 74,
+        "length": 453,
+        "calculated_length": 395.82,
+        "volume": 2812.88,
+        "difficulty": 48.34,
+        "effort": 135973.67,
+        "time_seconds": 7554.09,
+        "bugs_delivered": 0.938
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 24,
+        "observable_state_vars": 0,
+        "state_updates": 9
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1724,
+        "maintainability_index": 33.39
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "draw",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "drawIndicators",
+            "cyclomatic": 4,
+            "cognitive": 7
+          },
+          {
+            "function": "drawCurrentItem",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 2.67
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/DrawerProtocol.swift": {
+      "halstead": {
+        "loc": 106,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 68,
+        "N1_total_operators": 270,
+        "N2_total_operands": 285,
+        "vocabulary": 88,
+        "length": 555,
+        "calculated_length": 500.39,
+        "volume": 3584.98,
+        "difficulty": 41.91,
+        "effort": 150253.03,
+        "time_seconds": 8347.39,
+        "bugs_delivered": 1.195
+      },
+      "state_metrics": {
+        "mutable_vars": 14,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6087,
+        "maintainability_index": 30.12
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getScaleFactor",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getCenteredXPosition",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getCenteredYPosition",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "drawItem",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/InfiniteDrawer.swift": {
+      "halstead": {
+        "loc": 79,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 394,
+        "N2_total_operands": 391,
+        "vocabulary": 76,
+        "length": 785,
+        "calculated_length": 408.87,
+        "volume": 4904.62,
+        "difficulty": 79.65,
+        "effort": 390644.15,
+        "time_seconds": 21702.45,
+        "bugs_delivered": 1.635
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 30,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1176,
+        "maintainability_index": 31.42
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "draw",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "drawIndicators",
+            "cyclomatic": 9,
+            "cognitive": 12
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 6.0
+      }
+    },
+    "Expense Tracker/Custom Views/CustomPageController/InfiniteScrollingDrawer.swift": {
+      "halstead": {
+        "loc": 84,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 426,
+        "N2_total_operands": 432,
+        "vocabulary": 81,
+        "length": 858,
+        "calculated_length": 443.8,
+        "volume": 5439.59,
+        "difficulty": 85.66,
+        "effort": 465929.13,
+        "time_seconds": 25884.95,
+        "bugs_delivered": 1.813
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 30,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1176,
+        "maintainability_index": 30.52
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "draw",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "drawIndicators",
+            "cyclomatic": 9,
+            "cognitive": 12
+          }
+        ],
+        "avg_cyclomatic": 5.0,
+        "avg_cognitive": 6.0
+      }
+    },
+    "Expense Tracker/Custom Views/ImageView/AvatarImageView.swift": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 49,
+        "N2_total_operands": 56,
+        "vocabulary": 49,
+        "length": 105,
+        "calculated_length": 239.35,
+        "volume": 589.54,
+        "difficulty": 7.18,
+        "effort": 4232.63,
+        "time_seconds": 235.15,
+        "bugs_delivered": 0.197
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.8
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "downloadImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/Label/CustomLabel.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 84,
+        "N2_total_operands": 88,
+        "vocabulary": 48,
+        "length": 172,
+        "calculated_length": 234.66,
+        "volume": 960.61,
+        "difficulty": 10.15,
+        "effort": 9753.92,
+        "time_seconds": 541.88,
+        "bugs_delivered": 0.32
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 43.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configlbl",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/SwiftUI CharView/CharView.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 6,
+        "N1_total_operators": 7,
+        "N2_total_operands": 8,
+        "vocabulary": 11,
+        "length": 15,
+        "calculated_length": 27.12,
+        "volume": 51.89,
+        "difficulty": 3.33,
+        "effort": 172.97,
+        "time_seconds": 9.61,
+        "bugs_delivered": 0.017
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 60.47
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/TabBar Controller/TabBarVC.swift": {
+      "halstead": {
+        "loc": 74,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 100,
+        "N1_total_operators": 160,
+        "N2_total_operands": 166,
+        "vocabulary": 119,
+        "length": 326,
+        "calculated_length": 745.1,
+        "volume": 2247.71,
+        "difficulty": 15.77,
+        "effort": 35446.4,
+        "time_seconds": 1969.24,
+        "bugs_delivered": 0.749
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.125,
+        "maintainability_index": 34.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "authenticateUser",
+            "cyclomatic": 4,
+            "cognitive": 8
+          },
+          {
+            "function": "configureTabBar",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configHomeVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addExpensesVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "transectionVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.43,
+        "avg_cognitive": 1.14
+      }
+    },
+    "Expense Tracker/Custom Views/TextField/CustomTextFields.swift": {
+      "halstead": {
+        "loc": 61,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 120,
+        "N2_total_operands": 118,
+        "vocabulary": 55,
+        "length": 238,
+        "calculated_length": 285.07,
+        "volume": 1375.96,
+        "difficulty": 10.04,
+        "effort": 13818.19,
+        "time_seconds": 767.68,
+        "bugs_delivered": 0.459
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 38.0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configpass",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/TextField/ForgetPasswordTextFeild.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 38,
+        "N1_total_operators": 43,
+        "N2_total_operands": 43,
+        "vocabulary": 47,
+        "length": 86,
+        "calculated_length": 227.95,
+        "volume": 477.69,
+        "difficulty": 5.09,
+        "effort": 2432.47,
+        "time_seconds": 135.14,
+        "bugs_delivered": 0.159
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 48.0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/TextField/PasswordTextField.swift": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 43,
+        "N2_total_operands": 45,
+        "vocabulary": 48,
+        "length": 88,
+        "calculated_length": 236.88,
+        "volume": 491.48,
+        "difficulty": 4.5,
+        "effort": 2211.65,
+        "time_seconds": 122.87,
+        "bugs_delivered": 0.164
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 47.07
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configpass",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/TextField/UsernameTextField.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 42,
+        "N2_total_operands": 43,
+        "vocabulary": 47,
+        "length": 85,
+        "calculated_length": 230.13,
+        "volume": 472.14,
+        "difficulty": 4.41,
+        "effort": 2082.26,
+        "time_seconds": 115.68,
+        "bugs_delivered": 0.157
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 48.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/UIView/CardView.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 47,
+        "N1_total_operators": 69,
+        "N2_total_operands": 77,
+        "vocabulary": 57,
+        "length": 146,
+        "calculated_length": 294.28,
+        "volume": 851.6,
+        "difficulty": 8.19,
+        "effort": 6975.89,
+        "time_seconds": 387.55,
+        "bugs_delivered": 0.284
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configCardView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/UIView/CustomView.swift": {
+      "halstead": {
+        "loc": 26,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 35,
+        "N2_total_operands": 35,
+        "vocabulary": 37,
+        "length": 70,
+        "calculated_length": 163.14,
+        "volume": 364.66,
+        "difficulty": 5.62,
+        "effort": 2051.22,
+        "time_seconds": 113.96,
+        "bugs_delivered": 0.122
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 50.79
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "config",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/UIView/ProfileHeaderView.swift": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 66,
+        "N1_total_operators": 134,
+        "N2_total_operands": 150,
+        "vocabulary": 78,
+        "length": 284,
+        "calculated_length": 441.95,
+        "volume": 1785.05,
+        "difficulty": 13.64,
+        "effort": 24341.65,
+        "time_seconds": 1352.31,
+        "bugs_delivered": 0.595
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 37.33
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "intrinsicContentSize",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "commonInit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/View Controllers/AllTransactions.swift": {
+      "halstead": {
+        "loc": 52,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 84,
+        "N1_total_operators": 131,
+        "N2_total_operands": 152,
+        "vocabulary": 100,
+        "length": 283,
+        "calculated_length": 600.95,
+        "volume": 1880.21,
+        "difficulty": 14.48,
+        "effort": 27218.3,
+        "time_seconds": 1512.13,
+        "bugs_delivered": 0.627
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 38.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Custom Views/View Controllers/DataLoading.swift": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 46,
+        "N1_total_operators": 96,
+        "N2_total_operands": 108,
+        "vocabulary": 56,
+        "length": 204,
+        "calculated_length": 287.3,
+        "volume": 1184.7,
+        "difficulty": 11.74,
+        "effort": 13907.35,
+        "time_seconds": 772.63,
+        "bugs_delivered": 0.395
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 41.01
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "showLoadingView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissLoadingView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "Expense Tracker/Custom Views/View Controllers/HeaderVC.swift": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 118,
+        "N2_total_operands": 136,
+        "vocabulary": 64,
+        "length": 254,
+        "calculated_length": 343.98,
+        "volume": 1524.0,
+        "difficulty": 12.59,
+        "effort": 19191.11,
+        "time_seconds": 1066.17,
+        "bugs_delivered": 0.508
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 41.77
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Extentions/Color+Ext.swift": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 105,
+        "N2_total_operands": 94,
+        "vocabulary": 50,
+        "length": 199,
+        "calculated_length": 238.13,
+        "volume": 1123.13,
+        "difficulty": 20.14,
+        "effort": 22622.99,
+        "time_seconds": 1256.83,
+        "bugs_delivered": 0.374
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 8
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8571,
+        "maintainability_index": 45.11
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 3,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "Expense Tracker/Extentions/UITableView+Ext.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 12,
+        "N1_total_operators": 13,
+        "N2_total_operands": 12,
+        "vocabulary": 18,
+        "length": 25,
+        "calculated_length": 58.53,
+        "volume": 104.25,
+        "difficulty": 3.0,
+        "effort": 312.74,
+        "time_seconds": 17.37,
+        "bugs_delivered": 0.035
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 59.95
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "reloadDataOnMainThre",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeExcessCells",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Extentions/UITextFeild+Ext.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 68,
+        "N2_total_operands": 78,
+        "vocabulary": 44,
+        "length": 146,
+        "calculated_length": 204.52,
+        "volume": 797.08,
+        "difficulty": 13.0,
+        "effort": 10362.0,
+        "time_seconds": 575.67,
+        "bugs_delivered": 0.266
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.75
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "addLine",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "Expense Tracker/Extentions/UIView+Ext.swift": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 38,
+        "N2_total_operands": 46,
+        "vocabulary": 31,
+        "length": 84,
+        "calculated_length": 126.64,
+        "volume": 416.15,
+        "difficulty": 9.41,
+        "effort": 3915.62,
+        "time_seconds": 217.53,
+        "bugs_delivered": 0.139
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 49.76
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "pinToEdges",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addSubViews",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "addArrangedSubviews",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "Expense Tracker/Extentions/UIViewController+Ext.swift": {
+      "halstead": {
+        "loc": 125,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 79,
+        "N1_total_operators": 393,
+        "N2_total_operands": 285,
+        "vocabulary": 99,
+        "length": 678,
+        "calculated_length": 584.44,
+        "volume": 4494.7,
+        "difficulty": 36.08,
+        "effort": 162150.71,
+        "time_seconds": 9008.37,
+        "bugs_delivered": 1.498
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 22.9
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "presentAlertOnMainTh",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "Validate",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "Validate",
+            "cyclomatic": 10,
+            "cognitive": 5
+          },
+          {
+            "function": "Validate",
+            "cyclomatic": 9,
+            "cognitive": 5
+          },
+          {
+            "function": "Validate",
+            "cyclomatic": 15,
+            "cognitive": 9
+          },
+          {
+            "function": "presentDefaultError",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissVC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissKeyboard",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 5.38,
+        "avg_cognitive": 2.75
+      }
+    },
+    "Expense Tracker/Models/OnBoardingModel.swift": {
+      "halstead": {
+        "loc": 20,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 48,
+        "N2_total_operands": 42,
+        "vocabulary": 29,
+        "length": 90,
+        "calculated_length": 114.97,
+        "volume": 437.22,
+        "difficulty": 9.45,
+        "effort": 4131.71,
+        "time_seconds": 229.54,
+        "bugs_delivered": 0.146
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "Expense Tracker/Models/User.swift": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 25,
+        "N1_total_operators": 47,
+        "N2_total_operands": 50,
+        "vocabulary": 31,
+        "length": 97,
+        "calculated_length": 131.61,
+        "volume": 480.56,
+        "difficulty": 6.0,
+        "effort": 2883.34,
+        "time_seconds": 160.19,
+        "bugs_delivered": 0.16
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 14,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "Expense Tracker/Network Manager/AuthManager.swift": {
+      "halstead": {
+        "loc": 74,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 70,
+        "N1_total_operators": 197,
+        "N2_total_operands": 185,
+        "vocabulary": 96,
+        "length": 382,
+        "calculated_length": 551.26,
+        "volume": 2515.46,
+        "difficulty": 34.36,
+        "effort": 86423.87,
+        "time_seconds": 4801.33,
+        "bugs_delivered": 0.838
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 33.4
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isSingedIn",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "accessToken",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "withValidate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "login",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "login",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "catchToken",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "SingOut",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.88,
+        "avg_cognitive": 0.88
+      }
+    },
+    "Expense Tracker/Network Manager/NetworkManager.swift": {
+      "halstead": {
+        "loc": 127,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 116,
+        "N1_total_operators": 470,
+        "N2_total_operands": 452,
+        "vocabulary": 147,
+        "length": 922,
+        "calculated_length": 949.11,
+        "volume": 6638.1,
+        "difficulty": 60.4,
+        "effort": 400918.22,
+        "time_seconds": 22273.23,
+        "bugs_delivered": 2.213
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1875,
+        "maintainability_index": 23.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isURL_broken",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getDashboardData",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "getTransaction",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "getUserIncome",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "getUserExpense",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "makeTransaction",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "createRequest",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "createRequest",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "Signup",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "downloadImage",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 2.91,
+        "avg_cognitive": 1.82
+      }
+    },
+    "Expense Tracker/Resources/AppDelegate.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 30,
+        "N2_total_operands": 39,
+        "vocabulary": 37,
+        "length": 69,
+        "calculated_length": 160.27,
+        "volume": 359.45,
+        "difficulty": 8.25,
+        "effort": 2965.48,
+        "time_seconds": 164.75,
+        "bugs_delivered": 0.12
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 50.13
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Resources/SceneDelegate.swift": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 64,
+        "N2_total_operands": 67,
+        "vocabulary": 50,
+        "length": 131,
+        "calculated_length": 238.13,
+        "volume": 739.35,
+        "difficulty": 14.36,
+        "effort": 10614.88,
+        "time_seconds": 589.72,
+        "bugs_delivered": 0.246
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 40.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "scene",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "sceneDidDisconnect",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneDidBecomeActive",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneWillResignActiv",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneWillEnterForegr",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sceneDidEnterBackgro",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.83
+      }
+    },
+    "Expense Tracker/Utilits/AppError.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 28,
+        "N2_total_operands": 29,
+        "vocabulary": 33,
+        "length": 57,
+        "calculated_length": 148.88,
+        "volume": 287.53,
+        "difficulty": 2.0,
+        "effort": 575.06,
+        "time_seconds": 31.95,
+        "bugs_delivered": 0.096
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      }
+    },
+    "Expense Tracker/Utilits/BalanceFormater.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 5,
+        "N1_total_operators": 5,
+        "N2_total_operands": 5,
+        "vocabulary": 10,
+        "length": 10,
+        "calculated_length": 23.22,
+        "volume": 33.22,
+        "difficulty": 2.5,
+        "effort": 83.05,
+        "time_seconds": 4.61,
+        "bugs_delivered": 0.011
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      }
+    },
+    "Expense Tracker/Utilits/Constants.swift": {
+      "halstead": {
+        "loc": 70,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 84,
+        "N1_total_operators": 181,
+        "N2_total_operands": 178,
+        "vocabulary": 100,
+        "length": 359,
+        "calculated_length": 600.95,
+        "volume": 2385.14,
+        "difficulty": 16.95,
+        "effort": 40433.88,
+        "time_seconds": 2246.33,
+        "bugs_delivered": 0.795
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 35,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 35.56
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "hasOnboarded.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hasOnboarded.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isiPhoneXAspectRatio",
+            "cyclomatic": 2,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.0
+      }
+    },
+    "Expense Tracker/Utilits/DatePicker.swift": {
+      "halstead": {
+        "loc": 147,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 107,
+        "N1_total_operators": 369,
+        "N2_total_operands": 370,
+        "vocabulary": 137,
+        "length": 739,
+        "calculated_length": 868.54,
+        "volume": 5245.45,
+        "difficulty": 51.87,
+        "effort": 272076.86,
+        "time_seconds": 15115.38,
+        "bugs_delivered": 1.748
+      },
+      "state_metrics": {
+        "mutable_vars": 13,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 20
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4194,
+        "maintainability_index": 23.72
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "inputView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setup",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "numberOfComponents",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "pickerView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getDays",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getTimes",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setDays",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setTimes",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getDayString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getTimeString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buildTimeRangeString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buildTimeRangeString",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.57,
+        "avg_cognitive": 0.5
+      }
+    }
+  }
+}

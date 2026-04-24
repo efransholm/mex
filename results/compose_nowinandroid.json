@@ -1,0 +1,2295 @@
+{
+  "project": "nowinandroid",
+  "framework": "compose",
+  "language": "kotlin",
+  "sonar_project_key": "thesis-compose-nowinandroid",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/Android/nowinandroid",
+  "ui_files_filter": [
+    "app-nia-catalog/build.gradle.kts",
+    "app-nia-catalog/src/main/kotlin/com/google/samples/apps/niacatalog/NiaCatalogActivity.kt",
+    "app-nia-catalog/src/main/kotlin/com/google/samples/apps/niacatalog/ui/Catalog.kt",
+    "app/build.gradle.kts",
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/MainActivity.kt",
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/navigation/TopLevelNavItem.kt",
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt",
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaAppState.kt",
+    "core/analytics/build.gradle.kts",
+    "core/analytics/src/main/kotlin/com/google/samples/apps/nowinandroid/core/analytics/UiHelpers.kt",
+    "core/database/src/main/kotlin/com/google/samples/apps/nowinandroid/core/database/DatabaseMigrations.kt",
+    "core/designsystem/build.gradle.kts",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Background.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Button.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Chip.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/DynamicAsyncImage.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/IconButton.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/LoadingWheel.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Navigation.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Tabs.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Tag.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/ViewToggle.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/AppScrollbars.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/LazyScrollbarUtilities.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/Scrollbar.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/ScrollbarExt.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/ThumbExt.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/icon/NiaIcons.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Background.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Color.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Gradient.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Theme.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Tint.kt",
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Type.kt",
+    "core/navigation/build.gradle.kts",
+    "core/navigation/src/main/kotlin/com/google/samples/apps/nowinandroid/core/navigation/NavigationState.kt",
+    "core/notifications/build.gradle.kts",
+    "core/ui/build.gradle.kts",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/AnalyticsExtensions.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/DevicePreviews.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/FollowableTopicPreviewParameterProvider.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/InterestsItem.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/JankStatsExtensions.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/LocalTimeZone.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsFeed.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsResourceCard.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsResourceCardList.kt",
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/UserNewsResourcePreviewParameterProvider.kt",
+    "feature/bookmarks/impl/build.gradle.kts",
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/BookmarksScreen.kt",
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/BookmarksViewModel.kt",
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/navigation/BookmarksEntryProvider.kt",
+    "feature/foryou/impl/build.gradle.kts",
+    "feature/foryou/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/foryou/impl/ForYouScreen.kt",
+    "feature/interests/impl/build.gradle.kts",
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/InterestsDetailPlaceholder.kt",
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/InterestsScreen.kt",
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/TabContent.kt",
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/navigation/InterestsEntryProvider.kt",
+    "feature/search/impl/build.gradle.kts",
+    "feature/search/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/search/impl/SearchScreen.kt",
+    "feature/search/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/search/impl/SearchUiStatePreviewParameterProvider.kt",
+    "feature/settings/impl/build.gradle.kts",
+    "feature/settings/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/settings/impl/SettingsDialog.kt",
+    "feature/topic/impl/build.gradle.kts",
+    "feature/topic/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/topic/impl/TopicScreen.kt",
+    "feature/topic/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/topic/impl/navigation/TopicEntryProvider.kt",
+    "lint/src/main/kotlin/com/google/samples/apps/nowinandroid/lint/designsystem/DesignSystemDetector.kt"
+  ],
+  "sonarqube_project": {
+    "complexity": 1231,
+    "code_smells": 265,
+    "duplicated_lines_density": 2.6,
+    "functions": 853,
+    "classes": 308,
+    "sqale_debt_ratio": 0.2,
+    "statements": 4491,
+    "comment_lines_density": 12.1,
+    "bugs": 0,
+    "comment_lines": 2881,
+    "cognitive_complexity": 592,
+    "ncloc": 20890,
+    "files": 413,
+    "lines": 33389
+  },
+  "files": {
+    "app-nia-catalog/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 77
+      }
+    },
+    "app-nia-catalog/src/main/kotlin/com/google/samples/apps/niacatalog/NiaCatalogActivity.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 12,
+        "N1_total_operators": 13,
+        "N2_total_operands": 14,
+        "vocabulary": 19,
+        "length": 27,
+        "calculated_length": 62.67,
+        "volume": 114.69,
+        "difficulty": 4.08,
+        "effort": 468.33,
+        "time_seconds": 26.02,
+        "bugs_delivered": 0.038
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 53.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 34,
+        "ncloc": 13,
+        "statements": 4
+      }
+    },
+    "app-nia-catalog/src/main/kotlin/com/google/samples/apps/niacatalog/ui/Catalog.kt": {
+      "halstead": {
+        "loc": 370,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 118,
+        "N1_total_operators": 436,
+        "N2_total_operands": 610,
+        "vocabulary": 129,
+        "length": 1046,
+        "calculated_length": 850.21,
+        "volume": 7333.74,
+        "difficulty": 28.43,
+        "effort": 208514.49,
+        "time_seconds": 11584.14,
+        "bugs_delivered": 2.445
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 5,
+        "observable_state_vars": 6,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6154,
+        "maintainability_index": 16.78
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 0.8,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 374,
+        "ncloc": 352,
+        "statements": 141
+      }
+    },
+    "app/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 153
+      }
+    },
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/MainActivity.kt": {
+      "halstead": {
+        "loc": 169,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 86,
+        "N1_total_operators": 154,
+        "N2_total_operands": 168,
+        "vocabulary": 101,
+        "length": 322,
+        "calculated_length": 611.26,
+        "volume": 2143.94,
+        "difficulty": 14.65,
+        "effort": 31411.27,
+        "time_seconds": 1745.07,
+        "bugs_delivered": 0.715
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 6,
+        "observable_state_vars": 1,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 27.67
+      },
+      "sonarqube": {
+        "classes": 2,
+        "comment_lines": 26,
+        "comment_lines_density": 16.9,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 191,
+        "ncloc": 128,
+        "statements": 27
+      }
+    },
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/navigation/TopLevelNavItem.kt": {
+      "halstead": {
+        "loc": 66,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 54,
+        "N2_total_operands": 71,
+        "vocabulary": 40,
+        "length": 125,
+        "calculated_length": 186.12,
+        "volume": 665.24,
+        "difficulty": 7.53,
+        "effort": 5009.47,
+        "time_seconds": 278.3,
+        "bugs_delivered": 0.222
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 21.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 74,
+        "ncloc": 40,
+        "statements": 4
+      }
+    },
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt": {
+      "halstead": {
+        "loc": 278,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 166,
+        "N1_total_operators": 276,
+        "N2_total_operands": 322,
+        "vocabulary": 187,
+        "length": 598,
+        "calculated_length": 1316.5,
+        "volume": 4513.04,
+        "difficulty": 20.37,
+        "effort": 91919.27,
+        "time_seconds": 5106.63,
+        "bugs_delivered": 1.504
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 13,
+        "observable_state_vars": 1,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1333,
+        "maintainability_index": 19.89
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "cognitive_complexity": 20,
+        "comment_lines": 9,
+        "comment_lines_density": 3.4,
+        "complexity": 9,
+        "functions": 3,
+        "lines": 299,
+        "ncloc": 254,
+        "statements": 54
+      }
+    },
+    "app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaAppState.kt": {
+      "halstead": {
+        "loc": 110,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 58,
+        "N1_total_operators": 90,
+        "N2_total_operands": 115,
+        "vocabulary": 71,
+        "length": 205,
+        "calculated_length": 387.87,
+        "volume": 1260.7,
+        "difficulty": 12.89,
+        "effort": 16247.79,
+        "time_seconds": 902.66,
+        "bugs_delivered": 0.42
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 33.49
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 6.3,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 120,
+        "ncloc": 89,
+        "statements": 15
+      }
+    },
+    "core/analytics/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 32
+      }
+    },
+    "core/analytics/src/main/kotlin/com/google/samples/apps/nowinandroid/core/analytics/UiHelpers.kt": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 3,
+        "N1_total_operators": 3,
+        "N2_total_operands": 3,
+        "vocabulary": 6,
+        "length": 6,
+        "calculated_length": 9.51,
+        "volume": 15.51,
+        "difficulty": 1.5,
+        "effort": 23.26,
+        "time_seconds": 1.29,
+        "bugs_delivered": 0.005
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 5,
+        "comment_lines_density": 50.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 5,
+        "statements": 2
+      }
+    },
+    "core/database/src/main/kotlin/com/google/samples/apps/nowinandroid/core/database/DatabaseMigrations.kt": {
+      "halstead": {
+        "loc": 57,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 27,
+        "N2_total_operands": 35,
+        "vocabulary": 29,
+        "length": 62,
+        "calculated_length": 117.76,
+        "volume": 301.19,
+        "difficulty": 5.57,
+        "effort": 1677.11,
+        "time_seconds": 93.17,
+        "bugs_delivered": 0.1
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 16.7,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 64,
+        "ncloc": 35,
+        "statements": 0
+      }
+    },
+    "core/designsystem/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 49
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Background.kt": {
+      "halstead": {
+        "loc": 182,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 79,
+        "N1_total_operators": 185,
+        "N2_total_operands": 234,
+        "vocabulary": 95,
+        "length": 419,
+        "calculated_length": 562.0,
+        "volume": 2752.77,
+        "difficulty": 23.7,
+        "effort": 65230.18,
+        "time_seconds": 3623.9,
+        "bugs_delivered": 0.918
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 24.87
+      },
+      "sonarqube": {
+        "classes": 1,
+        "cognitive_complexity": 12,
+        "comment_lines": 24,
+        "comment_lines_density": 14.4,
+        "complexity": 13,
+        "functions": 8,
+        "lines": 197,
+        "ncloc": 143,
+        "statements": 32
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Button.kt": {
+      "halstead": {
+        "loc": 299,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 72,
+        "N1_total_operators": 261,
+        "N2_total_operands": 314,
+        "vocabulary": 86,
+        "length": 575,
+        "calculated_length": 497.54,
+        "volume": 3695.1,
+        "difficulty": 30.53,
+        "effort": 112803.26,
+        "time_seconds": 6266.85,
+        "bugs_delivered": 1.232
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 19.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "cognitive_complexity": 9,
+        "comment_lines": 74,
+        "comment_lines_density": 26.1,
+        "complexity": 15,
+        "functions": 10,
+        "lines": 314,
+        "ncloc": 210,
+        "sqale_debt_ratio": 0.1,
+        "statements": 37
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Chip.kt": {
+      "halstead": {
+        "loc": 125,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 70,
+        "N1_total_operators": 127,
+        "N2_total_operands": 156,
+        "vocabulary": 82,
+        "length": 283,
+        "calculated_length": 472.07,
+        "volume": 1799.19,
+        "difficulty": 13.37,
+        "effort": 24057.7,
+        "time_seconds": 1336.54,
+        "bugs_delivered": 0.6
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 30.93
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 15,
+        "comment_lines_density": 13.6,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 131,
+        "ncloc": 95,
+        "statements": 16
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/DynamicAsyncImage.kt": {
+      "halstead": {
+        "loc": 83,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 70,
+        "N2_total_operands": 82,
+        "vocabulary": 71,
+        "length": 152,
+        "calculated_length": 381.97,
+        "volume": 934.76,
+        "difficulty": 11.93,
+        "effort": 11149.16,
+        "time_seconds": 619.4,
+        "bugs_delivered": 0.312
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 3,
+        "observable_state_vars": 2,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4,
+        "maintainability_index": 36.53
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 8,
+        "comment_lines": 4,
+        "comment_lines_density": 5.9,
+        "complexity": 6,
+        "functions": 1,
+        "lines": 87,
+        "ncloc": 64,
+        "statements": 9
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/IconButton.kt": {
+      "halstead": {
+        "loc": 121,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 44,
+        "N1_total_operators": 80,
+        "N2_total_operands": 102,
+        "vocabulary": 55,
+        "length": 182,
+        "calculated_length": 278.27,
+        "volume": 1052.21,
+        "difficulty": 12.75,
+        "effort": 13415.65,
+        "time_seconds": 745.31,
+        "bugs_delivered": 0.351
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.73
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "cognitive_complexity": 4,
+        "comment_lines": 19,
+        "comment_lines_density": 17.9,
+        "complexity": 5,
+        "functions": 3,
+        "lines": 128,
+        "ncloc": 87,
+        "statements": 15
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/LoadingWheel.kt": {
+      "halstead": {
+        "loc": 161,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 111,
+        "N1_total_operators": 162,
+        "N2_total_operands": 225,
+        "vocabulary": 126,
+        "length": 387,
+        "calculated_length": 812.78,
+        "volume": 2700.21,
+        "difficulty": 15.2,
+        "effort": 41050.45,
+        "time_seconds": 2280.58,
+        "bugs_delivered": 0.9
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 9,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 27.03
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 5,
+        "comment_lines": 5,
+        "comment_lines_density": 3.4,
+        "complexity": 6,
+        "functions": 4,
+        "lines": 174,
+        "ncloc": 141,
+        "statements": 27
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Navigation.kt": {
+      "halstead": {
+        "loc": 342,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 98,
+        "N1_total_operators": 364,
+        "N2_total_operands": 427,
+        "vocabulary": 113,
+        "length": 791,
+        "calculated_length": 706.84,
+        "volume": 5394.76,
+        "difficulty": 32.68,
+        "effort": 176293.1,
+        "time_seconds": 9794.06,
+        "bugs_delivered": 1.798
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 16.71
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "cognitive_complexity": 5,
+        "comment_lines": 60,
+        "comment_lines_density": 18.3,
+        "complexity": 14,
+        "functions": 11,
+        "lines": 359,
+        "ncloc": 267,
+        "sqale_debt_ratio": 0.5,
+        "statements": 36
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Tabs.kt": {
+      "halstead": {
+        "loc": 117,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 86,
+        "N2_total_operands": 113,
+        "vocabulary": 70,
+        "length": 199,
+        "calculated_length": 390.3,
+        "volume": 1219.73,
+        "difficulty": 8.34,
+        "effort": 10167.73,
+        "time_seconds": 564.87,
+        "bugs_delivered": 0.407
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.87
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 18,
+        "comment_lines_density": 17.6,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 124,
+        "ncloc": 84,
+        "statements": 14
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/Tag.kt": {
+      "halstead": {
+        "loc": 77,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 44,
+        "N1_total_operators": 66,
+        "N2_total_operands": 76,
+        "vocabulary": 55,
+        "length": 142,
+        "calculated_length": 278.27,
+        "volume": 820.95,
+        "difficulty": 9.5,
+        "effort": 7799.05,
+        "time_seconds": 433.28,
+        "bugs_delivered": 0.274
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.04
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 3,
+        "comment_lines": 5,
+        "comment_lines_density": 8.1,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 84,
+        "ncloc": 57,
+        "statements": 10
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt": {
+      "halstead": {
+        "loc": 85,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 53,
+        "N1_total_operators": 74,
+        "N2_total_operands": 90,
+        "vocabulary": 62,
+        "length": 164,
+        "calculated_length": 332.11,
+        "volume": 976.49,
+        "difficulty": 7.64,
+        "effort": 7461.84,
+        "time_seconds": 414.55,
+        "bugs_delivered": 0.325
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 36.71
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 91,
+        "ncloc": 70,
+        "sqale_debt_ratio": 1.0,
+        "statements": 8
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/ViewToggle.kt": {
+      "halstead": {
+        "loc": 148,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 64,
+        "N1_total_operators": 110,
+        "N2_total_operands": 135,
+        "vocabulary": 78,
+        "length": 245,
+        "calculated_length": 437.3,
+        "volume": 1539.92,
+        "difficulty": 14.77,
+        "effort": 22737.93,
+        "time_seconds": 1263.22,
+        "bugs_delivered": 0.513
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 29.26
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 8,
+        "comment_lines": 24,
+        "comment_lines_density": 18.0,
+        "complexity": 8,
+        "functions": 4,
+        "lines": 156,
+        "ncloc": 109,
+        "statements": 23
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/AppScrollbars.kt": {
+      "halstead": {
+        "loc": 240,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 111,
+        "N1_total_operators": 250,
+        "N2_total_operands": 273,
+        "vocabulary": 136,
+        "length": 523,
+        "calculated_length": 870.28,
+        "volume": 3706.74,
+        "difficulty": 30.74,
+        "effort": 113957.3,
+        "time_seconds": 6330.96,
+        "bugs_delivered": 1.236
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 12,
+        "observable_state_vars": 1,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 19.46
+      },
+      "sonarqube": {
+        "classes": 6,
+        "code_smells": 2,
+        "cognitive_complexity": 17,
+        "comment_lines": 31,
+        "comment_lines_density": 13.8,
+        "complexity": 27,
+        "functions": 9,
+        "lines": 258,
+        "ncloc": 194,
+        "sqale_debt_ratio": 0.1,
+        "statements": 46
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/LazyScrollbarUtilities.kt": {
+      "halstead": {
+        "loc": 77,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 26,
+        "N1_total_operators": 59,
+        "N2_total_operands": 52,
+        "vocabulary": 41,
+        "length": 111,
+        "calculated_length": 180.81,
+        "volume": 594.69,
+        "difficulty": 15.0,
+        "effort": 8920.32,
+        "time_seconds": 495.57,
+        "bugs_delivered": 0.198
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.08
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 6,
+        "comment_lines": 21,
+        "comment_lines_density": 33.9,
+        "complexity": 10,
+        "functions": 2,
+        "lines": 89,
+        "ncloc": 41,
+        "statements": 21
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/Scrollbar.kt": {
+      "halstead": {
+        "loc": 380,
+        "n1_unique_operators": 28,
+        "n2_unique_operands": 152,
+        "N1_total_operators": 459,
+        "N2_total_operands": 487,
+        "vocabulary": 180,
+        "length": 946,
+        "calculated_length": 1236.29,
+        "volume": 7087.29,
+        "difficulty": 44.86,
+        "effort": 317902.39,
+        "time_seconds": 17661.24,
+        "bugs_delivered": 2.362
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 27,
+        "observable_state_vars": 3,
+        "state_updates": 27
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2059,
+        "maintainability_index": 11.52
+      },
+      "sonarqube": {
+        "classes": 3,
+        "code_smells": 1,
+        "cognitive_complexity": 52,
+        "comment_lines": 70,
+        "comment_lines_density": 19.2,
+        "complexity": 39,
+        "functions": 7,
+        "lines": 420,
+        "ncloc": 295,
+        "sqale_debt_ratio": 0.4,
+        "statements": 81
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/ScrollbarExt.kt": {
+      "halstead": {
+        "loc": 215,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 72,
+        "N1_total_operators": 316,
+        "N2_total_operands": 365,
+        "vocabulary": 91,
+        "length": 681,
+        "calculated_length": 524.95,
+        "volume": 4431.81,
+        "difficulty": 48.16,
+        "effort": 213434.65,
+        "time_seconds": 11857.48,
+        "bugs_delivered": 1.477
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 18,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 20.63
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 40,
+        "comment_lines": 19,
+        "comment_lines_density": 9.5,
+        "complexity": 22,
+        "duplicated_lines_density": 22.1,
+        "functions": 4,
+        "lines": 235,
+        "ncloc": 181,
+        "sqale_debt_ratio": 0.1,
+        "statements": 53
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/scrollbar/ThumbExt.kt": {
+      "halstead": {
+        "loc": 82,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 69,
+        "N2_total_operands": 69,
+        "vocabulary": 37,
+        "length": 138,
+        "calculated_length": 157.34,
+        "volume": 718.9,
+        "difficulty": 21.0,
+        "effort": 15097.0,
+        "time_seconds": 838.72,
+        "bugs_delivered": 0.24
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 37.58
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 2,
+        "comment_lines": 18,
+        "comment_lines_density": 26.9,
+        "complexity": 5,
+        "functions": 4,
+        "lines": 90,
+        "ncloc": 49,
+        "statements": 13
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/icon/NiaIcons.kt": {
+      "halstead": {
+        "loc": 57,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 71,
+        "N2_total_operands": 71,
+        "vocabulary": 27,
+        "length": 142,
+        "calculated_length": 112.04,
+        "volume": 675.19,
+        "difficulty": 6.17,
+        "effort": 4168.59,
+        "time_seconds": 231.59,
+        "bugs_delivered": 0.225
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 7.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 61,
+        "ncloc": 39,
+        "statements": 17
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Background.kt": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 14,
+        "N2_total_operands": 13,
+        "vocabulary": 16,
+        "length": 27,
+        "calculated_length": 48.18,
+        "volume": 108.0,
+        "difficulty": 5.06,
+        "effort": 546.0,
+        "time_seconds": 30.33,
+        "bugs_delivered": 0.036
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 35.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 11,
+        "statements": 2
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Color.kt": {
+      "halstead": {
+        "loc": 82,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 63,
+        "N1_total_operators": 248,
+        "N2_total_operands": 124,
+        "vocabulary": 67,
+        "length": 372,
+        "calculated_length": 384.57,
+        "volume": 2256.59,
+        "difficulty": 3.94,
+        "effort": 8883.07,
+        "time_seconds": 493.5,
+        "bugs_delivered": 0.752
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 62,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 4.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 86,
+        "ncloc": 64,
+        "statements": 62
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Gradient.kt": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 18,
+        "N2_total_operands": 17,
+        "vocabulary": 16,
+        "length": 35,
+        "calculated_length": 48.18,
+        "volume": 140.0,
+        "difficulty": 6.61,
+        "effort": 925.56,
+        "time_seconds": 51.42,
+        "bugs_delivered": 0.047
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 47.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 11,
+        "statements": 2
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Theme.kt": {
+      "halstead": {
+        "loc": 237,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 151,
+        "N1_total_operators": 245,
+        "N2_total_operands": 349,
+        "vocabulary": 164,
+        "length": 594,
+        "calculated_length": 1141.1,
+        "volume": 4370.39,
+        "difficulty": 15.02,
+        "effort": 65657.09,
+        "time_seconds": 3647.62,
+        "bugs_delivered": 1.457
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 16,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 19.88
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 17,
+        "comment_lines": 37,
+        "comment_lines_density": 16.7,
+        "complexity": 21,
+        "functions": 2,
+        "lines": 251,
+        "ncloc": 185,
+        "sqale_debt_ratio": 0.1,
+        "statements": 18
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Tint.kt": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 10,
+        "N2_total_operands": 9,
+        "vocabulary": 14,
+        "length": 19,
+        "calculated_length": 39.3,
+        "volume": 72.34,
+        "difficulty": 4.5,
+        "effort": 325.53,
+        "time_seconds": 18.08,
+        "bugs_delivered": 0.024
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 40.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 9,
+        "statements": 2
+      }
+    },
+    "core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/theme/Type.kt": {
+      "halstead": {
+        "loc": 178,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 260,
+        "N2_total_operands": 358,
+        "vocabulary": 71,
+        "length": 618,
+        "calculated_length": 406.96,
+        "volume": 3800.54,
+        "difficulty": 16.52,
+        "effort": 62796.68,
+        "time_seconds": 3488.7,
+        "bugs_delivered": 1.267
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 4.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 182,
+        "ncloc": 156,
+        "statements": 1
+      }
+    },
+    "core/navigation/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 42
+      }
+    },
+    "core/navigation/src/main/kotlin/com/google/samples/apps/nowinandroid/core/navigation/NavigationState.kt": {
+      "halstead": {
+        "loc": 92,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 44,
+        "N1_total_operators": 76,
+        "N2_total_operands": 85,
+        "vocabulary": 55,
+        "length": 161,
+        "calculated_length": 278.27,
+        "volume": 930.8,
+        "difficulty": 10.62,
+        "effort": 9889.74,
+        "time_seconds": 549.43,
+        "bugs_delivered": 0.31
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 13,
+        "comment_lines_density": 16.9,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 103,
+        "ncloc": 64,
+        "statements": 9
+      }
+    },
+    "core/notifications/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 32
+      }
+    },
+    "core/ui/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 39
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/AnalyticsExtensions.kt": {
+      "halstead": {
+        "loc": 58,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 27,
+        "N1_total_operators": 33,
+        "N2_total_operands": 43,
+        "vocabulary": 32,
+        "length": 76,
+        "calculated_length": 139.99,
+        "volume": 380.0,
+        "difficulty": 3.98,
+        "effort": 1512.96,
+        "time_seconds": 84.05,
+        "bugs_delivered": 0.127
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 43.07
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 6,
+        "comment_lines_density": 14.0,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 64,
+        "ncloc": 37,
+        "statements": 5
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/DevicePreviews.kt": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 20,
+        "N1_total_operators": 26,
+        "N2_total_operands": 42,
+        "vocabulary": 24,
+        "length": 68,
+        "calculated_length": 94.44,
+        "volume": 311.78,
+        "difficulty": 4.2,
+        "effort": 1309.47,
+        "time_seconds": 72.75,
+        "bugs_delivered": 0.104
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 30.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 9,
+        "statements": 0
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/FollowableTopicPreviewParameterProvider.kt": {
+      "halstead": {
+        "loc": 64,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 76,
+        "N1_total_operators": 30,
+        "N2_total_operands": 77,
+        "vocabulary": 85,
+        "length": 107,
+        "calculated_length": 503.37,
+        "volume": 685.8,
+        "difficulty": 4.56,
+        "effort": 3126.73,
+        "time_seconds": 173.71,
+        "bugs_delivered": 0.229
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 8.2,
+        "complexity": 0,
+        "duplicated_lines_density": 47.8,
+        "functions": 0,
+        "lines": 69,
+        "ncloc": 45,
+        "statements": 0
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/InterestsItem.kt": {
+      "halstead": {
+        "loc": 198,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 80,
+        "N1_total_operators": 147,
+        "N2_total_operands": 203,
+        "vocabulary": 90,
+        "length": 350,
+        "calculated_length": 538.97,
+        "volume": 2272.15,
+        "difficulty": 12.69,
+        "effort": 28827.89,
+        "time_seconds": 1601.55,
+        "bugs_delivered": 0.757
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 25.19
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 4,
+        "comment_lines": 1,
+        "comment_lines_density": 0.5,
+        "complexity": 9,
+        "functions": 7,
+        "lines": 208,
+        "ncloc": 182,
+        "sqale_debt_ratio": 0.4,
+        "statements": 28
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/JankStatsExtensions.kt": {
+      "halstead": {
+        "loc": 86,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 36,
+        "N1_total_operators": 53,
+        "N2_total_operands": 67,
+        "vocabulary": 48,
+        "length": 120,
+        "calculated_length": 229.14,
+        "volume": 670.2,
+        "difficulty": 11.17,
+        "effort": 7483.85,
+        "time_seconds": 415.77,
+        "bugs_delivered": 0.223
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.34
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 5,
+        "comment_lines": 17,
+        "comment_lines_density": 23.9,
+        "complexity": 5,
+        "functions": 4,
+        "lines": 94,
+        "ncloc": 54,
+        "statements": 16
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/LocalTimeZone.kt": {
+      "halstead": {
+        "loc": 23,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 4,
+        "N1_total_operators": 4,
+        "N2_total_operands": 4,
+        "vocabulary": 8,
+        "length": 8,
+        "calculated_length": 16.0,
+        "volume": 24.0,
+        "difficulty": 2.0,
+        "effort": 48.0,
+        "time_seconds": 2.67,
+        "bugs_delivered": 0.008
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 50.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 27,
+        "ncloc": 4,
+        "statements": 2
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsFeed.kt": {
+      "halstead": {
+        "loc": 146,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 82,
+        "N1_total_operators": 145,
+        "N2_total_operands": 162,
+        "vocabulary": 99,
+        "length": 307,
+        "calculated_length": 590.81,
+        "volume": 2035.21,
+        "difficulty": 16.79,
+        "effort": 34176.68,
+        "time_seconds": 1898.7,
+        "bugs_delivered": 0.678
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 28.81
+      },
+      "sonarqube": {
+        "classes": 2,
+        "cognitive_complexity": 1,
+        "comment_lines": 16,
+        "comment_lines_density": 12.2,
+        "complexity": 6,
+        "functions": 4,
+        "lines": 158,
+        "ncloc": 115,
+        "statements": 23
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsResourceCard.kt": {
+      "halstead": {
+        "loc": 371,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 208,
+        "N1_total_operators": 399,
+        "N2_total_operands": 488,
+        "vocabulary": 230,
+        "length": 887,
+        "calculated_length": 1699.8,
+        "volume": 6958.95,
+        "difficulty": 25.81,
+        "effort": 179594.43,
+        "time_seconds": 9977.47,
+        "bugs_delivered": 2.32
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 9,
+        "observable_state_vars": 2,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1818,
+        "maintainability_index": 14.22
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 26,
+        "comment_lines": 9,
+        "comment_lines_density": 2.5,
+        "complexity": 21,
+        "functions": 12,
+        "lines": 390,
+        "ncloc": 347,
+        "statements": 70
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/NewsResourceCardList.kt": {
+      "halstead": {
+        "loc": 63,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 58,
+        "N2_total_operands": 70,
+        "vocabulary": 48,
+        "length": 128,
+        "calculated_length": 239.31,
+        "volume": 714.88,
+        "difficulty": 5.98,
+        "effort": 4271.82,
+        "time_seconds": 237.32,
+        "bugs_delivered": 0.238
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 40.63
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 14.6,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 68,
+        "ncloc": 41,
+        "statements": 11
+      }
+    },
+    "core/ui/src/main/kotlin/com/google/samples/apps/nowinandroid/core/ui/UserNewsResourcePreviewParameterProvider.kt": {
+      "halstead": {
+        "loc": 128,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 139,
+        "N1_total_operators": 110,
+        "N2_total_operands": 195,
+        "vocabulary": 151,
+        "length": 305,
+        "calculated_length": 1032.55,
+        "volume": 2207.71,
+        "difficulty": 8.42,
+        "effort": 18582.91,
+        "time_seconds": 1032.38,
+        "bugs_delivered": 0.736
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 3.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 138,
+        "ncloc": 109,
+        "statements": 4
+      }
+    },
+    "feature/bookmarks/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 36
+      }
+    },
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/BookmarksScreen.kt": {
+      "halstead": {
+        "loc": 270,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 160,
+        "N1_total_operators": 319,
+        "N2_total_operands": 369,
+        "vocabulary": 178,
+        "length": 688,
+        "calculated_length": 1246.57,
+        "volume": 5143.3,
+        "difficulty": 20.76,
+        "effort": 106755.72,
+        "time_seconds": 5930.87,
+        "bugs_delivered": 1.714
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 18.82
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 14,
+        "comment_lines": 3,
+        "comment_lines_density": 1.2,
+        "complexity": 16,
+        "functions": 8,
+        "lines": 289,
+        "ncloc": 252,
+        "sqale_debt_ratio": 0.3,
+        "statements": 44
+      }
+    },
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/BookmarksViewModel.kt": {
+      "halstead": {
+        "loc": 75,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 42,
+        "N1_total_operators": 59,
+        "N2_total_operands": 71,
+        "vocabulary": 55,
+        "length": 130,
+        "calculated_length": 274.58,
+        "volume": 751.58,
+        "difficulty": 10.99,
+        "effort": 8258.4,
+        "time_seconds": 458.8,
+        "bugs_delivered": 0.251
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 38.42
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 85,
+        "ncloc": 60,
+        "statements": 15
+      }
+    },
+    "feature/bookmarks/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/bookmarks/impl/navigation/BookmarksEntryProvider.kt": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 21,
+        "N2_total_operands": 28,
+        "vocabulary": 31,
+        "length": 49,
+        "calculated_length": 126.64,
+        "volume": 242.76,
+        "difficulty": 5.73,
+        "effort": 1390.33,
+        "time_seconds": 77.24,
+        "bugs_delivered": 0.081
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 47.1
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 50,
+        "ncloc": 29,
+        "statements": 6
+      }
+    },
+    "feature/foryou/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 44
+      }
+    },
+    "feature/foryou/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/foryou/impl/ForYouScreen.kt": {
+      "halstead": {
+        "loc": 591,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 271,
+        "N1_total_operators": 691,
+        "N2_total_operands": 848,
+        "vocabulary": 294,
+        "length": 1539,
+        "calculated_length": 2294.3,
+        "volume": 12619.3,
+        "difficulty": 35.99,
+        "effort": 454108.38,
+        "time_seconds": 25228.24,
+        "bugs_delivered": 4.206
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 19,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 6.79
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "cognitive_complexity": 14,
+        "comment_lines": 24,
+        "comment_lines_density": 4.2,
+        "complexity": 30,
+        "functions": 14,
+        "lines": 621,
+        "ncloc": 552,
+        "sqale_debt_ratio": 0.1,
+        "statements": 97
+      }
+    },
+    "feature/interests/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 50
+      }
+    },
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/InterestsDetailPlaceholder.kt": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 55,
+        "N2_total_operands": 73,
+        "vocabulary": 59,
+        "length": 128,
+        "calculated_length": 322.37,
+        "volume": 752.98,
+        "difficulty": 3.38,
+        "effort": 2544.79,
+        "time_seconds": 141.38,
+        "bugs_delivered": 0.251
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 39.61
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 73,
+        "ncloc": 53,
+        "statements": 6
+      }
+    },
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/InterestsScreen.kt": {
+      "halstead": {
+        "loc": 132,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 54,
+        "N1_total_operators": 109,
+        "N2_total_operands": 143,
+        "vocabulary": 68,
+        "length": 252,
+        "calculated_length": 364.07,
+        "volume": 1534.04,
+        "difficulty": 18.54,
+        "effort": 28436.57,
+        "time_seconds": 1579.81,
+        "bugs_delivered": 0.511
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 30.22
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "cognitive_complexity": 2,
+        "comment_lines": 1,
+        "comment_lines_density": 0.9,
+        "complexity": 9,
+        "functions": 6,
+        "lines": 144,
+        "ncloc": 116,
+        "statements": 20
+      }
+    },
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/TabContent.kt": {
+      "halstead": {
+        "loc": 102,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 72,
+        "N1_total_operators": 106,
+        "N2_total_operands": 128,
+        "vocabulary": 83,
+        "length": 234,
+        "calculated_length": 482.29,
+        "volume": 1491.76,
+        "difficulty": 9.78,
+        "effort": 14586.09,
+        "time_seconds": 810.34,
+        "bugs_delivered": 0.497
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 33.56
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 4,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 1,
+        "lines": 108,
+        "ncloc": 87,
+        "statements": 16
+      }
+    },
+    "feature/interests/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/interests/impl/navigation/InterestsEntryProvider.kt": {
+      "halstead": {
+        "loc": 47,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 21,
+        "N1_total_operators": 21,
+        "N2_total_operands": 25,
+        "vocabulary": 30,
+        "length": 46,
+        "calculated_length": 120.77,
+        "volume": 225.72,
+        "difficulty": 5.36,
+        "effort": 1209.2,
+        "time_seconds": 67.18,
+        "bugs_delivered": 0.075
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.91
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 3,
+        "comment_lines_density": 9.4,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 52,
+        "ncloc": 29,
+        "statements": 4
+      }
+    },
+    "feature/search/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 38
+      }
+    },
+    "feature/search/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/search/impl/SearchScreen.kt": {
+      "halstead": {
+        "loc": 583,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 264,
+        "N1_total_operators": 730,
+        "N2_total_operands": 875,
+        "vocabulary": 286,
+        "length": 1605,
+        "calculated_length": 2221.83,
+        "volume": 13096.59,
+        "difficulty": 36.46,
+        "effort": 477479.97,
+        "time_seconds": 26526.67,
+        "bugs_delivered": 4.366
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 7.08
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "cognitive_complexity": 34,
+        "comment_lines": 2,
+        "comment_lines_density": 0.4,
+        "complexity": 28,
+        "functions": 13,
+        "lines": 606,
+        "ncloc": 566,
+        "sqale_debt_ratio": 0.2,
+        "statements": 109
+      }
+    },
+    "feature/search/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/search/impl/SearchUiStatePreviewParameterProvider.kt": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 18,
+        "N1_total_operators": 20,
+        "N2_total_operands": 23,
+        "vocabulary": 28,
+        "length": 43,
+        "calculated_length": 108.28,
+        "volume": 206.72,
+        "difficulty": 6.39,
+        "effort": 1320.69,
+        "time_seconds": 73.37,
+        "bugs_delivered": 0.069
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 20.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 40,
+        "ncloc": 16,
+        "statements": 2
+      }
+    },
+    "feature/settings/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 36
+      }
+    },
+    "feature/settings/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/settings/impl/SettingsDialog.kt": {
+      "halstead": {
+        "loc": 310,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 151,
+        "N1_total_operators": 365,
+        "N2_total_operands": 431,
+        "vocabulary": 169,
+        "length": 796,
+        "calculated_length": 1168.06,
+        "volume": 5891.1,
+        "difficulty": 25.69,
+        "effort": 151334.95,
+        "time_seconds": 8407.5,
+        "bugs_delivered": 1.964
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 17.78
+      },
+      "sonarqube": {
+        "classes": 0,
+        "cognitive_complexity": 4,
+        "comment_lines": 8,
+        "comment_lines_density": 2.7,
+        "complexity": 11,
+        "functions": 8,
+        "lines": 325,
+        "ncloc": 287,
+        "statements": 65
+      }
+    },
+    "feature/topic/impl/build.gradle.kts": {
+      "sonarqube": {
+        "lines": 39
+      }
+    },
+    "feature/topic/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/topic/impl/TopicScreen.kt": {
+      "halstead": {
+        "loc": 341,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 160,
+        "N1_total_operators": 395,
+        "N2_total_operands": 494,
+        "vocabulary": 178,
+        "length": 889,
+        "calculated_length": 1246.57,
+        "volume": 6645.93,
+        "difficulty": 27.79,
+        "effort": 184673.7,
+        "time_seconds": 10259.65,
+        "bugs_delivered": 2.215
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 6,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 14.62
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "cognitive_complexity": 16,
+        "comment_lines": 10,
+        "comment_lines_density": 3.0,
+        "complexity": 25,
+        "functions": 10,
+        "lines": 359,
+        "ncloc": 323,
+        "sqale_debt_ratio": 0.2,
+        "statements": 62
+      }
+    },
+    "feature/topic/impl/src/main/kotlin/com/google/samples/apps/nowinandroid/feature/topic/impl/navigation/TopicEntryProvider.kt": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 28,
+        "N2_total_operands": 31,
+        "vocabulary": 32,
+        "length": 59,
+        "calculated_length": 132.57,
+        "volume": 295.0,
+        "difficulty": 6.07,
+        "effort": 1789.24,
+        "time_seconds": 99.4,
+        "bugs_delivered": 0.098
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.51
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 30,
+        "statements": 5
+      }
+    },
+    "lint/src/main/kotlin/com/google/samples/apps/nowinandroid/lint/designsystem/DesignSystemDetector.kt": {
+      "halstead": {
+        "loc": 108,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 92,
+        "N2_total_operands": 158,
+        "vocabulary": 104,
+        "length": 250,
+        "calculated_length": 637.57,
+        "volume": 1675.11,
+        "difficulty": 12.29,
+        "effort": 20585.24,
+        "time_seconds": 1143.62,
+        "bugs_delivered": 0.558
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 32.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 7.5,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 118,
+        "ncloc": 86,
+        "statements": 12
+      }
+    }
+  }
+}

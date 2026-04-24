@@ -40,6 +40,21 @@ python3 scripts/analyze.py          # all projects in test/
 python3 scripts/analyze.py some/dir # all sub-folders in that dir
 python3 scripts/analyze.py ../repositories/Android/tivi
 python3 scripts/analyze.py --local --single ../repositories/Android/apps-android-wikipedia
+
+# All files (current behaviour, unchanged)
+python3 scripts/analyze.py --single repos/nowinandroid
+
+# UI files only
+python3 scripts/analyze.py --single repos/nowinandroid \
+    --ui-csv repo_data.csv --repo-label android/nowinandroid
+
+# UI files, dominant framework only
+python3 scripts/analyze.py --single repos/apps-android-wikipedia \
+    --ui-csv repo_data.csv --repo-label wikimedia/apps-android-wikipedia \
+    --dominant-only
+
+# locally all files
+python3 scripts/analyze.py ../repositories/iOS --local --ui-csv repo_data_ios.csv
 ```
 
 ### Run repo mining

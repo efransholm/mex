@@ -1,0 +1,2764 @@
+{
+  "project": "YouTag",
+  "framework": "uikit",
+  "language": "swift",
+  "sonar_project_key": "thesis-uikit-youtag",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/YouTag",
+  "ui_files_filter": [
+    "YouTag/AppDelegate.swift",
+    "YouTag/Base.lproj/LaunchScreen.storyboard",
+    "YouTag/Base.lproj/Main.storyboard",
+    "YouTag/Extensions.swift",
+    "YouTag/FilterPickerView.swift",
+    "YouTag/GraphicColors.swift",
+    "YouTag/LibraryCell.swift",
+    "YouTag/LibraryManager.swift",
+    "YouTag/LibraryTableView.swift",
+    "YouTag/LibraryViewController.swift",
+    "YouTag/LocalFilesManager.swift",
+    "YouTag/NowPlayingView.swift",
+    "YouTag/PlaybackRateView.swift",
+    "YouTag/PlaylistControlView.swift",
+    "YouTag/PlaylistManager.swift",
+    "YouTag/PlaylistTableView.swift",
+    "YouTag/SearchTextField.swift",
+    "YouTag/SongDetailViewController.swift",
+    "YouTag/ViewController.swift",
+    "YouTag/YYTAudioPlayer.swift",
+    "YouTag/YYTFilterTagView.swift",
+    "YouTag/YYTRangeSlider.swift",
+    "YouTag/YYTRangeSliderTrackLayer.swift",
+    "YouTag/YYTTagCell.swift",
+    "YouTag/YYTTagView.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "YouTag/AppDelegate.swift": {
+      "halstead": {
+        "loc": 122,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 90,
+        "N1_total_operators": 192,
+        "N2_total_operands": 186,
+        "vocabulary": 116,
+        "length": 378,
+        "calculated_length": 706.48,
+        "volume": 2592.32,
+        "difficulty": 26.87,
+        "effort": 69646.91,
+        "time_seconds": 3869.27,
+        "bugs_delivered": 0.864
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 28.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationWillResig",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationDidEnterB",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "applicationWillEnter",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationDidBecome",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applicationWillTermi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureAudioSessio",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "handleAudioSessionIn",
+            "cyclomatic": 5,
+            "cognitive": 5
+          }
+        ],
+        "avg_cyclomatic": 1.75,
+        "avg_cognitive": 0.88
+      }
+    },
+    "YouTag/Extensions.swift": {
+      "halstead": {
+        "loc": 467,
+        "n1_unique_operators": 52,
+        "n2_unique_operands": 370,
+        "N1_total_operators": 1175,
+        "N2_total_operands": 1194,
+        "vocabulary": 422,
+        "length": 2369,
+        "calculated_length": 3453.03,
+        "volume": 20660.28,
+        "difficulty": 83.9,
+        "effort": 1733453.66,
+        "time_seconds": 96302.98,
+        "bugs_delivered": 6.887
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 50,
+        "observable_state_vars": 0,
+        "state_updates": 12
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1071,
+        "maintainability_index": 0.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "getCurrentViewContro",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "hideKeyboard",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "version",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buildNumber",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showSpinner",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeSpinner",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showProgressView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateProgressView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeProgressView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getSelectedTextField",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "getTextFieldsInView",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "getSelectedTextView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "getTextViewsInView",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "addBorder",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "snapshotOfView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "hasRowAtIndexPath",
+            "cyclomatic": 2,
+            "cognitive": 0
+          },
+          {
+            "function": "scrollToTop",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stringFromTimeInterv",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "writeAudioTrack",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "write",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "audioAsset",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "addPadding",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "estimateSizeWidth",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "length",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isNumeric",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isRTL",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "trim",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "substring",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "substring",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "convertToTimeInterva",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "latinDigits",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "isSubset",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "hasIntersect",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "sortAscending",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "isLandscape",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "isPhone",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyStandardBottomB",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.08,
+        "avg_cognitive": 1.16
+      }
+    },
+    "YouTag/FilterPickerView.swift": {
+      "halstead": {
+        "loc": 504,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 299,
+        "N1_total_operators": 1626,
+        "N2_total_operands": 1596,
+        "vocabulary": 335,
+        "length": 3222,
+        "calculated_length": 2645.09,
+        "volume": 27026.19,
+        "difficulty": 96.08,
+        "effort": 2596683.73,
+        "time_seconds": 144260.21,
+        "bugs_delivered": 9.009
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 55,
+        "observable_state_vars": 0,
+        "state_updates": 33
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1791,
+        "maintainability_index": 1.95
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupConstraints",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "applyContentHeightFo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "traitCollectionDidCh",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configureActions",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "rebuildSegments",
+            "cyclomatic": 7,
+            "cognitive": 6
+          },
+          {
+            "function": "filtered",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "close",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "add",
+            "cyclomatic": 17,
+            "cognitive": 19
+          },
+          {
+            "function": "show",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "presentNoFiltersAler",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "filterValueChanged",
+            "cyclomatic": 10,
+            "cognitive": 9
+          },
+          {
+            "function": "releaseYrValueChange",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "rangeSliderValueChan",
+            "cyclomatic": 5,
+            "cognitive": 2
+          },
+          {
+            "function": "removeActive",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showYearRange",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "showExactYears",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.16,
+        "avg_cognitive": 2.32
+      }
+    },
+    "YouTag/GraphicColors.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 132,
+        "N2_total_operands": 154,
+        "vocabulary": 47,
+        "length": 286,
+        "calculated_length": 232.53,
+        "volume": 1588.61,
+        "difficulty": 13.47,
+        "effort": 21406.55,
+        "time_seconds": 1189.25,
+        "bugs_delivered": 0.53
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "YouTag/LibraryCell.swift": {
+      "halstead": {
+        "loc": 188,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 179,
+        "N1_total_operators": 512,
+        "N2_total_operands": 560,
+        "vocabulary": 204,
+        "length": 1072,
+        "calculated_length": 1455.7,
+        "volume": 8224.84,
+        "difficulty": 39.11,
+        "effort": 321641.79,
+        "time_seconds": 17868.99,
+        "bugs_delivered": 2.742
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 21.5
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshCell",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "loadThumbnail",
+            "cyclomatic": 5,
+            "cognitive": 5
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.2,
+        "avg_cognitive": 1.4
+      }
+    },
+    "YouTag/LibraryManager.swift": {
+      "halstead": {
+        "loc": 967,
+        "n1_unique_operators": 48,
+        "n2_unique_operands": 411,
+        "N1_total_operators": 2133,
+        "N2_total_operands": 2279,
+        "vocabulary": 459,
+        "length": 4412,
+        "calculated_length": 3836.79,
+        "volume": 39012.45,
+        "difficulty": 133.08,
+        "effort": 5191788.2,
+        "time_seconds": 288432.68,
+        "bugs_delivered": 13.004
+      },
+      "state_metrics": {
+        "mutable_vars": 43,
+        "immutable_vars": 108,
+        "observable_state_vars": 0,
+        "state_updates": 56
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2848,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "notifyLibraryChanged",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "matches",
+            "cyclomatic": 40,
+            "cognitive": 70
+          },
+          {
+            "function": "norm",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupDatabase",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "enableForeignKeys",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "closeDatabase",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "createTables",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "refreshLibraryArray",
+            "cyclomatic": 5,
+            "cognitive": 8
+          },
+          {
+            "function": "fetchSongs",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "getFilteredSongs",
+            "cyclomatic": 31,
+            "cognitive": 46
+          },
+          {
+            "function": "getTagsForSong",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "getArtistsForSong",
+            "cyclomatic": 4,
+            "cognitive": 6
+          },
+          {
+            "function": "getAllDistinctValues",
+            "cyclomatic": 7,
+            "cognitive": 13
+          },
+          {
+            "function": "getAllDistinctValues",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "getDuration",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "getDuration",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getReleaseYear",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "getReleaseYear",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "fetchThumbnail",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "parseSong",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "getColumnText",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "addSongToLibrary",
+            "cyclomatic": 4,
+            "cognitive": 8
+          },
+          {
+            "function": "bindSongData",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addTagsToSong",
+            "cyclomatic": 9,
+            "cognitive": 20
+          },
+          {
+            "function": "addArtistsToSong",
+            "cyclomatic": 8,
+            "cognitive": 12
+          },
+          {
+            "function": "updateSongDetails",
+            "cyclomatic": 7,
+            "cognitive": 8
+          },
+          {
+            "function": "recomputeSongDuratio",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "recomputeSongDuratio",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "deleteSongFromLibrar",
+            "cyclomatic": 14,
+            "cognitive": 20
+          },
+          {
+            "function": "resetArtists",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "resetTags",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "purgeUnusedTags",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "purgeUnusedArtists",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "handleMissingFiles",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "urlForSong",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "enrichSong",
+            "cyclomatic": 20,
+            "cognitive": 41
+          },
+          {
+            "function": "getKey",
+            "cyclomatic": 7,
+            "cognitive": 1
+          },
+          {
+            "function": "createImageDirectory",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 5.65,
+        "avg_cognitive": 7.55
+      }
+    },
+    "YouTag/LibraryTableView.swift": {
+      "halstead": {
+        "loc": 249,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 258,
+        "N1_total_operators": 705,
+        "N2_total_operands": 739,
+        "vocabulary": 292,
+        "length": 1444,
+        "calculated_length": 2239.87,
+        "volume": 11826.11,
+        "difficulty": 48.69,
+        "effort": 575858.05,
+        "time_seconds": 31992.11,
+        "bugs_delivered": 3.942
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 31,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2051,
+        "maintainability_index": 13.97
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshTableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 9,
+            "cognitive": 14
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "documentPicker",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "documentPickerWasCan",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.6,
+        "avg_cognitive": 2.4
+      }
+    },
+    "YouTag/LibraryViewController.swift": {
+      "halstead": {
+        "loc": 235,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 223,
+        "N1_total_operators": 610,
+        "N2_total_operands": 667,
+        "vocabulary": 253,
+        "length": 1277,
+        "calculated_length": 1886.81,
+        "volume": 10194.28,
+        "difficulty": 44.87,
+        "effort": 457371.3,
+        "time_seconds": 25409.52,
+        "bugs_delivered": 3.398
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 13,
+        "observable_state_vars": 0,
+        "state_updates": 21
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3158,
+        "maintainability_index": 17.25
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addButtonAction",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "documentPicker",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "documentPickerWasCan",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismiss",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchBarTextDidBegi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchBarCancelButto",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchBar",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "searchBarSearchButto",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.09
+      }
+    },
+    "YouTag/LocalFilesManager.swift": {
+      "halstead": {
+        "loc": 163,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 111,
+        "N1_total_operators": 355,
+        "N2_total_operands": 290,
+        "vocabulary": 137,
+        "length": 645,
+        "calculated_length": 876.39,
+        "volume": 4578.23,
+        "difficulty": 33.96,
+        "effort": 155494.86,
+        "time_seconds": 8638.6,
+        "bugs_delivered": 1.526
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 16,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0588,
+        "maintainability_index": 22.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "getMetadataFileURL",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getLocalFileSize",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "checkFileExist",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deleteFile",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "extractDurationForSo",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "extractSongMetadata",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "getImageFileURL",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "saveImage",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "deleteImage",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "ensureImagesDirector",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "getSongsDirectoryURL",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "getSongFileURL",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "copySongFile",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "deleteSongFile",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.14,
+        "avg_cognitive": 1.43
+      }
+    },
+    "YouTag/NowPlayingView.swift": {
+      "halstead": {
+        "loc": 406,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 297,
+        "N1_total_operators": 1372,
+        "N2_total_operands": 1429,
+        "vocabulary": 330,
+        "length": 2801,
+        "calculated_length": 2606.12,
+        "volume": 23434.07,
+        "difficulty": 79.39,
+        "effort": 1860404.66,
+        "time_seconds": 103355.81,
+        "bugs_delivered": 7.811
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 41,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1087,
+        "maintainability_index": 8.06
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "traitCollectionDidCh",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "invalidateTagLayout",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "loadSong",
+            "cyclomatic": 5,
+            "cognitive": 7
+          },
+          {
+            "function": "clearNowPlaying",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pausePlayButtonActio",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "nextButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previousButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "playbackRateButtonAc",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "onSliderValChanged",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "audioPlayerPeriodicU",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "audioPlayerPlayingSt",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "audioPlayerDidFinish",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "formatRate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeCircleImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "connectPlaylistContr",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.74,
+        "avg_cognitive": 0.95
+      }
+    },
+    "YouTag/PlaybackRateView.swift": {
+      "halstead": {
+        "loc": 186,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 181,
+        "N1_total_operators": 574,
+        "N2_total_operands": 631,
+        "vocabulary": 210,
+        "length": 1205,
+        "calculated_length": 1498.35,
+        "volume": 9295.67,
+        "difficulty": 50.55,
+        "effort": 469893.34,
+        "time_seconds": 26105.19,
+        "bugs_delivered": 3.099
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.15,
+        "maintainability_index": 20.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "present",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissTapped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sliderChanged",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "presetTapped",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setRate",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "refreshPresetSelecti",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "makePresetButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stylePresetButton",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "rateText",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "format",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.46,
+        "avg_cognitive": 0.54
+      }
+    },
+    "YouTag/PlaylistControlView.swift": {
+      "halstead": {
+        "loc": 129,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 122,
+        "N1_total_operators": 419,
+        "N2_total_operands": 410,
+        "vocabulary": 146,
+        "length": 829,
+        "calculated_length": 955.59,
+        "volume": 5960.36,
+        "difficulty": 40.33,
+        "effort": 240368.8,
+        "time_seconds": 13353.82,
+        "bugs_delivered": 1.987
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0833,
+        "maintainability_index": 26.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "configure",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "shuffleTapped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "repeatTapped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setRepeat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toggleLyrics",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.12,
+        "avg_cognitive": 0.12
+      }
+    },
+    "YouTag/PlaylistManager.swift": {
+      "halstead": {
+        "loc": 185,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 159,
+        "N1_total_operators": 468,
+        "N2_total_operands": 476,
+        "vocabulary": 189,
+        "length": 944,
+        "calculated_length": 1309.96,
+        "volume": 7138.76,
+        "difficulty": 44.91,
+        "effort": 320570.59,
+        "time_seconds": 17809.48,
+        "bugs_delivered": 2.38
+      },
+      "state_metrics": {
+        "mutable_vars": 10,
+        "immutable_vars": 23,
+        "observable_state_vars": 0,
+        "state_updates": 19
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.303,
+        "maintainability_index": 18.72
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "makeFilterSignature",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sortedJoined",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "computePlaylistIfNee",
+            "cyclomatic": 5,
+            "cognitive": 2
+          },
+          {
+            "function": "computePlaylist",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "refreshStateTokens",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "samePlaylist",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "reorderToMatchOldOrd",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "updatePlaylistLibrar",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshPlaylistLibra",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "didSelectSong",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "movePlaylistForward",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "movePlaylistBackward",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "shufflePlaylist",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "refreshNowPlayingVie",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "audioPlayerDidFinish",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "playlistControlViewD",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "playlistControlView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.11
+      }
+    },
+    "YouTag/PlaylistTableView.swift": {
+      "halstead": {
+        "loc": 188,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 163,
+        "N1_total_operators": 583,
+        "N2_total_operands": 600,
+        "vocabulary": 193,
+        "length": 1183,
+        "calculated_length": 1345.05,
+        "volume": 8981.88,
+        "difficulty": 55.21,
+        "effort": 495931.84,
+        "time_seconds": 27551.77,
+        "bugs_delivered": 2.994
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 27,
+        "observable_state_vars": 0,
+        "state_updates": 10
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1,
+        "maintainability_index": 17.2
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "playlistIndex",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "visibleIndexPath",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "play",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "playNext",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.41,
+        "avg_cognitive": 1.59
+      }
+    },
+    "YouTag/SearchTextField.swift": {
+      "halstead": {
+        "loc": 525,
+        "n1_unique_operators": 46,
+        "n2_unique_operands": 326,
+        "N1_total_operators": 1499,
+        "N2_total_operands": 1372,
+        "vocabulary": 372,
+        "length": 2871,
+        "calculated_length": 2975.77,
+        "volume": 24515.92,
+        "difficulty": 96.8,
+        "effort": 2373081.37,
+        "time_seconds": 131837.85,
+        "bugs_delivered": 8.172
+      },
+      "state_metrics": {
+        "mutable_vars": 57,
+        "immutable_vars": 14,
+        "observable_state_vars": 0,
+        "state_updates": 43
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.8028,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "theme.didSet",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "startVisibleWithoutI",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "filterItems",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "filterStrings",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "showLoadingIndicator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "stopLoadingIndicator",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "inlineMode.didSet",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "filterDataSource.did",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "willMove",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "willMove",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "rightViewRect",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buildSearchTableView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "buildPlaceholderLabe",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "redrawSearchTableVie",
+            "cyclomatic": 9,
+            "cognitive": 18
+          },
+          {
+            "function": "keyboardWillShow",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardWillHide",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardDidChangeFra",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "typingDidStop",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldDidChange",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "textFieldDidBeginEdi",
+            "cyclomatic": 4,
+            "cognitive": 1
+          },
+          {
+            "function": "textFieldDidEndEditi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldDidEndEditi",
+            "cyclomatic": 4,
+            "cognitive": 7
+          },
+          {
+            "function": "hideResultsList",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "filter",
+            "cyclomatic": 13,
+            "cognitive": 21
+          },
+          {
+            "function": "clearResults",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "highlightAttributesF",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "handleInlineFilterin",
+            "cyclomatic": 4,
+            "cognitive": 7
+          },
+          {
+            "function": "prepareDrawTableResu",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tableView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "lightTheme",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.51,
+        "avg_cognitive": 2.33
+      }
+    },
+    "YouTag/SongDetailViewController.swift": {
+      "halstead": {
+        "loc": 637,
+        "n1_unique_operators": 36,
+        "n2_unique_operands": 434,
+        "N1_total_operators": 1978,
+        "N2_total_operands": 2150,
+        "vocabulary": 470,
+        "length": 4128,
+        "calculated_length": 3988.63,
+        "volume": 36642.26,
+        "difficulty": 89.17,
+        "effort": 3267409.07,
+        "time_seconds": 181522.73,
+        "bugs_delivered": 12.214
+      },
+      "state_metrics": {
+        "mutable_vars": 20,
+        "immutable_vars": 42,
+        "observable_state_vars": 0,
+        "state_updates": 43
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3226,
+        "maintainability_index": 0
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "populateFields",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupObservers",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupConstraints",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "traitCollectionDidCh",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillTransition",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyLayoutForCurren",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissView",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "updateSong",
+            "cyclomatic": 6,
+            "cognitive": 13
+          },
+          {
+            "function": "showAlert",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "imageTapped",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbnailLongPressed",
+            "cyclomatic": 8,
+            "cognitive": 6
+          },
+          {
+            "function": "imagePickerControlle",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "viewWillDisappear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldShouldRetur",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldDidEndEditi",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textViewDidBeginEdit",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "textViewDidEndEditin",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "keyboardWillShow",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "keyboardWillHide",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "getMoveableDistance",
+            "cyclomatic": 7,
+            "cognitive": 10
+          },
+          {
+            "function": "dismissKeyboard",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previewFile",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "numberOfPreviewItems",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previewController",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dismissPreview",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 1.81
+      }
+    },
+    "YouTag/ViewController.swift": {
+      "halstead": {
+        "loc": 420,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 315,
+        "N1_total_operators": 1253,
+        "N2_total_operands": 1326,
+        "vocabulary": 348,
+        "length": 2579,
+        "calculated_length": 2780.72,
+        "volume": 21774.35,
+        "difficulty": 69.46,
+        "effort": 1512384.23,
+        "time_seconds": 84021.35,
+        "bugs_delivered": 7.258
+      },
+      "state_metrics": {
+        "mutable_vars": 12,
+        "immutable_vars": 44,
+        "observable_state_vars": 0,
+        "state_updates": 24
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2143,
+        "maintainability_index": 7.83
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "viewDidLoad",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewWillAppear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "viewDidAppear",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "onPlaylistWillUpdate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "onPlaylistDidUpdate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupUI",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyConstraints",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "traitCollectionDidCh",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutIfInWindow",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "setupConstraints",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "menuButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "filterButtonAction",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toggleFilterMode",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tagsListChanged",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "processNewFilter",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "convertFiltersToTupl",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "handleLyricsToggle",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "collapsePlaylistCont",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.79,
+        "avg_cognitive": 0.68
+      }
+    },
+    "YouTag/YYTAudioPlayer.swift": {
+      "halstead": {
+        "loc": 414,
+        "n1_unique_operators": 46,
+        "n2_unique_operands": 266,
+        "N1_total_operators": 986,
+        "N2_total_operands": 915,
+        "vocabulary": 312,
+        "length": 1901,
+        "calculated_length": 2396.79,
+        "volume": 15750.55,
+        "difficulty": 79.12,
+        "effort": 1246129.01,
+        "time_seconds": 69229.39,
+        "bugs_delivered": 5.25
+      },
+      "state_metrics": {
+        "mutable_vars": 8,
+        "immutable_vars": 28,
+        "observable_state_vars": 0,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 3.44
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupPlayer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupPlayer",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setupPlayer",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "play",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "play",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "pause",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "next",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "prev",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "startPlayback",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "clearPlayback",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "isPlaying",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "setPlaybackRate",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "duration",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "setCurrentTime",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "setSongRepeat",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "suspend",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "unsuspend",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getArtwork",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyPlaybackInfo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupNowPlaying",
+            "cyclomatic": 6,
+            "cognitive": 4
+          },
+          {
+            "function": "updateNowPlaying",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupRemoteTransport",
+            "cyclomatic": 9,
+            "cognitive": 8
+          },
+          {
+            "function": "setupInterreuptionsN",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "handleInterruption",
+            "cyclomatic": 6,
+            "cognitive": 9
+          },
+          {
+            "function": "setupRouteChangeNoti",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "handleRouteChange",
+            "cyclomatic": 9,
+            "cognitive": 9
+          },
+          {
+            "function": "playerDidFinishTrack",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.59,
+        "avg_cognitive": 1.69
+      }
+    },
+    "YouTag/YYTFilterTagView.swift": {
+      "halstead": {
+        "loc": 107,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 132,
+        "N1_total_operators": 302,
+        "N2_total_operands": 340,
+        "vocabulary": 158,
+        "length": 642,
+        "calculated_length": 1052.07,
+        "volume": 4689.03,
+        "difficulty": 33.48,
+        "effort": 157011.37,
+        "time_seconds": 8722.85,
+        "bugs_delivered": 1.563
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1538,
+        "maintainability_index": 27.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateTags",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeTag",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeAllTags",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "getImageForType",
+            "cyclomatic": 6,
+            "cognitive": 1
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.12,
+        "avg_cognitive": 0.5
+      }
+    },
+    "YouTag/YYTRangeSlider.swift": {
+      "halstead": {
+        "loc": 240,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 133,
+        "N1_total_operators": 552,
+        "N2_total_operands": 627,
+        "vocabulary": 166,
+        "length": 1179,
+        "calculated_length": 1104.82,
+        "volume": 8695.17,
+        "difficulty": 77.79,
+        "effort": 676360.13,
+        "time_seconds": 37575.56,
+        "bugs_delivered": 2.898
+      },
+      "state_metrics": {
+        "mutable_vars": 14,
+        "immutable_vars": 17,
+        "observable_state_vars": 0,
+        "state_updates": 15
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4516,
+        "maintainability_index": 14.58
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "frame.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "minimumValue.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "maximumValue.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "lowerValue.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "upperValue.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "trackTintColor.didSe",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "trackHighlightTintCo",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbColor.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbBorderColor.did",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbBorderWidth.did",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbSize.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "updateLayerFrames",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "positionForValue",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "thumbOriginForValue",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "makeCircleImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "beginTracking",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "continueTracking",
+            "cyclomatic": 18,
+            "cognitive": 13
+          },
+          {
+            "function": "endTracking",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "boundValue",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 0.86
+      }
+    },
+    "YouTag/YYTRangeSliderTrackLayer.swift": {
+      "halstead": {
+        "loc": 48,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 57,
+        "N2_total_operands": 61,
+        "vocabulary": 49,
+        "length": 118,
+        "calculated_length": 231.58,
+        "volume": 662.54,
+        "difficulty": 13.46,
+        "effort": 8915.0,
+        "time_seconds": 495.28,
+        "bugs_delivered": 0.221
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 43.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "draw",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "YouTag/YYTTagCell.swift": {
+      "halstead": {
+        "loc": 105,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 99,
+        "N1_total_operators": 320,
+        "N2_total_operands": 342,
+        "vocabulary": 118,
+        "length": 662,
+        "calculated_length": 737.02,
+        "volume": 4556.31,
+        "difficulty": 32.82,
+        "effort": 149529.8,
+        "time_seconds": 8307.21,
+        "bugs_delivered": 1.519
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 7,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3636,
+        "maintainability_index": 29.35
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "image.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "refreshImageView",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "switchMode",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 1.4,
+        "avg_cognitive": 0.8
+      }
+    },
+    "YouTag/YYTTagView.swift": {
+      "halstead": {
+        "loc": 392,
+        "n1_unique_operators": 41,
+        "n2_unique_operands": 322,
+        "N1_total_operators": 1162,
+        "N2_total_operands": 1251,
+        "vocabulary": 363,
+        "length": 2413,
+        "calculated_length": 2902.21,
+        "volume": 20519.73,
+        "difficulty": 79.64,
+        "effort": 1634281.91,
+        "time_seconds": 90793.44,
+        "bugs_delivered": 6.84
+      },
+      "state_metrics": {
+        "mutable_vars": 23,
+        "immutable_vars": 43,
+        "observable_state_vars": 0,
+        "state_updates": 17
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3485,
+        "maintainability_index": 6.24
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "tagsList.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "suggestionsList.get",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "suggestionsList.set",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "layoutSubviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "applyFadeMaskIfNeede",
+            "cyclomatic": 6,
+            "cognitive": 7
+          },
+          {
+            "function": "removeTag",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "removeAllTags",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deselectAllTags",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "handleLongPress",
+            "cyclomatic": 9,
+            "cognitive": 15
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "collectionView",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "textFieldShouldRetur",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "textFieldDidEndEditi",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "layoutAttributesForE",
+            "cyclomatic": 5,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 2.74,
+        "avg_cognitive": 2.32
+      }
+    }
+  }
+}

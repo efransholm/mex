@@ -1,0 +1,4795 @@
+{
+  "project": "MovieSwift",
+  "framework": "swiftui",
+  "language": "swift",
+  "sonar_project_key": "thesis-swiftui-movieswift",
+  "project_path": "/Users/fransholm/Documents/MEX/repositories/iOS/MovieSwiftUI",
+  "ui_files_filter": [
+    "MovieSwift/MovieSwift/Base.lproj/LaunchScreen.storyboard",
+    "MovieSwift/MovieSwift/views/components/bottomMenu/BottomMenu.swift",
+    "MovieSwift/MovieSwift/views/components/custom list/CustomListDetail.swift",
+    "MovieSwift/MovieSwift/views/components/custom list/CustomListForm.swift",
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListCoverRow.swift",
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListHeaderRow.swift",
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListRow.swift",
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverCoverImage.swift",
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverFilterForm.swift",
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverView.swift",
+    "MovieSwift/MovieSwift/views/components/discover/DraggableCover.swift",
+    "MovieSwift/MovieSwift/views/components/fan club/FanClubHome.swift",
+    "MovieSwift/MovieSwift/views/components/genres/GenresList.swift",
+    "MovieSwift/MovieSwift/views/components/home/HomeView.swift",
+    "MovieSwift/MovieSwift/views/components/home/outline/OutlineMenu.swift",
+    "MovieSwift/MovieSwift/views/components/home/outline/OutlineRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/MovieDetail.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/reviews/MovieReviews.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/reviews/ReviewRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieBackdropsRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieButtonsRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCoverRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCrosslinePeopleRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCrosslineRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieInfoRow.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieKeywords.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieOverview.swift",
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MoviePostersRow.swift",
+    "MovieSwift/MovieSwift/views/components/moviesGrid/MovieGridRow.swift",
+    "MovieSwift/MovieSwift/views/components/moviesHome/MoviesHome.swift",
+    "MovieSwift/MovieSwift/views/components/moviesHome/grid/MoviesHomeGrid.swift",
+    "MovieSwift/MovieSwift/views/components/moviesHome/grid/rows/MoviesHomeGridMoviesRow.swift",
+    "MovieSwift/MovieSwift/views/components/moviesHome/list/MoviesHomeList.swift",
+    "MovieSwift/MovieSwift/views/components/moviesHome/models/MoviesSelectedMenuStore.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/MovieKeywordList.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/MoviesCrewList.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/MoviesGenreList.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/base/MoviesList.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/rows/MovieRow.swift",
+    "MovieSwift/MovieSwift/views/components/moviesList/rows/PeopleRow.swift",
+    "MovieSwift/MovieSwift/views/components/myLists/MyLists.swift",
+    "MovieSwift/MovieSwift/views/components/peopleDetail/PeopleDetail.swift",
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailBiographyRow.swift",
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailHeaderRow.swift",
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailImagesRow.swift",
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailMovieRow.swift",
+    "MovieSwift/MovieSwift/views/components/settings/SettingsForm.swift",
+    "MovieSwift/MovieSwift/views/shared/contextMenu/MovieContextMenu.swift",
+    "MovieSwift/MovieSwift/views/shared/contextMenu/PeopleContextMenu.swift",
+    "MovieSwift/MovieSwift/views/shared/images/BigMoviePosterImage.swift",
+    "MovieSwift/MovieSwift/views/shared/images/FullscreenMoviePosterImage.swift",
+    "MovieSwift/MovieSwift/views/shared/images/ImagesCarouselView.swift",
+    "MovieSwift/MovieSwift/views/shared/images/ListImage.swift",
+    "MovieSwift/MovieSwift/views/shared/images/MovieBackdropImage.swift",
+    "MovieSwift/MovieSwift/views/shared/images/MovieTopBackdropImage.swift",
+    "MovieSwift/MovieSwift/views/shared/images/PeopleImage.swift",
+    "MovieSwift/MovieSwiftTV/AppDelegate.swift",
+    "MovieSwift/MovieSwiftTV/Base.lproj/LaunchScreen.storyboard",
+    "MovieSwift/MovieSwiftTV/views/HomeView.swift",
+    "MovieSwift/MovieSwiftTV/views/MovieRow.swift",
+    "MovieSwift/MovieSwiftTV/views/MoviesView.swift",
+    "MovieSwift/Packages/Backend/Sources/Backend/services/ImageService.swift",
+    "MovieSwift/Packages/Backend/Sources/Backend/utils/ImageLoader.swift",
+    "MovieSwift/Packages/UI/Sources/UI/badges/NotificationBadge.swift",
+    "MovieSwift/Packages/UI/Sources/UI/badges/PopularityBadge.swift",
+    "MovieSwift/Packages/UI/Sources/UI/badges/RoundedBadge.swift",
+    "MovieSwift/Packages/UI/Sources/UI/buttons/BorderedButton.swift",
+    "MovieSwift/Packages/UI/Sources/UI/extensions/View.swift",
+    "MovieSwift/Packages/UI/Sources/UI/fields/SearchField.swift",
+    "MovieSwift/Packages/UI/Sources/UI/fields/SearchTextObservable.swift",
+    "MovieSwift/Packages/UI/Sources/UI/preferenceKeys/OffsetTop.swift",
+    "MovieSwift/Shared/extensions/ActionSheet.swift",
+    "MovieSwift/Shared/extensions/Color.swift",
+    "MovieSwift/Shared/extensions/Font.swift",
+    "MovieSwift/Shared/flux/actions/MoviesActions.swift",
+    "MovieSwift/Shared/flux/actions/PeopleActions.swift",
+    "MovieSwift/Shared/flux/middlewares/LoggingMiddleware.swift",
+    "MovieSwift/Shared/flux/models/CustomList.swift",
+    "MovieSwift/Shared/flux/models/DiscoverFilter.swift",
+    "MovieSwift/Shared/flux/models/Genre.swift",
+    "MovieSwift/Shared/flux/models/Image.swift",
+    "MovieSwift/Shared/flux/models/Keyword.swift",
+    "MovieSwift/Shared/flux/models/Movie.swift",
+    "MovieSwift/Shared/flux/models/People.swift",
+    "MovieSwift/Shared/flux/models/Review.swift",
+    "MovieSwift/Shared/flux/reducers/AppReducer.swift",
+    "MovieSwift/Shared/flux/reducers/MoviesReducer.swift",
+    "MovieSwift/Shared/flux/reducers/PeopleReducer.swift",
+    "MovieSwift/Shared/flux/state/AppState.swift",
+    "MovieSwift/Shared/flux/state/MoviesState.swift",
+    "MovieSwift/Shared/flux/state/PeoplesState.swift",
+    "MovieSwift/Shared/views/MoviePosterImage.swift",
+    "MovieSwift/Shared/views/modifiers/PosterStyle.swift"
+  ],
+  "sonarqube_project": {
+    "code_smells": 0,
+    "sqale_debt_ratio": 0.0,
+    "bugs": 0
+  },
+  "files": {
+    "MovieSwift/MovieSwift/views/components/bottomMenu/BottomMenu.swift": {
+      "halstead": {
+        "loc": 103,
+        "n1_unique_operators": 30,
+        "n2_unique_operands": 76,
+        "N1_total_operators": 202,
+        "N2_total_operands": 181,
+        "vocabulary": 106,
+        "length": 383,
+        "calculated_length": 622.05,
+        "volume": 2576.79,
+        "difficulty": 35.72,
+        "effort": 92052.56,
+        "time_seconds": 5114.03,
+        "bugs_delivered": 0.859
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6,
+        "maintainability_index": 30.32
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "translation",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "isDragging",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "currentYOffset",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.33,
+        "avg_cognitive": 0.83
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/custom list/CustomListDetail.swift": {
+      "halstead": {
+        "loc": 139,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 136,
+        "N1_total_operators": 297,
+        "N2_total_operands": 295,
+        "vocabulary": 160,
+        "length": 592,
+        "calculated_length": 1073.93,
+        "volume": 4334.58,
+        "difficulty": 26.03,
+        "effort": 112826.6,
+        "time_seconds": 6268.14,
+        "bugs_delivered": 1.445
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 1,
+        "observable_state_vars": 7,
+        "state_updates": 16
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.875,
+        "maintainability_index": 25.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "onUpdateTextDebounce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "list",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "movies",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchedMovies",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "navbarButtons",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "sortActionSheet",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 6,
+            "cognitive": 10
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.88
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/custom list/CustomListForm.swift": {
+      "halstead": {
+        "loc": 129,
+        "n1_unique_operators": 31,
+        "n2_unique_operands": 121,
+        "N1_total_operators": 252,
+        "N2_total_operands": 262,
+        "vocabulary": 152,
+        "length": 514,
+        "calculated_length": 990.76,
+        "volume": 3725.43,
+        "difficulty": 33.56,
+        "effort": 125032.98,
+        "time_seconds": 6946.28,
+        "bugs_delivered": 1.242
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 2,
+        "observable_state_vars": 6,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 27.07
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "onUpdateTextDebounce",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "searchedMovies",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "topSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "coverSection",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "movieSearchSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "buttonsSection",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.75,
+        "avg_cognitive": 0.88
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListCoverRow.swift": {
+      "halstead": {
+        "loc": 28,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 40,
+        "N2_total_operands": 40,
+        "vocabulary": 46,
+        "length": 80,
+        "calculated_length": 212.18,
+        "volume": 441.88,
+        "difficulty": 9.68,
+        "effort": 4276.31,
+        "time_seconds": 237.57,
+        "bugs_delivered": 0.147
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 49.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "movie",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListHeaderRow.swift": {
+      "halstead": {
+        "loc": 48,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 67,
+        "N1_total_operators": 101,
+        "N2_total_operands": 93,
+        "vocabulary": 88,
+        "length": 194,
+        "calculated_length": 498.67,
+        "volume": 1253.13,
+        "difficulty": 14.57,
+        "effort": 18263.9,
+        "time_seconds": 1014.66,
+        "bugs_delivered": 0.418
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 40.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "list",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "coverBackdropMovie",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.25
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/custom list/rows/CustomListRow.swift": {
+      "halstead": {
+        "loc": 66,
+        "n1_unique_operators": 23,
+        "n2_unique_operands": 82,
+        "N1_total_operators": 137,
+        "N2_total_operands": 134,
+        "vocabulary": 105,
+        "length": 271,
+        "calculated_length": 625.36,
+        "volume": 1819.56,
+        "difficulty": 18.79,
+        "effort": 34194.42,
+        "time_seconds": 1899.69,
+        "bugs_delivered": 0.607
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 3,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 36.68
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "coverMovie",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.75
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverCoverImage.swift": {
+      "halstead": {
+        "loc": 41,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 63,
+        "N2_total_operands": 59,
+        "vocabulary": 53,
+        "length": 122,
+        "calculated_length": 259.43,
+        "volume": 698.81,
+        "difficulty": 10.59,
+        "effort": 7400.18,
+        "time_seconds": 411.12,
+        "bugs_delivered": 0.233
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 44.23
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "discoverPosterStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 1.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverFilterForm.swift": {
+      "halstead": {
+        "loc": 182,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 132,
+        "N1_total_operators": 386,
+        "N2_total_operands": 422,
+        "vocabulary": 161,
+        "length": 808,
+        "calculated_length": 1070.74,
+        "volume": 5923.38,
+        "difficulty": 46.36,
+        "effort": 274584.6,
+        "time_seconds": 15254.7,
+        "bugs_delivered": 1.974
+      },
+      "state_metrics": {
+        "mutable_vars": 10,
+        "immutable_vars": 5,
+        "observable_state_vars": 5,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 21.19
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "currentFilter",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "formFilter",
+            "cyclomatic": 7,
+            "cognitive": 4
+          },
+          {
+            "function": "genres",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "savedFilters",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "countries.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "settingsSection",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "buttonsSection",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "savedFiltersSection",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.3,
+        "avg_cognitive": 1.1
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/discover/DiscoverView.swift": {
+      "halstead": {
+        "loc": 221,
+        "n1_unique_operators": 34,
+        "n2_unique_operands": 206,
+        "N1_total_operators": 708,
+        "N2_total_operands": 687,
+        "vocabulary": 240,
+        "length": 1395,
+        "calculated_length": 1756.39,
+        "volume": 11030.11,
+        "difficulty": 56.69,
+        "effort": 625343.12,
+        "time_seconds": 34741.28,
+        "bugs_delivered": 3.677
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 10,
+        "observable_state_vars": 5,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.375,
+        "maintainability_index": 17.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "scaleResistance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "dragResistance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "leftZoneResistance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "rightZoneResistance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "draggableCoverEndGes",
+            "cyclomatic": 6,
+            "cognitive": 5
+          },
+          {
+            "function": "fetchRandomMovies",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "filterView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "actionsButtons",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "draggableMovies",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.92,
+        "avg_cognitive": 0.83
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/discover/DraggableCover.swift": {
+      "halstead": {
+        "loc": 176,
+        "n1_unique_operators": 35,
+        "n2_unique_operands": 133,
+        "N1_total_operators": 399,
+        "N2_total_operands": 352,
+        "vocabulary": 168,
+        "length": 751,
+        "calculated_length": 1117.88,
+        "volume": 5551.63,
+        "difficulty": 46.32,
+        "effort": 257128.14,
+        "time_seconds": 14284.9,
+        "bugs_delivered": 1.851
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 10,
+        "observable_state_vars": 5,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.375,
+        "maintainability_index": 21.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "translation",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "predictedLocation",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "isActive",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "isDragging",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "movie",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "computedOffset",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "computeAngle",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "coverSpringAnimation",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 7,
+            "cognitive": 7
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.6,
+        "avg_cognitive": 1.3
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/fan club/FanClubHome.swift": {
+      "halstead": {
+        "loc": 68,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 60,
+        "N1_total_operators": 129,
+        "N2_total_operands": 139,
+        "vocabulary": 81,
+        "length": 268,
+        "calculated_length": 446.65,
+        "volume": 1699.08,
+        "difficulty": 24.33,
+        "effort": 41330.12,
+        "time_seconds": 2296.12,
+        "bugs_delivered": 0.566
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 36.74
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/genres/GenresList.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 39,
+        "N2_total_operands": 39,
+        "vocabulary": 43,
+        "length": 78,
+        "calculated_length": 195.31,
+        "volume": 423.25,
+        "difficulty": 8.45,
+        "effort": 3576.45,
+        "time_seconds": 198.69,
+        "bugs_delivered": 0.141
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 48.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/home/HomeView.swift": {
+      "halstead": {
+        "loc": 127,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 145,
+        "N1_total_operators": 268,
+        "N2_total_operands": 291,
+        "vocabulary": 171,
+        "length": 559,
+        "calculated_length": 1163.3,
+        "volume": 4146.58,
+        "difficulty": 26.09,
+        "effort": 108182.83,
+        "time_seconds": 6010.16,
+        "bugs_delivered": 1.382
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 4,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 27.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "setupApperance",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "tabbarItem",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 1.14,
+        "avg_cognitive": 0.14
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/home/outline/OutlineMenu.swift": {
+      "halstead": {
+        "loc": 62,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 56,
+        "N1_total_operators": 159,
+        "N2_total_operands": 113,
+        "vocabulary": 68,
+        "length": 272,
+        "calculated_length": 368.23,
+        "volume": 1655.79,
+        "difficulty": 12.11,
+        "effort": 20046.88,
+        "time_seconds": 1113.72,
+        "bugs_delivered": 0.552
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 33.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "id",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "title",
+            "cyclomatic": 11,
+            "cognitive": 1
+          },
+          {
+            "function": "image",
+            "cyclomatic": 11,
+            "cognitive": 1
+          },
+          {
+            "function": "moviesList",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "contentView",
+            "cyclomatic": 11,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 7.0,
+        "avg_cognitive": 0.6
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/home/outline/OutlineRow.swift": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 60,
+        "N2_total_operands": 57,
+        "vocabulary": 50,
+        "length": 117,
+        "calculated_length": 240.86,
+        "volume": 660.33,
+        "difficulty": 10.01,
+        "effort": 6612.24,
+        "time_seconds": 367.35,
+        "bugs_delivered": 0.22
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 45.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "isSelected",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/MovieDetail.swift": {
+      "halstead": {
+        "loc": 202,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 189,
+        "N1_total_operators": 522,
+        "N2_total_operands": 551,
+        "vocabulary": 214,
+        "length": 1073,
+        "calculated_length": 1545.36,
+        "volume": 8306.59,
+        "difficulty": 36.44,
+        "effort": 302707.23,
+        "time_seconds": 16817.07,
+        "bugs_delivered": 2.769
+      },
+      "state_metrics": {
+        "mutable_vars": 9,
+        "immutable_vars": 15,
+        "observable_state_vars": 4,
+        "state_updates": 11
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.375,
+        "maintainability_index": 19.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 4,
+            "cognitive": 5
+          },
+          {
+            "function": "fetchMovieDetails",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "displaySavedBadge",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onAddButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "addActionSheet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "peopleRow",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "peopleRows",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "topSection",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "bottomSection",
+            "cyclomatic": 8,
+            "cognitive": 7
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.18,
+        "avg_cognitive": 1.36
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/reviews/MovieReviews.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 25,
+        "N1_total_operators": 34,
+        "N2_total_operands": 36,
+        "vocabulary": 37,
+        "length": 70,
+        "calculated_length": 159.12,
+        "volume": 364.66,
+        "difficulty": 8.64,
+        "effort": 3150.68,
+        "time_seconds": 175.04,
+        "bugs_delivered": 0.122
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 51.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "reviews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/reviews/ReviewRow.swift": {
+      "halstead": {
+        "loc": 30,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 44,
+        "N2_total_operands": 46,
+        "vocabulary": 42,
+        "length": 90,
+        "calculated_length": 193.22,
+        "volume": 485.31,
+        "difficulty": 7.19,
+        "effort": 3488.16,
+        "time_seconds": 193.79,
+        "bugs_delivered": 0.162
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 48.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieBackdropsRow.swift": {
+      "halstead": {
+        "loc": 40,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 59,
+        "N2_total_operands": 62,
+        "vocabulary": 58,
+        "length": 121,
+        "calculated_length": 301.3,
+        "volume": 708.82,
+        "difficulty": 6.46,
+        "effort": 4577.77,
+        "time_seconds": 254.32,
+        "bugs_delivered": 0.236
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 44.82
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieButtonsRow.swift": {
+      "halstead": {
+        "loc": 70,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 72,
+        "N1_total_operators": 143,
+        "N2_total_operands": 159,
+        "vocabulary": 89,
+        "length": 302,
+        "calculated_length": 513.72,
+        "volume": 1955.67,
+        "difficulty": 18.77,
+        "effort": 36709.58,
+        "time_seconds": 2039.42,
+        "bugs_delivered": 0.652
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 5,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 36.03
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 1.33
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCoverRow.swift": {
+      "halstead": {
+        "loc": 67,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 91,
+        "N1_total_operators": 147,
+        "N2_total_operands": 162,
+        "vocabulary": 113,
+        "length": 309,
+        "calculated_length": 690.32,
+        "volume": 2107.44,
+        "difficulty": 19.58,
+        "effort": 41268.68,
+        "time_seconds": 2292.7,
+        "bugs_delivered": 0.702
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.36
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "genresBadges",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCrosslinePeopleRow.swift": {
+      "halstead": {
+        "loc": 90,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 163,
+        "N2_total_operands": 175,
+        "vocabulary": 86,
+        "length": 338,
+        "calculated_length": 502.52,
+        "volume": 2172.08,
+        "difficulty": 14.19,
+        "effort": 30820.02,
+        "time_seconds": 1712.22,
+        "bugs_delivered": 0.724
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 33.33
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "peoplesListView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieCrosslineRow.swift": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 85,
+        "N1_total_operators": 119,
+        "N2_total_operands": 134,
+        "vocabulary": 97,
+        "length": 253,
+        "calculated_length": 587.82,
+        "volume": 1669.78,
+        "difficulty": 9.46,
+        "effort": 15794.13,
+        "time_seconds": 877.45,
+        "bugs_delivered": 0.557
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 36.51
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "listView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieInfoRow.swift": {
+      "halstead": {
+        "loc": 60,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 51,
+        "N1_total_operators": 93,
+        "N2_total_operands": 91,
+        "vocabulary": 67,
+        "length": 184,
+        "calculated_length": 353.29,
+        "volume": 1116.16,
+        "difficulty": 14.27,
+        "effort": 15932.64,
+        "time_seconds": 885.15,
+        "bugs_delivered": 0.372
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 38.53
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "asyncTextTransition",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "asyncTextAnimation",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "infos",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "productionCountry",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 0.67
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieKeywords.swift": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 51,
+        "N2_total_operands": 55,
+        "vocabulary": 50,
+        "length": 106,
+        "calculated_length": 246.1,
+        "volume": 598.25,
+        "difficulty": 6.88,
+        "effort": 4112.96,
+        "time_seconds": 228.5,
+        "bugs_delivered": 0.199
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.08
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MovieOverview.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 41,
+        "N1_total_operators": 60,
+        "N2_total_operands": 62,
+        "vocabulary": 53,
+        "length": 122,
+        "calculated_length": 262.68,
+        "volume": 698.81,
+        "difficulty": 9.07,
+        "effort": 6340.39,
+        "time_seconds": 352.24,
+        "bugs_delivered": 0.233
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 7
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 43.96
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/movieDetail/rows/MoviePostersRow.swift": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 53,
+        "N1_total_operators": 71,
+        "N2_total_operands": 74,
+        "vocabulary": 66,
+        "length": 145,
+        "calculated_length": 351.69,
+        "volume": 876.44,
+        "difficulty": 9.08,
+        "effort": 7954.08,
+        "time_seconds": 441.89,
+        "bugs_delivered": 0.292
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 42.26
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesGrid/MovieGridRow.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 28,
+        "N1_total_operators": 34,
+        "N2_total_operands": 37,
+        "vocabulary": 37,
+        "length": 71,
+        "calculated_length": 163.14,
+        "volume": 369.87,
+        "difficulty": 5.95,
+        "effort": 2199.41,
+        "time_seconds": 122.19,
+        "bugs_delivered": 0.123
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 51.25
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesHome/MoviesHome.swift": {
+      "halstead": {
+        "loc": 90,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 156,
+        "N2_total_operands": 142,
+        "vocabulary": 99,
+        "length": 298,
+        "calculated_length": 575.6,
+        "volume": 1975.55,
+        "difficulty": 23.99,
+        "effort": 47386.46,
+        "time_seconds": 2632.58,
+        "bugs_delivered": 0.659
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 3,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 32.68
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "icon",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "settingButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "swapHomeButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "homeAsList",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "homeAsGrid",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.71,
+        "avg_cognitive": 0.57
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesHome/grid/MoviesHomeGrid.swift": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 84,
+        "N1_total_operators": 143,
+        "N2_total_operands": 155,
+        "vocabulary": 103,
+        "length": 298,
+        "calculated_length": 617.67,
+        "volume": 1992.58,
+        "difficulty": 17.53,
+        "effort": 34929.4,
+        "time_seconds": 1940.52,
+        "bugs_delivered": 0.664
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 35.06
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "moviesRow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "map",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.75
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesHome/grid/rows/MoviesHomeGridMoviesRow.swift": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 55,
+        "N1_total_operators": 80,
+        "N2_total_operands": 89,
+        "vocabulary": 70,
+        "length": 169,
+        "calculated_length": 376.58,
+        "volume": 1035.85,
+        "difficulty": 12.14,
+        "effort": 12571.44,
+        "time_seconds": 698.41,
+        "bugs_delivered": 0.345
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 41.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 3,
+            "cognitive": 3
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.67,
+        "avg_cognitive": 1.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesHome/list/MoviesHomeList.swift": {
+      "halstead": {
+        "loc": 36,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 48,
+        "N2_total_operands": 55,
+        "vocabulary": 47,
+        "length": 103,
+        "calculated_length": 219.77,
+        "volume": 572.12,
+        "difficulty": 11.67,
+        "effort": 6674.76,
+        "time_seconds": 370.82,
+        "bugs_delivered": 0.191
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 46.34
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesHome/models/MoviesSelectedMenuStore.swift": {
+      "halstead": {
+        "loc": 22,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 18,
+        "N2_total_operands": 20,
+        "vocabulary": 18,
+        "length": 38,
+        "calculated_length": 57.06,
+        "volume": 158.46,
+        "difficulty": 10.0,
+        "effort": 1584.57,
+        "time_seconds": 88.03,
+        "bugs_delivered": 0.053
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 55.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "menu.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/MovieKeywordList.swift": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 66,
+        "N2_total_operands": 73,
+        "vocabulary": 58,
+        "length": 139,
+        "calculated_length": 287.94,
+        "volume": 814.26,
+        "difficulty": 16.43,
+        "effort": 13374.21,
+        "time_seconds": 743.01,
+        "bugs_delivered": 0.271
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": 44.37
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "loadPage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "movies",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/MoviesCrewList.swift": {
+      "halstead": {
+        "loc": 27,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 44,
+        "N2_total_operands": 45,
+        "vocabulary": 46,
+        "length": 89,
+        "calculated_length": 213.3,
+        "volume": 491.6,
+        "difficulty": 9.84,
+        "effort": 4839.16,
+        "time_seconds": 268.84,
+        "bugs_delivered": 0.164
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 49.66
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/MoviesGenreList.swift": {
+      "halstead": {
+        "loc": 78,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 71,
+        "N1_total_operators": 141,
+        "N2_total_operands": 144,
+        "vocabulary": 91,
+        "length": 285,
+        "calculated_length": 523.07,
+        "volume": 1854.72,
+        "difficulty": 20.28,
+        "effort": 37616.89,
+        "time_seconds": 2089.83,
+        "bugs_delivered": 0.618
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 4,
+        "observable_state_vars": 2,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5556,
+        "maintainability_index": 34.77
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "sort.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadPage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.14,
+        "avg_cognitive": 0.14
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/base/MoviesList.swift": {
+      "halstead": {
+        "loc": 168,
+        "n1_unique_operators": 32,
+        "n2_unique_operands": 112,
+        "N1_total_operators": 335,
+        "N2_total_operands": 356,
+        "vocabulary": 144,
+        "length": 691,
+        "calculated_length": 922.42,
+        "volume": 4954.42,
+        "difficulty": 50.86,
+        "effort": 251967.55,
+        "time_seconds": 13998.2,
+        "bugs_delivered": 1.651
+      },
+      "state_metrics": {
+        "mutable_vars": 6,
+        "immutable_vars": 6,
+        "observable_state_vars": 5,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 21.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "moviesRows",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "movieSection",
+            "cyclomatic": 6,
+            "cognitive": 6
+          },
+          {
+            "function": "peoplesSection",
+            "cyclomatic": 5,
+            "cognitive": 3
+          },
+          {
+            "function": "keywordsSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchField",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchFilterView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 15,
+            "cognitive": 11
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.67,
+        "avg_cognitive": 2.33
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/rows/MovieRow.swift": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 88,
+        "N1_total_operators": 139,
+        "N2_total_operands": 136,
+        "vocabulary": 109,
+        "length": 275,
+        "calculated_length": 660.67,
+        "volume": 1861.25,
+        "difficulty": 16.23,
+        "effort": 30203.02,
+        "time_seconds": 1677.95,
+        "bugs_delivered": 0.62
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 36.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/moviesList/rows/PeopleRow.swift": {
+      "halstead": {
+        "loc": 63,
+        "n1_unique_operators": 18,
+        "n2_unique_operands": 91,
+        "N1_total_operators": 133,
+        "N2_total_operands": 129,
+        "vocabulary": 109,
+        "length": 262,
+        "calculated_length": 667.27,
+        "volume": 1773.26,
+        "difficulty": 12.76,
+        "effort": 22623.73,
+        "time_seconds": 1256.87,
+        "bugs_delivered": 0.591
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 37.33
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fanClubIcon",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.25,
+        "avg_cognitive": 0.25
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/myLists/MyLists.swift": {
+      "halstead": {
+        "loc": 117,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 114,
+        "N1_total_operators": 271,
+        "N2_total_operands": 290,
+        "vocabulary": 138,
+        "length": 561,
+        "calculated_length": 888.99,
+        "volume": 3987.88,
+        "difficulty": 30.53,
+        "effort": 121735.35,
+        "time_seconds": 6763.08,
+        "bugs_delivered": 1.329
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 6,
+        "observable_state_vars": 5,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4545,
+        "maintainability_index": 28.33
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "sortActionSheet",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "customListsSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "wishlistSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "seenSection",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.43,
+        "avg_cognitive": 0.43
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/peopleDetail/PeopleDetail.swift": {
+      "halstead": {
+        "loc": 201,
+        "n1_unique_operators": 33,
+        "n2_unique_operands": 187,
+        "N1_total_operators": 513,
+        "N2_total_operands": 542,
+        "vocabulary": 220,
+        "length": 1055,
+        "calculated_length": 1577.73,
+        "volume": 8209.33,
+        "difficulty": 47.82,
+        "effort": 392599.35,
+        "time_seconds": 21811.07,
+        "bugs_delivered": 2.736
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 13,
+        "observable_state_vars": 2,
+        "state_updates": 6
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2778,
+        "maintainability_index": 18.45
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "toggleScoreUpdate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "moviesSection",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "barbuttons",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scoreUpdateView",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "imagesCarouselView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 8,
+            "cognitive": 3
+          },
+          {
+            "function": "sortedYears",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "map",
+            "cyclomatic": 12,
+            "cognitive": 19
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.22,
+        "avg_cognitive": 2.67
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailBiographyRow.swift": {
+      "halstead": {
+        "loc": 71,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 45,
+        "N1_total_operators": 117,
+        "N2_total_operands": 108,
+        "vocabulary": 61,
+        "length": 225,
+        "calculated_length": 311.13,
+        "volume": 1334.42,
+        "difficulty": 19.2,
+        "effort": 25620.79,
+        "time_seconds": 1423.38,
+        "bugs_delivered": 0.445
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 4,
+        "observable_state_vars": 1,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 36.93
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 5,
+            "cognitive": 4
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailHeaderRow.swift": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 52,
+        "N1_total_operators": 74,
+        "N2_total_operands": 73,
+        "vocabulary": 69,
+        "length": 147,
+        "calculated_length": 365.91,
+        "volume": 897.95,
+        "difficulty": 11.93,
+        "effort": 10715.0,
+        "time_seconds": 595.28,
+        "bugs_delivered": 0.299
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 43.15
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "people",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailImagesRow.swift": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 66,
+        "N2_total_operands": 66,
+        "vocabulary": 63,
+        "length": 132,
+        "calculated_length": 326.68,
+        "volume": 789.0,
+        "difficulty": 10.31,
+        "effort": 8136.57,
+        "time_seconds": 452.03,
+        "bugs_delivered": 0.263
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 44.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/peopleDetail/rows/PeopleDetailMovieRow.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 56,
+        "N1_total_operators": 74,
+        "N2_total_operands": 76,
+        "vocabulary": 72,
+        "length": 150,
+        "calculated_length": 389.21,
+        "volume": 925.49,
+        "difficulty": 10.86,
+        "effort": 10048.16,
+        "time_seconds": 558.23,
+        "bugs_delivered": 0.308
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 3,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.25,
+        "maintainability_index": 42.98
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "movie",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/components/settings/SettingsForm.swift": {
+      "halstead": {
+        "loc": 92,
+        "n1_unique_operators": 21,
+        "n2_unique_operands": 95,
+        "N1_total_operators": 169,
+        "N2_total_operands": 192,
+        "vocabulary": 116,
+        "length": 361,
+        "calculated_length": 716.37,
+        "volume": 2475.73,
+        "difficulty": 21.22,
+        "effort": 52537.62,
+        "time_seconds": 2918.76,
+        "bugs_delivered": 0.825
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 2,
+        "observable_state_vars": 3,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 32.59
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "countries.get",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "debugInfoView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/contextMenu/MovieContextMenu.swift": {
+      "halstead": {
+        "loc": 114,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 79,
+        "N1_total_operators": 238,
+        "N2_total_operands": 250,
+        "vocabulary": 101,
+        "length": 488,
+        "calculated_length": 596.11,
+        "volume": 3249.21,
+        "difficulty": 34.81,
+        "effort": 113105.31,
+        "time_seconds": 6283.63,
+        "bugs_delivered": 1.083
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 11,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0833,
+        "maintainability_index": 29.2
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "customListsView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onAddToWishlist",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "onAddToSeenlist",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "onAddToCustomList",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.43,
+        "avg_cognitive": 0.86
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/contextMenu/PeopleContextMenu.swift": {
+      "halstead": {
+        "loc": 47,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 48,
+        "N1_total_operators": 78,
+        "N2_total_operands": 80,
+        "vocabulary": 68,
+        "length": 158,
+        "calculated_length": 354.52,
+        "volume": 961.82,
+        "difficulty": 16.67,
+        "effort": 16030.32,
+        "time_seconds": 890.57,
+        "bugs_delivered": 0.321
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 42.1
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.67
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/BigMoviePosterImage.swift": {
+      "halstead": {
+        "loc": 32,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 55,
+        "N2_total_operands": 49,
+        "vocabulary": 47,
+        "length": 104,
+        "calculated_length": 221.08,
+        "volume": 577.68,
+        "difficulty": 9.37,
+        "effort": 5411.48,
+        "time_seconds": 300.64,
+        "bugs_delivered": 0.193
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 47.56
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/FullscreenMoviePosterImage.swift": {
+      "halstead": {
+        "loc": 37,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 33,
+        "N1_total_operators": 75,
+        "N2_total_operands": 66,
+        "vocabulary": 44,
+        "length": 141,
+        "calculated_length": 204.52,
+        "volume": 769.78,
+        "difficulty": 11.0,
+        "effort": 8467.58,
+        "time_seconds": 470.42,
+        "bugs_delivered": 0.257
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 45.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/ImagesCarouselView.swift": {
+      "halstead": {
+        "loc": 109,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 93,
+        "N1_total_operators": 262,
+        "N2_total_operands": 266,
+        "vocabulary": 119,
+        "length": 528,
+        "calculated_length": 730.35,
+        "volume": 3640.46,
+        "difficulty": 37.18,
+        "effort": 135362.62,
+        "time_seconds": 7520.15,
+        "bugs_delivered": 1.213
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 2,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 29.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "computeCarouselPoste",
+            "cyclomatic": 3,
+            "cognitive": 2
+          },
+          {
+            "function": "scrollView",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "closeButton",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "selectedPoster",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.5
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/ListImage.swift": {
+      "halstead": {
+        "loc": 55,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 106,
+        "N2_total_operands": 105,
+        "vocabulary": 85,
+        "length": 211,
+        "calculated_length": 477.89,
+        "volume": 1352.38,
+        "difficulty": 16.15,
+        "effort": 21846.16,
+        "time_seconds": 1213.68,
+        "bugs_delivered": 0.451
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "icon",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/MovieBackdropImage.swift": {
+      "halstead": {
+        "loc": 38,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 40,
+        "N1_total_operators": 63,
+        "N2_total_operands": 59,
+        "vocabulary": 56,
+        "length": 122,
+        "calculated_length": 276.88,
+        "volume": 708.5,
+        "difficulty": 11.8,
+        "effort": 8360.27,
+        "time_seconds": 464.46,
+        "bugs_delivered": 0.236
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 3,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 45.31
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/MovieTopBackdropImage.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 60,
+        "N2_total_operands": 56,
+        "vocabulary": 47,
+        "length": 116,
+        "calculated_length": 222.54,
+        "volume": 644.33,
+        "difficulty": 9.6,
+        "effort": 6185.59,
+        "time_seconds": 343.64,
+        "bugs_delivered": 0.215
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 46.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwift/views/shared/images/PeopleImage.swift": {
+      "halstead": {
+        "loc": 49,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 31,
+        "N1_total_operators": 82,
+        "N2_total_operands": 80,
+        "vocabulary": 41,
+        "length": 162,
+        "calculated_length": 186.8,
+        "volume": 867.92,
+        "difficulty": 12.9,
+        "effort": 11199.01,
+        "time_seconds": 622.17,
+        "bugs_delivered": 0.289
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 0,
+        "observable_state_vars": 2,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 42.02
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/MovieSwiftTV/AppDelegate.swift": {
+      "halstead": {
+        "loc": 45,
+        "n1_unique_operators": 17,
+        "n2_unique_operands": 61,
+        "N1_total_operators": 84,
+        "N2_total_operands": 93,
+        "vocabulary": 78,
+        "length": 177,
+        "calculated_length": 431.26,
+        "volume": 1112.52,
+        "difficulty": 12.96,
+        "effort": 14417.12,
+        "time_seconds": 800.95,
+        "bugs_delivered": 0.371
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1667,
+        "maintainability_index": 42.47
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "application",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwiftTV/views/HomeView.swift": {
+      "halstead": {
+        "loc": 25,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 22,
+        "N1_total_operators": 31,
+        "N2_total_operands": 33,
+        "vocabulary": 32,
+        "length": 64,
+        "calculated_length": 131.33,
+        "volume": 320.0,
+        "difficulty": 7.5,
+        "effort": 2400.0,
+        "time_seconds": 133.33,
+        "bugs_delivered": 0.107
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 51.7
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwiftTV/views/MovieRow.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 5,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 11,
+        "N2_total_operands": 13,
+        "vocabulary": 14,
+        "length": 24,
+        "calculated_length": 40.14,
+        "volume": 91.38,
+        "difficulty": 3.61,
+        "effort": 329.97,
+        "time_seconds": 18.33,
+        "bugs_delivered": 0.03
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 58.62
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/MovieSwiftTV/views/MoviesView.swift": {
+      "halstead": {
+        "loc": 42,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 56,
+        "N1_total_operators": 75,
+        "N2_total_operands": 81,
+        "vocabulary": 72,
+        "length": 156,
+        "calculated_length": 389.21,
+        "volume": 962.51,
+        "difficulty": 11.57,
+        "effort": 11137.6,
+        "time_seconds": 618.76,
+        "bugs_delivered": 0.321
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 1,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.5,
+        "maintainability_index": 43.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "map",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/Backend/Sources/Backend/services/ImageService.swift": {
+      "halstead": {
+        "loc": 35,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 32,
+        "N1_total_operators": 63,
+        "N2_total_operands": 49,
+        "vocabulary": 52,
+        "length": 112,
+        "calculated_length": 246.44,
+        "volume": 638.45,
+        "difficulty": 15.31,
+        "effort": 9776.25,
+        "time_seconds": 543.13,
+        "bugs_delivered": 0.213
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.41
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "path",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "fetchImage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/Backend/Sources/Backend/utils/ImageLoader.swift": {
+      "halstead": {
+        "loc": 51,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 50,
+        "N1_total_operators": 138,
+        "N2_total_operands": 114,
+        "vocabulary": 75,
+        "length": 252,
+        "calculated_length": 398.29,
+        "volume": 1569.66,
+        "difficulty": 28.5,
+        "effort": 44735.38,
+        "time_seconds": 2485.3,
+        "bugs_delivered": 0.523
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 5,
+        "observable_state_vars": 2,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.4444,
+        "maintainability_index": 39.57
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "loaderFor",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "loadImage",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.5,
+        "avg_cognitive": 0.75
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/badges/NotificationBadge.swift": {
+      "halstead": {
+        "loc": 33,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 30,
+        "N1_total_operators": 57,
+        "N2_total_operands": 53,
+        "vocabulary": 43,
+        "length": 110,
+        "calculated_length": 195.31,
+        "volume": 596.89,
+        "difficulty": 11.48,
+        "effort": 6854.28,
+        "time_seconds": 380.79,
+        "bugs_delivered": 0.199
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 47.03
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "animation",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/badges/PopularityBadge.swift": {
+      "halstead": {
+        "loc": 69,
+        "n1_unique_operators": 22,
+        "n2_unique_operands": 74,
+        "N1_total_operators": 125,
+        "N2_total_operands": 125,
+        "vocabulary": 96,
+        "length": 250,
+        "calculated_length": 557.61,
+        "volume": 1646.24,
+        "difficulty": 18.58,
+        "effort": 30588.93,
+        "time_seconds": 1699.39,
+        "bugs_delivered": 0.549
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 2,
+        "observable_state_vars": 1,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.3333,
+        "maintainability_index": 36.29
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "scoreColor.get",
+            "cyclomatic": 4,
+            "cognitive": 3
+          },
+          {
+            "function": "overlay",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.6,
+        "avg_cognitive": 0.6
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/badges/RoundedBadge.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 43,
+        "N1_total_operators": 74,
+        "N2_total_operands": 70,
+        "vocabulary": 55,
+        "length": 144,
+        "calculated_length": 276.35,
+        "volume": 832.52,
+        "difficulty": 9.77,
+        "effort": 8131.55,
+        "time_seconds": 451.75,
+        "bugs_delivered": 0.278
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 43.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/buttons/BorderedButton.swift": {
+      "halstead": {
+        "loc": 58,
+        "n1_unique_operators": 15,
+        "n2_unique_operands": 50,
+        "N1_total_operators": 108,
+        "N2_total_operands": 110,
+        "vocabulary": 65,
+        "length": 218,
+        "calculated_length": 340.8,
+        "volume": 1312.88,
+        "difficulty": 16.5,
+        "effort": 21662.46,
+        "time_seconds": 1203.47,
+        "bugs_delivered": 0.438
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 5,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 39.3
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/extensions/View.swift": {
+      "halstead": {
+        "loc": 17,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 27,
+        "N2_total_operands": 20,
+        "vocabulary": 22,
+        "length": 47,
+        "calculated_length": 76.24,
+        "volume": 209.59,
+        "difficulty": 12.0,
+        "effort": 2515.12,
+        "time_seconds": 139.73,
+        "bugs_delivered": 0.07
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 56.64
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "`if`",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/fields/SearchField.swift": {
+      "halstead": {
+        "loc": 104,
+        "n1_unique_operators": 25,
+        "n2_unique_operands": 86,
+        "N1_total_operators": 212,
+        "N2_total_operands": 221,
+        "vocabulary": 111,
+        "length": 433,
+        "calculated_length": 668.76,
+        "volume": 2941.98,
+        "difficulty": 32.12,
+        "effort": 94502.62,
+        "time_seconds": 5250.15,
+        "bugs_delivered": 0.981
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 2,
+        "observable_state_vars": 2,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.7143,
+        "maintainability_index": 31.18
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "previews",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.33,
+        "avg_cognitive": 0.33
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/fields/SearchTextObservable.swift": {
+      "halstead": {
+        "loc": 50,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 35,
+        "N1_total_operators": 71,
+        "N2_total_operands": 60,
+        "vocabulary": 55,
+        "length": 131,
+        "calculated_length": 265.96,
+        "volume": 757.36,
+        "difficulty": 17.14,
+        "effort": 12983.28,
+        "time_seconds": 721.29,
+        "bugs_delivered": 0.252
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 3
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 41.84
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "searchText.willSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchText.didSet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "searchCancellable.di",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "deinit",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onUpdateText",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "onUpdateTextDebounce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Packages/UI/Sources/UI/preferenceKeys/OffsetTop.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 22,
+        "N2_total_operands": 14,
+        "vocabulary": 20,
+        "length": 36,
+        "calculated_length": 66.58,
+        "volume": 155.59,
+        "difficulty": 8.56,
+        "effort": 1331.15,
+        "time_seconds": 73.95,
+        "bugs_delivered": 0.052
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 58.86
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "reduce",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/extensions/ActionSheet.swift": {
+      "halstead": {
+        "loc": 91,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 66,
+        "N1_total_operators": 265,
+        "N2_total_operands": 221,
+        "vocabulary": 90,
+        "length": 486,
+        "calculated_length": 508.97,
+        "volume": 3155.04,
+        "difficulty": 40.18,
+        "effort": 126775.27,
+        "time_seconds": 7043.07,
+        "bugs_delivered": 1.052
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0909,
+        "maintainability_index": 31.69
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "wishlistButton",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "seenListButton",
+            "cyclomatic": 2,
+            "cognitive": 2
+          },
+          {
+            "function": "customListsButttons",
+            "cyclomatic": 3,
+            "cognitive": 4
+          },
+          {
+            "function": "sortActionSheet",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/Shared/extensions/Color.swift": {
+      "halstead": {
+        "loc": 44,
+        "n1_unique_operators": 6,
+        "n2_unique_operands": 25,
+        "N1_total_operators": 67,
+        "N2_total_operands": 67,
+        "vocabulary": 31,
+        "length": 134,
+        "calculated_length": 131.61,
+        "volume": 663.86,
+        "difficulty": 8.04,
+        "effort": 5337.45,
+        "time_seconds": 296.53,
+        "bugs_delivered": 0.221
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": null,
+        "maintainability_index": 42.91
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "steam_white",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_gold",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_rust",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_rust2",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_bronze",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_brown",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_yellow",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_blue",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_bordeaux",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_green",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "steam_background",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/extensions/Font.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 24,
+        "N1_total_operators": 65,
+        "N2_total_operands": 65,
+        "vocabulary": 35,
+        "length": 130,
+        "calculated_length": 148.09,
+        "volume": 666.81,
+        "difficulty": 14.9,
+        "effort": 9932.64,
+        "time_seconds": 551.81,
+        "bugs_delivered": 0.222
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 46.01
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "FHACondFrenchNC",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "AmericanCaptain",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "FjallaOne",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "titleFont",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "titleStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/flux/actions/MoviesActions.swift": {
+      "halstead": {
+        "loc": 332,
+        "n1_unique_operators": 20,
+        "n2_unique_operands": 123,
+        "N1_total_operators": 764,
+        "N2_total_operands": 674,
+        "vocabulary": 143,
+        "length": 1438,
+        "calculated_length": 940.37,
+        "volume": 10295.89,
+        "difficulty": 54.8,
+        "effort": 564181.56,
+        "time_seconds": 31343.42,
+        "bugs_delivered": 3.432
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 65,
+        "observable_state_vars": 0,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0299,
+        "maintainability_index": 11.53
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 4,
+            "cognitive": 2
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.08,
+        "avg_cognitive": 1.08
+      }
+    },
+    "MovieSwift/Shared/flux/actions/PeopleActions.swift": {
+      "halstead": {
+        "loc": 141,
+        "n1_unique_operators": 16,
+        "n2_unique_operands": 71,
+        "N1_total_operators": 311,
+        "N2_total_operands": 275,
+        "vocabulary": 87,
+        "length": 586,
+        "calculated_length": 500.63,
+        "volume": 3775.56,
+        "difficulty": 30.99,
+        "effort": 116989.33,
+        "time_seconds": 6499.41,
+        "bugs_delivered": 1.259
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 24,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 25.65
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          },
+          {
+            "function": "execute",
+            "cyclomatic": 3,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "MovieSwift/Shared/flux/middlewares/LoggingMiddleware.swift": {
+      "halstead": {
+        "loc": 21,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 23,
+        "N1_total_operators": 30,
+        "N2_total_operands": 28,
+        "vocabulary": 36,
+        "length": 58,
+        "calculated_length": 152.15,
+        "volume": 299.86,
+        "difficulty": 7.91,
+        "effort": 2372.77,
+        "time_seconds": 131.82,
+        "bugs_delivered": 0.1
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/models/CustomList.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 7,
+        "n2_unique_operands": 10,
+        "N1_total_operators": 13,
+        "N2_total_operands": 12,
+        "vocabulary": 17,
+        "length": 25,
+        "calculated_length": 52.87,
+        "volume": 102.19,
+        "difficulty": 4.2,
+        "effort": 429.18,
+        "time_seconds": 23.84,
+        "bugs_delivered": 0.034
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 1,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.75,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/models/DiscoverFilter.swift": {
+      "halstead": {
+        "loc": 76,
+        "n1_unique_operators": 19,
+        "n2_unique_operands": 59,
+        "N1_total_operators": 153,
+        "N2_total_operands": 144,
+        "vocabulary": 78,
+        "length": 297,
+        "calculated_length": 427.79,
+        "volume": 1866.76,
+        "difficulty": 23.19,
+        "effort": 43283.62,
+        "time_seconds": 2404.65,
+        "bugs_delivered": 0.622
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 8,
+        "observable_state_vars": 0,
+        "state_updates": 4
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2,
+        "maintainability_index": 34.45
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "randomFilter",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "randomYear",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "randomSort",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "randomPage",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "toParams",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "toText",
+            "cyclomatic": 4,
+            "cognitive": 4
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.33
+      }
+    },
+    "MovieSwift/Shared/flux/models/Genre.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 6,
+        "N2_total_operands": 7,
+        "vocabulary": 10,
+        "length": 13,
+        "calculated_length": 24.41,
+        "volume": 43.19,
+        "difficulty": 1.5,
+        "effort": 64.78,
+        "time_seconds": 3.6,
+        "bugs_delivered": 0.014
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/models/Image.swift": {
+      "halstead": {
+        "loc": 18,
+        "n1_unique_operators": 4,
+        "n2_unique_operands": 11,
+        "N1_total_operators": 12,
+        "N2_total_operands": 14,
+        "vocabulary": 15,
+        "length": 26,
+        "calculated_length": 46.05,
+        "volume": 101.58,
+        "difficulty": 2.55,
+        "effort": 258.57,
+        "time_seconds": 14.36,
+        "bugs_delivered": 0.034
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 4,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 58.43
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "id",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/flux/models/Keyword.swift": {
+      "halstead": {
+        "loc": 13,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 6,
+        "N2_total_operands": 7,
+        "vocabulary": 10,
+        "length": 13,
+        "calculated_length": 24.41,
+        "volume": 43.19,
+        "difficulty": 1.5,
+        "effort": 64.78,
+        "time_seconds": 3.6,
+        "bugs_delivered": 0.014
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/models/Movie.swift": {
+      "halstead": {
+        "loc": 69,
+        "n1_unique_operators": 12,
+        "n2_unique_operands": 65,
+        "N1_total_operators": 122,
+        "N2_total_operands": 119,
+        "vocabulary": 77,
+        "length": 241,
+        "calculated_length": 434.47,
+        "volume": 1510.3,
+        "difficulty": 10.98,
+        "effort": 16590.02,
+        "time_seconds": 921.67,
+        "bugs_delivered": 0.503
+      },
+      "state_metrics": {
+        "mutable_vars": 5,
+        "immutable_vars": 21,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.1923,
+        "maintainability_index": 37.22
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "userTitle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "releaseDate",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "id",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/flux/models/People.swift": {
+      "halstead": {
+        "loc": 39,
+        "n1_unique_operators": 14,
+        "n2_unique_operands": 34,
+        "N1_total_operators": 73,
+        "N2_total_operands": 59,
+        "vocabulary": 48,
+        "length": 132,
+        "calculated_length": 226.28,
+        "volume": 737.22,
+        "difficulty": 12.15,
+        "effort": 8954.99,
+        "time_seconds": 497.5,
+        "bugs_delivered": 0.246
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 14,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2222,
+        "maintainability_index": 44.94
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "knownForText",
+            "cyclomatic": 2,
+            "cognitive": 1
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 1.0
+      }
+    },
+    "MovieSwift/Shared/flux/models/Review.swift": {
+      "halstead": {
+        "loc": 14,
+        "n1_unique_operators": 3,
+        "n2_unique_operands": 7,
+        "N1_total_operators": 8,
+        "N2_total_operands": 9,
+        "vocabulary": 10,
+        "length": 17,
+        "calculated_length": 24.41,
+        "volume": 56.47,
+        "difficulty": 1.93,
+        "effort": 108.91,
+        "time_seconds": 6.05,
+        "bugs_delivered": 0.019
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 3,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/reducers/AppReducer.swift": {
+      "halstead": {
+        "loc": 15,
+        "n1_unique_operators": 8,
+        "n2_unique_operands": 9,
+        "N1_total_operators": 20,
+        "N2_total_operands": 25,
+        "vocabulary": 17,
+        "length": 45,
+        "calculated_length": 52.53,
+        "volume": 183.94,
+        "difficulty": 11.11,
+        "effort": 2043.73,
+        "time_seconds": 113.54,
+        "bugs_delivered": 0.061
+      },
+      "state_metrics": {
+        "mutable_vars": 1,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 2
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 58.35
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "appStateReducer",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 1.0,
+        "avg_cognitive": 0.0
+      }
+    },
+    "MovieSwift/Shared/flux/reducers/MoviesReducer.swift": {
+      "halstead": {
+        "loc": 151,
+        "n1_unique_operators": 26,
+        "n2_unique_operands": 97,
+        "N1_total_operators": 545,
+        "N2_total_operands": 577,
+        "vocabulary": 123,
+        "length": 1122,
+        "calculated_length": 762.4,
+        "volume": 7789.5,
+        "difficulty": 77.33,
+        "effort": 602361.33,
+        "time_seconds": 33464.52,
+        "bugs_delivered": 2.597
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 56
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 18.63
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "moviesStateReducer",
+            "cyclomatic": 44,
+            "cognitive": 36
+          },
+          {
+            "function": "+=",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "mergeMovies",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 16.33,
+        "avg_cognitive": 13.33
+      }
+    },
+    "MovieSwift/Shared/flux/reducers/PeopleReducer.swift": {
+      "halstead": {
+        "loc": 78,
+        "n1_unique_operators": 24,
+        "n2_unique_operands": 50,
+        "N1_total_operators": 239,
+        "N2_total_operands": 259,
+        "vocabulary": 74,
+        "length": 498,
+        "calculated_length": 392.23,
+        "volume": 3092.31,
+        "difficulty": 62.16,
+        "effort": 192217.85,
+        "time_seconds": 10678.77,
+        "bugs_delivered": 1.031
+      },
+      "state_metrics": {
+        "mutable_vars": 3,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 23
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": 31.46
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "peoplesStateReducer",
+            "cyclomatic": 18,
+            "cognitive": 26
+          },
+          {
+            "function": "mergePeople",
+            "cyclomatic": 3,
+            "cognitive": 3
+          }
+        ],
+        "avg_cyclomatic": 10.5,
+        "avg_cognitive": 14.5
+      }
+    },
+    "MovieSwift/Shared/flux/state/AppState.swift": {
+      "halstead": {
+        "loc": 86,
+        "n1_unique_operators": 29,
+        "n2_unique_operands": 85,
+        "N1_total_operators": 211,
+        "N2_total_operands": 182,
+        "vocabulary": 114,
+        "length": 393,
+        "calculated_length": 685.68,
+        "volume": 2685.33,
+        "difficulty": 31.05,
+        "effort": 83371.47,
+        "time_seconds": 4631.75,
+        "bugs_delivered": 0.895
+      },
+      "state_metrics": {
+        "mutable_vars": 4,
+        "immutable_vars": 10,
+        "observable_state_vars": 0,
+        "state_updates": 5
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.2857,
+        "maintainability_index": 32.04
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "init",
+            "cyclomatic": 4,
+            "cognitive": 4
+          },
+          {
+            "function": "archiveState",
+            "cyclomatic": 6,
+            "cognitive": 3
+          },
+          {
+            "function": "sizeOfArchivedState",
+            "cyclomatic": 2,
+            "cognitive": 1
+          },
+          {
+            "function": "init",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.25,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/Shared/flux/state/MoviesState.swift": {
+      "halstead": {
+        "loc": 34,
+        "n1_unique_operators": 10,
+        "n2_unique_operands": 37,
+        "N1_total_operators": 100,
+        "N2_total_operands": 71,
+        "vocabulary": 47,
+        "length": 171,
+        "calculated_length": 225.97,
+        "volume": 949.83,
+        "difficulty": 9.59,
+        "effort": 9113.28,
+        "time_seconds": 506.29,
+        "bugs_delivered": 0.317
+      },
+      "state_metrics": {
+        "mutable_vars": 20,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/flux/state/PeoplesState.swift": {
+      "halstead": {
+        "loc": 23,
+        "n1_unique_operators": 9,
+        "n2_unique_operands": 16,
+        "N1_total_operators": 43,
+        "N2_total_operands": 32,
+        "vocabulary": 25,
+        "length": 75,
+        "calculated_length": 92.53,
+        "volume": 348.29,
+        "difficulty": 9.0,
+        "effort": 3134.6,
+        "time_seconds": 174.14,
+        "bugs_delivered": 0.116
+      },
+      "state_metrics": {
+        "mutable_vars": 7,
+        "immutable_vars": 0,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 1.0,
+        "maintainability_index": null
+      }
+    },
+    "MovieSwift/Shared/views/MoviePosterImage.swift": {
+      "halstead": {
+        "loc": 31,
+        "n1_unique_operators": 11,
+        "n2_unique_operands": 29,
+        "N1_total_operators": 45,
+        "N2_total_operands": 41,
+        "vocabulary": 40,
+        "length": 86,
+        "calculated_length": 178.94,
+        "volume": 457.69,
+        "difficulty": 7.78,
+        "effort": 3558.9,
+        "time_seconds": 197.72,
+        "bugs_delivered": 0.153
+      },
+      "state_metrics": {
+        "mutable_vars": 2,
+        "immutable_vars": 1,
+        "observable_state_vars": 2,
+        "state_updates": 1
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.6667,
+        "maintainability_index": 48.57
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "body",
+            "cyclomatic": 2,
+            "cognitive": 2
+          }
+        ],
+        "avg_cyclomatic": 2.0,
+        "avg_cognitive": 2.0
+      }
+    },
+    "MovieSwift/Shared/views/modifiers/PosterStyle.swift": {
+      "halstead": {
+        "loc": 43,
+        "n1_unique_operators": 13,
+        "n2_unique_operands": 39,
+        "N1_total_operators": 85,
+        "N2_total_operands": 74,
+        "vocabulary": 52,
+        "length": 159,
+        "calculated_length": 254.24,
+        "volume": 906.37,
+        "difficulty": 12.33,
+        "effort": 11178.56,
+        "time_seconds": 621.03,
+        "bugs_delivered": 0.302
+      },
+      "state_metrics": {
+        "mutable_vars": 0,
+        "immutable_vars": 2,
+        "observable_state_vars": 0,
+        "state_updates": 0
+      },
+      "derived": {
+        "mutable_variable_ratio": 0.0,
+        "maintainability_index": 42.05
+      },
+      "swift_complexity": {
+        "functions": [
+          {
+            "function": "width",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "height",
+            "cyclomatic": 5,
+            "cognitive": 1
+          },
+          {
+            "function": "body",
+            "cyclomatic": 1,
+            "cognitive": 0
+          },
+          {
+            "function": "posterStyle",
+            "cyclomatic": 1,
+            "cognitive": 0
+          }
+        ],
+        "avg_cyclomatic": 3.0,
+        "avg_cognitive": 0.5
+      }
+    }
+  }
+}
