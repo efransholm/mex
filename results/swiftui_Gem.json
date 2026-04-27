@@ -277,9 +277,18 @@
     "GemPriceWidget/Views/WidgetErrorView.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
+    "bugs": 0,
+    "complexity": 1220,
+    "code_smells": 2,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 435,
+    "functions": 593,
+    "classes": 57,
+    "ncloc": 20538,
+    "files": 270,
     "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "comment_lines_density": 2.1,
+    "lines": 24160
   },
   "files": {
     "Features/Assets/Sources/Scenes/AddAssetScene.swift": {
@@ -363,6 +372,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 2.5,
+        "complexity": 33,
+        "functions": 7,
+        "lines": 177,
+        "ncloc": 154
       }
     },
     "Features/Assets/Sources/Scenes/AssetScene.swift": {
@@ -416,6 +434,15 @@
         ],
         "avg_cyclomatic": 4.5,
         "avg_cognitive": 5.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.0,
+        "complexity": 36,
+        "functions": 0,
+        "lines": 227,
+        "ncloc": 202
       }
     },
     "Features/Assets/Sources/Scenes/AssetsFilterScene.swift": {
@@ -479,6 +506,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 93,
+        "ncloc": 78
       }
     },
     "Features/Assets/Sources/Scenes/NetworkSelectorScene.swift": {
@@ -522,6 +558,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 6.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 40,
+        "ncloc": 30
       }
     },
     "Features/Assets/Sources/Scenes/SelectAssetScene.swift": {
@@ -575,6 +620,15 @@
         ],
         "avg_cyclomatic": 4.25,
         "avg_cognitive": 2.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 38,
+        "functions": 1,
+        "lines": 170,
+        "ncloc": 158
       }
     },
     "Features/Assets/Sources/ViewModels/AddAssetSceneViewModel.swift": {
@@ -683,6 +737,15 @@
         ],
         "avg_cyclomatic": 1.13,
         "avg_cognitive": 0.13
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.8,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 88,
+        "ncloc": 70
       }
     },
     "Features/Assets/Sources/ViewModels/AssetHeaderViewModel.swift": {
@@ -746,6 +809,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 53,
+        "ncloc": 43
       }
     },
     "Features/Assets/Sources/ViewModels/AssetSceneViewModel.swift": {
@@ -1169,6 +1241,15 @@
         ],
         "avg_cyclomatic": 1.58,
         "avg_cognitive": 0.35
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 1.2,
+        "complexity": 0,
+        "functions": 24,
+        "lines": 490,
+        "ncloc": 416
       }
     },
     "Features/Assets/Sources/ViewModels/AssetsFilterViewModel.swift": {
@@ -1257,6 +1338,15 @@
         ],
         "avg_cyclomatic": 2.82,
         "avg_cognitive": 0.91
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.4,
+        "complexity": 22,
+        "functions": 0,
+        "lines": 100,
+        "ncloc": 81
       }
     },
     "Features/Assets/Sources/ViewModels/SelectAssetViewModel.swift": {
@@ -1495,6 +1585,15 @@
         ],
         "avg_cyclomatic": 2.39,
         "avg_cognitive": 0.76
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 1.4,
+        "complexity": 0,
+        "functions": 17,
+        "lines": 399,
+        "ncloc": 341
       }
     },
     "Features/Assets/Sources/Views/ListAssetItemSelectionView.swift": {
@@ -1538,6 +1637,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 43,
+        "ncloc": 37
       }
     },
     "Features/Contacts/Sources/Scenes/ChainSelectorScene.swift": {
@@ -1581,6 +1689,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 29
       }
     },
     "Features/Contacts/Sources/Scenes/ChainSelectorView.swift": {
@@ -1619,6 +1736,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 16
       }
     },
     "Features/Contacts/Sources/Scenes/ContactsNavigationView.swift": {
@@ -1667,6 +1793,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 7,
+        "functions": 1,
+        "lines": 55,
+        "ncloc": 47
       }
     },
     "Features/Contacts/Sources/Scenes/ContactsScene.swift": {
@@ -1710,6 +1845,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 31
       }
     },
     "Features/Contacts/Sources/Scenes/ManageContactAddressScene.swift": {
@@ -1778,6 +1922,15 @@
         ],
         "avg_cyclomatic": 1.14,
         "avg_cognitive": 0.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 3.2,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 109,
+        "ncloc": 91
       }
     },
     "Features/Contacts/Sources/Scenes/ManageContactScene.swift": {
@@ -1846,6 +1999,15 @@
         ],
         "avg_cyclomatic": 1.14,
         "avg_cognitive": 0.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 2.7,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 128,
+        "ncloc": 107
       }
     },
     "Features/Contacts/Sources/ViewModels/ManageContactAddressViewModel.swift": {
@@ -1954,6 +2116,15 @@
         ],
         "avg_cyclomatic": 1.4,
         "avg_cognitive": 0.27
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.0,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 119,
+        "ncloc": 98
       }
     },
     "Features/Contacts/Sources/ViewModels/ManageContactViewModel.swift": {
@@ -2062,6 +2233,15 @@
         ],
         "avg_cyclomatic": 1.73,
         "avg_cognitive": 0.53
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 0.9,
+        "complexity": 2,
+        "functions": 4,
+        "lines": 132,
+        "ncloc": 111
       }
     },
     "Features/EventPresenterService/Sources/Presenters/ToastEventPresenter.swift": {
@@ -2105,6 +2285,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 7.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 13
       }
     },
     "Features/FiatConnect/Sources/Navigation/FiatConnectNavigationView.swift": {
@@ -2148,6 +2337,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 57,
+        "ncloc": 51
       }
     },
     "Features/FiatConnect/Sources/Scenes/FiatScene.swift": {
@@ -2201,6 +2399,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.9,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 115,
+        "ncloc": 106
       }
     },
     "Features/FiatConnect/Sources/Scenes/FiatTransactionsScene.swift": {
@@ -2244,6 +2451,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 12,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 48
       }
     },
     "Features/FiatConnect/Sources/Types/FiatCurrencyInputConfig.swift": {
@@ -2297,6 +2513,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.5,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 28,
+        "ncloc": 21
       }
     },
     "Features/FiatConnect/Sources/ViewModels/FiatOperationViewModel.swift": {
@@ -2385,6 +2610,15 @@
         ],
         "avg_cyclomatic": 2.36,
         "avg_cognitive": 1.45
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 0.8,
+        "complexity": 0,
+        "functions": 6,
+        "lines": 155,
+        "ncloc": 130
       }
     },
     "Features/FiatConnect/Sources/ViewModels/FiatQuoteViewModel.swift": {
@@ -2488,6 +2722,15 @@
         ],
         "avg_cyclomatic": 1.21,
         "avg_cognitive": 0.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 3.8,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 101,
+        "ncloc": 77
       }
     },
     "Features/FiatConnect/Sources/ViewModels/FiatSceneViewModel.swift": {
@@ -2726,6 +2969,15 @@
         ],
         "avg_cyclomatic": 1.49,
         "avg_cognitive": 0.34
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.3,
+        "complexity": 0,
+        "functions": 14,
+        "lines": 279,
+        "ncloc": 231
       }
     },
     "Features/FiatConnect/Sources/Views/FiatTypeToolbar.swift": {
@@ -2769,6 +3021,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.5,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 27,
+        "ncloc": 21
       }
     },
     "Features/FiatConnect/Sources/Views/RandomOverlayView.swift": {
@@ -2812,6 +3073,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 27
       }
     },
     "Features/InAppNotifications/Sources/Scenes/InAppNotificationsScene.swift": {
@@ -2860,6 +3130,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 42
       }
     },
     "Features/InAppNotifications/Sources/ViewModels/InAppNotificationsViewModel.swift": {
@@ -2938,6 +3217,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 3.2,
+        "complexity": 2,
+        "functions": 3,
+        "lines": 75,
+        "ncloc": 60
       }
     },
     "Features/InfoSheet/Sources/Factory/InfoSheetModelFactory.swift": {
@@ -2976,6 +3264,15 @@
         ],
         "avg_cyclomatic": 29.0,
         "avg_cognitive": 4.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.5,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 219,
+        "ncloc": 214
       }
     },
     "Features/InfoSheet/Sources/Scenes/InfoSheetScene.swift": {
@@ -3039,6 +3336,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.0,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 79,
+        "ncloc": 65
       }
     },
     "Features/InfoSheet/Sources/Types/InfoSheetModel.swift": {
@@ -3087,6 +3393,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 53,
+        "ncloc": 43
       }
     },
     "Features/InfoSheet/Sources/Types/InfoSheetType.swift": {
@@ -3130,6 +3445,15 @@
         ],
         "avg_cyclomatic": 14.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 8.9,
+        "complexity": 28,
+        "functions": 1,
+        "lines": 84,
+        "ncloc": 72
       }
     },
     "Features/InfoSheet/Sources/Views/InfoSheetView.swift": {
@@ -3173,6 +3497,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 44,
+        "ncloc": 37
       }
     },
     "Features/LockManager/Sources/LockWindowManager.swift": {
@@ -3251,6 +3584,15 @@
         ],
         "avg_cyclomatic": 1.56,
         "avg_cognitive": 0.56
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 3.5,
+        "complexity": 12,
+        "functions": 6,
+        "lines": 71,
+        "ncloc": 55
       }
     },
     "Features/LockManager/Sources/Protocols/LockWindowManageable.swift": {
@@ -3278,6 +3620,15 @@
       "derived": {
         "mutable_variable_ratio": null,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 8.3,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 17,
+        "ncloc": 11
       }
     },
     "Features/LockManager/Sources/Scenes/LockScreenScene.swift": {
@@ -3336,6 +3687,15 @@
         ],
         "avg_cyclomatic": 1.8,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 5.9,
+        "complexity": 13,
+        "functions": 1,
+        "lines": 80,
+        "ncloc": 64
       }
     },
     "Features/LockManager/Sources/ViewModels/LockSceneViewModel.swift": {
@@ -3439,6 +3799,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.3,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 104,
+        "ncloc": 85
       }
     },
     "Features/LockManager/Sources/ViewModifier/LockWindowManagerViewModifier.swift": {
@@ -3487,6 +3856,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 32,
+        "ncloc": 25
       }
     },
     "Features/ManageWallets/Sources/Scenes/WalletDetailScene.swift": {
@@ -3530,6 +3908,15 @@
         ],
         "avg_cyclomatic": 4.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 128,
+        "ncloc": 120
       }
     },
     "Features/ManageWallets/Sources/Scenes/WalletsScene.swift": {
@@ -3573,6 +3960,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 97,
+        "ncloc": 87
       }
     },
     "Features/ManageWallets/Sources/ViewModels/WalletIDetailViewModel.swift": {
@@ -3691,6 +4087,15 @@
         ],
         "avg_cyclomatic": 1.41,
         "avg_cognitive": 0.35
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 1.5,
+        "complexity": 0,
+        "functions": 12,
+        "lines": 156,
+        "ncloc": 131
       }
     },
     "Features/ManageWallets/Sources/ViewModels/WalletsSceneViewModel.swift": {
@@ -3819,6 +4224,15 @@
         ],
         "avg_cyclomatic": 1.89,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 2.4,
+        "complexity": 2,
+        "functions": 15,
+        "lines": 191,
+        "ncloc": 160
       }
     },
     "Features/ManageWallets/Sources/Views/WalletListItemView.swift": {
@@ -3862,6 +4276,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 3.3,
+        "complexity": 13,
+        "functions": 0,
+        "lines": 101,
+        "ncloc": 87
       }
     },
     "Features/MarketInsight/Sources/Scenes/ChartScene.swift": {
@@ -3915,6 +4338,15 @@
         ],
         "avg_cyclomatic": 2.75,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.2,
+        "complexity": 18,
+        "functions": 2,
+        "lines": 90,
+        "ncloc": 80
       }
     },
     "Features/MarketInsight/Sources/Scenes/MarketsScene.swift": {
@@ -3958,6 +4390,15 @@
         ],
         "avg_cyclomatic": 3.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 46,
+        "ncloc": 41
       }
     },
     "Features/MarketInsight/Sources/ViewModels/ChartSceneViewModel.swift": {
@@ -4041,6 +4482,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.1,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 113,
+        "ncloc": 93
       }
     },
     "Features/MarketInsight/Sources/ViewModels/MarketValueViewModel.swift": {
@@ -4084,6 +4534,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 42
       }
     },
     "Features/NFT/Sources/Protocols/CollectionsViewable.swift": {
@@ -4152,6 +4611,15 @@
         ],
         "avg_cyclomatic": 1.29,
         "avg_cognitive": 0.29
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 0,
+        "functions": 8,
+        "lines": 79,
+        "ncloc": 64
       }
     },
     "Features/NFT/Sources/Scenes/CollectibleScene.swift": {
@@ -4225,6 +4693,15 @@
         ],
         "avg_cyclomatic": 1.88,
         "avg_cognitive": 0.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.6,
+        "complexity": 22,
+        "functions": 1,
+        "lines": 137,
+        "ncloc": 121
       }
     },
     "Features/NFT/Sources/Scenes/CollectionsScene.swift": {
@@ -4273,6 +4750,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.2,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 72,
+        "ncloc": 61
       }
     },
     "Features/NFT/Sources/Scenes/ReportNavigationStack.swift": {
@@ -4316,6 +4802,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.0,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 19
       }
     },
     "Features/NFT/Sources/Scenes/ReportSelectReasonScene.swift": {
@@ -4359,6 +4854,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.2,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 23
       }
     },
     "Features/NFT/Sources/ViewModels/CollectibleViewModel.swift": {
@@ -4582,6 +5086,15 @@
         ],
         "avg_cyclomatic": 1.42,
         "avg_cognitive": 0.37
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.1,
+        "complexity": 5,
+        "functions": 11,
+        "lines": 307,
+        "ncloc": 261
       }
     },
     "Features/NFT/Sources/ViewModels/CollectionViewModel.swift": {
@@ -4635,6 +5148,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 3.0,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 43,
+        "ncloc": 32
       }
     },
     "Features/NFT/Sources/ViewModels/CollectionsViewModel.swift": {
@@ -4708,6 +5230,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 5.0,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 75,
+        "ncloc": 57
       }
     },
     "Features/NFT/Sources/ViewModels/UnverifiedCollectionsViewModel.swift": {
@@ -4761,6 +5292,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 4.2,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 23
       }
     },
     "Features/Onboarding/Sources/Navigation/CreateWalletNavigationStack.swift": {
@@ -4829,6 +5369,15 @@
         ],
         "avg_cyclomatic": 2.14,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.8,
+        "complexity": 20,
+        "functions": 3,
+        "lines": 125,
+        "ncloc": 110
       }
     },
     "Features/Onboarding/Sources/Navigation/ExportWalletNavigationStack.swift": {
@@ -4877,6 +5426,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 10,
+        "functions": 1,
+        "lines": 60,
+        "ncloc": 51
       }
     },
     "Features/Onboarding/Sources/Navigation/ImportWalletNavigationStack.swift": {
@@ -4945,6 +5503,15 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 0.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 14,
+        "functions": 3,
+        "lines": 92,
+        "ncloc": 79
       }
     },
     "Features/Onboarding/Sources/Scenes/AcceptTermsScene.swift": {
@@ -4988,6 +5555,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 47,
+        "ncloc": 40
       }
     },
     "Features/Onboarding/Sources/Scenes/ImportWalletScene.swift": {
@@ -5031,6 +5607,15 @@
         ],
         "avg_cyclomatic": 3.5,
         "avg_cognitive": 2.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.9,
+        "complexity": 19,
+        "functions": 0,
+        "lines": 120,
+        "ncloc": 110
       }
     },
     "Features/Onboarding/Sources/Scenes/ImportWalletTypeScene.swift": {
@@ -5074,6 +5659,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 57,
+        "ncloc": 49
       }
     },
     "Features/Onboarding/Sources/Scenes/OnboardingScene.swift": {
@@ -5117,6 +5711,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 44,
+        "ncloc": 38
       }
     },
     "Features/Onboarding/Sources/Scenes/SecurityReminderScene.swift": {
@@ -5160,6 +5763,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 47
       }
     },
     "Features/Onboarding/Sources/Scenes/SetupWalletScene.swift": {
@@ -5208,6 +5820,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.3,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 68,
+        "ncloc": 58
       }
     },
     "Features/Onboarding/Sources/Scenes/ShowSecretDataScene.swift": {
@@ -5256,6 +5877,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 63,
+        "ncloc": 53
       }
     },
     "Features/Onboarding/Sources/Scenes/VerifyPhraseWalletScene.swift": {
@@ -5299,6 +5929,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 74,
+        "ncloc": 64
       }
     },
     "Features/Onboarding/Sources/Types/ListItemStyle+Extension.swift": {
@@ -5337,6 +5976,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 7.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 17,
+        "ncloc": 13
       }
     },
     "Features/Onboarding/Sources/Types/WalletImportType.swift": {
@@ -5395,6 +6043,15 @@
         ],
         "avg_cyclomatic": 2.6,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.7,
+        "complexity": 9,
+        "functions": 1,
+        "lines": 45,
+        "ncloc": 36
       }
     },
     "Features/Onboarding/Sources/ViewModels/CreateWalletModel.swift": {
@@ -5458,6 +6115,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 3.8,
+        "complexity": 2,
+        "functions": 4,
+        "lines": 65,
+        "ncloc": 51
       }
     },
     "Features/Onboarding/Sources/ViewModels/ImportWalletSceneViewModel.swift": {
@@ -5606,6 +6272,15 @@
         ],
         "avg_cyclomatic": 2.43,
         "avg_cognitive": 1.17
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 1.0,
+        "complexity": 0,
+        "functions": 11,
+        "lines": 233,
+        "ncloc": 202
       }
     },
     "Features/Onboarding/Sources/ViewModels/ImportWalletTypeViewModel.swift": {
@@ -5674,6 +6349,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 7.7,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 51,
+        "ncloc": 36
       }
     },
     "Features/Onboarding/Sources/ViewModels/ImportWalletViewModel.swift": {
@@ -5722,6 +6406,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 5.4,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 46,
+        "ncloc": 35
       }
     },
     "Features/Onboarding/Sources/ViewModels/NewSecretPhraseViewModel.swift": {
@@ -5785,6 +6478,15 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 46,
+        "ncloc": 38
       }
     },
     "Features/Onboarding/Sources/ViewModels/VerifyPhraseViewModel.swift": {
@@ -5863,6 +6565,15 @@
         ],
         "avg_cyclomatic": 1.22,
         "avg_cognitive": 0.22
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 3.9,
+        "complexity": 7,
+        "functions": 3,
+        "lines": 91,
+        "ncloc": 73
       }
     },
     "Features/Onboarding/Sources/Views/WordSuggestionView.swift": {
@@ -5906,6 +6617,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 25
       }
     },
     "Features/Onboarding/Sources/WalletAvatar/Scenes/WalletImageScene.swift": {
@@ -5984,6 +6704,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.7,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 131,
+        "ncloc": 115
       }
     },
     "Features/Onboarding/Sources/WalletAvatar/ViewModels/WalletImageViewModel.swift": {
@@ -6077,6 +6806,15 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.58
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 2.1,
+        "complexity": 10,
+        "functions": 7,
+        "lines": 171,
+        "ncloc": 138
       }
     },
     "Features/Onboarding/Sources/WalletAvatar/Views/AvatarView.swift": {
@@ -6120,6 +6858,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 36,
+        "ncloc": 29
       }
     },
     "Features/Perpetuals/Sources/Navigation/PerpetualsNavigationView.swift": {
@@ -6163,6 +6910,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 33
       }
     },
     "Features/Perpetuals/Sources/Scenes/AutocloseScene.swift": {
@@ -6206,6 +6962,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.7,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 66,
+        "ncloc": 57
       }
     },
     "Features/Perpetuals/Sources/Scenes/PerpetualPortfolioScene.swift": {
@@ -6249,6 +7014,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 46,
+        "ncloc": 40
       }
     },
     "Features/Perpetuals/Sources/Scenes/PerpetualScene.swift": {
@@ -6292,6 +7066,15 @@
         ],
         "avg_cyclomatic": 4.5,
         "avg_cognitive": 2.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 157,
+        "ncloc": 137
       }
     },
     "Features/Perpetuals/Sources/Scenes/PerpetualsScene.swift": {
@@ -6340,6 +7123,15 @@
         ],
         "avg_cyclomatic": 2.67,
         "avg_cognitive": 1.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.7,
+        "complexity": 8,
+        "functions": 0,
+        "lines": 154,
+        "ncloc": 143
       }
     },
     "Features/Perpetuals/Sources/Types/ChartGridStyle.swift": {
@@ -6367,6 +7159,15 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 10.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 9
       }
     },
     "Features/Perpetuals/Sources/ViewModels/AutocloseSceneViewModel.swift": {
@@ -6515,6 +7316,15 @@
         ],
         "avg_cyclomatic": 1.96,
         "avg_cognitive": 0.61
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.7,
+        "complexity": 0,
+        "functions": 6,
+        "lines": 206,
+        "ncloc": 170
       }
     },
     "Features/Perpetuals/Sources/ViewModels/AutocloseViewModel.swift": {
@@ -6588,6 +7398,15 @@
         ],
         "avg_cyclomatic": 2.12,
         "avg_cognitive": 0.62
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 81,
+        "ncloc": 67
       }
     },
     "Features/Perpetuals/Sources/ViewModels/CandleTooltipViewModel.swift": {
@@ -6656,6 +7475,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 66,
+        "ncloc": 54
       }
     },
     "Features/Perpetuals/Sources/ViewModels/ChartLineViewModel.swift": {
@@ -6714,6 +7542,15 @@
         ],
         "avg_cyclomatic": 2.6,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 40,
+        "ncloc": 32
       }
     },
     "Features/Perpetuals/Sources/ViewModels/OpenPositionItemViewModel.swift": {
@@ -6787,6 +7624,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 61,
+        "ncloc": 49
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualItemViewModel.swift": {
@@ -6850,6 +7696,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 45
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualPositionItemViewModel.swift": {
@@ -6918,6 +7773,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 43
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualPositionViewModel.swift": {
@@ -7081,6 +7945,15 @@
         ],
         "avg_cyclomatic": 1.12,
         "avg_cognitive": 0.08
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.7,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 142,
+        "ncloc": 116
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualSceneViewModel.swift": {
@@ -7359,6 +8232,15 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 0.41
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 0.9,
+        "complexity": 0,
+        "functions": 27,
+        "lines": 385,
+        "ncloc": 323
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualViewModel.swift": {
@@ -7437,6 +8319,15 @@
         ],
         "avg_cyclomatic": 1.11,
         "avg_cognitive": 0.22
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.8,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 67,
+        "ncloc": 54
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualsHeaderViewModel.swift": {
@@ -7510,6 +8401,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 49,
+        "ncloc": 41
       }
     },
     "Features/Perpetuals/Sources/ViewModels/PerpetualsSceneViewModel.swift": {
@@ -7703,6 +8603,15 @@
         ],
         "avg_cyclomatic": 1.38,
         "avg_cognitive": 0.28
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 1.3,
+        "complexity": 0,
+        "functions": 13,
+        "lines": 185,
+        "ncloc": 154
       }
     },
     "Features/Perpetuals/Sources/Views/AutocloseInputSection.swift": {
@@ -7746,6 +8655,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 51,
+        "ncloc": 45
       }
     },
     "Features/Perpetuals/Sources/Views/AutocloseSheet.swift": {
@@ -7789,6 +8707,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.6,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 17
       }
     },
     "Features/Perpetuals/Sources/Views/CandleTooltipView.swift": {
@@ -7827,6 +8754,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.4,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 28
       }
     },
     "Features/Perpetuals/Sources/Views/CandlestickChartView.swift": {
@@ -7940,6 +8876,15 @@
         ],
         "avg_cyclomatic": 2.12,
         "avg_cognitive": 1.38
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 0.8,
+        "complexity": 0,
+        "functions": 7,
+        "lines": 285,
+        "ncloc": 252
       }
     },
     "Features/Perpetuals/Sources/Views/PerpetualListItem.swift": {
@@ -7983,6 +8928,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 52,
+        "ncloc": 46
       }
     },
     "Features/Perpetuals/Sources/Views/PerpetualPositionsList.swift": {
@@ -8031,6 +8985,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.7,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 43,
+        "ncloc": 36
       }
     },
     "Features/Perpetuals/Sources/Views/PerpetualSectionView.swift": {
@@ -8074,6 +9037,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 33
       }
     },
     "Features/PriceAlerts/Sources/Navigation/SetPriceAlertNavigationStack.swift": {
@@ -8117,6 +9089,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 6.3,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 21,
+        "ncloc": 15
       }
     },
     "Features/PriceAlerts/Sources/Scenes/AssetPriceAlertsScene.swift": {
@@ -8175,6 +9156,15 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 8,
+        "functions": 2,
+        "lines": 89,
+        "ncloc": 77
       }
     },
     "Features/PriceAlerts/Sources/Scenes/PriceAlertsScene.swift": {
@@ -8238,6 +9228,15 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 3.8,
+        "complexity": 6,
+        "functions": 3,
+        "lines": 91,
+        "ncloc": 76
       }
     },
     "Features/PriceAlerts/Sources/Scenes/SetPriceAlertScene.swift": {
@@ -8316,6 +9315,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 2.9,
+        "complexity": 17,
+        "functions": 4,
+        "lines": 118,
+        "ncloc": 99
       }
     },
     "Features/PriceAlerts/Sources/Types/SetPriceAlertCurrencyInputConfig.swift": {
@@ -8384,6 +9392,15 @@
         ],
         "avg_cyclomatic": 2.43,
         "avg_cognitive": 0.86
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 64,
+        "ncloc": 53
       }
     },
     "Features/PriceAlerts/Sources/ViewModels/AssetPriceAlertsViewModel.swift": {
@@ -8472,6 +9489,15 @@
         ],
         "avg_cyclomatic": 1.45,
         "avg_cognitive": 0.45
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.1,
+        "complexity": 4,
+        "functions": 5,
+        "lines": 113,
+        "ncloc": 95
       }
     },
     "Features/PriceAlerts/Sources/ViewModels/PriceAlertItemViewModel.swift": {
@@ -8570,6 +9596,15 @@
         ],
         "avg_cyclomatic": 2.31,
         "avg_cognitive": 0.46
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.4,
+        "complexity": 17,
+        "functions": 0,
+        "lines": 99,
+        "ncloc": 82
       }
     },
     "Features/PriceAlerts/Sources/ViewModels/PriceAlertsSceneViewModel.swift": {
@@ -8673,6 +9708,15 @@
         ],
         "avg_cyclomatic": 1.57,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.2,
+        "complexity": 5,
+        "functions": 7,
+        "lines": 110,
+        "ncloc": 91
       }
     },
     "Features/QRScanner/Sources/Navigation/ScanQRCodeNavigationStack.swift": {
@@ -8726,6 +9770,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 4.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 44
       }
     },
     "Features/QRScanner/Sources/QRImageDecoder.swift": {
@@ -8769,6 +9822,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.0,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 24,
+        "ncloc": 19
       }
     },
     "Features/QRScanner/Sources/QRScannerScene.swift": {
@@ -8837,6 +9899,15 @@
         ],
         "avg_cyclomatic": 2.57,
         "avg_cognitive": 1.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.8,
+        "complexity": 0,
+        "functions": 5,
+        "lines": 126,
+        "ncloc": 110
       }
     },
     "Features/QRScanner/Sources/Types/ImageState.swift": {
@@ -8875,6 +9946,15 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.3,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 23,
+        "ncloc": 18
       }
     },
     "Features/QRScanner/Sources/Types/QRScannerDisplayConfiguration.swift": {
@@ -8913,6 +9993,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 47,
+        "ncloc": 38
       }
     },
     "Features/QRScanner/Sources/ViewModels/QRScannerSceneViewModel.swift": {
@@ -8986,6 +10075,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.12
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 4.5,
+        "complexity": 8,
+        "functions": 5,
+        "lines": 78,
+        "ncloc": 63
       }
     },
     "Features/QRScanner/Sources/Views/CornerBracketsShape.swift": {
@@ -9024,6 +10122,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 5,
+        "comment_lines_density": 6.3,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 91,
+        "ncloc": 74
       }
     },
     "Features/QRScanner/Sources/Views/CornerBracketsView.swift": {
@@ -9062,6 +10169,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 35
       }
     },
     "Features/QRScanner/Sources/Views/QRScannerDisplayView.swift": {
@@ -9110,6 +10226,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.8,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 67,
+        "ncloc": 55
       }
     },
     "Features/QRScanner/Sources/Views/QRScannerViewWrapper.swift": {
@@ -9193,6 +10318,15 @@
         ],
         "avg_cyclomatic": 1.7,
         "avg_cognitive": 0.8
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 4.8,
+        "complexity": 14,
+        "functions": 8,
+        "lines": 103,
+        "ncloc": 79
       }
     },
     "Features/Recents/Sources/Scenes/RecentsScene.swift": {
@@ -9236,6 +10370,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 14,
+        "functions": 0,
+        "lines": 71,
+        "ncloc": 64
       }
     },
     "Features/Recents/Sources/Views/RecentActivitySectionView.swift": {
@@ -9279,6 +10422,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.8,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 35
       }
     },
     "Features/Settings/Sources/ChainSettings/Scenes/AddNodeScene.swift": {
@@ -9372,6 +10524,15 @@
         ],
         "avg_cyclomatic": 1.42,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 2.2,
+        "complexity": 0,
+        "functions": 6,
+        "lines": 153,
+        "ncloc": 131
       }
     },
     "Features/Settings/Sources/ChainSettings/Scenes/ChainListSettingsScene.swift": {
@@ -9415,6 +10576,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 29
       }
     },
     "Features/Settings/Sources/ChainSettings/Scenes/ChainSettingsScene.swift": {
@@ -9458,6 +10628,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.0,
+        "complexity": 10,
+        "functions": 0,
+        "lines": 106,
+        "ncloc": 99
       }
     },
     "Features/Settings/Sources/ChainSettings/ViewModels/AddNodeSceneViewModel.swift": {
@@ -9551,6 +10730,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 8,
+        "comment_lines_density": 7.5,
+        "complexity": 7,
+        "functions": 5,
+        "lines": 128,
+        "ncloc": 99
       }
     },
     "Features/Settings/Sources/ChainSettings/ViewModels/LatencyViewModel.swift": {
@@ -9609,6 +10797,15 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.6,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 36,
+        "ncloc": 27
       }
     },
     "Features/Settings/Sources/ChainSettings/ViewModels/NodeStatusStateViewModel.swift": {
@@ -9662,6 +10859,15 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 52,
+        "ncloc": 44
       }
     },
     "Features/Settings/Sources/Currency/Scenes/CurrencyScene.swift": {
@@ -9705,6 +10911,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 31
       }
     },
     "Features/Settings/Sources/Settings/Scenes/AboutUsScene.swift": {
@@ -9748,6 +10963,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 57,
+        "ncloc": 49
       }
     },
     "Features/Settings/Sources/Settings/Scenes/AppIconScene.swift": {
@@ -9791,6 +11015,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 26
       }
     },
     "Features/Settings/Sources/Settings/Scenes/DeveloperScene.swift": {
@@ -9834,6 +11067,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.8,
+        "complexity": 12,
+        "functions": 0,
+        "lines": 128,
+        "ncloc": 117
       }
     },
     "Features/Settings/Sources/Settings/Scenes/NotificationsScene.swift": {
@@ -9877,6 +11119,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 30,
+        "ncloc": 24
       }
     },
     "Features/Settings/Sources/Settings/Scenes/PreferencesScene.swift": {
@@ -9925,6 +11176,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.3,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 98,
+        "ncloc": 84
       }
     },
     "Features/Settings/Sources/Settings/Scenes/RewardsScene.swift": {
@@ -10003,6 +11263,15 @@
         ],
         "avg_cyclomatic": 3.44,
         "avg_cognitive": 2.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.4,
+        "complexity": 10,
+        "functions": 6,
+        "lines": 273,
+        "ncloc": 254
       }
     },
     "Features/Settings/Sources/Settings/Scenes/SecurityScene.swift": {
@@ -10056,6 +11325,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.7,
+        "complexity": 9,
+        "functions": 2,
+        "lines": 66,
+        "ncloc": 52
       }
     },
     "Features/Settings/Sources/Settings/Scenes/SettingsScene.swift": {
@@ -10139,6 +11417,15 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 1.9,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 181,
+        "ncloc": 155
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/AboutUsViewModel.swift": {
@@ -10267,6 +11554,15 @@
         ],
         "avg_cyclomatic": 1.05,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 1.4,
+        "complexity": 2,
+        "functions": 3,
+        "lines": 88,
+        "ncloc": 72
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/AppIconSceneViewModel.swift": {
@@ -10330,6 +11626,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 33,
+        "ncloc": 26
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/AppIconViewModel.swift": {
@@ -10383,6 +11688,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 25
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/DeveloperViewModel.swift": {
@@ -10531,6 +11845,15 @@
         ],
         "avg_cyclomatic": 1.13,
         "avg_cognitive": 0.13
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.0,
+        "complexity": 30,
+        "functions": 19,
+        "lines": 324,
+        "ncloc": 291
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/PreferencesViewModel.swift": {
@@ -10679,6 +12002,15 @@
         ],
         "avg_cyclomatic": 1.04,
         "avg_cognitive": 0.04
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 3.3,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 74,
+        "ncloc": 58
       }
     },
     "Features/Settings/Sources/Settings/ViewModels/SettingsViewModel.swift": {
@@ -10872,6 +12204,15 @@
         ],
         "avg_cyclomatic": 1.03,
         "avg_cognitive": 0.03
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 95,
+        "ncloc": 75
       }
     },
     "Features/Settings/Sources/Settings/Views/AppIconView.swift": {
@@ -10910,6 +12251,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.6,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 27
       }
     },
     "Features/Stake/Sources/Scenes/DelegationScene.swift": {
@@ -10953,6 +12303,15 @@
         ],
         "avg_cyclomatic": 3.5,
         "avg_cognitive": 3.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 14,
+        "functions": 0,
+        "lines": 76,
+        "ncloc": 64
       }
     },
     "Features/Stake/Sources/Scenes/EarnScene.swift": {
@@ -10996,6 +12355,15 @@
         ],
         "avg_cyclomatic": 4.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.5,
+        "complexity": 16,
+        "functions": 0,
+        "lines": 73,
+        "ncloc": 64
       }
     },
     "Features/Stake/Sources/Scenes/StakeScene.swift": {
@@ -11064,6 +12432,15 @@
         ],
         "avg_cyclomatic": 2.57,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.8,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 128,
+        "ncloc": 112
       }
     },
     "Features/Stake/Sources/Scenes/ValidatorSelectScene.swift": {
@@ -11107,6 +12484,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 30
       }
     },
     "Features/Stake/Sources/ViewModels/DelegationSceneViewModel.swift": {
@@ -11245,6 +12631,15 @@
         ],
         "avg_cyclomatic": 2.76,
         "avg_cognitive": 1.05
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 1.8,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 186,
+        "ncloc": 160
       }
     },
     "Features/Stake/Sources/ViewModels/DelegationStateViewModel.swift": {
@@ -11298,6 +12693,15 @@
         ],
         "avg_cyclomatic": 3.25,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.9,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 42,
+        "ncloc": 33
       }
     },
     "Features/Stake/Sources/ViewModels/DelegationViewModel.swift": {
@@ -11441,6 +12845,15 @@
         ],
         "avg_cyclomatic": 1.32,
         "avg_cognitive": 0.36
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.7,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 143,
+        "ncloc": 119
       }
     },
     "Features/Stake/Sources/ViewModels/StakeSceneViewModel.swift": {
@@ -11694,6 +13107,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.14
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.4,
+        "complexity": 0,
+        "functions": 5,
+        "lines": 265,
+        "ncloc": 215
       }
     },
     "Features/Stake/Sources/ViewModels/ValidatorViewModel.swift": {
@@ -11762,6 +13184,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 1.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 14,
+        "functions": 0,
+        "lines": 86,
+        "ncloc": 74
       }
     },
     "Features/Stake/Sources/Views/DelegationView.swift": {
@@ -11805,6 +13236,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 30,
+        "ncloc": 23
       }
     },
     "Features/Stake/Sources/Views/ValidatorImageView.swift": {
@@ -11848,6 +13288,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 25
       }
     },
     "Features/Stake/Sources/Views/ValidatorSelectionView.swift": {
@@ -11891,6 +13340,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.8,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 42,
+        "ncloc": 35
       }
     },
     "Features/Stake/Sources/Views/ValidatorView.swift": {
@@ -11934,6 +13392,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.3,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 18
       }
     },
     "Features/Support/Sources/Scenes/ChatwootWebScene.swift": {
@@ -11977,6 +13444,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.9,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 16
       }
     },
     "Features/Support/Sources/Scenes/SupportScene.swift": {
@@ -12025,6 +13501,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 53,
+        "ncloc": 46
       }
     },
     "Features/Support/Sources/Scenes/WebViewScene.swift": {
@@ -12068,6 +13553,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.9,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 22,
+        "ncloc": 16
       }
     },
     "Features/Support/Sources/ViewModels/ChatwootWebViewModel.swift": {
@@ -12166,6 +13660,15 @@
         ],
         "avg_cyclomatic": 1.38,
         "avg_cognitive": 0.31
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 2.7,
+        "complexity": 2,
+        "functions": 4,
+        "lines": 174,
+        "ncloc": 146
       }
     },
     "Features/Support/Sources/ViewModels/SupportSceneViewModel.swift": {
@@ -12229,6 +13732,15 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 4.2,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 58,
+        "ncloc": 46
       }
     },
     "Features/Support/Sources/ViewModels/WebSceneViewModel.swift": {
@@ -12287,6 +13799,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 7.1,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 37,
+        "ncloc": 26
       }
     },
     "Features/Support/Sources/Views/ChatwootWebView.swift": {
@@ -12335,6 +13856,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.3,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 31,
+        "ncloc": 22
       }
     },
     "Features/Support/Sources/Views/WebView.swift": {
@@ -12383,6 +13913,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.8,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 26,
+        "ncloc": 20
       }
     },
     "Features/Swap/Sources/Scenes/SwapScene.swift": {
@@ -12456,6 +13995,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.38
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 2.0,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 168,
+        "ncloc": 150
       }
     },
     "Features/Swap/Sources/Types/SwapProviderItem.swift": {
@@ -12564,6 +14112,15 @@
         ],
         "avg_cyclomatic": 1.13,
         "avg_cognitive": 0.13
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 3.8,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 128,
+        "ncloc": 102
       }
     },
     "Features/Swap/Sources/ViewModels/PriceImpactViewModel.swift": {
@@ -12667,6 +14224,15 @@
         ],
         "avg_cyclomatic": 1.86,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.1,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 114,
+        "ncloc": 93
       }
     },
     "Features/Swap/Sources/ViewModels/SwapButtonViewModel.swift": {
@@ -12750,6 +14316,15 @@
         ],
         "avg_cyclomatic": 2.6,
         "avg_cognitive": 0.9
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 95,
+        "ncloc": 79
       }
     },
     "Features/Swap/Sources/Views/PriceImpactView.swift": {
@@ -12793,6 +14368,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.2,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 23
       }
     },
     "Features/Swap/Sources/Views/SwapChangeView.swift": {
@@ -12836,6 +14420,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.6,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 27
       }
     },
     "Features/Swap/Sources/Views/SwapChevronView.swift": {
@@ -12879,6 +14472,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 8.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 16,
+        "ncloc": 11
       }
     },
     "Features/Swap/Sources/Views/SwapDetailsListView.swift": {
@@ -12922,6 +14524,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 29
       }
     },
     "Features/Swap/Sources/Views/SwapDetailsView.swift": {
@@ -12970,6 +14581,15 @@
         ],
         "avg_cyclomatic": 3.33,
         "avg_cognitive": 1.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 97,
+        "ncloc": 84
       }
     },
     "Features/Swap/Sources/Views/SwapTokenView.swift": {
@@ -13028,6 +14648,15 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.4,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 80,
+        "ncloc": 70
       }
     },
     "Features/Transactions/Sources/Scenes/TransactionScene.swift": {
@@ -13076,6 +14705,15 @@
         ],
         "avg_cyclomatic": 4.67,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 13,
+        "functions": 1,
+        "lines": 81,
+        "ncloc": 74
       }
     },
     "Features/Transactions/Sources/Scenes/TransactionsFilterScene.swift": {
@@ -13139,6 +14777,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 89,
+        "ncloc": 77
       }
     },
     "Features/Transactions/Sources/Scenes/TransactionsScene.swift": {
@@ -13182,6 +14829,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.6,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 44,
+        "ncloc": 38
       }
     },
     "Features/Transactions/Sources/TransactionNavigationView.swift": {
@@ -13225,6 +14881,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.5,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 45,
+        "ncloc": 39
       }
     },
     "Features/Transactions/Sources/Types/TransactionSection.swift": {
@@ -13273,6 +14938,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 53,
+        "ncloc": 44
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionHeaderViewModel.swift": {
@@ -13331,6 +15005,15 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.8,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 61,
+        "ncloc": 50
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionPnlViewModel.swift": {
@@ -13374,6 +15057,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 29
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionSceneViewModel.swift": {
@@ -13482,6 +15174,15 @@
         ],
         "avg_cyclomatic": 1.87,
         "avg_cognitive": 0.13
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 3.5,
+        "complexity": 0,
+        "functions": 6,
+        "lines": 134,
+        "ncloc": 110
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionStatusViewModel.swift": {
@@ -13530,6 +15231,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 5.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 32
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionTypesSelectorViewModel.swift": {
@@ -13608,6 +15318,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 28
       }
     },
     "Features/Transactions/Sources/ViewModels/TransactionsFilterTypeViewModel.swift": {
@@ -13661,6 +15380,15 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 24
       }
     },
     "Features/Transfer/Sources/Scenes/AmountScene.swift": {
@@ -13714,6 +15442,15 @@
         ],
         "avg_cyclomatic": 3.75,
         "avg_cognitive": 2.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.7,
+        "complexity": 29,
+        "functions": 2,
+        "lines": 154,
+        "ncloc": 137
       }
     },
     "Features/Transfer/Sources/Scenes/ConfirmTransferScene.swift": {
@@ -13762,6 +15499,15 @@
         ],
         "avg_cyclomatic": 6.33,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.8,
+        "complexity": 23,
+        "functions": 1,
+        "lines": 118,
+        "ncloc": 107
       }
     },
     "Features/Transfer/Sources/Scenes/ReceiveScene.swift": {
@@ -13810,6 +15556,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.2,
+        "complexity": 12,
+        "functions": 1,
+        "lines": 103,
+        "ncloc": 91
       }
     },
     "Features/Transfer/Sources/Scenes/RecipientScene.swift": {
@@ -13868,6 +15623,15 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.9,
+        "complexity": 21,
+        "functions": 2,
+        "lines": 120,
+        "ncloc": 105
       }
     },
     "Features/Transfer/Sources/Types/AmountInputConfig.swift": {
@@ -13931,6 +15695,15 @@
         ],
         "avg_cyclomatic": 2.67,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 58,
+        "ncloc": 49
       }
     },
     "Features/Transfer/Sources/Types/ChainCoreError+Localizations.swift": {
@@ -13969,6 +15742,15 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 7.7,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 16,
+        "ncloc": 12
       }
     },
     "Features/Transfer/Sources/Types/ConfirmTransferSection.swift": {
@@ -14022,6 +15804,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 63,
+        "ncloc": 53
       }
     },
     "Features/Transfer/Sources/ViewModels/ConfirmButtonViewModel.swift": {
@@ -14075,6 +15866,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 41,
+        "ncloc": 32
       }
     },
     "Features/Transfer/Sources/ViewModels/ConfirmTransferSceneViewModel.swift": {
@@ -14338,6 +16138,16 @@
         ],
         "avg_cyclomatic": 1.98,
         "avg_cognitive": 0.78
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 0.9,
+        "complexity": 2,
+        "functions": 21,
+        "lines": 483,
+        "ncloc": 419
       }
     },
     "Features/Transfer/Sources/ViewModels/ReceiveViewModel.swift": {
@@ -14451,6 +16261,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.19
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 1.0,
+        "complexity": 0,
+        "functions": 7,
+        "lines": 125,
+        "ncloc": 103,
+        "sqale_debt_ratio": 0.2
       }
     },
     "Features/Transfer/Sources/ViewModels/RecipientSceneViewModel.swift": {
@@ -14609,6 +16430,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 0.72
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 2.1,
+        "complexity": 0,
+        "functions": 16,
+        "lines": 279,
+        "ncloc": 234
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/ConnectionProposalScene.swift": {
@@ -14657,6 +16487,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.9,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 78,
+        "ncloc": 67
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/ConnectionScene.swift": {
@@ -14700,6 +16539,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.7,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 42,
+        "ncloc": 36
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/ConnectionsScene.swift": {
@@ -14743,6 +16591,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 13,
+        "functions": 0,
+        "lines": 82,
+        "ncloc": 75
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/SelectWalletScene.swift": {
@@ -14791,6 +16648,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 6.7,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 38,
+        "ncloc": 28
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/SignMessageScene.swift": {
@@ -14839,6 +16705,15 @@
         ],
         "avg_cyclomatic": 2.67,
         "avg_cognitive": 1.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.1,
+        "complexity": 16,
+        "functions": 1,
+        "lines": 104,
+        "ncloc": 93
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Scenes/TextMessageScene.swift": {
@@ -14877,6 +16752,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.9,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 39,
+        "ncloc": 33
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Services/WalletConnectorManager.swift": {
@@ -14950,6 +16834,15 @@
         ],
         "avg_cyclomatic": 1.38,
         "avg_cognitive": 0.38
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 5.1,
+        "complexity": 0,
+        "functions": 7,
+        "lines": 75,
+        "ncloc": 56
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Services/WalletConnectorPresenter.swift": {
@@ -14998,6 +16891,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 35,
+        "ncloc": 26
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/ViewModels/ConnectionProposalViewModel.swift": {
@@ -15136,6 +17038,15 @@
         ],
         "avg_cyclomatic": 1.52,
         "avg_cognitive": 0.24
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.9,
+        "complexity": 12,
+        "functions": 1,
+        "lines": 126,
+        "ncloc": 103
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/ViewModels/ConnectionsViewModel.swift": {
@@ -15264,6 +17175,15 @@
         ],
         "avg_cyclomatic": 1.16,
         "avg_cognitive": 0.16
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 1.9,
+        "complexity": 5,
+        "functions": 10,
+        "lines": 128,
+        "ncloc": 105
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Views/ButtonListItem.swift": {
@@ -15307,6 +17227,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.8,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 25
       }
     },
     "Features/WalletConnector/Sources/WalletConnector/Views/ConnectionView.swift": {
@@ -15350,6 +17279,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 46,
+        "ncloc": 40
       }
     },
     "Features/WalletTab/Sources/Scenes/AssetsResultsScene.swift": {
@@ -15398,6 +17336,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 51,
+        "ncloc": 43
       }
     },
     "Features/WalletTab/Sources/Scenes/WalletPortfolioScene.swift": {
@@ -15441,6 +17388,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.4,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 28
       }
     },
     "Features/WalletTab/Sources/Scenes/WalletScene.swift": {
@@ -15484,6 +17440,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.0,
+        "complexity": 17,
+        "functions": 0,
+        "lines": 107,
+        "ncloc": 96
       }
     },
     "Features/WalletTab/Sources/Scenes/WalletSearchScene.swift": {
@@ -15542,6 +17507,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 3.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.7,
+        "complexity": 32,
+        "functions": 2,
+        "lines": 164,
+        "ncloc": 151
       }
     },
     "Features/WalletTab/Sources/ViewModels/AssetsResultsSceneViewModel.swift": {
@@ -15625,6 +17599,15 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 93,
+        "ncloc": 79
       }
     },
     "Features/WalletTab/Sources/ViewModels/WalletSceneViewModel.swift": {
@@ -15863,6 +17846,15 @@
         ],
         "avg_cyclomatic": 1.39,
         "avg_cognitive": 0.24
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 5,
+        "comment_lines_density": 2.2,
+        "complexity": 0,
+        "functions": 25,
+        "lines": 276,
+        "ncloc": 220
       }
     },
     "Features/WalletTab/Sources/ViewModels/WalletSearchSceneViewModel.swift": {
@@ -16126,6 +18118,15 @@
         ],
         "avg_cyclomatic": 1.48,
         "avg_cognitive": 0.28
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 1.1,
+        "complexity": 0,
+        "functions": 21,
+        "lines": 310,
+        "ncloc": 262
       }
     },
     "Features/WalletTab/Sources/Views/AssetItemsView.swift": {
@@ -16164,6 +18165,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 26
       }
     },
     "Features/WalletTab/Sources/Views/PerpetualsPreviewView.swift": {
@@ -16207,6 +18217,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 31
       }
     },
     "Features/WalletTab/Sources/Views/WalletAssetsList.swift": {
@@ -16250,6 +18269,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 81,
+        "ncloc": 74
       }
     },
     "Gem/App.swift": {
@@ -16343,6 +18371,15 @@
         ],
         "avg_cyclomatic": 1.08,
         "avg_cognitive": 0.08
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 3.0,
+        "complexity": 3,
+        "functions": 10,
+        "lines": 117,
+        "ncloc": 96
       }
     },
     "Gem/Navigation/Assets/AddAssetNavigationStack.swift": {
@@ -16386,6 +18423,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.4,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 47,
+        "ncloc": 40
       }
     },
     "Gem/Navigation/Assets/AssetNavigationView.swift": {
@@ -16429,6 +18475,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 58,
+        "ncloc": 51
       }
     },
     "Gem/Navigation/Assets/SelectAssetSceneNavigationStack.swift": {
@@ -16482,6 +18537,15 @@
         ],
         "avg_cyclomatic": 3.75,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.1,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 192,
+        "ncloc": 180
       }
     },
     "Gem/Navigation/Assets/SelectedAssetNavigationStack.swift": {
@@ -16530,6 +18594,15 @@
         ],
         "avg_cyclomatic": 3.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 1.5,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 139,
+        "ncloc": 128
       }
     },
     "Gem/Navigation/Markets/MarketsNavigtionStack.swift": {
@@ -16568,6 +18641,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 6.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 21,
+        "ncloc": 15
       }
     },
     "Gem/Navigation/NFT/CollectionsNavigationStack.swift": {
@@ -16616,6 +18698,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 93,
+        "ncloc": 84
       }
     },
     "Gem/Navigation/NavigationHandler.swift": {
@@ -16729,6 +18820,15 @@
         ],
         "avg_cyclomatic": 3.06,
         "avg_cognitive": 0.81
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 3.3,
+        "complexity": 0,
+        "functions": 13,
+        "lines": 222,
+        "ncloc": 177
       }
     },
     "Gem/Navigation/NavigationPresenter.swift": {
@@ -16782,6 +18882,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 4.5,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 21
       }
     },
     "Gem/Navigation/NavigationStateManager.swift": {
@@ -16835,6 +18944,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 3,
+        "comment_lines_density": 5.7,
+        "complexity": 11,
+        "functions": 3,
+        "lines": 64,
+        "ncloc": 50
       }
     },
     "Gem/Navigation/Perpetuals/AutocloseNavigationStack.swift": {
@@ -16873,6 +18991,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 34
       }
     },
     "Gem/Navigation/Perpetuals/PerpetualNavigationView.swift": {
@@ -16916,6 +19043,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 58,
+        "ncloc": 54
       }
     },
     "Gem/Navigation/Perpetuals/PerpetualPositionNavigationStack.swift": {
@@ -16959,6 +19095,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 62,
+        "ncloc": 54
       }
     },
     "Gem/Navigation/Price Alerts/AddAssetPriceAlertNavigationStack.swift": {
@@ -17002,6 +19147,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.2,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 23
       }
     },
     "Gem/Navigation/Price Alerts/PriceAlertsNavigationView.swift": {
@@ -17045,6 +19199,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 57,
+        "ncloc": 49
       }
     },
     "Gem/Navigation/Settings/SettingsNavigationStack.swift": {
@@ -17093,6 +19256,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 209,
+        "ncloc": 199
       }
     },
     "Gem/Navigation/Stake/EarnNavigationView.swift": {
@@ -17136,6 +19308,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 60,
+        "ncloc": 53
       }
     },
     "Gem/Navigation/Stake/StakeNavigationView.swift": {
@@ -17179,6 +19360,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.7,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 64,
+        "ncloc": 57
       }
     },
     "Gem/Navigation/Swap/SwapNavigationView.swift": {
@@ -17222,6 +19412,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 47
       }
     },
     "Gem/Navigation/Transactions/TransactionsNavigationStack.swift": {
@@ -17270,6 +19469,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 80,
+        "ncloc": 72
       }
     },
     "Gem/Navigation/Transfer/AmountNavigationView.swift": {
@@ -17313,6 +19521,15 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 78,
+        "ncloc": 72
       }
     },
     "Gem/Navigation/Transfer/ConfirmTransferNavigationStack.swift": {
@@ -17356,6 +19573,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 50,
+        "ncloc": 43
       }
     },
     "Gem/Navigation/Transfer/ConfirmTransferNavigationView.swift": {
@@ -17394,6 +19620,15 @@
         ],
         "avg_cyclomatic": 9.0,
         "avg_cognitive": 3.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.7,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 65,
+        "ncloc": 59
       }
     },
     "Gem/Navigation/Transfer/RecipientNavigationView.swift": {
@@ -17437,6 +19672,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 31
       }
     },
     "Gem/Navigation/Wallet/WalletNavigationStack.swift": {
@@ -17490,6 +19734,15 @@
         ],
         "avg_cyclomatic": 3.75,
         "avg_cognitive": 1.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.4,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 237,
+        "ncloc": 227
       }
     },
     "Gem/Navigation/WalletConnector/WalletConnectorNavigationStack.swift": {
@@ -17533,6 +19786,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 70,
+        "ncloc": 63
       }
     },
     "Gem/Navigation/Wallets/WalletsNavigationStack.swift": {
@@ -17571,6 +19833,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 76,
+        "ncloc": 69
       }
     },
     "Gem/Scenes/RootScene.swift": {
@@ -17614,6 +19885,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 97,
+        "ncloc": 90
       }
     },
     "Gem/Services/AppResolver+ViewInjection.swift": {
@@ -17667,6 +19947,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.1,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 54,
+        "ncloc": 47
       }
     },
     "Gem/Services/ViewModelFactory.swift": {
@@ -17750,6 +20039,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 0.4,
+        "complexity": 0,
+        "functions": 9,
+        "lines": 259,
+        "ncloc": 243
       }
     },
     "Gem/Types/Environment.swift": {
@@ -17777,6 +20075,15 @@
       "derived": {
         "mutable_variable_ratio": 1.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 1.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 80,
+        "ncloc": 76
       }
     },
     "Gem/ViewModels/RootSceneViewModel.swift": {
@@ -17925,6 +20232,15 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 0.3
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 4,
+        "comment_lines_density": 1.9,
+        "complexity": 0,
+        "functions": 12,
+        "lines": 236,
+        "ncloc": 204
       }
     },
     "Gem/Views/MainTabView.swift": {
@@ -17993,6 +20309,15 @@
         ],
         "avg_cyclomatic": 2.57,
         "avg_cognitive": 1.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 1.8,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 190,
+        "ncloc": 168
       }
     },
     "GemPriceWidget/GemPriceWidgetBundle.swift": {
@@ -18031,6 +20356,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 10.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 9
       }
     },
     "GemPriceWidget/Services/WidgetPriceService.swift": {
@@ -18094,6 +20428,15 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 1.17
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.3,
+        "complexity": 0,
+        "functions": 5,
+        "lines": 100,
+        "ncloc": 86
       }
     },
     "GemPriceWidget/Types/CoinPrice.swift": {
@@ -18132,6 +20475,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 7.7,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 17,
+        "ncloc": 12
       }
     },
     "GemPriceWidget/ViewModels/CoinPriceRowViewModel.swift": {
@@ -18210,6 +20562,15 @@
         ],
         "avg_cyclomatic": 1.22,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 1.9,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 64,
+        "ncloc": 51
       }
     },
     "GemPriceWidget/ViewModels/PriceWidgetViewModel.swift": {
@@ -18258,6 +20619,15 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 2.7,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 42,
+        "ncloc": 36
       }
     },
     "GemPriceWidget/Views/CoinPriceRow.swift": {
@@ -18301,6 +20671,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 44,
+        "ncloc": 32
       }
     },
     "GemPriceWidget/Views/MediumPriceWidgetView.swift": {
@@ -18344,6 +20723,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.3,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 24,
+        "ncloc": 18
       }
     },
     "GemPriceWidget/Views/PriceWidgetView.swift": {
@@ -18392,6 +20780,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 26
       }
     },
     "GemPriceWidget/Views/SmallCoinView.swift": {
@@ -18435,6 +20832,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 3.7,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 67,
+        "ncloc": 52
       }
     },
     "GemPriceWidget/Views/SmallPriceWidgetView.swift": {
@@ -18478,6 +20884,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.9,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 16
       }
     },
     "GemPriceWidget/Views/WidgetContentView.swift": {
@@ -18521,6 +20936,15 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 4.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.0,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 48
       }
     },
     "GemPriceWidget/Views/WidgetEmptyView.swift": {
@@ -18564,6 +20988,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 5.6,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 22,
+        "ncloc": 17
       }
     },
     "GemPriceWidget/Views/WidgetErrorView.swift": {
@@ -18607,6 +21040,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.7,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 26
       }
     }
   }
