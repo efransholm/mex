@@ -23,9 +23,18 @@
     "YouTube/ViewControllers/TrendingVC.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
-    "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "bugs": 19,
+    "complexity": 168,
+    "code_smells": 357,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 294,
+    "functions": 93,
+    "classes": 29,
+    "ncloc": 989,
+    "files": 14,
+    "sqale_debt_ratio": 5.4,
+    "comment_lines_density": 22.9,
+    "lines": 1530
   },
   "files": {
     "YouTube/AppDelegate.swift": {
@@ -64,6 +73,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 17,
+        "comment_lines_density": 68.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 34,
+        "ncloc": 8,
+        "sqale_debt_ratio": 2.1
       }
     },
     "YouTube/Extensions/extensions.swift": {
@@ -112,6 +132,17 @@
         ],
         "avg_cyclomatic": 3.67,
         "avg_cognitive": 3.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 22,
+        "comment_lines": 18,
+        "comment_lines_density": 22.0,
+        "complexity": 12,
+        "functions": 3,
+        "lines": 97,
+        "ncloc": 64,
+        "sqale_debt_ratio": 5.7
       }
     },
     "YouTube/Model/User.swift": {
@@ -160,6 +191,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 2,
+        "code_smells": 16,
+        "comment_lines": 21,
+        "comment_lines_density": 37.5,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 69,
+        "ncloc": 35,
+        "sqale_debt_ratio": 6.1
       }
     },
     "YouTube/Model/Video.swift": {
@@ -223,6 +265,17 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 5,
+        "code_smells": 29,
+        "comment_lines": 20,
+        "comment_lines_density": 20.6,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 116,
+        "ncloc": 77,
+        "sqale_debt_ratio": 5.8
       }
     },
     "YouTube/Supporting views/PlayerView.swift": {
@@ -306,6 +359,18 @@
         ],
         "avg_cyclomatic": 2.3,
         "avg_cognitive": 1.6
+      },
+      "sonarqube": {
+        "bugs": 2,
+        "classes": 3,
+        "code_smells": 29,
+        "comment_lines": 21,
+        "comment_lines_density": 10.9,
+        "complexity": 25,
+        "functions": 14,
+        "lines": 216,
+        "ncloc": 172,
+        "sqale_debt_ratio": 2.5
       }
     },
     "YouTube/Supporting views/SearchView.swift": {
@@ -379,6 +444,18 @@
         ],
         "avg_cyclomatic": 1.62,
         "avg_cognitive": 1.12
+      },
+      "sonarqube": {
+        "bugs": 3,
+        "classes": 2,
+        "code_smells": 21,
+        "comment_lines": 21,
+        "comment_lines_density": 21.9,
+        "complexity": 19,
+        "functions": 8,
+        "lines": 113,
+        "ncloc": 75,
+        "sqale_debt_ratio": 4.0
       }
     },
     "YouTube/Supporting views/SettingsView.swift": {
@@ -442,6 +519,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 16,
+        "comment_lines": 21,
+        "comment_lines_density": 35.0,
+        "complexity": 8,
+        "functions": 6,
+        "lines": 74,
+        "ncloc": 39,
+        "sqale_debt_ratio": 5.5
       }
     },
     "YouTube/Supporting views/TabBarView.swift": {
@@ -515,6 +603,18 @@
         ],
         "avg_cyclomatic": 1.38,
         "avg_cognitive": 0.38
+      },
+      "sonarqube": {
+        "bugs": 2,
+        "classes": 2,
+        "code_smells": 23,
+        "comment_lines": 22,
+        "comment_lines_density": 28.9,
+        "complexity": 10,
+        "functions": 7,
+        "lines": 93,
+        "ncloc": 54,
+        "sqale_debt_ratio": 5.9
       }
     },
     "YouTube/ViewControllers/AccountVC.swift": {
@@ -583,6 +683,18 @@
         ],
         "avg_cyclomatic": 1.71,
         "avg_cognitive": 0.57
+      },
+      "sonarqube": {
+        "bugs": 4,
+        "classes": 4,
+        "code_smells": 22,
+        "comment_lines": 21,
+        "comment_lines_density": 20.2,
+        "complexity": 13,
+        "functions": 7,
+        "lines": 130,
+        "ncloc": 83,
+        "sqale_debt_ratio": 3.9
       }
     },
     "YouTube/ViewControllers/HomeVC.swift": {
@@ -676,6 +788,18 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 2,
+        "code_smells": 28,
+        "comment_lines": 22,
+        "comment_lines_density": 21.0,
+        "complexity": 15,
+        "functions": 12,
+        "lines": 127,
+        "ncloc": 83,
+        "sqale_debt_ratio": 4.8
       }
     },
     "YouTube/ViewControllers/MainVC.swift": {
@@ -754,6 +878,18 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "bugs": 2,
+        "classes": 1,
+        "code_smells": 41,
+        "comment_lines": 25,
+        "comment_lines_density": 28.1,
+        "complexity": 15,
+        "functions": 8,
+        "lines": 106,
+        "ncloc": 64,
+        "sqale_debt_ratio": 9.0
       }
     },
     "YouTube/ViewControllers/NavVC.swift": {
@@ -867,6 +1003,18 @@
         ],
         "avg_cyclomatic": 1.56,
         "avg_cognitive": 0.31
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 87,
+        "comment_lines": 30,
+        "comment_lines_density": 15.5,
+        "complexity": 30,
+        "functions": 13,
+        "lines": 218,
+        "ncloc": 164,
+        "sqale_debt_ratio": 8.3
       }
     },
     "YouTube/ViewControllers/SubscriptionsVC.swift": {
@@ -940,6 +1088,18 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.38
+      },
+      "sonarqube": {
+        "bugs": 3,
+        "classes": 3,
+        "code_smells": 18,
+        "comment_lines": 18,
+        "comment_lines_density": 24.7,
+        "complexity": 11,
+        "functions": 8,
+        "lines": 93,
+        "ncloc": 55,
+        "sqale_debt_ratio": 5.2
       }
     },
     "YouTube/ViewControllers/TrendingVC.swift": {
@@ -983,6 +1143,18 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 17,
+        "comment_lines_density": 51.5,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 44,
+        "ncloc": 16,
+        "sqale_debt_ratio": 4.2
       }
     }
   }

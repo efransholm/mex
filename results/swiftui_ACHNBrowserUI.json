@@ -170,20 +170,18 @@
     "ACHNBrowserUI/Widgets/views/WidgetProgressBar.swift"
   ],
   "sonarqube_project": {
-    "complexity": 69,
-    "code_smells": 25,
+    "bugs": 1,
+    "complexity": 1463,
+    "code_smells": 1008,
     "duplicated_lines_density": 0.0,
-    "functions": 36,
-    "classes": 0,
-    "sqale_debt_ratio": 1.2,
-    "statements": 162,
-    "comment_lines_density": 25.6,
-    "bugs": 2,
-    "comment_lines": 103,
-    "cognitive_complexity": 56,
-    "ncloc": 299,
-    "files": 1,
-    "lines": 443
+    "comment_lines": 1228,
+    "functions": 255,
+    "classes": 26,
+    "ncloc": 10568,
+    "files": 161,
+    "sqale_debt_ratio": 1.7,
+    "comment_lines_density": 10.4,
+    "lines": 13474
   },
   "files": {
     "ACHNBrowserUI/ACHNBrowserUI/App.swift": {
@@ -252,6 +250,17 @@
         ],
         "avg_cyclomatic": 1.71,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 23,
+        "comment_lines": 9,
+        "comment_lines_density": 7.6,
+        "complexity": 17,
+        "functions": 5,
+        "lines": 134,
+        "ncloc": 110,
+        "sqale_debt_ratio": 3.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/env/CurrentDateEnvironment.swift": {
@@ -295,6 +304,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 41.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 21,
+        "ncloc": 10
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/env/MusicPlayerManager.swift": {
@@ -398,6 +416,17 @@
         ],
         "avg_cyclomatic": 2.43,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 37,
+        "comment_lines": 6,
+        "comment_lines_density": 2.8,
+        "complexity": 43,
+        "functions": 10,
+        "lines": 244,
+        "ncloc": 206,
+        "sqale_debt_ratio": 3.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/env/UIState.swift": {
@@ -441,6 +470,17 @@
         ],
         "avg_cyclomatic": 5.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 7,
+        "comment_lines": 7,
+        "comment_lines_density": 12.7,
+        "complexity": 10,
+        "functions": 1,
+        "lines": 64,
+        "ncloc": 48,
+        "sqale_debt_ratio": 2.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/extensions/EditMode.swift": {
@@ -479,6 +519,17 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 38.9,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 21,
+        "ncloc": 11,
+        "sqale_debt_ratio": 3.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/extensions/Image.swift": {
@@ -522,6 +573,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 25.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 34,
+        "ncloc": 21,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/extensions/Path.swift": {
@@ -580,6 +642,17 @@
         ],
         "avg_cyclomatic": 1.8,
         "avg_cognitive": 1.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 8,
+        "comment_lines_density": 17.8,
+        "complexity": 9,
+        "functions": 5,
+        "lines": 58,
+        "ncloc": 37,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/extensions/Text.swift": {
@@ -643,6 +716,17 @@
         ],
         "avg_cyclomatic": 1.83,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 6,
+        "comment_lines": 7,
+        "comment_lines_density": 14.0,
+        "complexity": 11,
+        "functions": 6,
+        "lines": 60,
+        "ncloc": 43,
+        "sqale_debt_ratio": 2.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/extensions/View.swift": {
@@ -721,6 +805,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 21,
+        "comment_lines": 9,
+        "comment_lines_density": 9.8,
+        "complexity": 16,
+        "functions": 9,
+        "lines": 116,
+        "ncloc": 83,
+        "sqale_debt_ratio": 4.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/models/Island.swift": {
@@ -759,6 +854,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 25.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 20,
+        "sqale_debt_ratio": 0.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/representables/ActivityControllerView.swift": {
@@ -802,6 +908,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 35,
+        "ncloc": 22,
+        "sqale_debt_ratio": 2.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/representables/SafariView.swift": {
@@ -850,6 +967,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 26.9,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 35,
+        "ncloc": 19,
+        "sqale_debt_ratio": 7.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/utils/EventsDescription.swift": {
@@ -893,6 +1021,17 @@
         ],
         "avg_cyclomatic": 7.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 13.2,
+        "complexity": 15,
+        "functions": 2,
+        "lines": 58,
+        "ncloc": 46,
+        "sqale_debt_ratio": 3.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/utils/FeedbackGenerator.swift": {
@@ -936,6 +1075,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 31.8,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 28,
+        "ncloc": 15,
+        "sqale_debt_ratio": 3.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/ActiveCrittersViewModel.swift": {
@@ -989,6 +1139,17 @@
         ],
         "avg_cyclomatic": 3.75,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 17,
+        "comment_lines": 7,
+        "comment_lines_density": 8.9,
+        "complexity": 22,
+        "functions": 3,
+        "lines": 93,
+        "ncloc": 72,
+        "sqale_debt_ratio": 3.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/CategoriesSearchViewModel.swift": {
@@ -1032,6 +1193,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 15.9,
+        "complexity": 10,
+        "functions": 1,
+        "lines": 50,
+        "ncloc": 37,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/ChoreListViewModel.swift": {
@@ -1115,6 +1287,15 @@
         ],
         "avg_cyclomatic": 1.1,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 18.3,
+        "complexity": 9,
+        "functions": 5,
+        "lines": 80,
+        "ncloc": 49
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/CollectionMoreDetailViewModel.swift": {
@@ -1153,6 +1334,17 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 9,
+        "comment_lines_density": 34.6,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 17,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/CommentsViewModel.swift": {
@@ -1206,6 +1398,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.75
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 11.7,
+        "complexity": 11,
+        "functions": 3,
+        "lines": 72,
+        "ncloc": 53,
+        "sqale_debt_ratio": 3.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/CustomTaskFormViewModel.swift": {
@@ -1254,6 +1457,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 20.0,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 41,
+        "ncloc": 28,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/DesignListViewModel.swift": {
@@ -1297,6 +1511,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 36.7,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 42,
+        "ncloc": 19
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/ItemDetailViewModel.swift": {
@@ -1340,6 +1563,17 @@
         ],
         "avg_cyclomatic": 4.0,
         "avg_cognitive": 4.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 14.3,
+        "complexity": 15,
+        "functions": 1,
+        "lines": 57,
+        "ncloc": 42,
+        "sqale_debt_ratio": 3.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/LikeButtonViewModel.swift": {
@@ -1388,6 +1622,17 @@
         ],
         "avg_cyclomatic": 4.67,
         "avg_cognitive": 4.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 9.6,
+        "complexity": 11,
+        "functions": 1,
+        "lines": 84,
+        "ncloc": 66,
+        "sqale_debt_ratio": 2.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/TabbarViewModel.swift": {
@@ -1431,6 +1676,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 21.2,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 40,
+        "ncloc": 26,
+        "sqale_debt_ratio": 2.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/TodayChoresSectionViewModel.swift": {
@@ -1479,6 +1735,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 31.3,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 44,
+        "ncloc": 22
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/TurnipsViewModel.swift": {
@@ -1527,6 +1792,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 14.6,
+        "complexity": 6,
+        "functions": 2,
+        "lines": 55,
+        "ncloc": 41,
+        "sqale_debt_ratio": 1.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/UserListDetailViewModel.swift": {
@@ -1575,6 +1851,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 7,
+        "comment_lines_density": 22.6,
+        "complexity": 5,
+        "functions": 2,
+        "lines": 38,
+        "ncloc": 24,
+        "sqale_debt_ratio": 4.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModels/UserListFormViewModel.swift": {
@@ -1623,6 +1910,17 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 1.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 21.2,
+        "complexity": 3,
+        "functions": 1,
+        "lines": 39,
+        "ncloc": 26,
+        "sqale_debt_ratio": 1.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModifiers/AdaptsToSoftwareKeyboard.swift": {
@@ -1666,6 +1964,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 8,
+        "comment_lines_density": 23.5,
+        "complexity": 5,
+        "functions": 2,
+        "lines": 40,
+        "ncloc": 26
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/viewModifiers/DismissingKeyboardOnSwipe.swift": {
@@ -1714,6 +2021,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 8,
+        "comment_lines_density": 25.8,
+        "complexity": 6,
+        "functions": 2,
+        "lines": 36,
+        "ncloc": 23
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/about/AboutView.swift": {
@@ -1782,6 +2098,17 @@
         ],
         "avg_cyclomatic": 1.14,
         "avg_cognitive": 0.29
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 4.6,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 163,
+        "ncloc": 144,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/categories/CategoriesView.swift": {
@@ -1850,6 +2177,17 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 0.71
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 12,
+        "comment_lines_density": 10.4,
+        "complexity": 1,
+        "functions": 4,
+        "lines": 128,
+        "ncloc": 103,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/categories/CategoryHeaderView.swift": {
@@ -1893,6 +2231,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 25.9,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 20,
+        "sqale_debt_ratio": 0.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/categories/CategoryRowView.swift": {
@@ -1936,6 +2285,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 19.4,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 29,
+        "sqale_debt_ratio": 0.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/chores/ChoreFormView.swift": {
@@ -1994,6 +2354,17 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 11,
+        "comment_lines_density": 12.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 107,
+        "ncloc": 80,
+        "sqale_debt_ratio": 0.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/chores/ChoreListRowView.swift": {
@@ -2042,6 +2413,17 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 9,
+        "comment_lines_density": 17.3,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 65,
+        "ncloc": 43,
+        "sqale_debt_ratio": 0.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/chores/ChoreListView.swift": {
@@ -2105,6 +2487,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 10.2,
+        "complexity": 22,
+        "functions": 3,
+        "lines": 130,
+        "ncloc": 97,
+        "sqale_debt_ratio": 0.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/collection/CollectionListView.swift": {
@@ -2173,6 +2566,17 @@
         ],
         "avg_cyclomatic": 2.29,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 6.6,
+        "complexity": 22,
+        "functions": 0,
+        "lines": 118,
+        "ncloc": 99,
+        "sqale_debt_ratio": 0.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/collection/CollectionMoreDetailView.swift": {
@@ -2226,6 +2630,15 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 12,
+        "comment_lines_density": 22.6,
+        "complexity": 9,
+        "functions": 1,
+        "lines": 68,
+        "ncloc": 41
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/collection/CollectionProgressDetailView.swift": {
@@ -2269,6 +2682,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 20.6,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 39,
+        "ncloc": 27,
+        "sqale_debt_ratio": 0.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/collection/CollectionProgressRow.swift": {
@@ -2317,6 +2741,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 14.9,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 40,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/collection/CollectionRowView.swift": {
@@ -2360,6 +2795,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 25,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/comments/CommentsSection.swift": {
@@ -2413,6 +2859,17 @@
         ],
         "avg_cyclomatic": 3.5,
         "avg_cognitive": 3.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 6.6,
+        "complexity": 22,
+        "functions": 1,
+        "lines": 113,
+        "ncloc": 99,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/critters/ActiveCrittersView.swift": {
@@ -2481,6 +2938,17 @@
         ],
         "avg_cyclomatic": 1.29,
         "avg_cognitive": 0.57
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 6.5,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 120,
+        "ncloc": 100,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/critters/CrittersListView.swift": {
@@ -2524,6 +2992,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 10,
+        "comment_lines_density": 25.6,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 48,
+        "ncloc": 29
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/customTasks/CustomTaskFormView.swift": {
@@ -2577,6 +3054,17 @@
         ],
         "avg_cyclomatic": 2.25,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 7.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 107,
+        "ncloc": 90,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/customTasks/CustomTaskRow.swift": {
@@ -2615,6 +3103,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 31.8,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 26,
+        "ncloc": 15,
+        "sqale_debt_ratio": 1.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/customTasks/CustomTasksListView.swift": {
@@ -2673,6 +3172,17 @@
         ],
         "avg_cyclomatic": 1.4,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 8.5,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 90,
+        "ncloc": 75,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/design/DesignFormView.swift": {
@@ -2731,6 +3241,17 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 11,
+        "comment_lines_density": 10.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 126,
+        "ncloc": 96,
+        "sqale_debt_ratio": 0.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/design/DesignListView.swift": {
@@ -2784,6 +3305,15 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 12,
+        "comment_lines_density": 18.2,
+        "complexity": 12,
+        "functions": 1,
+        "lines": 80,
+        "ncloc": 54
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/design/DesignRowView.swift": {
@@ -2832,6 +3362,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 18.6,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 75,
+        "ncloc": 48,
+        "sqale_debt_ratio": 0.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dodocode/DodoCodeDetailView.swift": {
@@ -2875,6 +3416,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 23.3,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 23,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dodocode/DodoCodeFormView.swift": {
@@ -2948,6 +3500,17 @@
         ],
         "avg_cyclomatic": 2.62,
         "avg_cognitive": 1.12
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 4.1,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 184,
+        "ncloc": 164,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dodocode/DodoCodeListView.swift": {
@@ -3001,6 +3564,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 7.2,
+        "complexity": 22,
+        "functions": 0,
+        "lines": 106,
+        "ncloc": 90,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dodocode/DodoCodeRow.swift": {
@@ -3089,6 +3663,17 @@
         ],
         "avg_cyclomatic": 1.73,
         "avg_cognitive": 1.09
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 20,
+        "comment_lines": 7,
+        "comment_lines_density": 3.6,
+        "complexity": 38,
+        "functions": 1,
+        "lines": 209,
+        "ncloc": 186,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dreamcode/DreamCodeDetailView.swift": {
@@ -3132,6 +3717,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 22.6,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 24,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dreamcode/DreamCodeFormView.swift": {
@@ -3200,6 +3796,17 @@
         ],
         "avg_cyclomatic": 2.57,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 11,
+        "comment_lines": 7,
+        "comment_lines_density": 5.6,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 138,
+        "ncloc": 119,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dreamcode/DreamCodeListView.swift": {
@@ -3253,6 +3860,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 7.0,
+        "complexity": 24,
+        "functions": 0,
+        "lines": 110,
+        "ncloc": 93,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/dreamcode/DreamCodeRow.swift": {
@@ -3336,6 +3954,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.7
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 17,
+        "comment_lines": 7,
+        "comment_lines_density": 4.6,
+        "complexity": 26,
+        "functions": 1,
+        "lines": 169,
+        "ncloc": 146,
+        "sqale_debt_ratio": 1.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/home/TabbarView.swift": {
@@ -3374,6 +4003,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 12.1,
+        "complexity": 9,
+        "functions": 0,
+        "lines": 67,
+        "ncloc": 51,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/icons/IconChooserSheet.swift": {
@@ -3427,6 +4067,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 7,
+        "comment_lines": 7,
+        "comment_lines_density": 10.4,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 77,
+        "ncloc": 60,
+        "sqale_debt_ratio": 1.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/ItemsListView.swift": {
@@ -3505,6 +4156,17 @@
         ],
         "avg_cyclomatic": 2.56,
         "avg_cognitive": 1.44
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 17,
+        "comment_lines": 7,
+        "comment_lines_density": 4.5,
+        "complexity": 30,
+        "functions": 1,
+        "lines": 173,
+        "ncloc": 148,
+        "sqale_debt_ratio": 1.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/ItemsView.swift": {
@@ -3573,6 +4235,17 @@
         ],
         "avg_cyclomatic": 2.43,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 14,
+        "comment_lines": 7,
+        "comment_lines_density": 4.9,
+        "complexity": 29,
+        "functions": 1,
+        "lines": 155,
+        "ncloc": 135,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemBellsView.swift": {
@@ -3621,6 +4294,17 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 14.3,
+        "complexity": 7,
+        "functions": 1,
+        "lines": 56,
+        "ncloc": 42,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemDetailInfoView.swift": {
@@ -3664,6 +4348,17 @@
         ],
         "avg_cyclomatic": 6.5,
         "avg_cognitive": 5.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 6.3,
+        "complexity": 22,
+        "functions": 0,
+        "lines": 118,
+        "ncloc": 105,
+        "sqale_debt_ratio": 0.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemDetailSeasonSectionView.swift": {
@@ -3707,6 +4402,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 45,
+        "ncloc": 33,
+        "sqale_debt_ratio": 0.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemDetailView.swift": {
@@ -3810,6 +4516,17 @@
         ],
         "avg_cyclomatic": 2.21,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 20,
+        "comment_lines": 12,
+        "comment_lines_density": 4.4,
+        "complexity": 59,
+        "functions": 3,
+        "lines": 300,
+        "ncloc": 261,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemStyleBadgeView.swift": {
@@ -3853,6 +4570,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 22.6,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 36,
+        "ncloc": 24,
+        "sqale_debt_ratio": 0.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/detail/ItemsCrosslineSectionView.swift": {
@@ -3896,6 +4624,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 14.6,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 41,
+        "sqale_debt_ratio": 0.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/row/ItemGridItemView.swift": {
@@ -3939,6 +4678,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 14.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 54,
+        "ncloc": 43
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/items/row/ItemRowView.swift": {
@@ -4007,6 +4755,17 @@
         ],
         "avg_cyclomatic": 2.71,
         "avg_cognitive": 1.71
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 4.6,
+        "complexity": 25,
+        "functions": 0,
+        "lines": 167,
+        "ncloc": 146,
+        "sqale_debt_ratio": 1.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/musicPlayer/PlayerMode.swift": {
@@ -4060,6 +4819,17 @@
         ],
         "avg_cyclomatic": 3.25,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 14.9,
+        "complexity": 13,
+        "functions": 4,
+        "lines": 55,
+        "ncloc": 40,
+        "sqale_debt_ratio": 2.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/musicPlayer/PlayerView.swift": {
@@ -4118,6 +4888,17 @@
         ],
         "avg_cyclomatic": 2.4,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 9.5,
+        "complexity": 16,
+        "functions": 3,
+        "lines": 84,
+        "ncloc": 67,
+        "sqale_debt_ratio": 2.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/musicPlayer/PlayerViewExpanded.swift": {
@@ -4171,6 +4952,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 23,
+        "comment_lines": 7,
+        "comment_lines_density": 4.9,
+        "complexity": 23,
+        "functions": 1,
+        "lines": 162,
+        "ncloc": 135,
+        "sqale_debt_ratio": 2.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/musicPlayer/PlayerViewMusicList.swift": {
@@ -4209,6 +5001,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 15.6,
+        "complexity": 8,
+        "functions": 0,
+        "lines": 51,
+        "ncloc": 38,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/musicPlayer/PlayerViewSmall.swift": {
@@ -4257,6 +5060,17 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 14,
+        "comment_lines": 7,
+        "comment_lines_density": 6.8,
+        "complexity": 20,
+        "functions": 1,
+        "lines": 115,
+        "ncloc": 96,
+        "sqale_debt_ratio": 2.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/mysteryIslands/MysteryIslandDetail.swift": {
@@ -4305,6 +5119,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 11.3,
+        "complexity": 8,
+        "functions": 1,
+        "lines": 69,
+        "ncloc": 55,
+        "sqale_debt_ratio": 1.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/mysteryIslands/MysteryIslandRow.swift": {
@@ -4348,6 +5173,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 14.9,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 52,
+        "ncloc": 40,
+        "sqale_debt_ratio": 0.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/mysteryIslands/MysteryIslandsList.swift": {
@@ -4391,6 +5227,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 25.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 21,
+        "sqale_debt_ratio": 0.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/news/NewsCommentView.swift": {
@@ -4429,6 +5276,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 30.4,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 27,
+        "ncloc": 16
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/news/NewsList.swift": {
@@ -4472,6 +5328,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 13.5,
+        "complexity": 11,
+        "functions": 0,
+        "lines": 58,
+        "ncloc": 45,
+        "sqale_debt_ratio": 0.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/news/NewsRow.swift": {
@@ -4520,6 +5387,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 13.2,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 60,
+        "ncloc": 46,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/settings/AppIconPickerView.swift": {
@@ -4588,6 +5466,17 @@
         ],
         "avg_cyclomatic": 1.29,
         "avg_cognitive": 0.29
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 11,
+        "comment_lines": 8,
+        "comment_lines_density": 8.2,
+        "complexity": 12,
+        "functions": 2,
+        "lines": 115,
+        "ncloc": 90,
+        "sqale_debt_ratio": 2.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/settings/SettingsView.swift": {
@@ -4661,6 +5550,17 @@
         ],
         "avg_cyclomatic": 1.62,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 24,
+        "comment_lines": 14,
+        "comment_lines_density": 6.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 229,
+        "ncloc": 192,
+        "sqale_debt_ratio": 2.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/ButtonImageCounterOverlay.swift": {
@@ -4704,6 +5604,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 45,
+        "ncloc": 33,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/ButtonImageOverlay.swift": {
@@ -4747,6 +5658,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 16.3,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 48,
+        "ncloc": 36,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/CalendarView.swift": {
@@ -4800,6 +5722,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 11.1,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 71,
+        "ncloc": 56,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/LikeButtonView.swift": {
@@ -4863,6 +5796,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 2.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 6,
+        "comment_lines": 7,
+        "comment_lines_density": 9.2,
+        "complexity": 13,
+        "functions": 0,
+        "lines": 85,
+        "ncloc": 69,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/MessageView.swift": {
@@ -4921,6 +5865,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 11,
+        "comment_lines_density": 24.4,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 61,
+        "ncloc": 34,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/ResidentButton.swift": {
@@ -4964,6 +5919,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 22,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/RoundedRectangleOnTop.swift": {
@@ -5007,6 +5973,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 10,
+        "comment_lines_density": 25.6,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 48,
+        "ncloc": 29
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/RowLoadingView.swift": {
@@ -5050,6 +6025,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 31.8,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 26,
+        "ncloc": 15
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/SearchField.swift": {
@@ -5093,6 +6077,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 12.3,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 64,
+        "ncloc": 50,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/SectionHeaderView.swift": {
@@ -5146,6 +6141,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 14.9,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 55,
+        "ncloc": 40,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/Sheet.swift": {
@@ -5189,6 +6195,17 @@
         ],
         "avg_cyclomatic": 15.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 6.7,
+        "complexity": 30,
+        "functions": 0,
+        "lines": 110,
+        "ncloc": 97,
+        "sqale_debt_ratio": 0.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/shared/VariantsForLikeView.swift": {
@@ -5237,6 +6254,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 11.5,
+        "complexity": 12,
+        "functions": 0,
+        "lines": 69,
+        "ncloc": 54
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/subscription/SubscribeView.swift": {
@@ -5325,6 +6351,17 @@
         ],
         "avg_cyclomatic": 1.55,
         "avg_cognitive": 0.45
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 26,
+        "comment_lines": 7,
+        "comment_lines_density": 3.7,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 209,
+        "ncloc": 180,
+        "sqale_debt_ratio": 2.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayBirthdaysSection.swift": {
@@ -5378,6 +6415,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 9.3,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 86,
+        "ncloc": 68,
+        "sqale_debt_ratio": 1.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayChoresSection.swift": {
@@ -5441,6 +6489,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 11,
+        "comment_lines_density": 16.4,
+        "complexity": 8,
+        "functions": 3,
+        "lines": 82,
+        "ncloc": 56,
+        "sqale_debt_ratio": 0.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayCollectionProgressSection.swift": {
@@ -5484,6 +6543,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 14.0,
+        "complexity": 8,
+        "functions": 0,
+        "lines": 57,
+        "ncloc": 43,
+        "sqale_debt_ratio": 1.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayCurrentlyAvailableSection.swift": {
@@ -5537,6 +6607,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 10,
+        "comment_lines": 8,
+        "comment_lines_density": 7.1,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 125,
+        "ncloc": 105,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayDodoCodeSection.swift": {
@@ -5580,6 +6661,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 22,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayDreamCodeSection.swift": {
@@ -5623,6 +6715,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 35,
+        "ncloc": 22,
+        "sqale_debt_ratio": 2.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayEventsSection.swift": {
@@ -5691,6 +6794,17 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 0.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 8.6,
+        "complexity": 0,
+        "functions": 3,
+        "lines": 96,
+        "ncloc": 74,
+        "sqale_debt_ratio": 0.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayMusicPlayerSection.swift": {
@@ -5749,6 +6863,17 @@
         ],
         "avg_cyclomatic": 1.8,
         "avg_cognitive": 0.8
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 5.6,
+        "complexity": 24,
+        "functions": 0,
+        "lines": 135,
+        "ncloc": 118,
+        "sqale_debt_ratio": 1.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayMysteryIslandsSection.swift": {
@@ -5792,6 +6917,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 45,
+        "ncloc": 33,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayNewsSection.swift": {
@@ -5835,6 +6971,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 26.9,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 31,
+        "ncloc": 19,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodaySectionEditView.swift": {
@@ -5893,6 +7040,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 11.1,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 73,
+        "ncloc": 56,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodaySectionView.swift": {
@@ -5936,6 +7094,17 @@
         ],
         "avg_cyclomatic": 9.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 10.9,
+        "complexity": 19,
+        "functions": 1,
+        "lines": 71,
+        "ncloc": 57,
+        "sqale_debt_ratio": 2.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodaySpecialCharactersSection.swift": {
@@ -5994,6 +7163,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.6
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 5.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 130,
+        "ncloc": 113,
+        "sqale_debt_ratio": 1.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodaySubscribeCard.swift": {
@@ -6037,6 +7217,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 15.9,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 50,
+        "ncloc": 37,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodaySubscribeSection.swift": {
@@ -6080,6 +7271,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 15.2,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 52,
+        "ncloc": 39,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayTasksSection.swift": {
@@ -6133,6 +7335,17 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 8,
+        "comment_lines_density": 7.7,
+        "complexity": 18,
+        "functions": 1,
+        "lines": 111,
+        "ncloc": 96,
+        "sqale_debt_ratio": 0.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayTurnipSection.swift": {
@@ -6181,6 +7394,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 13.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 61,
+        "ncloc": 47,
+        "sqale_debt_ratio": 2.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayView.swift": {
@@ -6244,6 +7468,17 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 12,
+        "comment_lines": 11,
+        "comment_lines_density": 11.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 105,
+        "ncloc": 82,
+        "sqale_debt_ratio": 2.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/todayDashboard/TodayVillagerVisitsSection.swift": {
@@ -6342,6 +7577,18 @@
         ],
         "avg_cyclomatic": 1.08,
         "avg_cognitive": 0.15
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 5.6,
+        "complexity": 15,
+        "functions": 4,
+        "lines": 141,
+        "ncloc": 119,
+        "sqale_debt_ratio": 0.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/TurnipsFormView.swift": {
@@ -6425,6 +7672,17 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.2
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 16,
+        "comment_lines": 11,
+        "comment_lines_density": 7.8,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 157,
+        "ncloc": 130,
+        "sqale_debt_ratio": 2.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/TurnipsView.swift": {
@@ -6573,6 +7831,17 @@
         ],
         "avg_cyclomatic": 2.65,
         "avg_cognitive": 1.3
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 29,
+        "comment_lines": 10,
+        "comment_lines_density": 2.9,
+        "complexity": 84,
+        "functions": 10,
+        "lines": 379,
+        "ncloc": 333,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChart.swift": {
@@ -6626,6 +7895,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 9.3,
+        "complexity": 9,
+        "functions": 3,
+        "lines": 94,
+        "ncloc": 68,
+        "sqale_debt_ratio": 0.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartAverageCurve.swift": {
@@ -6684,6 +7964,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 15.6,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 54,
+        "ncloc": 38,
+        "sqale_debt_ratio": 0.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartBottomLegendView.swift": {
@@ -6752,6 +8043,17 @@
         ],
         "avg_cyclomatic": 1.29,
         "avg_cognitive": 0.14
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 6,
+        "comment_lines": 7,
+        "comment_lines_density": 10.0,
+        "complexity": 2,
+        "functions": 4,
+        "lines": 81,
+        "ncloc": 63,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartGrid.swift": {
@@ -6800,6 +8102,17 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 12.1,
+        "complexity": 11,
+        "functions": 2,
+        "lines": 71,
+        "ncloc": 51,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartMinBuyPriceCurve.swift": {
@@ -6838,6 +8151,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 36.8,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 23,
+        "ncloc": 12,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartMinMaxCurves.swift": {
@@ -6896,6 +8220,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 12.1,
+        "complexity": 5,
+        "functions": 1,
+        "lines": 70,
+        "ncloc": 51
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartTopLegendView.swift": {
@@ -6934,6 +8267,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 26.9,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 19
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartValuesView.swift": {
@@ -6987,6 +8329,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 11.1,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 71,
+        "ncloc": 56
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartVerticalLegend.swift": {
@@ -7040,6 +8391,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 16.3,
+        "complexity": 8,
+        "functions": 3,
+        "lines": 52,
+        "ncloc": 36,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/turnips/charts/TurnipsChartView.swift": {
@@ -7118,6 +8480,17 @@
         ],
         "avg_cyclomatic": 1.11,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 6.1,
+        "complexity": 0,
+        "functions": 4,
+        "lines": 132,
+        "ncloc": 107,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/userLists/UserListDetailView.swift": {
@@ -7201,6 +8574,17 @@
         ],
         "avg_cyclomatic": 1.9,
         "avg_cognitive": 1.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 15,
+        "comment_lines": 7,
+        "comment_lines_density": 6.1,
+        "complexity": 7,
+        "functions": 3,
+        "lines": 130,
+        "ncloc": 108,
+        "sqale_debt_ratio": 2.3
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/userLists/UserListFormView.swift": {
@@ -7259,6 +8643,17 @@
         ],
         "avg_cyclomatic": 1.4,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 7.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 106,
+        "ncloc": 89,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/userLists/UserListRow.swift": {
@@ -7297,6 +8692,17 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 5,
+        "functions": 0,
+        "lines": 33,
+        "ncloc": 22,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/userLists/UserListSubscribeCallView.swift": {
@@ -7340,6 +8746,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 14.0,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 56,
+        "ncloc": 43,
+        "sqale_debt_ratio": 1.6
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/villagers/VillagerDetailView.swift": {
@@ -7418,6 +8835,17 @@
         ],
         "avg_cyclomatic": 1.89,
         "avg_cognitive": 1.89
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 19,
+        "comment_lines": 7,
+        "comment_lines_density": 4.0,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 191,
+        "ncloc": 169,
+        "sqale_debt_ratio": 2.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/villagers/VillagerRowView.swift": {
@@ -7471,6 +8899,17 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 11,
+        "comment_lines_density": 14.9,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 92,
+        "ncloc": 63,
+        "sqale_debt_ratio": 0.8
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/villagers/VillagersListView.swift": {
@@ -7524,6 +8963,17 @@
         ],
         "avg_cyclomatic": 4.75,
         "avg_cognitive": 4.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 8,
+        "comment_lines": 8,
+        "comment_lines_density": 7.0,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 126,
+        "ncloc": 106,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/ACHNBrowserUI/views/villagers/VillagersSortView.swift": {
@@ -7567,6 +9017,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 20.0,
+        "complexity": 6,
+        "functions": 0,
+        "lines": 41,
+        "ncloc": 28,
+        "sqale_debt_ratio": 1.2
       }
     },
     "ACHNBrowserUI/ACHNBrowserUITV/AppDelegate.swift": {
@@ -7605,6 +9066,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 30.4,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 32,
+        "ncloc": 16,
+        "sqale_debt_ratio": 3.1
       }
     },
     "ACHNBrowserUI/ACHNBrowserUITV/views/home/HomeView.swift": {
@@ -7658,6 +9130,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 5,
+        "functions": 1,
+        "lines": 47,
+        "ncloc": 33,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUITV/views/home/ItemDetailView.swift": {
@@ -7696,6 +9179,17 @@
         ],
         "avg_cyclomatic": 12.0,
         "avg_cognitive": 17.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 6.8,
+        "complexity": 19,
+        "functions": 0,
+        "lines": 108,
+        "ncloc": 96,
+        "sqale_debt_ratio": 0.5
       }
     },
     "ACHNBrowserUI/ACHNBrowserUITV/views/home/ItemRow.swift": {
@@ -7734,6 +9228,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 28.0,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 29,
+        "ncloc": 18,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/CloudKit/services/DodoCodeService.swift": {
@@ -7847,6 +9352,17 @@
         ],
         "avg_cyclomatic": 1.69,
         "avg_cognitive": 0.81
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 27,
+        "comment_lines": 9,
+        "comment_lines_density": 5.4,
+        "complexity": 42,
+        "functions": 15,
+        "lines": 194,
+        "ncloc": 159,
+        "sqale_debt_ratio": 2.8
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/CloudKit/services/DreamCodeService.swift": {
@@ -7960,6 +9476,17 @@
         ],
         "avg_cyclomatic": 1.62,
         "avg_cognitive": 0.75
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 23,
+        "comment_lines": 9,
+        "comment_lines_density": 5.6,
+        "complexity": 39,
+        "functions": 14,
+        "lines": 186,
+        "ncloc": 153,
+        "sqale_debt_ratio": 2.5
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/CloudKit/services/NewsArticleService.swift": {
@@ -8033,6 +9560,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 12,
+        "comment_lines": 6,
+        "comment_lines_density": 8.5,
+        "complexity": 17,
+        "functions": 7,
+        "lines": 84,
+        "ncloc": 65,
+        "sqale_debt_ratio": 3.1
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Environments/SubscriptionManager.swift": {
@@ -8091,6 +9629,17 @@
         ],
         "avg_cyclomatic": 1.4,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 12,
+        "comment_lines": 7,
+        "comment_lines_density": 11.9,
+        "complexity": 11,
+        "functions": 4,
+        "lines": 70,
+        "ncloc": 52,
+        "sqale_debt_ratio": 3.8
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/Category.swift": {
@@ -8194,6 +9743,17 @@
         ],
         "avg_cyclomatic": 4.71,
         "avg_cognitive": 0.86
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 16,
+        "comment_lines": 7,
+        "comment_lines_density": 4.0,
+        "complexity": 55,
+        "functions": 13,
+        "lines": 190,
+        "ncloc": 166,
+        "sqale_debt_ratio": 2.6
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/Fruit.swift": {
@@ -8232,6 +9792,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 31.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 27,
+        "ncloc": 15,
+        "sqale_debt_ratio": 1.1
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/Item.swift": {
@@ -8350,6 +9921,17 @@
         ],
         "avg_cyclomatic": 2.94,
         "avg_cognitive": 1.65
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 39,
+        "comment_lines": 12,
+        "comment_lines_density": 4.7,
+        "complexity": 42,
+        "functions": 10,
+        "lines": 300,
+        "ncloc": 242,
+        "sqale_debt_ratio": 2.8
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/Material.swift": {
@@ -8393,6 +9975,17 @@
         ],
         "avg_cyclomatic": 7.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 15.2,
+        "complexity": 13,
+        "functions": 0,
+        "lines": 51,
+        "ncloc": 39,
+        "sqale_debt_ratio": 0.9
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/SpecialCharacters.swift": {
@@ -8446,6 +10039,17 @@
         ],
         "avg_cyclomatic": 6.0,
         "avg_cognitive": 1.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 7,
+        "comment_lines": 6,
+        "comment_lines_density": 8.3,
+        "complexity": 24,
+        "functions": 4,
+        "lines": 79,
+        "ncloc": 66,
+        "sqale_debt_ratio": 3.0
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Models/Variant.swift": {
@@ -8473,6 +10077,17 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 41.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 21,
+        "ncloc": 10,
+        "sqale_debt_ratio": 1.7
       }
     },
     "ACHNBrowserUI/Packages/Backend/Sources/Backend/Utils/AppUserDefault.swift": {
@@ -8536,6 +10151,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "comment_lines": 7,
+        "comment_lines_density": 10.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 86,
+        "ncloc": 60,
+        "sqale_debt_ratio": 3.9
       }
     },
     "ACHNBrowserUI/Packages/UI/Sources/UI/Color.swift": {
@@ -8669,6 +10295,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 24,
+        "comment_lines": 12,
+        "comment_lines_density": 15.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 104,
+        "ncloc": 65,
+        "sqale_debt_ratio": 6.2
       }
     },
     "ACHNBrowserUI/Packages/UI/Sources/UI/ItemImage.swift": {
@@ -8712,6 +10349,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 34,
+        "ncloc": 22,
+        "sqale_debt_ratio": 3.0
       }
     },
     "ACHNBrowserUI/Packages/UI/Sources/UI/LazyView.swift": {
@@ -8755,6 +10403,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 6,
+        "comment_lines_density": 37.5,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 10,
+        "sqale_debt_ratio": 3.3
       }
     },
     "ACHNBrowserUI/Packages/UI/Sources/UI/ProgressView.swift": {
@@ -8798,6 +10457,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 15.9,
+        "complexity": 4,
+        "functions": 0,
+        "lines": 50,
+        "ncloc": 37,
+        "sqale_debt_ratio": 1.8
       }
     },
     "ACHNBrowserUI/Widgets/Widgets.swift": {
@@ -8836,6 +10506,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 41.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 20,
+        "ncloc": 10
       }
     },
     "ACHNBrowserUI/Widgets/models/WidgetModel.swift": {
@@ -8874,6 +10553,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 30.4,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 28,
+        "ncloc": 16,
+        "sqale_debt_ratio": 1.0
       }
     },
     "ACHNBrowserUI/Widgets/models/WidgetProvider.swift": {
@@ -8932,6 +10622,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.2
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 7,
+        "comment_lines": 7,
+        "comment_lines_density": 8.0,
+        "complexity": 17,
+        "functions": 5,
+        "lines": 97,
+        "ncloc": 81,
+        "sqale_debt_ratio": 1.4
       }
     },
     "ACHNBrowserUI/Widgets/views/MuseumProgressWidget.swift": {
@@ -8980,6 +10681,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 11.7,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 67,
+        "ncloc": 53,
+        "sqale_debt_ratio": 0.6
       }
     },
     "ACHNBrowserUI/Widgets/views/VillagerBirthdayWidget.swift": {
@@ -9048,6 +10760,17 @@
         ],
         "avg_cyclomatic": 1.57,
         "avg_cognitive": 0.43
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 5.8,
+        "complexity": 0,
+        "functions": 5,
+        "lines": 134,
+        "ncloc": 114,
+        "sqale_debt_ratio": 1.5
       }
     },
     "ACHNBrowserUI/Widgets/views/WidgetProgressBar.swift": {
@@ -9091,6 +10814,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 7,
+        "comment_lines_density": 21.2,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 26,
+        "sqale_debt_ratio": 1.9
       }
     }
   }

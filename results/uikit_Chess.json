@@ -15,9 +15,18 @@
     "Chess/ViewController.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
-    "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "bugs": 0,
+    "complexity": 124,
+    "code_smells": 17,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 42,
+    "functions": 42,
+    "classes": 5,
+    "ncloc": 585,
+    "files": 6,
+    "sqale_debt_ratio": 0.6,
+    "comment_lines_density": 6.7,
+    "lines": 708
   },
   "files": {
     "Chess/AppDelegate.swift": {
@@ -45,6 +54,15 @@
       "derived": {
         "mutable_variable_ratio": null,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 70.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 3
       }
     },
     "Chess/BoardView.swift": {
@@ -178,6 +196,17 @@
         ],
         "avg_cyclomatic": 2.15,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "comment_lines": 7,
+        "comment_lines_density": 3.5,
+        "complexity": 36,
+        "functions": 12,
+        "lines": 227,
+        "ncloc": 192,
+        "sqale_debt_ratio": 1.2
       }
     },
     "Chess/SceneDelegate.swift": {
@@ -205,6 +234,15 @@
       "derived": {
         "mutable_variable_ratio": 1.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 63.6,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 14,
+        "ncloc": 4
       }
     },
     "Chess/SettingsViewController.swift": {
@@ -278,6 +316,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 7.3,
+        "complexity": 20,
+        "functions": 8,
+        "lines": 111,
+        "ncloc": 89
       }
     },
     "Chess/UIView+Jiggle.swift": {
@@ -316,6 +363,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 28.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 28,
+        "ncloc": 18,
+        "sqale_debt_ratio": 0.9
       }
     },
     "Chess/ViewController.swift": {
@@ -464,6 +522,17 @@
         ],
         "avg_cyclomatic": 2.48,
         "avg_cognitive": 1.26
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 7,
+        "comment_lines_density": 2.4,
+        "complexity": 67,
+        "functions": 21,
+        "lines": 315,
+        "ncloc": 279,
+        "sqale_debt_ratio": 0.4
       }
     }
   }

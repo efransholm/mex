@@ -67,9 +67,18 @@
     "Expense Tracker/Utilits/DatePicker.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
-    "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "bugs": 5,
+    "complexity": 372,
+    "code_smells": 1180,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 587,
+    "functions": 254,
+    "classes": 47,
+    "ncloc": 4016,
+    "files": 58,
+    "sqale_debt_ratio": 5.1,
+    "comment_lines_density": 12.8,
+    "lines": 5762
   },
   "files": {
     "Expense Tracker/Controllers/Forget Password/ForgetPasswordVC.swift": {
@@ -123,6 +132,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 15,
+        "comment_lines": 9,
+        "comment_lines_density": 16.7,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 69,
+        "ncloc": 45,
+        "sqale_debt_ratio": 5.6
       }
     },
     "Expense Tracker/Controllers/Login SingUp/LoginVC.swift": {
@@ -221,6 +241,17 @@
         ],
         "avg_cyclomatic": 1.85,
         "avg_cognitive": 1.23
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 57,
+        "comment_lines": 10,
+        "comment_lines_density": 4.5,
+        "complexity": 7,
+        "functions": 13,
+        "lines": 270,
+        "ncloc": 210,
+        "sqale_debt_ratio": 4.5
       }
     },
     "Expense Tracker/Controllers/Login SingUp/LoginWithPinVC.swift": {
@@ -294,6 +325,17 @@
         ],
         "avg_cyclomatic": 3.12,
         "avg_cognitive": 2.12
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 43,
+        "comment_lines": 7,
+        "comment_lines_density": 3.7,
+        "complexity": 26,
+        "functions": 8,
+        "lines": 221,
+        "ncloc": 181,
+        "sqale_debt_ratio": 4.4
       }
     },
     "Expense Tracker/Controllers/Login SingUp/SingUpVC.swift": {
@@ -367,6 +409,17 @@
         ],
         "avg_cyclomatic": 1.62,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 46,
+        "comment_lines": 10,
+        "comment_lines_density": 6.4,
+        "complexity": 11,
+        "functions": 8,
+        "lines": 194,
+        "ncloc": 147,
+        "sqale_debt_ratio": 5.2
       }
     },
     "Expense Tracker/Controllers/Main/AddIncomeAndExpensesVC.swift": {
@@ -450,6 +503,17 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.7
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 51,
+        "comment_lines": 15,
+        "comment_lines_density": 6.6,
+        "complexity": 18,
+        "functions": 10,
+        "lines": 277,
+        "ncloc": 214,
+        "sqale_debt_ratio": 4.0
       }
     },
     "Expense Tracker/Controllers/Main/HomeVC.swift": {
@@ -588,6 +652,18 @@
         ],
         "avg_cyclomatic": 1.29,
         "avg_cognitive": 0.29
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 104,
+        "comment_lines": 44,
+        "comment_lines_density": 13.4,
+        "complexity": 9,
+        "functions": 21,
+        "lines": 412,
+        "ncloc": 285,
+        "sqale_debt_ratio": 7.0
       }
     },
     "Expense Tracker/Controllers/Main/ProfileVC.swift": {
@@ -691,6 +767,17 @@
         ],
         "avg_cyclomatic": 1.64,
         "avg_cognitive": 0.86
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 40,
+        "comment_lines": 21,
+        "comment_lines_density": 10.0,
+        "complexity": 37,
+        "functions": 12,
+        "lines": 246,
+        "ncloc": 190,
+        "sqale_debt_ratio": 3.5
       }
     },
     "Expense Tracker/Controllers/Main/TransectionsVC.swift": {
@@ -824,6 +911,18 @@
         ],
         "avg_cyclomatic": 1.65,
         "avg_cognitive": 0.45
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 79,
+        "comment_lines": 22,
+        "comment_lines_density": 7.9,
+        "complexity": 10,
+        "functions": 20,
+        "lines": 341,
+        "ncloc": 256,
+        "sqale_debt_ratio": 5.2
       }
     },
     "Expense Tracker/Controllers/OnBoarding/OnboardingViewController.swift": {
@@ -907,6 +1006,18 @@
         ],
         "avg_cyclomatic": 1.2,
         "avg_cognitive": 0.4
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 28,
+        "comment_lines": 13,
+        "comment_lines_density": 11.1,
+        "complexity": 14,
+        "functions": 9,
+        "lines": 138,
+        "ncloc": 104,
+        "sqale_debt_ratio": 4.6
       }
     },
     "Expense Tracker/Controllers/ProfileViews/AboutUsVC.swift": {
@@ -950,6 +1061,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 18,
+        "comment_lines": 7,
+        "comment_lines_density": 16.7,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 57,
+        "ncloc": 35,
+        "sqale_debt_ratio": 8.6
       }
     },
     "Expense Tracker/Controllers/ProfileViews/ChangePasswordVC.swift": {
@@ -998,6 +1120,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 31,
+        "comment_lines": 12,
+        "comment_lines_density": 12.6,
+        "complexity": 5,
+        "functions": 3,
+        "lines": 120,
+        "ncloc": 83,
+        "sqale_debt_ratio": 7.1
       }
     },
     "Expense Tracker/Controllers/ProfileViews/EditProfileVC.swift": {
@@ -1116,6 +1249,17 @@
         ],
         "avg_cyclomatic": 1.35,
         "avg_cognitive": 0.53
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 95,
+        "comment_lines": 17,
+        "comment_lines_density": 5.6,
+        "complexity": 32,
+        "functions": 17,
+        "lines": 375,
+        "ncloc": 286,
+        "sqale_debt_ratio": 5.8
       }
     },
     "Expense Tracker/Controllers/ProfileViews/UserStatementVC.swift": {
@@ -1184,6 +1328,18 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 12,
+        "comment_lines": 8,
+        "comment_lines_density": 14.3,
+        "complexity": 6,
+        "functions": 5,
+        "lines": 72,
+        "ncloc": 48,
+        "sqale_debt_ratio": 4.2
       }
     },
     "Expense Tracker/Custom Views/AlertView/AlertBody.swift": {
@@ -1237,6 +1393,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 6,
+        "comment_lines_density": 21.4,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 37,
+        "ncloc": 22,
+        "sqale_debt_ratio": 4.5
       }
     },
     "Expense Tracker/Custom Views/AlertView/AlertBtn.swift": {
@@ -1295,6 +1462,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 5,
+        "comment_lines_density": 16.7,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 41,
+        "ncloc": 25,
+        "sqale_debt_ratio": 5.3
       }
     },
     "Expense Tracker/Custom Views/AlertView/AlertContainer.swift": {
@@ -1343,6 +1521,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 6,
+        "comment_lines_density": 26.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 28,
+        "ncloc": 17,
+        "sqale_debt_ratio": 2.0
       }
     },
     "Expense Tracker/Custom Views/AlertView/AlertController.swift": {
@@ -1411,6 +1600,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 18,
+        "comment_lines": 9,
+        "comment_lines_density": 11.5,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 99,
+        "ncloc": 69,
+        "sqale_debt_ratio": 4.3
       }
     },
     "Expense Tracker/Custom Views/AlertView/AlertTitle.swift": {
@@ -1464,6 +1664,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 7,
+        "comment_lines": 6,
+        "comment_lines_density": 21.4,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 37,
+        "ncloc": 22,
+        "sqale_debt_ratio": 5.3
       }
     },
     "Expense Tracker/Custom Views/Button/EButton.swift": {
@@ -1522,6 +1733,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 21.9,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 40,
+        "ncloc": 25,
+        "sqale_debt_ratio": 3.3
       }
     },
     "Expense Tracker/Custom Views/Button/GradientButton.swift": {
@@ -1575,6 +1797,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 6,
+        "comment_lines": 7,
+        "comment_lines_density": 20.0,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 43,
+        "ncloc": 28,
+        "sqale_debt_ratio": 3.6
       }
     },
     "Expense Tracker/Custom Views/Cell/OnboardingCell.swift": {
@@ -1628,6 +1861,17 @@
         ],
         "avg_cyclomatic": 1.25,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 16,
+        "comment_lines": 6,
+        "comment_lines_density": 9.5,
+        "complexity": 6,
+        "functions": 2,
+        "lines": 79,
+        "ncloc": 57,
+        "sqale_debt_ratio": 4.7
       }
     },
     "Expense Tracker/Custom Views/Cell/TransectionTableViewCell.swift": {
@@ -1691,6 +1935,17 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.83
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 26,
+        "comment_lines": 9,
+        "comment_lines_density": 9.0,
+        "complexity": 10,
+        "functions": 4,
+        "lines": 123,
+        "ncloc": 91,
+        "sqale_debt_ratio": 4.8
       }
     },
     "Expense Tracker/Custom Views/Custom TableView/CustomTableView.swift": {
@@ -1744,6 +1999,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 5,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 22,
+        "sqale_debt_ratio": 3.8
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/ColorUtils.swift": {
@@ -1797,6 +2063,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 12,
+        "comment_lines": 6,
+        "comment_lines_density": 23.1,
+        "complexity": 4,
+        "functions": 4,
+        "lines": 34,
+        "ncloc": 20,
+        "sqale_debt_ratio": 10.0
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/CustomPageController.swift": {
@@ -1890,6 +2167,17 @@
         ],
         "avg_cyclomatic": 1.17,
         "avg_cognitive": 0.17
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 6,
+        "comment_lines_density": 8.2,
+        "complexity": 8,
+        "functions": 6,
+        "lines": 93,
+        "ncloc": 67,
+        "sqale_debt_ratio": 1.0
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/DotDrawer.swift": {
@@ -1938,6 +2226,17 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 2.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 12,
+        "comment_lines": 6,
+        "comment_lines_density": 7.5,
+        "complexity": 7,
+        "functions": 3,
+        "lines": 96,
+        "ncloc": 74,
+        "sqale_debt_ratio": 2.7
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/DrawerProtocol.swift": {
@@ -2001,6 +2300,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 2,
+        "code_smells": 4,
+        "comment_lines": 5,
+        "comment_lines_density": 4.7,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 116,
+        "ncloc": 101,
+        "sqale_debt_ratio": 0.7
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/InfiniteDrawer.swift": {
@@ -2044,6 +2354,17 @@
         ],
         "avg_cyclomatic": 5.0,
         "avg_cognitive": 6.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 5,
+        "comment_lines_density": 6.3,
+        "complexity": 10,
+        "functions": 2,
+        "lines": 99,
+        "ncloc": 74,
+        "sqale_debt_ratio": 2.9
       }
     },
     "Expense Tracker/Custom Views/CustomPageController/InfiniteScrollingDrawer.swift": {
@@ -2087,6 +2408,17 @@
         ],
         "avg_cyclomatic": 5.0,
         "avg_cognitive": 6.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "comment_lines": 5,
+        "comment_lines_density": 6.0,
+        "complexity": 10,
+        "functions": 2,
+        "lines": 110,
+        "ncloc": 79,
+        "sqale_debt_ratio": 4.0
       }
     },
     "Expense Tracker/Custom Views/ImageView/AvatarImageView.swift": {
@@ -2145,6 +2477,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 21.2,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 44,
+        "ncloc": 26,
+        "sqale_debt_ratio": 5.1
       }
     },
     "Expense Tracker/Custom Views/Label/CustomLabel.swift": {
@@ -2208,6 +2551,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 54,
+        "ncloc": 33,
+        "sqale_debt_ratio": 7.1
       }
     },
     "Expense Tracker/Custom Views/SwiftUI CharView/CharView.swift": {
@@ -2246,6 +2600,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 9,
+        "comment_lines_density": 50.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 9,
+        "sqale_debt_ratio": 1.9
       }
     },
     "Expense Tracker/Custom Views/TabBar Controller/TabBarVC.swift": {
@@ -2314,6 +2679,17 @@
         ],
         "avg_cyclomatic": 1.43,
         "avg_cognitive": 1.14
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 18,
+        "comment_lines": 12,
+        "comment_lines_density": 16.2,
+        "complexity": 12,
+        "functions": 7,
+        "lines": 89,
+        "ncloc": 62,
+        "sqale_debt_ratio": 4.8
       }
     },
     "Expense Tracker/Custom Views/TextField/CustomTextFields.swift": {
@@ -2387,6 +2763,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 12,
+        "comment_lines": 8,
+        "comment_lines_density": 13.1,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 77,
+        "ncloc": 53,
+        "sqale_debt_ratio": 3.8
       }
     },
     "Expense Tracker/Custom Views/TextField/ForgetPasswordTextFeild.swift": {
@@ -2435,6 +2822,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 7,
+        "comment_lines_density": 21.9,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 45,
+        "ncloc": 25,
+        "sqale_debt_ratio": 5.3
       }
     },
     "Expense Tracker/Custom Views/TextField/PasswordTextField.swift": {
@@ -2483,6 +2881,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 9,
+        "comment_lines": 9,
+        "comment_lines_density": 25.7,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 26,
+        "sqale_debt_ratio": 5.8
       }
     },
     "Expense Tracker/Custom Views/TextField/UsernameTextField.swift": {
@@ -2531,6 +2940,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 21.9,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 44,
+        "ncloc": 25,
+        "sqale_debt_ratio": 6.0
       }
     },
     "Expense Tracker/Custom Views/UIView/CardView.swift": {
@@ -2584,6 +3004,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 7,
+        "comment_lines_density": 17.5,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 53,
+        "ncloc": 33,
+        "sqale_debt_ratio": 5.1
       }
     },
     "Expense Tracker/Custom Views/UIView/CustomView.swift": {
@@ -2632,6 +3063,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 26.9,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 34,
+        "ncloc": 19,
+        "sqale_debt_ratio": 3.5
       }
     },
     "Expense Tracker/Custom Views/UIView/ProfileHeaderView.swift": {
@@ -2695,6 +3137,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 31,
+        "comment_lines": 7,
+        "comment_lines_density": 11.3,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 89,
+        "ncloc": 55,
+        "sqale_debt_ratio": 9.4
       }
     },
     "Expense Tracker/Custom Views/View Controllers/AllTransactions.swift": {
@@ -2763,6 +3216,18 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 16,
+        "comment_lines": 6,
+        "comment_lines_density": 11.5,
+        "complexity": 5,
+        "functions": 5,
+        "lines": 65,
+        "ncloc": 46,
+        "sqale_debt_ratio": 5.8
       }
     },
     "Expense Tracker/Custom Views/View Controllers/DataLoading.swift": {
@@ -2806,6 +3271,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 16,
+        "comment_lines": 11,
+        "comment_lines_density": 22.0,
+        "complexity": 5,
+        "functions": 2,
+        "lines": 69,
+        "ncloc": 39,
+        "sqale_debt_ratio": 6.8
       }
     },
     "Expense Tracker/Custom Views/View Controllers/HeaderVC.swift": {
@@ -2859,6 +3335,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 9,
+        "comment_lines": 7,
+        "comment_lines_density": 16.7,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 56,
+        "ncloc": 35,
+        "sqale_debt_ratio": 4.3
       }
     },
     "Expense Tracker/Extentions/Color+Ext.swift": {
@@ -2897,6 +3384,17 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 2.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 9,
+        "comment_lines": 8,
+        "comment_lines_density": 24.2,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 40,
+        "ncloc": 25,
+        "sqale_debt_ratio": 6.0
       }
     },
     "Expense Tracker/Extentions/UITableView+Ext.swift": {
@@ -2940,6 +3438,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 6,
+        "comment_lines_density": 40.0,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 21,
+        "ncloc": 9,
+        "sqale_debt_ratio": 5.6
       }
     },
     "Expense Tracker/Extentions/UITextFeild+Ext.swift": {
@@ -2978,6 +3487,17 @@
         ],
         "avg_cyclomatic": 3.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 12,
+        "comment_lines": 7,
+        "comment_lines_density": 22.6,
+        "complexity": 3,
+        "functions": 1,
+        "lines": 39,
+        "ncloc": 24,
+        "sqale_debt_ratio": 8.3
       }
     },
     "Expense Tracker/Extentions/UIView+Ext.swift": {
@@ -3026,6 +3546,17 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 4,
+        "comment_lines": 7,
+        "comment_lines_density": 25.9,
+        "complexity": 5,
+        "functions": 3,
+        "lines": 36,
+        "ncloc": 20,
+        "sqale_debt_ratio": 3.3
       }
     },
     "Expense Tracker/Extentions/UIViewController+Ext.swift": {
@@ -3099,6 +3630,17 @@
         ],
         "avg_cyclomatic": 5.38,
         "avg_cognitive": 2.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 29,
+        "comment_lines": 35,
+        "comment_lines_density": 28.0,
+        "complexity": 31,
+        "functions": 8,
+        "lines": 141,
+        "ncloc": 90,
+        "sqale_debt_ratio": 6.3
       }
     },
     "Expense Tracker/Models/OnBoardingModel.swift": {
@@ -3126,6 +3668,17 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 6,
+        "comment_lines_density": 30.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 14,
+        "sqale_debt_ratio": 6.0
       }
     },
     "Expense Tracker/Models/User.swift": {
@@ -3153,6 +3706,17 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 12,
+        "comment_lines_density": 27.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 52,
+        "ncloc": 31,
+        "sqale_debt_ratio": 1.8
       }
     },
     "Expense Tracker/Network Manager/AuthManager.swift": {
@@ -3226,6 +3790,17 @@
         ],
         "avg_cyclomatic": 1.88,
         "avg_cognitive": 0.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 25,
+        "comment_lines": 8,
+        "comment_lines_density": 10.8,
+        "complexity": 0,
+        "functions": 5,
+        "lines": 97,
+        "ncloc": 66,
+        "sqale_debt_ratio": 6.3
       }
     },
     "Expense Tracker/Network Manager/NetworkManager.swift": {
@@ -3314,6 +3889,17 @@
         ],
         "avg_cyclomatic": 2.91,
         "avg_cognitive": 1.82
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 56,
+        "comment_lines": 8,
+        "comment_lines_density": 6.3,
+        "complexity": 0,
+        "functions": 9,
+        "lines": 168,
+        "ncloc": 119,
+        "sqale_debt_ratio": 8.5
       }
     },
     "Expense Tracker/Resources/AppDelegate.swift": {
@@ -3362,6 +3948,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 7,
+        "comment_lines": 16,
+        "comment_lines_density": 57.1,
+        "complexity": 3,
+        "functions": 3,
+        "lines": 41,
+        "ncloc": 12,
+        "sqale_debt_ratio": 9.7
       }
     },
     "Expense Tracker/Resources/SceneDelegate.swift": {
@@ -3425,6 +4022,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.83
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 11,
+        "comment_lines": 25,
+        "comment_lines_density": 45.5,
+        "complexity": 9,
+        "functions": 6,
+        "lines": 73,
+        "ncloc": 30,
+        "sqale_debt_ratio": 6.1
       }
     },
     "Expense Tracker/Utilits/AppError.swift": {
@@ -3452,6 +4060,17 @@
       "derived": {
         "mutable_variable_ratio": null,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 9,
+        "comment_lines_density": 36.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 28,
+        "ncloc": 16,
+        "sqale_debt_ratio": 1.0
       }
     },
     "Expense Tracker/Utilits/BalanceFormater.swift": {
@@ -3479,6 +4098,15 @@
       "derived": {
         "mutable_variable_ratio": null,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 9,
+        "comment_lines_density": 69.2,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 16,
+        "ncloc": 4
       }
     },
     "Expense Tracker/Utilits/Constants.swift": {
@@ -3527,6 +4155,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 18,
+        "comment_lines": 10,
+        "comment_lines_density": 14.3,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 87,
+        "ncloc": 60,
+        "sqale_debt_ratio": 5.0
       }
     },
     "Expense Tracker/Utilits/DatePicker.swift": {
@@ -3630,6 +4269,17 @@
         ],
         "avg_cyclomatic": 1.57,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 58,
+        "comment_lines": 14,
+        "comment_lines_density": 9.5,
+        "complexity": 22,
+        "functions": 13,
+        "lines": 204,
+        "ncloc": 133,
+        "sqale_debt_ratio": 7.3
       }
     }
   }

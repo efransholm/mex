@@ -32,9 +32,18 @@
     "YouTag/YYTTagView.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
-    "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "bugs": 17,
+    "complexity": 808,
+    "code_smells": 899,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 760,
+    "functions": 343,
+    "classes": 25,
+    "ncloc": 6138,
+    "files": 23,
+    "sqale_debt_ratio": 2.9,
+    "comment_lines_density": 11.0,
+    "lines": 7989
   },
   "files": {
     "YouTag/AppDelegate.swift": {
@@ -108,6 +117,17 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.88
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 24,
+        "comment_lines": 24,
+        "comment_lines_density": 19.7,
+        "complexity": 16,
+        "functions": 8,
+        "lines": 147,
+        "ncloc": 98,
+        "sqale_debt_ratio": 4.1
       }
     },
     "YouTag/Extensions.swift": {
@@ -331,6 +351,18 @@
         ],
         "avg_cyclomatic": 2.08,
         "avg_cognitive": 1.16
+      },
+      "sonarqube": {
+        "bugs": 3,
+        "classes": 2,
+        "code_smells": 92,
+        "comment_lines": 44,
+        "comment_lines_density": 9.4,
+        "complexity": 44,
+        "functions": 29,
+        "lines": 575,
+        "ncloc": 423,
+        "sqale_debt_ratio": 3.8
       }
     },
     "YouTag/FilterPickerView.swift": {
@@ -459,6 +491,17 @@
         ],
         "avg_cyclomatic": 3.16,
         "avg_cognitive": 2.32
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 92,
+        "comment_lines": 33,
+        "comment_lines_density": 6.5,
+        "complexity": 71,
+        "functions": 18,
+        "lines": 567,
+        "ncloc": 471,
+        "sqale_debt_ratio": 4.1
       }
     },
     "YouTag/GraphicColors.swift": {
@@ -486,6 +529,17 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 33.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 26,
+        "ncloc": 14,
+        "sqale_debt_ratio": 1.2
       }
     },
     "YouTag/LibraryCell.swift": {
@@ -544,6 +598,17 @@
         ],
         "avg_cyclomatic": 2.2,
         "avg_cognitive": 1.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 11,
+        "comment_lines": 30,
+        "comment_lines_density": 16.0,
+        "complexity": 18,
+        "functions": 3,
+        "lines": 220,
+        "ncloc": 158,
+        "sqale_debt_ratio": 1.2
       }
     },
     "YouTag/LibraryManager.swift": {
@@ -777,6 +842,17 @@
         ],
         "avg_cyclomatic": 5.65,
         "avg_cognitive": 7.55
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 76,
+        "comment_lines": 67,
+        "comment_lines_density": 6.9,
+        "complexity": 0,
+        "functions": 38,
+        "lines": 1092,
+        "ncloc": 900,
+        "sqale_debt_ratio": 2.3
       }
     },
     "YouTag/LibraryTableView.swift": {
@@ -885,6 +961,17 @@
         ],
         "avg_cyclomatic": 2.6,
         "avg_cognitive": 2.4
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 35,
+        "comment_lines": 30,
+        "comment_lines_density": 12.0,
+        "complexity": 49,
+        "functions": 13,
+        "lines": 285,
+        "ncloc": 219,
+        "sqale_debt_ratio": 3.1
       }
     },
     "YouTag/LibraryViewController.swift": {
@@ -973,6 +1060,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.09
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 14,
+        "comment_lines": 26,
+        "comment_lines_density": 11.1,
+        "complexity": 16,
+        "functions": 11,
+        "lines": 269,
+        "ncloc": 209,
+        "sqale_debt_ratio": 1.1
       }
     },
     "YouTag/LocalFilesManager.swift": {
@@ -1076,6 +1174,18 @@
         ],
         "avg_cyclomatic": 2.14,
         "avg_cognitive": 1.43
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 10,
+        "comment_lines": 36,
+        "comment_lines_density": 22.1,
+        "complexity": 0,
+        "functions": 14,
+        "lines": 186,
+        "ncloc": 127,
+        "sqale_debt_ratio": 1.3
       }
     },
     "YouTag/NowPlayingView.swift": {
@@ -1204,6 +1314,17 @@
         ],
         "avg_cyclomatic": 1.74,
         "avg_cognitive": 0.95
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 58,
+        "comment_lines": 32,
+        "comment_lines_density": 7.9,
+        "complexity": 51,
+        "functions": 19,
+        "lines": 459,
+        "ncloc": 374,
+        "sqale_debt_ratio": 3.3
       }
     },
     "YouTag/PlaybackRateView.swift": {
@@ -1302,6 +1423,17 @@
         ],
         "avg_cyclomatic": 1.46,
         "avg_cognitive": 0.54
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 15,
+        "comment_lines": 19,
+        "comment_lines_density": 10.2,
+        "complexity": 24,
+        "functions": 11,
+        "lines": 214,
+        "ncloc": 167,
+        "sqale_debt_ratio": 2.0
       }
     },
     "YouTag/PlaylistControlView.swift": {
@@ -1375,6 +1507,17 @@
         ],
         "avg_cyclomatic": 1.12,
         "avg_cognitive": 0.12
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 13,
+        "comment_lines_density": 10.1,
+        "complexity": 15,
+        "functions": 8,
+        "lines": 153,
+        "ncloc": 116,
+        "sqale_debt_ratio": 0.3
       }
     },
     "YouTag/PlaylistManager.swift": {
@@ -1498,6 +1641,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.11
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 27,
+        "comment_lines": 29,
+        "comment_lines_density": 15.7,
+        "complexity": 41,
+        "functions": 17,
+        "lines": 218,
+        "ncloc": 156,
+        "sqale_debt_ratio": 2.9
       }
     },
     "YouTag/PlaylistTableView.swift": {
@@ -1616,6 +1770,17 @@
         ],
         "avg_cyclomatic": 2.41,
         "avg_cognitive": 1.59
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 15,
+        "comment_lines": 29,
+        "comment_lines_density": 15.4,
+        "complexity": 46,
+        "functions": 16,
+        "lines": 225,
+        "ncloc": 159,
+        "sqale_debt_ratio": 1.6
       }
     },
     "YouTag/SearchTextField.swift": {
@@ -1844,6 +2009,18 @@
         ],
         "avg_cyclomatic": 2.51,
         "avg_cognitive": 2.33
+      },
+      "sonarqube": {
+        "bugs": 4,
+        "classes": 2,
+        "code_smells": 159,
+        "comment_lines": 60,
+        "comment_lines_density": 11.4,
+        "complexity": 92,
+        "functions": 30,
+        "lines": 657,
+        "ncloc": 465,
+        "sqale_debt_ratio": 6.1
       }
     },
     "YouTag/SongDetailViewController.swift": {
@@ -2012,6 +2189,17 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 1.81
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 80,
+        "comment_lines": 63,
+        "comment_lines_density": 9.9,
+        "complexity": 74,
+        "functions": 27,
+        "lines": 722,
+        "ncloc": 574,
+        "sqale_debt_ratio": 2.9
       }
     },
     "YouTag/ViewController.swift": {
@@ -2140,6 +2328,18 @@
         ],
         "avg_cyclomatic": 1.79,
         "avg_cognitive": 0.68
+      },
+      "sonarqube": {
+        "bugs": 3,
+        "classes": 1,
+        "code_smells": 52,
+        "comment_lines": 65,
+        "comment_lines_density": 15.5,
+        "complexity": 51,
+        "functions": 18,
+        "lines": 484,
+        "ncloc": 355,
+        "sqale_debt_ratio": 3.1
       }
     },
     "YouTag/YYTAudioPlayer.swift": {
@@ -2318,6 +2518,17 @@
         ],
         "avg_cyclomatic": 2.59,
         "avg_cognitive": 1.69
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 37,
+        "comment_lines": 49,
+        "comment_lines_density": 11.8,
+        "complexity": 85,
+        "functions": 30,
+        "lines": 470,
+        "ncloc": 365,
+        "sqale_debt_ratio": 2.2
       }
     },
     "YouTag/YYTFilterTagView.swift": {
@@ -2391,6 +2602,18 @@
         ],
         "avg_cyclomatic": 2.12,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "code_smells": 9,
+        "comment_lines": 9,
+        "comment_lines_density": 8.4,
+        "complexity": 21,
+        "functions": 6,
+        "lines": 124,
+        "ncloc": 98,
+        "sqale_debt_ratio": 1.5
       }
     },
     "YouTag/YYTRangeSlider.swift": {
@@ -2534,6 +2757,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 0.86
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 36,
+        "comment_lines": 27,
+        "comment_lines_density": 11.3,
+        "complexity": 24,
+        "functions": 9,
+        "lines": 289,
+        "ncloc": 213,
+        "sqale_debt_ratio": 3.2
       }
     },
     "YouTag/YYTRangeSliderTrackLayer.swift": {
@@ -2572,6 +2806,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 4,
+        "comment_lines": 27,
+        "comment_lines_density": 56.3,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 56,
+        "ncloc": 21,
+        "sqale_debt_ratio": 3.2
       }
     },
     "YouTag/YYTTagCell.swift": {
@@ -2630,6 +2875,17 @@
         ],
         "avg_cyclomatic": 1.4,
         "avg_cognitive": 0.8
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 8,
+        "comment_lines": 8,
+        "comment_lines_density": 7.6,
+        "complexity": 8,
+        "functions": 2,
+        "lines": 118,
+        "ncloc": 97,
+        "sqale_debt_ratio": 1.4
       }
     },
     "YouTag/YYTTagView.swift": {
@@ -2758,6 +3014,18 @@
         ],
         "avg_cyclomatic": 2.74,
         "avg_cognitive": 2.32
+      },
+      "sonarqube": {
+        "bugs": 5,
+        "classes": 2,
+        "code_smells": 42,
+        "comment_lines": 33,
+        "comment_lines_density": 8.4,
+        "complexity": 60,
+        "functions": 15,
+        "lines": 433,
+        "ncloc": 359,
+        "sqale_debt_ratio": 2.7
       }
     }
   }

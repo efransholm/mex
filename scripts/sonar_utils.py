@@ -11,13 +11,13 @@ import urllib.request
 import urllib.error
 
 SONAR_HOST = "https://sonarcloud.io"
-SONAR_LOCAL_HOST = "http://localhost:9000"
+SONAR_LOCAL_HOST = "http://[::1]:9000"
 
 # Project-level metrics (includes file/class/function counts)
 METRICS_PROJECT = ",".join([
     "ncloc", "lines", "comment_lines", "comment_lines_density",
-    "statements", "files", "classes", "functions",
-    "complexity", "cognitive_complexity",
+    "files", "classes", "functions",
+    "complexity",
     "bugs", "code_smells", "sqale_debt_ratio",
     "duplicated_lines_density",
 ])
@@ -25,8 +25,8 @@ METRICS_PROJECT = ",".join([
 # Per-file metrics (same minus the aggregate-only "files" counter)
 METRICS_FILE = ",".join([
     "ncloc", "lines", "comment_lines", "comment_lines_density",
-    "statements", "classes", "functions",
-    "complexity", "cognitive_complexity",
+    "classes", "functions",
+    "complexity",
     "bugs", "code_smells", "sqale_debt_ratio",
     "duplicated_lines_density",
 ])
@@ -44,14 +44,40 @@ def _ssl_context() -> ssl.SSLContext:
     return ctx
 
 
-def generate_properties(project_path: str, project_key: str, org: str, local: bool = False) -> str:
+def generate_properties(
+    project_path: str,
+    project_key: str,
+    org: str,
+    local: bool = False,
+    language: str | None = None,
+    allowed_files: set | None = None,
+) -> str:
     """Write sonar-project.properties into project_path. Returns the file path."""
     host = SONAR_LOCAL_HOST if local else SONAR_HOST
+    # Map internal language names to SonarQube language keys
+    sonar_lang = {"swift": "swift", "kotlin": "kotlin", "java": "java"}.get(language or "")
+    lang_line = f"sonar.language={sonar_lang}\n" if sonar_lang and local else ""
+    # Exclusions for dependency/build directories that should never be analysed
+    SWIFT_EXCLUSIONS = "Pods/**,Carthage/**,.build/**,build/**,DerivedData/**"
+    ANDROID_EXCLUSIONS = "build/**,.gradle/**,generated/**"
+    if sonar_lang == "swift":
+        exclusions = SWIFT_EXCLUSIONS
+    elif sonar_lang in ("kotlin", "java"):
+        exclusions = ANDROID_EXCLUSIONS
+    else:
+        exclusions = ""
+    exclusions_line = f"sonar.exclusions={exclusions}\n" if exclusions else ""
+    inclusions_line = ""
+    if allowed_files:
+        inclusions_line = "sonar.inclusions=" + ",".join(sorted(allowed_files)) + "\n"
     if local:
         content = (
             f"sonar.projectKey={project_key}\n"
             f"sonar.sources=.\n"
             f"sonar.host.url={host}\n"
+            f"{lang_line}"
+            f"{exclusions_line}"
+            f"{inclusions_line}"
         )
     else:
         content = (
@@ -208,6 +234,8 @@ def analyze_with_sonar(
     sonar_token: str,
     org: str = "complexity-metrics",
     local: bool = False,
+    language: str | None = None,
+    allowed_files: set | None = None,
 ) -> dict:
     """
     Full pipeline: generate properties → scan → wait → fetch measures.
@@ -215,7 +243,7 @@ def analyze_with_sonar(
     or {"project": {}, "files": {}} on failure.
     """
     host = SONAR_LOCAL_HOST if local else SONAR_HOST
-    generate_properties(project_path, project_key, org, local=local)
+    generate_properties(project_path, project_key, org, local=local, language=language, allowed_files=allowed_files)
     print(f"    [sonar] Running scanner for {project_key} ...")
     task_id = run_scanner(project_path, sonar_token)
 

@@ -36,9 +36,18 @@
     "PokedexUI/SearchView/SearchView.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
-    "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "bugs": 0,
+    "complexity": 75,
+    "code_smells": 21,
+    "duplicated_lines_density": 0.0,
+    "comment_lines": 190,
+    "functions": 56,
+    "classes": 4,
+    "ncloc": 1169,
+    "files": 29,
+    "sqale_debt_ratio": 0.3,
+    "comment_lines_density": 14.0,
+    "lines": 1570
   },
   "files": {
     "PokedexUI/BookmarksView/BookmarksView.swift": {
@@ -82,6 +91,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 37,
+        "ncloc": 31
       }
     },
     "PokedexUI/CustomUI/AsyncSpriteView.swift": {
@@ -125,6 +143,15 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 5.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 77,
+        "ncloc": 65
       }
     },
     "PokedexUI/CustomUI/ItemDetailRowView.swift": {
@@ -163,6 +190,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 23,
+        "ncloc": 18
       }
     },
     "PokedexUI/CustomUI/ItemImageViewModel.swift": {
@@ -206,6 +242,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 32.3,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 21
       }
     },
     "PokedexUI/CustomUI/ItemRowView.swift": {
@@ -249,6 +294,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.5,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 27,
+        "ncloc": 21
       }
     },
     "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteView.swift": {
@@ -292,6 +346,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 4,
+        "comment_lines_density": 12.5,
+        "complexity": 0,
+        "functions": 1,
+        "lines": 37,
+        "ncloc": 28
       }
     },
     "PokedexUI/CustomUI/ItemSpriteView/ItemSpriteViewModel.swift": {
@@ -330,6 +393,17 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 6,
+        "comment_lines_density": 46.2,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 16,
+        "ncloc": 7,
+        "sqale_debt_ratio": 2.4
       }
     },
     "PokedexUI/CustomUI/PokedexGridView.swift": {
@@ -373,6 +447,17 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 1,
+        "comment_lines_density": 2.2,
+        "complexity": 7,
+        "functions": 0,
+        "lines": 52,
+        "ncloc": 45,
+        "sqale_debt_ratio": 0.4
       }
     },
     "PokedexUI/Extensions/Color.swift": {
@@ -416,6 +501,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 3,
+        "comment_lines": 1,
+        "comment_lines_density": 3.1,
+        "complexity": 2,
+        "functions": 0,
+        "lines": 38,
+        "ncloc": 31,
+        "sqale_debt_ratio": 1.6
       }
     },
     "PokedexUI/Extensions/Font.swift": {
@@ -443,6 +539,15 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 8,
+        "ncloc": 6
       }
     },
     "PokedexUI/Extensions/UIImage.swift": {
@@ -481,6 +586,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 11,
+        "ncloc": 9
       }
     },
     "PokedexUI/Extensions/View.swift": {
@@ -529,6 +643,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 6,
+        "functions": 3,
+        "lines": 32,
+        "ncloc": 28
       }
     },
     "PokedexUI/Extensions/ViewModifiers.swift": {
@@ -572,6 +695,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 2.8,
+        "complexity": 7,
+        "functions": 2,
+        "lines": 42,
+        "ncloc": 35
       }
     },
     "PokedexUI/ItemDetailView/ItemDetailView.swift": {
@@ -610,6 +742,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 3,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 21
       }
     },
     "PokedexUI/ItemListView/ItemListView.swift": {
@@ -658,6 +799,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 4.8,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 48,
+        "ncloc": 40
       }
     },
     "PokedexUI/Misc/EnvironmentValues/AudioPlayerKey.swift": {
@@ -701,6 +851,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 10
       }
     },
     "PokedexUI/Misc/EnvironmentValues/HapticFeedbackKey.swift": {
@@ -744,6 +903,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 14,
+        "ncloc": 11
       }
     },
     "PokedexUI/Misc/EnvironmentValues/ImageColorAnalyzerKey.swift": {
@@ -787,6 +955,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 10
       }
     },
     "PokedexUI/Misc/EnvironmentValues/SpriteLoaderKey.swift": {
@@ -830,6 +1007,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 13,
+        "ncloc": 10
       }
     },
     "PokedexUI/Misc/GridLayout.swift": {
@@ -883,6 +1069,17 @@
         ],
         "avg_cyclomatic": 2.5,
         "avg_cognitive": 0.75
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 6,
+        "comment_lines": 2,
+        "comment_lines_density": 6.5,
+        "complexity": 7,
+        "functions": 1,
+        "lines": 37,
+        "ncloc": 29,
+        "sqale_debt_ratio": 3.4
       }
     },
     "PokedexUI/Misc/ImageColorAnalyzer.swift": {
@@ -936,6 +1133,17 @@
         ],
         "avg_cyclomatic": 4.5,
         "avg_cognitive": 3.25
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 5,
+        "comment_lines": 2,
+        "comment_lines_density": 3.0,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 81,
+        "ncloc": 64,
+        "sqale_debt_ratio": 1.3
       }
     },
     "PokedexUI/Misc/SpriteLoader.swift": {
@@ -984,6 +1192,15 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 1.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 29,
+        "comment_lines_density": 44.6,
+        "complexity": 0,
+        "functions": 2,
+        "lines": 74,
+        "ncloc": 36
       }
     },
     "PokedexUI/PokedexUIApp.swift": {
@@ -1027,6 +1244,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 1,
+        "comment_lines_density": 4.8,
+        "complexity": 1,
+        "functions": 0,
+        "lines": 25,
+        "ncloc": 20
       }
     },
     "PokedexUI/PokedexView/PokedexView.swift": {
@@ -1110,6 +1336,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 5,
+        "comment_lines_density": 4.3,
+        "complexity": 19,
+        "functions": 1,
+        "lines": 131,
+        "ncloc": 111
       }
     },
     "PokedexUI/PokedexView/PokedexViewModel.swift": {
@@ -1188,6 +1423,17 @@
         ],
         "avg_cyclomatic": 1.22,
         "avg_cognitive": 0.22
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 2,
+        "comment_lines": 34,
+        "comment_lines_density": 33.7,
+        "complexity": 0,
+        "functions": 10,
+        "lines": 121,
+        "ncloc": 67,
+        "sqale_debt_ratio": 0.5
       }
     },
     "PokedexUI/PokedexView/PokemonViewModel.swift": {
@@ -1291,6 +1537,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 21,
+        "comment_lines_density": 26.6,
+        "complexity": 6,
+        "functions": 1,
+        "lines": 90,
+        "ncloc": 58
       }
     },
     "PokedexUI/PokemonDetailView/PokemonDetailView.swift": {
@@ -1419,6 +1674,17 @@
         ],
         "avg_cyclomatic": 1.11,
         "avg_cognitive": 0.11
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 2,
+        "comment_lines": 11,
+        "comment_lines_density": 4.9,
+        "complexity": 0,
+        "functions": 17,
+        "lines": 250,
+        "ncloc": 214,
+        "sqale_debt_ratio": 0.2
       }
     },
     "PokedexUI/PokemonDetailView/PokemonDetailViewModel.swift": {
@@ -1487,6 +1753,17 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 49,
+        "comment_lines_density": 40.5,
+        "complexity": 0,
+        "functions": 12,
+        "lines": 136,
+        "ncloc": 72,
+        "sqale_debt_ratio": 0.2
       }
     },
     "PokedexUI/SearchView/SearchView.swift": {
@@ -1535,6 +1812,15 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 1.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 5,
+        "comment_lines_density": 8.9,
+        "complexity": 9,
+        "functions": 1,
+        "lines": 63,
+        "ncloc": 51
       }
     }
   }

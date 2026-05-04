@@ -547,10 +547,10 @@ def analyze_project(
     result["halstead"] = run_halstead(project_path, language, allowed_files)
     print(f"  Halstead: {len(result['halstead'])} file(s) analysed")
 
-    # SonarQube — always scans the full project; per-file data is filtered later
     print("  Running SonarQube...")
     result["sonarqube"] = analyze_with_sonar(
-        project_path, project_key, sonar_token, SONAR_ORG, local=local
+        project_path, project_key, sonar_token, SONAR_ORG, local=local, language=language,
+        allowed_files=allowed_files,
     )
     n_files = len(result["sonarqube"].get("files", {}))
     print(f"  SonarQube: project-level + {n_files} file(s) (project-level metrics cover full project)")

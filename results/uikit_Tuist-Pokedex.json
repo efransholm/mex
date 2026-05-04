@@ -64,9 +64,18 @@
     "Tuist/Templates/module/Module.swift"
   ],
   "sonarqube_project": {
-    "code_smells": 0,
+    "bugs": 4,
+    "complexity": 221,
+    "code_smells": 2,
+    "duplicated_lines_density": 12.3,
+    "comment_lines": 290,
+    "functions": 147,
+    "classes": 34,
+    "ncloc": 1444,
+    "files": 42,
     "sqale_debt_ratio": 0.0,
-    "bugs": 0
+    "comment_lines_density": 16.7,
+    "lines": 2252
   },
   "files": {
     "Features/Backpack/Example/Sources/AppDelegate.swift": {
@@ -105,6 +114,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 13
       }
     },
     "Features/Backpack/Example/Sources/Coordinator.swift": {
@@ -183,6 +201,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 10.3,
+        "complexity": 14,
+        "functions": 8,
+        "lines": 97,
+        "ncloc": 61
       }
     },
     "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeViewController.swift": {
@@ -221,6 +248,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 41.2,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 23,
+        "ncloc": 10
       }
     },
     "Features/Backpack/Example/Sources/Scenes/Home Scene/HomeWireframe.swift": {
@@ -264,6 +300,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 38.9,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 24,
+        "ncloc": 11
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDataSource.swift": {
@@ -312,6 +357,15 @@
         ],
         "avg_cyclomatic": 2.33,
         "avg_cognitive": 1.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 21.9,
+        "complexity": 7,
+        "functions": 3,
+        "lines": 44,
+        "ncloc": 25
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackDelegate.swift": {
@@ -355,6 +409,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 8,
+        "comment_lines_density": 42.1,
+        "complexity": 3,
+        "functions": 2,
+        "lines": 26,
+        "ncloc": 11
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackPresenter.swift": {
@@ -418,6 +481,16 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 1,
+        "comment_lines": 10,
+        "comment_lines_density": 16.9,
+        "complexity": 5,
+        "functions": 11,
+        "lines": 76,
+        "ncloc": 49
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackViewController.swift": {
@@ -466,6 +539,15 @@
         ],
         "avg_cyclomatic": 1.67,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 22.6,
+        "complexity": 5,
+        "functions": 3,
+        "lines": 39,
+        "ncloc": 24
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/BackpackWireframe.swift": {
@@ -514,6 +596,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 24.1,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 37,
+        "ncloc": 22
       }
     },
     "Features/Backpack/Sources/Scenes/Backpack Scene/Cells/PokemonCollectionViewCell.swift": {
@@ -541,6 +632,15 @@
       "derived": {
         "mutable_variable_ratio": 1.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 58.3,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 15,
+        "ncloc": 5
       }
     },
     "Features/Catch/Example/Sources/AppDelegate.swift": {
@@ -579,6 +679,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 13
       }
     },
     "Features/Catch/Example/Sources/Coordinator.swift": {
@@ -672,6 +781,16 @@
         ],
         "avg_cyclomatic": 1.75,
         "avg_cognitive": 0.92
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 7.1,
+        "complexity": 21,
+        "duplicated_lines_density": 83.5,
+        "functions": 11,
+        "lines": 133,
+        "ncloc": 92
       }
     },
     "Features/Catch/Example/Sources/Scenes/Home Scene/HomeViewController.swift": {
@@ -710,6 +829,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 41.2,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 23,
+        "ncloc": 10
       }
     },
     "Features/Catch/Example/Sources/Scenes/Home Scene/HomeWireframe.swift": {
@@ -753,6 +881,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 38.9,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 24,
+        "ncloc": 11
       }
     },
     "Features/Catch/Sources/Scenes/Catch Scene/CatchViewController.swift": {
@@ -841,6 +978,15 @@
         ],
         "avg_cyclomatic": 1.55,
         "avg_cognitive": 0.55
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 7.5,
+        "complexity": 19,
+        "functions": 11,
+        "lines": 118,
+        "ncloc": 86
       }
     },
     "Features/Catch/Sources/Scenes/Catch Scene/CatchWireframe.swift": {
@@ -884,6 +1030,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 31.8,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 28,
+        "ncloc": 15
       }
     },
     "Features/Common/Sources/Core/Configuration.swift": {
@@ -937,6 +1092,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 28.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 32,
+        "ncloc": 18
       }
     },
     "Features/Common/Sources/Extensions/Loadable.swift": {
@@ -980,6 +1144,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.5
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 16,
+        "comment_lines_density": 55.2,
+        "complexity": 2,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 13
       }
     },
     "Features/Common/Sources/Extensions/UIBarButtonItem+Extension.swift": {
@@ -1038,6 +1211,15 @@
         ],
         "avg_cyclomatic": 1.6,
         "avg_cognitive": 0.6
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 8,
+        "comment_lines_density": 20.0,
+        "complexity": 4,
+        "functions": 1,
+        "lines": 49,
+        "ncloc": 32
       }
     },
     "Features/Common/Sources/Extensions/UITableViewCell+Extension.swift": {
@@ -1101,6 +1283,17 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 0,
+        "code_smells": 1,
+        "comment_lines": 29,
+        "comment_lines_density": 45.3,
+        "complexity": 6,
+        "functions": 4,
+        "lines": 81,
+        "ncloc": 35,
+        "sqale_debt_ratio": 0.1
       }
     },
     "Features/Common/Sources/Extensions/UIViewController+StoryboardInstantiable.swift": {
@@ -1149,6 +1342,16 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "bugs": 1,
+        "classes": 2,
+        "comment_lines": 10,
+        "comment_lines_density": 32.3,
+        "complexity": 2,
+        "functions": 3,
+        "lines": 39,
+        "ncloc": 21
       }
     },
     "Features/Common/Sources/Model/ScreenPokemon.swift": {
@@ -1187,6 +1390,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 35.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 24,
+        "ncloc": 13
       }
     },
     "Features/Common/Sources/Views/PokemonView.swift": {
@@ -1214,6 +1426,15 @@
       "derived": {
         "mutable_variable_ratio": 1.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 38.9,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 22,
+        "ncloc": 11
       }
     },
     "Features/Detail/Example/Sources/AppDelegate.swift": {
@@ -1252,6 +1473,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 43.8,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 21,
+        "ncloc": 9
       }
     },
     "Features/Detail/Example/Sources/Coordinator.swift": {
@@ -1345,6 +1575,15 @@
         ],
         "avg_cyclomatic": 1.5,
         "avg_cognitive": 0.67
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 8.8,
+        "complexity": 18,
+        "functions": 11,
+        "lines": 113,
+        "ncloc": 73
       }
     },
     "Features/Detail/Sources/Scenes/DetailViewController.swift": {
@@ -1393,6 +1632,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 21.9,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 36,
+        "ncloc": 25
       }
     },
     "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailViewController.swift": {
@@ -1446,6 +1694,15 @@
         ],
         "avg_cyclomatic": 2.25,
         "avg_cognitive": 1.25
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 14.0,
+        "complexity": 9,
+        "functions": 4,
+        "lines": 69,
+        "ncloc": 43
       }
     },
     "Features/Detail/Sources/Scenes/Pokemon Detail Scene/PokemonDetailWireframe.swift": {
@@ -1489,6 +1746,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 36.8,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 25,
+        "ncloc": 12
       }
     },
     "Features/Haneke/Example/Sources/AppDelegate.swift": {
@@ -1537,6 +1803,15 @@
         ],
         "avg_cyclomatic": 1.33,
         "avg_cognitive": 0.33
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 4,
+        "functions": 3,
+        "lines": 47,
+        "ncloc": 38
       }
     },
     "Features/Home/Example/Sources/AppDelegate.swift": {
@@ -1575,6 +1850,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 19,
+        "ncloc": 13
       }
     },
     "Features/Home/Example/Sources/Coordinator.swift": {
@@ -1673,6 +1957,16 @@
         ],
         "avg_cyclomatic": 1.69,
         "avg_cognitive": 0.85
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 5.9,
+        "complexity": 22,
+        "duplicated_lines_density": 37.3,
+        "functions": 12,
+        "lines": 158,
+        "ncloc": 111
       }
     },
     "Features/Home/Sources/Scenes/Home Scene/HomeActions.swift": {
@@ -1716,6 +2010,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 29.2,
+        "complexity": 2,
+        "functions": 5,
+        "lines": 31,
+        "ncloc": 17
       }
     },
     "Features/Home/Sources/Scenes/Home Scene/HomeViewController.swift": {
@@ -1759,6 +2062,15 @@
         ],
         "avg_cyclomatic": 2.0,
         "avg_cognitive": 1.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 33.3,
+        "complexity": 4,
+        "functions": 2,
+        "lines": 28,
+        "ncloc": 14
       }
     },
     "Features/Home/Sources/Scenes/Home Scene/HomeWireframe.swift": {
@@ -1802,6 +2114,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 38.9,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 23,
+        "ncloc": 11
       }
     },
     "Features/Network/Example/Sources/AppDelegate.swift": {
@@ -1840,6 +2161,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 0,
+        "comment_lines_density": 0.0,
+        "complexity": 1,
+        "functions": 1,
+        "lines": 26,
+        "ncloc": 20
       }
     },
     "Features/Network/Example/Sources/Constants.swift": {
@@ -1867,6 +2197,16 @@
       "derived": {
         "mutable_variable_ratio": 0.0,
         "maintainability_index": null
+      },
+      "sonarqube": {
+        "bugs": 2,
+        "classes": 0,
+        "comment_lines": 8,
+        "comment_lines_density": 13.1,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 82,
+        "ncloc": 53
       }
     },
     "Features/Network/Example/Sources/SimpleViewController.swift": {
@@ -1965,6 +2305,17 @@
         ],
         "avg_cyclomatic": 1.31,
         "avg_cognitive": 0.62
+      },
+      "sonarqube": {
+        "classes": 1,
+        "code_smells": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 5.0,
+        "complexity": 16,
+        "functions": 11,
+        "lines": 177,
+        "ncloc": 133,
+        "sqale_debt_ratio": 0.1
       }
     },
     "Features/Network/Sources/Core/Configuration.swift": {
@@ -2013,6 +2364,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 7,
+        "comment_lines_density": 35.0,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 26,
+        "ncloc": 13
       }
     },
     "Features/Pokedex/Sources/Core/AppDelegate.swift": {
@@ -2056,6 +2416,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 33.3,
+        "complexity": 2,
+        "functions": 2,
+        "lines": 30,
+        "ncloc": 14
       }
     },
     "Features/Pokedex/Sources/Core/Coordinator.swift": {
@@ -2149,6 +2518,16 @@
         ],
         "avg_cyclomatic": 2.08,
         "avg_cognitive": 1.25
+      },
+      "sonarqube": {
+        "classes": 1,
+        "comment_lines": 7,
+        "comment_lines_density": 6.1,
+        "complexity": 25,
+        "duplicated_lines_density": 69.0,
+        "functions": 11,
+        "lines": 155,
+        "ncloc": 108
       }
     },
     "Project.swift": {
@@ -2217,6 +2596,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 2,
+        "comment_lines_density": 2.5,
+        "complexity": 7,
+        "functions": 7,
+        "lines": 88,
+        "ncloc": 77
       }
     },
     "Tuist/Templates/module/Module.swift": {
@@ -2260,6 +2648,15 @@
         ],
         "avg_cyclomatic": 1.0,
         "avg_cognitive": 0.0
+      },
+      "sonarqube": {
+        "classes": 0,
+        "comment_lines": 3,
+        "comment_lines_density": 4.8,
+        "complexity": 0,
+        "functions": 0,
+        "lines": 70,
+        "ncloc": 59
       }
     }
   }
