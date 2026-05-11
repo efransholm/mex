@@ -47,7 +47,7 @@ mex/
 | [lizard](https://github.com/terryyin/lizard)                                                                    | Cyclomatic/cognitive complexity      |
 | [SonarQube](https://www.sonarsource.com/products/sonarqube/) (Docker)                                           | Static analysis                      |
 | [sonar-scanner](https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/scanners/sonarscanner/) CLI | Running SonarQube scans              |
-| [SwiftComplexityCLI](https://github.com/MatthewpHarding/SwiftComplexity)                                        | Per-function Swift complexity        |
+| [SwiftComplexityCLI](https://github.com/fummicc1/swift-complexity)                                              | Per-function Swift complexity        |
 | GitHub personal access token                                                                                    | `repo_mining.py` — GitHub API access |
 
 Install Python dependencies:
