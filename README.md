@@ -1,6 +1,6 @@
 # Code Complexity in Modern Mobile UI Frameworks
 
-This repository contains all analysis code for the master's thesis _Measuring Code Complexity Across Mobile UI Frameworks_, which compares code complexity between:
+This repository contains all analysis code for the master's thesis _Quantitative Analysis of Code Complexity in Mobile Framework Migration: from Imperative to Declarative User Interface_, which compares code complexity between:
 
 - **Android**: Jetpack Compose vs. traditional Views
 - **iOS**: SwiftUI vs. UIKit
@@ -14,14 +14,17 @@ The study collects a range of complexity metrics — cyclomatic complexity, cogn
 ```
 mex/
 ├── scripts/          # Main analysis and plotting scripts
-│   ├── analyze.py        # Orchestrates all analyzers for one or more repos
-│   ├── repo_mining.py    # Discovers and clones repos via GitHub API
-│   ├── halstead.py       # Halstead complexity metrics (Swift & Kotlin)
-│   ├── sonar_utils.py    # SonarQube/SonarCloud helpers
-│   ├── plot_summary_table.py  # Generates repo summary table image
-│   ├── results_table.ipynb       # Android results notebook
-│   ├── results_table_ios.ipynb   # iOS results notebook
-│   └── spearman_heatmap.ipynb    # Correlation analysis notebook
+│   ├── analyze.py               # Orchestrates all analyzers for one or more repos
+│   ├── repo_mining.py           # Discovers and clones repos via GitHub API
+│   ├── halstead.py              # Halstead complexity metrics (Swift & Kotlin)
+│   ├── maintainability_index.py # Maintainability index calculation (Microsoft definition)
+│   ├── sonar_utils.py           # SonarQube/SonarCloud helpers
+│   ├── plot_summary_table.py    # Generates repo summary table image
+│   ├── fibonacci.kt             # Sample file for Halstead testing
+│   ├── fibonacci.swift          # Sample file for Halstead testing
+│   ├── results_table.ipynb      # Android results notebook
+│   ├── results_table_ios.ipynb  # iOS results notebook
+│   └── spearman_heatmap.ipynb   # Correlation analysis notebook
 ├── ast/              # AST-based state and complexity analyzers
 │   ├── swift_analyzer.py     # Swift AST analyzer
 │   └── kotlin_analyzer.py    # Kotlin AST analyzer
@@ -31,10 +34,14 @@ mex/
 │   ├── views_app/
 │   └── small_app/
 ├── results/          # JSON and CSV output from analysis runs
-├── repo_data.csv         # Android UI-file metadata (from repo_mining.py)
-├── repo_data_ios.csv     # iOS UI-file metadata
-├── repo_summary.csv      # Android repo summary table
-└── repo_summary_ios.csv  # iOS repo summary table
+│   ├── metrics_table.csv        # Aggregated Android metrics (from results_table.ipynb)
+│   └── metrics_table_ios.csv    # Aggregated iOS metrics (from results_table_ios.ipynb)
+├── repo_data.csv                # Android UI-file metadata (from repo_mining.py)
+├── repo_data_ios.csv            # iOS UI-file metadata
+├── repo_summary.csv             # Android repo summary table
+├── repo_summary_ios.csv         # iOS repo summary table
+├── repo_summary_table_android.png  # Generated Android repo summary image
+└── repo_summary_table_ios.png      # Generated iOS repo summary image
 ```
 
 ---
