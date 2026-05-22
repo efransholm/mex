@@ -26,11 +26,18 @@ THRESHOLDS = {
 }
 
 # Columns to display
-DISPLAY_COLS = [
+ANDROID_DISPLAY_COLS = [
     "repo", "stars", "forks", "open_issues",
     "commits", "contributors", "open_pull_requests",
     "total_ui_files", "compose_pct", "android_views_pct",
-    "swiftui_pct", "uikit_pct", "last_push", "dominant_framework"
+    "last_push", "dominant_framework"
+]
+
+IOS_DISPLAY_COLS = [
+    "repo", "stars", "forks", "open_issues",
+    "commits", "contributors", "open_pull_requests",
+    "total_ui_files", "swiftui_pct", "uikit_pct",
+    "last_push", "dominant_framework"
 ]
 
 # --- Pairs for Android table ---
@@ -80,9 +87,9 @@ def get_color(col, val):
         return "white"
 
 
-def build_table(df, pairs):
+def build_table(df, pairs, display_cols):
     # Only keep columns that exist in this CSV
-    cols = [c for c in DISPLAY_COLS if c in df.columns]
+    cols = [c for c in display_cols if c in df.columns]
     display_df = df[cols].copy()
 
     cell_colors = []
@@ -99,8 +106,8 @@ def build_table(df, pairs):
     return display_df, cell_colors, cols
 
 
-def plot_table(df, pairs, title, output_png):
-    display_df, cell_colors, cols = build_table(df, pairs)
+def plot_table(df, pairs, title, output_png, display_cols):
+    display_df, cell_colors, cols = build_table(df, pairs, display_cols)
 
     fig, ax = plt.subplots(figsize=(18, max(4, len(display_df) * 0.5 + 1.5)))
     ax.axis("off")
@@ -133,8 +140,8 @@ def plot_table(df, pairs, title, output_png):
 
 # --- Generate Android table ---
 android_df = pd.read_csv("repo_summary.csv")
-plot_table(android_df, ANDROID_PAIRS, "Android Repository Summary", "repo_summary_table_android.png")
+plot_table(android_df, ANDROID_PAIRS, "Android Repository Summary", "repo_summary_table_android.png", ANDROID_DISPLAY_COLS)
 
 # --- Generate iOS table ---
 ios_df = pd.read_csv("repo_summary_ios.csv")
-plot_table(ios_df, IOS_PAIRS, "iOS Repository Summary", "repo_summary_table_ios.png")
+plot_table(ios_df, IOS_PAIRS, "iOS Repository Summary", "repo_summary_table_ios.png", IOS_DISPLAY_COLS)
