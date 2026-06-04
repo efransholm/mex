@@ -1,11 +1,11 @@
 # Code Complexity in Modern Mobile UI Frameworks
 
-This repository contains all analysis code for the master's thesis _Quantitative Analysis of Code Complexity in Mobile Framework Migration: from Imperative to Declarative User Interface_, which compares code complexity between:
+This repository contains all analysis code for the master's thesis _Quantitative Analysis of Code Complexity in Mobile Frameworks: Imperative versus Declarative User Interface_, which compares code complexity between:
 
 - **Android**: Jetpack Compose vs. traditional Views
 - **iOS**: SwiftUI vs. UIKit
 
-The study collects a range of complexity metrics — cyclomatic complexity, cognitive complexity, Halstead measures, and SonarQube static analysis — across real open-source mobile applications, then compares results between framework pairs.
+The study collects a range of complexity metrics — Cyclomatic Complexity, Cognitive Complexity, Halstead Complexity Measures, and SonarQube static analysis — across real open-source mobile applications, then compares results between framework pairs.
 
 ---
 
