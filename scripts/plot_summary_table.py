@@ -78,11 +78,11 @@ def get_color(col, val):
         return "white"
     if col == "last_push":
         try:
-            return "#90EE90" if str(val) >= threshold else "#FF9999"
+            return "#99C7FF" if str(val) >= threshold else "#FF9999"
         except (ValueError, TypeError):
             return "white"
     try:
-        return "#90EE90" if float(val) >= threshold else "#FF9999"
+        return "#99C7FF" if float(val) >= threshold else "#FF9999"
     except (ValueError, TypeError):
         return "white"
 
@@ -127,7 +127,7 @@ def plot_table(df, pairs, title, output_png, display_cols):
         table[0, col_idx].set_facecolor("#4472C4")
         table[0, col_idx].set_text_props(color="white", fontweight="bold")
 
-    green_patch = mpatches.Patch(color="#90EE90", label="Above threshold")
+    green_patch = mpatches.Patch(color="#99C7FF", label="Above threshold")
     red_patch   = mpatches.Patch(color="#FF9999", label="Below threshold")
     ax.legend(handles=[green_patch, red_patch], loc="upper right", fontsize=8)
 
